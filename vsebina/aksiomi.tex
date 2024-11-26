@@ -1,7 +1,85 @@
-\section{Origami aksiomi in povezava z evlikdskimi konstrukcijami}
+\section{Evklidske in origami konstrukcije}
 
-Kraj in čas izvora origamija nista jasno določena. Nekateri viri zatrjujejo, da izhaja iz Japonske, drugi ga pripisujejo Kitajski, tretji se ne strinjajo z nobeno od teh dveh možnosti. Možno je, da so umetnost zlaganja odkrili še pred izumom papirja, za katerega je l. 105 po Kr. poskrbel kitajski dvorni uradnik Cai Lun, saj se da npr.\ zlagati tudi robce iz blaga. Je pa papir idealen material za zlaganje. Japonska beseda \emph{origami} kot umetnost zgibanja papirja (``oru'' -- prepogibati, ``kami'' -- papir) se je na Daljnem vzhodu začela uporabljati proti koncu 19. stoletja. Povečano zanimanje za origami v matematiki se je začelo v 2.\ pol.\ 20.\ stoletja in s seboj prineslo množično izhajanje literature o povezavi origamija z matematiko, fiziko, astronomijo, računalništvom, kemijo in še mnogimi drugimi vedami~\cite{zore2022}
+Kraj in čas izvora origamija nista jasno določena. Nekateri viri zatrjujejo, da izhaja iz Japonske, drugi ga pripisujejo Kitajski, tretji se ne strinjajo z nobeno od teh dveh možnosti. Možno je, da so umetnost zlaganja odkrili še pred izumom papirja, za katerega je l. 105 po Kr. poskrbel kitajski dvorni uradnik Cai Lun, saj se da npr.\ zlagati tudi robce iz blaga. Je pa papir idealen material za zlaganje. Japonska beseda \emph{origami} kot umetnost zgibanja papirja (``oru'' -- prepogibati, ``kami'' -- papir) se je na Daljnem vzhodu začela uporabljati proti koncu 19. stoletja.
 
-V nalogi se bomo omejili le na prepogibanje v ravnini, tj.\ list papirja vzamemo za model evklidske ravnine, s prepogibanjem pa v tej ravnini tudi ostanemo. Nadalje pregibe konsktruiramo le po enega naenkrat in v ravni črti, prepovedana pa je uporaba katerega drugega orodja (npr.\ škarje in lepilo). Bralec je ob branju povabljen, da opisane konstrukcije tudi sam preizkusi na listu papirja, sicer pa se jih da brez večjih težav predstavljati tudi brez materiala.
+Povečano zanimanje za origami v matematiki se je začelo v 2.\ pol.\ 20.\ stoletja in s seboj prineslo množično izhajanje literature o povezavi origamija z matematiko, fiziko, astronomijo, računalništvom, kemijo in še mnogimi drugimi vedami~\cite{zore2022}. V angleščini je tako za matematično raziskovanje s prepogibanjem papirja nastal izraz ``\emph{origamics}'', ki bi ga lahko po zgledu poimenovanj veliko znanstvenih disciplin (\emph{mathematics} -- matematika, \emph{physisc} -- fizika itd.) prevedli kot ``origamika''~\cite{sgv2016} (uradnega izraza v slovenščini še ni).
 
-\textbf{povezava me dprepogibi in premicami}
+\subsection{Evklidovi postulati in evklidske konstrukcije}
+
+Preden si pogledamo, kaj lahko s prepogibanjem papirja konstruiramo, se spomnimo, na čem temelji evklidska geometrija. Za njenega očeta štejemo grškega matematika Evklida\footnote{O življenju tega aleksandrijskega učenjaka ne vemo nič gotovega, je pa zelo verjetno živel za časa prvega Ptolemaja (faraon v času 306--283 pr.\ Kr.)~\cite[str.\ 61]{struik1986}.}, ki je napisal zelo znano zbirko trinajstih knjig pod skupnim imenom \emph{Elementi}. V njih obravnavana snov temelji na strogo logični izpeljavi izrekov iz definicij\footnote{\emph{Definicija} je nedvoumno jasna opredelitev novega pojma.}, aksiomov\footnote{\emph{Aksiom} je temeljna resnica ali načelo, ki ne potrebuje dokazov (oz.\ dokaz sploh ne obstaja) in vedno velja.} in postulatov\footnote{\emph{Postulat} je predpostavka oz.\ zahteva. Evklid med aksiomi in postulati ni postavil jasne razlike, Aristotel pa je postulat od aksioma ločil po tem, da gre pri prvem bolj za hipotezo kot temeljno resnico, vendar se njene veljavnosti ne dokazuje, temveč privzame kot veljavno~\cite[str.\ 122]{euclidI}. V primeru petega Evklidovega postulata se bomo spomnili, da nam to, ali ga privzamemo ali ne, poda različne geometrije. Danes med pojmoma ne ločujemo~\cite[str.\ 2]{geometricconstructions}.}. Še danes večina osnovno- in srednješolske geometrije izvira prav iz prvih šestih knjig Elementov.
+
+Prva knjiga nas še posebej zanima. V njej je Evklid najprej definiral osnovne pojme -- točka, premica, površina, ravnina, ravninski kot, pravi kot, ostri kot, topi kot, krog, središče kroga, premer, enakostranični in enakokraki trikotnik, kvadrat \ldots ter nazadnje upeljal še pojem vzporednih premic. Nato je zapisal znamenitih pet postulatov~\cite{euclidI}, iz katerih izhaja vsa evklidska geometrija:
+
+\begin{postulat}
+    \label{post:P1}
+    Med dvema poljubnima točkama je mogoče narisati ravno črto.
+\end{postulat}
+\begin{postulat}
+    \label{post:P2}
+    Vsako ravno črto je mogoče na obeh koncih podaljšati.
+\end{postulat}
+\begin{postulat}
+    \label{post:P3}
+    Mogoče je narisati krožnico s poljubnim središčem in poljubnim polmerom.
+\end{postulat}
+\begin{postulat}
+    \label{post:P4}
+    Vsi pravi koti so med seboj skladni.
+\end{postulat}
+\begin{postulat}
+    \label{post:P5}
+    Če poljubni ravni črti sekamo s tretjo ravno črto (prečnico) in je vsota notranjih kotov eni strani prečnice manjša od dveh pravih kotov, potem se dani premici, če ju dovolj podaljšamo, sekata na tej strani prečnice.
+    \opomba{Vemo že, da je postulat~\ref{post:P5} ekvivalenten \emph{aksiomu o vzporednicah}, ki pravi, da skozi dano točko, ki ne leži na dani premici, poteka natanko ena vzporednica k tej premici.}
+\end{postulat}
+
+\emph{Evklidske konstrukcije} so konstrukcije premic, kotov, krožnic in drugih geometrijskih figur, ki jih je mogoče konstruirati le z uporabo t.\i.\ \emph{evklidskih orodij}:
+
+\begin{itemize}
+    \item neoznačeno in neskončno dolgo ravnilo (anlg.\ \emph{straightedge})
+    \item šestilo, ki ne prenaša razdalj (ko ga dvignemo od podlage, se njegova kraka zložita skupaj)
+\end{itemize}
+
+Formalno so torej edine dovoljene konstrukcije tiste iz postulatov~\ref{post:P1}--~\ref{post:P3}. Seveda privzamemo, da so konstruktibilne tudi točke.
+
+Velika motivacija za uvedbo origami konstrukcij je ta, da lahko z njimi rešimo kar dva od treh znamenitih problemov, ki jih z evklidskim orodjem ne moremo. Več o tem sledi v poglavju~\ref{pogl:starogrskiproblemi}.
+
+\subsection{Origami aksiomi}
+
+V nalogi se bomo omejili le na prepogibanje v ravnini, tj.\ list papirja vzamemo za model evklidske ravnine, s prepogibanjem pa v tej ravnini tudi ostanemo. Nadalje pregibe konsktruiramo le po enega naenkrat in v ravni črti, prepovedana pa je uporaba kakršnegakoli orodja (npr.\ škarje in lepilo).  Bralec je ob branju povabljen, da opisane konstrukcije tudi sam preizkusi na listu papirja, sicer pa se jih da brez večjih težav predstavljati tudi brez materiala.
+
+Ker so pregibi torej ravne črte, nam služijo kot modeli premic. Kaj so potem modeli točk? Ravno presečišča premic, torej presečišča pregibov.
+
+Japonski matematik Humiaki Huzita je l.\ 1992 (\textcolor{red}{REFERENCA 26 v uni knjigi, pa v bistvu ugotovi, kdo je original avtor in kdo je kasneje koliko aksiomov rediscoveral!}) zapisal seznam pravil, s katerimi lahko opišemo vse operacije, ki jih lahko naredimo s prepogibanjem papirja. \textcolor{red}{(najprej 6, pol 7, kako je to blo?????)}
+. Ta pravila so znana pod imenom \textcolor{red}{\ldots} aksiomi, vendar je izbira izraza ``aksiom'' mogoče manj primerna, saj za nekatere od njih opisana konstrukcija ob neprimerno izbranih točkah in premicah sploh ne obstaja. Kljub temu bomo zaradi razširjenosti rabe to ime ohranili~\cite[str.\ 7]{zore2022}. Sedaj pa si jih podrobneje poglejmo:
+
+\begin{aksiom}[O1]
+    \label{aks:O1}
+    Za poljubni točki $A$ in $B$ obstaja natanko en pregib $p$, ki gre skoznju.
+\end{aksiom}
+\begin{aksiom}[O2]
+    \label{aks:O2}
+    Za poljubni točki $A$ in $B$ obstaja natanko en pregib $p$, da se točki pokrijeta.
+\end{aksiom}
+\begin{aksiom}[O3]
+    \label{aks:O3}
+    Za poljubni premici $a$ in $b$ obstaja pregib, ki ju položi eno na drugo.
+    \opomba{Če sta premici vzporedni, je tak pregib en sam, sicer pa sta pregiba dva.}
+\end{aksiom}
+\begin{aksiom}[O4]
+    \label{aks:O4}
+    Za poljubno točko $A$ in premico $a$ obstaja natanko en pregib skozi točko $A$, ki je pravokoten na premico $a$.
+\end{aksiom}
+\begin{aksiom}[o5]
+    \label{aks:O5}
+    Za primerno izbrani točki $A$ in $B$ ter premico $a$ obstaja pregib $p$ skozi točko $B$, ki točko $A$ postavi na premico $a$.
+\end{aksiom}
+\begin{aksiom}[06]
+    \label{aks:O6}
+    Za primerno izbrani točki $A$ in $B$ ter premici $a$ in $b$ obstaja pregib $p$, ki točko $A$ postavi na premico $a$ ter točko $B$ na premico $b$.
+\end{aksiom}
+\begin{aksiom}[O7]
+    \label{aks:O7}
+
+\end{aksiom}
+
+Hitro lahko vidimo, da je aksiom O1 ekvivalenten postulatu~\ref{post:P1}. \textcolor{red}{popravi reference za aksiome ... PLUS Še ostala povezava s postulati!!!!}. Aksiom O2 nam poda konstrukcijo simetrale daljice $AB$, aksiom O3 pa simetrali kota, ki ga določata premici in njuno presečišče (v primeru vzporednosti dobimo premico, ki je enako oddaljena od obeh premic). Aksiom O4 nam podaja konstrukcijo pravokotnice na premico skozi dano točko. \textcolor{red}{tukej še manjka povezava prou z EVKLIDSKIMI konstrukcijami}.
