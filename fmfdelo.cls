@@ -453,6 +453,7 @@
 % pokončno napisan tekst
 \theoremstyle{definition}
 \newtheorem{aksiom}{Aksiom}
+\newtheorem{postulat}{Postulat}
 \newtheorem{definicija}{Definicija}[section]
 \newtheorem{opomba}[definicija]{Opomba}
 \newtheorem{primer*}[definicija]{Primer}
