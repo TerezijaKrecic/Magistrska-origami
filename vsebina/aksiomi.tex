@@ -37,22 +37,19 @@ Prva knjiga nas še posebej zanima. V njej je Evklid najprej definiral osnovne p
 \emph{Evklidske konstrukcije} so konstrukcije premic, kotov, krožnic in drugih geometrijskih figur, ki jih je mogoče konstruirati le z uporabo t.\i.\ \emph{evklidskih orodij}:
 
 \begin{itemize}
-    \item neoznačeno in neskončno dolgo ravnilo (anlg.\ \emph{straightedge})
+    \item neoznačeno in neskončno dolgo ravnilo (angl.\ \emph{straightedge})
     \item šestilo, ki ne prenaša razdalj (ko ga dvignemo od podlage, se njegova kraka zložita skupaj)
 \end{itemize}
 
-Formalno so torej edine dovoljene konstrukcije tiste iz postulatov~\ref{post:P1}--~\ref{post:P3}. Seveda privzamemo, da so konstruktibilne tudi točke.
+Formalno so torej edine dovoljene konstrukcije tiste iz postulatov~\ref{post:P1}--~\ref{post:P3} (seveda privzamemo, da so konstruktibilne tudi točke). Vendar je to dovolj, da lahko le z neoznačenim ravnilom in šestilom konstruiramo premice, kote, simetrale kotov in daljic, krožnice in še mnogo drugega. V resnici se da skonstruirati toliko geometrijskih figur, da se matematiki raje vprašamo, česa pa se s tem orodjem \emph{ne da} skonstruirati. In tu pridemo do motivacije za uvedbo origami konstrukcij, saj lahko z njimi npr.\ rešimo kar dva od treh znamenitih starogrških problemov, ki jih z evklidskim orodjem ne moremo. Več o tem sledi v poglavju~\ref{pogl:starogrskiproblemi}.
 
-Velika motivacija za uvedbo origami konstrukcij je ta, da lahko z njimi rešimo kar dva od treh znamenitih problemov, ki jih z evklidskim orodjem ne moremo. Več o tem sledi v poglavju~\ref{pogl:starogrskiproblemi}.
-
-\subsection{Origami aksiomi}
+\subsection{Origami aksiomi in origami konstrukcije}
 
 V nalogi se bomo omejili le na prepogibanje v ravnini, tj.\ list papirja vzamemo za model evklidske ravnine, s prepogibanjem pa v tej ravnini tudi ostanemo. Nadalje pregibe konsktruiramo le po enega naenkrat in v ravni črti, prepovedana pa je uporaba kakršnegakoli orodja (npr.\ škarje in lepilo).  Bralec je ob branju povabljen, da opisane konstrukcije tudi sam preizkusi na listu papirja, sicer pa se jih da brez večjih težav predstavljati tudi brez materiala.
 
-Ker so pregibi torej ravne črte, nam služijo kot modeli premic. Kaj so potem modeli točk? Ravno presečišča premic, torej presečišča pregibov.
+Ker so pregibi torej ravne črte, nam služijo kot modeli premic. Na začetku, ko imamo pred seboj le (po možnosti kvadraten) list papirja, so naše premice ravno njegove stranice. Manjkajo nam samo še modeli točk. To so ravno oglišča našega lista papirja, nadaljne točke pa dobimo kot presečišča premic, torej presečišča pregibov.
 
-Japonski matematik Humiaki Huzita je l.\ 1992 (\textcolor{red}{REFERENCA 26 v uni knjigi, pa v bistvu ugotovi, kdo je original avtor in kdo je kasneje koliko aksiomov rediscoveral!}) zapisal seznam pravil, s katerimi lahko opišemo vse operacije, ki jih lahko naredimo s prepogibanjem papirja. \textcolor{red}{(najprej 6, pol 7, kako je to blo?????)}
-. Ta pravila so znana pod imenom \textcolor{red}{\ldots} aksiomi, vendar je izbira izraza ``aksiom'' mogoče manj primerna, saj za nekatere od njih opisana konstrukcija ob neprimerno izbranih točkah in premicah sploh ne obstaja. Kljub temu bomo zaradi razširjenosti rabe to ime ohranili~\cite[str.\ 7]{zore2022}. Sedaj pa si jih podrobneje poglejmo:
+Japonski matematik Humiaki Huzita je l.\ 1992 (\textcolor{red}{REFERENCA 26 v uni knjigi, pa v bistvu ugotovi, kdo je original avtor in kdo je kasneje koliko aksiomov rediscoveral!}) zapisal seznam pravil, s katerimi lahko opišemo vse operacije, ki jih lahko naredimo s prepogibanjem papirja. \textcolor{red}{(najprej 6, pol 7, kako je to blo?????)} Konstrukcije, ki jih dobimo z upoštevanjem teh pravil, bomo poimenovali kar \emph{origami konstrukcije}. Ta pravila so znana pod imenom \textcolor{red}{\ldots} aksiomi, vendar je izbira izraza ``aksiom'' mogoče manj primerna, saj za nekatere od njih opisana konstrukcija ob neprimerno izbranih točkah in premicah sploh ne obstaja. Kljub temu bomo zaradi razširjenosti rabe to ime ohranili~\cite[str.\ 7]{zore2022}. Sedaj pa si jih podrobneje poglejmo:
 
 \renewcommand{\theaksiom}{O\arabic{aksiom}}
 
@@ -64,26 +61,76 @@ Japonski matematik Humiaki Huzita je l.\ 1992 (\textcolor{red}{REFERENCA 26 v un
     \label{aks:O2}
     Za poljubni točki $A$ in $B$ obstaja natanko en pregib $p$, da se točki pokrijeta.
 \end{aksiom}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/origami_aksiomi/O1.png}
+    \includegraphics[width=0.45\textwidth]{images/origami_aksiomi/O2.png}
+    \caption[Aksioma~\ref{aks:O1} in~\ref{aks:O2}]{Aksioma~\ref{aks:O1} (levo) in~\ref{aks:O2} (desno).}
+    \label{fig:O1_in_O2}
+\end{figure}
+
 \begin{aksiom}
     \label{aks:O3}
-    Za poljubni premici $a$ in $b$ obstaja pregib, ki ju položi eno na drugo.
-    \opomba{Če sta premici vzporedni, je tak pregib en sam, sicer pa sta pregiba dva.}
+    Za poljubni premici $a$ in $b$ obstaja pregib $p$, ki ju položi eno na drugo.
 \end{aksiom}
+\opomba{Če sta premici vzporedni, je tak pregib en sam, sicer pa sta pregiba dva (gl.\ sliko~\ref{fig:O3}).}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/origami_aksiomi/O3.png}
+    \caption[Aksiom~\ref{aks:O3}]{Aksiom~\ref{aks:O3} v obeh možnih primerih.}
+    \label{fig:O3}
+\end{figure}
+
 \begin{aksiom}
     \label{aks:O4}
-    Za poljubno točko $A$ in premico $a$ obstaja natanko en pregib skozi točko $A$, ki je pravokoten na premico $a$.
+    Za poljubno točko $A$ in premico $a$ obstaja natanko en pregib $p$ skozi točko $A$, ki je pravokoten na premico $a$.
 \end{aksiom}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.4\textwidth]{images/origami_aksiomi/O4.png}
+    \caption[Aksiom~\ref{aks:O4}]{Aksiom~\ref{aks:O4}.}
+    \label{fig:O4}
+\end{figure}
+
 \begin{aksiom}
     \label{aks:O5}
     Za primerno izbrani točki $A$ in $B$ ter premico $a$ obstaja pregib $p$ skozi točko $B$, ki točko $A$ postavi na premico $a$.
 \end{aksiom}
+\opomba{V poglavju~\ref{pogl:stoznice} bomo premislili, da s tem aksiomom konstruiramo ravno tangento na parabolo z goriščem v točki $A$ ter s premico vodnico $a$. V primeru, da je razdalja med točkama $A$ in $B$ večja od razdalje točke $B$ do premice $a$, dobimo dva možna pregiba, če sta razdalji enaki, je pregib en sam, v primeru manjše razdalje med točkama pa pregib ne obstaja. Na sliki~\ref{fig:O5} so prikazani vsi trije primeri.}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.45\textwidth]{images/origami_aksiomi/O5a.png}
+    \includegraphics[width=0.3\textwidth]{images/origami_aksiomi/O5b.png}
+    \includegraphics[width=0.2\textwidth]{images/origami_aksiomi/O5c.png}
+    \caption[Aksiom~\ref{aks:O5}]{Aksiom~\ref{aks:O5} v vseh treh primerih.}
+    \label{fig:O5}
+\end{figure}
+
 \begin{aksiom}
     \label{aks:O6}
     Za primerno izbrani točki $A$ in $B$ ter premici $a$ in $b$ obstaja pregib $p$, ki točko $A$ postavi na premico $a$ ter točko $B$ na premico $b$.
 \end{aksiom}
+\opomba{Za isto situacijo je lahko možnih več pregibov (gl.\ sliko~\ref{fig:O6}). Če sta premici vzporedni in je njuna medsebojna razdalja večja od razdalje med točkama, pa pregib ne obstaja. V poglavju~\ref{pogl:stoznice} bomo ta aksiom podrobneje preučili, saj nam podaja konstrukcijo skupne tangente na dve paraboli.}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.45\textwidth]{images/origami_aksiomi/O6a.png}
+    \includegraphics[width=0.45\textwidth]{images/origami_aksiomi/O6b.png}
+    \caption[Aksiom~\ref{aks:O6}]{Aksiom~\ref{aks:O6} (primer dveh pregibov od najmanj treh možnih).}
+    \label{fig:O6}
+\end{figure}
+
 \begin{aksiom}
     \label{aks:O7}
 
 \end{aksiom}
 
-Hitro lahko vidimo, da je aksiom~\ref{aks:O1} ekvivalenten postulatu~\ref{post:P1}. \textcolor{red}{popravi reference za aksiome ... PLUS Še ostala povezava s postulati!!!!}. Aksiom~\ref{aks:O2} nam poda konstrukcijo simetrale daljice $AB$, aksiom~\ref{aks:O3} pa simetrali kota, ki ga določata premici in njuno presečišče (v primeru vzporednosti dobimo premico, ki je enako oddaljena od obeh premic). Aksiom~\ref{aks:O4} nam podaja konstrukcijo pravokotnice na premico skozi dano točko. \textcolor{red}{tukej še manjka povezava prou z EVKLIDSKIMI konstrukcijami}.
+Iz slike~\ref{fig:O1_in_O2} je očitno, da je aksiom~\ref{aks:O1} ekvivalenten postulatu~\ref{post:P1}, aksiom~\ref{aks:O2} pa nam poda konstrukcijo simetrale daljice $AB$. Nadalje opazimo, da nam aksiom~\ref{aks:O3} konstruira obe simetrali kota, ki ga določata premici in njuno presečišče (v primeru vzporednosti dobimo premico, ki je enako oddaljena od obeh premic), aksiom~\ref{aks:O4} pa nam podaja konstrukcijo pravokotnice na premico skozi dano točko (slika~\ref{fig:O4}).
+
+Opazimo, da se vse ravnokar naštete konstrukcije da konstruirati z evklidskim orodjem. Po hitrem premisleku tej skupini pridružimo še konstrukcijo, ki jo podaja aksiom~\ref{aks:O5}. Možnosti konstrukcije z neoznačenim ravnilom in šestilom nima le aksiom~\ref{aks:O6}. Zakaj? Eden od dokazov je preko rešitve starogrškega problema o trisekciji kota. V poglavju~\ref{pogl:starogrskiproblemi} bomo spoznali več postopkov, ki nam kot razdelijo na tri skladne dele, pri tem pa uporabimo pregib iz aksioma~\ref{aks:O6}. Ker vemo, da trisekcija kota z evklidskim orodjem ni mogoča (algebraični dokaz \textcolor{red}{DEJ TU EN VIR ZA DOKAZ}), tudi konstrukcija šestega aksioma s tem orodjem ne obstaja.
+
+\opomba{Opazimo, da je aksiom~\ref{aks:O5} poseben primer aksioma~\ref{aks:O6}, ko ena izmed točk že leži na premici. Tako bi ga v resnici lahko iz pravil izpustili. Vendar ga ohranimo ravno zaradi povezave prvih petih aksiomov z evklidskimi konstrukcijami.}
