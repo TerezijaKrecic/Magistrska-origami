@@ -10,6 +10,8 @@ Preden si pogledamo, kaj lahko s prepogibanjem papirja konstruiramo, se spomnimo
 
 Prva knjiga nas še posebej zanima. V njej je Evklid najprej definiral osnovne pojme -- točka, premica, površina, ravnina, ravninski kot, pravi kot, ostri kot, topi kot, krog, središče kroga, premer, enakostranični in enakokraki trikotnik, kvadrat \ldots ter nazadnje upeljal še pojem vzporednih premic. Nato je zapisal znamenitih pet postulatov~\cite{euclidI}, iz katerih izhaja vsa evklidska geometrija:
 
+\renewcommand{\thepostulat}{P\arabic{postulat}}
+
 \begin{postulat}
     \label{post:P1}
     Med dvema poljubnima točkama je mogoče narisati ravno črto.
@@ -52,34 +54,36 @@ Ker so pregibi torej ravne črte, nam služijo kot modeli premic. Kaj so potem m
 Japonski matematik Humiaki Huzita je l.\ 1992 (\textcolor{red}{REFERENCA 26 v uni knjigi, pa v bistvu ugotovi, kdo je original avtor in kdo je kasneje koliko aksiomov rediscoveral!}) zapisal seznam pravil, s katerimi lahko opišemo vse operacije, ki jih lahko naredimo s prepogibanjem papirja. \textcolor{red}{(najprej 6, pol 7, kako je to blo?????)}
 . Ta pravila so znana pod imenom \textcolor{red}{\ldots} aksiomi, vendar je izbira izraza ``aksiom'' mogoče manj primerna, saj za nekatere od njih opisana konstrukcija ob neprimerno izbranih točkah in premicah sploh ne obstaja. Kljub temu bomo zaradi razširjenosti rabe to ime ohranili~\cite[str.\ 7]{zore2022}. Sedaj pa si jih podrobneje poglejmo:
 
-\begin{aksiom}[O1]
+\renewcommand{\theaksiom}{O\arabic{aksiom}}
+
+\begin{aksiom}
     \label{aks:O1}
     Za poljubni točki $A$ in $B$ obstaja natanko en pregib $p$, ki gre skoznju.
 \end{aksiom}
-\begin{aksiom}[O2]
+\begin{aksiom}
     \label{aks:O2}
     Za poljubni točki $A$ in $B$ obstaja natanko en pregib $p$, da se točki pokrijeta.
 \end{aksiom}
-\begin{aksiom}[O3]
+\begin{aksiom}
     \label{aks:O3}
     Za poljubni premici $a$ in $b$ obstaja pregib, ki ju položi eno na drugo.
     \opomba{Če sta premici vzporedni, je tak pregib en sam, sicer pa sta pregiba dva.}
 \end{aksiom}
-\begin{aksiom}[O4]
+\begin{aksiom}
     \label{aks:O4}
     Za poljubno točko $A$ in premico $a$ obstaja natanko en pregib skozi točko $A$, ki je pravokoten na premico $a$.
 \end{aksiom}
-\begin{aksiom}[o5]
+\begin{aksiom}
     \label{aks:O5}
     Za primerno izbrani točki $A$ in $B$ ter premico $a$ obstaja pregib $p$ skozi točko $B$, ki točko $A$ postavi na premico $a$.
 \end{aksiom}
-\begin{aksiom}[06]
+\begin{aksiom}
     \label{aks:O6}
     Za primerno izbrani točki $A$ in $B$ ter premici $a$ in $b$ obstaja pregib $p$, ki točko $A$ postavi na premico $a$ ter točko $B$ na premico $b$.
 \end{aksiom}
-\begin{aksiom}[O7]
+\begin{aksiom}
     \label{aks:O7}
 
 \end{aksiom}
 
-Hitro lahko vidimo, da je aksiom O1 ekvivalenten postulatu~\ref{post:P1}. \textcolor{red}{popravi reference za aksiome ... PLUS Še ostala povezava s postulati!!!!}. Aksiom O2 nam poda konstrukcijo simetrale daljice $AB$, aksiom O3 pa simetrali kota, ki ga določata premici in njuno presečišče (v primeru vzporednosti dobimo premico, ki je enako oddaljena od obeh premic). Aksiom O4 nam podaja konstrukcijo pravokotnice na premico skozi dano točko. \textcolor{red}{tukej še manjka povezava prou z EVKLIDSKIMI konstrukcijami}.
+Hitro lahko vidimo, da je aksiom~\ref{aks:O1} ekvivalenten postulatu~\ref{post:P1}. \textcolor{red}{popravi reference za aksiome ... PLUS Še ostala povezava s postulati!!!!}. Aksiom~\ref{aks:O2} nam poda konstrukcijo simetrale daljice $AB$, aksiom~\ref{aks:O3} pa simetrali kota, ki ga določata premici in njuno presečišče (v primeru vzporednosti dobimo premico, ki je enako oddaljena od obeh premic). Aksiom~\ref{aks:O4} nam podaja konstrukcijo pravokotnice na premico skozi dano točko. \textcolor{red}{tukej še manjka povezava prou z EVKLIDSKIMI konstrukcijami}.
