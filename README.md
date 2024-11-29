@@ -9,7 +9,7 @@ Okvirna vsebina po sklopih:
     - trisekcija kota (Abe, Justin)
     - podvojitev kocke (Messer, Beloch)
 - reševanje enačb
-    - kvadratne enačbe (te se še da samo z ravnilom in šestilom)
+    - kvadratne enačbe (te se še da samo z ravnilom in šestilom, povezava s parabolo)
     - kubične enačbe
         - z Belochinim kvadratom
         - Lillova metoda (z Belochinim prepogibom)
