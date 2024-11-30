@@ -41,112 +41,124 @@ Prva knjiga nas še posebej zanima. V njej je Evklid najprej definiral osnovne p
     \item šestilo, ki ne prenaša razdalj (ko ga dvignemo od podlage, se njegova kraka zložita skupaj)
 \end{itemize}
 
-Formalno so torej edine dovoljene konstrukcije tiste iz postulatov~\ref{post:P1}--~\ref{post:P3} (seveda privzamemo, da so konstruktibilne tudi točke). Vendar je to dovolj, da lahko le z neoznačenim ravnilom in šestilom konstruiramo premice, kote, simetrale kotov in daljic, krožnice in še mnogo drugega. V resnici se da skonstruirati toliko geometrijskih figur, da se matematiki raje vprašamo, česa pa se s tem orodjem \emph{ne} da skonstruirati. In tu pridemo do motivacije za uvedbo origami konstrukcij, saj lahko z njimi npr.\ rešimo kar dva od treh znamenitih starogrških problemov, ki jih z evklidskim orodjem ne moremo. Več o tem sledi v poglavju~\ref{pogl:starogrskiproblemi}.
+Formalno so torej edine dovoljene konstrukcije tiste iz postulatov~\ref{post:P1}--~\ref{post:P3}. Seveda privzamemo, da so konstruktibilne tudi točke, ki jih dobimo kot že dane ali kot presečišča premic in krožnic. Vendar je to dovolj, da lahko le z neoznačenim ravnilom in šestilom konstruiramo premice, kote, simetrale kotov in daljic, krožnice in še mnogo drugega. V resnici se da skonstruirati toliko geometrijskih figur, da se matematiki raje vprašamo, česa pa se s tem orodjem \emph{ne} da skonstruirati. In tu pridemo do motivacije za uvedbo origami konstrukcij, saj lahko z njimi npr.\ rešimo kar dva od treh znamenitih starogrških problemov, ki jih z evklidskim orodjem ne moremo. Več o tem sledi v poglavju~\ref{pogl:starogrskiproblemi}.
 
-\subsection{Origami aksiomi in origami konstrukcije}
+\subsection{Origami operacije}
 
 V nalogi se bomo omejili le na prepogibanje v ravnini, tj.\ list papirja vzamemo za model evklidske ravnine, s prepogibanjem pa v tej ravnini tudi ostanemo. Nadalje pregibe konsktruiramo le po enega naenkrat in v ravni črti, prepovedana pa je uporaba kakršnegakoli orodja (npr.\ škarje in lepilo).  Bralec je ob branju povabljen, da opisane konstrukcije tudi sam preizkusi na listu papirja, sicer pa se jih da brez večjih težav predstavljati tudi brez fizičnega materiala. Pri izbiri papirja je priporočljiv rahlo prosojen papir, ki za lažje prepogibanje dopušča opažanje označb tudi na drugi strani lista.
 
 Ker so pregibi torej ravne črte, nam služijo kot modeli premic. Na začetku, ko imamo pred seboj le (po možnosti kvadraten) list papirja, so naše premice njegove stranice. Manjkajo nam samo še modeli točk. To so ravno oglišča našega lista papirja, nadaljne točke pa dobimo kot presečišča premic, torej presečišča pregibov.
 
-Japonski matematik Humiaki Huzita je l.\ 1992 (\textcolor{red}{REFERENCA 26 v uni knjigi, pa v bistvu ugotovi, kdo je original avtor in kdo je kasneje koliko aksiomov rediscoveral!}) zapisal seznam pravil, s katerimi lahko opišemo vse operacije, ki jih lahko naredimo s prepogibanjem papirja. \textcolor{red}{(najprej 6, pol 7, kako je to blo?????)} Konstrukcije, ki jih dobimo z upoštevanjem teh pravil, bomo poimenovali kar \emph{origami konstrukcije}. Ta pravila so znana pod imenom \textcolor{red}{\ldots} aksiomi, vendar je izbira izraza ``aksiom'' mogoče manj primerna, saj za nekatere od njih opisana konstrukcija ob neprimerno izbranih točkah in premicah sploh ne obstaja. Kljub temu bomo zaradi razširjenosti rabe to ime ohranili~\cite[str.\ 7]{zore2022}.
+V zadnjem stoletju se je preko različnih avtorjev (Jacques Justin, Peter Messer, Benedetto Scimemi, Humiaki Huzita, George Martin; nekateri so med seboj sodelovali, drugi so delovali neodvisno) izoblikoval seznam osmih origami operacij, ki nam omogočajo konstrukcije s prepogibanjem papirja. V~\cite[str.\ 24--26]{hull2020} je dokazan izrek, ki trdi, da so to tudi vse potrebne operacije. Konstrukcije, ki jih dobimo z upoštevanjem le-teh, bomo poimenovali kar \emph{origami konstrukcije}.
 
-Najprej naštejmo te aksiome, potem pa si ob sledečih slikah poglejmo še prikaz opisanih konstrukcij. Videli bomo, da moramo pri nekaterih aksiomih ločiti več primerov~\cite{michael2005, zore2022}.
+Najprej te operacije naštejmo, potem pa si ob sledečih slikah poglejmo še prikaz opisanih konstrukcij. Videli bomo, da moramo pri nekaterih operacijah ločiti več primerov~\cite{michael2005, zore2022}.
 
-\renewcommand{\theaksiom}{O\arabic{aksiom}}
+\renewcommand{\theoperacija}{O\arabic{operacija}}
 
-\begin{aksiom}
-    \label{aks:O1}
+\begin{operacija}
+    \label{op:O1}
     Za poljubni točki $A$ in $B$ obstaja natanko en pregib $p$, ki gre skoznju.
-\end{aksiom}
-\begin{aksiom}
-    \label{aks:O2}
+\end{operacija}
+\begin{operacija}
+    \label{op:02}
+    Za poljubni premici lahko določimo njuno presečišče, če obstaja.
+\end{operacija}
+\begin{operacija}
+    \label{op:O3}
     Za poljubni točki $A$ in $B$ obstaja natanko en pregib $p$, da se točki pokrijeta.
-\end{aksiom}
-\begin{aksiom}
-    \label{aks:O3}
+\end{operacija}
+\begin{operacija}
+    \label{op:O4}
     Za poljubni premici $a$ in $b$ obstaja pregib $p$, ki ju položi eno na drugo.
-\end{aksiom}
-\begin{aksiom}
-    \label{aks:O4}
+\end{operacija}
+\begin{operacija}
+    \label{op:O5}
     Za poljubno točko $A$ in premico $a$ obstaja natanko en pregib $p$ skozi točko $A$, ki je pravokoten na premico $a$.
-\end{aksiom}
-\begin{aksiom}
-    \label{aks:O5}
+\end{operacija}
+\begin{operacija}
+    \label{op:O6}
     Za primerno izbrani točki $A$ in $B$ ter premico $a$ obstaja pregib $p$ skozi točko $B$, ki točko $A$ postavi na premico $a$.
-\end{aksiom}
-\begin{aksiom}
-    \label{aks:O6}
+\end{operacija}
+\begin{operacija}
+    \label{op:O7}
     Za primerno izbrani točki $A$ in $B$ ter premici $a$ in $b$ obstaja pregib $p$, ki točko $A$ postavi na premico $a$ ter točko $B$ na premico $b$.
-\end{aksiom}
+\end{operacija}
+\begin{operacija}
+    \label{op:08}
+    \textcolor{red}{DODAJ O8 in tudi pol kkšen odstavek!}
+\end{operacija}
 
-Sedaj za vsak aksiom posebej poglejmo njegovo konstrukcijo. Iz slike~\ref{fig:O1_in_O2} je očitno, da je aksiom~\ref{aks:O1} ekvivalenten postulatu~\ref{post:P1}, aksiom~\ref{aks:O2} pa nam poda konstrukcijo simetrale daljice $AB$ (pregib naredimo tako, da list papirja uvijemo tako, da se točki prekrijeta, nato pa ga z roko pogladimo, da ga sploščimo. Na pregibu -- premici -- so točke, ki so enako oddaljene od točk $A$ in $B$, torej gre res za simetralo daljice $AB$).
+Sedaj za vsako operacijo posebej poglejmo njeno konstrukcijo. Iz slike~\ref{fig:O1_in_O3} je očitno, da je operacija~\ref{op:O1} ekvivalentna postulatu~\ref{post:P1}, operacija~\ref{op:O3} pa nam poda konstrukcijo simetrale daljice $AB$ (pregib naredimo tako, da list papirja uvijemo tako, da se točki prekrijeta, nato pa ga z roko pogladimo, da ga sploščimo. Na pregibu -- premici -- so točke, ki so enako oddaljene od točk $A$ in $B$, torej gre res za simetralo daljice $AB$).
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/origami_aksiomi/O1.png}
-    \includegraphics[width=0.4\textwidth]{images/origami_aksiomi/O2.png}
-    \caption[Aksioma~\ref{aks:O1} in~\ref{aks:O2}]{Aksioma~\ref{aks:O1} (levo) in~\ref{aks:O2} (desno).}
-    \label{fig:O1_in_O2}
+    \includegraphics[width=0.5\textwidth]{images/origami_operacije/O1.png}
+    \includegraphics[width=0.4\textwidth]{images/origami_operacije/O3.png}
+    \caption[Operaciji~\ref{op:O1} in~\ref{op:O3}]{Operaciji~\ref{op:O1} (levo) in~\ref{op:03} (desno).}
+    \label{fig:O1_in_O3}
 \end{figure}
 
-Nadalje opazimo, da nam aksiom~\ref{aks:O3} konstruira obe simetrali kota, ki ga določata premici in njuno presečišče, v primeru vzporednih premic pa dobimo še tretjo vzporednico, ki leži na sredi med njima (slika~\ref{fig:O3}). Zato sta tu možna po dva ali, v posebnem primeru, en pregib.
+Nadalje opazimo, da nam peracija~\ref{op:O4} konstruira obe simetrali kota, ki ga določata premici in njuno presečišče, v primeru vzporednih premic pa dobimo še tretjo vzporednico, ki leži na sredi med njima (slika~\ref{fig:O4}). Zato sta tu možna po dva ali, v posebnem primeru, en pregib.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/origami_aksiomi/O3.png}
-    \caption[Aksiom~\ref{aks:O3}]{Aksiom~\ref{aks:O3} v obeh možnih primerih.}
-    \label{fig:O3}
-\end{figure}
-
-Aksiom~\ref{aks:O4} nam podaja konstrukcijo pravokotnice na premico skozi dano točko (slika~\ref{fig:O4}). Pri tem je vseeno, ali točka leži na premici ali ne. Pregib opravimo tako, da premico položimo samo nase in pazimo, da je točka $A$ v pregibu (ki ne more biti nič drugega kot pravokoten na premico). Tako imamo res le en možen pregib.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.4\textwidth]{images/origami_aksiomi/O4.png}
-    \caption[Aksiom~\ref{aks:O4}]{Aksiom~\ref{aks:O4}.}
+    \includegraphics[width=0.5\textwidth]{images/origami_operacije/O4.png}
+    \caption[Operacija~\ref{op:O4}]{Operacija~\ref{op:O4} v obeh možnih primerih.}
     \label{fig:O4}
 \end{figure}
 
-Aksiom~\ref{aks:O5} je še posebej zanimiv. Najprej si poglejmo njegovo konstrukcijo. Vzemimo točki $A$ in $B$ ter premico $a$. Iščemo pregib skozi $B$, ki $A$ položi na premico $a$. Ker točka $B$ leži na pregibu, je enako oddaljena tako od točke $A$ kot tudi njene slike $A'$ na premici $a$, torej je $A'$ ravno presečišče premice $a$ in krožnice s središčem v $B$ ter polmerom $AB$. Pregib je simetrala daljice $AA'$, seveda pa po konstrukciji poteka skozi točko $B$. Če velja $ d(A,B) > d(B,a) $, sta presečišči s premico $a$ dve (in s tem tudi dva možna pregiba), v primeru $ d(A,B) = d(B,a) $ je presečišče eno samo (in s tem en možen pregib), saj je premica $a$ tangentna na omenjeno krožnico, v zadnjem primeru, ko velja $ d(A,B) < d(B,a) $, pa presečišč (in s tem tudi pregiba) ni (slika~\ref{fig:O5}).
+Operacija~\ref{op:O5} nam podaja konstrukcijo pravokotnice na premico skozi dano točko (slika~\ref{fig:O5}). Pri tem je vseeno, ali točka leži na premici ali ne. Pregib opravimo tako, da premico položimo samo nase in pazimo, da je točka $A$ v pregibu (ki ne more biti nič drugega kot pravokoten na premico). Tako imamo res le en možen pregib.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.55\textwidth]{images/origami_aksiomi/O5a.png}
-    \includegraphics[width=0.2\textwidth]{images/origami_aksiomi/O5b.png}
-    \includegraphics[width=0.2\textwidth]{images/origami_aksiomi/O5c.png}
-    \caption[Aksiom~\ref{aks:O5}]{Aksiom~\ref{aks:O5} v vseh treh primerih.}
+    \includegraphics[width=0.4\textwidth]{images/origami_operacije/O5.png}
+    \caption[Operacija~\ref{op:O5}]{Operacija~\ref{op:O5}.}
     \label{fig:O5}
 \end{figure}
 
-Zgodba aksioma~\ref{aks:O5} se tu še ne zaključi. Ker na pregibu ležijo vse točke, ki so enako oddaljene od točke $A$ in $A'$, to velja tudi za točko, ki jo dobimo kot presečišče pregiba in pravokotnice na premico $a$ skozi $A'$. Za tako točko $P$ velja $ d(A,P) = d(P,a) $ in je enolično določena (v srednjem primeru na sliki~\ref{fig:O5} je to kar točka $B$). Iz tega sledi, da točka $P$ leži na paraboli z goriščem $A$ in premico vodnico $a$. Pregib seka parabolo le v tej točki (ker je edina enako oddaljena od gorišča in vodnice), torej je konstruiran pregib ravno \emph{tangenta na to parabolo} (slika~\ref{fig:O5_parabola}).
+Operacija~\ref{op:O6} je še posebej zanimiva. Najprej si poglejmo njeno konstrukcijo. Vzemimo točki $A$ in $B$ ter premico $a$. Iščemo pregib skozi $B$, ki $A$ položi na premico $a$. Ker točka $B$ leži na pregibu, je enako oddaljena tako od točke $A$ kot tudi njene slike $A'$ na premici $a$, torej je $A'$ ravno presečišče premice $a$ in krožnice s središčem v $B$ ter polmerom $AB$. Pregib je simetrala daljice $AA'$, seveda pa po konstrukciji poteka skozi točko $B$. Če velja $ d(A,B) > d(B,a) $, sta presečišči s premico $a$ dve (in s tem tudi dva možna pregiba), v primeru $ d(A,B) = d(B,a) $ je presečišče eno samo (in s tem en možen pregib), saj je premica $a$ tangentna na omenjeno krožnico, v zadnjem primeru, ko velja $ d(A,B) < d(B,a) $, pa presečišč (in s tem tudi pregiba) ni (slika~\ref{fig:O6}).
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth]{images/origami_aksiomi/O5_parabola.png}
-    \caption[Tangenta na parabolo]{Pregib iz aksioma~\ref{aks:O5} kot tangenta na parabolo z goriščem v $A$ in premico vodnico $a$.}
-    \label{fig:O5_parabola}
+    \includegraphics[width=0.55\textwidth]{images/origami_operacije/O6a.png}
+    \includegraphics[width=0.2\textwidth]{images/origami_operacije/O6b.png}
+    \includegraphics[width=0.2\textwidth]{images/origami_operacije/O6c.png}
+    \caption[Operacija~\ref{op:O6}]{Operacija~\ref{op:O6} v vseh treh primerih.}
+    \label{fig:O6}
+\end{figure}
+
+Zgodba operacije~\ref{op:O6} se tu še ne zaključi. Ker na pregibu ležijo vse točke, ki so enako oddaljene od točke $A$ in $A'$, to velja tudi za točko, ki jo dobimo kot presečišče pregiba in pravokotnice na premico $a$ skozi $A'$. Za tako točko $P$ velja $ d(A,P) = d(P,a) $ in je enolično določena (v srednjem primeru na sliki~\ref{fig:O6} je to kar točka $B$). Iz tega sledi, da točka $P$ leži na paraboli z goriščem $A$ in premico vodnico $a$. Pregib seka parabolo le v tej točki (ker je edina enako oddaljena od gorišča in vodnice), torej je konstruiran pregib ravno \emph{tangenta na to parabolo} (slika~\ref{fig:O6_parabola}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/origami_operacije/O6_parabola.png}
+    \caption[Tangenta na parabolo]{Pregib iz operacije~\ref{op:O6} kot tangenta na parabolo z goriščem v $A$ in premico vodnico $a$.}
+    \label{fig:O6_parabola}
 \end{figure}
 
 \textcolor{red}{Tukaj omeni, da se s tem da reševat kvadratne enačbe, ampak še pogruntej kako. Pa da se bomo s tem ubadali v poglavju o enačbah.}
 
-Opazimo, da se vse ravnokar naštete konstrukcije da konstruirati z evklidskim orodjem. V resnici velja še več -- Zore v~\cite{zore2022} dokazuje, da so origami konstrukcije, upoštevajoč aksiome~\ref{aks:O1}--~\ref{aks:O5} ekvivalentne tistim z neoznačenim ravnilom in šestilom. Pri tem pa je izvzet aksiom~\ref{aks:O6}, kar kaže na to, da lahko z origamijem storimo še kaj več, npr.\ rešimo kakšen problem, ki ga z evklidskim orodjem ne moremo.
+Opazimo, da se vse ravnokar naštete konstrukcije da konstruirati z evklidskim orodjem. \textcolor{red}{TO JE TREBA POPRAVIT! V resnici velja še več -- Zore v~\cite{zore2022} dokazuje, da so origami konstrukcije, upoštevajoč aksiome~\ref{op:O1}--~\ref{op:O5} ekvivalentne tistim z neoznačenim ravnilom in šestilom. Pri tem pa je izvzet aksiom~\ref{op:O6}, kar kaže na to, da lahko z origamijem storimo še kaj več, npr.\ rešimo kakšen problem, ki ga z evklidskim orodjem ne moremo.}
 
-Poglejmo si še šesti aksiom~\ref{aks:O6}. Konstrukcijo začnemo z upogibom papirja, ki točko $A$ položi na premico $a$, potem pa točko premikamo po premici, dokler se tudi točka $B$ ne stakne s premico $b$. Takrat naredimo pregib. Za enako izbiro točk in premic je lahko možnih več pregibov (gl.\ sliko~\ref{fig:O6}), če pa sta premici vzporedni in je njuna medsebojna razdalja večja od razdalje med točkama, pregib sploh ne obstaja (to lahko bralec ugotovi ob preprostem razmisleku, kako se giba točka $B$ med premikanjem točke $A$ po premici $a$).
+Poglejmo si še sedmo operacijo~\ref{op:O7}. Konstrukcijo začnemo z upogibom papirja, ki točko $A$ položi na premico $a$, potem pa točko premikamo po premici, dokler se tudi točka $B$ ne stakne s premico $b$. Takrat naredimo pregib. Za enako izbiro točk in premic je lahko možnih več pregibov (gl.\ sliko~\ref{fig:O7}), če pa sta premici vzporedni in je njuna medsebojna razdalja večja od razdalje med točkama, pregib sploh ne obstaja (to lahko bralec ugotovi ob preprostem razmisleku, kako se giba točka $B$ med premikanjem točke $A$ po premici $a$).
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.35\textwidth]{images/origami_aksiomi/O6b.png}
-    \includegraphics[width=0.3\textwidth]{images/origami_aksiomi/O6a.png}
-    \includegraphics[width=0.3\textwidth]{images/origami_aksiomi/O6c.png}
-    \caption[Aksiom~\ref{aks:O6}]{Aksiom~\ref{aks:O6} (primer treh pregibov).}
-    \label{fig:O6}
+    \includegraphics[width=0.35\textwidth]{images/origami_operacije/O7b.png}
+    \includegraphics[width=0.3\textwidth]{images/origami_operacije/O7a.png}
+    \includegraphics[width=0.3\textwidth]{images/origami_operacije/O7c.png}
+    \caption[Operacija~\ref{op:O7}]{Operacija~\ref{op:O7} (primer treh pregibov).}
+    \label{fig:O7}
 \end{figure}
 
-Kaj je geometrijski pomen tega aksioma? Če smo pri aksiomu~\ref{aks:O5} dobili tangento na parabolo, potem lahko takoj vidimo, da pri aksiomu~\ref{aks:O6} dobimo \emph{skupno tangento na dve paraboli} -- ena ima gorišče v točki $A$ in premico vodnico $a$, druga pa gorišče v točki $B$ ter premico vodnico $b$.
+Kaj je geometrijski pomen te operacije? Če smo pri operaciji~\ref{op:O6} dobili tangento na parabolo, potem lahko takoj vidimo, da pri operaciji~\ref{op:O7} dobimo \emph{skupno tangento na dve paraboli} -- ena ima gorišče v točki $A$ in premico vodnico $a$, druga pa gorišče v točki $B$ ter premico vodnico $b$.
 
-Izkaže se, da konstrukcije pregiba iz aksioma~\ref{aks:O6} ne moremo opraviti z evklidskim orodjem. Prefinjen način, kako to dokazati, je preko rešitve starogrškega problema o trisekciji kota. V poglavju~\ref{pogl:starogrskiproblemi} bomo spoznali več postopkov, ki nam poljuben kot razdelijo na tri skladne dele, pri tem pa uporabimo pregib iz aksioma~\ref{aks:O6}. Ker vemo, da trisekcija kota z evklidskim orodjem ni mogoča (algebraični dokaz \textcolor{red}{DEJ TU EN VIR ZA DOKAZ}), posledično tudi konstrukcija šestega aksioma s tem orodjem ne obstaja.
+Izkaže se, da operacije~\ref{op:O7} ne moremo opraviti z evklidskim orodjem. Prefinjen način, kako to dokazati, je preko rešitve starogrškega problema o trisekciji kota. V poglavju~\ref{pogl:starogrskiproblemi} bomo spoznali več postopkov, ki nam poljuben kot razdelijo na tri skladne dele, pri tem pa uporabimo pregib iz operacije~\ref{op:O7}. Ker vemo, da trisekcija kota z evklidskim orodjem ni mogoča (algebraični dokaz \textcolor{red}{DEJ TU EN VIR ZA DOKAZ}), posledično tudi konstrukcija operacije~\ref{op:07} s tem orodjem ne obstaja.
 
-Opazimo lahko, da je aksiom~\ref{aks:O5} v resnici poseben primer aksioma~\ref{aks:O6}, saj pri njem ena izmed točk že leži na premici in mora tako pregib potekati skoznjo. Kljub temu ga zaradi povezave prvih petih aksiomov z evklidskimi konstrukcijami ohranimo med pravili.
+\textcolor{red}{Opazimo lahko, da je operacija~\ref{op:O6} v resnici poseben primer operacije~\ref{op:O7}, saj pri njem ena izmed točk že leži na premici in mora tako pregib potekati skoznjo. Kljub temu ga zaradi povezave prvih petih aksiomov z evklidskimi konstrukcijami ohranimo med pravili.}
 
-Za mnoge je presenetljiv zaključek, da so origami konstrukcije preko zgornjih aksiomov močnejše od evklidskih. Kako, ko pa s prepogibanjem papirja ne moremo ``zarisati'' krožnice, kot jo lahko s šestilom? Prednost origamija se skriva v količini števil, ki jih lahko konstruiramo. Če imamo dano krožnico z nekim polmerom ali množico daljic, lahko z ravnilom in šestilom konstruiramo linearne kombinacije, večkratnike ali kvadratne korene teh razdalj. Vsa števila, ki jih lahko konstruiramo z evklidskim orodjem, lahko analitično zapišemo kot rešitve kvadratne enačbe. Tako lahko rešimo vsako enačbo 2.\ reda ali celo enačbo višjega reda, ki se jo da zreducirati na kvadratno enačbo, če so njeni koeficienti konstruktibilni. \textcolor{red}{še dokončaj dilemo, ker se krožnice kao ne da konsrtuirati z origamijem (a se je res ne da?), pa katera vse števila lahko konstruiramo z evklidskim orodjem in katera npr. ne moremo, pa kako to dokažemo npr. z algebro}
+Za mnoge je presenetljiv zaključek, da so origami konstrukcije preko zgornjih operacij močnejše od evklidskih. Kako, ko pa s prepogibanjem papirja ne moremo ``zarisati'' krožnice, kot jo lahko s šestilom?
+
+Prednost origamija se skriva v količini števil, ki jih lahko konstruiramo. Z evklidskim orodjem lahko konstruiramo vsa mogoča racionalna števila, njihove kvadratne korene ter linearne kombinacije le-teh. Dokaz, da so to vsa možna konstruktibilna števila, zahteva natančno obravnavo vseh možnih enačb, ki jih dobimo pri pri iskanju presečišč dveh krožnic, dveh premic ali krožnice in premice, potem pa je potrebno še dokazati, da nam vse nadaljne rabe konstruiranih presečišč podajo najmanjšo razširitev polja racionalnih števil, ki je zaprta za operacijo kvadratnega korenjenja. \textcolor{red}{PREGLEJ ALG2 od Brešarja in mal bolj natančno opiši dokaz in citirej koga} 
+
+\textcolor{red}{kam lahko to umestimo?} Vsa števila, ki jih lahko konstruiramo z evklidskim orodjem, lahko analitično zapišemo kot rešitve kvadratne enačbe. Tako lahko rešimo vsako enačbo 2.\ reda ali celo enačbo višjega reda, ki se jo da zreducirati na kvadratno enačbo, če so njeni koeficienti konstruktibilni. \textcolor{red}{še dokončaj dilemo, ker se krožnice kao ne da konsrtuirati z origamijem (a se je res ne da?)}
