@@ -454,8 +454,8 @@
 % pokončno napisan tekst
 \theoremstyle{definition}
 \newtheorem{aksiom}{Aksiom}
-\newtheorem{postulat}{Postulat}
-\newtheorem{operacija}{}
+\newtheorem{postulat}{Postulat} % DODANO
+\newtheorem{operacija}{Operacija} % DODANO
 \newtheorem{definicija}{Definicija}[section]
 \newtheorem{opomba}[definicija]{Opomba}
 \newtheorem{primer*}[definicija]{Primer}
