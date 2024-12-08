@@ -64,6 +64,7 @@ Ker so pregibi torej ravne črte, nam služijo kot modeli premic. Na začetku, k
 \end{itemize}
 
 \begin{definicija}
+    \label{def:origami_konstruktibilnost}
     Vzemimo kvadraten list papirja. Začetne premice so njegove stranice, začetne točke pa njegova oglišča. Nove premice so pregibi papirja skozi dane ali že skonstruirane točke, nove točke pa so presečišča premic oz.\ pregibov. Konstrukcije, ki jih izvajamo z z zgoraj naštetimi ter ravnimi in enkratnimi pregibi, imenujemo \emph{origami konstrukcije}.
 \end{definicija}
 
@@ -189,49 +190,6 @@ Zadnja operacija~\ref{op:O8} zahteva nevzporedni premici, saj v nasprotnem prime
     \label{fig:O8}
 \end{figure}
 
-\subsubsection{Zrcaljenje točke čez premico z origamijem}
-\label{zrcaljenje_origami}
-
-\textcolor{red}{opiši konstrukcijo iz~\cite[str.\ 28]{hull2020}.}
-
-Ker lahko čez premico zrcalimo točke, lahko čeznjo zrcalimo tudi daljice oz.\ premice (zrcalimo dve točki z daljice in naredimo pregib čez njuni sliki). Zrcaljenje pa nam omogoča še nekaj več, kar nam pove naslednja trditev.
-
-% moja avtorska trditev in dokaz:)
-
-\begin{trditev}
-    \label{trd:prenasanje_razdalj}
-    S prepogibanjem papirja z upoštevanjem pravil iz~\ref{origami_konstrukcije} in origami operacij lahko prenašamo razdalje.
-\end{trditev}
-
-\begin{dokaz}
-    V ravnini si izberimo poljubni točki $A$ in $B$, ki določata daljico z neko dolžino $r$. Naj bo $A'$ poljubna točka in $a$ poljubna premica skoznjo. Trditev pravi, da lahko z origami operacijami konstruiramo točko $B' \in a$, da je $d(A'B') =r$ (slika~\ref{fig:prenos_razdalje_konec}). Pri tem ni pomembno, na kateri strani točke $A'$ leži točka $B'$, saj jo lahko vedno zrcalimo čeznjo.
-
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.5\textwidth]{images/zrcaljenje_konec.png}
-        \caption[Prenašanje razdalj z origamijem]{Prenos dolžine daljice $AB$ na premico $a$ k izbrani točki $A'$.}
-        \label{fig:prenos_razdalje_konec}
-    \end{figure}
-    
-    Prenos razdalje razdelimo na dva dela:
-    \begin{enumerate}
-        \item Če $A \ne A'$, daljico $AB$ zrcalimo čez tisto premico $p$, ki točko $A$ preslika v točko $A'$ (po~\ref{op:O3} je tak pregib oz.\ premica ena sama). Zrcalno sliko točke $B$ označimo z $B''$ (slika~\ref{fig:prenos_razdalje_koraki} levo). V posebnem primeru, ko daljica $AB$ leži na premici $a$, je to že konec konstrukcije. 
-        \item Daljico $A'B''$ rotiramo okoli točke $A'$, da se točka $B''$ preslika na premico $a$. To storimo preko simetrale kota med daljico $A'B''$ in premico $a$ (operacija~\ref{op:O4}) in konstrukcije pravokotnice na to simetralo oz. zrcaljenje točke $B''$ čeznjo (slika~\ref{fig:prenos_razdalje_koraki} desno). S tem dobimo točko $B'$, ki je po konstrukciji od točke $A'$ oddaljena za dolžino $r$.
-    \end{enumerate}
-
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.45\textwidth]{images/zrcaljenje_korak1.png}
-        \includegraphics[width=0.45\textwidth]{images/zrcaljenje_korak2.png}
-        \caption[Prenašanje razdalj z origamijem po korakih]{Zrcaljenje daljice $AB$ (levo) in rotacija daljice čez eno krajišče (desno).}
-        \label{fig:prenos_razdalje_koraki}
-    \end{figure}
-
-    S tem smo razdaljo $r$ prenesli na poljubno mesto v ravnini.
-\end{dokaz}
-
-Da nam prepogibanje papirja omogoča prenašanje razdalj, bomo uporabili v podpoglavju~\ref{origami_konstruktibilnost}.
-
 \subsubsection{Zadostne in potrebne origami operacije}
 
 Izkaže se, da je teh osem operacij zadostnih za katerokoli origami konstrukcijo.
@@ -260,6 +218,72 @@ Ker lahko vse konstrukcije po izreku~\ref{izr:op1do8} opišemo z operacijami~\re
     Če imamo dani vsaj dve točki in dve nevzporedni (lahko tudi identični) premici, ki vsebujeta dane točke, potem lahko vse origami konstrukcije z enkratnimi in ravnimi pregibi opišemo s kombinacijo operacij~\ref{op:O2} in~\ref{op:O7}.
 \end{izrek}
 
+\subsubsection{Zrcaljenje točke čez premico z origamijem}
+\label{zrcaljenje_origami}
+
+Operacija~\ref{op:O3} nam poda simetralo daljice $AB$. Torej je točka $B$ zrcalna slika točke $A$ čez to premico. Kaj pa, če imamo za neko točko $A$ že dano premico $a$ in iščemo njeno zrcalno sliko? Bralec bi lahko naivno predlagal, da naredimo pregib po premici in s svinčnikom označimo zrcalno sliko. A definicija~\ref{def:origami_konstruktibilnost} pravi, da lahko točke dobimo le kot presečišča pregibov, poleg tega pa je uporaba pisala dovoljena le za vidnejšo označbo že konstruiranih točk.
+
+Zato moramo najti zaporedje pregibov, kjer na koncu kot presečišče nekih dveh premic dobimo želeno točko. Za dano premico $a$ in točki $A$, ki ne leži na tej premici (sicer je točka $A$ zrcalna slika sama sebi), lahko zrcalno sliko točke konstruiramo z naslednjimi koraki (prikazani na sliki~\ref{fig:zrcaljenje_cez_premico}, postopek vzet iz~\cite[str.\ 28]{hull2020}):
+\begin{enumerate}
+    \item Z operacijo~\ref{op:O5} prepognemo pravokotnico na premico $a$ skozi točko $A$.
+    \item Z operacijo~\ref{op:O4} prepognemo simetralo kota, ki ga oklepata premica $a$ in njena pravokotnica.
+    \item Z operacijo~\ref{op:O5} prepognemo pravokotnico na simetralo skozi točko $A$. Njeno presečišče s premico $a$ označimo z $B$.
+    \item Z operacijo~\ref{op:O5} prepognemo pravokotnico na pregib iz 3.\ koraka skozi točko $B$. Presečišče novega pregiba in pravokotnice iz 1.\ koraka označimo z $A'$.
+\end{enumerate}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/zrcaljenje_tocke_cez_premico.png}
+    \caption[Zrcaljenje čez premico]{Zrcaljenje točke $A$ čez premico $a$ s prepogibanjem papirja.}
+    \label{fig:zrcaljenje_cez_premico}
+\end{figure}
+
+\begin{trditev}
+    Točka $A'$ iz opisane konstrukcije je zrcalna slika točke $A$.
+\end{trditev}
+
+\begin{dokaz}
+    Trikotnik, ki ga dobimo po 3.\ koraku, je pravokoten in enakokrak, saj je simetrala (pravega kota) iz 2.\ koraka pravokotna na njegovo osnovnico. Zato kot ob točki $A$ znaša $45^{\circ}$. Ker je trikotnik $\triangle A'BA$ pravokoten, je zato tudi enakokrak, torej premica $a$ razpolavlja daljico $AA'$, torej je $A'$ res zrcalna slika točke $A$.
+\end{dokaz}
+
+Ker lahko čez premico zrcalimo točke, lahko čeznjo zrcalimo tudi daljice oz.\ premice -- to storimo tako, da zrcalimo dve točki z daljice in naredimo pregib čez njuni sliki. Zrcaljenje pa nam omogoča še nekaj več, kar nam pove naslednja trditev.
+
+% moja avtorska trditev in dokaz:)
+
+\begin{trditev}
+    \label{trd:prenasanje_razdalj}
+    Z upoštevanjem pravil iz~\ref{origami_konstrukcije} in origami operacij lahko s prepogibanjem papirja prenašamo razdalje.
+\end{trditev}
+
+\begin{dokaz}
+    V ravnini si izberimo poljubni točki $A$ in $B$, ki določata daljico z neko dolžino $r$. Naj bo $a$ poljubna premica in $A'$ poljubna točka na njej. Trditev pravi, da lahko z origami operacijami konstruiramo točko $B' \in a$, da je $d(A', B') =r$ (slika~\ref{fig:prenos_razdalje_konec}). Pri tem ni pomembno, na kateri strani točke $A'$ leži točka $B'$, saj jo lahko vedno zrcalimo čeznjo.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{images/zrcaljenje_konec.png}
+        \caption[Prenašanje razdalj z origamijem]{Prenos dolžine daljice $AB$ na premico $a$ k izbrani točki $A'$.}
+        \label{fig:prenos_razdalje_konec}
+    \end{figure}
+    
+    Prenos razdalje razdelimo na dva dela:
+    \begin{enumerate}
+        \item Če $A \ne A'$, daljico $AB$ zrcalimo čez tisto premico $p$, ki točko $A$ preslika v točko $A'$ (po~\ref{op:O3} je tak pregib oz.\ premica ena sama). Zrcalno sliko točke $B$ označimo z $B''$ (slika~\ref{fig:prenos_razdalje_koraki} levo). V posebnem primeru, ko daljica $AB$ leži na premici $a$, je to že konec konstrukcije. 
+        \item Daljico $A'B''$ rotiramo okoli točke $A'$, da se točka $B''$ preslika na premico $a$. To storimo preko simetrale kota med daljico $A'B''$ in premico $a$ (operacija~\ref{op:O4}) ter konstrukcije pravokotnice na to simetralo skozi točko $B''$ (t.\ j.\ zrcaljenje točke $B''$ čeznjo, slika~\ref{fig:prenos_razdalje_koraki} desno). S tem dobimo točko $B'$, ki je po konstrukciji od točke $A'$ oddaljena za dolžino $r$.
+    \end{enumerate}
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.45\textwidth]{images/zrcaljenje_korak1.png}
+        \includegraphics[width=0.45\textwidth]{images/zrcaljenje_korak2.png}
+        \caption[Prenašanje razdalj z origamijem po korakih]{Zrcaljenje daljice $AB$ (levo) in rotacija daljice čez eno krajišče (desno).}
+        \label{fig:prenos_razdalje_koraki}
+    \end{figure}
+
+    S tem smo razdaljo $r$ prenesli na poljubno mesto v ravnini.
+\end{dokaz}
+
+Dejstvo, da nam prepogibanje papirja omogoča prenašanje razdalj, bomo uporabili v podpoglavju~\ref{origami_konstruktibilnost}.
+
 \subsection{Kje origami konstrukcije nadvladajo evklidske}
 
 Prišli smo do ključnega dela poglavja -- reševanje vprašanja, zakaj se nam z origami konstrukcijami sploh splača ukvarjati.
@@ -268,7 +292,9 @@ Za začetek naj bralec ob zgornjih opisih posamezne operacije premisli, da je mo
 
 Ključna je sedma operacija. Izkaže se namreč, da operacije~\ref{op:O7} oz.\ Belochinega pregiba ne moremo opraviti z evklidskim orodjem. Prefinjen način, kako to dokazati, je preko rešitve starogrškega problema o trisekciji kota. V poglavju~\ref{pogl:starogrskiproblemi} bomo spoznali več origami postopkov, ki nam poljuben kot razdelijo na tri skladne dele, pri tem pa uporabimo pregib iz operacije~\ref{op:O7}. Ker \emph{trisekcija kota z evklidskim orodjem ni mogoča} (dokaz v~\cite[str.\ 77--78]{jerman1998}), posledično tudi konstrukcija operacije~\ref{op:O7} s tem orodjem ne obstaja.
 
-V primerjavi z operacijami~\ref{op:O1}--\ref{op:O8} je evklidsko orodje resda močnejše kar se tiče konstrukcij krožnih lokov (saj nam prepogibanje papirja vrne le ravne črte), ima pa šibke točke, kar je pokazala zgornja rešitev starogrškega problema. Belochin pregib je celo ključen za postopek reševanja kubičnih enačb, ki jih v splošne z evklidskim orodjem ne moremo reševati (gl.\ poglavje~\ref{pogl:enacbe}). Prednost origamija se namreč skriva tudi v količini števil, ki jih lahko konstruiramo.
+Tako z evklidskim orodjem kot s prepogibanjem papirja lahko torej konstruiramo premice in točke ter prenašamo razdalje. Le evklidskim orodjem lahko konstruiramo tudi krožne loke, le s prepogibanjem papirja pa lahko tretjinimo poljuben kot. Origami nam ponuja še več rešitev, kjer j evklidsko orodje nemočno, npr. uporaba Belochinega pregiba je ključna za enega \textcolor{red}{(ali več???)} od postopkov reševanja kubičnih enačb, ki jih v splošnem z evklidskim orodjem ne moremo reševati (gl.\ poglavje~\ref{pogl:enacbe}).
+
+Prednost origamija pred evklidskim orodjem se v skriva tudi v količini števil, ki jih lahko konstruiramo.
 
 \subsubsection{Algebrski pogled na evklidske konstrukcije}
 
