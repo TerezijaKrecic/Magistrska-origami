@@ -308,8 +308,8 @@
 
 \@unless{\boolean{@anglescina}}{
 % capitalise according to slovenian rules
-% ORIGINAL \DeclareFieldFormat{sentencecase}{\MakeSentenceCase{#1}}
-\DeclareFieldFormat{titlecase}{#1} % to je moja sprememba
+\DeclareFieldFormat{sentencecase}{\MakeSentenceCase{#1}} % ORIGINAL
+% \DeclareFieldFormat{titlecase}{#1} % to je moja sprememba
 \renewbibmacro*{title}{%
   \ifthenelse{\iffieldundef{title}\AND\iffieldundef{subtitle}}
     {}

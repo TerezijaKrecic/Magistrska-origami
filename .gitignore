@@ -11,9 +11,9 @@
 *.nav
 *.snm
 *.toc
-# *.ind
+*.ind
 *.ilg
-# *.idx
+*.idx
 *.xmpi
 *.xmpdata
 
