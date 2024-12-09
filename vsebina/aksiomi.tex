@@ -265,10 +265,10 @@ Ker lahko čez premico zrcalimo točke, lahko čeznjo zrcalimo tudi daljice oz.\
         \label{fig:prenos_razdalje_konec}
     \end{figure}
     
-    Prenos razdalje razdelimo na dva dela:
+    Prenos razdalje razdelimo na dva koraka:
     \begin{enumerate}
         \item Če $A \ne A'$, daljico $AB$ zrcalimo čez tisto premico $p$, ki točko $A$ preslika v točko $A'$ (po~\ref{op:O3} je tak pregib oz.\ premica ena sama). Zrcalno sliko točke $B$ označimo z $B''$ (slika~\ref{fig:prenos_razdalje_koraki} levo). V posebnem primeru, ko daljica $AB$ leži na premici $a$, je to že konec konstrukcije. 
-        \item Daljico $A'B''$ rotiramo okoli točke $A'$, da se točka $B''$ preslika na premico $a$. To storimo preko simetrale kota med daljico $A'B''$ in premico $a$ (operacija~\ref{op:O4}) ter konstrukcije pravokotnice na to simetralo skozi točko $B''$ (t.\ j.\ zrcaljenje točke $B''$ čeznjo, slika~\ref{fig:prenos_razdalje_koraki} desno). S tem dobimo točko $B'$, ki je po konstrukciji od točke $A'$ oddaljena za dolžino $r$.
+        \item Daljico $A'B''$ rotiramo okoli točke $A'$, da se točka $B''$ preslika na premico $a$. To storimo tako, da z operacijo~\ref{op:O4} konstruiramo simetralo kota med daljico $A'B''$ in premico $a$ in čeznjo zrcalimo točko $B''$ (slika~\ref{fig:prenos_razdalje_koraki} desno). S tem dobimo točko $B' \in a$, ki je po konstrukciji od točke $A'$ oddaljena za dolžino $r$.
     \end{enumerate}
 
     \begin{figure}[h]
@@ -350,13 +350,31 @@ Poiščimo še množico števil, ki jih lahko konstruiramo z origamijem.
 \end{opomba}
 
 \begin{izrek}
-    Za poljubne $a, b, r \in \Q$, pri čemer $r > 0$ in $\sqrt{r} \notin \Q$, so origami-konstruktibilna vsa števila iz množice $\Q(r) = \{a + b\sqrt{r}\}$.
+    Za poljuben $r \in \Q^{+}, \sqrt{r} \notin \Q$, so origami-konstruktibilna vsa števila iz množice $\Q(r) = \{a + b\sqrt{r}; a, b \in \Q\}$.
 \end{izrek}
 
 \begin{dokaz}
-    Dokazati moramo, da znamo s prepogibanjem seštevati, odštevati, množiti, deliti in koreniti dana oz.\ že konstruirana števila. Na začetku imamo po točki $(1, 0)$ na abscisni osi dano število 1. Brez težav lahko konstruiramo točko $(x, 0)$ za poljuben $x \in \Z$, saj znamo iz abscisne osi in dveh točk, danih v definiciji, konstruirati vertikalne premice in zrcaliti točko čeznje. Ker lahko z origamijem prenašamo razdalje, je tudi seštevanje in odštevanje že konstruiranih števil enostavno. Množenje je poseben primer seštevanja, deljenje pa \textcolor{red}{referenca na poglavje, kjer se pokaže delitev na $n$ delov, da se tam dokaže}. Tako lahko konstruiramo poljuben $x \in \Q$. Manjka nam samo še konstrukcija $\sqrt{x}$ za poljuben $x \in \Q$. V ta namen si poglejmo naslednjo konstrukcijo:
-
-    \textcolor{red}{konstrukcija korena iz x na str. 58 Hull 2013 vnesi v bib}
+    Ekvivalentno to pomeni, da lahko konstruiramo realne rešitve poljubne kvadratne enačbe, saj je splošna rešitev ravno oblike $a + b\sqrt{r} $ za neke $ a, b \in \Q$ in $r \in \Q^{+}$. Torej moramo dokazati, da znamo s prepogibanjem seštevati, odštevati, množiti, deliti in koreniti dana oz.\ že konstruirana števila.
+    
+    Na začetku imamo dani točki $(0, 0)$ in $(1, 0)$, ki predstavljata števili 0 in 1. Brez težav lahko za poljuben $x \in \Z$ konstruiramo točko $(x, 0)$, saj znamo s pomočjo v definiciji dane abscisne osi in dveh točk konstruirati vertikalne premice ter zrcaliti točke čeznje. Ker lahko z origamijem prenašamo razdalje, je tudi seštevanje in odštevanje že konstruiranih števil enostavno. Deljenje je podrobneje obravnavano v poglavju~\ref{pogl:prepog_kvadrata}, kjer bomo spoznali, kako neko dolžino s prepogibanjem razdeliti na $n$ delov za poljubni $n \in \N$. S tem znanjem in uporabo množenja (ki je poseben primer seštevanja) lahko torej konstruiramo poljuben $x \in \Q$ oz.\ poljubno točko $(x, y)$ z racionalnima koordinatama v ravnini.
+    
+    Manjka nam samo še konstrukcija kvadratnega korena poljubnega racionalnega števila. V ta namen si poglejmo naslednjo konstrukcijo (vzeto iz~\cite[str.\ 58]{hull2013}):
+    Imejmo točko $A (0, 1) $, premico $y = -1$ in poljuben $r \in \Q^{+}$ (po zgornjem premisleku jih znamo konstruirati). Na ordinatni osi označimo točko $B (0, -\frac{r}{4})$ in naredimo pregib skoznjo, ki točko $A$ položi na premico $y = -1$. Njena zrcalna slika je $A' (t, 0) $ za nek $t \in \R$ (slika~\ref{fig:konstrukcija_korena}).
+    
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{images/kvadratni_koren.png}
+        \caption[Konstrukcija korena]{Konstrukcija števila $\sqrt{r}$ za poljuben $r \in \Q^{+}$.}
+        \label{fig:konstrukcija_korena}
+    \end{figure}
+    
+    Pregib poteka skozi točko $B$ in razpolovišče daljice $AA'$, torej je njegov koeficient $k_B = \frac{r}{2t}$ (izpeljavo prepuščamo bralcu). Ker je pregib simetrala daljice $AA'$, njena nosilka pa ima koeficient $k_A = - \frac{2}{t}$, dobimo enačbo
+    \begin{align*}
+        k_B &= - \frac{1}{k_A}\\
+        \frac{r}{2t} &= \frac{t}{2}\\
+        r &= t^2 \text{ oz. } t = \sqrt{r}.
+    \end{align*}
+    Na koncu le še prepognemo pravokotnico na abscisno os skozi točko $A'$ in tako dobimo točko $(\sqrt{r}, 0)$. Torej smo konstruirali število $\sqrt{r}$ za poljuben $r \in \Q^{+}$.
 \end{dokaz}
 
 \begin{posledica}
