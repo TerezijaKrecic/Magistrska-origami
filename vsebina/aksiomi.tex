@@ -157,7 +157,7 @@ Zgodba operacije~\ref{op:O6} se tu še ne zaključi. Ker na pregibu ležijo vse 
     \label{fig:O6_parabola}
 \end{figure}
 
-Poglejmo si naslednjo operacijo. Konstrukcijo~\ref{op:O7} začnemo z upogibom papirja, ki točko $A$ položi na premico $a$, potem pa točko premikamo po premici, dokler se tudi točka $B$ ne stakne s premico $b$. Takrat naredimo pregib. Za enako izbiro točk in premic je lahko možnih več pregibov (gl.\ sliko~\ref{fig:O7}), če pa sta premici vzporedni in je njuna medsebojna razdalja večja od razdalje med točkama, pregib sploh ne obstaja (to lahko bralec ugotovi ob preprostem razmisleku, kako se giba točka $B$ med premikanjem točke $A$ po premici $a$).
+Poglejmo si naslednjo operacijo. Konstrukcijo~\ref{op:O7} začnemo z upogibom papirja, ki točko $A$ položi na premico $a$, potem pa točko premikamo po premici, dokler se tudi točka $B$ ne stakne s premico $b$. Takrat naredimo pregib. Za enako izbiro točk in premic je lahko možnih več pregibov (\textcolor{red}{(baje največ trije~\cite[str.\ 38 spodaj]{hull2020})}, gl.\ sliko~\ref{fig:O7}), če pa sta premici vzporedni in je njuna medsebojna razdalja večja od razdalje med točkama, pregib sploh ne obstaja (to lahko bralec ugotovi ob preprostem razmisleku, kako se giba točka $B$ med premikanjem točke $A$ po premici $a$).
 
 \begin{figure}[h]
     \centering
@@ -220,7 +220,7 @@ Ker lahko vse konstrukcije po izreku~\ref{izr:op1do8} opišemo z operacijami~\re
     Če imamo dani vsaj dve točki in dve nevzporedni (lahko tudi identični) premici, ki vsebujeta dane točke, potem lahko vse origami konstrukcije z enkratnimi in ravnimi pregibi opišemo s kombinacijo operacij~\ref{op:O2} in~\ref{op:O7}.
 \end{izrek}
 
-\subsubsection{Zrcaljenje točke čez premico z origamijem}
+\subsubsection{Zrcaljenje točke čez premico}
 \label{zrcaljenje_origami}
 
 Operacija~\ref{op:O3} nam poda simetralo daljice $AB$. Torej je točka $B$ zrcalna slika točke $A$ čez to premico. Kaj pa, če imamo za neko točko $A$ že dano premico $a$ in iščemo njeno zrcalno sliko? Bralec bi lahko naivno predlagal, da naredimo pregib po premici in s svinčnikom označimo zrcalno sliko. A definicija~\ref{def:origami_konstruktibilnost} pravi, da lahko točke dobimo le kot presečišča pregibov, poleg tega pa je uporaba pisala dovoljena le za vidnejšo označbo že konstruiranih točk.
@@ -299,6 +299,7 @@ Tako z evklidskim orodjem kot s prepogibanjem papirja lahko torej konstruiramo p
 Prednost origamija pred evklidskim orodjem se v skriva tudi v količini števil, ki jih lahko konstruiramo.
 
 \subsubsection{Algebrski pogled na evklidske konstrukcije}
+\label{podpogl:evkl_konstruktibilnost}
 
 \begin{definicija}
     Na listu papirja, ki nam služi kot model ravnine $\R^2$, imejmo dano abscisno os, izhodišče $(0,0)$ in razdaljo 1. Če lahko le z neoznačenim ravnilom in šestilom konstruiramo točko $(x,0)$, rečemo, da je $x$ \emph{evklidsko-konstruktibilno} število. Pri tem upoštevamo tri pravila, ki izhajajo iz Evklidovih aksiomov in postulatov:
@@ -313,7 +314,7 @@ Prednost origamija pred evklidskim orodjem se v skriva tudi v količini števil,
     Ker lahko ekvivalentno uporabimo šestilo, ki prenaša razdalje, je dovolj \emph{kjerkoli} v ravnini konstruirati točki z medsebojno razdaljo $x$.
 \end{opomba}
 
-Jerman bralca v~\cite{jerman1998} na zelo strukturiran in nazoren način popelje čez dokaz, da lahko z evklidskim orodjem konstruiramo vsa mogoča racionalna števila, njihove vsote, razlike, zmnožke, količnike, kvadratne korene ter linearne kombinacije vsega naštetega. To je množica
+Jerman bralca v~\cite{jerman1998} na zelo strukturiran in nazoren način popelje čez dokaz, da lahko z evklidskim orodjem konstruiramo natanko vsa racionalna števila, njihove vsote, razlike, zmnožke, količnike, kvadratne korene ter linearne kombinacije vsega naštetega. To je množica
 $$
     \Q(r) = \{ a + b \sqrt{r}; a, b, r \in \Q; r > 0 \text{ in } \sqrt{r} \notin \Q \},
 $$
@@ -332,7 +333,7 @@ Da pokažemo, da so to vsa možna evklidsko-konstruktibilna števila, je potrebn
 
 Izreku takoj sledita dokaza, da trisekcija kota v splošnem ter konstrukcija števila $ \sqrt[3]{2} $ z evklidskim orodjem nista mogoči~\cite[str.\ 77--78]{jerman1998}.
 
-Iz izreka sledi tudi, da lahko vsa evklidsko-konstruktibilna števila analitično zapišemo kot rešitve kvadratne enačbe. O reševanju enačb se bomo natančneje ukvarjali v poglavju~\ref{pogl:enacbe}.
+Iz izreka sledi tudi, da lahko vsa evklidsko-konstruktibilna števila analitično zapišemo kot rešitve kvadratne enačbe z racionalnimi koeficienti. O reševanju enačb se bomo natančneje ukvarjali v poglavju~\ref{pogl:enacbe}.
 
 \subsubsection{Števila, konstruktibilna z origamijem}
 \label{origami_konstruktibilnost}
@@ -381,6 +382,7 @@ Poiščimo še množico števil, ki jih lahko konstruiramo z origamijem.
 \end{dokaz}
 
 \begin{posledica}
+    \label{posl:evkl_origami_konstruktibilnost}
     Vsa evklidsko-konstruktibilna števila so origami-konstruktibilna.
 \end{posledica}
 

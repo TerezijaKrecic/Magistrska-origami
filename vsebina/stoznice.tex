@@ -82,7 +82,7 @@ Dobili smo parametrizacijo neke družine premic. Za vsak $t \in \R$ torej dobimo
 
 Za vse točke na pregibu velja, da so enako oddaljene od točk $A$ in $A'$. Vemo že, da obstaja le ena točka $T \in a$, za katero velja $d(T, A) = d(T, a)$. Njena abscisa je $x = t$ (točka $T$ leži na pregibu točno nad točko $A'$) in iz enačbe~\ref{eq:tang_par}, dobimo še ordinato $y = t^2 / 4$. Ker točka $T$ za vsak $t \in \R$ leži na paraboli, pri menjavi $x = t$ dobimo njeno enačbo: $y = x^2 / 4$.
 
-Vendar to ni dokaz, da je obris pregibov iz naloge res parabola. Zgornji premislek temelji na že znanem dejstvu, da so pregibi tangentni na parabole, vendar nam nič ne zagotavlja, da take točke $T$ ležijo točno na obrisu. \textcolor{red}{(A mogoče je tam na strani 56 (Hull2013) spodej, ENVELOPE WAY, kakšen izrek, da ti tangente na ktrivuljo izrišejo prou to krivuljo?)}
+Vendar to ni dokaz, da je obris pregibov iz naloge res parabola. Zgornji premislek temelji na že znanem dejstvu, da so pregibi tangentni na parabole, vendar nam nič ne zagotavlja, da take točke $T$ ležijo točno na obrisu. \textcolor{red}{(A mogoče je tam na strani 56 (Hull2013) spodej, ENVELOPE WAY, kakšen izrek, da ti tangente na ktrivuljo izrišejo prou to krivuljo?)} (envelope oz.\ ovojnica: \url{https://en.wikipedia.org/wiki/Envelope_%28mathematics%29})
 
 Hull v~\cite[str.\ 55--56]{hull2013} poda prefinjen dokaz preko kvadratne formule. Vemo, da pregib~\ref{op:O6} ne obstaja vedno (slika~\ref{fig:O6} desno). Poglejmo, ali obstajajo v ravnini našega modela kakšne točke, skozi katere ne moremo konstruirati pregiba oz.\ tangente. Vzemimo našo parametrizacijo družine tangent (enačba~\ref{eq:tang_par}). Če jo rešimo za $t$, nam dobljena formula pove, za katere vrednosti $t$ pregib poteka skozi točko $(x, y)$:
 $$ \frac{1}{4}t^2 - \frac{x}{2}t + y = 0 \Rightarrow t_{1,2} = \frac{\frac{x}{2} \pm \sqrt{\frac{x^2}{4} - y}}{\frac{1}{2}}.$$
@@ -93,8 +93,15 @@ Torej je naš razmislek dva odstavka višje utemeljen. Sedaj, ko vemo, da je obr
     \item Naj bo $y(x)$ naša parabola, katere enačbo iščemo. Vemo, da je v našem modelu za poljuben $t \in \R$ pregib v neki točki $(x, y(x))$ tangenten na parabolo, koeficient tangente pa je $t / 2$. Očitno velja $x = t$, torej je koeficient kar $x / 2$. Zato dobimo
     $$ \frac{dy}{dx} = \frac{x}{2} \Rightarrow y = \frac{x^2}{4} + C. $$
     Ker parabola očitno poteka skozi točko $(0, 0)$, je $C = 0$ in dobimo želeno enačbo $y = x^2 / 4$.
-    \item \textcolor{red}{Envelope way -- gl.\ ~\cite[str.\ 56 spodaj]{hull2013} (tema iz diferencialne ali algebraične geometrije).}
+    \item \textcolor{red}{Envelope way -- gl.\ ~\cite[str.\ 56 spodaj]{hull2013} (tema iz diferencialne ali algebraične geometrije). Gl.\ tudi sliko~\ref{fig:envelope}}
 \end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/hull2020_envelope_way.png}
+    \caption[Envelope]{Izsek iz~\cite[str.\ 32]{hull2020}.}
+    \label{fig:envelope}
+\end{figure}
 
 \textcolor{red}{na koncu še O7 -- konstrukcija skupne parabole na dve paraboli -- a se da iz tega še kaj pametnega izcimit?}
 
@@ -202,4 +209,5 @@ Podobno kot prej lahko sklepamo, da se nam izriše obris hiperbole. Spomnimo se,
     \end{figure}  
 \end{dokaz}
 
-Bolj analitičen dokaz, kjer se izračuna splošno enačbo te hiperbole glede na izbrano krožnico in točko zunaj nje, najdemo v~\cite[str.\ 205--206]{smith2003}.
+\textcolor{red}{Bolj analitičen dokaz, kjer se izračuna splošno enačbo te hiperbole glede na izbrano krožnico in točko zunaj nje, najdemo v~\cite[str.\ 205--206]{smith2003}. Nekaj je tudi v~\cite[str.\ 34 spodaj]{hull2020}. Lep dokaz za elipso in hiperbolo (oboje skupej) je tudi v~\cite{lotka1907} --`` a very nice analytical method that simultaneously proves that the resulting envelopes are ellipses and hyperbolas''. Pa tudi v~\cite{yates1943} so dokazi ``for the parabola, ellipse, and hyperbola that are the most concise and elegant that the
+author has seen''}
