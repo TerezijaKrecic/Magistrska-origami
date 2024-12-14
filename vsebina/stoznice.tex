@@ -1,17 +1,17 @@
-\section{Prepogibanje stožnic}
+\section{Pregibanje tangent na stožnice}
 \label{pogl:stoznice}
 
 Iz didaktičnega vidika zelo zanimivo poglavje nam predstavlja konstrukcije tangent na stožnice s prepogibanjem papirja. Vsebina je tu predstavljena tako, da je bralec najprej povabljen, da vzame list papirja in ga prepogiba po navedenih korakih. Po opažanju, kaj se na papirju pri tem prikaže, preidemo na matematični del, kjer dokažemo, da so prepogibi res tangente na določeno stožnico.
 
 Učitelji matematike so povabljeni, da si pri obravnavi stožnic vzamejo čas in izvedejo spodnje aktivnosti. Dijaki bodo z veliko verjetnostjo presenečeni nad rezultati zgibanja, kar jih lahko bolj motivira za obravnavo geometričnih lastnosti stožnic. Priporočljiva je tudi izvedba ure v računalniški učilnici, kjer lahko vsak dijak z ustreznim programskim orodjem (npr.\ Geogebra) sam poskusi zgraditi opisano konstrukcijo. S tem lahko znanje o stožnicah le še bolj utrdi.
 
-Z origamijem ne moremo konstruirati gladkih krožnih lokov. Kljub temu pa lahko z upoštevanjem določenih korakov konstruiramo lomljeno obliko stožnic. Če bi korake ponavljali v nedogled, bi v limiti res dobili želeno krivuljo. Pa si najprej poglejmo, kako prepognemo krožnico.
+Z origamijem ne moremo konstruirati gladkih krožnih lokov. Kljub temu pa lahko z upoštevanjem določenih korakov konstruiramo premice, ki so tangentne na neko krivuljo. Več takih tangent nam poda nekakšno lomljenko, če pa bi konstrukcije pregibov ponavljali v nedogled, bi v limiti res dobili gladko krivuljo. Pa si poglejmo, kako s prepogibi dobimo obliko stožnic. \textcolor{red}{envelope oz.\ ovojnica:} \url{https://en.wikipedia.org/wiki/Envelope_%28mathematics%29}
 
 \subsection{Krožnica}
 
 % Tega nikjer v literaturi ni in sem sama dodala. Malo preveč osnovno, ma če se obravnava tiste tri stožnice, pa se lahko kar vse, ane.
 
-\textit{\textbf{Aktivnost:} Vzemi list papirja in svinčnik ter na sredi označi točko $S$. Nato drugje označi še točko $A$. Skozi točko $S$ prepogni poljubno premico in na njej označi točko $A'$, da velja $|SA| = |SA'|$. Nato skozi točko $A'$ prepogni pravokotnico na premico $SA'$. To ponovi čimvečkrat za drugo izbiro premice skozi točko $S$ (gl.\ sliko~\ref{fig:koraki_kroznica}). Kaj opaziš?}
+\textit{\textbf{Aktivnost:} Vzemi list papirja in svinčnik ter na sredi označi točko $S$. Nato drugje označi še točko $A$. Skozi točko $S$ prepogni poljubno premico in na njej označi točko $A'$, da velja $|SA| = |SA'|$. Nato skozi točko $A'$ prepogni pravokotnico na premico $SA'$. To je iskan pregib. To ponovi čimvečkrat za različno izbiro premice skozi točko $S$ (gl.\ sliko~\ref{fig:koraki_kroznica}). Kaj opaziš?}
 
 \begin{figure}[h]
     \centering
@@ -22,7 +22,7 @@ Z origamijem ne moremo konstruirati gladkih krožnih lokov. Kljub temu pa lahko 
     \label{fig:koraki_kroznica}
 \end{figure}
 
-\opomba{V podpoglavju~\ref{zrcaljenje_origami} smo se naučili prenašati razdalje, zato je zgornja konstrukcija mogoča, zahteva pa še nekaj dodatnih vmesnih pregibov.}
+\opomba{V podpoglavju~\ref{zrcaljenje_origami} smo se naučili prenašati razdalje, zato je zgornja konstrukcija mogoča, zahteva pa še nekaj dodatnih vmesnih pregibov (gl.\ dokaz trditve~\ref{trd:prenasanje_razdalj}).}
 
 Iz konstrukcije pregiba kot pravokotnice na premico $SA'$ skozi točko $A'$ je naslednja trditev očitna in ne potrebuje zapisanega dokaza.
 
@@ -34,7 +34,7 @@ Za različno izbiro premic skozi točko $S$ dobimo različne tangente in s tem l
 
 \subsection{Parabola}
 
-\textit{\textbf{Aktivnost:} Vzemi pravokoten list papirja in svinčnik ter nekje sredi spodnje polovice lista s pisalom označi točko. Nato si izberi točko še na spodnji stranici lista in ga prepogni tako, da se obe izbrani točki prekrijeta. To ponovi čimvečkrat za drugo izbiro točke na spodnji stranici papirja (gl.\ sliko~\ref{fig:koraki_parabola}). Kaj opaziš?}
+\textit{\textbf{Aktivnost:} Vzemi pravokoten list papirja in svinčnik ter nekje sredi spodnje polovice lista s pisalom označi točko. Nato si izberi točko še na spodnji stranici lista in ga prepogni tako, da se obe izbrani točki prekrijeta. To ponovi čimvečkrat za različno izbiro točke na spodnji stranici papirja (gl.\ sliko~\ref{fig:koraki_parabola}). Kaj opaziš?}
 
 \begin{figure}[h]
     \centering
@@ -76,7 +76,7 @@ Dobili smo parametrizacijo neke družine premic. Za vsak $t \in \R$ torej dobimo
 
 Za vse točke na pregibu velja, da so enako oddaljene od točk $A$ in $A'$. Vemo že, da obstaja le ena točka $T \in a$, za katero velja $d(T, A) = d(T, a)$. Njena abscisa je $x = t$ (točka $T$ leži na pregibu točno nad točko $A'$) in iz enačbe~\ref{eq:tang_par}, dobimo še ordinato $y = t^2 / 4$. Ker točka $T$ za vsak $t \in \R$ leži na paraboli, pri menjavi $x = t$ dobimo njeno enačbo: $y = x^2 / 4$.
 
-Vendar to ni dokaz, da je obris pregibov iz naloge res parabola. Zgornji premislek temelji na že znanem dejstvu, da so pregibi tangentni na parabole, vendar nam nič ne zagotavlja, da take točke $T$ ležijo točno na obrisu. \textcolor{red}{(A mogoče je tam na strani 56 (Hull2013) spodej, ENVELOPE WAY, kakšen izrek, da ti tangente na ktrivuljo izrišejo prou to krivuljo?)} (envelope oz.\ ovojnica: \url{https://en.wikipedia.org/wiki/Envelope_%28mathematics%29})
+Vendar to ni dokaz, da je obris pregibov iz naloge res parabola. Zgornji premislek temelji na že znanem dejstvu, da so pregibi tangentni na parabole, vendar nam nič ne zagotavlja, da take točke $T$ ležijo točno na obrisu. \textcolor{red}{(A mogoče je tam na strani 56 (Hull2013) spodej, ENVELOPE WAY, kakšen izrek, da ti tangente na ktrivuljo izrišejo prou to krivuljo?)}
 
 Hull v~\cite[str.\ 55--56]{hull2013} poda prefinjen dokaz preko kvadratne formule. Vemo, da pregib~\ref{op:O6} ne obstaja vedno (slika~\ref{fig:O6} desno). Poglejmo, ali obstajajo v ravnini našega modela kakšne točke, skozi katere ne moremo konstruirati pregiba oz.\ tangente. Vzemimo našo parametrizacijo družine tangent (enačba~\ref{eq:tang_par}). Če jo rešimo za $t$, nam dobljena formula pove, za katere vrednosti $t$ pregib poteka skozi točko $(x, y)$:
 $$ \frac{1}{4}t^2 - \frac{x}{2}t + y = 0 \Rightarrow t_{1,2} = \frac{\frac{x}{2} \pm \sqrt{\frac{x^2}{4} - y}}{\frac{1}{2}}.$$
@@ -103,7 +103,7 @@ Aktivnosti za naslednji dve podpoglavji sta enaki kot v tem, le da namesto spodn
 
 \subsection{Elipsa}
 
-\textit{\textbf{Aktivnost:} Vzemi list papirja in svinčnik ter na sredini nariši poljubno krožnico. Označi njeno središče. Na notranji strani krožnice si izberi poljubno točko. Izberi si točko na krožnici in list prepogni tako, da se obe izbrani točki prekrijeta. To ponovi čimvečkrat za drugo izbiro točke na krožnici (gl.\ sliko~\ref{fig:koraki_elipsa}). Kaj opaziš?}
+\textit{\textbf{Aktivnost:} Vzemi list papirja in svinčnik ter na sredini nariši poljubno krožnico. Označi njeno središče. Na notranji strani krožnice si izberi poljubno točko. Izberi si točko na krožnici in list prepogni tako, da se obe izbrani točki prekrijeta. To ponovi čimvečkrat za različno izbiro točke na krožnici (gl.\ sliko~\ref{fig:koraki_elipsa}). Kaj opaziš?}
 
 \begin{figure}[h]
     \centering
@@ -149,7 +149,7 @@ Kaj pa, če pri konstrukciji izberemo točko izven krožnice?
 
 \subsection{Hiperbola}
 
-\textit{\textbf{Aktivnost:} Vzemi list papirja in svinčnik ter na sredini nariši poljubno krožnico. Označi njeno središče. Na zunanji strani krožnice si izberi poljubno točko. Izberi si točko na krožnici in list prepogni tako, da se obe izbrani točki prekrijeta. To ponovi čimvečkrat za drugo izbiro točke na krožnici (gl.\ sliko~\ref{fig:koraki_hiperbola}). Kaj opaziš?}
+\textit{\textbf{Aktivnost:} Vzemi list papirja in svinčnik ter na sredini nariši poljubno krožnico. Označi njeno središče. Na zunanji strani krožnice si izberi poljubno točko. Izberi si točko na krožnici in list prepogni tako, da se obe izbrani točki prekrijeta. To ponovi čimvečkrat za različno izbiro točke na krožnici (gl.\ sliko~\ref{fig:koraki_hiperbola}). Kaj opaziš?}
 
 \begin{figure}[h]
     \centering

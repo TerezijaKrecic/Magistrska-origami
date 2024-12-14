@@ -47,7 +47,7 @@ Prva knjiga nas še posebej zanima. V njej je Evklid najprej definiral osnovne p
     Da se pokazati, da lahko za konstrukcije ekvivalentno uporabimo tudi šestilo, ki prenaša razdalje~\cite[str.\ 6--7]{geometricconstructions}. Zato imamo odslej z izrazom \emph{šestilo} v mislih kar moderno šolsko šestilo.
 \end{opomba}
 
-Formalno so torej edine dovoljene operacije tiste iz postulatov~\ref{post:P1}--\ref{post:P3}. Seveda privzamemo, da so konstruktibilne tudi točke, ki jih dobimo kot že dane ali kot presečišča dveh premic, dveh krožnic ali premice in krožnice. Vendar je to dovolj, da lahko le z neoznačenim ravnilom in šestilom konstruiramo premice, kote, simetrale kotov in daljic, krožnice in še mnogo drugega. V resnici se da skonstruirati toliko geometrijskih figur, da se matematiki raje vprašamo, česa pa se s tem orodjem \emph{ne} da skonstruirati. In tu pridemo do motivacije za uvedbo origami konstrukcij, saj lahko z njimi npr.\ rešimo kar dva od treh znamenitih starogrških problemov, ki jih z evklidskim orodjem ne moremo (gl.\ poglavje~\ref{pogl:starogrskiproblemi}).
+Formalno so torej edine dovoljene operacije tiste iz postulatov~\ref{post:P1}--\ref{post:P3}. Seveda privzamemo, da so konstruktibilne tudi točke, ki jih dobimo kot že dane ali kot presečišča dveh premic, dveh krožnic ali premice in krožnice. Vendar je to dovolj, da lahko le z neoznačenim ravnilom in šestilom konstruiramo premice, kote, simetrale kotov in daljic, krožnice in še mnogo drugega. V resnici se da skonstruirati toliko geometrijskih figur, da se matematiki raje vprašamo, česa pa se s tem orodjem \emph{ne} da skonstruirati. In tu pridemo do motivacije za uvedbo origami konstrukcij, saj lahko z njimi npr.\ rešimo kar dva od treh znamenitih starogrških problemov, ki jih z evklidskim orodjem ne moremo (gl.\ podpoglavje~\ref{podpogl:starogrskiproblemi}).
 
 \subsection{Origami konstrukcije}
 \label{origami_konstrukcije}
@@ -284,7 +284,7 @@ Ker lahko čez premico zrcalimo točke, lahko čeznjo zrcalimo tudi daljice oz.\
     S tem smo razdaljo $r$ prenesli na poljubno mesto v ravnini.
 \end{dokaz}
 
-Tako lahko s prepogibanjem papirja zrcalimo točke (in premice), prenašamo razdalje pa tudi -- po 2.\ koraku iz zgornjega dokaza -- točke (in premice) rotiramo. To novo znanje bomo uporabili v podpoglavju~\ref{origami_konstruktibilnost}.
+Tako lahko s prepogibanjem papirja zrcalimo točke (in premice), prenašamo razdalje pa tudi -- po 2.\ koraku iz zgornjega dokaza -- rotiramo točke (in premice). To novo znanje bomo uporabili v podpoglavju~\ref{origami_konstruktibilnost}. Od sedaj naprej bomo pri konstrukcijah, ki vključujejo zrcaljenje točk, zaradi preglednosti izpustili pregibe, ki so potrebni za zrcaljenje.
 
 \subsection{Kje origami konstrukcije nadvladajo evklidske}
 
@@ -292,7 +292,7 @@ Prišli smo do ključnega dela poglavja -- reševanje vprašanja, zakaj se nam z
 
 Za začetek naj bralec ob zgornjih opisih posamezne operacije premisli, da je mogoče operacije~\ref{op:O1}, \ref{op:O3}, \ref{op:O4}, \ref{op:O5}, \ref{op:O6} in \ref{op:O8} opraviti tudi z evklidskim orodjem (operacija~\ref{op:O2} le določa nove točke, zato tu o konstrukciji ne moremo govoriti). Do tu nam torej origami konstrukcije niso dale ničesar novega.
 
-Ključna je sedma operacija. Izkaže se namreč, da operacije~\ref{op:O7} oz.\ Belochinega pregiba ne moremo opraviti z evklidskim orodjem. Prefinjen način, kako to dokazati, je preko rešitve starogrškega problema o trisekciji kota. V poglavju~\ref{pogl:starogrskiproblemi} bomo spoznali več origami postopkov, ki nam poljuben kot razdelijo na tri skladne dele, pri tem pa uporabimo pregib iz operacije~\ref{op:O7}. Ker \emph{trisekcija kota z evklidskim orodjem ni mogoča} (dokaz v~\cite[str.\ 77--78]{jerman1998}), posledično tudi konstrukcija operacije~\ref{op:O7} s tem orodjem ne obstaja.
+Ključna je sedma operacija. Izkaže se namreč, da operacije~\ref{op:O7} oz.\ Belochinega pregiba ne moremo opraviti z evklidskim orodjem. Prefinjen način, kako to dokazati, je preko rešitve starogrškega problema o trisekciji kota. V podpoglavju~\ref{podpogl:starogrskiproblemi} bomo spoznali več origami postopkov, ki nam poljuben kot razdelijo na tri skladne dele, pri tem pa uporabimo pregib iz operacije~\ref{op:O7}. Ker \emph{trisekcija kota z evklidskim orodjem ni mogoča} (dokaz v~\cite[str.\ 77--78]{jerman1998}), posledično tudi konstrukcija operacije~\ref{op:O7} s tem orodjem ne obstaja.
 
 Tako z evklidskim orodjem kot s prepogibanjem papirja lahko torej konstruiramo premice in točke ter prenašamo razdalje. Le evklidskim orodjem lahko konstruiramo tudi krožne loke, le s prepogibanjem papirja pa lahko tretjinimo poljuben kot. Origami nam ponuja še več rešitev, kjer je evklidsko orodje nemočno, npr.\ uporaba Belochinega pregiba je ključna za enega \textcolor{red}{(ali več???)} od postopkov reševanja kubičnih enačb, ki jih v splošnem z evklidskim orodjem ne moremo reševati (gl.\ poglavje~\ref{pogl:enacbe}).
 
@@ -386,4 +386,4 @@ Poiščimo še množico števil, ki jih lahko konstruiramo z origamijem.
     Vsa evklidsko-konstruktibilna števila so origami-konstruktibilna.
 \end{posledica}
 
-Izkaže pa se, da se da -- v nasprotju z evklidsko-konstruktibilnimi števili -- s prepogibanjem konstruirati \emph{še več} števil kot le ta iz množice $\Q(r)$. V~\cite[str.\ 156]{geometricconstructions} je na primer dokaz, da lahko z origamijem skonstruiramo $\sqrt[3]{k} $ za poljuben\footnote{Za $k = 2$ je to rešitev starogrškega problema o podvojitvi kocke. Več o tem sledi v poglavju~\ref{pogl:starogrskiproblemi}} konstruktibilen $k$ \textcolor{red}{(v starogrških problemih je za 3.\ koren iz $k = 2$, a tisto bi delovalo tut za poljuben $k$?)}. Torej je na področju konstruiranja števil prepogibanje papirja močnejše od evklidskih konstrukcij.
+Izkaže pa se, da se da -- v nasprotju z evklidsko-konstruktibilnimi števili -- s prepogibanjem konstruirati \emph{še več} števil kot le ta iz množice $\Q(r)$. V~\cite[str.\ 156]{geometricconstructions} je na primer dokaz, da lahko z origamijem skonstruiramo $\sqrt[3]{k} $ za poljuben\footnote{Za $k = 2$ je to rešitev starogrškega problema o podvojitvi kocke. Več o tem sledi v podpoglavju~\ref{podpogl:starogrskiproblemi}} konstruktibilen $k$. Torej je na področju konstruiranja števil prepogibanje papirja močnejše od evklidskih konstrukcij.

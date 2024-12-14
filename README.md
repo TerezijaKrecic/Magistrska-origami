@@ -3,11 +3,10 @@
 Okvirna vsebina po sklopih:
 - origami aksiomi in povezava z Evklidskimi aksiomi
 - zlaganje stožnic (a se da tudi krog?)
-- Hagovi izreki v kvadratu in razdelitev stranice na *n* enakih delov (trije načini)
-- konstrukcija pravilnih *n*-kotnikov (enakostranični trikotnik, 7-kotnik ...)
-- rešitev dveh starogrških problemov
+- Hagovi izreki v kvadratu in razdelitev stranice na *n* enakih delov (trije načini), rešitev dveh starogrških problemov
     - trisekcija kota (Abe, Justin)
     - podvojitev kocke (Messer, Beloch)
+- konstrukcija pravilnih *n*-kotnikov (enakostranični trikotnik, 7-kotnik ...)
 - reševanje enačb
     - kvadratne enačbe (te se še da samo z ravnilom in šestilom, povezava s parabolo)
     - kubične enačbe
