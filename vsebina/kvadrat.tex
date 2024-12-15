@@ -1,11 +1,76 @@
 \section{Prepogibanje kvadrata}
 \label{pogl:prepog_kvadrata}
 
-Spomnimo se, da smo pri dokazovanju trditve~\ref{izr:origami_konstruktibilnost} izpustili dokaz, da lahko vsako origami-konstruktibilno število delimo s poljubnim naravnim številom. Ob predpostavki, da to velja, smo dokazali, da so origami-konstruktibilna števila zaprta za deljenje. Cilj tega poglavja je tako pokazati, kako neko dolžino s prepogibanjem razdeliti na $n$ delov za poljubni $n \in \N$. Poleg tega pa si bomo pogledali še konstrukcijo raznovrstnih razmerij, ki jih lahko poda neka točka na poljubni dolžini.
+Spomnimo se, da smo pri dokazovanju trditve~\ref{izr:origami_konstruktibilnost} izpustili dokaz, da lahko vsako origami-konstruktibilno število delimo s poljubnim naravnim številom. Ob predpostavki, da to velja, smo dokazali, da so origami-konstruktibilna števila zaprta za deljenje. Eden od ciljev tega poglavja je tako pokazati, kako neko daljico s prepogibanjem razdeliti na $n$ delov za poljubni $n \in \N$. Poleg tega pa si bomo pogledali še raznovrstna razmerja stranic v kvadratu, ki jih dobimo s prepogibanjem oglišč nanje. S to temo se je veliko ukvarjal Kazuo Haga, japonski profesor biologije, in v svojem delu \emph{Origamics: Mathematical Explorations Through Paper Folding}~\cite{haga2008} med drugim formuliral tri izreke, ki jih poznamo pod imenom \emph{Hagovi izreki}. Na koncu si bomo pogledali še enostavne, a osupljive načine, kako lahko z origamijem rešimo problema trisekcije poljubnega kota ter podvojitve kocke, ki ju z evklidskim orodjem ne moremo.
 
-Tako kot z evklidskim orodjem tudi s prepogibanjem papirja težko ostanemo na enem pregibu in si pri konstrukciji točk pomagamo s skokom v dvodimenzionalni svet. Zato vzemimo v roke kvadraten list papirja in raziskujmo, kako ga lahko prepogibamo in v kakšnih razmerjih lahko pregibi ali zrcaljene točke delijo njegove stranice.
+Tako kot z evklidskim orodjem tudi s prepogibanjem papirja težko ostanemo na enem pregibu -- enodimenzionalni premici -- in si pri konstrukciji točk pomagamo s skokom v dvodimenzionalni svet. Zato vzemimo v roke kvadraten list papirja (za lažje računanje predpostavimo, da je stranica dolga $1$) in raziskujmo, v kakšnih razmerjih lahko določeni pregibi ali zrcaljene točke delijo njegove stranice.
 
-\subsection{Razdelitev dolžine na $n$ enakih delov}
+\subsection{Razdelitev daljice na $n$ enakih delov}
+
+Izziv tega problema je pravzaprav razdelitev daljice na liho število delov -- vsak zna dolžino razdeliti na pol, na četrtine, osmine \ldots in če jo znamo razdeliti na liho število delov, potem jo zmoremo razdeliti na $n$ delov za vsak $n \in \N$.
+
+Problem delitve daljice na enake dele s prepogibanjem papirja je skozi zadnja desetletja dobil več načinov reševanja. Tu si bomo pogledali \textcolor{red}{koliko?} metode.
+
+\subsubsection*{Metoda križajočih se diagonal}
+
+Metoda nima uradnega prevoda niti uradnega imena, jo pa tako imenuje Robert J.\ Lang v svojem članku~\cite{lang1988}. Njena konstrukcija je prikazana na sliki \textcolor{red}{referenca na sliko, ustvari sliko al pej kopirej hull2020 str.\ 14 al pej hull2018 str.\ 38}. Najprej kvadrat dvakrat prepognimo na pol -- enkrat po diagonali skozi oglišči $A$ in $C$ in drugič po vertikali. Nato prepognemo po diagonali (skozi oglišče $B$) še desni pokončen pravokotnik. Presečišče obeh diagonal označimo s točko $P$ in naredimo skoznjo prepogib, ki je pravokoten na horizontalno stranico kvadrata.
+
+\begin{trditev}
+    \label{trd:kriz_diag_3}
+    Zadnji pregib iz zgornjega opisa konstrukcije razdeli horizontalno stranico kvadrata v razmerju $2:1$.
+\end{trditev}
+
+\begin{dokaz}
+    Dokazujemo lahko na več načinov:
+    \begin{enumerate}
+        \item \textit{Analitičen pristop:} Kvadrat postavimo v evklidsko ravnino tako, da je spodnje levo oglišče kvadrata v koordinatnem izhodišču in spodnje desno v točki $(1, 0)$. Obe diagonali izrazimo z enačbama premic. Glavna diagonala ima enačbo $y = x$, diagonala pravokotnika pa $y = -2x + 2$. Točka $P$ je njuno presečišče in ima tako koordinati $(2/3, 2/3)$.
+        \item \textit{Preko podobnih trikotnikov:} Z opisanimi prepogibi v tem kvadratu konstruiramo več trikotnikov. Njihova oglišča označimo tako, kot kaže slika \textcolor{red}{naredi in referiraj sliko, str. 38 v hull2013; ampak predrugači imena oglišč (glej nadaljevanje tega dokaza)}. Iz podobnosti trikotnikov $\triangle AGP$ in $\triangle ABC$ sledi, da je trikotnik $\triangle AGP$ enakokrak. Naj bo dolžina njegovih krakov $x$. Potem je $|AG| = |GP| = x$ in $|GB| = 1 - x$. Iz podobnosti trikotnikov $\triangle EFB$ in $\triangle PGB$ sledi
+        $$ \frac{|EF|}{|FB|} = \frac{|PG|}{|GB|} \Rightarrow \frac{1}{\frac{1}{2}} = \frac{x}{1 - x} \Rightarrow 2 - 2x = x \Rightarrow x = \frac{2}{3}. $$
+    \end{enumerate}
+\end{dokaz}
+
+Po konstrukciji pregiba, ki zgornjo stranico kvadrata razdeli v razmerju $2:1$, desni pravokotnik (s stranico $DE$) po vertikali prepognemo še na pol. S tem smo stranico kvadrata razdelili na tri enake dele.
+
+Razdelitev stranice kvadrata na štiri dele je očitna -- kvadrat v vertikalni smeri dvakrat prepognemo na pol.
+
+Stranico razdelimo na pet delov na podoben način kot na tri. Naredimo enak pregib po glavni diagonali, nato pa zgornjo stranico razdelimo v razmerju $3:1$ (to znamo storiti). S tem smo na desni strani kvadrata dobili pokončen pravokotnik s horizontalno stranico, dolgo četrt stranice kvadrata. Naslednji pregib je, kot prej, diagonala tega pravokotnika (tista skozi oglišče $B$). Presečišče te in glavne diagonale je točka, ki je od desne stranice oddaljena za $1/5$ (dokaz je analogen tistemu za trditev~\ref{trd:kriz_diag_3}). Naredimo vertikalen pregib skozi točko $P$ in s tem zgornjo stranico kvadrata razdelimo v razmerju $4:1$. Na koncu še levi del te stranice razdelimo na štiri dele. S tem smo celotno stranico razdelili na pet skladnih delov.
+
+Zgornji postopek lahko posplošimo na poljuben $n \in \N$. Kot smo videli v konkretnih primerih za $n = 3, 4$ in $5$, smo si pomagali z vnajprejšnjo razdelitvijo stranice na $n-1$ število enakih delov (kar smo zmogli storiti). Dokaz naslednje trditve bo tako temeljil na indukciji.
+
+\begin{trditev}[Metoda križajočih se diagonal za splošen $n$]
+    Naj bo $n \in \N, n > 2$. Kvadrat $ABCD$ s stranico dolžine $1$ prepognemo po diagonali $AC$, potem pa stranico $DC$ s točko $E$ razdelimo v razmerju $(n-2):1$. Naredimo pregib novonastalega pravokotnika skozi točki $B$ in $E$. Presečišče te in glavne diagonale je točka $P$, ki je od desne stranice kvadrata oddaljena za $1/n$.
+\end{trditev}
+
+\begin{dokaz}
+    Za $n = 1$ in $n = 2$ ni kaj dokazovati -- v prvem primeru pregiba sploh ni, v drugem primeru stranico prepolovimo.
+
+    \textit{Baza indukcije:} Vemo že, da trditev drži za $n = 3, 4, 5$.
+
+    \textit{Indukcijska predpostavka:} Predpostavimo, da znamo stranico razdeliti na $n$ enakih delov.
+
+    \textit{Indukcijski korak:} Dokazujemo, da znamo stranico razdeliti na $n+1$ enakih delov. Po navodilih za konstrukcijo najprej stranico $DC$ s točko $E$ razdelimo v razmerju $(n-1):1$ (kot če bi jo razdelili na $n$ skladnih delov, ampak označimo le zadnji prpogib). To po indukcijski predpostavki znamo storiti. S prepogibom skozi oglišče $B$ in točko $E$ dobimo, kot presečišči obeh diagonal, točko $P$. Potem pa podobno kot pri dokazu trditve~\ref{trd:kriz_diag_3} dokažimo, da leži točka $P$ na želeni razdalji od desne stranice kvadrata:
+    \begin{enumerate}
+        \item \textit{Analitičen pristop:} Naj bo oglišče $A$ koordinatno izhodišče in oglišče $B$ točka $(1, 0)$. Premica, ki je nosilka diagonale $AC$, ima tako enačbo $y = x$, nosilka diagonale $CE$ pa $y = -nx + n$. Točka $P$ je njuno presečišče in ima tako koordinate $(n/(n+1), n/(n+1))$. Torej je od desne stranice kvadrata res oddaljena za $1/(n+1)$.
+        \item \textit{Preko podobnih trikotnikov:} Označimo oglišča trikotnikov, kot kaže slika \textcolor{red}{SLIKA plus REFERENCA}. Trikotnik $\triangle AGP$ je enakokrak in njegova kraka označimo z $x$. Iz razmerij dolžin stranic podobnih trikotnikov $\triangle EFB$ in $\triangle PGB$ sledi
+        $$ \frac{|EF|}{|FB|} = \frac{|PG|}{|GB|} \Rightarrow \frac{1}{\frac{1}{n}} = \frac{x}{1 - x} \Rightarrow n - nx = x \Rightarrow x = \frac{n}{n+1}. $$
+        Točka $P$ je od desne stranice kvadrata res oddaljena za $x - 1 = 1/(n + 1)$.
+    \end{enumerate}
+
+\end{dokaz}
+
+\begin{posledica}
+    Poljubno daljico znamo razdeliti na $n$ skladnih delov za vsak $n \in \N$.
+\end{posledica}
+
+\begin{dokaz}
+    Vzemimo neko daljico poljubne dolžine. Ker znamo konstruirati pravokotnice skozi točke in prenašati razdalje, lahko konstruiramo kvadrat, katereda zgornja stranica dana daljica \textcolor{red}{(spet kakšna slikca več korakov)}. Po zgornji trditvi jo znamo razdeliti v razmerju $(n-1) : 1$ za vsak $n \in \N$. Potem moramo njen daljši del razdeliti na $n-1$ skladnih delov. To storimo na enak način kot prej -- konstruiramo manjši kvadrat s to novo stranico in ponovimo postopek. Ustavimo se, ko na nekem koraku stranico kvadrata razdelimo v ramerju $1:1$. Takrat bo zgornja stranica oz. dana daljica razdeljena na $n$ skladnih delov.
+\end{dokaz}
+
+\subsubsection*{Metoda2}
+
+\subsubsection*{Metoda3}
+
+\subsubsection*{Metoda4}
 
 \textcolor{red}{Več metod (vsaj tri?), na koncu daš Hagovo metodo in iz tega začneš z novim podpoglavjem -- Hagovi izreki. Matode pred tem: Hull2013 (str.\ 36--40)}
 
@@ -38,9 +103,11 @@ Tako kot z evklidskim orodjem tudi s prepogibanjem papirja težko ostanemo na en
 % reševanje dveh starogrških problemov, ki ju z evklidskimi orodji -- dokazano -- ne znamo rešiti; to sta \emph{podvojitev kocke} (oz. konstrukcija $\sqrt[3]{2}$) in \emph{trisekcija kota}. Izkaže se, da se da vsakega od njiju rešiti celo na več kot en način! (to je omenjeno v 2.3, tko da trisekcija mora imet več načinov, čene popravi)
 
 
-% Geometric Constructions str. 29 -- legenda od Apolonu, ki je zahteval 2x večji oltar, da prežene kugo
-
 \subsubsection{Trisekcija kota}
+
+\textcolor{red}{Motivacija za ta problem?}
+
+Kot $90^\circ$ znamo tretjiniti z neoznačenim ravnilom in šestilom, saj znamo konstruirati kot $30^\circ$. Težava je, da ne obstaja konstrukcija, s katero na tri skladne kote razdelimo \emph{poljuben} kot. V~\cite[str.\ 77--78]{jerman1998} je dokaz o nezmožnosti trisekcije kota $60^\circ$. Avtor se pri tem sklicuje na izrek~\ref{izr:evkl_konstr} in opombo~\ref{op:razseznost_obsega_evkl} in podpoglavja~\ref{podpogl:evkl_konstruktibilnost}.
 
 % SPODNJI DOKAZ JE PREPISAN IZ VIRA IN SAMO CITIRAN V POGLAVJU 2.3
 
@@ -57,9 +124,13 @@ Tako kot z evklidskim orodjem tudi s prepogibanjem papirja težko ostanemo na en
 
 % Zato trisekcija kota v splošnem ni mogoča.
 
+Z origamijem pa obstaja celo več načinov, kako poljuben kot razdeliti na tri skladne dele.
+
 Neka origami konstrukcija je v~\cite[str.\ 155]{geometricconstructions}, pa tudi (avtor Abe) v nalogi 10.14~\cite[str.\ 158 spodaj]{geometricconstructions}. .
 
 \subsubsection{Podvojitev kocke}
+
+% Geometric Constructions str. 29 -- legenda od Apolonu, ki je zahteval 2x večji oltar, da prežene kugo
 
 V prostoru imamo kocko. Ali se da samo z ravnilom in šestilom narisati stranico kocke, ki ima dvakrat večjo prostornino kot dana kocka?
 
