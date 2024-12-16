@@ -350,7 +350,7 @@ Poiščimo še množico števil, ki jih lahko konstruiramo z origamijem.
 \end{opomba}
 
 \begin{opomba}
-    Ker lahko s prepogibanjem prenašamo razdalje (trditev~\ref{trd:prenasanje_razdalj}), je dovolj \emph{kjerkoli} v ravnini konstruirati točki z medsebojno razdaljo $x$.
+    Ker znamo konstruirati pravokotnice in prenašati razdalje (trditev~\ref{trd:prenasanje_razdalj}), lahko predpostavimo, da imamo dan kar celotni koordinatni sistem z abscisno in ordinatno osjo, izhodiščem ter enoto $1$ na obeh oseh. Zato je tudi dovolj \emph{kjerkoli} v ravnini konstruirati točki z medsebojno razdaljo $x$.
 \end{opomba}
 
 \begin{izrek}
@@ -361,7 +361,7 @@ Poiščimo še množico števil, ki jih lahko konstruiramo z origamijem.
 \begin{dokaz}
     Ekvivalentno to pomeni, da lahko konstruiramo realne rešitve poljubne kvadratne enačbe, saj je njena splošna rešitev ravno oblike $a + b\sqrt{r} $ za neke $ a, b \in \Q$ in $r \in \Q^{+}$. Torej moramo dokazati, da znamo s prepogibanjem seštevati, odštevati, množiti, deliti in koreniti dana oz.\ že konstruirana števila.
     
-    Na začetku imamo dani točki $(0, 0)$ in $(1, 0)$, ki predstavljata števili 0 in 1. Brez težav lahko za poljuben $x \in \Z$ konstruiramo točko $(x, 0)$, saj znamo s pomočjo v definiciji dane abscisne osi in dveh točk konstruirati vertikalne premice ter zrcaliti točke čeznje. Ker lahko z origamijem prenašamo razdalje, je tudi seštevanje in odštevanje že konstruiranih števil enostavno. Deljenje je podrobneje obravnavano v poglavju~\ref{pogl:prepog_kvadrata}, kjer bomo spoznali, kako neko dolžino s prepogibanjem razdeliti na $n$ delov za poljubni $n \in \N$. S tem znanjem in uporabo množenja (ki je poseben primer seštevanja) lahko torej konstruiramo poljuben $x \in \Q$ oz.\ poljubno točko $(x, y)$ z racionalnima koordinatama v ravnini.
+    Na začetku imamo dani točki $(0, 0)$ in $(1, 0)$, ki predstavljata števili 0 in 1. Brez težav lahko za poljuben $x \in \Z$ konstruiramo točko $(x, 0)$, saj znamo zrcaliti točke čez premice in prenašati razdalje. Zato je tudi seštevanje in odštevanje že konstruiranih števil enostavno. Deljenje je podrobneje obravnavano v poglavju~\ref{pogl:prepog_kvadrata}, kjer bomo spoznali, kako neko dolžino s prepogibanjem razdeliti na $n$ delov za poljubni $n \in \N$. S tem znanjem in uporabo množenja (ki je poseben primer seštevanja) lahko torej konstruiramo poljuben $x \in \Q$ oz.\ poljubno točko $(x, y)$ z racionalnima koordinatama v ravnini.
     
     Manjka nam samo še konstrukcija kvadratnega korena poljubnega racionalnega števila. V ta namen si poglejmo naslednjo konstrukcijo (vzeto iz~\cite[str.\ 58]{hull2013}):
     Imejmo točko $A (0, 1) $, premico $y = -1$ in poljuben $r \in \Q^{+}$ (po zgornjem premisleku jih znamo konstruirati). Na ordinatni osi označimo točko $B (0, -\frac{r}{4})$ in naredimo pregib skoznjo, ki točko $A$ položi na premico $y = -1$. Njena zrcalna slika je $A' (t, 0) $ za nek $t \in \R$ (slika~\ref{fig:konstrukcija_korena}).
