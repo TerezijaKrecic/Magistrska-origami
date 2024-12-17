@@ -1,13 +1,7 @@
 \section{Reševanje enačb}
 \label{pogl:enacbe}
 
-% in kubične enačbe (operacija O7!), za bolj zahtevne pa bosta zanimivi podpoglavji o reševanju enačb 4.\ in 5.\ stopnje.
-% Alhazijev al kej je že uni problem!!!
 
-% - kubične enačbe
-%     - z Belochinim kvadratom
-%     - Lillova metoda (z Belochinim prepogibom)
-%     - Alperinova rešitev (gl. Hull 2020)
 % - enačbe 4. stopnje (TEŽJE) --> Alhazen's problem (gl.\ članek od Vavšetiča in tudi~\cite[str.\ 137--139]{geometricconstructions})
 % - enačbe 5. stopnje (TEŽJE)
 
@@ -15,17 +9,21 @@ Zapustimo deloma področje geometrije in si poglejmo, kako lahko s prepogibanjem
 
 Linearne enačbe z racionalnimi koeficienti ni težko rešiti. Enačba $ax + b = 0$ ima rešitev $x = -b/a$. To je racionalno število, ki je po izreku~\ref{izr:origami_konstruktibilnost} origami-konstruktibilno.
 
+Ključno vlogo igrata origami operaciji~\ref{op:O6} in~\ref{op:O7}. Prva nam hkrati s konstrukcijo tangente na parabolo določi tudi točko na paraboli, skozi katero je pregib tangenten na stožnico, to pa je ekvivalentno reševanju kvadratne enačbe. Druga pa s konstrukcijo skupne tangente na dve paraboli omogoča reševanje kubične enačbe, saj imata paraboli v ravnini največ tri skupne tangente (glej~\cite[str.\ 149--150]{geometricconstructions}). Znano je tudi, da lahko reševanje kvartične enačbe prevedemo na reševanje kubične ali celo kvadratne, zato nam origami rešuje tudi enačbe četrte stopnje. To je že skoraj 100 let nazaj odkrila italijanska matematičarka Margherita P.\ Beloch, ki je s tem odkrila pravo moč prepogibanja papirja.
+
 Iz podpoglavja~\ref{podpogl:evkl_konstruktibilnost} vemo, da lahko z neoznačenim ravnilom in šestilom konstruiramo natanko števila oblike $a + b\sqrt{r}$, kjer so $a, b, r \in \Q$. Take oblike je tudi splošna rešitev kvadratne enačbe z racionalnimi koeficienti in ker lahko ta števila konstruiramo tudi z origamijem, lahko preko kvadratne formule najprej izračunamo realni rešitvi in ju nato s prepogibanjem papirja preko operacij seštevanja, odštevanja, množenja, deljenja in korenjenja konstruiramo (izrek~\ref{izr:origami_konstruktibilnost}). Zanima pa nas, ali jih je mogoče konstruirati tudi brez predhodnega računanja.
 
-V tem poglavju si bomo pogledali, kako z origamijem na prefinjen način -- brez konstrukcije preko zgornjih petih operacij -- rešujemo enačbe druge, tretje, četrte in pete stopnje. Vedno bo veljalo, da imamo za $n$-to stopnjo, kjer je $n \in \{2, 3, 4, 5\}$ dano enačbo
+V tem poglavju si bomo pogledali, kako z origamijem na prefinjen način -- brez konstrukcije preko zgornjih petih operacij -- rešujemo enačbe druge, tretje, četrte in pete stopnje. Za vsak $n \in \{2, 3, 4, 5\}$ bomo reševali enačbo
 $$ a_n x^n + a_{n-1} x^{n-1} + \ldots + a_2 x^2 + a_1 x + a_0 = 0, $$
-kjer so $a_i \in \Q$ za vsak $i \in \{1, 2, \ldots, n\}$ in $a_n \ne 0$. Da se znebimo enega koeficienta, lahko enačbo brez škode za splošnost delimo z vodilnim koeficientom $a_n$, saj s tem koeficienti ostanejo racionalni. Zato od zdaj naprej predpostavimo $a_n = 1$.
+kjer so $a_i \in \Q$ za vsak $i \in \{1, 2, \ldots, n\}$ in $a_n \ne 0$.
 
 Spomnimo se še, da smo origami-konstruktibilna števila definirali kot vsa števila, ki jih lahko s prepogibanjem konstruiramo preko na začetku dane abscine osi, izhodišča $(0,0)$ in točke $(1,0)$ in da lahko kar predpostavimo, da imamo dan celoten koordinatni sistem z abscisno in ordinatno osjo, izhodiščem ter enoto $1$ na obeh oseh (definicija~\ref{def:origami_konstruktibilnost}). 
 
 \subsection{Kvadratna enačba}
 
-Uporabimo kar standardne oznake za koeficiente kvadratne enačbe, torej rešujemo enačbo oblike
+Rešujemo enačbo oblike
+$$ a_2 x^2 + a_1 x + a_0 = 0, $$
+kjer so $a_0, a_1, a_2 \in \Q$ in velja $a_2 \ne 0$. Postopek, ki si ga bomo pogledali v nadaljevanju, predpostavlja $a_2 = 1$. Ker je vodilni koeficient neničeln, lahko z njim enačbo delimo, zato lahko predpostavko brez škode za splošnost sprejmemo. Da se ne ukvarjamo z indeksi, uporabimo kar standardne oznake za koeficiente kvadratne enačbe (pri čemer je $a = 1$), torej rešujemo enačbo oblike
 \begin{equation}
     \label{eq:spl_kv_en}
     x^2 + bx + c = 0
@@ -73,13 +71,70 @@ To še zdaleč ni edini postopek za reševanje kvadratne enačbe. Kot še en lep
 
 \subsection{Kubična enačba}
 
-% operacija O7??
-% z Belochinim kvadratom
-%     - Lillova metoda (z Belochinim prepogibom)
-%     - Alperinova rešitev (gl. Hull 2020)
+Operacija~\ref{op:O6} nam je preko konstrukcije tangente na parabolo pomagala rešiti kvadratno enačbo. Spomnimo se, da je Belocheva to v 30-ih letih prejšnjega stoletja nadgradila z operacijo~\ref{op:O7}, ki nam konstruira skupno tangento na dve paraboli hkrati. Po njej jo tudi imenujemo \emph{Belochin pregib}. Z njim je kot prva odkrila resnično moč origami konstrukcij, a je žal trajalo več kot pol stoletja, da so matematiki začeli ceniti njeno odkritje. Le redki so njeno delo poznali in ji tudi pripisali avtorstvo.
+
+Belocheva je s svojim pregibom oblikovala postopek, s katerim lahko preko origamija rešujemo kubične enačbe. Postopek temelji na Lillovi genialni metodi iskanja ničel poljubnih polinomov z realnimi koeficienti, zato si jo bomo podrobneje pogledali.
+
+\subsubsection{Lillova metoda}
+
+Njen avtor je avstrijski inženir Eduard Lill, ki jo je l.\ 1867 opisal v svojem članku~\cite{lill1867}. Gre za inovativen postopek, ki je v svoji osnovi čisto enostaven. Imejmo poljuben polinom $ p(x) = a_n x^n + a_{n-1} x^{n-1} + \ldots + a_2 x^2 + a_1 x + a_0 $ z realnimi koeficienti in iščemo njegove realne ničle, če obstajajo. Lill je iz njegovih koeficientov s sledečim postopkom v ravnini ustvaril enolično pot. Po njej se, kot s figuro po igralnem polju, tipično premikamo s podobo želve, ki nam kaže trenutno usmerjenost:
+
+Na začetku želvo postavimo v koordinatno izhodišče $O$ tako, da gleda v pozitivno smer $x$-osi. Želva nato v to smer prehodi razdaljo, enako koeficientu $a_n$. Nato se obrne za $90^\circ$ v nasprotno smer urinega kazalca in prehodi naslednjo razdaljo $a_{n-1}$. To ponovi za vsak koeficient polinoma in po prehojeni razdalji $a_0$ se ustavi v neki točki $T$ (slika~\ref{fig:primera_zelve}). Če je kateri od koeficientov negativen, želva hodi ritensko (koeficienti $a_3, a_2$ in $a_0$ v primeru na sliki~\ref{fig:primera_zelve} (b)), v primeru ničelnega koeficienta pa obstoji na mestu in se samo obrne.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/kubična enačba/primera_zelvine_poti.png}
+    \caption[Primera želvine poti]{Primera želvine poti za enačbi pete stopnje. Vzeto iz~\cite[str.\ 311]{hull2011}.}
+    \label{fig:primera_zelve}
+\end{figure}
+
+Za lažje označevanje naj bo od sedaj oznaka daljic, ki jo v opravljeni poti predstavljajo koeficienti polinoma, enaka njihovim dolžinam.
+
+Sedaj se v izhodišče $O$ postavimo še mi in z laserskim žarkom poskusimo zadeti želvo v točki $T$. Žarek najprej usmerimo daljico $a_{n-1}$, od katere se odbije v daljico $a_{n-2}$, od te v daljico $a_{n-3}$ in tako naprej. (slika~\ref{fig:primera_zelve}). Pri tem upoštevamo troje:
+\begin{itemize}
+    \item laserski žarek ne upošteva odbojnega zakona in se od daljice vedno odbije pod kotom $90^\circ$, zato so vpadni koti žarka na vse daljice med seboj enaki in prav tako to velja za odbojne kote;
+    \item žarek se lahko odbije tudi od nosilke daljice;
+    \item vsakič sta možni dve smeri odboja -- na isto stran daljice ali skoznjo -- in izberemo tisto, ki nam omogoči, da sploh lahko zadenemo naslednjo daljico.
+\end{itemize}
+Opazimo, da je želvina pot sestavljena iz $n+1$ daljic, pot laserskega žarka pa iz $n$ daljic.
+
+Recimo, da smo zmogli zadeti želvo. Kot, ki ga v točki $O$ oklepata laserski žarek in abscisna os, označimo z $\theta$.
+
+\begin{trditev}
+    $x_{\theta} = - \tan \theta$ je ničla polinoma $p(x)$.
+\end{trditev}
+
+\begin{dokaz}
+    Vzemimo primer, ko so vsi koeficienti polinoma $p(x)$ pozitivni (primer z negativnimi ali ničelnimi koeficienti prepuščamo bralcu za vajo \textcolor{red}{mmaaa dej probej kar ti tu tle dokazat. Nekaj je tudi v~\cite[str.\ 36]{zore2020}}).
+    Dokaz v~\cite[str.\ 312]{hull2011}.
+\end{dokaz}
+
+\subsubsection{Belochin kvadrat}
+Konstrukcija v~\cite[str.\ 309]{hull2011}
+
+\subsubsection*{Konstrukcija $\sqrt[3]{2}$ z Belochinim kvadratom}
+\label{podpogl:beloch_kvadrat_koren}
+
+\textcolor{red}{Konstrukcija in dokaz~\cite[str.\ 310]{hull2011}, navaja tudi~\cite[str.\ 156]{geometricconstructions}, kjer je avtor 50 let kasneje pogruntu enak postopek za poljuben $k$.}
+
+\subsubsection{Reševanje enačbe po Lillovi metodi z Belochinim pregibom}
+
+Za poljubno enačbo $a_3 x^3 + a_2 x^2 + a_1 x + a_0 = 0$ povežimo sedaj Lillovo metodo s primerno konstrukcijo Belochinega kvadrata. \textcolor{red}{opis~\cite[str.\ 312]{hull2011}, ampak MANJKA DOKAZ!!}
+
+\textcolor{red}{Ker imata dve paraboli tri skupne tangente, obstajajo 3je pregibi, ki točki položijo na premice, torej trije koti, torej tri rešitve kubične enačbe.}
+
+\textcolor{red}{Daj kakšen primer. Eden s samimi pozitivnimi koeficienti, eden z negativnim in ničelnim?}
+
 
 Za kubične enačbe iz parabol (kar sledi iz operacije~\ref{op:O7}) lahko gledaš~\cite[str.\ 150]{geometricconstructions}.
 
+\subsubsection{Alperinova rešitev}
+
+\textcolor{red}{a čmo tudi to?} (gl.\ Hull 2020, hull2013 str.\ 78 spodej)
+
 \subsection{Kvartična enačba}
+
+% kot redukcija na kubično ali kvadratno??
+% citiram od začetka poglavja: Znano je tudi, da lahko reševanje kvartične enačbe prevedemo na reševanje kubične ali celo kvadratne, zato nam origami rešuje tudi enačbe četrte stopnje.
 
 \subsection{Kvintična enačba}

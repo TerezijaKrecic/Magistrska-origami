@@ -78,7 +78,6 @@
       \field{labeltitlesource}{title}
       \field{title}{ORIGAMICS: Mathematical Explorations Through Paper Folding}
       \field{year}{2008}
-      \true{nocite}
     \endentry
     \entry{robinson2024}{misc}{}{}
       \name{author}{1}{}{%
@@ -414,6 +413,146 @@
       \field{title}{Project Origami: Activities for Exploring Matmehatics}
       \field{year}{2013}
     \endentry
+    \entry{smith2003}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=3217e5b634d7129591777247de8e9022}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Scott\bibnamedelima G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{3217e5b634d7129591777247de8e9022}
+      \strng{fullhash}{3217e5b634d7129591777247de8e9022}
+      \strng{fullhashraw}{3217e5b634d7129591777247de8e9022}
+      \strng{bibnamehash}{3217e5b634d7129591777247de8e9022}
+      \strng{authorbibnamehash}{3217e5b634d7129591777247de8e9022}
+      \strng{authornamehash}{3217e5b634d7129591777247de8e9022}
+      \strng{authorfullhash}{3217e5b634d7129591777247de8e9022}
+      \strng{authorfullhashraw}{3217e5b634d7129591777247de8e9022}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Mathematics Teachers}
+      \field{number}{3}
+      \field{title}{Paper Folding and Conic Sections}
+      \field{volume}{96}
+      \field{year}{2003}
+      \field{pages}{202\bibrangedash 207}
+      \range{pages}{6}
+    \endentry
+    \entry{lotka1907}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a212885ae516f9ed2b16be89e1acb827}{%
+           family={Lotka},
+           familyi={L\bibinitperiod},
+           given={Alfred\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{fullhash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{fullhashraw}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{bibnamehash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{authorbibnamehash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{authornamehash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{authorfullhash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{authorfullhashraw}{a212885ae516f9ed2b16be89e1acb827}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{School Science and Mathematics}
+      \field{number}{7}
+      \field{title}{Construction of conic sections by paper-folding}
+      \field{volume}{7}
+      \field{year}{1907}
+      \field{pages}{595\bibrangedash 597}
+      \range{pages}{3}
+    \endentry
+    \entry{yates1943}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a02362c2a98498b76e48e407c31f25be}{%
+           family={Yates},
+           familyi={Y\bibinitperiod},
+           given={Robert\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a02362c2a98498b76e48e407c31f25be}
+      \strng{fullhash}{a02362c2a98498b76e48e407c31f25be}
+      \strng{fullhashraw}{a02362c2a98498b76e48e407c31f25be}
+      \strng{bibnamehash}{a02362c2a98498b76e48e407c31f25be}
+      \strng{authorbibnamehash}{a02362c2a98498b76e48e407c31f25be}
+      \strng{authornamehash}{a02362c2a98498b76e48e407c31f25be}
+      \strng{authorfullhash}{a02362c2a98498b76e48e407c31f25be}
+      \strng{authorfullhashraw}{a02362c2a98498b76e48e407c31f25be}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Mathematical Monthly}
+      \field{number}{4}
+      \field{title}{Folding the Conics}
+      \field{volume}{50}
+      \field{year}{1943}
+      \field{pages}{228\bibrangedash 230}
+      \range{pages}{3}
+    \endentry
+    \entry{lang1988}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=2544333c5df1c60e49b910314d12b567}{%
+           family={Lang},
+           familyi={L\bibinitperiod},
+           given={Robert\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{fullhash}{2544333c5df1c60e49b910314d12b567}
+      \strng{fullhashraw}{2544333c5df1c60e49b910314d12b567}
+      \strng{bibnamehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authorbibnamehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authornamehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authorfullhash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authorfullhashraw}{2544333c5df1c60e49b910314d12b567}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Four Problems}
+      \field{number}{3}
+      \field{title}{British Origami}
+      \field{volume}{132}
+      \field{year}{1988}
+      \field{pages}{7\bibrangedash 11}
+      \range{pages}{5}
+    \endentry
+    \entry{gleason1988}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=8aa6036daa4dddfe5dc59c15734c314e}{%
+           family={Gleason},
+           familyi={G\bibinitperiod},
+           given={Andrew\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8aa6036daa4dddfe5dc59c15734c314e}
+      \strng{fullhash}{8aa6036daa4dddfe5dc59c15734c314e}
+      \strng{fullhashraw}{8aa6036daa4dddfe5dc59c15734c314e}
+      \strng{bibnamehash}{8aa6036daa4dddfe5dc59c15734c314e}
+      \strng{authorbibnamehash}{8aa6036daa4dddfe5dc59c15734c314e}
+      \strng{authornamehash}{8aa6036daa4dddfe5dc59c15734c314e}
+      \strng{authorfullhash}{8aa6036daa4dddfe5dc59c15734c314e}
+      \strng{authorfullhashraw}{8aa6036daa4dddfe5dc59c15734c314e}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Mathematical Monthly}
+      \field{number}{3}
+      \field{title}{Angle Trisection, the Heptagon, and the Triskaidecagon}
+      \field{volume}{95}
+      \field{year}{1988}
+      \field{pages}{185\bibrangedash 194}
+      \range{pages}{10}
+    \endentry
   \enddatalist
   \datalist[entry]{nty/global//global/global/global}
     \entry{struik1986}{book}{}{}
@@ -467,6 +606,34 @@
       \field{title}{Kratka zgodovina matematike}
       \field{year}{1986}
     \endentry
+    \entry{gleason1988}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=8aa6036daa4dddfe5dc59c15734c314e}{%
+           family={Gleason},
+           familyi={G\bibinitperiod},
+           given={Andrew\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8aa6036daa4dddfe5dc59c15734c314e}
+      \strng{fullhash}{8aa6036daa4dddfe5dc59c15734c314e}
+      \strng{fullhashraw}{8aa6036daa4dddfe5dc59c15734c314e}
+      \strng{bibnamehash}{8aa6036daa4dddfe5dc59c15734c314e}
+      \strng{authorbibnamehash}{8aa6036daa4dddfe5dc59c15734c314e}
+      \strng{authornamehash}{8aa6036daa4dddfe5dc59c15734c314e}
+      \strng{authorfullhash}{8aa6036daa4dddfe5dc59c15734c314e}
+      \strng{authorfullhashraw}{8aa6036daa4dddfe5dc59c15734c314e}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Mathematical Monthly}
+      \field{number}{3}
+      \field{title}{Angle Trisection, the Heptagon, and the Triskaidecagon}
+      \field{volume}{95}
+      \field{year}{1988}
+      \field{pages}{185\bibrangedash 194}
+      \range{pages}{10}
+    \endentry
     \entry{haga2008}{book}{}{}
       \name{author}{1}{}{%
         {{hash=d536a70c55dcbb064e2d3f3654439a72}{%
@@ -492,7 +659,6 @@
       \field{labeltitlesource}{title}
       \field{title}{ORIGAMICS: Mathematical Explorations Through Paper Folding}
       \field{year}{2008}
-      \true{nocite}
     \endentry
     \entry{euclidI}{book}{}{}
       \name{author}{1}{}{%
@@ -609,6 +775,62 @@
       \field{year}{1998}
       \field{pages}{73\bibrangedash 78}
       \range{pages}{6}
+    \endentry
+    \entry{lang1988}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=2544333c5df1c60e49b910314d12b567}{%
+           family={Lang},
+           familyi={L\bibinitperiod},
+           given={Robert\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{fullhash}{2544333c5df1c60e49b910314d12b567}
+      \strng{fullhashraw}{2544333c5df1c60e49b910314d12b567}
+      \strng{bibnamehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authorbibnamehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authornamehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authorfullhash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authorfullhashraw}{2544333c5df1c60e49b910314d12b567}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Four Problems}
+      \field{number}{3}
+      \field{title}{British Origami}
+      \field{volume}{132}
+      \field{year}{1988}
+      \field{pages}{7\bibrangedash 11}
+      \range{pages}{5}
+    \endentry
+    \entry{lotka1907}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a212885ae516f9ed2b16be89e1acb827}{%
+           family={Lotka},
+           familyi={L\bibinitperiod},
+           given={Alfred\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{fullhash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{fullhashraw}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{bibnamehash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{authorbibnamehash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{authornamehash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{authorfullhash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{authorfullhashraw}{a212885ae516f9ed2b16be89e1acb827}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{School Science and Mathematics}
+      \field{number}{7}
+      \field{title}{Construction of conic sections by paper-folding}
+      \field{volume}{7}
+      \field{year}{1907}
+      \field{pages}{595\bibrangedash 597}
+      \range{pages}{3}
     \endentry
     \entry{sgv2016}{unpublished}{}{}
       \name{author}{3}{}{%
@@ -741,6 +963,34 @@
       \field{title}{Geometry with Geometry Explorer}
       \field{year}{2005}
     \endentry
+    \entry{smith2003}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=3217e5b634d7129591777247de8e9022}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Scott\bibnamedelima G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{3217e5b634d7129591777247de8e9022}
+      \strng{fullhash}{3217e5b634d7129591777247de8e9022}
+      \strng{fullhashraw}{3217e5b634d7129591777247de8e9022}
+      \strng{bibnamehash}{3217e5b634d7129591777247de8e9022}
+      \strng{authorbibnamehash}{3217e5b634d7129591777247de8e9022}
+      \strng{authornamehash}{3217e5b634d7129591777247de8e9022}
+      \strng{authorfullhash}{3217e5b634d7129591777247de8e9022}
+      \strng{authorfullhashraw}{3217e5b634d7129591777247de8e9022}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Mathematics Teachers}
+      \field{number}{3}
+      \field{title}{Paper Folding and Conic Sections}
+      \field{volume}{96}
+      \field{year}{2003}
+      \field{pages}{202\bibrangedash 207}
+      \range{pages}{6}
+    \endentry
     \entry{row1917}{book}{}{}
       \name{author}{1}{}{%
         {{hash=f190a9053bdae7bc212d67b7062391e4}{%
@@ -783,6 +1033,34 @@
       \verb{url}
       \verb https://ia800907.us.archive.org/7/items/tsundararowsgeo00rowrich/tsundararowsgeo00rowrich.pdf
       \endverb
+    \endentry
+    \entry{yates1943}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a02362c2a98498b76e48e407c31f25be}{%
+           family={Yates},
+           familyi={Y\bibinitperiod},
+           given={Robert\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a02362c2a98498b76e48e407c31f25be}
+      \strng{fullhash}{a02362c2a98498b76e48e407c31f25be}
+      \strng{fullhashraw}{a02362c2a98498b76e48e407c31f25be}
+      \strng{bibnamehash}{a02362c2a98498b76e48e407c31f25be}
+      \strng{authorbibnamehash}{a02362c2a98498b76e48e407c31f25be}
+      \strng{authornamehash}{a02362c2a98498b76e48e407c31f25be}
+      \strng{authorfullhash}{a02362c2a98498b76e48e407c31f25be}
+      \strng{authorfullhashraw}{a02362c2a98498b76e48e407c31f25be}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Mathematical Monthly}
+      \field{number}{4}
+      \field{title}{Folding the Conics}
+      \field{volume}{50}
+      \field{year}{1943}
+      \field{pages}{228\bibrangedash 230}
+      \range{pages}{3}
     \endentry
     \entry{zore2022}{thesis}{}{}
       \name{author}{1}{}{%
