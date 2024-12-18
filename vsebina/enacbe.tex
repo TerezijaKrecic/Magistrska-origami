@@ -5,25 +5,28 @@
 % - enačbe 4. stopnje (TEŽJE) --> Alhazen's problem (gl.\ članek od Vavšetiča in tudi~\cite[str.\ 137--139]{geometricconstructions})
 % - enačbe 5. stopnje (TEŽJE)
 
-Zapustimo deloma področje geometrije in si poglejmo, kako lahko s prepogibanjem papirja rešujemo enačbe.
+Zapustimo deloma področje geometrije in si poglejmo, kako lahko s prepogibanjem papirja rešujemo enačbe z racionalnimi koeficienti.
 
-Linearne enačbe z racionalnimi koeficienti ni težko rešiti. Enačba $ax + b = 0$ ima rešitev $x = -b/a$. To je racionalno število, ki je po izreku~\ref{izr:origami_konstruktibilnost} origami-konstruktibilno.
-
-Ključno vlogo igrata origami operaciji~\ref{op:O6} in~\ref{op:O7}. Prva nam hkrati s konstrukcijo tangente na parabolo določi tudi točko na paraboli, skozi katero je pregib tangenten na stožnico, to pa je ekvivalentno reševanju kvadratne enačbe. Druga pa s konstrukcijo skupne tangente na dve paraboli omogoča reševanje kubične enačbe, saj imata paraboli v ravnini največ tri skupne tangente (glej~\cite[str.\ 149--150]{geometricconstructions}). Znano je tudi, da lahko reševanje kvartične enačbe prevedemo na reševanje kubične ali celo kvadratne, zato nam origami rešuje tudi enačbe četrte stopnje. To je že skoraj 100 let nazaj odkrila italijanska matematičarka Margherita P.\ Beloch, ki je s tem odkrila pravo moč prepogibanja papirja.
-
-Iz podpoglavja~\ref{podpogl:evkl_konstruktibilnost} vemo, da lahko z neoznačenim ravnilom in šestilom konstruiramo natanko števila oblike $a + b\sqrt{r}$, kjer so $a, b, r \in \Q$. Take oblike je tudi splošna rešitev kvadratne enačbe z racionalnimi koeficienti in ker lahko ta števila konstruiramo tudi z origamijem, lahko preko kvadratne formule najprej izračunamo realni rešitvi in ju nato s prepogibanjem papirja preko operacij seštevanja, odštevanja, množenja, deljenja in korenjenja konstruiramo (izrek~\ref{izr:origami_konstruktibilnost}). Zanima pa nas, ali jih je mogoče konstruirati tudi brez predhodnega računanja.
+Spomnimo se še, da smo origami-konstruktibilna števila definirali kot vsa števila, ki jih lahko s prepogibanjem konstruiramo preko na začetku dane abscine osi, izhodišča $(0,0)$ in točke $(1,0)$ in da lahko kar predpostavimo, da imamo dan celoten koordinatni sistem z abscisno in ordinatno osjo, izhodiščem ter enoto $1$ na obeh oseh (definicija~\ref{def:origami_konstruktibilnost}). V tej ravnini bomo konstruirali rešitve naših enačb, ker pa bomo do njih prišli po več korakih in prepogibih, je pri prepogibanju potrebna visoka natančnost.
 
 V tem poglavju si bomo pogledali, kako z origamijem na prefinjen način -- brez konstrukcije preko zgornjih petih operacij -- rešujemo enačbe druge, tretje, četrte in pete stopnje. Za vsak $n \in \{2, 3, 4, 5\}$ bomo reševali enačbo
 $$ a_n x^n + a_{n-1} x^{n-1} + \ldots + a_2 x^2 + a_1 x + a_0 = 0, $$
-kjer so $a_i \in \Q$ za vsak $i \in \{1, 2, \ldots, n\}$ in $a_n \ne 0$.
+kjer so $a_i \in \Q$ za vsak $i \in \{1, 2, \ldots, n\}$ in $a_n \ne 0$. Ker bo $i$ največ $5$, bomo namesto koeficientov $a_i$ uporabljali kar črke $a, b, c, d, e, f$.
 
-Spomnimo se še, da smo origami-konstruktibilna števila definirali kot vsa števila, ki jih lahko s prepogibanjem konstruiramo preko na začetku dane abscine osi, izhodišča $(0,0)$ in točke $(1,0)$ in da lahko kar predpostavimo, da imamo dan celoten koordinatni sistem z abscisno in ordinatno osjo, izhodiščem ter enoto $1$ na obeh oseh (definicija~\ref{def:origami_konstruktibilnost}). 
+Začnimo z najbolj osnovno, t.\ j.\ linearno enačbo. Enačba $ax + b = 0$ ima rešitev $x = -b/a$, ki je racionalno število in po izreku~\ref{izr:origami_konstruktibilnost} origami-konstruktibilno. Če bi želeli rešitev konstruirati brez računanja. bi lahko v ravnini prepognili premico $y = ax + b$ (konstruiramo npr.\ točki (0, b) in (1, a+b) in skoznju prepogneno premico) in njeno presečišče z abscisno osjo je iskana rešitev. Vendar je ta konstrukcija bolj zamudna kot direktna konstrukcija izračunane rešitve.
+
+Za rešitev kvadratne enačbe lahko uporabimo znanje iz podpoglavja~\ref{podpogl:evkl_konstruktibilnost} -- vemo, da lahko z neoznačenim ravnilom in šestilom konstruiramo natanko števila oblike $a + b\sqrt{r}$, kjer so $a, b, r \in \Q$. Take oblike je tudi splošna rešitev kvadratne enačbe z racionalnimi koeficienti in ker lahko ta števila konstruiramo tudi z origamijem, lahko preko kvadratne formule najprej izračunamo realni rešitvi in ju nato s prepogibanjem papirja preko operacij seštevanja, odštevanja, množenja, deljenja in korenjenja konstruiramo (izrek~\ref{izr:origami_konstruktibilnost}). Zanima pa nas, ali jih je mogoče konstruirati tudi brez predhodnega računanja.
+
+Ključno vlogo bosta v nadaljevanju odigrali origami operaciji~\ref{op:O6} in~\ref{op:O7}. Prva nam hkrati s konstrukcijo tangente na parabolo določi tudi točko na paraboli, skozi katero je pregib tangenten na stožnico, to pa je ekvivalentno reševanju kvadratne enačbe. Druga pa s konstrukcijo skupne tangente na dve paraboli omogoča reševanje kubične enačbe, saj imata paraboli v evklidski ravnini največ tri skupne tangente (glej~\cite[str.\ 149--150]{geometricconstructions}). Znano je tudi, da lahko reševanje kvartične enačbe prevedemo na reševanje kubične ali celo kvadratne (\textcolor{red}{dej vir, npr.\ uni članek v zavihku z enačbami}), zato nam origami rešuje tudi enačbe četrte stopnje. To je že skoraj 100 let nazaj odkrila italijanska matematičarka Margherita P.\ Beloch, ki je s tem odkrila pravo moč prepogibanja papirja.
 
 \subsection{Kvadratna enačba}
 
 Rešujemo enačbo oblike
-$$ a_2 x^2 + a_1 x + a_0 = 0, $$
-kjer so $a_0, a_1, a_2 \in \Q$ in velja $a_2 \ne 0$. Postopek, ki si ga bomo pogledali v nadaljevanju, predpostavlja $a_2 = 1$. Ker je vodilni koeficient neničeln, lahko z njim enačbo delimo, zato lahko predpostavko brez škode za splošnost sprejmemo. Da se ne ukvarjamo z indeksi, uporabimo kar standardne oznake za koeficiente kvadratne enačbe (pri čemer je $a = 1$), torej rešujemo enačbo oblike
+$$ a x^2 + b x + c = 0, $$
+kjer so $a, b, c \in \Q$ in velja $a \ne 0$.  Njeni splošni rešitvi sta
+$$ x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$, vendar si želimo najti način brez konstrukcije vseh teh števil.
+
+Postopek, ki si ga bomo pogledali v nadaljevanju, predpostavlja $a_2 = 1$. Ker je vodilni koeficient neničeln, lahko z njim enačbo delimo in pri tem še vedno dobimo racionslne koeficiente, zato lahko predpostavko brez škode za splošnost sprejmemo. Da se ne ukvarjamo z indeksi, uporabimo kar standardne oznake za koeficiente kvadratne enačbe (pri čemer je $a = 1$), torej rešujemo enačbo oblike
 \begin{equation}
     \label{eq:spl_kv_en}
     x^2 + bx + c = 0
@@ -70,6 +73,10 @@ Obe koordinati sta racionalni, torej je točka $B$ konstruktibilna točka. Ker l
 To še zdaleč ni edini postopek za reševanje kvadratne enačbe. Kot še en lep primer Hull v\~cite[str.\ 38]{hull2020} navaja Lillovo metodo, dokaz pa prepušča bralcu. Ta metoda je tudi zgled, kako lahko najprej najdemo evklidsko konstrukcijo rešitev kvadratne enačbe in jo nato preobrazimo v origami konstrukcijo -- saj že vemo, da lahko s prepogibanjem papirja konstruiramo vse in še več, kar se da z evklidskim orodjem.
 
 \subsection{Kubična enačba}
+
+Rešujemo enačbo oblike
+$$ a_3 x^3 + a_2 x^2 + a_1 x + a_0 = 0, $$
+kjer so $a_0, a_1, a_2, a_3 \in \Q$ in velja $a_3 \ne 0$.
 
 Operacija~\ref{op:O6} nam je preko konstrukcije tangente na parabolo pomagala rešiti kvadratno enačbo. Spomnimo se, da je Belocheva to v 30-ih letih prejšnjega stoletja nadgradila z operacijo~\ref{op:O7}, ki nam konstruira skupno tangento na dve paraboli hkrati. Po njej jo tudi imenujemo \emph{Belochin pregib}. Z njim je kot prva odkrila resnično moč origami konstrukcij, a je žal trajalo več kot pol stoletja, da so matematiki začeli ceniti njeno odkritje. Le redki so njeno delo poznali in ji tudi pripisali avtorstvo.
 
@@ -133,6 +140,8 @@ Za kubične enačbe iz parabol (kar sledi iz operacije~\ref{op:O7}) lahko gleda�
 \textcolor{red}{a čmo tudi to?} (gl.\ Hull 2020, hull2013 str.\ 78 spodej)
 
 \subsection{Kvartična enačba}
+
+Enačbe četrtega reda so 
 
 % kot redukcija na kubično ali kvadratno??
 % citiram od začetka poglavja: Znano je tudi, da lahko reševanje kvartične enačbe prevedemo na reševanje kubične ali celo kvadratne, zato nam origami rešuje tudi enačbe četrte stopnje.
