@@ -36,7 +36,7 @@ Prva knjiga nas še posebej zanima. V njej je Evklid najprej definiral osnovne p
 \end{postulat}
 
 \begin{definicija}
-    \emph{Evklidske konstrukcije} so konstrukcije premic, kotov, krožnic in drugih geometrijskih figur, ki jih je mogoče konstruirati le z uporabo t.\ i.\ \emph{evklidskih orodij}:
+    \emph{Evklidske konstrukcije} so konstrukcije točk, daljic, premic in krožnic, ki jih je mogoče konstruirati le z uporabo t.\ i.\ \emph{evklidskih orodij}:
     \begin{itemize}
         \item neoznačeno in neskončno dolgo ravnilo (angl.\ \emph{straightedge})
         \item šestilo, ki ne prenaša razdalj (ko ga dvignemo od podlage, se njegova kraka zložita skupaj)
@@ -44,6 +44,7 @@ Prva knjiga nas še posebej zanima. V njej je Evklid najprej definiral osnovne p
 \end{definicija}
 
 \begin{opomba}
+    \label{opom:solsko_sestilo}
     Da se pokazati, da lahko za konstrukcije ekvivalentno uporabimo tudi šestilo, ki prenaša razdalje~\cite[str.\ 6--7]{geometricconstructions}. Zato imamo odslej z izrazom \emph{šestilo} v mislih kar moderno šolsko šestilo.
 \end{opomba}
 
@@ -54,7 +55,7 @@ Formalno so torej edine dovoljene operacije tiste iz postulatov~\ref{post:P1}--\
 
 V nalogi se bomo omejili le na prepogibanje v ravnini. Za model evklidske ravnine vzamemo kvadraten list papirja, saj s prepogibanjem očitno v tej ravnini tudi ostanemo. Dogovorimo se, da pregibe konsktruiramo le po enega naenkrat ter v ravni črti, po vsakem prepogibu papir znova odgrnemo in prepovedana je uporaba kakršnegakoli orodja (npr.\ škarje in lepilo, izjemoma lahko za vidnejšo označbo \emph{že konstruiranih} pregibov ali točk uporabimo pisalo).  Bralec je ob branju povabljen, da opisane konstrukcije praktično preizkusi tudi sam. Pri izbiri papirja je priporočljiv rahlo prosojen papir, skozi katerega se vidijo morebitne označbe točk in premic s svinčnikom (npr.\ navaden kuhinjski papir za peko).
 
-Ker so pregibi torej ravne črte, nam služijo kot modeli premic. Na začetku, ko imamo pred seboj le kvadraten list papirja, so naše premice njegove stranice. Nove premice so pregibi skozi točke. Začetni modeli točk so ravno oglišča našega lista papirja, nadaljne točke pa dobimo kot presečišča premic, torej presečišča pregibov, ki gredo skozi dane ali že skonstruirane točke. Torej imamo le pet možnosti, kako prepogniti papir -- tako, da zložimo (slikovni prikaz v~\cite[str.\ 25--26]{hull2020}):
+Ker so pregibi torej ravne črte, nam služijo kot modeli premic. Na začetku, ko imamo pred seboj le kvadraten list papirja, so naše premice njegove stranice, nove premice pa dobimo kot pregibi skozi točke. Določimo še te -- začetni modeli točk so ravno oglišča našega lista papirja, nadaljne točke pa dobimo kot presečišča premic, torej presečišča pregibov (ki gredo skozi dane ali že skonstruirane točke). Torej imamo le pet možnosti, kako prepogniti papir -- tako, da zložimo (slikovni prikaz v~\cite[str.\ 25--26]{hull2020}):
 \begin{itemize}
     \item točko na drugo točko (en možen pregib),
     \item točko samo vase (neskončno možnih pregibov),
@@ -220,6 +221,8 @@ Ker lahko vse konstrukcije po izreku~\ref{izr:op1do8} opišemo z operacijami~\re
     Če imamo dani vsaj dve točki in dve nevzporedni (lahko tudi identični) premici, ki vsebujeta dane točke, potem lahko vse origami konstrukcije z enkratnimi in ravnimi pregibi opišemo s kombinacijo operacij~\ref{op:O2} in~\ref{op:O7}.
 \end{izrek}
 
+Vseeno bomo ohranili vseh osem aksiom operacij, saj bomo kakšen pregib lažje razložili preko ene od ostalih petih operacij kot pa opisovali, na kakšen način je to operacija~\ref{op::O7}.
+
 \subsubsection{Zrcaljenje točke čez premico}
 \label{zrcaljenje_origami}
 
@@ -228,9 +231,9 @@ Operacija~\ref{op:O3} nam poda simetralo daljice $AB$. Torej je točka $B$ zrcal
 Zato moramo najti zaporedje pregibov, kjer na koncu kot presečišče nekih dveh premic dobimo želeno točko. Za dano premico $a$ in točki $A$, ki ne leži na tej premici (sicer je točka $A$ zrcalna slika sama sebi), lahko zrcalno sliko točke konstruiramo z naslednjimi koraki (prikazani na sliki~\ref{fig:zrcaljenje_cez_premico}, postopek vzet iz~\cite[str.\ 28]{hull2020}):
 \begin{enumerate}
     \item Z operacijo~\ref{op:O5} prepognemo pravokotnico na premico $a$ skozi točko $A$.
-    \item Z operacijo~\ref{op:O4} prepognemo simetralo kota, ki ga oklepata premica $a$ in njena pravokotnica.
+    \item Z operacijo~\ref{op:O4} prepognemo simetralo kota, ki ga oklepata premica $a$ in pravokotnica iz prvega koraka.
     \item Z operacijo~\ref{op:O5} prepognemo pravokotnico na simetralo skozi točko $A$. Njeno presečišče s premico $a$ označimo z $B$.
-    \item Z operacijo~\ref{op:O5} prepognemo pravokotnico na pregib iz 3.\ koraka skozi točko $B$. Presečišče novega pregiba in pravokotnice iz 1.\ koraka označimo z $A'$.
+    \item Z operacijo~\ref{op:O5} prepognemo pravokotnico na pregib iz tretjega koraka skozi točko $B$. Presečišče novega pregiba in pravokotnice iz prvega koraka označimo z $A'$.
 \end{enumerate}
 
 \begin{figure}[h]
@@ -287,6 +290,7 @@ Ker lahko čez premico zrcalimo točke, lahko čeznjo zrcalimo tudi daljice oz.\
 Tako lahko s prepogibanjem papirja zrcalimo točke (in premice), prenašamo razdalje pa tudi -- po 2.\ koraku iz zgornjega dokaza -- rotiramo točke (in premice). To novo znanje bomo uporabili v podpoglavju~\ref{origami_konstruktibilnost}. Od sedaj naprej bomo pri konstrukcijah, ki vključujejo zrcaljenje točk, zaradi preglednosti izpustili pregibe, ki so potrebni za zrcaljenje.
 
 \subsection{Kje origami konstrukcije nadvladajo evklidske}
+\label{podpogl:nadvlada_origamija}
 
 Prišli smo do ključnega dela poglavja -- reševanje vprašanja, zakaj se nam z origami konstrukcijami sploh splača ukvarjati.
 
@@ -294,24 +298,24 @@ Za začetek naj bralec ob zgornjih opisih posamezne operacije premisli, da je mo
 
 Ključna je sedma operacija. Izkaže se namreč, da operacije~\ref{op:O7} oz.\ Belochinega pregiba ne moremo opraviti z evklidskim orodjem. Prefinjen način, kako to dokazati, je preko rešitve starogrškega problema o trisekciji kota. V podpoglavju~\ref{podpogl:starogrskiproblemi} bomo spoznali več origami postopkov, ki nam poljuben kot razdelijo na tri skladne dele, pri tem pa uporabimo pregib iz operacije~\ref{op:O7}. Ker \emph{trisekcija kota z evklidskim orodjem ni mogoča} (dokaz v~\cite[str.\ 77--78]{jerman1998}), posledično tudi konstrukcija operacije~\ref{op:O7} s tem orodjem ne obstaja.
 
-Tako z evklidskim orodjem kot s prepogibanjem papirja lahko torej konstruiramo premice in točke ter prenašamo razdalje. Le evklidskim orodjem lahko konstruiramo tudi krožne loke, le s prepogibanjem papirja pa lahko tretjinimo poljuben kot. Origami nam ponuja še več rešitev, kjer je evklidsko orodje nemočno, npr.\ uporaba Belochinega pregiba je ključna za enega \textcolor{red}{(ali več???)} od postopkov reševanja kubičnih enačb, ki jih v splošnem z evklidskim orodjem ne moremo reševati (gl.\ poglavje~\ref{pogl:enacbe}).
+Tako z evklidskim orodjem kot s prepogibanjem papirja lahko torej konstruiramo premice in točke ter prenašamo razdalje. Le evklidskim orodjem lahko konstruiramo tudi krožne loke, le s prepogibanjem papirja pa lahko tretjinimo poljuben kot in še več kot to -- kot primer je uporaba Belochinega pregiba ključna za enega \textcolor{red}{(ali več???)} od postopkov reševanja kubičnih enačb, ki jih v splošnem z evklidskim orodjem ne moremo reševati (gl.\ poglavje~\ref{pogl:enacbe}).
 
-Prednost origamija pred evklidskim orodjem se v skriva tudi v količini števil, ki jih lahko konstruiramo.
+Prednost origamija pred evklidskim orodjem je najbolj vidna, če evklidske in origami konstrukcije prevedemo v jezik abstraktne algebre.
 
 \subsubsection{Algebrski pogled na evklidske konstrukcije}
 \label{podpogl:evkl_konstruktibilnost}
 
 \begin{definicija}
-    Na listu papirja, ki nam služi kot model ravnine $\R^2$, imejmo dano abscisno os, izhodišče $(0,0)$ in razdaljo 1. Če lahko le z neoznačenim ravnilom in šestilom konstruiramo točko $(x,0)$, rečemo, da je $x$ \emph{evklidsko-konstruktibilno} število. Pri tem upoštevamo tri pravila, ki izhajajo iz Evklidovih aksiomov in postulatov:
+    Na listu papirja, ki nam služi kot model kompleksne ravnine $\C$, imejmo dano realno os, izhodišče $(0,0)$ in razdaljo 1. Če lahko le z neoznačenim ravnilom in šestilom konstruiramo točko $(x,0)$, rečemo, da je $x$ \emph{evklidsko-konstruktibilno} število. Pri tem upoštevamo tri pravila, ki izhajajo iz Evklidovih aksiomov in postulatov:
     \begin{itemize}
-        \item nove točke določimo kot presečišča kombinacij premic in krožnic,
-        \item skozi dani točki lahko z ravnilom potegnemo ravno črto ter
-        \item za dano točko in razdaljo $r$ lahko s šestilom zarišemo krožnico, ki ima središče v tej točki in polmer $r$.
+        \item točke dobimo kot presečišča dveh premic, dveh krožnic ali premice in krožnice,
+        \item skozi vsaki točki lahko z ravnilom potegnemo ravno črto ter
+        \item za vsako točko in razdaljo $r$ lahko s šestilom zarišemo krožnico, ki ima središče v tej točki in polmer $r$.
     \end{itemize}
 \end{definicija}
 
 \begin{opomba}
-    Ker lahko ekvivalentno uporabimo šestilo, ki prenaša razdalje, je dovolj \emph{kjerkoli} v ravnini konstruirati točki z medsebojno razdaljo $x$.
+    Ker lahko uporabimo šestilo, ki prenaša razdalje (opomba~\ref{opom:solsko_sestilo}), je dovolj \emph{kjerkoli} v ravnini konstruirati točki z medsebojno razdaljo $x$.
 \end{opomba}
 
 Jerman bralca v~\cite{jerman1998} na zelo strukturiran in nazoren način popelje čez dokaz, da lahko z evklidskim orodjem konstruiramo natanko vsa racionalna števila, njihove vsote, razlike, zmnožke, količnike, kvadratne korene ter linearne kombinacije vsega naštetega. To je množica
@@ -320,16 +324,16 @@ $$
 $$
 ki je komutativen obseg oz.\ polje in hkrati tudi dvorazsežni vektorski prostor nad obsegom $\Q$ z bazo $ \{1, \sqrt{r} \} $.
 
-Da pokažemo, da so to vsa možna evklidsko-konstruktibilna števila, je potrebna natančna obravnava vseh možnih enačb, ki jih dobimo pri iskanju presečišč dveh krožnic, dveh premic ter krožnice in premice, potem pa je potrebno še dokazati, da nam vse nadaljne rabe konstruiranih presečišč podajo najmanjšo razširitev polja racionalnih števil, ki je zaprta za operacijo kvadratnega korenjenja. Jerman s tem dokaže naslednji izrek.
+Da pokažemo, da so to vsa možna evklidsko-konstruktibilna števila, je potrebna natančna obravnava vseh možnih enačb, ki jih dobimo pri iskanju presečišč dveh krožnic, dveh premic ter krožnice in premice, potem pa je potrebno še dokazati, da nam vse nadaljne rabe konstruiranih presečišč res podajo najmanjšo razširitev polja kompleksnih števil, ki je zaprta za operacijo kvadratnega korenjenja. Jerman s tem dokaže naslednji izrek.
 
 \begin{izrek}
     \label{izr:evkl_konstr}
-    Število $r \in \R$ se da narisati le s pomočjo ravnila in šestila natanko tedaj, ko je razsežnost obsega $\Q(r)$, kot vektorskega prostora nad obsegom $\Q$, enaka nenegativni potenci števila $2$.
+    Število $r \in \R$ se da konstruirati le s pomočjo ravnila in šestila natanko tedaj, ko je $r$ algebraičen nad $\Q$ in je razsežnost obsega $\Q(r)$, kot vektorskega prostora nad obsegom $\Q$, enaka $2^n$ za nek $n \in \N_0$.
 \end{izrek}
 
 \begin{opomba}
     \label{op:razseznost_obsega_evkl}
-    Razsežnosti obsega $\Q(r)$ pravimo tudi \emph{stopnja razširitve obsega $\Q$}. Izkaže se, da je enaka stopnji minimalnega polinoma števila $r$~\cite[str.\ 77]{jerman1998}.
+    Razsežnosti obsega $\Q(r)$ pravimo tudi \emph{stopnja razširitve obsega $\Q$}. Izkaže se, da je enaka stopnji minimalnega polinoma števila $r$ nad $\Q$~\cite[str.\ 77]{jerman1998}.
 \end{opomba}
 
 Izreku takoj sledita dokaza, da trisekcija kota v splošnem ter konstrukcija števila $ \sqrt[3]{2} $ z evklidskim orodjem nista mogoči~\cite[str.\ 77--78]{jerman1998}.
@@ -342,11 +346,11 @@ Iz izreka sledi tudi, da lahko vsa evklidsko-konstruktibilna števila analitičn
 Poiščimo še množico števil, ki jih lahko konstruiramo z origamijem.
 
 \begin{definicija}
-    Na listu papirja, ki nam služi kot model ravnine $\R^2$, imejmo dano abscisno os, izhodišče $(0,0)$ in točko $(1,0)$. Če lahko le z enkratnimi ravnimi prepogibi iz operacij~\ref{op:O1}--\ref{op:O8} konstruiramo točko $(x,0)$, rečemo, da je $x$ \emph{origami-konstruktibilno} število. Pri tem upoštevamo pet pravil iz~\ref{origami_konstrukcije}.
+    Na listu papirja, ki nam služi kot model ravnine $\R^2$, imejmo dano abscisno os, izhodišče $(0,0)$ in točko $(1,0)$. Če lahko le z enkratnimi ravnimi prepogibi konstruiramo točko $(x,0)$, rečemo, da je $x$ \emph{origami-konstruktibilno} število. Pri tem upoštevamo pet pravil iz začetka podpoglavja~\ref{origami_konstrukcije}.
 \end{definicija}
 
 \begin{opomba}
-    Definicija izpolnjuje predpostavke izreka~\ref{izr:dve_operaciji}, zato se lahko ekvivalentno poslužujemo le operacij~\ref{op:O2} in~\ref{op:O7}.
+    Vemo že, da operacije~\ref{op:O1}--~\ref{op:O8} zajamejo vse možne pregibe iz teh petih pravil, zato se jih še naprej poslužujmo.
 \end{opomba}
 
 \begin{opomba}
@@ -382,11 +386,15 @@ Poiščimo še množico števil, ki jih lahko konstruiramo z origamijem.
     Na koncu le še prepognemo pravokotnico na abscisno os skozi točko $A'$ in tako dobimo točko $(\sqrt{r}, 0)$. Torej smo konstruirali število $\sqrt{r}$ za poljuben $r \in \Q^{+}$.
 \end{dokaz}
 
+\begin{opomba}
+    V razdelku~\ref{podpogl:kvadratna_enacba} bomo pokazali, kako s prepogibanjem rešimo poljubno kvadratno enačbo z racionalnimi koeficienti brez pomoči kvadratne formule, kar je v bistvu še en dokaz zgornjega izreka.
+\end{opomba}
+
 \begin{posledica}
     \label{posl:evkl_origami_konstruktibilnost}
     Vsa evklidsko-konstruktibilna števila so origami-konstruktibilna.
 \end{posledica}
 
-Do tega zaključka lahko pridemo tudi intuitivno. Operacija~\ref{op:O1} simulira uporabo neoznačenega ravnila, konstrukcija v operaciji~\ref{op:O6} podaja točke, ki so enako oddaljene od nekega središča, kar je ravno delo šestila.
+Do tega zaključka lahko pridemo tudi intuitivno. Operacija~\ref{op:O1} simulira uporabo neoznačenega ravnila, konstrukcija v operaciji~\ref{op:O6} podaja točke, ki so enako oddaljene od nekega središča, kar je ravno namen šestila.
 
-Izkaže pa se, da se da -- v nasprotju z evklidsko-konstruktibilnimi števili -- s prepogibanjem konstruirati \emph{še več} števil kot le ta iz množice $\Q(r)$. V~\cite[str.\ 156]{geometricconstructions} je na primer dokaz, da lahko z origamijem skonstruiramo $\sqrt[3]{k} $ za poljuben\footnote{Za $k = 2$ je to rešitev starogrškega problema o podvojitvi kocke. Več o tem sledi v podpoglavju~\ref{podpogl:starogrskiproblemi}} konstruktibilen $k$. Torej je na področju konstruiranja števil prepogibanje papirja močnejše od evklidskih konstrukcij.
+Kot smo omenili že na začetku razdelka~\ref{podpogl:nadvlada_origamija}, se da s prepogibanjem konstruirati \emph{še kaj več} kot z evklidskim orodjem. Poleg trisekcije poljubnega kota in reševanja kubičnih enačb lahko konstruiramo tudi $\sqrt[3]{k} $ za poljuben\footnote{Za $k = 2$ je to rešitev starogrškega problema o podvojitvi kocke. Več o tem sledi v podpoglavju~\ref{podpogl:starogrskiproblemi}} konstruktibilen $k$ (dokaz v~\cite[str.\ 156]{geometricconstructions}). Prepogibanje papirja je torej res močnejše orodje od evklidskega.
