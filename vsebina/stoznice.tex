@@ -127,27 +127,22 @@ Izgleda, kot da se nam izriše elipsa, ki ima za gorišči središče krožnice 
 \begin{dokaz}
     Naj bo točka $F_1$ središče krožnice s polmerom $r$ in točka $F_2$ poljubna točka znotraj krožnice. Potem je elipsa, ki ima ti dve točki za svoji gorišči in veliko os enako $r$, natančno določena. Po navodilih iz aktivnosti konstruiramo en pregib, pri čemer na krožnici izberemo poljubno točko $A$ (slika~\ref{fig:dokaz_elipsa} levo). Dokazujemo, da je tangenten na to elipso.
 
-    Označimo s $T$ presečišče pregiba in daljice $AF_1$ (slika~\ref{fig:dokaz_elipsa} na sredi). \textcolor{red}{(Ali presečišče vedno obstaja? Ja, samo še dokaži to)} Ker je pregib simetrala daljice $AF_2$, velja $|TA| = |TF_2|$, torej je
+    Označimo s $T$ presečišče pregiba in daljice $AF_1$ (slika~\ref{fig:dokaz_elipsa} desno). \textcolor{red}{(Ali presečišče vedno obstaja? Ja, samo še dokaži to)} Ker je pregib simetrala daljice $AF_2$, velja $|TA| = |TF_2|$, torej je
     $$|TF_1| + |TF_2| = |TF_1| + |TA| = |F_1A| = r$$
     za vsako izbiro točke $A$. Ker je $r$ velika os elipse, točka $T$ leži na njej.
 
-    Pokažimo, da je to edino presečišče pregiba z elipso. Naj bo $P$ poljubna točka na pregibu, različna od $T$ (slika~\ref{fig:dokaz_elipsa} desno). Ker leži na pregibu, velja $|PF_2| = |PA|$ in iz trikotniške neenakosti sledi $|PF_1| + |PF_2| = |PF_1| + |PA| > |F_1A| = r$, torej točka $P$ ne leži na elipsi. Pregib v točki $T$ je res tangenta na elipso.
-
+    Pokažimo še, da je pregib tangenten na elipso. Opazimo, da so vsi trije koti z vrhom v točki $T$, ki imajo za enega od krakov pregib, skladni. Značilnost tangent na elipso pa je ravno ta, da se žarek, ki ga izstrelimo iz enega gorišča v rob elipse, vedno pod istim kotom odbije v drugo gorišče.
     \begin{figure}[h]
         \centering
         \includegraphics[width=0.3\textwidth]{images/stožnice/elipsa_dokaz1.png}
         \includegraphics[width=0.3\textwidth]{images/stožnice/elipsa_dokaz2.png}
-        \includegraphics[width=0.3\textwidth]{images/stožnice/elipsa_dokaz3.png}
         \caption[Tangentnost na elipso]{Dokaz tangentnosti pregibov na elipso.}
         \label{fig:dokaz_elipsa}
-    \end{figure}  
+    \end{figure}
+    Torej je pregib tangenten na dano elipso v točki $T$.
 \end{dokaz}
 
-Bolj analitičen dokaz, kjer se izračuna splošno enačbo te elipse glede na izbrano krožnico in točko znotraj nje, najdemo v~\cite[str.\ 204--205]{smith2003}.
-
-\textcolor{red}{še dokaz, da je OBRIS elipsa, kot prej s parabolo npr.\ iz kvadratne enačbe? Referenca na dokaz je v~\cite[str.\ 60]{hull2013}. Pa mogoče ista fora z ogrinjačami kot pri paraboli?}
-
-Kaj pa, če pri konstrukciji izberemo točko izven krožnice?
+Kaj se zgodi, če točko izberemo \emph{zunaj} krožnice, pa si pogledamo v naslednjem razdelku.
 
 \subsection{Hiperbola}
 
@@ -171,39 +166,21 @@ Podobno kot prej lahko sklepamo, da se nam izriše obris hiperbole. Spomnimo se,
 \begin{dokaz}
     Naj bo točka $F_1$ središče krožnice s polmerom $r$ in točka $F_2$ poljubna točka zunaj krožnice. Potem je hiperbola, ki ima ti dve točki za svoji gorišči in veliko os enako $r$, natančno določena. Po navodilih iz aktivnosti konstruiramo en pregib, pri čemer na krožnici izberemo poljubno točko $A$ (slika~\ref{fig:dokaz_hiperbola} levo). Dokazujemo, da je tangenten na to hiperbolo.
 
-    Označimo s $T$ presečišče pregiba in nosilke daljice $AF_1$ (slika~\ref{fig:dokaz_hiperbola} na sredi). \textcolor{red}{(Ali presečišče vedno obstaja? NE, V 2 PRIMERIH DOBIMO ASIMPTOTO - ko je premica vzporedna k pregibu)} Ker je pregib simetrala daljice $AF_2$, velja $|TA| = |TF_2|$, torej je 
+    Označimo s $T$ presečišče pregiba in nosilke daljice $AF_1$ (slika~\ref{fig:dokaz_hiperbola} desno). \textcolor{red}{(Ali presečišče vedno obstaja? NE, V 2 PRIMERIH DOBIMO ASIMPTOTO - ko je premica vzporedna k pregibu)} Ker je pregib simetrala daljice $AF_2$, velja $|TA| = |TF_2|$, torej je 
     $$\left||TF_1| - |TF_2|\right| = \left||TF_1| - |TA|\right| = |F_1A| = r$$
     za vsako izbiro točke $A$. Ker je $r$ velika os hiperbole, točka $T$ leži na njej.
 
-    Pokažimo, da je to edino presečišče pregiba s hiperbolo. Naj bo $P$ poljubna točka na pregibu, različna od $T$ (slika~\ref{fig:dokaz_hiperbola} desno). Ker leži na pregibu, velja $|PF_2| = |PA|$ in sledi $\left||PF_1| - |PF_2|\right| = \left||PF_1| - |PA|\right|$. Predpostavimo, da je to enako $r$ in poglejmo, za katere možne položaje točke $P$ je to mogoče:
-
-    \textcolor{red}{Spodnja slikca je ideja, dodelaj da bo natančno. Fora je spet trikotniška neenakost. In da mora P ležat na nosilki $AF_1$ IN pregibu, kar je točno točka T, ki je različna od nje, kar je pač protislovje.}
-
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.5\textwidth]{images/stožnice/hiperbola_dokaz_ideja.png}
-    \end{figure}
-
-    \begin{itemize}
-        \item Točka $P$ leži na krožnici: Potem je $|PF_1| = r$, iz česar sledita dve možnosti:
-            \subitem $|PA| = 0$ oz.\ $P = A$. To pomeni, da pregib poteka skozi točko $A$, kar pa ni mogoče.
-            \subitem $|PA| = 2r$ oz. 
-        \item Točka $P$ leži znotraj krožnice: 
-        \item Točka $P$ leži zunaj krožnice: Potem je $|PF_1| > r$. Če je $|PA| = |PB|$ (kjer je točka $B$ presečišče daljice $PF_1$ s krožnico), pridemo v protislovje s trikotniško neenakostjo, saj dobimo $|PA| + |AF_1| = |PB| + |BF_1| = |PF_1| < |PA| + |AF_1|$. \textcolor{red}{(Naredi slikco kot je na 18ki desno, pa dodaj še točko B)}. Potem lahko velja samo še $|PA| > 2r$. \textcolor{red}{dodelaj}
-    \end{itemize}
-    
-    \textcolor{red}{DOKAŽI, DA NIČ OD TEGA TROJEGA NE GRE!!}
-    Ker ne velja nič od tega trojega, točka $P$ ne leži na hiperboli. Pregib v točki $T$ je res tangenta nanjo.
+    Pokažimo, da je to res tangenta. Ker je pregib simetrala daljice $F_1A$,  prepolavlja kot $\angle ATF_2$, ki je enako kotu $\angle F_1TF_2$. To pa je ravno značilnost tangent na hiperbolo.
 
     \begin{figure}[h]
         \centering
         \includegraphics[width=0.3\textwidth]{images/stožnice/hiperbola_dokaz1.png}
         \includegraphics[width=0.3\textwidth]{images/stožnice/hiperbola_dokaz2.png}
-        \includegraphics[width=0.3\textwidth]{images/stožnice/hiperbola_dokaz3.png}
         \caption[Tangentnost na hiperbolo]{Dokaz tangentnosti pregibov na hiperbolo.}
         \label{fig:dokaz_hiperbola}
-    \end{figure}  
+    \end{figure}
+    Torej je pregib tangenten na dano hiperbolo v točki $T$.
 \end{dokaz}
 
-\textcolor{red}{Bolj analitičen dokaz, kjer se izračuna splošno enačbo te hiperbole glede na izbrano krožnico in točko zunaj nje, najdemo v~\cite[str.\ 205--206]{smith2003}. Nekaj je tudi v~\cite[str.\ 34 spodaj]{hull2020}. Lep dokaz za elipso in hiperbolo (oboje skupej) je tudi v~\cite{lotka1907} --`` a very nice analytical method that simultaneously proves that the resulting envelopes are ellipses and hyperbolas''. Pa tudi v~\cite{yates1943} so dokazi ``for the parabola, ellipse, and hyperbola that are the most concise and elegant that the
-author has seen''}
+Bolj analitičen dokaz, kjer se izračuna splošno enačbo elipse in hiperbole glede na izbrano krožnico in točko znotraj oz.\ zunaj nje, najdemo v~\cite[str.\ 204--206]{smith2003}. Tudi Lotka v~\cite{lotka1907} iz opisane konstrukcije izpelje splošno enačbo elipse in tudi nastavi popravek, ki nam da splošno enačbo hiperbole. S tem oba dokažeta, da je ogrinjača teh pregibov res elipsa oz.\ hiperbola.
+\textcolor{red}{Nekaj je tudi v~\cite[str.\ 34 spodaj]{hull2020}.}
