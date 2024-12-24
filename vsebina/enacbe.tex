@@ -73,7 +73,7 @@ Obe koordinati sta racionalni, torej je točka $B$ konstruktibilna točka. Ker l
 
 \textbf{Primer:} Poiščimo rešitve enačbe $x^2 - x - 1 = 0$. Določimo obe točki in premico: $A(\frac{1}{2}, -1)$, $B(\frac{1}{2}, -\frac{5}{2})$ in $a: y = -\frac{3}{2}.$. Opravimo operacijo~\ref{op:O6} in označimo presečišče abscisne osi in pravokotnice nanjo skozi sliko točke $A$. Če smo bili pri pregibanju natančni, dobimo presečišči pri $x_{1,2} = \frac{1 \pm \sqrt{5}}{2}$ (gl.\ sliko v~\cite[str.\ 37]{hull2020}).
 
-To še zdaleč ni edini postopek za reševanje kvadratne enačbe. Kot še en lep primer Hull v\~cite[str.\ 38]{hull2020} navaja Lillovo metodo, dokaz pa prepušča bralcu. Ta metoda je tudi zgled, kako lahko najprej najdemo evklidsko konstrukcijo rešitev kvadratne enačbe in jo nato preobrazimo v origami konstrukcijo -- saj že vemo, da lahko s prepogibanjem papirja konstruiramo vse in še več, kar se da z evklidskim orodjem.
+To še zdaleč ni edini postopek za reševanje kvadratne enačbe. Kot še en lep primer Hull v~\cite[str.\ 38]{hull2020} navaja Lillovo metodo, dokaz pa je prepuščen bralcu. Ta metoda je tudi zgled, kako lahko najprej najdemo evklidsko konstrukcijo rešitev kvadratne enačbe in jo nato preobrazimo v origami konstrukcijo -- saj že vemo, da lahko s prepogibanjem papirja konstruiramo vse in še več, kar se da z evklidskim orodjem.
 
 \subsection{Kubična enačba}
 
@@ -81,11 +81,21 @@ Rešujemo enačbo oblike
 $$ a x^3 + b x^2 + c x + d = 0, $$
 kjer so $a, b, c, d \in \Q$ in velja $a \neq 0$.
 
-Operacija~\ref{op:O6} nam je preko konstrukcije tangente na parabolo pomagala rešiti kvadratno enačbo. Spomnimo se, da je Belocheva to v 30-ih letih prejšnjega stoletja nadgradila z operacijo~\ref{op:O7}, ki nam konstruira skupno tangento na dve paraboli hkrati. Po njej jo tudi imenujemo \emph{Belochin pregib}. Z njim je kot prva odkrila resnično moč origami konstrukcij, a je žal trajalo več kot pol stoletja, da so matematiki začeli ceniti njeno odkritje. Le redki so njeno delo poznali in ji tudi pripisali avtorstvo.
+Operacija~\ref{op:O6} nam je preko konstrukcije tangente na parabolo pomagala rešiti kvadratno enačbo. Spomnimo se, da je Belocheva to v 30-ih letih prejšnjega stoletja nadgradila z operacijo~\ref{op:O7}, ki nam konstruira skupno tangento na dve paraboli hkrati. Po njej jo tudi imenujemo \emph{Belochin pregib}. Z njim je kot prva odkrila resnično moč origami konstrukcij, a je žal trajalo več kot pol stoletja, da so matematiki začeli ceniti njeno odkritje.
 
-Belocheva je s svojim pregibom oblikovala postopek, s katerim lahko preko origamija rešujemo kubične enačbe. Postopek temelji na Lillovi genialni metodi iskanja ničel poljubnih polinomov z realnimi koeficienti, ki si jo bomo v naslednjem razdelku podrobneje pogledali.
+Spoznali bomo dva postopka, ki nam z uporabo Belochinega pregiba rešita kubično enačbo. Najprej bomo pogledali bolj znano metodo, ki jo je odkrila Belocheva sama, nato pa še en podoben, a tudi enostavnejši postopek. Pri obeh postopkih nam Belochin pregib poda eno od rešitev kubične enačbe. Vsaka izmed rešitev kubične enačbe nam da drugačen pregib in ker so rešitve največ tri, so tudi pregibi oz.\ skupne tangente na dve paraboli največ tri. S postopkoma tako v resnici dokažemo naslednjo trditev.
 
-\subsubsection{Lillova metoda}
+\begin{trditev}
+    Število realnih rešitev kubične enačbe je enako številu Belochinih pregibov v postopkih, ki sta navedena v tem poglavju.
+\end{trditev}
+
+\textcolor{red}{če ima alperin (zadnji razdelek na koncu tega poglavja) še kakšen postopek, popravi to trditev.}
+
+\subsubsection{Reševanje enačbe preko Lillove metode}
+
+Belocheva je s svojim pregibom oblikovala postopek, s katerim lahko preko origamija rešujemo kubične enačbe. Postopek temelji na Lillovi genialni metodi iskanja ničel poljubnih polinomov z realnimi koeficienti, ki si jo bomo v naslednjem razdelku podrobneje pogledali, za njeno aplikacijo pa uporabi avtorsko konstrukcijo -- Belochin kvadrat. \textcolor{red}{zaenkrat je tukaj še splošna kubična enačba, ampak a je mogoče treba predpostavit, da noben koeficient ni ničeln?}
+
+\subsubsection*{Lillova metoda}
 
 Njen avtor je avstrijski inženir Eduard Lill, ki jo je l.\ 1867 opisal v svojem članku~\cite{lill1867}. Gre za inovativen postopek, ki je v svoji osnovi čisto enostaven. Imejmo poljuben polinom $ p(x) = a_n x^n + a_{n-1} x^{n-1} + \ldots + a_2 x^2 + a_1 x + a_0 $ z realnimi koeficienti in iščemo njegove realne ničle, če obstajajo. Lill je iz njegovih koeficientov s sledečim postopkom v ravnini ustvaril enolično pot. Običajno se za njeno konstrukcijo uporablja figuro želve, ki nam kaže, v katero smer se premika pa tudi kam je usmerjena.
 
@@ -113,24 +123,25 @@ ecimo, da smo zmogli zadeti želvo. Kot, ki ga v točki $O$ oklepata laserski ž
 \begin{dokaz}
     Vzemimo primer, ko so vsi koeficienti polinoma $p(x)$ pozitivni. Želvina pot je v tem primeru sestavljena iz $n+1$ daljic, pot laserskega žarka (ki se vedno odbije od daljice in ne njene nosilke) pa iz $n$ daljic. Slednje so ravno hipotenuze pravokotnih trikotnikov. Za vsako od njih je nasprotna kateta kota $\theta$ del daljice $a_i$, priležno kateto pa označimo z $y_i$ ($ n \geq i \geq 1$). dobimo
     \begin{align*}
-        y_n &= \tan \theta \cdot a_n = - x a_n \\
-        y_{n-1} &= \tan \theta \cdot (a_{n-1} - y_n) = - x (a_{n-1} + x a_n) = - (a_{n-1} x + a_n x^2)\\
-        y_{n-2} &= \tan \theta \cdot (a_{n-2} - y_{n-1}) = - x (a_{n-2} + a_{n-1} x + a_n x^2) = - (a_{n-2} x + a_{n-1} x^2 + a_n x^3) \\
+        y_n &= \tan \theta \cdot a_n = - x_{\theta} a_n \\
+        y_{n-1} &= \tan \theta \cdot (a_{n-1} - y_n) = - x_{\theta} (a_{n-1} + x a_n) = - (a_{n-1} x_{\theta} + a_n x_{\theta}^2)\\
+        y_{n-2} &= \tan \theta \cdot (a_{n-2} - y_{n-1}) = - x_{\theta} (a_{n-2} + a_{n-1} x_{\theta} + a_n x_{\theta}^2) = \\
+        &= - (a_{n-2} x_{\theta} + a_{n-1} x_{\theta}^2 + a_n x_{\theta}^3) \\
         &\vdots \\
-        y_1 &= - (a_1 x + a_2 x^2 + \ldots + a_{n-1} x^{n-1} + a_n x^n).
+        y_1 &= - (a_1 x_{\theta} + a_2 x_{\theta}^2 + \ldots + a_{n-1} x_{\theta}^{n-1} + a_n x_{\theta}^n).
     \end{align*}
-    V zadnji enakosti desno stran premaknimo na levo in upoštevamo $y_1 = a_0$. Dobimo ravno $p(x) = 0$, torej je $x = - \tan \theta$ res ničla tega polinoma.
+    V zadnji enakosti desno stran premaknimo na levo in upoštevamo $y_1 = a_0$. Dobimo ravno $p(x_{\theta}) = 0$, torej je $x_{\theta} = - \tan \theta$ res ničla tega polinoma.
 
-    Primer negativnih koeficientov:~\cite[str.\ 36]{zore2022}.
+    \textcolor{red}{Primer negativnih koeficientov:~\cite[str.\ 36]{zore2022}.}
 
-    Primer ničelnih koeficientov: isto kot prej, samo se spusti $y_i$ za tisti $i$, za katerega je $a_i = 0$. (\textcolor{red}{???})
+    \textcolor{red}{Primer ničelnih koeficientov: isto kot prej, samo se spusti $y_i$ za tisti $i$, za katerega je $a_i = 0$. (\textcolor{red}{???})}
 \end{dokaz}
 
 Če pod nobenim kotom $\theta$ ne moremo zadeti želve, je polinom $p(x)$ brez realnih ničel.
 
 Pojavi se nam vprašanje, kako določiti kot $\theta$. Za polinom tretje stopnje je Belocheva preko svojega pregiba našla zelo preprosto rešitev, ki si jo bomo sedaj pogledali.
 
-\subsubsection{Belochin kvadrat}
+\subsubsection*{Belochin kvadrat}
 
 Imejmo dani točki $A$ in $B$ ter premici $r$ in $s$. Z origamijem konstruirajmo kvadrat $WXYZ$, kjer oglišče $X$ leži na premici $r$, njegovo sosednje oglišče $Y$ pa na premici $s$. Velja še, da točka $A$ leži na stranici $WX$ (ali njeni nosilki), točka $B$ pa na stranici $ZY$ (ali njeni nosilki, slika~\ref{fig:beloch_kvadrat}).
 
@@ -175,11 +186,11 @@ $$ |OX|^3 = |OX| \cdot \frac{|OY|}{|OX|} \cdot \frac{2}{|OY|} = 2 \Longrightarro
 
 Vidimo lahko, da je to enaka konstrukcija kot jo je 50 let kasneje neodvisno od Belocheve odkril G.\ Martin (razdelek~\ref{podpogl:podvojitev_kocke}), le da je za točko $B$ vzel točko $(0, -k)$ in s tem konstruiral dolžino $\sqrt[3]{k}$ za poljuben origami-konstruktibilen $k$.
 
-\subsubsection{Reševanje enačbe po Lillovi metodi z Belochinim pregibom}
+\subsubsection*{Združitev Lillove metode in Belochinega kvadrata}
 
-Za poljubno enačbo $a_3 x^3 + a_2 x^2 + a_1 x + a_0 = 0$ (\textcolor{red}{a daš koeficiente a, b, c, d? in da $A \neq 0$ Potem je treba tut na slikci spremenit.}) povežimo sedaj Lillovo metodo s primerno konstrukcijo Belochinega kvadrata, ki nam bo natančno določil kot $\theta$. Najprej konstruiramo želvino pot za polinom $p(x) = a_3 x^3 + a_2 x^2 + a_1 x + a_0$. V primeru neničelnih koeficientov je pot sestavljena iz štirih stranic, pot laserskega žarka pa iz treh.
+Za poljubno enačbo $a x^3 + b x^2 + c x + d = 0$, kjer $ a \neq 0$, povežimo sedaj Lillovo metodo s konstrukcijo primernega Belochinega kvadrata, ki nam bo natančno določil kot $\theta$. Najprej konstruiramo želvino pot za polinom $p(x) = a x^3 + b x^2 + c x + d$. V primeru neničelnih koeficientov je pot sestavljena iz štirih stranic, pot laserskega žarka pa iz treh.
 
-Za točko $A$ vzemimo izhodišče $O$, za točko $B$ pa končno točko $T$. Premica $r$ naj bo nosilka daljice $a_2$, premica $s$ pa nosilka daljice $a_1$. Ko si določimo premici $r'$ in $s'$ ter opravimo Belochin pregib, dobimo, kot običajno, na njegovih presečiščih s premicama $r$ in $s$ točki $X$ in $Y$. Ker velja $ AX \perp XY \perp BY $, je to iskana pot laserskega žarka, ki se odbija pod pravim kotom in zadene želvo. Kot $theta$ je kot, ki ga oklepata daljici $a_3$ in $AX$ (slika~\ref{fig:beloch_kubicna_resitev}).
+Za točko $A$ vzemimo izhodišče $O$, za točko $B$ pa končno točko $T$. Premica $r$ naj bo nosilka daljice $b$, premica $s$ pa nosilka daljice $c$. Ko si določimo premici $r'$ in $s'$ ter opravimo Belochin pregib, dobimo, kot običajno, na njegovih presečiščih s premicama $r$ in $s$ točki $X$ in $Y$. Zarišemo daljice $AX$, $XY$ in $YB$. Ker po konstrukciji velja $ AX \perp XY \perp YB $, je to iskana pot laserskega žarka, ki se odbija pod pravim kotom in zadene želvo. Kot $\theta$ je kot, ki ga oklepata daljici $a_3$ in $AX$ (slika~\ref{fig:beloch_kubicna_resitev}). Rešitev je torej $x_{\theta} = - \tan \theta$. Če ima enačba še eno ali dve realni rešitve, sta možna še en ali dva Belochina pregiba.
 
 \begin{figure}[h]
     \centering
@@ -188,13 +199,19 @@ Za točko $A$ vzemimo izhodišče $O$, za točko $B$ pa končno točko $T$. Prem
     \label{fig:beloch_kubicna_resitev}
 \end{figure}
 
-Ker imata dve paraboli največ tri skupne tangente, obstajajo največ trije prepogibi, ki točki $A$ in $B$ zaporedoma položijo na premici $r'$ in $s'$. Kolikor je možnih pregibov, toliko realnih rešitev ima naša enačba.
-
 \opomba{V resnici nikoli do sedaj nismo potrebovali konstruirati celega kvadrata; potrebovali smo le stranico $XY$ in dejstvo, da je pregib pravokoten na daljici $AX$ in $BY$.}
 
 \textcolor{red}{Kaj je v primeru, ko je kakšen koeficient ničeln?}
 
 \textcolor{red}{Daj kakšen primer. Eden s samimi pozitivnimi koeficienti, eden z negativnim in ničelnim?}
+
+\subsubsection{Reševanje enačbe preko koeficienta tangente na paraboli}
+
+Poglejmo še en način reševanja.
+
+
+
+Koeficient $t$ ene skupne tangente na parabolo je torej rešitev kubične enačbe $x^3 + b x^2 + c x + d = 0$, ki pa ima največ tri realne rešitve. Vsaka izmed njih je koeficient neke tangente na parabolo, vemo pa že, da je tangenta z danim koeficientom in parabolo natanko določena \textcolor{red}{(preveri, a je ta odstavek res red)}. Torej lahko reševanje kubičnih enačb enačimo z iskanjem skupnih tangent na dve paraboli.
 
 \subsubsection{Alperinova rešitev}
 
