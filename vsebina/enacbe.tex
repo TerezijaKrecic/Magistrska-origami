@@ -2,6 +2,8 @@
 \label{pogl:enacbe}
 
 
+\textcolor{red}{popravi da so captioni slik, ki so v več kot eni vrstici, poravbnani na sredini}
+
 % - enačbe 4. stopnje (TEŽJE) --> Alhazen's problem (gl.\ članek od Vavšetiča in tudi~\cite[str.\ 137--139]{geometricconstructions})
 % - enačbe 5. stopnje (TEŽJE)
 
@@ -9,7 +11,7 @@ Zapustimo deloma področje geometrije in si poglejmo, kako lahko s prepogibanjem
 
 Spomnimo se še, da smo origami-konstruktibilna števila definirali kot vsa števila, ki jih lahko s prepogibanjem konstruiramo preko na začetku dane abscine osi, izhodišča $(0,0)$ in točke $(1,0)$ in da lahko kar predpostavimo, da imamo dan celoten koordinatni sistem z abscisno in ordinatno osjo, izhodiščem ter enoto $1$ na obeh oseh (definicija~\ref{def:origami_konstruktibilnost}). V tej ravnini bomo konstruirali rešitve naših enačb, da pa bo pregibov čim manj in s tem preglednost večja, lahko pomožne točke in premice narišemo kar s svinčnikom (ker bi jih tako ali tako znali konstruirati s pregibi).
 
-V tem poglavju si bomo pogledali, kako z origamijem na prefinjen način -- brez konstrukcije preko zgornjih petih operacij -- rešujemo enačbe druge, tretje, četrte in pete stopnje. Za vsak $n \in \{2, 3, 4, 5\}$ bomo reševali enačbo
+V tem poglavju si bomo pogledali, kako z origamijem na prefinjen način -- brez konstrukcije preko zgornjih petih operacij -- rešujemo enačbe druge, tretje, četrte in pete stopnje \textcolor{red}{(Kej tudi za peto stopnjo? Čenje mal zmanjšej teve oznake)}. Za vsak $n \in \{2, 3, 4, 5\}$ bomo reševali enačbo
 $$ a_n x^n + a_{n-1} x^{n-1} + \ldots + a_2 x^2 + a_1 x + a_0 = 0, $$
 kjer so $a_i \in \Q$ za vsak $i \in \{1, 2, \ldots, n\}$ in $a_n \neq 0$. Ker bo $i$ največ $5$, bomo namesto koeficientov $a_i$ uporabljali kar črke $a, b, c, d, e, f$.
 
@@ -17,7 +19,7 @@ Začnimo z najbolj osnovno, t.\ j.\ linearno enačbo. Enačba $ax + b = 0$ ima r
 
 Za rešitev kvadratne enačbe lahko uporabimo znanje iz podpoglavja~\ref{podpogl:evkl_konstruktibilnost} -- vemo, da lahko z neoznačenim ravnilom in šestilom konstruiramo natanko števila oblike $a + b\sqrt{r}$, kjer so $a, b, r \in \Q$. Take oblike je tudi splošna rešitev kvadratne enačbe z racionalnimi koeficienti in ker lahko ta števila konstruiramo tudi z origamijem, lahko preko kvadratne formule najprej izračunamo realni rešitvi in ju nato s prepogibanjem papirja preko operacij seštevanja, odštevanja, množenja, deljenja in korenjenja konstruiramo (izrek~\ref{izr:origami_konstruktibilnost}). Zanima pa nas, ali jih je mogoče konstruirati tudi brez predhodnega računanja.
 
-Ključno vlogo bosta v nadaljevanju odigrali origami operaciji~\ref{op:O6} in~\ref{op:O7}. Prva nam hkrati s konstrukcijo tangente na parabolo določi tudi točko na paraboli, skozi katero je pregib tangenten na stožnico, to pa je ekvivalentno reševanju kvadratne enačbe. Druga pa s konstrukcijo skupne tangente na dve paraboli omogoča reševanje kubične enačbe, saj imata paraboli v evklidski ravnini največ tri skupne tangente (glej~\cite[str.\ 149--150]{geometricconstructions}) \textcolor{red}{(dej tle še neko potrdilo, zakaj je skupna tangenta ekvivalentna reševanju kubične enačbe)}. Znano je tudi, da lahko reševanje kvartične enačbe prevedemo na reševanje kubične ali celo kvadratne (\textcolor{red}{dej vir, npr.\ uni članek v zavihku z enačbami}), zato nam origami rešuje tudi enačbe četrte stopnje. To je že skoraj 100 let nazaj odkrila italijanska matematičarka Margherita P.\ Beloch, ki je s tem odkrila pravo moč prepogibanja papirja.
+Ključno vlogo bosta v nadaljevanju odigrali origami operaciji~\ref{op:O6} in~\ref{op:O7}. Prva nam hkrati s konstrukcijo tangente na parabolo določi tudi točko na paraboli, skozi katero je pregib tangenten na stožnico, to pa je ekvivalentno reševanju kvadratne enačbe. Druga pa s konstrukcijo skupne tangente na dve paraboli omogoča reševanje kubične enačbe, saj imata paraboli v evklidski ravnini največ tri skupne tangente (trditev~\ref{trd:stevilo_skupnih_tangent} v nadaljevanju). Znano je tudi, da lahko reševanje kvartične enačbe prevedemo na reševanje kubične ali celo kvadratne (\textcolor{red}{dej vir, npr.\ uni članek v zavihku z enačbami}), zato nam origami rešuje tudi enačbe četrte stopnje. To je že skoraj 100 let nazaj odkrila italijanska matematičarka Margherita P.\ Beloch, ki je s tem odkrila pravo moč prepogibanja papirja.
 
 Za rešitev enačbe pete stopnje pa bomo morali prekršiti pravilo o enkratnih prepogibih. Namreč \textcolor{red}{(preveri)} ni načina, kako s po enimi pregibom naenkrat konstruirati rešitev, \textcolor{red}{DOKONČAJ -- Alperin, Lang, Lucero so neki delali, 2-fold origami ???}
 
@@ -76,6 +78,7 @@ Obe koordinati sta racionalni, torej je točka $B$ konstruktibilna točka. Ker l
 To še zdaleč ni edini postopek za reševanje kvadratne enačbe. Kot še en lep primer Hull v~\cite[str.\ 38]{hull2020} navaja Lillovo metodo, dokaz pa je prepuščen bralcu. Ta metoda je tudi zgled, kako lahko najprej najdemo evklidsko konstrukcijo rešitev kvadratne enačbe in jo nato preobrazimo v origami konstrukcijo -- saj že vemo, da lahko s prepogibanjem papirja konstruiramo vse in še več, kar se da z evklidskim orodjem.
 
 \subsection{Kubična enačba}
+\label{podpogl:kubicna_enacba}
 
 Rešujemo enačbo oblike
 $$ a x^3 + b x^2 + c x + d = 0, $$
@@ -83,17 +86,20 @@ kjer so $a, b, c, d \in \Q$ in velja $a \neq 0$.
 
 Operacija~\ref{op:O6} nam je preko konstrukcije tangente na parabolo pomagala rešiti kvadratno enačbo. Spomnimo se, da je Belocheva to v 30-ih letih prejšnjega stoletja nadgradila z operacijo~\ref{op:O7}, ki nam konstruira skupno tangento na dve paraboli hkrati. Po njej jo tudi imenujemo \emph{Belochin pregib}. Z njim je kot prva odkrila resnično moč origami konstrukcij, a je žal trajalo več kot pol stoletja, da so matematiki začeli ceniti njeno odkritje.
 
-Spoznali bomo dva postopka, ki nam z uporabo Belochinega pregiba rešita kubično enačbo. Najprej bomo pogledali bolj znano metodo, ki jo je odkrila Belocheva sama, nato pa še en podoben, a tudi enostavnejši postopek. Pri obeh postopkih nam Belochin pregib poda eno od rešitev kubične enačbe. Vsaka izmed rešitev kubične enačbe nam da drugačen pregib in ker so rešitve največ tri, so tudi pregibi oz.\ skupne tangente na dve paraboli največ tri. S postopkoma tako v resnici dokažemo naslednjo trditev.
+\subsubsection{Reševanje enačbe z Belochinim postopkom}
+
+Belocheva je sama odkrila naslednjo metodo reševanja kubične enačbe, kjer nam Belochin pregib poda eno izmed rešitev. Na koncu razdelka bomo videli, da nam v postopku vsaka izmed rešitev da svoj pregib (razen če gre za večkratno ničlo) in ker so rešitve kubične enačbe največ tri, so tudi pregibi oz.\ skupne tangente na dve paraboli največ tri. Z razčlenitvijo sledečega postopka bomo tako dokazali spodnjo trditev.
 
 \begin{trditev}
-    Število realnih rešitev kubične enačbe je enako številu Belochinih pregibov v postopkih, ki sta navedena v tem poglavju.
+    \label{trd:stevilo_skupnih_tangent}
+    Število realnih rešitev kubične enačbe je enako številu Belochinih pregibov v postopku, ki je naveden v tem poglavju.
 \end{trditev}
 
-\textcolor{red}{če ima alperin (zadnji razdelek na koncu tega poglavja) še kakšen postopek, popravi to trditev.}
+\begin{posledica}
+    V evklidski ravnini imata različni paraboli največ tri skupne tangente.
+\end{posledica}
 
-\subsubsection{Reševanje enačbe preko Lillove metode}
-
-Belocheva je s svojim pregibom oblikovala postopek, s katerim lahko preko origamija rešujemo kubične enačbe. Postopek temelji na Lillovi genialni metodi iskanja ničel poljubnih polinomov z realnimi koeficienti, ki si jo bomo v naslednjem razdelku podrobneje pogledali, za njeno aplikacijo pa uporabi avtorsko konstrukcijo -- Belochin kvadrat. \textcolor{red}{zaenkrat je tukaj še splošna kubična enačba, ampak a je mogoče treba predpostavit, da noben koeficient ni ničeln?}
+Belocheva v svojem postopku izhaja iz Lillove genialne metode iskanja ničel poljubnih polinomov z realnimi koeficienti, ki si jo bomo v naslednjem razdelku podrobneje pogledali, za njeno aplikacijo pa uporabi avtorsko konstrukcijo -- Belochin kvadrat. \textcolor{red}{zaenkrat je tukaj še splošna kubična enačba, ampak a je mogoče treba predpostavit, da noben koeficient ni ničeln?}
 
 \subsubsection*{Lillova metoda}
 
@@ -190,7 +196,7 @@ Vidimo lahko, da je to enaka konstrukcija kot jo je 50 let kasneje neodvisno od 
 
 Za poljubno enačbo $a x^3 + b x^2 + c x + d = 0$, kjer $ a \neq 0$, povežimo sedaj Lillovo metodo s konstrukcijo primernega Belochinega kvadrata, ki nam bo natančno določil kot $\theta$. Najprej konstruiramo želvino pot za polinom $p(x) = a x^3 + b x^2 + c x + d$. V primeru neničelnih koeficientov je pot sestavljena iz štirih stranic, pot laserskega žarka pa iz treh.
 
-Za točko $A$ vzemimo izhodišče $O$, za točko $B$ pa končno točko $T$. Premica $r$ naj bo nosilka daljice $b$, premica $s$ pa nosilka daljice $c$. Ko si določimo premici $r'$ in $s'$ ter opravimo Belochin pregib, dobimo, kot običajno, na njegovih presečiščih s premicama $r$ in $s$ točki $X$ in $Y$. Zarišemo daljice $AX$, $XY$ in $YB$. Ker po konstrukciji velja $ AX \perp XY \perp YB $, je to iskana pot laserskega žarka, ki se odbija pod pravim kotom in zadene želvo. Kot $\theta$ je kot, ki ga oklepata daljici $a_3$ in $AX$ (slika~\ref{fig:beloch_kubicna_resitev}). Rešitev je torej $x_{\theta} = - \tan \theta$. Če ima enačba še eno ali dve realni rešitve, sta možna še en ali dva Belochina pregiba.
+Za točko $A$ vzemimo izhodišče $O$, za točko $B$ pa končno točko $T$. Premica $r$ naj bo nosilka daljice $b$, premica $s$ pa nosilka daljice $c$. Ko si določimo premici $r'$ in $s'$ ter opravimo Belochin pregib, dobimo, kot običajno, na njegovih presečiščih s premicama $r$ in $s$ točki $X$ in $Y$. Zarišemo daljice $AX$, $XY$ in $YB$. Ker po konstrukciji velja $ AX \perp XY \perp YB $, je to iskana pot laserskega žarka, ki se odbija pod pravim kotom in zadene želvo. Kot $\theta$ je kot, ki ga oklepata daljici $a_3$ in $AX$ (slika~\ref{fig:beloch_kubicna_resitev}). Rešitev je torej $x_{\theta} = - \tan \theta$.
 
 \begin{figure}[h]
     \centering
@@ -199,19 +205,15 @@ Za točko $A$ vzemimo izhodišče $O$, za točko $B$ pa končno točko $T$. Prem
     \label{fig:beloch_kubicna_resitev}
 \end{figure}
 
+Če ima enačba še eno ali dve realni rešitve, sta možna še en ali dva Belochina pregiba. S tem smo pokazali, da trditev~\ref{trd:stevilo_skupnih_tangent} (in njena posledica) velja.
+
 \opomba{V resnici nikoli do sedaj nismo potrebovali konstruirati celega kvadrata; potrebovali smo le stranico $XY$ in dejstvo, da je pregib pravokoten na daljici $AX$ in $BY$.}
 
 \textcolor{red}{Kaj je v primeru, ko je kakšen koeficient ničeln?}
 
-\textcolor{red}{Daj kakšen primer. Eden s samimi pozitivnimi koeficienti, eden z negativnim in ničelnim?}
+Za konkretne primere uporabe Belochinega postopka za reševanje kubičnih enačb glej~\cite[38--44]{zore2022}.
 
-\subsubsection{Reševanje enačbe preko koeficienta tangente na paraboli}
-
-Poglejmo še en način reševanja.
-
-
-
-Koeficient $t$ ene skupne tangente na parabolo je torej rešitev kubične enačbe $x^3 + b x^2 + c x + d = 0$, ki pa ima največ tri realne rešitve. Vsaka izmed njih je koeficient neke tangente na parabolo, vemo pa že, da je tangenta z danim koeficientom in parabolo natanko določena \textcolor{red}{(preveri, a je ta odstavek res red)}. Torej lahko reševanje kubičnih enačb enačimo z iskanjem skupnih tangent na dve paraboli.
+Kot zanimivost Lavričeva v~\cite[str.\ 10--13]{lavric2013} s postopkom, ki je malo preurejen Belochin postopek, še analitično pokaže, da je ob primerno izbranih točkah $A$ in $B$ ter premicah $r$ in $s$ koeficient tangentnega pregiba rešitev kubične enačbe. Točki in premici izbere tako, da sta točki $X$ in $Y$ ravno presečišči z ordinatnima osema, iz česar lahko takoj razberemo koeficient tangente. V dokazu izpelje enačbi pripadajočih parabol in splošno enačbo njunih tangent ter iz tega dokaže rečeno. To je lahko odlična vaja za dijake, ki si želijo kakšnega izziva.
 
 \subsubsection{Alperinova rešitev}
 
