@@ -226,7 +226,7 @@ Vseeno bomo ohranili vseh osem aksiom operacij, saj bomo kakšen pregib lažje r
 \subsubsection{Zrcaljenje točke čez premico}
 \label{zrcaljenje_origami}
 
-Operacija~\ref{op:O3} nam poda simetralo daljice $AB$. Torej je točka $B$ zrcalna slika točke $A$ čez to premico. Kaj pa, če imamo za neko točko $A$ že dano premico $a$ in iščemo njeno zrcalno sliko? Bralec bi lahko naivno predlagal, da naredimo pregib po premici in s svinčnikom označimo zrcalno sliko. A definicija~\ref{def:origami_konstruktibilnost} pravi, da lahko točke dobimo le kot presečišča pregibov, poleg tega pa je uporaba pisala dovoljena le za vidnejšo označbo že konstruiranih točk.
+Operacija~\ref{op:O3} nam poda simetralo daljice $AB$. Torej je točka $B$ zrcalna slika točke $A$ čez to premico. Kaj pa, če imamo za neko točko $A$ že dano premico $a$ in iščemo njeno zrcalno sliko? Naravna rešitev je, da naredimo pregib po premici in s svinčnikom označimo zrcalno sliko. A definicija~\ref{def:origami_konstruktibilnost} pravi, da lahko točke dobimo le kot presečišča pregibov, poleg tega pa je uporaba pisala dovoljena le za vidnejšo označbo že konstruiranih točk.
 
 Zato moramo najti zaporedje pregibov, kjer na koncu kot presečišče nekih dveh premic dobimo želeno točko. Za dano premico $a$ in točki $A$, ki ne leži na tej premici (sicer je točka $A$ zrcalna slika sama sebi), lahko zrcalno sliko točke konstruiramo z naslednjimi koraki (prikazani na sliki~\ref{fig:zrcaljenje_cez_premico}, postopek vzet iz~\cite[str.\ 28]{hull2020}):
 \begin{enumerate}
@@ -287,20 +287,20 @@ Ker lahko čez premico zrcalimo točke, lahko čeznjo zrcalimo tudi daljice oz.\
     S tem smo razdaljo $r$ prenesli na poljubno mesto v ravnini.
 \end{dokaz}
 
-Tako lahko s prepogibanjem papirja zrcalimo točke (in premice), prenašamo razdalje pa tudi -- po 2.\ koraku iz zgornjega dokaza -- rotiramo točke (in premice). To novo znanje bomo uporabili v podpoglavju~\ref{origami_konstruktibilnost}. Od sedaj naprej bomo pri konstrukcijah, ki vključujejo zrcaljenje točk, zaradi preglednosti izpustili pregibe, ki so potrebni za zrcaljenje.
+Tako lahko s prepogibanjem papirja zrcalimo točke (in premice), prenašamo razdalje pa tudi -- po 2.\ koraku iz zgornjega dokaza -- rotiramo točke (in premice). To novo znanje bomo uporabili v podpoglavju~\ref{origami_konstruktibilnost}, od sedaj naprej pa bomo pri konstrukcijah, ki vključujejo zrcaljenje točk, zaradi preglednosti izpustili potrebne pregibe in zrcaljene točke označili kar s svinčnikom skozi papir.
 
 \subsection{Kje origami konstrukcije nadvladajo evklidske}
 \label{podpogl:nadvlada_origamija}
 
 Prišli smo do ključnega dela poglavja -- reševanje vprašanja, zakaj se nam z origami konstrukcijami sploh splača ukvarjati.
 
-Za začetek naj bralec ob zgornjih opisih posamezne operacije premisli, da je mogoče operacije~\ref{op:O1}, \ref{op:O3}, \ref{op:O4}, \ref{op:O5}, \ref{op:O6} in \ref{op:O8} opraviti tudi z evklidskim orodjem (operacija~\ref{op:O2} le določa nove točke, zato tu o konstrukciji ne moremo govoriti). Do tu nam torej origami konstrukcije niso dale ničesar novega.
+Tako z evklidskim orodjem kot s prepogibanjem papirja lahko konstruiramo premice in točke ter prenašamo razdalje. Le evklidskim orodjem lahko konstruiramo tudi krožne loke, ker pa znamo rotirati točke okoli druge točke, vendar lahko tudi s prepogibanjem papirja konstruiramo katerokoli točko na krožnici z danim središčem in polmerom. Tako lahko vse evklidske konstrukcije opravimo tudi z origamijem (za natančnejši dokaz gl.\ \cite{robert1995}).
 
-Ključna je sedma operacija. Izkaže se namreč, da operacije~\ref{op:O7} oz.\ Belochinega pregiba ne moremo opraviti z evklidskim orodjem. Prefinjen način, kako to dokazati, je preko rešitve starogrškega problema o trisekciji kota. V podpoglavju~\ref{podpogl:starogrskiproblemi} bomo spoznali več origami postopkov, ki nam poljuben kot razdelijo na tri skladne dele, pri tem pa uporabimo pregib iz operacije~\ref{op:O7}. Ker \emph{trisekcija kota z evklidskim orodjem ni mogoča} (dokaz v~\cite[str.\ 77--78]{jerman1998}), posledično tudi konstrukcija operacije~\ref{op:O7} s tem orodjem ne obstaja.
+Bralec je ob zgornjih opisih posamezne operacije povabljen, da premisli, kako je mogoče operacije~\ref{op:O1}, \ref{op:O3}, \ref{op:O4}, \ref{op:O5}, \ref{op:O6} in \ref{op:O8} opraviti tudi z evklidskim orodjem (operacija~\ref{op:O2} le določa nove točke, zato tu o konstrukciji ne moremo govoriti). Do tu nam torej origami konstrukcije niso dale ničesar novega.
 
-Tako z evklidskim orodjem kot s prepogibanjem papirja lahko torej konstruiramo premice in točke ter prenašamo razdalje. Le evklidskim orodjem lahko konstruiramo tudi krožne loke, le s prepogibanjem papirja pa lahko tretjinimo poljuben kot in še več kot to -- kot primer je uporaba Belochinega pregiba ključna za enega \textcolor{red}{(ali več???)} od postopkov reševanja kubičnih enačb, ki jih v splošnem z evklidskim orodjem ne moremo reševati (gl.\ poglavje~\ref{pogl:enacbe}).
+Ključna je sedma operacija. Izkaže se namreč, da operacije~\ref{op:O7} oz.\ Belochinega pregiba ne moremo opraviti z evklidskim orodjem. Prefinjen način, kako to dokazati, je preko rešitve starogrškega problema o trisekciji kota. V podpoglavju~\ref{podpogl:starogrskiproblemi} bomo spoznali več origami postopkov, ki nam poljuben kot razdelijo na tri skladne dele, pri tem pa uporabimo pregib iz operacije~\ref{op:O7}. Ker \emph{trisekcija kota z evklidskim orodjem ni mogoča} (dokaz v~\cite[str.\ 77--78]{jerman1998}), posledično tudi konstrukcija operacije~\ref{op:O7} s tem orodjem ne obstaja. Primerov uporabe tega pregiba, ki nam rešijo (z evklidskim orodjem v splošnem) nerešljiv problem, je še več; eden najbolj odmevnih je uporaba v več postopkih reševanja kubičnih enačb, ki jih v splošnem z evklidskim orodjem ne moremo reševati (gl.\ razdelek~\ref{podpogl:kubicna_enacba}).
 
-Prednost origamija pred evklidskim orodjem je najbolj vidna, če evklidske in origami konstrukcije prevedemo v jezik abstraktne algebre.
+Množica evklidskih konstrukcij je prava podmnožica origami konstrukcij. v naslednjem poglavju si bomo pogledali, kako lahko te konstrukcije prevedemo v jezik algebre in kako lahko tudi na algebrski način pokažemo premoč origamija nad evklidskimi konstrukcijami.
 
 \subsubsection{Algebrski pogled na evklidske konstrukcije}
 \label{podpogl:evkl_konstruktibilnost}
@@ -308,7 +308,7 @@ Prednost origamija pred evklidskim orodjem je najbolj vidna, če evklidske in or
 \begin{definicija}
     Na listu papirja, ki nam služi kot model kompleksne ravnine $\C$, imejmo dano realno os, izhodišče $(0,0)$ in razdaljo 1. Če lahko le z neoznačenim ravnilom in šestilom konstruiramo točko $(x,0)$, rečemo, da je $x$ \emph{evklidsko-konstruktibilno} število. Pri tem upoštevamo tri pravila, ki izhajajo iz Evklidovih aksiomov in postulatov:
     \begin{itemize}
-        \item točke dobimo kot presečišča dveh premic, dveh krožnic ali premice in krožnice,
+        \item nove točke dobimo s presečišči dveh premic, dveh krožnic ali premice in krožnice,
         \item skozi vsaki točki lahko z ravnilom potegnemo ravno črto ter
         \item za vsako točko in razdaljo $r$ lahko s šestilom zarišemo krožnico, ki ima središče v tej točki in polmer $r$.
     \end{itemize}
