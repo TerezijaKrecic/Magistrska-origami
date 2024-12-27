@@ -68,25 +68,33 @@ Pri tem smo upoštevali, da velja $t^2 + bt + c = 0$. Presečišče pregiba in o
 $$ y = (2t + b)\left(-\frac{b}{2}\right) - t^2 + c = - t^2 - tb + c - \frac{b^2}{2} = c + c - \frac{b^2}{2} = 2c - \frac{b^2}{2}.$$
 Obe koordinati sta racionalni, torej je točka $B$ konstruktibilna točka. Ker leži na osi parabole, nam poda obe rešitvi enačbe -- pregiba sta si simetrična glede na os. Povzemimo sedaj postopek konstrukcije rešitve kvadratne enačbe~\ref{eq:spl_kv_en}:
 \begin{enumerate}
-    \item V koordinatnem sistemu označimo gorišče $A\left(-\frac{b}{2}, c - \frac{b^2}{4} + \frac{1}{4}\right)$, premico vodnico $a: y = c - \frac{b^2}{4} - \frac{1}{4}$ in točko $B(-\frac{b}{2}, 2c - \frac{b^2}{2})$.
+    \item V koordinatnem sistemu označimo gorišče $A\left(-\frac{b}{2}, c - \frac{b^2}{4} + \frac{1}{4}\right)$, premico vodnico $a: y = c - \frac{b^2 + 1}{4}$ in točko $B(-\frac{b}{2}, 2c - \frac{b^2}{2})$.
     \item Z operacijo~\ref{op:O6} naredimo pregib skozi točko $B$, ki točko $A$ položi na premico $a$ (če je diskriminanta enačbe pozitivna, sta možna pregiba dva).
     \item Skozi sliko točke $A$ naredimo vertikalen pregib in abscisa njegovega presečišča z abscisno osjo je ničla dane enačbe.
 \end{enumerate}
 
 \textbf{Primer:} Poiščimo rešitve enačbe $x^2 - x - 1 = 0$. Določimo obe točki in premico: $A(\frac{1}{2}, -1)$, $B(\frac{1}{2}, -\frac{5}{2})$ in $a: y = -\frac{3}{2}.$. Opravimo operacijo~\ref{op:O6} in označimo presečišče abscisne osi in pravokotnice nanjo skozi sliko točke $A$. Če smo bili pri pregibanju natančni, dobimo presečišči pri $x_{1,2} = \frac{1 \pm \sqrt{5}}{2}$ (gl.\ sliko v~\cite[str.\ 37]{hull2020}).
 
-To še zdaleč ni edini postopek za reševanje kvadratne enačbe. Kot še en lep primer Hull v~\cite[str.\ 38]{hull2020} navaja Lillovo metodo, dokaz pa je prepuščen bralcu. Ta metoda je tudi zgled, kako lahko najprej najdemo evklidsko konstrukcijo rešitev kvadratne enačbe in jo nato preobrazimo v origami konstrukcijo -- saj že vemo, da lahko s prepogibanjem papirja konstruiramo vse in še več, kar se da z evklidskim orodjem.
+To še zdaleč ni edini postopek za reševanje kvadratne enačbe. Kot še en lep primer Hull v~\cite[str.\ 38]{hull2020} navaja Lillovo konstrukcijo preko krožnice, lahek dokaz pa je prepuščen bralcu. Hkrati je to primer, kako za rešitev nekega problema najprej najdemo (bolj domačo) evklidsko konstrukcijo, ki jo lahko nato preko origami operacij preobrazimo v origami konstrukcijo -- saj že vemo, da lahko s prepogibanjem papirja konstruiramo vse in še več, kar se da z evklidskim orodjem. Pri obravnavi kubične enačbe bomo spoznali Belochino metodo, ki se jo da aplicirati tudi na kvadratno enačbo, in prilagojen postopek je tako opisan v razdelku~\ref{podpodl:kvadr_en_lill}.
 
 \subsection{Kubična enačba}
 \label{podpogl:kubicna_enacba}
 
 Rešujemo enačbo oblike
 $$ a x^3 + b x^2 + c x + d = 0, $$
-kjer so $a, b, c, d \in \Q$ in velja $a \neq 0$.
+kjer so $a, b, c, d \in \Q$ in velja $a \neq 0$. Tu je navedena ena oblika zapisa njene splošne rešitve:
+
+\begin{align*}
+    Q &= \sqrt{(2b^3 - 9abc + 27a^2d)^2 - 4(b^2 - 3ac)^3} \\
+    C &= \sqrt[3]{\frac{1}{2}(Q + 2b^3 - 9abc + 27a^2d)} \\
+    x_1 &= - \frac{b}{3a} - \frac{C}{3a} - \frac{b^2 - 3ac}{3aC} \\
+    x_2 &= - \frac{b}{3a} + \frac{C(1 + i\sqrt{3})}{6a} + \frac{(1 - i\sqrt{3})(b^2 - 3ac)}{6aC} \\
+    x_2 &= - \frac{b}{3a} + \frac{C(1 - i\sqrt{3})}{6a} + \frac{(1 + i\sqrt{3})(b^2 - 3ac)}{6aC}
+\end{align*}
 
 Operacija~\ref{op:O6} nam je preko konstrukcije tangente na parabolo pomagala rešiti kvadratno enačbo. Spomnimo se, da je Belocheva to v 30-ih letih prejšnjega stoletja nadgradila z operacijo~\ref{op:O7}, ki nam konstruira skupno tangento na dve paraboli hkrati. Po njej jo tudi imenujemo \emph{Belochin pregib}. Z njim je kot prva odkrila resnično moč origami konstrukcij, a je žal trajalo več kot pol stoletja, da so matematiki začeli ceniti njeno odkritje.
 
-\subsubsection{Reševanje enačbe z Belochinim postopkom}
+\subsubsection{Reševanje kubične enačbe z Belochinim postopkom}
 
 Belocheva je sama odkrila naslednjo metodo reševanja kubične enačbe, kjer nam Belochin pregib poda eno izmed rešitev. Na koncu razdelka bomo videli, da nam v postopku vsaka izmed rešitev da svoj pregib (razen če gre za večkratno ničlo) in ker so rešitve kubične enačbe največ tri, so tudi pregibi oz.\ skupne tangente na dve paraboli največ tri. Z razčlenitvijo sledečega postopka bomo tako dokazali spodnjo trditev.
 
@@ -215,13 +223,29 @@ Za konkretne primere uporabe Belochinega postopka za reševanje kubičnih enačb
 
 Kot zanimivost Lavričeva v~\cite[str.\ 10--13]{lavric2013} s postopkom, ki je malo preurejen Belochin postopek, še analitično pokaže, da je ob primerno izbranih točkah $A$ in $B$ ter premicah $r$ in $s$ koeficient tangentnega pregiba rešitev kubične enačbe. Točki in premici izbere tako, da sta točki $X$ in $Y$ ravno presečišči z ordinatnima osema, iz česar lahko takoj razberemo koeficient tangente. V dokazu izpelje enačbi pripadajočih parabol in splošno enačbo njunih tangent ter iz tega dokaže rečeno. To je lahko odlična vaja za dijake, ki si želijo kakšnega izziva.
 
+\subsubsection{Reševanje kvadratne enačbe z Lillovo metodo}
+\label{podpodl:kvadr_en_lill}
+
+Lillovo lahko uporabimo tudi za reševanje kvadratne enačbe $a x^2 + b x + c = 0, a \neq 0$. Na enak način v koordinatni sistem zarišemo želvino pot, ki se začne v točki $A$ in konča v točki $B$. Za razliko od prej tu ne uporabimo Belochinega pregiba, temveč pregib iz operacije~\ref{op:O6}. Namesto dveh premic $r$ in $s$ imamo le eno -- naj bo $r$ nosilka daljice $b$. Kot prej -- na razdalji $a$ na drugi strani točke $A$ -- označimo še njeno vzporednico $r'$. Konstruiramo pregib, ki gre skozi točko $B$ in točko $A$ položi na premico $r'$. Njegovo presečišče s premico $r$ nam določi točko $X$, kjer se žarek iz točke $A$ pod pravim kotom odbije v točko $B$. Na sliki~\ref{fig:kv_en_lill} je primer kosntrukcije pri negativnem koeficientu $c$. S tem je kot $\theta$ določen. Premislili smo tudi že, da sta možna največ dva pregiba in da je število pregibov enako številu realnih rešitev enačbe.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/kvadratna_enacba/kvadratna_enacba_lillova_metoda.png}
+    \caption[Lillova metoda za kvadratno enačbo]{Reševanje kvadratne enačbe po Lillovi metodi z operacijo~\ref{op:O6} ($c < 0$).}
+    \label{fig:kv_en_lill}
+\end{figure}
+
 \subsubsection{Alperinova rešitev}
 
 \textcolor{red}{a čmo tudi to?} (gl.\ Hull 2020, hull2013 str.\ 78 spodej) - prevedba kubične enačbe na kvadratno al neki tazga.
 
 \subsection{Kvartična enačba}
 
-\emph{Abel-Ruffinijev izrek}, ki temelji na Galoisovi teoriji, pravi, da je štiri najvišja stopnja polinomske enačbe, za katere rešitve obstaja splošna formula v radikalih, t.\ j.\ izrazih, ki vsebujejo korenjenje~\cite{mrinal2019}. Splošna formula na sliki~\ref{fig:kvarticna_formula} \textcolor{red}{lepše povej, nas odvrne haha}
+Rešujemo enačbo oblike
+$$ a x^4 + b x^3 + c x^2 + d x + e = 0, $$
+kjer so $a, b, c, d, e \in \Q$ in velja $a \neq 0$.
+
+\emph{Abel-Ruffinijev izrek}, ki temelji na Galoisovi teoriji, pravi, da je štiri najvišja stopnja polinomske enačbe, za katere rešitve še obstaja splošna formula v radikalih, t.\ j.\ izrazih, ki vsebujejo korenjenje~\cite{mrinal2019}. Iz slike~\ref{fig:kvarticna_formula} je razvidno, da splošna formula ni najbolj praktična, zato se pri reševanju enačb četrte stopnje poslužujemo prevedb na enačbe nižje stopnje (glej ). Zato v tem razdelku 
 
 \begin{figure}[h]
     \centering
@@ -230,7 +254,7 @@ Kot zanimivost Lavričeva v~\cite[str.\ 10--13]{lavric2013} s postopkom, ki je m
     \label{fig:kvarticna_formula}
 \end{figure}
 
-Kot smo omenili že na začetku poglavja, se da kvartično enačbo z uvedbami novih spremenljivk prevesti na kubično. Načinov je več, gl.\ \cite{wikiquartic}.
+Kot smo omenili že na začetku poglavja, se da kvartično enačbo z uvedbami novih spremenljivk prevesti na kubično. Načinov je več, gl.\ \cite{wikiquartic}, \cite{quartics2012}.
 
 % kot redukcija na kubično ali kvadratno??
 % citiram od začetka poglavja: Znano je tudi, da lahko reševanje kvartične enačbe prevedemo na reševanje kubične ali celo kvadratne, zato nam origami rešuje tudi enačbe četrte stopnje.
