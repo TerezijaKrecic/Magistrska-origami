@@ -214,7 +214,7 @@ Omenili smo že, da je teh osem operacij zadostnih za katerokoli origami konstru
     Če dovolimo le enkratne in ravne pregibe, so edine možne operacije prepogibanja operacije~\ref{op:O1}--\ref{op:O8}.
 \end{izrek}
 
-Ideja dokaza je, da za vsak možen prepogib, ki prekrije točko ali premico s točko ali premico (gl.\ seznam petih možnosti na začetku razdelka \ref{origami_konstrukcije}) pogledamo vse možnosti. Izkaže se, da res dobimo prepogibe iz operacij~\ref{op:O1}--\ref{op:O8}. Za natančen dokaz s slikovno ponazoritvijo gl.\ \cite[str.\ 24--26 (izrek 1.1)]{hull2020} \textcolor{red{(Lahko tu dokažeš?)}}.
+Ideja dokaza je, da za vsak možen prepogib, ki prekrije točko ali premico s točko ali premico (gl.\ seznam petih možnosti na začetku razdelka \ref{origami_konstrukcije}) pogledamo vse možnosti. Izkaže se, da res dobimo prepogibe iz operacij~\ref{op:O1}--\ref{op:O8}. Za natančen dokaz s slikovno ponazoritvijo gl.\ \cite[str.\ 24--26 (izrek 1.1)]{hull2020} \textcolor{red}{(Lahko tu dokažeš?)}.
 
 Vendar ali so vse te operacije tudi potrebne ali lahko kakšno izpustimo? Operacija~\ref{op:O2} je očitno potrebna, saj nam določa nove točke. Če podrobneje opazujemo ostale konstrukcije, pa opazimo, da so vse posebni primeri operacije~\ref{op:O7} (t.\ j.\ konstrukcija pregiba, ki točko $A$ položi na premico $a$ in točko $B$ na premico $b$), ko premici $a$ in $b$ sovpadata ali ko ena ali obe izmed točk $A$ in $B$ ležita na premici:
 \begin{itemize}
@@ -366,10 +366,11 @@ Poiščimo še množico števil, ki jih lahko konstruiramo z origamijem. Definir
 Preko sledečih izrekov in trditev (\textcolor{red}{popravi, če bojo samo izreki al če je samo en izrek ipd.}) bomo še na algebrski način pokazali, da je množica števil, ki jih lahko konstruiramo z evklidskim orodjem, prava podmnožica množice origami števil.
 
 \begin{trditev}
-    Naj bo $\alpha = a + bi \in \C$, kjer $a, b \in \R$. Potem $\alpha \in \mathcal{O}$ če in samo če $a, b \in \mathcal{O}$.
+    \label{trd:zaprt_koord}
+    Naj bo $\alpha = a + bi \in \C$, kjer $a, b \in \R$. Potem je $\alpha \in \mathcal{O}$ če in samo če $a, b \in \mathcal{O}$.
 \end{trditev}
 \begin{dokaz}
-    Ker sta $a$ in $b$ pravokotni projekciji števila $\alpha$ na realno in imaginarno os (operacija\ref{op:O5}), je trditev očitna.
+    Ker sta $a$ in $b$ pravokotni projekciji števila $\alpha$ na realno in imaginarno os (operacija~\ref{op:O5}), je trditev očitna.
 \end{dokaz}
 
 \begin{izrek}
@@ -378,9 +379,35 @@ Preko sledečih izrekov in trditev (\textcolor{red}{popravi, če bojo samo izrek
 \end{izrek}
 
 \begin{dokaz}
-    Za dokaz izreka moramo pokazati, da je $1 \in \mathcal{O}$ (kar velja že po definiciji), da za poljubna $\alpha, \beta \in \mathcal{O}$ velja $\alpha - \beta \in \mathcal{O}, \alpha\beta \in \mathcal{O}$ in da je $1/\alpha \in \mathcal{O}$ za vsak $\alpha \in \mathcal{O} \backslash \{0\}$.
+    Za dokaz izreka moramo pokazati, da je $1 \in \mathcal{O}$ (kar velja že po definiciji), da za poljubna $\alpha, \beta \in \mathcal{O}$ velja $\alpha - \beta, \alpha\beta \in \mathcal{O}$ in da je $1/\alpha \in \mathcal{O}$ za vsak $\alpha \in \mathcal{O} \backslash \{0\}$. Spomnimo se, da lahko kompleksna števila ponazorimo z vektorji in zato lahko računske operacije grafično izvajamo kar preko njih.
 
-    \textcolor{red}{Dokončaj dokaz}
+    Vzemimo poljubna $\alpha, \beta \in \mathcal{O}$. Ker število $-\beta$ dobimo po zaporednem zrcaljenju čez obe osi, velja $-\beta \in \mathcal{O}$. Ker je odštevanje v resnici seštevanje nasprotnega elementa, je za dokaz $\alpha - \beta \in \mathcal{O}$ dovolj pokazati, da je množica $\mathcal{O}$ zaprta za seštevanje.
+
+    Če $\alpha, \beta$ in $O$ ležijo na isti premici, ni veliko za dokazovati, temveč samo prenesemo razdaljo na primerno mesto na premici. Predpostavimo sedaj, da $\alpha, \beta$ in $O$ ne ležijo na isti premici in s paralelogramskim pravilom konstrirajmo število $\alpha + \beta$ (slika~\ref{fig:sestevanje}). Štirikrat uporabimo operacijo~\ref{op:O5}: preko pravokotnice $(1)$ na vektor $\overrightarrow{O\beta}$ skozi $\alpha$ konstruiramo vzporednico $(2)$ k taistemu vektorju skozi $\alpha$ in na enak način preko pravokotnice $(3)$ konstruiramo vzporednico $(4)$ k vektorju $\overrightarrow{O\alpha}$ skozi $\beta$. V presečišču vzporednic dobimo $\alpha + \beta$.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.7\textwidth]{images/algebra/sestevanje.png}
+        \caption[Seštevanje origami števil]{Konstrukcija $\alpha + \beta$.}
+        \label{fig:sestevanje}
+    \end{figure}
+
+    Za dokaz preostalih dveh zahtev najprej dokažimo, da za neničelna $a, b \in \mathcal{O} \cap \R$ velja $ab, 1/a \in \mathcal{O}$, potem pa s pomočjo trditve~\ref{trd:zaprt_koord} to dokažemo še za poljubna $\alpha, \beta \in \mathcal{O}$.
+
+    Naj bosta $a, b \in \mathcal{O} \cap \R$ poljubna in neničelna (če je katerikoli od njiju enak $0$, je produkt ničeln in že po definiciji origami število). Ker sta $a$ in $b$ origami števili, ju lahko konstruiramo. Naj $b$ leži na realni osi, $ai$ pa na imaginarni (slika~\ref{fig:mnozenje_deljenje} levo). Z dvakratno uporabo operacije~\ref{op:O5} konstruiramo origami število $1 + ai$ (točka $B$). Konstruiramo pregib skozi $O$ in $B$ (premica z naklonom $a$) ter v presečišču s pravokotnico skozi $b$ dobimo število $b + abi$ (točka $C$). Pravokotnica skozi $C$ na imaginarno os na njej konstruira origami število $ab$.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.7\textwidth]{images/algebra/mnozenje_deljenje.png}
+        \caption[Množenje in obratna vrednost realnih origami števil]{Konstrukcija $ab$ in $1/a$ za neničelna $a, b \in \mathcal{O} \cap \R$.}
+        \label{fig:mnozenje_deljenje}
+    \end{figure}
+
+    Podobno konstruiramo še število $1/a$. Na realni osi konstruiramo število $a$ (slika~\ref{fig:mnozenje_deljenje} desno), s pomočjo~\ref{op:O5} pa še število $a + i$ (točka $B$). Pregib skozi $O$ in $B$ ima naklon ravno $1/a$. V presečišču tega pregiba s pravokotnico na realno os v točki $!$ dobimo število $1 + (1/a) i$ (točka $C$). Tako nam pravokotnica na imaginarno os skozi točko $C$ konstruira origami število $1/a$.
+
+    Vzemimo sedaj poljubna $\alpha, \beta \in \mathcal{O}$. Če je $\alpha = a + bi, \beta = c + di$, potem po trditvi~\ref{trd:zaprt_koord} velja $a, b, c, d \in \mathcal{O}$. Število $\alpha \beta = (ac - bd) + (ad + bc)i$ ima v svojem realnem in imaginarnem delu njihove vsote, razlike in produkti, za katere že vemo, da so v $\mathcal{O}$. Torej je $\alpha, \beta \in \mathcal{O}$.
+
+    Za neničeln $\alpha = a + bi \in \mathcal{O}$ je $ 1/\alpha = a/(a^2+b^2) + (-b)/(a^2+b^2)i$. Ker sta po trditvi~\ref{trd:zaprt_koord} $a, b \in \mathcal{O}$, sta zopet realni in imaginarni del tega števila origami števili, torej $1/\alpha \in \mathcal{O}$.
 \end{dokaz}
 
 \begin{trditev}
