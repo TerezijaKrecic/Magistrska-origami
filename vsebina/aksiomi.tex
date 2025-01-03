@@ -301,7 +301,7 @@ Ker lahko čez premico zrcalimo točke, lahko čeznjo zrcalimo tudi daljice oz.\
 
 Tako lahko s prepogibanjem papirja zrcalimo točke (in premice), prenašamo razdalje pa tudi -- po 2.\ koraku iz zgornjega dokaza -- rotiramo točke (in premice). To novo znanje bomo uporabili v razdelku~\ref{origami_konstruktibilnost}, od sedaj naprej pa bomo pri konstrukcijah, ki vključujejo zrcaljenje točk, zaradi preglednosti izpustili potrebne pregibe in zrcaljene točke označili kar s svinčnikom skozi papir.
 
-\subsection{Kje origami konstrukcije nadvladajo evklidske}
+\subsection{Zakaj origami konstrukcije nadvladajo evklidske}
 \label{podpogl:nadvlada_origamija}
 
 Prišli smo do ključnega dela poglavja -- reševanje vprašanja, zakaj se nam z origami konstrukcijami sploh splača ukvarjati.
@@ -310,7 +310,7 @@ Tako z evklidskim orodjem kot s prepogibanjem papirja lahko konstruiramo premice
 
 Bralec je ob zgornjih opisih posamezne operacije povabljen, da premisli, kako je mogoče operacije~\ref{op:O1}, \ref{op:O3}, \ref{op:O4}, \ref{op:O5}, \ref{op:O6} in \ref{op:O8} opraviti tudi z evklidskim orodjem (operacija~\ref{op:O2} le določa nove točke, zato tu o konstrukciji ne moremo govoriti). Do tu nam torej origami konstrukcije niso dale ničesar novega.
 
-Ključna je sedma operacija. Izkaže se namreč, da operacije~\ref{op:O7} oz.\ Belochinega pregiba ne moremo opraviti z evklidskim orodjem. Kako lahko to dokažemo? V razdelku~\ref{podpogl:starogrskiproblemi} bomo spoznali več origami postopkov, ki nam poljuben kot razdelijo na tri skladne dele, pri tem pa uporabimo pregib iz operacije~\ref{op:O7}. Ker \emph{trisekcija kota z evklidskim orodjem ni mogoča} (dokaz v~\cite[str.\ 77--78]{jerman1998}), posledično tudi konstrukcija operacije~\ref{op:O7} s tem orodjem ne obstaja. Prav tako bomo v razdelku~\ref{podpogl:kubicna_enacba} videli več načinov uporabe operacije~\ref{op:O7} za reševanje kubične enačbe, za katero prav tako vemo, da je v splošnem z evklidskim orodjem ne moremo rešiti.
+Ključna je sedma operacija. Izkaže se namreč, da operacije~\ref{op:O7} oz.\ Belochinega pregiba ne moremo opraviti z evklidskim orodjem. Kako lahko to dokažemo? V razdelku~\ref{podpogl:trisekcija} bomo spoznali več origami postopkov, ki nam poljuben kot razdelijo na tri skladne dele, pri tem pa uporabimo pregib iz operacije~\ref{op:O7}. Ker \emph{trisekcija kota z evklidskim orodjem ni mogoča} (dokaz v~\cite[str.\ 77--78]{jerman1998}), posledično tudi konstrukcija operacije~\ref{op:O7} s tem orodjem ne obstaja. Prav tako bomo v razdelku~\ref{podpogl:kubicna_enacba} videli več načinov uporabe operacije~\ref{op:O7} za reševanje kubične enačbe, za katero prav tako vemo, da je v splošnem z evklidskim orodjem ne moremo rešiti.
 
 Sedaj vemo, da je množica evklidskih konstrukcij \emph{prava} podmnožica origami konstrukcij. V naslednjem razdelku si bomo pogledali, kako lahko evklidske in origami konstrukcije prevedemo v jezik algebre in tudi na algebrski način pokažemo premoč origamija nad evklidskim orodjem.
 
@@ -350,7 +350,7 @@ Iz izreka sledi tudi, da lahko vsa realna evklidsko-konstruktibilna števila ana
 
 Ker med kompleksno in evklidsko ravnino obstaja bijekcija, lahko tako konstruiramo poljubno število $\alpha = x + y i$, kjer sta $x \in \Q(r)$ in $y \in \Q(s)$ za neka $r, s \in \Q^+; \sqrt{r}, \sqrt{s} \notin \Q$. S tem lahko zapišemo tudi kompleksne rešitve kvadratne enačbe. Torej lahko z evklidskim orodjem konstruiramo rešitve poljubne kvadratne enačbe.
 
-\subsubsection{Števila, konstruktibilna z origamijem}
+\subsubsection{Origami števila}
 \label{origami_konstruktibilnost}
 
 Poiščimo še množico števil, ki jih lahko konstruiramo z origamijem. Definiramo jih na enak način kot \emph{evklidsko-konstruktibilna} števila.
@@ -407,12 +407,31 @@ Preko sledečih izrekov in trditev (\textcolor{red}{popravi, če bojo samo izrek
 
     Vzemimo sedaj poljubna $\alpha, \beta \in \mathcal{O}$. Če je $\alpha = a + bi, \beta = c + di$, potem po trditvi~\ref{trd:zaprt_koord} velja $a, b, c, d \in \mathcal{O}$. Število $\alpha \beta = (ac - bd) + (ad + bc)i$ ima v svojem realnem in imaginarnem delu njihove vsote, razlike in produkti, za katere že vemo, da so v $\mathcal{O}$. Torej je $\alpha, \beta \in \mathcal{O}$.
 
-    Za neničeln $\alpha = a + bi \in \mathcal{O}$ je $ 1/\alpha = a/(a^2+b^2) + (-b)/(a^2+b^2)i$. Ker sta po trditvi~\ref{trd:zaprt_koord} $a, b \in \mathcal{O}$, sta zopet realni in imaginarni del tega števila origami števili, torej $1/\alpha \in \mathcal{O}$.
+    Za neničeln $\alpha = a + bi \in \mathcal{O}$ je $1/\alpha = a/(a^2+b^2) + (-b)/(a^2+b^2)i$. Ker sta po trditvi~\ref{trd:zaprt_koord} $a, b \in \mathcal{O}$, sta zopet realni in imaginarni del tega števila origami števili, torej $1/\alpha \in \mathcal{O}$.
 \end{dokaz}
 
 \begin{trditev}
     Naj bo $\alpha \in \mathcal{O}$. Potem $\sqrt{\alpha}, \sqrt[3]{\alpha} \in \mathcal{O}$.
 \end{trditev}
+
+\begin{dokaz}
+    Naj bo $\alpha = r e^{i \theta}$ za neka $r \in \R \backslash \{0\}$ (v ničelnem primeru ni kaj dokazovati) in $\theta$ poljuben kot. Torej imamo za kvadratni in kubični koren števila $\alpha$ skupno pet rešitev:
+    \begin{itemize}
+        \item $\sqrt{\alpha} = \pm \sqrt{r}e^{i \frac{\theta}{2}}$ in
+        \item $\sqrt[3]{\alpha}_1 = \sqrt[3]{r}e^{i \frac{\theta}{3}}, \sqrt[3]{\alpha}_2 = \sqrt[3]{r}e^{i \left(\frac{\theta}{3} + \frac{2\pi}{3}\right)}, \sqrt[3]{\alpha}_3 = \sqrt[3]{r}e^{i \left(\frac{\theta}{3} + \frac{4\pi}{3}\right)}$
+    \end{itemize}
+    Torej moramo dokazati, da $\sqrt{r}, \sqrt[3]{r} \in \mathcal{O}$, da znamo razpolavljati in tretjiniti kote ter rotirati origami število za kot $60^\circ$ okoli izhodišča $O$. Potem bomo po izreku~\ref{izr:podpolje} lahko konstruirali zgornjih pet števil in tako dokazali to trditev.
+
+    Najprej se še prepričajmo, da $r \in \mathcal{O}$. Ker je $r = \sqrt{Re(\alpha)^2 + Im(\alpha)^2}$, to sledi iz trditve~\ref{trd:zaprt_koord}.
+    
+    V razdelku~\ref{pogl:enacbe} bomo pogledali, kako z origamijem rešujemo splošne kvadratne in kubične enačbe, torej bomo znali konstruirati rešitve enačb $x^2 - r = 0$ in $x^3 - r = 0$. Z operacijo~\ref{op:O4} znamo razpoloviti kot, postopek tretjinjenja kota pa je, kot že omenjeno, opisan v razdelku~\ref{podpogl:trisekcija}. Na sliki~\ref{fig:kot60_rotacija} je prikaz enostavne konstrukcije rotacije točke za kot $60^\circ$ okoli izhodišča -- najprej prepognemo simetralo $p_1$ daljice $OA$ in konstruiramo pregib $p_2$ skozi $O$, ki točko $A$ preslika v točko $A'$ na simetrali $p_1$. Vse tri točke tvorijo enakostranični trikotnik. 
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{images/algebra/kot60.png}
+        \caption[Rotacija točke okoli izhodišča]{Rotacija točke za kot $60^\circ$ okoli izhodišča.}
+        \label{fig:kot60_rotacija}
+    \end{figure}
+\end{dokaz}
 
 
 
