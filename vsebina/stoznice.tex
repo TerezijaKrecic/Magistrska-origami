@@ -9,22 +9,17 @@ Z origamijem ne moremo konstruirati gladkih krožnih lokov. Kljub temu pa lahko 
 
 \begin{definicija}
     \label{def:ovojnica}
-    Naj bo dana družina krivulj s parametrizacijo $F(t, x, y) = 0$, kjer je $t$ njen parameter in $F$ diferenciabilna za vsak $t$. \emph{Ovojnica} te družine je krivulja, ki je v vsaki točki tangentna na neko krivuljo iz družine. Dana je kot rešitev enačb
-    $$ F(t, x, y) = 0 \; \text{ in } \; \frac{\partial}{\partial t} F(t, x, y) = 0. $$
+    Naj bo dana družina krivulj s parametrizacijo $F(t, x, y) = 0$, kjer je $t$ njen parameter in $F$ diferenciabilna za vsak $t$. \emph{Ovojnica} te družine je krivulja, ki je tangentna na vsako krivuljo iz družine v neki točki, unija točk tangentnosti pa je ravno cela ovojnica.
 \end{definicija}
 
 \begin{opomba}
-    Vsaka krivulja iz družine mora biti diferenciabilna in med krivuljami mora biti gladek prehod (\textcolor{red}{kako to bolj strokovno napisat?}). Vendar to ni zadosten pogoj, da ovojnica te družine družine obstaja -- protiprimer je družina krožnic s skupnim središčem in polmerom, ki se zvezno povečuje.
+    Vsaka krivulja iz družine mora biti diferenciabilna in med krivuljami mora biti gladek prehod (\textcolor{red}{kako to bolj strokovno napisat?}). Vendar to ni zadosten pogoj, da ovojnica te družine družine obstaja -- protiprimer je družina krožnic s skupnim središčem in polmerom, ki se zvezno povečuje~\cite{wikienvelope}. Ovojnica je dana kot rešitev enačb
+    $$ F(t, x, y) = 0 \; \text{ in } \; \frac{\partial}{\partial t} F(t, x, y) = 0. $$
 \end{opomba}
 
 \begin{opomba}
     Ker so pregibi ravni, bodo v našem primeru krivulje v družini kar premice. Te premice so torej ravno tangente na ovojnico te družine.
 \end{opomba}
-
-
-\url{https://en.wikipedia.org/wiki/Envelope_%28mathematics%29}
-
-
 
 Pa si poglejmo, kako s prepogibi dobimo tangente na vse štiri stožnice.
 
@@ -95,7 +90,7 @@ Ker je pregib oz.\ konstruirana premica simetrala daljice $AA'$, lahko hitro dol
 \end{equation}
 Dobili smo iskano parametrizacijo družine pregibov z enačbo
 $$F(t, x, y) = \frac{t}{2c} x - y - \frac{t^2}{4c} = 0. $$
-Za vsak $t \in \R$ torej dobimo drugo tangento na parabolo z goriščem v točki $A$ in premico vodnico $a$ z zgornjo enačbo~\ref{eq:tang_par}. Izrazimo sedaj enačbo ovojnice preko sistema enačb iz definicije~\ref{def:ovojnica}. Iz enačbe $(\partial / \partial t) F(t, x, y) = 0$ dobimo $x/(2c) - 0 - (2t)/(4c) = 0$ oz.\ $x = t$. Ko to vstavimo v enačbo $F(t, x, y) = 0$, dobimo
+Za vsak $t \in \R$ torej dobimo drugo tangento na parabolo z goriščem v točki $A$ in premico vodnico $a$ z zgornjo enačbo~\ref{eq:tang_par}. Izrazimo sedaj enačbo ovojnice preko sistema enačb iz opombe pod definicijo~\ref{def:ovojnica}. Iz enačbe $(\partial / \partial t) F(t, x, y) = 0$ dobimo $x/(2c) - 0 - (2t)/(4c) = 0$ oz.\ $x = t$. Ko to vstavimo v enačbo $F(t, x, y) = 0$, dobimo
 \begin{equation}
     \label{eq:parabola_splosna}
     y = \frac{x^2}{4c},
