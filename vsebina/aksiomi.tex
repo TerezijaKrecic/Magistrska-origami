@@ -425,7 +425,7 @@ Preko sledečih izrekov in trditev (\textcolor{red}{popravi, če bojo samo izrek
 
     Najprej se še prepričajmo, da $r \in \mathcal{O}$. Ker je to ravno razdalja števila $\alpha$ do izhodišča, jo lahko prenesemo na realno os in tako konstruiramo realno število $r$, torej je res $r \in \mathcal{O}$.
     
-    V razdelku~\ref{pogl:enacbe} bomo pogledali, kako z origamijem rešujemo splošne kvadratne in kubične enačbe, torej bomo znali konstruirati tudi rešitve enačb $x^2 - r = 0$ in $x^3 - r = 0$. Z operacijo~\ref{op:O4} znamo razpoloviti kot, postopek tretjinjenja kota pa je, kot že omenjeno, opisan v razdelku~\ref{podpogl:trisekcija}. Ostane nam samo še rotacija točke za kot $60^\circ$ okoli izhodišča. Na sliki~\ref{fig:kot60_rotacija} je prikaz enostavne konstrukcije -- najprej prepognemo simetralo $p_1$ daljice $OA$ in konstruiramo pregib $p_2$ skozi $O$, ki točko $A$ preslika v točko $A'$ na simetrali $p_1$. Trikotnik $\triangle OAA'$ je enakostraničen. 
+    V razdelku~\ref{pogl:enacbe} bomo pogledali, kako z origamijem rešujemo splošne kvadratne in kubične enačbe, torej bomo znali konstruirati tudi rešitve enačb $x^2 - r = 0$ in $x^3 - r = 0$. Konkretne konstrukcije števil $\sqrt{r}$ in $\sqrt[3]{r}$ opisane tudi v poglavju~\ref{pogl:prepog_kvadrata}. Z operacijo~\ref{op:O4} znamo razpoloviti kot, postopek tretjinjenja kota pa je, kot že omenjeno, opisan v razdelku~\ref{podpogl:trisekcija}. Ostane nam samo še rotacija točke za kot $60^\circ$ okoli izhodišča. Na sliki~\ref{fig:kot60_rotacija} je prikaz enostavne konstrukcije -- najprej prepognemo simetralo $p_1$ daljice $OA$ in konstruiramo pregib $p_2$ skozi $O$, ki točko $A$ preslika v točko $A'$ na simetrali $p_1$. Trikotnik $\triangle OAA'$ je enakostraničen. 
     \begin{figure}[h]
         \centering
         \includegraphics[width=0.5\textwidth]{images/algebra/kot60.png}
@@ -434,21 +434,21 @@ Preko sledečih izrekov in trditev (\textcolor{red}{popravi, če bojo samo izrek
     \end{figure}
 \end{dokaz}
 
-Množica origami števil $\mathcal{O}$ je tako zaprta za seštevanje, odštevanje, množenje, deljenje ter za kvadratno in kubično korenjenje. Ker so cela števila očitno origami števila (po definiciji imamo dano enoto, ki jo znamo prenašati po realni osi), so zaradi zaprtosti za deljenje origami števila tudi vsa racionalna števila. Torej za vsak $r \in \Q^+, \sqrt{r} \notin \Q$ velja tudi
-$$ \Q(r) \subseteq \mathcal{O}, $$
-kar povzame naslednja trditev.
+Množica origami števil $\mathcal{O}$ je tako zaprta za seštevanje, odštevanje, množenje, deljenje ter za kvadratno in kubično korenjenje. Ker so cela števila očitno origami števila (po definiciji imamo dano enoto, ki jo znamo prenašati po realni osi), so zaradi zaprtosti za deljenje origami števila tudi vsa racionalna števila. Zato za vsak $r \in \Q^+, \sqrt{r} \notin \Q$ in vsaka $a, b \in \Q$ velja $a + b\sqrt{r} \in \mathcal{O}$, torej za vsak tak $r$ velja
+$$ \Q(r) \subseteq \mathcal{O}. $$
+S tem je dokazana naslednja trditev.
 
 \begin{trditev}
     Vsa evklidsko-konstruktibilna števila so origami števila.
 \end{trditev}
 
-Da so evklidsko-konstruktibilna števila stroga podmnožica origami števil, je potrebno najti samo en $r \in \mathcal{O} \cap \Q^+, \sqrt{r} \notin \Q$, za katerega velja $\sqrt[3]{r} \notin \Q(r)$. Bralec je povabljen k enostavnemu dokazu, da že za $r = 2$ ne obstajata $a, b \in \Q$, da bi veljalo $\sqrt[3]{2} = a + b\sqrt{2}$ -- če rešujemo enačbo $\sqrt[3]{2} = a + b\sqrt{r}$ za $a, b$, se hitro izkaže, da nima niti realnih rešitev.
+Da so evklidsko-konstruktibilna števila \emph{prava} podmnožica origami števil, je potrebno najti samo en $r \in \mathcal{O} \cap \Q^+, \sqrt{r} \notin \Q$, za katerega velja $\sqrt[3]{r} \notin \Q(r)$. Bralec je povabljen k enostavnemu dokazu, da že za $r = 2$ ne obstajata $a, b \in \Q$, da bi veljalo $\sqrt[3]{2} = a + b\sqrt{2}$ -- če začnemo reševati to enačbo za $a$ in $b$, se hitro izkaže, da nima niti realnih rešitev.
 
 \begin{izrek}
     Množica evklidsko-konstruktibilnih števil je prava podmnožica množice origami števil, t.\ j.
     $$ \bigcup_{r \in \Q^+, \sqrt{r} \notin \Q} \Q(r) \subset \mathcal{O} $$
 \end{izrek}
 
-Tako smo še na algebraičen način dokazali prevlado origamija nad evklidskim orodjem. Če bralec nad dokazom trditve~\ref{trd:zaprtost_koren} ni zadovoljen, so konkretne konstrukcije števil $\sqrt{r}$ in $\sqrt[3]{r}$ opisane v poglavju~\ref{pogl:prepog_kvadrata}.
+Tako smo še na algebraičen način dokazali prevlado origamija nad evklidskim orodjem.
 
 \textcolor{red}{(a potem so origami števila enaka množici $\{ a + b \sqrt{r} + c \sqrt[3]{q} \}$ za poljubne $a, b, c, r, q \in \Q$? Je kakšna oznaka?)}
