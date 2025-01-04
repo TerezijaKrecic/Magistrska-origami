@@ -1,15 +1,41 @@
 \section{Prepogibanje kvadrata}
 \label{pogl:prepog_kvadrata}
 
-Spomnimo se, da smo pri dokazovanju trditve~\ref{izr:origami_konstruktibilnost} izpustili dokaz, da lahko vsako origami-konstruktibilno število delimo s poljubnim naravnim številom. Ob predpostavki, da to velja, smo dokazali, da so origami-konstruktibilna števila zaprta za deljenje. Eden od ciljev tega poglavja je tako pokazati, kako neko daljico s prepogibanjem razdeliti na $n$ delov za poljubni $n \in \N$. Poleg tega pa si bomo pogledali še raznovrstna razmerja stranic v kvadratu, ki jih dobimo s prepogibanjem oglišč nanje. S to temo se je veliko ukvarjal Kazuo Haga, japonski profesor biologije, in v svojem delu \emph{Origamics: Mathematical Explorations Through Paper Folding}~\cite{haga2008} med drugim formuliral tri izreke, ki jih poznamo pod imenom \emph{Hagovi izreki}. Na koncu si bomo pogledali še enostavne, a osupljive načine, kako lahko z origamijem rešimo problema trisekcije poljubnega kota ter podvojitve kocke, ki ju z evklidskim orodjem ne moremo.
+Vzemimo v roke kvadraten list papirja in poglejmo, kaj lahko z njegovim prepogibanjem dobimo. V tem poglavju se bomo ukvarjali s preprostimi konstrukcijami, kot so konstrukcija enakostraničnega trikotnika, razdalje $\sqrt{k}$ za poljuben $k \in \mathcal{O}$, razdelitve daljice na enako število delov; pogledali si bomo vse tri Hagove izreke o razmerjih, na katere specifični pregibi kvadratnega lista papirja razdelijo njegove stranice; na koncu pa si bomo končno pogledali še konstrukcije rešitev dveh starogrških problemov, zaradi katerih smo se sploh začeli ukvarjati s temo origamija.
 
-Tako kot z evklidskim orodjem tudi s prepogibanjem papirja težko ostanemo na enem pregibu -- enodimenzionalni premici -- in si pri konstrukciji točk pomagamo s skokom v dvodimenzionalni svet. Zato vzemimo v roke kvadraten list papirja (za lažje računanje predpostavimo, da je stranica dolga $1$) in raziskujmo, v kakšnih razmerjih lahko določeni pregibi ali zrcaljene točke delijo njegove stranice.
+\subsection{Nekaj kratkih in zanimivih konstrukcij za uvod}
+
+% kot 60° (smo že pri algebri)
+% enakostranični trikotnik (smo že pri algebri, ma lahko še enkrat, pa več načinov)
+% kvadratni koren od 2, od k
+
+\subsubsection*{Konstrukcija $\sqrt{r}$}
+
+Vzemimo $r \in \Q^+$ in si poglejmo naslednjo konstrukcijo (vzeto iz~\cite[str.\ 58]{hull2013}):
+Imejmo točko $A (0, 1) $ in premico $y = -1$. Na ordinatni osi označimo točko $B (0, -\frac{r}{4})$ in naredimo pregib skoznjo, ki točko $A$ položi na premico $y = -1$. Njena zrcalna slika je $A' (t, 0) $ za nek $t \in \R$ (slika~\ref{fig:konstrukcija_korena}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/kvadratni_koren.png}
+    \caption[Konstrukcija korena]{Konstrukcija števila $\sqrt{r}$ za poljuben $r \in \Q^{+}$.}
+    \label{fig:konstrukcija_korena}
+\end{figure}
+
+Pregib poteka skozi točko $B$ in razpolovišče daljice $AA'$, torej je njegov koeficient $k_B = \frac{r}{2t}$ (izpeljavo prepuščamo bralcu). Ker je pregib simetrala daljice $AA'$, njena nosilka pa ima koeficient $k_A = - \frac{2}{t}$, dobimo enačbo
+\begin{align*}
+    k_B &= - \frac{1}{k_A}\\
+    \frac{r}{2t} &= \frac{t}{2}\\
+    r &= t^2 \text{ oz. } t = \sqrt{r}.
+\end{align*}
+Na koncu le še prepognemo pravokotnico na abscisno os skozi točko $A'$ in tako dobimo točko $(\sqrt{r}, 0)$. Torej smo konstruirali število $\sqrt{r}$ za poljuben $r \in \Q^{+}$.
+
+
 
 \subsection{Razdelitev daljice na $n$ enakih delov}
 
-Izziv tega problema je pravzaprav razdelitev daljice na liho število delov -- enostavno je dolžino razdeliti na pol, na četrtine, osmine \ldots in če jo znamo razdeliti na liho število delov, potem jo zmoremo razdeliti na $n$ delov za vsak $n \in \N$.
+Stranico kvadrata želimo razdeliti na $n$ enakih delov, kjer je $n \in \N$ poljuben. Za $n = 2^t, t \in \N_0$ je to čisto enostavno, saj samo prepolavljamo razdalje med pregibi, dokler ne dosežemo cilja. Če je $n$ sod, vendar ni potenca $2$, torej $n = 2^t(2m + 1)$, kjer sta $t, m \in \N$, stranico najprej razdelimo na $2^t$ delov, nato pa moramo vsakega izmed njih razdeliti na $2m + 1$ (liho število) delov. Izziv tega problema je torej v razdelitvi daljice na liho število delov. Ko bomo zo zmogli, jo bomo znali razdeliti na $n$ delov za vsak $n \in \N$.
 
-Problem delitve daljice na enake dele s prepogibanjem papirja je skozi zadnja desetletja dobil več načinov reševanja. Tu si bomo pogledali \textcolor{red}{koliko?} metode.
+V dokazu izreka~\ref{izr:podpolje} smo za poljuben $a \in \R$ znali konstruirati razdaljo $1/a$, kar bi lahko uporabili za razdelitev neke daljice na $a$ enakih delov -- konstruirano razdaljo $1/a$ bi $a$-krat prenesli naprej. Načinov reševanja tega problema pa se je skozi zadnja desetletja oblikovalo še veliko več; tu si bomo pogledali še \textcolor{red}{koliko?} metode.
 
 \subsubsection*{Metoda križajočih se diagonal}
 
@@ -76,6 +102,10 @@ Zgornji postopek lahko posplošimo na poljuben $n \in \N$. Kot smo videli v konk
 
 
 \subsection{Hagovi izreki}
+
+S prepogibanjem kvadratnega lista papirja se je veliko ukvarjal Kazuo Haga, sicer japonski profesor biologije. V svojem delu \emph{Origamics: Mathematical Explorations Through Paper Folding}~\cite{haga2008} je tako med drugim formuliral tri izreke, ki jih poznamo pod imenom \emph{Hagovi izreki}.
+
+
 
 \textcolor{red}{Konstrukcija poljubnega $a/b \in \Q$~\cite[str.\ 20--21]{lang2013}}
 
