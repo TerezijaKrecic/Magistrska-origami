@@ -5,19 +5,19 @@
 
 Zapustimo deloma področje geometrije in si poglejmo, kako lahko s prepogibanjem papirja rešujemo enačbe z racionalnimi koeficienti.
 
-Spomnimo se še, da smo origami števila definirali kot vsa števila, ki jih lahko s prepogibanjem konstruiramo preko na začetku danega izhodišča $O$ in števila $1$ na realni osi (definicija~\ref{def:origami_stevilo}). V evklidski ravnini (ki je v bijekciji s kompleksno ravnino, dano v definiciji) bomo konstruirali rešitve naših enačb, da pa bo pregibov čim manj in s tem preglednost večja, lahko pomožne točke in premice narišemo kar s svinčnikom (saj bi jih tako ali tako znali konstruirati s pregibi).
+Spomnimo se še, da smo origami števila definirali kot vsa števila, ki jih lahko s prepogibanjem konstruiramo preko na začetku danega izhodišča $O$ in števila $1$ na realni osi (definicija~\ref{def:origami_stevilo}). V evklidski ravnini (ki je v bijekciji s kompleksno ravnino, dano v definiciji) bomo konstruirali rešitve naših enačb, da pa bo pregibov čim manj in s tem preglednost večja, za označbo pomožnih točk in premic dopuščamo uporabo pisala (saj bi jih tako ali tako znali konstruirati s pregibi).
 
-Začnimo z najbolj osnovno, t.\ j.\ linearno enačbo. Enačba $ax + b = 0$, kjer $a, b \in \Q$ in $a \neq 0$ ima rešitev $x = -b/a$, ki je racionalno število, torej origami število. Če bi želeli rešitev konstruirati z origamijem in geometrijsko, v ravnini prepognemo premico $y = ax + b$ (napravimo pregib npr.\ skozi točki (0, b) in (1, a+b)) in njeno presečišče z abscisno osjo nam da iskano rešitev.
+Začnimo z najbolj osnovno, t.\ j.\ linearno enačbo. Enačba $ax + b = 0$, kjer $a, b \in \Q$ in $a \neq 0$ ima rešitev $x = -b/a$, ki je racionalno število, torej origami število in samo po sebi konstruktibilno. Če bi želeli rešitev konstruirati geometrijsko preko pregibov, v ravnini prepognemo premico $y = ax + b$ (napravimo pregib npr.\ skozi točki (0, b) in (1, a+b)) in njeno presečišče z abscisno osjo nam da iskano rešitev.
 
-Uporaba origamija je za reševanje linearne enačbe očitno manj praktična kot računanje rešitve. Bolj zanimivo je reševanje kvadratne in kubične enačbe. Ker za njune rešitve obstajata splošni formuli, bi jih lahko najprej izračunali in nato preko operacij seštevanja, odštevanja, množenja, deljenja in korenjenja konstruirali s prepogibanjem, vendar je to časovno preveč potratno. Pogledali si bomo, kako se z origamijem lahko temu izognemo in rešitev konstruiramo bolj direktno.
+Uporaba origamija je za reševanje linearne enačbe očitno manj praktična kot računanje rešitve. Bolj zanimivo je reševanje kvadratne in kubične enačbe. Ker za njune rešitve obstajata splošni formuli, bi jih lahko najprej izračunali in nato preko operacij seštevanja, odštevanja, množenja, deljenja in korenjenja konstruirali s prepogibanjem, vendar je to časovno preveč potratno. Pogledali si bomo, kako se z origamijem lahko temu izognemo in rešitev konstruiramo brez uporabve računskih operacij.
 
-Ključno vlogo bosta v nadaljevanju odigrali origami operaciji~\ref{op:O6} in~\ref{op:O7}. Prva nam hkrati s konstrukcijo tangente na parabolo določi tudi točko na paraboli, skozi katero je pregib tangenten na stožnico, to pa je ekvivalentno reševanju kvadratne enačbe. Druga pa s konstrukcijo skupne tangente na dve paraboli omogoča reševanje kubične enačbe. Alperin v~\cite[str.\ 129]{alperin2000} pokaže, kako izpeljati kubično enačbo za koeficient skupne tangente na dani paraboli. Število rešitev kubične enačbe je torej enako številu skupnih tangent, kar pomeni, da imata paraboli v evklidski ravnini največ tri skupne tangente.
+Ključno vlogo bosta v nadaljevanju odigrali origami operaciji~\ref{op:O6} in~\ref{op:O7}. Prva nam hkrati s konstrukcijo tangente na parabolo določi tudi točko na paraboli, skozi katero je pregib tangenten na stožnico, to pa je ekvivalentno reševanju kvadratne enačbe. Druga s konstrukcijo skupne tangente na dve paraboli omogoča reševanje kubične enačbe. Alperin v~\cite[str.\ 129]{alperin2000} pokaže, kako izpeljati koeficient skupne tangente na dani paraboli in izkaže se, da je iskani koeficient rešitev kubične enačbe. Število skupnih tangent je torej enako številu rešitev kubične enačbe, kar pomeni, da imata paraboli v evklidski ravnini največ tri skupne tangente.
 
-V teoriji bi nam prepogibanje papirja pomagalo tudi pri reševanju kvartičnih enačb, saj zanje še obstaja splošna formula in tudi vemo, da lahko enačbo četrte stopnje prevedemo na enačbe nižje stopnje (gl.\ \cite{wikiquartic}, \cite{quartics2012}). Geometrično pa je to reševanje potem težje izvedljivo in zato manj motivacijsko, saj bi postopek reševanja zahteval veliko več pregibov kot pri reševanju ene kubične ali kvadratne enačbe, pa tudi vmesne rezutate bi morali računati. (\textcolor{red}{Poglej članek~\cite{edwards2001} (naložen), ker mogoče je pa tle dejansko urjdi postopek za reševanje enačb 4.\ stopnje})
+V teoriji bi nam prepogibanje papirja pomagalo tudi pri reševanju kvartičnih enačb, saj zanje še obstaja splošna formula (vendar zaradi dolžine praktično neuporabna) in tudi vemo, da lahko enačbo četrte stopnje prevedemo na enačbe nižje stopnje (gl.\ \cite{wikiquartic}, \cite{quartics2012}). Geometrično pa je to reševanje potem težje izvedljivo in zato manj motivacijsko, saj bi postopek reševanja zahteval veliko več pregibov kot pri reševanju ene kubične ali kvadratne enačbe, pa tudi vmesne rezutate bi morali računati. Tako bi se lahko tu z reševanjem enačb preko origamija ustavili, vendar obstajajo alternativne rešitve. V~\cite{edwards2001} je opisan postopek, ki preko \textcolor{red}{projektivne geometrije in dualnih stožnic} ter z Belochinim pregibom reši splošno kubično in nato tudi kvartično enačbo neke določene oblike. Postopek si bomo tudi sami pogledali, saj je zelo zanimiv iz vidika projektivne geometrije.
 
 Za enačbe pete in višjih stopenj pa splošna formula za rešitve ne obstaja več (\emph{Abel-Ruffinijev} izrek, gl.\ \cite{mrinal2019}). Kljub temu se da z origamijem še vedno konstruirati rešitve nekaterih enačb višjih stopenj, vendar ne obstaja postopek z enkratnimi prepogibi -- potrebno se je poslužiti dvojnih (\emph{two fold}) ali večkratnih (\emph{multi-fold}) prepogibov (gl.\ poglavje~\ref{pogl:multifold}).
 
-\subsection{Kvadratna enačba}
+\subsection{Reševanje kvadratne enačbe preko tangente na parabolo}
 \label{podpogl:kvadratna_enacba}
 
 Rešujemo enačbo oblike
@@ -71,10 +71,12 @@ Obe koordinati sta racionalni, torej je točka $B$ konstruktibilna točka. Ker l
 
 To še zdaleč ni edini postopek za reševanje kvadratne enačbe. Kot še en lep primer Hull v~\cite[str.\ 38]{hull2020} navaja Lillovo konstrukcijo preko krožnice, lahek dokaz pa je prepuščen bralcu. Hkrati je to primer, kako za rešitev nekega problema najprej najdemo (bolj domačo) evklidsko konstrukcijo, ki jo lahko nato preko origami operacij preobrazimo v origami konstrukcijo -- saj že vemo, da lahko s prepogibanjem papirja konstruiramo vse in še več, kar se da z evklidskim orodjem. Pri obravnavi kubične enačbe bomo spoznali Belochino metodo, ki se jo da aplicirati tudi na kvadratno enačbo, in prilagojen postopek je tako opisan v razdelku~\ref{podpodl:kvadr_en_lill}.
 
-\subsection{Kubična enačba}
+\subsection{Lillova metoda in Belochin pregib}
 \label{podpogl:kubicna_enacba}
 
-Rešujemo enačbo oblike
+V tem poglavju se bomo spoznali z Lillovo metodo, s katero lahko v teoriji rešimo enačbo poljubne stopnje. V središču naše pozornosti bo origami postopek za reševanje kubične enačbe, ki ga je odkrila že večkrat omenjena Belocheva, vendar se da po Lillovi metodi z uporabo operacije~\ref{op:O6} rešiti tudi kvadratno enačbo, kar si bomo tudi na hitro pogledali proti koncu razdelka. Poleg tega bomo spoznali tudi več sadov Belochinega pregiba.
+
+Sedaj pa vzemimo enačbo oblike
 $$ a x^3 + b x^2 + c x + d = 0, $$
 kjer so $a, b, c, d \in \Q$ in velja $a \neq 0$. Tu je navedena ena oblika zapisa njene splošne rešitve:
 
@@ -233,7 +235,7 @@ Lillovo lahko uporabimo tudi za reševanje kvadratne enačbe $a x^2 + b x + c = 
 Japonski matematik Koshiro Hatori navaja postopek, ki je zelo podoben Belochinem postopku, vendar ga je avtor iznašel neodvisno od Belochinega dela. Brez škode za splošnost predpostavi $a = 1$ in za reševanje enačbe $x^3 + bx^2 + cx + d = 0$ sledi naslednjim korakom:
 \begin{itemize}
     \item Vkoordinatnem sistemu označimo točki $A = (b, 1)$ in $B = (d, c)$ ter premici $a: y = -1$ in $b: x = -d$.
-    \item Opravimo pregib, ki točko $A$ položi na premico $a$ ter točko $B$ na premico $b$ (kar je ravno belochin pregib).
+    \item Opravimo pregib, ki točko $A$ položi na premico $a$ ter točko $B$ na premico $b$ (kar je ravno Belochin pregib).
 \end{itemize}
 Avtor zaključi, da je koeficient opravljenega pregiba rešitev naše enačbe.
 
@@ -241,6 +243,56 @@ Bralec lahko sam premisli, da je to v resnici ravno Belochin postopek, le da se 
 
 \opomba{Seveda bi lahko vzeli katerikoli $a \in \Q$ in vzeli premico $a: y = -a$.}
 
-\subsubsection{Alperinova rešitev}
+\subsection{Alperinova rešitev}
+
+\textcolor{red}{Poglej kej sploh to rešuje, kakšne enačbe, če to spada pod Lillovo metodo, dej to kot podpoglavje v prejšnje poglavje (dodaj še en ``sup'')}
 
 \textcolor{red}{Tudi on neodvisno od Belocheve, je pa pri njem $a= 1, b = 0$, kar se da nardit z vsako kubično enačbo, pač z uvedno nove spremenljivke al neki, da se kvadratni člen uniči.} (gl.\ Hull 2020 str.\ 43, hull2013 str.\ 78 spodej) - prevedba kubične enačbe na kvadratno al neki tazga.
+
+\subsection{Kubična in kvartična enačba v afini ravnini}
+
+\textcolor{red}{A je naslov ok?}
+
+Kot že omenjeno v uvodu tega poglavja, se Edwards in Shurman v~\cite{edwards2001} ukvarjata z reševanjem enačb tretje in četrte stopnje preko iskanja skupnih tangent na določene stožnice, pri tem pa uporabljata Belochin pregib. Pri kubični enačbi iz njenih koeficientov določita gorišči in premici vodnici dveh parabol, rešitve enačbe pa so koeficienti skupnih tangent. Postopek za reševanje kvartične enačbe je podoben, le da iz njenih koeficientov določita parabolo in krožnico, rešitve pa so začetne vrednosti skupnih tangent.
+
+Pri tem se najprej vprašamo, kako lahko z origamijem določimo skupno tangento na parabolo in stožnico -- do sedaj to namreč znamo le za dve paraboli, preko Belochinega pregiba. Postopek je v svojem bistvu zelo enostaven. Pri danem gorišču in premici vodnici parabole ter krožnici s središčem v točki $S$ in polmerom $r$ zarišemo krožnico z istim središčem ter dvakratnim polmerom, torej $2r$. Nato opravimo Belochin pregib, ki gorišče parabole položi na njeno premico vodnico, središče $S$ pa na rob krožnice s polmerom $2r$. Pregib je skupna tangenta na parabolo in krožnico s polmerom $r$ (slika \textcolor{red}{dej kakšen slikovni primeeeeer}). V tem razdelku torej za potrebe reševanja izjemoma potrebujemo šestilo za konstrukcijo krožnice.
+
+Postopek se trenutno lahko dozdeva enostaven, vendar nas do enačb iskanih stožnic čaka še dolga pot. (\textcolor{red}{Nekej od tega de se moramo spomnit splošne enačbe stožnic in afine pa projektivne geometrije blablabla})
+
+\textcolor{red}{Definicija projektivne geometrije nad vektorskim prostorom V (mi bomo imeli V = $\R^3$.)}
+
+Stožnica $\mathcal{S}$ ima v $\mathcal{P}(\R^3)$ enačbo
+\begin{equation}
+    \label{en:stoznica_splosna}
+    \mathcal{S}: a_{11}x^2 + 2a_{12}xy + a_{22}y^2 + 2a_{13}xz + 2a_{23}yz + a_{33}z^2 = 0,
+\end{equation}
+kar lahko zapišemo v obliki
+\begin{equation*}
+    \mathcal{S}: v^\intercal M v = 0,
+    \text{ kjer sta } v =
+    \begin{bmatrix}
+        x\\
+        y\\
+        z
+    \end{bmatrix}
+    \text{ in } M =
+    \begin{bmatrix}
+        a_{11} & a_{12} & a_{13}\\
+        a_{12} & a_{22} & a_{23}\\
+        a_{13} & a_{23} & a_{33}
+    \end{bmatrix}.
+\end{equation*}
+
+Pri tem je simetrična matrika $M$ definirana do neničelnega skalarnega večkratnika natančno. Stožnica $\mathcal{S}$ je \emph{neizrojena} (ni unija dveh premic ali ene dvojno štete premice), če ima poln rang, t.\ j.\ \textcolor{red}{rang (-- dej v matematično okolje?)} $ M = 3$ oz. ekvivalentno, $\det M \neq 0$. V nadaljevanju bomo delali le z neizrojenimi stožnicami, torej vedno obstaja inverz matrike $M$, ki je prav tako simetričen.
+
+\textcolor{red}{\emph{Dualno stožnico}} stožnice $\mathcal{S}$ definiramo z inverzno matriko:
+\begin{equation*}
+    \mathcal{\hat{S}}: v^\intercal M^{-1} v = 0.
+\end{equation*}
+
+Naj bo $p \in \mathcal{S}$ in naj bo $q = Mp$. Potem je
+ $$q^\intercal M^{-1} q = (Mp)^\intercal M^{-1} (Mp) = p^\intercal M^\intercal M^{-1} M p = p^\intercal M^{-1} p = 0,$$
+ kar pomeni, da je $q \in \mathcal{\hat{S}}$. Ker je $M$ obrnljiva, je preslikava $\mathcal{S} \longrightarrow \mathcal{\hat{S}}$ s predpisom $p \mapsto Mp$ bijekcija med stožnico $\mathcal{S}$ in njeno dualno stožnico $\mathcal{\hat{S}}$.
+
+
+ \textcolor{Zakaj je $q$ ravno tangenta na $\mathcal{S}$?}
