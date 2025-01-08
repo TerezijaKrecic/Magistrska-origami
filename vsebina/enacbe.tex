@@ -9,7 +9,7 @@ Spomnimo se še, da smo origami števila definirali kot vsa števila, ki jih lah
 
 Začnimo z najbolj osnovno, t.\ j.\ linearno enačbo. Enačba $ax + b = 0$, kjer $a, b \in \Q$ in $a \neq 0$ ima rešitev $x = -b/a$, ki je racionalno število, torej origami število in samo po sebi konstruktibilno. Če bi želeli rešitev konstruirati geometrijsko preko pregibov, v ravnini prepognemo premico $y = ax + b$ (napravimo pregib npr.\ skozi točki (0, b) in (1, a+b)) in njeno presečišče z abscisno osjo nam da iskano rešitev.
 
-Uporaba origamija je za reševanje linearne enačbe očitno manj praktična kot računanje rešitve. Bolj zanimivo je reševanje kvadratne in kubične enačbe. Ker za njune rešitve obstajata splošni formuli, bi jih lahko najprej izračunali in nato preko operacij seštevanja, odštevanja, množenja, deljenja in korenjenja konstruirali s prepogibanjem, vendar je to časovno preveč potratno. Pogledali si bomo, kako se z origamijem lahko temu izognemo in rešitev konstruiramo brez uporabve računskih operacij.
+Uporaba origamija je za reševanje linearne enačbe očitno manj praktična kot računanje rešitve. Bolj zanimivo je reševanje kvadratne in kubične enačbe. Ker za njune rešitve obstajata splošni formuli, bi jih lahko najprej izračunali in nato preko operacij seštevanja, odštevanja, množenja, deljenja in korenjenja konstruirali s prepogibanjem, vendar je to časovno preveč potratno. Pogledali si bomo, kako se z origamijem lahko temu izognemo in rešitev konstruiramo brez uporabe računskih operacij.
 
 Ključno vlogo bosta v nadaljevanju odigrali origami operaciji~\ref{op:O6} in~\ref{op:O7}. Prva nam hkrati s konstrukcijo tangente na parabolo določi tudi točko na paraboli, skozi katero je pregib tangenten na stožnico, to pa je ekvivalentno reševanju kvadratne enačbe. Druga s konstrukcijo skupne tangente na dve paraboli omogoča reševanje kubične enačbe. Alperin v~\cite[str.\ 129]{alperin2000} pokaže, kako izpeljati koeficient skupne tangente na dani paraboli in izkaže se, da je iskani koeficient rešitev kubične enačbe. Število skupnih tangent je torej enako številu rešitev kubične enačbe, kar pomeni, da imata paraboli v evklidski ravnini največ tri skupne tangente.
 
@@ -23,7 +23,7 @@ Za enačbe pete in višjih stopenj pa splošna formula za rešitve ne obstaja ve
 Rešujemo enačbo oblike
 $$ a x^2 + b x + c = 0, $$
 kjer so $a, b, c \in \Q$ in velja $a \neq 0$.  Njeni splošni rešitvi sta
-$$ x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a},$$ vendar so konstrukcije vseh teh števil časovno potratno, zato iščemo hitrejši način reševanja.
+$$ x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.$$
 
 Postopek, ki si ga bomo pogledali v nadaljevanju, predpostavlja $a = 1$. Ker je vodilni koeficient neničeln, lahko z njim enačbo delimo in pri tem še vedno dobimo racionalne koeficiente, zato lahko predpostavko brez škode za splošnost sprejmemo. Nova oblika enačbe je tako
 \begin{equation}
@@ -251,17 +251,21 @@ Bralec lahko sam premisli, da je to v resnici ravno Belochin postopek, le da se 
 
 \subsection{Kubična in kvartična enačba v afini ravnini}
 
-\textcolor{red}{A je naslov ok?}
+\textcolor{red}{A je naslov ok ali je preveč misteriozen in kontraverzen?}
 
-Kot že omenjeno v uvodu tega poglavja, se Edwards in Shurman v~\cite{edwards2001} ukvarjata z reševanjem enačb tretje in četrte stopnje preko iskanja skupnih tangent na določene stožnice, pri tem pa uporabljata Belochin pregib. Pri kubični enačbi iz njenih koeficientov določita gorišči in premici vodnici dveh parabol, rešitve enačbe pa so koeficienti skupnih tangent. Postopek za reševanje kvartične enačbe je podoben, le da iz njenih koeficientov določita parabolo in krožnico, rešitve pa so začetne vrednosti skupnih tangent.
+Kot že omenjeno v uvodu tega poglavja, se Edwards in Shurman v~\cite{edwards2001} ukvarjata z reševanjem enačb tretje in četrte stopnje preko iskanja skupnih tangent na določene stožnice, pri tem pa uporabljata princip Belochinega pregiba. Pri kubični enačbi iz njenih koeficientov določita gorišči in premici vodnici dveh parabol, rešitve enačbe pa so koeficienti skupnih tangent. Postopek za reševanje kvartične enačbe je podoben, le da iz njenih koeficientov določita parabolo in krožnico, rešitve pa so začetne vrednosti skupnih tangent. Videli bomo, da slednji postopek deluje le za nekatere kvartične enačbe.
 
-Pri tem se najprej vprašamo, kako lahko z origamijem določimo skupno tangento na parabolo in stožnico -- do sedaj to namreč znamo le za dve paraboli, preko Belochinega pregiba. Postopek je v svojem bistvu zelo enostaven. Pri danem gorišču in premici vodnici parabole ter krožnici s središčem v točki $S$ in polmerom $r$ zarišemo krožnico z istim središčem ter dvakratnim polmerom, torej $2r$. Nato opravimo Belochin pregib, ki gorišče parabole položi na njeno premico vodnico, središče $S$ pa na rob krožnice s polmerom $2r$. Pregib je skupna tangenta na parabolo in krožnico s polmerom $r$ (slika \textcolor{red}{dej kakšen slikovni primeeeeer}). V tem razdelku torej za potrebe reševanja izjemoma potrebujemo šestilo za konstrukcijo krožnice.
+Preden se podamo na natančnejšo razčlenitev njunega dela, se najprej vprašajmo, kako lahko z origamijem določimo skupno tangento na parabolo in krožnico -- do sedaj to namreč znamo le v primeru dveh parabol (preko Belochinega pregiba). Postopek je v svojem bistvu zelo enostaven. Pri danem gorišču in premici vodnici parabole ter krožnici s središčem v točki $S$ in polmerom $r$ zarišemo krožnico z istim središčem ter dvakratnim polmerom, torej $2r$. Nato po zgledu Belochinega pregiba opravimo pregib, ki gorišče parabole položi na njeno premico vodnico, središče $S$ pa na rob krožnice s polmerom $2r$. Pregib je tako res skupna tangenta na parabolo in krožnico s polmerom $r$ (slika \textcolor{red}{dej kakšen slikovni primeeeeer -- lahko kar sliko 3 iz tega vira}).
+
+\begin{opomba}
+    V tem razdelku za potrebe reševanja izjemoma potrebujemo šestilo, s katerim iz koeficientov kvartične enačbe konstruiramo krožnico.
+\end{opomba}
 
 Postopek se trenutno lahko dozdeva enostaven, vendar nas do enačb iskanih stožnic čaka še dolga pot. (\textcolor{red}{Nekej od tega de se moramo spomnit splošne enačbe stožnic in afine pa projektivne geometrije blablabla})
 
 \textcolor{red}{Definicija projektivne geometrije nad vektorskim prostorom V (mi bomo imeli V = $\R^3$.)}
 
-Stožnica $\mathcal{S}$ ima v $\mathcal{P}(\R^3)$ enačbo
+Stožnica $\mathcal{S}$ ima v $\mathcal{P}(\R^3)$ \textcolor{red}{(A ta``P'' je normalen font al tak kot tle?)} homogenizirano \textcolor{red}{(?)} enačbo
 \begin{equation}
     \label{en:stoznica_splosna}
     \mathcal{S}: a_{11}x^2 + 2a_{12}xy + a_{22}y^2 + 2a_{13}xz + 2a_{23}yz + a_{33}z^2 = 0,
@@ -283,16 +287,190 @@ kar lahko zapišemo v obliki
     \end{bmatrix}.
 \end{equation*}
 
-Pri tem je simetrična matrika $M$ definirana do neničelnega skalarnega večkratnika natančno. Stožnica $\mathcal{S}$ je \emph{neizrojena} (ni unija dveh premic ali ene dvojno štete premice), če ima poln rang, t.\ j.\ \textcolor{red}{rang (-- dej v matematično okolje?)} $ M = 3$ oz. ekvivalentno, $\det M \neq 0$. V nadaljevanju bomo delali le z neizrojenimi stožnicami, torej vedno obstaja inverz matrike $M$, ki je prav tako simetričen.
+Pri tem je simetrična matrika $M$ definirana do neničelnega skalarnega večkratnika natančno. Stožnica $\mathcal{S}$ je \emph{neizrojena} (ni unija dveh premic ali ene, dvojno štete premice), če ima poln rang, t.\ j.\ \textcolor{red}{rang (-- dej v matematično okolje?)} $ M = 3$ oz. ekvivalentno, $\det M \neq 0$. V nadaljevanju bomo delali le z neizrojenimi stožnicami, torej vedno obstaja inverz matrike $M$, ki je prav tako simetričen.
 
-\textcolor{red}{\emph{Dualno stožnico}} stožnice $\mathcal{S}$ definiramo z inverzno matriko:
+Iz prvega minorja matrike $M$ lahko takoj preberemo, za katero vrsto neizrojene stožnice gre. Naj bo $A_M = a_{11}a_{22} - a_{12}^2$ \textcolor{red}{(Vir tega je Wikipedia: Matrix representation of conic sections. Kakšen bolj zanesljiv vir?)}:
+\begin{itemize}
+    \item $\mathcal{S}$ je hiperbola, če in samo če $A_M < 0$,
+    \item $\mathcal{S}$ je parabola, če in samo če $A_M = 0$ in
+    \item $\mathcal{S}$ je elipsa, če in samo če $A_M > 0$. Če poleg tega velja še $a_{11} = a_{22}$ in $a_{12} = 0$, je $\mathcal{S}$ krožnica.
+\end{itemize}
+
+\textcolor{red}{(Definicija dualnosti?)}
+
+\textcolor{red}{\emph{Dualno stožnico} (a je prevod ok?)} stožnice $\mathcal{S}$ definiramo z inverzno matriko:
 \begin{equation*}
     \mathcal{\hat{S}}: v^\intercal M^{-1} v = 0.
 \end{equation*}
 
-Naj bo $p \in \mathcal{S}$ in naj bo $q = Mp$. Potem je
- $$q^\intercal M^{-1} q = (Mp)^\intercal M^{-1} (Mp) = p^\intercal M^\intercal M^{-1} M p = p^\intercal M^{-1} p = 0,$$
- kar pomeni, da je $q \in \mathcal{\hat{S}}$. Ker je $M$ obrnljiva, je preslikava $\mathcal{S} \longrightarrow \mathcal{\hat{S}}$ s predpisom $p \mapsto Mp$ bijekcija med stožnico $\mathcal{S}$ in njeno dualno stožnico $\mathcal{\hat{S}}$.
+Naj bo $p \in \mathcal{S}$ točka na stožnici $\mathcal{S}$ in naj bo $q = Mp$. Potem je
+ $$q^\intercal M^{-1} q = (Mp)^\intercal M^{-1} (Mp) = p^\intercal M^\intercal M^{-1} M p = p^\intercal M p = 0,$$
+ kar pomeni, da je $q \in \mathcal{\hat{S}}$. Ker je $M$ obrnljiva, je preslikava $\mathcal{S} \longrightarrow \mathcal{\hat{S}}$ s predpisom $p \mapsto Mp$ bijekcija med stožnico $\mathcal{S}$ in njeno dualno stožnico $\mathcal{\hat{S}}$. Kaj pa so točke dualne stožnice $\mathcal{\hat{S}}$? (\textcolor{red}{Dokončaj; zakaj je $q$ ravno tangenta na $\mathcal{S}$?})
 
+ Naj bosta $\mathcal{S}_1$ in $\mathcal{S}_2$ stožnici s pripadajočima simetričnima obrnljivima matrikama $M_1$ in $M_2$. Potem je njuna skupna tangenta skupna točka njunih dualnih stožnic $\mathcal{\hat{S}}_1$ in $\mathcal{\hat{S}}_2$. Torej iščemo $q \in \mathcal{\hat{S}}_1, \mathcal{\hat{S}}_2$, (\textcolor{red}{a je q res prou tangenta? to je pač točka od dualne stožnice}) ki reši sistem enačb
+ \begin{equation}
+    \label{eq:afin_sistem_tangenta_splosen}
+    q^\intercal M^{-1}_1 q = 0 \; \text{ in } \; q^\intercal M^{-1}_2 q = 0.
+ \end{equation}
+ \textcolor{red}{kakšne oblike je q? oziroma tangenta?}
 
- \textcolor{Zakaj je $q$ ravno tangenta na $\mathcal{S}$?}
+ \subsubsection*{Reševanje kubične enačbe}
+
+ Zopet rešujemo kubično enačbo oblike $ x^3 + bx^2 + cx + d = 0, d \neq 0$. Za stožnici vzamemo naslednji paraboli:
+ \begin{itemize}
+    \item $\mathcal{P}_1: (y+c)^2 = -4d(x-b)$ z goriščem $F_1 (b - d, -c)$ in premico vodnico $L_1: x = b + d$,
+    \item $\mathcal{P}_2: x^2 = -4y$ z goriščem $F_2 (0, -1)$ in premico vodnico $L_2: y = 1$.
+ \end{itemize}
+
+ Iz enačb parabol zapišemo njuni matriki
+$$ M_1 =
+    \begin{bmatrix}
+        0 & 0 & 2d\\
+        0 & 1 & c\\
+        2d & c & c^2-4bd
+    \end{bmatrix}
+    \; \text{ in } \; M_2 =
+    \begin{bmatrix}
+        1 & 0 & 0\\
+        0 & 0 & 2\\
+        0 & 2 & 0
+    \end{bmatrix}
+$$
+ter izračunamo njuna inverza
+$$ M^{-1}_1 = \frac{1}{d}
+    \begin{bmatrix}
+        b & -c/2 & 1/2\\
+        -c/2 & d & 0\\
+        1/2 & 0 & 0
+    \end{bmatrix}
+\; \text{ in } \; M^{-1}_2 =
+    \begin{bmatrix}
+        1 & 0 & 0\\
+        0 & 0 & 1/2\\
+        0 & 1/2 & 0
+    \end{bmatrix}.
+$$
+
+Naj bo $q = [A\;B\; C]^\intercal \in \mathcal{\hat{P}}_1, \mathcal{\hat{P}}_2$ skupna tangenta (\textcolor{red}{je to res ``tangenta'' al kako se temu reče?}) na paraboli $\mathcal{P}_1$ in $\mathcal{P}_2$. Iz sistema enačb~\ref{eq:afin_sistem_tangenta_splosen} dobimo nov sistem
+\begin{equation}
+    \label{eq:afin_sistem_tangenta_ABC_kub}
+    bA^2 - cAB + AC + dB^2 = 0 \; \text{ in } \; -BC = A^2.
+\end{equation}
+
+Da dobimo \textcolor{red}{nevertikalno afino skupno} tangento na paraboli $\mathcal{P}_1$ in $\mathcal{P}_2$, normaliziramo $B = -1$ in $z = 1$, s čimer dehomogeniziramo (\textcolor{red}{? poglej kako je z izrazi, pa $z = 1$ je verjetno pač k je afina ravnina, zakaj pa je $B = -1$?}) tangento $Ax + By + Cz = 0$ v $y = Ax + C$. S tem se druga enačba v sistemu~\ref{eq:afin_sistem_tangenta_ABC_kub} preuredi v $C = A^2$, prva pa v
+$$ A^3 + bA^2 + cA + d = 0,$$
+kar pomeni, da nam $A$, koeficient skupne tangente, reši izvorno kubično enačbo.
+
+\textcolor{red}{Dodaj konkreten primer iz članka, origami pregibe si tudi fizično sprobala na enem listi.}
+
+\subsubsection*{Reševanje kvartične enačbe}
+
+Kot že povedano, sledeči postopek ne rešuje splošne enačbe četrte stopnje, temveč njeno zreducirano obliko
+\begin{equation}
+    \label{eq:reduc_kvart_ev}
+    x^4 + bx^2 + 2cx + d = 0
+\end{equation}
+(\textcolor{red}{Omeni, da se da vsako kvartično enačbo zreducirat v to?})
+Smiselno predpostavimo $d \neq 0$, saj bi se v nasprotnem primeru pri eliminaciji ničle $x = 0$ enačba prevedla na kubično. Poleg tega predpostavimo še $c \neq 0$, ki nam prepreči, da bi se enačba z uvedbo nove spremenljivke za $x^2$ prevedla celo na kvadratno enačbo.
+
+\textcolor{red}{omeni Bezuatov izrek al kaj je že in da dualne stožnice imajo kvadratno enačbo, kar pomeni, da imata dve največ štiri skupne točke (tangente) v kompleksni projektivni ravnini; ker so inverzne matrike realne, nastopajo v konjugiranih parih, torej imata po nič, dve ali štiri skupne tangente (šteto z večkratnostjo). A je tu not tudi tangenta v neskončnosti všteta? Skratka, dve paraboli pa imata skupno tangento v neskončnosti, kar pomeni, da potem ne pustita dovolj afinih tangent, ki bi rešile kvartično enačbo (ker so afine tangente največ tri). Zato ne moremo vzeti dveh parabol.}
+
+Zgornjo metodo bi lahko uporabili tudi tu. Avtorja pri predpostavki $bd - c^2 \neq 0$ vzameta naslednji stožnici:
+\begin{itemize}
+    \item $\mathcal{S}: dx^2 + 2cxy + by^2 + bd - c^2 = 0$ in
+    \item parabolo od prej, t.\ j.\ $\mathcal{P}: x^2 = -4y$.
+\end{itemize}
+Bralec je povabljen, da po enakem postopku kot pri kubični enačbi izpelje, da koeficient skupne tangente $y = Ax + C$ reši enačbo~\ref{eq:reduc_kvart_ev}. \textcolor{red}{(To si izpeljala)}. Stožnicama $\mathcal{S}$ in $\mathcal{P}$ zaporedoma pripadata matriki
+$$ M_\mathcal{S} =
+    \begin{bmatrix}
+        d & c & 0\\
+        c & b & 0\\
+        0 & 0 & bd - c^2
+    \end{bmatrix}
+    \; \text{ in } \; M_\mathcal{P} =
+    \begin{bmatrix}
+        1 & 0 & 0\\
+        0 & 0 & 2\\
+        0 & 2 & 0
+    \end{bmatrix}.
+$$
+Ker za glavni minor matrike $M_\mathcal{S}$ velja $A_{M_\mathcal{S}} = bd - c^2 \neq 0$, stožnica $\mathcal{S}$ ni parabola in ker velja $c \neq 0$, ne more biti niti krožnica. Torej je lahko le elipsa ali hiperbola. Tu pa nastane težava, saj avtorja nista uspela najti splošne geometrijske metode za konstrukcijo skupne tangente na parabolo in elipso oz.\ hiperbolo. Ker pa znamo konstruirati skupno tangento na parabolo in krožnico, predlagata malo prilagojen postopek, ki je sicer algebraično manj eleganten, vendar geometrijsko toliko lažje izveden.
+
+Pri danih koeficientih $b, c, d$ enačbe~\ref{eq:reduc_kvart_ev} vpeljimo novi oznaki
+$$ e = \frac{\sqrt{bd - c^2}}{d} \; \text{ in } \; r = |e|\sqrt{-d}, $$
+iz česar sledita relaciji, ki ju bomo kasneje uporabili pri izpeljavi:
+\begin{equation}
+    \label{eq:kvarticni_relaciji}
+    b= de^2 + \frac{c^2}{d^2} \; \text{ in } \; -\frac{de^2}{r^2} = 1.
+\end{equation}
+\opomba{Smiselno za koeficiente $b, c, d$ predpostavimo $bd - c^2 > 0$ in $d < 0$. Zato s tem postopkom ne moremo reševati poljubnih enačb četrte stopnje.}
+Avtorja nato predlagata naslednji matriki za dualni stožnici $\mathcal{\hat{C}}$ in $\mathcal{\hat{P}}$:
+$$ M^{-1}_\mathcal{C} =
+    \begin{bmatrix}
+        1 & 0 & 0\\
+        0 & 1 & 0\\
+        0 & 0 & -1/r^2
+    \end{bmatrix}
+\; \text{ in } \; M^{-1}_\mathcal{P} =
+    \begin{bmatrix}
+        0 & 0 & de/2\\
+        0 & -d & c/2\\
+        de/2 & c/2 & 0
+    \end{bmatrix}.
+$$
+Če izračunamo njuna inverza, dobimo matriki
+$$ M_\mathcal{C} =
+    \begin{bmatrix}
+        1 & 0 & 0\\
+        0 & 1 & 0\\
+        0 & 0 & -r^2
+    \end{bmatrix}
+    \; \text{ in } \; M_\mathcal{P} = -\frac{1}{d^3e^2}
+    \begin{bmatrix}
+        c^2 & -cde & -2d^2e\\
+        -cde & d^2e^2 & 0\\
+        -2d^2e & 0 & 0
+    \end{bmatrix}.
+$$
+Iz njiju zapišemo predpisa stožnic v afini ravnini ($z = 1$) in dobimo:
+\begin{itemize}
+    \item krožnico $\mathcal{C}: x^2 + y^2 = r^2$ s središčem v $S(0,0)$ in polmerom $r$ ter
+    \item parabolo $\mathcal{P}: c^2x^2 - 2cdexy + d^2e^2y^2 - 4d^2ex = 0$ (ker je $A_{M_\mathcal{P}} = 0$, je $\mathcal{P}$ res parabola).
+\end{itemize}
+Z določitvijo gorišča in premice vodnice parabole $\mathcal{P}$ se bomo ukvarjali pozneje; najprej algebraično poiščimo skupno tangento na dani stožnici.
+
+Naj bo $q = [A\;B\; C]^\intercal$ presečišče dualnih stožnic $\mathcal{\hat{C}}$ in $\mathcal{\hat{P}}$. Iz sistema enačb~\ref{eq:afin_sistem_tangenta_splosen} dobimo nov sistem
+\begin{equation}
+    \label{eq:afin_sistem_tangenta_ABC_kvart}
+    A^2 + B^2 = \frac{C^2}{r^2} \; \text{ in } \; deAC - dB^2 + cBC = 0.
+\end{equation}
+Z določitvijo $B = -1$ in $z = 1$ zopet dobimo afino obliko skupne tangente kot $y = Ax + C$. Ko $B$ vstavimo v sistem~\ref{eq:afin_sistem_tangenta_ABC_kvart}, prvo enačbo množimo z $de^2C^2$, drugo kvadriramo, delimo z $d$ in vstavimo v prvo enačbo, dobimo
+$$ - \frac{de^2}{r^2}C^4 - (de^2 + \frac{c^2}{d})C^2 + 2cC + d = 0.$$
+V dobljeno enačbo vstavimo relaciji~\ref{eq:kvarticni_relaciji} in dobimo
+$$C^4 + bC^2 + 2cC + d = 0,$$
+kar pomeni, da nam $C$, začetna vrednost tangente oz.\ njeno presečišče z ordinatno osjo reši izvorno kvartično enačbo.
+
+Sedaj poiščimo še gorišče in premico vodnico parabole $\mathcal{P}$. Potem bo postopek konstrukcije skupne tangente, kot smo ga opisali že zgoraj -- najprej narišemo krožnico s središčem $S$ in polmerom $2r$ ter gorišče in premico vodnico parabole. Nato opravimo pregib, ki hkrati položi gorišče na premico vodnico in središče krožnice na njen rob. Presečišče pregiba z ordinatno osjo je rešitev naše enačbe (seveda poiščemo vse možne pregibe, ki so največ štirje).
+
+Iz enačbe parabole $\mathcal{P}: c^2x^2 - 2cdexy + d^2e^2y^2 - 4d^2ex = 0$ ne moremo enostavno prebrati gorišča in premice vodnice, zato $(x, y)$-sistem prevedimo v \textcolor{red}{(a je izraz primeren?)} $(z, w)$-sistem s sledečo preslikavo \textcolor{red}{(od kje pride ta $P$?)}:
+$$ \begin{bmatrix} x\\y\\1\end{bmatrix} = P \cdot \begin{bmatrix} z\\w\\1\end{bmatrix}, \text{ kjer je } P =
+\begin{bmatrix}
+    c/bd & de & c^2e/b^2\\
+    -e/b & c & -(bc + cde^2)/b^2\\
+    0 & 0 & 1
+\end{bmatrix}.
+$$
+
+Ko to vstavimo v matrično enačbo parabole $[x\;y\;1] P [x\;y\;1]^\intercal$, po računanju in poenostavljanju\footnote{Za izračun je potrebna programska oprema, kot je npr.\ Wolfram Mathematica. \textcolor{red}{imaš zračunano, lahko vstavim tle screenshot za dokaz, da sem zračunala?}} na koncu dobimo
+$$ \mathcal{P}: z^2 = 4d^3e^2w. $$
+
+V $(z, w)$ sistemu ima parabola gorišče v $F_{zw}(0, d^3e^2)$ in premico vodnico $L_{zw}: w = - d^3e^2$ oziroma $L_{zw}: (z, w) = (0, -d^3e^2) + t(1, 0), t \in \R $. Izhodišče v $(x, y)$-sistemu je tako v točki $O_{xy} (c^2e/b^2, -(bc + cde^2)/b^2)$. Iz tega lahko izračunamo še gorišče in premico vodnico v $(x, y)$-sistemu:
+$$ F_{xy} = P \cdot \begin{bmatrix} 0\\d^3e^2\\1\end{bmatrix} \longrightarrow F_{xy} = O_{xy} + d^3e^2(de, c) = (\frac{c^2e}{b^2} + d^4e^3, -\frac{bc + cde^2}{b^2} + cd^3e^2),$$
+$$ L_{xy} = P \cdot \left( \begin{bmatrix} 0\\-d^3e^2\\1\end{bmatrix} + t \cdot \begin{bmatrix} 1\\0\\1\end{bmatrix} \right) \longrightarrow L_{xy}: (x, y) = O_{xy} - d^3e^2(de, c) + t(c, -de), t \in R.$$
+
+V eksplicitni obliki je enačba za premico vodnico
+$$ L_{xy}: y = -\frac{de}{c} \cdot x - \frac{1}{bc} (c^2 + bc^2d^3e^2 + bd^5e^4). $$
+
+Kot vidimo, gorišče in premica vodnica nimata lepih predpisov, vendar je po eni strani ta metoda precej bolj zanimiva kot pretvorba kvartične enačbe na enačbe nižje stopnje in reševanje z običajno Lillovo metodo.
+
+\textcolor{red}{lahko daš še slikovni primer (slika 4 iz istega vira) poleg konkretne enačbe, samo za okus. Sta pa slika 3 in slika 4 povezani med sabo, gre za iste podatke.}
