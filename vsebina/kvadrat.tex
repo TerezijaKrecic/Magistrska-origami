@@ -9,7 +9,7 @@ Vzemimo v roke kvadraten list papirja in poglejmo, kaj lahko z njegovim prepogib
 % enakostranični trikotnik (smo že pri algebri, ma lahko še enkrat, pa več načinov)
 % kvadratni koren od 2, od k
 
-\subsubsection*{Konstrukcija $\sqrt{r}$}
+\subsubsection*{Konstrukcija števila $\sqrt{r}$}
 
 Vzemimo $r \in \Q^+$ in si poglejmo naslednjo konstrukcijo (vzeto iz~\cite[str.\ 58]{hull2013}):
 Imejmo točko $A (0, 1) $ in premico $y = -1$. Na ordinatni osi označimo točko $B (0, -\frac{r}{4})$ in naredimo pregib skoznjo, ki točko $A$ položi na premico $y = -1$. Njena zrcalna slika je $A' (t, 0) $ za nek $t \in \R$ (slika~\ref{fig:konstrukcija_korena}).
@@ -21,10 +21,10 @@ Imejmo točko $A (0, 1) $ in premico $y = -1$. Na ordinatni osi označimo točko
     \label{fig:konstrukcija_korena}
 \end{figure}
 
-Pregib poteka skozi točko $B$ in razpolovišče daljice $AA'$, torej je njegov koeficient $k_B = \frac{r}{2t}$ (izpeljavo prepuščamo bralcu). Ker je pregib simetrala daljice $AA'$, njena nosilka pa ima koeficient $k_A = - \frac{2}{t}$, dobimo enačbo
+Pregib poteka skozi točko $B$ in razpolovišče daljice $AA'$, torej je njegov koeficient $k_B = \frac{r}{2t}$ (izpeljavo prepuščamo bralcu). Ker je pregib simetrala daljice $AA'$, njena nosilka pa ima koeficient $k_A = - \frac{2}{t}$, dobimo
 \begin{align*}
-    k_B &= - \frac{1}{k_A}\\
-    \frac{r}{2t} &= \frac{t}{2}\\
+    k_B &= - \frac{1}{k_A},\\
+    \frac{r}{2t} &= \frac{t}{2},\\
     r &= t^2 \text{ oz. } t = \sqrt{r}.
 \end{align*}
 Na koncu le še prepognemo pravokotnico na abscisno os skozi točko $A'$ in tako dobimo točko $(\sqrt{r}, 0)$. Torej smo konstruirali število $\sqrt{r}$ za poljuben $r \in \Q^{+}$.
@@ -51,7 +51,11 @@ Metoda nima uradnega prevoda niti uradnega imena, jo pa tako imenuje Robert J.\ 
     \begin{enumerate}
         \item \textit{Analitičen pristop:} Kvadrat postavimo v evklidsko ravnino tako, da je spodnje levo oglišče kvadrata v koordinatnem izhodišču in spodnje desno v točki $(1, 0)$. Obe diagonali izrazimo z enačbama premic. Glavna diagonala ima enačbo $y = x$, diagonala pravokotnika pa $y = -2x + 2$. Točka $P$ je njuno presečišče in ima tako koordinati $(2/3, 2/3)$.
         \item \textit{Preko podobnih trikotnikov:} Z opisanimi prepogibi v tem kvadratu konstruiramo več trikotnikov. Njihova oglišča označimo tako, kot kaže slika \textcolor{red}{naredi in referiraj sliko, str. 38 v hull2013; ampak predrugači imena oglišč (glej nadaljevanje tega dokaza)}. Iz podobnosti trikotnikov $\triangle AGP$ in $\triangle ABC$ sledi, da je trikotnik $\triangle AGP$ enakokrak. Naj bo dolžina njegovih krakov $x$. Potem je $|AG| = |GP| = x$ in $|GB| = 1 - x$. Iz podobnosti trikotnikov $\triangle EFB$ in $\triangle PGB$ sledi
-        $$ \frac{|EF|}{|FB|} = \frac{|PG|}{|GB|} \Rightarrow \frac{1}{\frac{1}{2}} = \frac{x}{1 - x} \Rightarrow 2 - 2x = x \Rightarrow x = \frac{2}{3}. $$
+        \begin{align*}
+            \frac{|EF|}{|FB|} &= \frac{|PG|}{|GB|}, \\
+            \frac{1}{\frac{1}{2}} &= \frac{x}{1 - x}, \\
+            x &= \frac{2}{3}.
+        \end{align*}
     \end{enumerate}
 \end{dokaz}
 
