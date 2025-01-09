@@ -262,6 +262,7 @@
 
 
 \RequirePackage[style=\@citationstyle,
+                sorting=nty, % DODANO (literatura po abecedi)
                 hyperref=auto,
                 isbn=false,
                 doi=true,
