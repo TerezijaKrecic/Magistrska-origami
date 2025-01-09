@@ -1,8 +1,8 @@
 # Magistrska naloga o origamiju
 
 Okvirna vsebina po sklopih:
-- origami aksiomi in povezava z Evklidskimi aksiomi
-- zlaganje stožnic (a se da tudi krog?)
+- origami operacije in povezava evklidskih konstrukcij z origami konstrukcijami (tudi preko algebre)
+- zlaganje stožnic
 - Hagovi izreki v kvadratu in razdelitev stranice na *n* enakih delov (trije načini), rešitev dveh starogrških problemov
     - trisekcija kota (Abe, Justin)
     - podvojitev kocke (Messer, Beloch)
@@ -13,6 +13,7 @@ Okvirna vsebina po sklopih:
         - z Belochinim kvadratom
         - Lillova metoda (z Belochinim prepogibom)
         - Alperinova rešitev (gl. Hull 2020)
-    - enačbe 4. reda (TEŽJE)
-    - enačbe 5. reda (TEŽJE)
-- ČE BO ŠE VOLJA: dokazovanje kakšnih srednješolskih geometrijskih izrekov preko prepogibanja papirja, kaj se lahko zgodi pri zlaganju enakostraničnega trikotnika, pravilnega 5-kotnika ... (je treba še najdit, lahko jih izumiš), učni listi za kakšno snov pri matematičnemu krožku.
+        - metoda, ki je obisana pri enačbah 4. stopnje
+    - enačbe 4. stopnje (metoda za reševanje nekaterih enačb)
+- 2-fold origami (do zdaj smo prepognili in takoj nazaj razgrnili papir): enačbe 5. stopnje (TEŽJE, glej članek od mentorja), še kej
+- Alzhazen's problem (bomo še videli)
