@@ -155,7 +155,34 @@ Torej nam drugi Hagov izrek poleg konstrukcije števil $1/3, 2/3$ poda tudi dire
 
 \subsubsection{Tretji Hagov izrek}
 
-\textcolor{red}{PLUS poslošitev.}
+\begin{izrek}[Tretji Hagov izrek]
+    Zgornjo stranico $AD$ kvadrata $ABCD$ razpolovimo v točki $E$ in opravimo pregib, ki točko $E$ položi na desno stranico in hkrati oglišče $C$ na levo stranico (slika~\ref{fig:hagov_izrek3}). Njena slika $H$ levo stranico deli v razmerju $2:1$.
+\end{izrek}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.45\textwidth]{images/hagovi_izreki/hagov_izrek3.png}
+    \caption[Pregib iz tretjega Hagovega izreka]{Konstrukcija pregiba iz tretjega Hagovega izreka. Vzeto iz~\cite[str. 18]{haga2008}.}
+    \label{fig:hagov_izrek3}
+\end{figure}
+
+\begin{dokaz}
+    Označimo še točke $E, F, G,$ in $I$ ter uvedimo $x = |BH|$ in $y = |BG|$, kot kaže slika~\ref{fig:hagov_izrek3}. Zaradi prepogiba je $|GH| = |CG| = 1-y$. Iz Pitagorovega izreka za pravokotni trikotnik $\triangle BGH$ ter razmerja za podobna trikotnika $\triangle BGH$ in $\triangle AHE$ dobimo sistem enačb
+    $$ x^2 + y^2 = (1-y)^2 \; \text{ in } \; \frac{1/2}{1-x} = \frac{x}{y}, $$
+    iz katerih izračunamo $x = \frac{1}{3}$ in $y = \frac{4}{9}$. Torej točka $H$ res deli stranico $AB$ v razmerju $2:1$.
+\end{dokaz}
+
+Kot pri prejšnjih dveh izrekih bi lahko poračunali še preostale dolžine daljic. To za vajo prepuščamo bralcu, ki se lahko o svojih rezultatih prepriča s sliko~\ref{fig:hagov_izrek3_st}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.45\textwidth]{images/hagovi_izreki/hagov_izrek3_stevilke.png}
+    \caption[Tretji Hagov izrek v številkah]{Dolžine daljic po tretjem Hagovem izreku. Vzeto iz~\cite[str. 19]{haga2008}.}
+    \label{fig:hagov_izrek3_st}
+\end{figure}
+
+
+\textcolor{red}{Kakšen zaključek teh treh izrekov? Skupno -- vsi trije uporabljajo središče $E$ zgornje stranice $AD$. Prvi izrek nanj položi oglišče $C$, drugi izrek naredi pregib skoznjo in oglišče $C$, tretji pa nanjo položi desno stranico tako, da $C$ leži na levi stranici. Kej skupnega, bi se dalo še kakšen drug pregib blablabla}
 
 
 
@@ -166,7 +193,7 @@ Torej nam drugi Hagov izrek poleg konstrukcije števil $1/3, 2/3$ poda tudi dire
 
 Stranico kvadrata želimo razdeliti na $n$ enakih delov, kjer je $n \in \N$ poljuben. Za $n = 2^t, t \in \N_0$ je to čisto enostavno, saj samo prepolavljamo razdalje med pregibi, dokler ne dosežemo cilja. Če je $n$ sod, vendar ni potenca $2$, torej $n = 2^t(2m + 1)$, kjer sta $t, m \in \N$, stranico najprej razdelimo na $2^t$ delov, nato pa moramo vsakega izmed njih razdeliti na $2m + 1$ (liho število) delov. Izziv tega problema je torej v razdelitvi daljice na liho število delov. Ko bomo zo zmogli, jo bomo znali razdeliti na $n$ delov za vsak $n \in \N$.
 
-V prejšnjem razdelku so nam Hagovi izreki podali razdelitev stranice kvadrata na tri, pet in sedem delov. Vendar iščemo metodo, ki nam stranico razdeli na $n$ delov za splošen lih $n \in \N$.
+V prejšnjem razdelku so nam Hagovi izreki podali razdelitev stranice kvadrata na tri, pet, sedem in devet delov. Vendar iščemo metodo, ki nam stranico razdeli na $n$ delov za splošen lih $n \in \N$.
 
 Spomnimo se, da smo en tak postopek že spoznali -- V dokazu izreka~\ref{izr:podpolje} smo za poljuben $a \in \R$ znali konstruirati razdaljo $1/a$, kar bi lahko uporabili za razdelitev neke daljice na $a$ enakih delov -- konstruirano razdaljo $1/a$ bi $a$-krat prenesli naprej. Načinov reševanja tega problema pa se je skozi zadnja desetletja oblikovalo še veliko več; tu si bomo pogledali še \textcolor{red}{koliko?} metode.
 
