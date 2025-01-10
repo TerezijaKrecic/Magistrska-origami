@@ -1,7 +1,7 @@
 \section{Prepogibanje kvadrata}
 \label{pogl:prepog_kvadrata}
 
-Vzemimo v roke kvadraten list papirja in poglejmo, kaj lahko z njegovim prepogibanjem dobimo. V tem poglavju se bomo ukvarjali s preprostimi konstrukcijami, kot so konstrukcija enakostraničnega trikotnika, števila $\sqrt{r}$ za poljuben $r \in \mathcal{O}$, razdelitve daljice na enako število delov; pogledali si bomo vse tri Hagove izreke o razmerjih, na katere specifični pregibi kvadratnega lista papirja razdelijo njegove stranice; na koncu pa si bomo končno pogledali še konstrukcije rešitev dveh starogrških problemov, zaradi katerih smo se sploh začeli ukvarjati s temo origamija.
+Vzemimo v roke kvadraten list papirja in poglejmo, kaj lahko z njegovim prepogibanjem dobimo. V tem poglavju se bomo ukvarjali s preprostimi konstrukcijami, kot so konstrukcija enakostraničnega trikotnika in števila $\sqrt{r}$ za poljuben $r \in \mathcal{O}$. Pogledali si bomo vse tri Hagove izreke o razmerjih, na katere specifični pregibi kvadratnega lista papirja razdelijo njegove stranicE, nato pa to posplošili na iskanje metod za razdelitev daljice na poljubno število skladnih delov. Na koncu pa bomo končno preko več različnih konstrukcij rešili dva starogrška problema, zaradi katerih smo se sploh začeli ukvarjati s temo origamija.
 
 \subsection{Nekaj kratkih in zanimivih konstrukcij za uvod}
 
@@ -30,13 +30,145 @@ Pregib po konstrukciji poteka skozi točko $B$ in razpolovišče daljice $AA'$, 
 \end{align*}
 Na koncu le še prepognemo pravokotnico na abscisno os skozi točko $A'$ in tako dobimo točko $(\sqrt{r}, 0)$. Torej smo konstruirali število $\sqrt{r}$ za poljuben $r \in \Q^{+}$.
 
+\subsection{Hagovi izreki}
+
+S prepogibanjem kvadratnega lista papirja se je veliko ukvarjal Kazuo Haga, sicer japonski profesor biologije. V svojem delu \emph{Origamics: Mathematical Explorations Through Paper Folding}~\cite{haga2008} je tako med drugim formuliral tri izreke, ki jih poznamo pod imenom \emph{Hagovi izreki}. Pri vsakem od njih gre za konstrukcijo specifičnega pregiba, ki povzroči delitev stranic kvadrata v različnih razmerjih. Vsak izrek posebej bomo najprej formulirali, si slikovno ogledali konstrukcijo in ga dokazali, nato pa si pogledali še nekaj dodatnih lastnosti, ki sledijo iz njega.
+
+Da si olajšamo računanje, predpostavimo, da ima kvadrat, ki predstavlja naš list papirja, stranico dolžine $1$. Njegova oglišča označimo s črkami $A, B, C$ in $D$, začenši v zgornjem desnem oglišču in sledečimi v pozitivni smeri, torej nasprotni smeri urinega kazalca.
+
+\textcolor{red}{Konstrukcija poljubnega $a/b \in \Q$~\cite[str.\ 20--21]{lang2013}}
+
+\textcolor{red}{Hull2013, activity 11 (str. 103--)}
+
+\subsubsection{Prvi Hagov izrek}
+
+\begin{izrek}[Prvi Hagov izrek]
+    Zgornjo stranico $AD$ kvadrata $ABCD$ razpolovimo v točki $E$ in s pregibom nanjo položimo oglišče $C$. S tem na levi in desni stranici kvadrata dobimo tri točke, ki jih označimo z $F, G$ in $H$ (slika~\ref{fig:hagov_izrek1}). Za te točke velja:
+    \begin{itemize}
+        \item točka $F$ deli desno stranico v razmeru $3:5$,
+        \item točka $H$ deli levo stranico v razmerju $2:1$,
+        \item točka $H$ deli spodnjo stranico v razmerju $1:5$,
+        \item točke $G$ deli levo stranico v razmerju $7:1$.
+    \end{itemize}
+\end{izrek}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.45\textwidth]{images/hagovi_izreki/hagov_izrek1.png}
+    \caption[Pregib iz prvega Hagovega izreka]{Konstrukcija pregiba iz prvega Hagovega izreka. Vzeto iz~\cite[str. 4]{haga2008}.}
+    \label{fig:hagov_izrek1}
+\end{figure}
+
+\begin{dokaz}
+    Kot kaže slika~\ref{fig:hagov_izrek1}, označimo še točki $I$ in $J$. Najprej lahko opazimo, da pregib iz izreka povzroči nastanek treh podobnih pravokotnih trikotnikov, ki so na sliki~\ref{fig:hagov_izrek1} pobarvani sivo. Za vsakega od njih lahko določimo dolžine njegovih stranic.
+
+    Začnimo s trikotnikom $\triangle DEF$. Ker je $E$ razpolovišče stranice $AD$, je $|DE| = 1/2$. Če drugo kateto $DF$ označimo z $a$, je hipotenuza $EF$ dolga $1-a$, saj $|DF| + |EF| = |DF| + |FC| = 1$ po konstrukciji. Iz Pitagorovega izreka nato izračunamo $a = 3/8$. Torej točka $F$ res deli stranico $CD$ v razmerju $3:5$.
+
+    Iz razmerja podobnih trikotnikov $\triangle DEF$ in $\triangle AHE$ dobimo
+    $$ \frac{|AH|}{|AE|} = \frac{|DE|}{|DF|}, \; \text{ torej } \; |AH| = \frac{|AE|\cdot|DE|}{|DF|} = \frac{1/2 \cdot 1/2}{3/8} = \frac{2}{3}.$$
+    Točka $H$ res deli stranico $AB$ v razmerju $2:1$. Drugače povedano -- s prvim Hagovim izrekom znamo poljubno daljico razdeliti na tri skladne dele.
+
+    Sedaj lahko izračunamo dolžino hipotenuze $EH$ trikotnika $\triangle AHE$. Iz Pitagorovega izreka sledi $|EH| = 5/6$ (in posledično iz $|EI| = 1$ še $|HI| = 1/6$), torej točka $H$ res deli spodnjo stranico v razmerju $1:5$.
+
+    Za izračun dolžine daljice $BG$, ki je po konstrukciji enaka dolžini katete $GI$, si spet pomagamo z razmerji podobnih trikotnikov; tokrat vzamemo trikotnika $\triangle IHG$ in $\triangle AHE$. Iz razmerja
+    $$ \frac{|GI|}{|HI|} = \frac{|AE|}{|AH|} \; \text{ sledi } \; |BG| = |GI| = \frac{|AE|\cdot|HI|}{|AH|} = \frac{1/2 \cdot 1/6}{2/3} = \frac{1}{8},$$
+    torej točka $G$ res deli stanico $AB$ v razmerju $7:1$.
+\end{dokaz}
+
+Za vajo lahko izračunamo še preostale dolžine daljic:
+\begin{align*}
+    |GH| &= |AB| - |AH| - |BG| = 1 - \frac{2}{3} - \frac{1}{8} = \frac{5}{24},\\
+    |CJ| &= |BG| = \frac{1}{8},\\
+    |FJ| &= |CD| - |DF| - |CJ| = 1 - \frac{3}{8} - \frac{1}{8} = \frac{1}{2},\\
+    |FG| &= \sqrt{|GJ|^2 + |FJ|^2} = \sqrt{1^2 + \left(\frac{1}{2}\right)^2} = \frac{\sqrt{5}}{2}.
+\end{align*}
+
+S tem so znane vse dolžine daljic, na katere pregib iz prvega Hagovega izreka razdeli stranice enotskega kvadrata. Na sliki~\ref{fig:hagov_izrek1_st} je tako povzetek naših ugotovitev.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.45\textwidth]{images/hagovi_izreki/hagov_izrek1_stevilke.png}
+    \caption[Prvi Hagov izrek v številkah]{Dolžine daljic po prvem Hagovem izreku. Vzeto iz~\cite[str. 7]{haga2008}.}
+    \label{fig:hagov_izrek1_st}
+\end{figure}
+
+Izrek lahko tudi posplošimo, če za točko $E$ ne vzamemo razpolovišča, temveč poljubno točko na daljici $AD$. Naj bo $x = |ED|$. Nastale točke označimo kot prej, dolžine nastalih daljic pa z $y_1$ do $y_6$, kot kaže slika~\ref{fig:hagov_izrek1_splosen}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.55\textwidth]{images/hagovi_izreki/hagov_izrek1_splosen.png}
+    \caption[Prvi Hagov izrek v splošnem]{Oznake dolžin iz prvega Hagovega izreka v splošnem. Vzeto iz~\cite[str. 9]{haga2008}.}
+    \label{fig:hagov_izrek1_splosen}
+\end{figure}
+
+Za vsak $i \in \{1,2,3,4,5,6\}$ poiščimo sedaj vrednost $y_i$ v odvisnosti od $x$. Kot prej najprej opazimo, da imamo zopet tri podobne pravokotne trikotnike. Iz Pitagorovega izreka za pravokotni trikotnik $\triangle EDF$ sledi
+$$y_1 = (1-x^2)/2,$$
+iz razmerja podobnih pravokotnih trikotnikov $\triangle EDF$ in $\triangle HAE$ pa izračunamo
+$$ y_2 = \frac{x(1-x)}{y_1} = \frac{2x}{1+x} \; \text{ in } \; y_3 = \frac{(1-y_1)(1-x)}{y_1} = \frac{1+x^2}{1+x}.$$
+Pregib $FG$ je po konstrukciji simetrala daljice $CE$, torej pravokotna nanjo, iz česar sledi, da sta trikotnika $\triangle CKF$ in $\triangle CDE$ podobna in kota $\angle DEC$ in $\angle KFC$ skladna. Zato sta skladna tudi trikotnika $\triangle CDE$ in $\triangle GJF$, torej $|FJ| = x$. Posledično je
+$$y_4 = |CJ| = 1 - (y_1 + x) = \frac{(1-x)^2}{2} \; \text{ in } \; y_5 = 1 - y_2 - y_4 = \frac{(1-x)(1+x^2)}{2(1+x)}.$$
+Na koncu še s ponovno uporabo Pitagorovega izreka izračunamo
+$$ y_6 = \sqrt{|GJ|^2 + |FJ|^2} = \sqrt{1 + x^2}.$$
+
+Splošne vrednosti dolžin $y_i$ mogoče niso najlepše, vendar pri marsikateri izbiri števila $x \in (0,1)$ dobimo lepe številke. Najbolj so zanimiva recipročna števila naravnih števil. Vemo že, da pri izbiri $x = 1/2$ lahko dobimo števila $1/3, 1/6, 1/8$, pri izbiri $x = 1/4$ in $x = 3/4$ dobimo še $2/5$ (in iz tega z razpolovitvijo $1/5$) in $1/7$. Računanje prepuščamo bralcu, se pa na tej točki lahko vprašamo, ali za vsak $n \in \N$ obstaja primeren $x$, da lahko preko neke dolžine $y_i$ ali $1-y_1$ in preko postopkov za konstrukcijo že znanih razmerij konstruiramo dolžino $1/n$. \textcolor{red}{dokaz, da se da??? al pej spusti, če se ti ne da \ldots}
+
+\subsubsection{Drugi Hagov izrek}
+
+\begin{izrek}[Drugi Hagov izrek]
+    Zgornjo stranico $AD$ kvadrata $ABCD$ razpolovimo v točki $E$ in opravimo pregib skozi točko $E$ ter oglišče $C$. Točka $D$ se tako preslika v točko $F$ (slika~\ref{fig:hagov_izrek2}). Če stranico $EF$ podaljšamo do leve stranice kvadrata, jo presečišče $G$ razdeli v razmerju $2:1$.
+\end{izrek}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{images/hagovi_izreki/hagov_izrek2.png}
+    \caption[Pregib iz drugega Hagovega izreka]{Konstrukcija pregiba iz drugega Hagovega izreka. Vzeto iz~\cite[str. 12]{haga2008}.}
+    \label{fig:hagov_izrek2}
+\end{figure}
+
+\begin{dokaz}
+    Opazimo lahko, da sta trikotnika $\triangle BCG$ in $\triangle FCG$ skladna, saj imata skladni daljšo kateto in hipotenuzo ter pravi kot nasproti hipotenuze. Označimo $x = |GB| = |GF|$. Zapišimo Pitagorov izrek za pravokotni trikotnik $\triangle AGE$:
+    $$ \left(x + \frac{1}{2}\right)^2 = (1-x)^2 + \left(\frac{1}{2}\right)^2 \; \text{ in izračunamo } \; x = \frac{1}{3},$$
+    torej točka $G$ res deli stranico $AB$ v razmerju $2:1$.
+\end{dokaz}
+
+S tem smo zopet dobili način razdelitve daljice na tri enake dele, a tu zanimivih razmerij še ni konec. Poglejmo si še, v kakšen razmerju nam stranice deli točka $F$ in točke, ki jih dobimo s podaljšanjem daljic $FD$ in $FC$ do leve stranice. Označimo nove točke $H, I, J, K$ in $M$, kot kaže slika~\ref{fig:hagov_izrek2_st}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.45\textwidth]{images/hagovi_izreki/hagov_izrek2_stevilke.png}
+    \caption[Drugi Hagov izrek v številkah]{Dolžine daljic po drugem Hagovem izreku. Vzeto in preurejeno iz~\cite[str. 15]{haga2008}.}
+    \label{fig:hagov_izrek2_st}
+\end{figure}
+
+Po konstrukciji pregiba velja $FD \perp CE$, iz česar dobimo podobne pravokotne trikotnike $\triangle CDE$, $\triangle CFE$, $\triangle DAK$, $\triangle DHE$, $\triangle FHE$, $\triangle DIF$. Prvi trije od naštetih so celo skladni, prav tako je skladen tudi sledeči par. Le trikotnik $\triangle DIF$ nima skladnega para. Iz sledečih razmerij izračunamo
+\begin{align*}
+    |DH| &= \frac{|DE| \cdot |CD|}{|CE|} = \frac{1}{\sqrt{5}}, \; \text{ torej } \; |DF| = 2|FH| = \frac{2}{\sqrt{5}}, \\
+    |DI| &= \frac{|DF| \cdot |CD|}{|CE|} = \frac{4}{5}, \; \text{ torej } \; |AI| = \frac{1}{5}, \\
+    |FI| &= \frac{|DI| \cdot |DE|}{|CD|} = \frac{2}{5} \; \text{ in} \\
+    |AK| &= |DE| = \frac{1}{2}.
+\end{align*}
+
+Iz podobnih trikotnikov $\triangle BCL$ in $\triangle MCF$ sledi še
+$$ |BL| = \frac{|BC| \cdot |FM|}{|CM|} = \frac{3}{4}, \; \text{ torej } \; |AL| = |AB| - |BL| = \frac{1}{4}. $$
+
+Torej nam drugi Hagov izrek poleg konstrukcije števil $1/3, 2/3$ poda tudi diretkno konstrukcijo števil $1/5, 2/5, 3/5$ in $4/5$.
+
+\subsubsection{Tretji Hagov izrek}
+
+\textcolor{red}{PLUS poslošitev.}
+
+
+
 \subsection{Razdelitev daljice na $n$ enakih delov}
 
 \textcolor{red}{Ideja -- kaj če najprej Hagove izreke, ki nam že dajo metode za razdelitev stranice na n delov za nek n, pol pa se vprašamo za kakšno splošno metodo in je to potem to poglavje}
 
+
 Stranico kvadrata želimo razdeliti na $n$ enakih delov, kjer je $n \in \N$ poljuben. Za $n = 2^t, t \in \N_0$ je to čisto enostavno, saj samo prepolavljamo razdalje med pregibi, dokler ne dosežemo cilja. Če je $n$ sod, vendar ni potenca $2$, torej $n = 2^t(2m + 1)$, kjer sta $t, m \in \N$, stranico najprej razdelimo na $2^t$ delov, nato pa moramo vsakega izmed njih razdeliti na $2m + 1$ (liho število) delov. Izziv tega problema je torej v razdelitvi daljice na liho število delov. Ko bomo zo zmogli, jo bomo znali razdeliti na $n$ delov za vsak $n \in \N$.
 
-V dokazu izreka~\ref{izr:podpolje} smo za poljuben $a \in \R$ znali konstruirati razdaljo $1/a$, kar bi lahko uporabili za razdelitev neke daljice na $a$ enakih delov -- konstruirano razdaljo $1/a$ bi $a$-krat prenesli naprej. Načinov reševanja tega problema pa se je skozi zadnja desetletja oblikovalo še veliko več; tu si bomo pogledali še \textcolor{red}{koliko?} metode.
+V prejšnjem razdelku so nam Hagovi izreki podali razdelitev stranice kvadrata na tri, pet in sedem delov. Vendar iščemo metodo, ki nam stranico razdeli na $n$ delov za splošen lih $n \in \N$.
+
+Spomnimo se, da smo en tak postopek že spoznali -- V dokazu izreka~\ref{izr:podpolje} smo za poljuben $a \in \R$ znali konstruirati razdaljo $1/a$, kar bi lahko uporabili za razdelitev neke daljice na $a$ enakih delov -- konstruirano razdaljo $1/a$ bi $a$-krat prenesli naprej. Načinov reševanja tega problema pa se je skozi zadnja desetletja oblikovalo še veliko več; tu si bomo pogledali še \textcolor{red}{koliko?} metode.
 
 \subsubsection*{Metoda križajočih se diagonal}
 
@@ -103,101 +235,7 @@ Zgornji postopek lahko posplošimo na poljuben $n \in \N$. Kot smo videli v konk
 
 \subsubsection*{Metoda4}
 
-\textcolor{red}{Več metod (vsaj tri?), na koncu daš Hagovo metodo (iz prvega Hagovega izreka, kjer spodnje desno oglišče položiš na razpolovišče zgornje stranice -- samo omeniš in referiraš na podpoglavje s prvim hagovim izrekom) in iz tega začneš z novim podpoglavjem -- Hagovi izreki. Matode pred tem: Hull2013 (str.\ 36--40)}
-
-
-\subsection{Hagovi izreki}
-
-S prepogibanjem kvadratnega lista papirja se je veliko ukvarjal Kazuo Haga, sicer japonski profesor biologije. V svojem delu \emph{Origamics: Mathematical Explorations Through Paper Folding}~\cite{haga2008} je tako med drugim formuliral tri izreke, ki jih poznamo pod imenom \emph{Hagovi izreki}. Pri vsakem od njih gre za konstrukcijo specifičnega pregiba, ki povzroči delitev stranic kvadrata v različnih razmerjih. Vsak izrek posebej bomo najprej formurilari, si slikovno ogledali konstrukcijo in ga dokazali, nato pa ga še posplošili.
-
-Da si olajšamo računanje, predpostavimo, da ima kvadrat, ki predstavlja naš list papirja, stranico dolžine $1$. Njegova oglišča označimo s črkami $A, B, C$ in $D$, začenši v zgornjem desnem oglišču in sledečimi v pozitivni smeri, torej nasprotni smeri urinega kazalca.
-
-\textcolor{red}{Konstrukcija poljubnega $a/b \in \Q$~\cite[str.\ 20--21]{lang2013}}
-
-\textcolor{red}{Hull2013, activity 11 (str. 103--)}
-
-\subsubsection{Prvi Hagov izrek}
-
-\begin{izrek}[Prvi Hagov izrek]
-    Zgornjo stranico $AB$ kvadrata $ABCD$ razpolovimo v točki $E$ in s pregibom nanjo položimo oglišče $C$. S tem na levi in desni stranici kvadrata dobimo tri točke, ki jih označimo z $F, G$ in $H$ (slika~\ref{fig:hagov_izrek1}). Za te točke velja:
-    \begin{itemize}
-        \item točka $F$ deli desno stranico v razmeru $3:5$,
-        \item točka $H$ deli levo stranico v razmerju $2:1$,
-        \item točka $H$ deli spodnjo stranico v razmerju $1:5$,
-        \item točke $G$ deli levo stranico v razmerju $7:1$.
-    \end{itemize}
-\end{izrek}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.45\textwidth]{images/hagovi_izreki/hagov_izrek1.png}
-    \caption[Pregib iz prvega Hagovega izreka]{Konstrukcija pregiba iz prvega Hagovega izreka. Vzeto iz~\cite[str. 4]{haga2008}.}
-    \label{fig:hagov_izrek1}
-\end{figure}
-
-\begin{dokaz}
-    Kot kaže slika~\ref{fig:hagov_izrek1}, označimo še točki $I$ in $J$. Najprej lahko opazimo, da pregib iz izreka povzroči nastanek treh podobnih pravokotnih trikotnikov, ki so na sliki~\ref{fig:hagov_izrek1} pobarvani sivo. Za vsakega od njih lahko določimo dolžine njegovih stranic.
-
-    Začnimo s trikotnikom $\triangle DEF$. Ker je $E$ razpolovišče stranice $AD$, je $|DE| = 1/2$. Če drugo kateto $DF$ označimo z $a$, je hipotenuza $EF$ dolga $1-a$, saj $|DF| + |EF| = |DF| + |FC| = 1$ po konstrukciji. Iz Pitagorovega izreka nato izračunamo $a = 3/8$. Torej točka $F$ res deli stranico $CD$ v razmerju $3:5$.
-
-    Iz razmerja podobnih trikotnikov $\triangle DEF$ in $\triangle AHE$ dobimo
-    $$ \frac{|AH|}{|AE|} = \frac{|DE|}{|DF|}, \; \text{ torej } \; |AH| = \frac{|AE|\cdot|DE|}{|DF|} = \frac{1/2 \cdot 1/2}{3/8} = \frac{2}{3}.$$
-    Točka $H$ res deli stranico $AB$ v razmerju $2:1$. Drugače povedano -- s prvim Hagovim izrekom znamo poljubno daljico razdeliti na tri skladne dele.
-
-    Sedaj lahko izračunamo dolžino hipotenuze $EH$ trikotnika $\triangle AHE$. Iz Pitagorovega izreka sledi $|EH| = 5/6$ (in posledično iz $|EI| = 1$ še $|HI| = 1/6$), torej točka $H$ res deli spodnjo stranico v razmerju $1:5$.
-
-    Za izračun dolžine daljice $BG$, ki je po konstrukciji enaka dolžini katete $GI$, si spet pomagamo z razmerji podobnih trikotnikov; tokrat vzamemo trikotnika $\triangle IHG$ in $\triangle AHE$. Iz razmerja
-    $$ \frac{|GI|}{|HI|} = \frac{|AE|}{|AH|} \; \text{ sledi } \; |BG| = |GI| = \frac{|AE|\cdot|HI|}{|AH|} = \frac{1/2 \cdot 1/6}{2/3} = \frac{1}{8},$$
-    torej točka $G$ res deli stanico $AB$ v razmerju $7:1$.
-\end{dokaz}
-
-Za vajo lahko izračunamo še preostale dolžine daljic:
-\begin{align*}
-    |GH| &= |AB| - |AH| - |BG| = 1 - \frac{2}{3} - \frac{1}{8} = \frac{5}{24},\\
-    |CJ| &= |BG| = \frac{1}{8},\\
-    |FJ| &= |CD| - |DF| - |CJ| = 1 - \frac{3}{8} - \frac{1}{8} = \frac{1}{2},\\
-    |FG| &= \sqrt{|GJ|^2 + |FJ|^2} = \sqrt{1^2 + \left(\frac{1}{2}\right)^2} = \frac{\sqrt{5}}{2}.
-\end{align*}
-
-S tem so znane vse dolžine daljic, na katere pregib iz prvega Hagovega izreka razdeli stranice enotskega kvadrata. Na sliki~\ref{fig:hagov_izrek1_st} je tako povzetek naših ugotovitev.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.45\textwidth]{images/hagovi_izreki/hagov_izrek1_stevilke.png}
-    \caption[Prvi Hagov izrek v številkah]{Dolžine daljic po prvem Hagovem izreku. Vzeto iz~\cite[str. 7]{haga2008}.}
-    \label{fig:hagov_izrek1_st}
-\end{figure}
-
-Izrek lahko tudi posplošimo, če za točko $E$ ne vzamemo razpolovišča, temveč poljubno točko na daljici $AD$. Naj bo $x = |ED|$. Nastale točke označimo kot prej, dolžine nastalih daljic pa z $y_1$ do $y_6$, kot kaže slika~\ref{fig:hagov_izrek1_splosen}.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.55\textwidth]{images/hagovi_izreki/hagov_izrek1_splosen.png}
-    \caption[Prvi Hagov izrek v splošnem]{Oznake dolžin iz prvega Hagovega izreka v splošnem. Vzeto iz~\cite[str. 9]{haga2008}.}
-    \label{fig:hagov_izrek1_splosen}
-\end{figure}
-
-Kot prej tudi tu dobimo tri podobne pravokotne trikotnike. Za vsak $i \in \{1,\ldots,6\}$ poiščimo sedaj vrednost $y_i$ v odvisnosti od $x$. Iz Pitagorovega izreka za pravokotni trikotnik $\triangle EDF$ sledi
-$$y_1 = (1-x^2)/2,$$
-iz razmerja podobnih pravokotnih trikotnikov $\triangle EDF$ in $\triangle HAE$ pa izračunamo
-$$ y_2 = \frac{x(1-x)}{y_1} = \frac{2x}{1+x} \; \text{ in } \; y_3 = \frac{(1-y_1)(1-x)}{y_1} = \frac{1+x^2}{1+x}.$$
-Pregib $FG$ je po konstrukciji simetrala daljice $CE$, torej pravokotna nanjo, iz česar sledi, da sta trikotnika $\triangle CKF$ in $\triangle CDE$ podobna in kota $\angle DEC$ in $\angle KFC$ skladna. Zato sta skladna tudi trikotnika $\triangle CDE$ in $\triangle GJF$, torej $|FJ| = x$. Posledično je
-$$y_4 = |CJ| = 1 - (y_1 + x) = \frac{(1-x)^2}{2} \; \text{ in } \; y_5 = 1 - y_2 - y_4 = \frac{(1-x)(1+x^2)}{2(1+x)}.$$
-Na koncu še s ponovno uporabo Pitagorovega izreka izračunamo
-$$ y_6 = \sqrt{|GJ|^2 + |FJ|^2} = \sqrt{1 + x^2}.$$
-
-Splošne vrednosti dolžin $y_i$ mogoče niso najlepše, vendar pri marsikateri izbiri števila $x \in (0,1)$ dobimo lepe številke. Najbolj so zanimiva recipročna števila naravnih števil. Vemo že, da pri izbiri $x = 1/2$ lahko dobimo števila $1/3, 1/6, 1/8$, pri izbiri $x = 1/4$ in $x = 3/4$ dobimo še $2/5$ (in iz tega z razpolovitvijo $1/5$) in $1/7$. Računanje prepuščamo bralcu, se pa na tej točki lahko vprašamo, ali za vsak $n \in \N$ obstaja primeren $x$, da lahko preko neke dolžine $y_i$ ali $1-y_1$ in preko postopkov za konstrukcijo že znanih razmerij konstruiramo dolžino $1/n$. \textcolor{red}{dokaz, da se da??? al pej spusti, če se ti ne da \ldots}
-
-
-\subsubsection{Drugi Hagov izrek}
-
-\textcolor{red}{PLUS poslošitev.}
-
-\subsubsection{Tretji Hagov izrek}
-
-\textcolor{red}{PLUS poslošitev.}
-
-
+\textcolor{red}{Več metod (vsaj tri?), Hull2013 (str.\ 36--40)}
 
 
 
