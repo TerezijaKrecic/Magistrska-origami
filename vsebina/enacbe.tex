@@ -88,7 +88,7 @@ kjer so $a, b, c, d \in \Q$ in velja $a \neq 0$. Tu je navedena ena oblika zapis
     x_2 &= - \frac{b}{3a} + \frac{C(1 - i\sqrt{3})}{6a} + \frac{(1 + i\sqrt{3})(b^2 - 3ac)}{6aC}
 \end{align*}
 
-Operacija~\ref{op:O6} nam je preko konstrukcije tangente na parabolo pomagala rešiti kvadratno enačbo. Spomnimo se, da je Belocheva to v 30-ih letih prejšnjega stoletja nadgradila z operacijo~\ref{op:O7}, ki nam konstruira skupno tangento na dve paraboli hkrati. Po njej jo tudi imenujemo \emph{Belochin pregib}. Z njim je kot prva odkrila resnično moč origami konstrukcij, a je žal trajalo več kot pol stoletja, da so matematiki začeli ceniti njeno odkritje.
+Operacija~\ref{op:O6} nam je preko konstrukcije tangente na parabolo pomagala rešiti kvadratno enačbo. Spomnimo se, da je Belocheva to v tridesetih letih prejšnjega stoletja nadgradila z operacijo~\ref{op:O7}, ki nam konstruira skupno tangento na dve paraboli hkrati. Po njej jo tudi imenujemo \emph{Belochin pregib}. Z njim je kot prva odkrila resnično moč origami konstrukcij, a je žal trajalo več kot pol stoletja, da so matematiki začeli ceniti njeno odkritje.
 
 \subsubsection{Reševanje kubične enačbe z Belochinim postopkom}
 
@@ -113,9 +113,9 @@ Sedaj se v izhodišče $O$ postavimo še mi in z laserskim žarkom poskusimo zad
 \begin{itemize}
     \item laserski žarek ne upošteva odbojnega zakona in se od daljice vedno odbije pod kotom $90^\circ$, zato so vpadni koti žarka na vse daljice med seboj enaki in prav tako to velja za odbojne kote;
     \item žarek se lahko odbije tudi od nosilke daljice;
-    \item vsakič sta možni dve smeri odboja -- na isto stran daljice (oz.\ njene nosilke) ali skoznjo -- izberemo pa tisto, ki nam omogoči, da sploh lahko zadenemo naslednjo daljico.
+    \item vsakič sta možni dve smeri odboja -- na isto ali drugo stran daljice oz.\ njene nosilke -- izberemo pa tisto, ki nam omogoči, da sploh lahko zadenemo naslednjo daljico.
 \end{itemize}
-ecimo, da smo zmogli zadeti želvo. Kot, ki ga v točki $O$ oklepata laserski žarek in abscisna os, označimo z $\theta$.
+Recimo, da smo zmogli zadeti želvo. Kot, ki ga v točki $O$ oklepata laserski žarek in abscisna os, označimo z $\theta$.
 
 \begin{trditev}
     Število $x_{\theta} = - \tan \theta$ je ničla polinoma $p(x)$.
@@ -194,7 +194,7 @@ Za poljubno enačbo $a x^3 + b x^2 + c x + d = 0$, kjer $ a \neq 0$, povežimo s
 \begin{enumerate}
     \item Za točko $A$ vzemimo izhodišče $O$. Začrtamo želvino pot za polinom $p(x) = a x^3 + b x^2 + c x + d$, ki se začne v točki $A$ in konča v točki $B$. V primeru neničelnih koeficientov je pot sestavljena iz štirih stranic, pot laserskega žarka pa iz treh.
     \item Premica $r$ naj bo nosilka daljice $b$ ($r: x = a$), premica $s$ pa nosilka daljice $c$ ($s: y = b$).
-    \item Določimo premici $r': x = 2a$ in $s': b + d$ ter opravimo Belochin pregib, ki točko $A$ položi na premico $r'$ in točko $B$ na premico $s'$.
+    \item Določimo premici $r': x = 2a$ in $s': y = b + d$ ter opravimo Belochin pregib, ki točko $A$ položi na premico $r'$ in točko $B$ na premico $s'$.
     \item Presečišči pregiba s premicama $r$ in $s$ zaporedoma označimo s točkama $X$ in $Y$.
     \item Zarišemo daljice $AX$, $XY$ in $YB$.
 \end{enumerate}
@@ -208,15 +208,57 @@ Ker po konstrukciji velja $ AX \perp XY \perp YB $, je to iskana pot laserskega 
     \label{fig:beloch_kubicna_resitev}
 \end{figure}
 
-Če ima enačba še dve realni rešitvi, sta možna tudi še dva Belochina pregiba (enačba namreč ne more imeti dveh realnih rešitev, saj kompleksne rešitve nastopajo v konjugiranih parih).
+Če ima enačba še dve realni rešitvi, sta možna tudi še dva Belochina pregiba (enačba namreč ne more imeti točno dveh realnih rešitev, saj kompleksne rešitve nastopajo v konjugiranih parih).
 
 \opomba{V resnici nikoli do sedaj nismo potrebovali konstruirati celega kvadrata; potrebovali smo le stranico $XY$ in dejstvo, da je pregib pravokoten na daljici $AX$ in $BY$.}
 
 \opomba{Enačbe premic $r, s, r'$ in $s'$ so univerzalne in zgornja konstrukcija tako deluje tudi v primeru, ko je kakšen od koeficientov $b, c, d$ ničeln.}
 
-Za konkretne primere uporabe Belochinega postopka za reševanje kubičnih enačb glej~\cite[38--44]{zore2022}.
-
 Kot zanimivost Lavričeva v~\cite[str.\ 10--13]{lavric2013} s postopkom, ki je malo preurejen Belochin postopek, še analitično pokaže, da je ob primerno izbranih točkah $A$ in $B$ ter premicah $r$ in $s$ koeficient tangentnega pregiba rešitev kubične enačbe. Točki in premici izbere tako, da sta točki $X$ in $Y$ ravno presečišči z ordinatnima osema, iz česar lahko takoj razberemo koeficient tangente. V dokazu izpelje enačbi pripadajočih parabol in splošno enačbo njunih tangent ter iz tega dokaže rečeno. To je lahko odlična vaja za dijake, ki si želijo kakšnega izziva.
+
+\subsubsection*{Primer reševanja kubične enačbe po Lillovi metodi}
+
+Več primerov uporabe Belochinega postopka za reševanje kubičnih enačb je opisanih v~\cite[38--44]{zore2022}, tu pa si poglejmo, kako rešimo enačbo, ki ima tako pozitivne kot tudi negativne in ničelne koeficiente. Hull v~\cite[str.\ 90--92]{hull2013} obravnava enačbo
+$$ x^3 - 7x - 6 = 0.$$
+Po Lillovi metodi za točko $A$ vzamemo izhodišče $O$ in začrtamo želvino pot. Najprej gremo za $1$ v desno ($a=1$), se obrnemo za $90^\circ$ v pozitivno smer in obstojim na mestu ($b=0$), se zopet obrnemo  $90^\circ$ v pozitivno smer in se premaknemo za $7$ v nasprotno smer, torej zopet v desno ($c=-7$), na koncu pa se po ponovnem obratu za $90^\circ$ v pozitivno smer premaknemo za 6 navzgor ($d=-6$). Končamo v točki $T = (8, 6)$.
+
+Označimo še premice $r: x = a = 1, r'$ (na sliki~\ref{fig:lill_primer1} označena z $L_1$) $: x = 2a = 2, s: y = b = 0$ in $s'$ (na sliki~\ref{fig:lill_primer1} označena z $L_2$) $: y = b + d = -6$.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{images/kubična enačba/lill_primer_setup.png}
+    \caption[Primer reševanja z Lillovo metodo (priprava)]{Priprava želvine poti in premic za reševanje enačbe z Lillovo metodo. Vzeto iz~\cite[str. 87]{hull2013}.}
+    \label{fig:lill_primer1}
+\end{figure}
+
+Želvina pot je sedaj pripravljena, da točko $O$ prepognemo na premico $L_1$ in hkrati točko $T$ na premico $L_2$. Presečišči pregiba s premicama $r$ in $s$ nam data točki, kjer se laserski žarek za pravi kot odbije in na koncu zadane točko $T$. Kot, ki ga oklepa žarek z $x$-osjo ob koordinatnem izhodišču, nam podaja rešitev enačbe.
+
+Na sliki~\ref{fig:lill_primer_pregibi} so konstrukcije vseh treh možnih pregibov. Začnimo z leve proti desni in za vsakega od njih pogledamo, kaj dobimo:
+\begin{enumerate}
+    \item V prvem primeru se nam točka $O$ preslika v točko $(2,2)$, točka $T$ pa v točko $(-4,-6)$, torej je kot $\theta = 45^\circ$, kar pomeni $x_{45^\circ} = -\tan 45^\circ = -1$. Preverimo, ali $x_{45^\circ}$ res reši našo enačbo. Zares, $(-1)^3 - 7\cdot(-1) - 6 = 0$.
+    \item Točka $T$ se v drugem primeru preslika ravno v presečišče premic $L_1$ in $L_2$, torej v točko $(2,-6)$. Pregib torej premico $s$, ki je v našem primeru kar $x$-os, seka v točki $(5,0)$ (ker je presečišče središče daljice s krajišči v točki $T$ in njeni sliki). Rešitev $x_\theta$ lahko preberemo kar iz zadnjega pravokotnega trikotnika preko definicije konte funkcije tangens -- $x_\theta = -tan \theta = -6/3 = -2$. In res je $(-2)^3 - 7\cdot(-2) - 6 = 0$.
+    \item V zadnjem primeru pa se v presečišče premic $L_1$ in $L_2$ preslika izhodišče $O$. Zato pregib premico $r$ seka v točki $(1,-3)$ in za kot $\theta$ gledamo prvi pravokotni trikotnik. Dobimo $x_\theta = -tan \theta = -(-3)/1 = 3$. Preverimo rešitev in dobimo $3^3 - 7\cdot3 - 6 = 0$.
+\end{enumerate}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.33\textwidth]{images/kubična enačba/lill_primer_pregib1.png}
+    \includegraphics[width=0.65\textwidth]{images/kubična enačba/lill_primer_pregib2_3.png}
+    \caption[Primer reševanja z Lillovo metodo (s pregibi)]{Pregibi, ki rešijo kubično enačbo $x^3 - 7x - 6 = 0$. Vzeto iz~\cite[str. 91--92]{hull2013}.}
+    \label{fig:lill_primer_pregibi}
+\end{figure}
+
+Seveda se da enačbo $x^3 - 7x - 6 = 0$ hitreje rešiti z računanjem, vendar je ravno zaradi tega lep primer za uporabo Lillove metode z Belochinim pregibom, saj se da rešitve iz konstrukcije (ob natančnih prepogibih) takoj prebrati.
+
+\subsubsection{Reševanje dveh starogrških problemov z Belochinim postopkom}
+
+Problema \emph{podvojitve kocke} in \emph{trisekcije kota} smo rešili že v razdelku~\ref{podpogl:starogrskiproblemi}, zato si tukaj le pogledamo nastavek reševanja še z uporabo ravno spoznane metode. Enostavno povedano -- preblema prevedimo v reševanje kubičnih enačb. Bralec je ob sledečih enačbah povabljen, da sam konstruira želvino pot in opravi Belochin pregib.
+
+Pri podvojitvi kocke je to zelo enostavno, saj rešujemo enačbo $x^3 - 2 = 0$.
+
+Za trisekcijo kota se spomnimo, da velja $\cos 3\theta = 4 \cos^3 \theta - 3 \cos \theta$. Naj bo $k = \cos 3\theta$ dana konstanta (saj imamo dan poljuben kot, za lažje reševanje recimo $3 \theta = 60^\circ$, ki se ga z evklidskim orodjem ne da tretjiniti), iščemo pa $x = \cos \theta$. Torej rešujemo enačbo $4x^3-3x-k=0$.
+
+\textcolor{red}{Lahko kkšna slikca. Pa če enačbe omeniš že v poglavju o starogrških problemih, pol tle to podpoglavje samo spremeni v opombo, npr.\ spomnimo se blablabla in da lahko bralec te enačbe reši z Lillovo metodo.}
 
 \subsubsection{Reševanje kvadratne enačbe z Lillovo metodo}
 \label{podpodl:kvadr_en_lill}
