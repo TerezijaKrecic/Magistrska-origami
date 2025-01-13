@@ -243,12 +243,6 @@ Bralec lahko sam premisli, da je to v resnici ravno Belochin postopek, le da se 
 
 \opomba{Seveda bi lahko vzeli katerikoli $a \in \Q$ in vzeli premico $a: y = -a$.}
 
-\subsection{Alperinova rešitev}
-
-\textcolor{red}{Poglej kej sploh to rešuje, kakšne enačbe, če to spada pod Lillovo metodo, dej to kot podpoglavje v prejšnje poglavje (dodaj še en ``sup'')}
-
-\textcolor{red}{Tudi on neodvisno od Belocheve, je pa pri njem $a= 1, b = 0$, kar se da nardit z vsako kubično enačbo, pač z uvedno nove spremenljivke al neki, da se kvadratni člen uniči.} (gl.\ Hull 2020 str.\ 43, hull2013 str.\ 78 spodej) - prevedba kubične enačbe na kvadratno al neki tazga.
-
 \subsection{Kubična in kvartična enačba v afini ravnini}
 
 \textcolor{red}{A je naslov ok ali je preveč misteriozen in kontraverzen?}
@@ -360,6 +354,10 @@ Naj bo $q = [A\;B\; C]^\intercal \in \mathcal{\hat{P}}_1, \mathcal{\hat{P}}_2$ s
 Da dobimo \textcolor{red}{nevertikalno afino skupno} tangento na paraboli $\mathcal{P}_1$ in $\mathcal{P}_2$, normaliziramo $B = -1$ in $z = 1$, s čimer dehomogeniziramo (\textcolor{red}{? poglej kako je z izrazi, pa $z = 1$ je verjetno pač k je afina ravnina, zakaj pa je $B = -1$?}) tangento $Ax + By + Cz = 0$ v $y = Ax + C$. S tem se druga enačba v sistemu~\ref{eq:afin_sistem_tangenta_ABC_kub} preuredi v $C = A^2$, prva pa v
 $$ A^3 + bA^2 + cA + d = 0,$$
 kar pomeni, da nam $A$, koeficient skupne tangente, reši izvorno kubično enačbo.
+\begin{opomba}
+    S konstrukcijo pregibov pa še ne dobimo njegovega koeficienta. V praksi lahko to storimo tako, da poiščemo presečišče pregiba z $x$-osjo, npr.\ točko $(x_0, 0)$ in na razdalji $1$ v desno konstruiramo  pravokotnico na $x$-os skozi točko $(x_0 + 1, 0)$, ki bo tangento sekala ravno v točki $(x_0 + 1, A)$. Sedaj lahko tudi uradno potrdimo konstrukcijo realne rešitve kubične enačbe.
+    \textcolor{red}{Lahko daš eno slikco za izi prikaz.} 
+\end{opomba}
 
 \textcolor{red}{Dodaj konkreten primer iz članka, origami pregibe si tudi fizično sprobala na enem listi.}
 
@@ -474,3 +472,20 @@ $$ L_{xy}: y = -\frac{de}{c} \cdot x - \frac{1}{bc} (c^2 + bc^2d^3e^2 + bd^5e^4)
 Kot vidimo, gorišče in premica vodnica nimata lepih predpisov, vendar je po eni strani ta metoda precej bolj zanimiva kot pretvorba kvartične enačbe na enačbe nižje stopnje in reševanje z običajno Lillovo metodo.
 
 \textcolor{red}{lahko daš še slikovni primer (slika 4 iz istega vira) poleg konkretne enačbe, samo za okus. Sta pa slika 3 in slika 4 povezani med sabo, gre za iste podatke.}
+
+\subsection{Alperinova rešitev}
+
+Za konec si poglejmo še eno zelo enostavno metodo, ki nam rešuje kubične enačbe. Lahko bi jo opisali že pred razdelkom~\ref{podpogl:kubicna_enacba}, vendar je zaradi rahle povezave s postopkom v prejšnjem razdelku zapišemo tu. Alperin v~\cite[str.\ 129]{alperin2000} sicer namesto splošne kubične enačbe vzame zreducirano obliko $x^3 + cx + d = 0$\footnote{V splošno kubično enačbo $x^3 + bx^2 + cx + d = 0$ vpeljemo novo spremenljivko $z = x - (1/3)b$. Bralec lahko za vajo izračuna, da s tem dobimo splošno kubično enačbo za $z$ brez kvadratnega člena.}, za paraboli pa enačbi kot v prejšnjem razdelku pri reševanju kubične enačbe, vendar s spremenljivkami, pomnoženimi z $-1/2$:
+\begin{itemize}
+    \item $\mathcal{P}_1: \left(y - \frac{c}{2}\right)^2 = 2dx$ z goriščem v točki $(\frac{d}{2}, \frac{c}{2})$ in premico vodnico $x = -\frac{d}{2}$ in
+    \item $\mathcal{P}_2:  x^2 = 2x$ z goriščem v točki $(0, \frac{1}{2})$ in premico vodnico $y = -\frac{1}{2}$.
+\end{itemize}
+Avtor nato opravi Belochin pregib, ki gorišče vsake parabole položi na njeno premico vodnico in tako konstruira skupno tangento. Za njegovo enačbo obstaja le en tak pregib. \textcolor{red}{Zakaj, a je samo ena realna rešitev?}
+Sedan pa se ne poslužimo uporabe matrik kot v zgornjem postopku, temveč analitično izrazimo koeficient skupne tangente. Naj bo $k$ iskani koeficient ter $(x_0, y_0)$ točka tangentnosti na prvi in $(x_1, y_1)$ točka tangentnosti na drugi paraboli. Iz enačbe prve parabole z implicitnim odvajanjem dobimo
+$$ 2\left(y - \frac{c}{2}\right) \frac{dy}{dx} = 2d, \; \text{ torej } \; y_0 = \frac{d}{k} + \frac{c}{2} \; \text{ in } \; x_0 = \frac{\left(y_0 - \frac{c}{2}\right)^2}{2d} = \frac{d}{2k^2},$$
+iz enačbe druge parabole pa
+$$ \frac{dy}{dx} = x, \; \text{ torej } \; x_1 = k \; \text{ in } \; y_1 = \frac{k^2}{2}. $$
+Ko koordinate vstavimo še v klasično enačbo za koeficient premice skozi dve točki, dobimo
+$$ k = \frac{y_1 - y_0}{x_1 - x_0} = \frac{\frac{k^2}{2} - \frac{d}{k} - \frac{c}{2}}{k - \frac{d}{2k^2}}.
+$$
+Enačbo poenostavimo in res dobimo $k^3 + ck + d = 0$, torej je koeficient skupne tangente rešitev izvorne zreducirane kubićne enačbe.
