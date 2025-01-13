@@ -310,29 +310,28 @@ Tako z evklidskim orodjem kot s prepogibanjem papirja lahko konstruiramo premice
 
 Bralec je ob zgornjih opisih posamezne operacije povabljen, da premisli, kako je mogoče operacije~\ref{op:O1}, \ref{op:O3}, \ref{op:O4}, \ref{op:O5}, \ref{op:O6} in \ref{op:O8} opraviti tudi z evklidskim orodjem (operacija~\ref{op:O2} le določa nove točke, zato tu o konstrukciji ne moremo govoriti). Do tu nam torej origami konstrukcije niso dale ničesar novega.
 
-Ključna je sedma operacija. Izkaže se namreč, da operacije~\ref{op:O7} oz.\ Belochinega pregiba ne moremo opraviti z evklidskim orodjem. Kako lahko to dokažemo? V razdelku~\ref{podpogl:trisekcija} bomo spoznali več origami postopkov, ki nam poljuben kot razdelijo na tri skladne dele, pri tem pa uporabimo pregib iz operacije~\ref{op:O7}. Ker \emph{trisekcija kota z evklidskim orodjem ni mogoča} (dokaz v~\cite[str.\ 77--78]{jerman1998}), posledično tudi konstrukcija operacije~\ref{op:O7} s tem orodjem ne obstaja. Prav tako bomo v razdelku~\ref{podpogl:kubicna_enacba} videli več načinov uporabe operacije~\ref{op:O7} za reševanje kubične enačbe, za katero prav tako vemo, da je v splošnem z evklidskim orodjem ne moremo rešiti.
+Ključna je sedma operacija. Izkaže se namreč, da operacije~\ref{op:O7} oz.\ Belochinega pregiba ne moremo opraviti z evklidskim orodjem. Kako lahko to dokažemo? V razdelku~\ref{podpogl:trisekcija} bomo spoznali več origami postopkov, ki nam poljuben kot razdelijo na tri skladne dele, pri tem pa uporabimo pregib iz operacije~\ref{op:O7}. Ker \emph{trisekcija kota z evklidskim orodjem ni mogoča} (dokaz v~\cite[str.\ 77--78]{jerman1998}), posledično tudi konstrukcija operacije~\ref{op:O7} s tem orodjem ne obstaja. Prav tako bomo v poglavju~\ref{pogl:enacbe} videli več načinov uporabe operacije~\ref{op:O7} za reševanje kubične enačbe, za katero prav tako vemo, da je v splošnem z evklidskim orodjem ne moremo rešiti.
 
-Sedaj vemo, da je množica evklidskih konstrukcij \emph{prava} podmnožica origami konstrukcij. V naslednjem razdelku si bomo pogledali, kako lahko evklidske in origami konstrukcije prevedemo v jezik algebre in tudi na algebrski način pokažemo premoč origamija nad evklidskim orodjem.
+Sedaj vemo, da je množica evklidskih konstrukcij \emph{prava} podmnožica origami konstrukcij. V naslednjem razdelku si bomo pogledali, kako lahko evklidske in origami konstrukcije prevedemo v jezik algebre in tudi na algebrski način pokažemo premoč origamija nad evklidskim orodjem. Raziskovali bomo, katere dolžine (in s tem katera števila) lahko z obema orodjema konstruiramo. Tak pogled je imel že Evklid, ki je na števila gledal kot končni rezultat niza konstrukcij z evklidskim orodjem pri dani daljici enotske dolžine~\cite[str. 164]{michael2005}.
 
 \subsubsection{Algebrski pogled na evklidske konstrukcije}
 \label{podpogl:evkl_konstruktibilnost}
 
 \begin{definicija}
-    Na listu papirja, ki nam služi kot model ravnine $\C$, imejmo dano izhodišče $O$ in število $1$ na realni osi. Če lahko z neoznačenim ravnilom in šestilom s končnim številom potez konstruiramo kompleksno število $\alpha$, rečemo, da je $\alpha$ \emph{evklidsko-konstruktibilno} število. Pri tem upoštevamo tri pravila, ki izhajajo iz Evklidovih aksiomov in postulatov:
-    \begin{itemize}
-        \item nove točke dobimo s presečišči dveh premic, dveh krožnic ali premice in krožnice,
-        \item skozi vsaki točki lahko z ravnilom potegnemo ravno črto ter
-        \item za vsako točko in razdaljo $r$ lahko s šestilom zarišemo krožnico, ki ima središče v tej točki in polmer $r$.
-    \end{itemize}
+    Na listu papirja, ki nam služi kot model ravnine $\C$, imejmo dano izhodišče $O$ in število $1$ na realni osi. Če lahko z neoznačenim ravnilom in šestilom s končnim številom potez konstruiramo kompleksno število $\alpha$, rečemo, da je $\alpha$ \emph{evklidsko-konstruktibilno} število.
 \end{definicija}
 
-Jerman bralca v~\cite{jerman1998} na zelo strukturiran in nazoren način popelje čez dokaz, da lahko z evklidskim orodjem na realni osi konstruiramo natanko vsa racionalna števila, njihove vsote, razlike, zmnožke, količnike, kvadratne korene ter linearne kombinacije vsega naštetega. To je množica
+\begin{opomba}
+    Ker lahko z neoznačenim ravnilom in šestilom konstruiramo le daljice, poltrake in premice skozi dani točki (postulata~\ref{post:P1} in~\ref{post:P2}) ter krožnice z danim središčem in polmerom (postulat~\ref{post:P3}), lahko nove točko konstruiramo le kot presečišče dveh premic, dveh krožnic ali premice in krožnice.
+\end{opomba}
+
+Jerman bralca v~\cite{jerman1998} (zelo nazorna je tudi izpeljava v~\cite[str.165--170]{michael2005}) na zelo strukturiran in nazoren način popelje čez dokaz, da lahko z evklidskim orodjem na realni osi konstruiramo natanko vsa racionalna števila, njihove vsote, razlike, zmnožke, količnike, kvadratne korene ter linearne kombinacije vsega naštetega. To je množica
 $$
     \Q(r) = \{ a + b \sqrt{r}; a, b, r \in \Q; r > 0 \text{ in } \sqrt{r} \notin \Q \},
 $$
 ki je komutativen obseg oz.\ polje in hkrati tudi dvorazsežni vektorski prostor nad obsegom $\Q$ z bazo $ \{1, \sqrt{r} \} $.
 
-Da pokažemo, da so to vsa možna realna evklidsko-konstruktibilna števila, je potrebna natančna obravnava vseh možnih enačb, ki jih dobimo pri iskanju presečišč dveh krožnic, dveh premic ter krožnice in premice, potem pa je potrebno še dokazati, da nam vse nadaljne rabe konstruiranih presečišč res podajo najmanjšo razširitev polja racionalnih števil, ki je zaprta za operacijo kvadratnega korenjenja. Jerman s tem dokaže naslednji izrek.
+Da pokažemo, da so to vsa možna realna evklidsko-konstruktibilna števila, je potrebna obravnava vseh možnih enačb, ki jih dobimo pri iskanju presečišč dveh krožnic, dveh premic ter krožnice in premice, potem pa je potrebno še dokazati, da nam vse nadaljne rabe konstruiranih presečišč res podajo najmanjšo razširitev polja racionalnih števil, ki je zaprta za operacijo kvadratnega korenjenja. Jerman s tem dokaže naslednji izrek.
 
 \begin{izrek}
     \label{izr:evkl_konstr}
