@@ -192,18 +192,20 @@ Kot pri prejšnjih dveh izrekih bi lahko poračunali še preostale dolžine dalj
 
 \subsection{Razdelitev daljice na $n$ enakih delov}
 
-\textcolor{red}{Ideja -- kaj če najprej Hagove izreke, ki nam že dajo metode za razdelitev stranice na n delov za nek n, pol pa se vprašamo za kakšno splošno metodo in je to potem to poglavje}
-
-
 Stranico kvadrata želimo razdeliti na $n$ enakih delov, kjer je $n \in \N$ poljuben. Za $n = 2^t, t \in \N_0$ je to čisto enostavno, saj samo prepolavljamo razdalje med pregibi, dokler ne dosežemo cilja. Če je $n$ sod, vendar ni potenca $2$, torej $n = 2^t(2m + 1)$, kjer sta $t, m \in \N$, stranico najprej razdelimo na $2^t$ delov, nato pa moramo vsakega izmed njih razdeliti na $2m + 1$ (liho število) delov. Izziv tega problema je torej v razdelitvi daljice na liho število delov. Ko bomo zo zmogli, jo bomo znali razdeliti na $n$ delov za vsak $n \in \N$.
 
-V prejšnjem razdelku so nam Hagovi izreki podali razdelitev stranice kvadrata na tri, pet, sedem in devet delov. Vendar iščemo metodo, ki nam stranico razdeli na $n$ delov za splošen lih $n \in \N$.
-
-Spomnimo se, da smo en tak postopek že spoznali -- V dokazu izreka~\ref{izr:podpolje} smo za poljuben $a \in \R$ znali konstruirati razdaljo $1/a$, kar bi lahko uporabili za razdelitev neke daljice na $a$ enakih delov -- konstruirano razdaljo $1/a$ bi $a$-krat prenesli naprej. Načinov reševanja tega problema pa se je skozi zadnja desetletja oblikovalo še veliko več; tu si bomo pogledali še \textcolor{red}{koliko?} metode.
+V prejšnjem razdelku so nam Hagovi izreki podali razdelitev stranice kvadrata na tri, pet, sedem in devet delov. Vendar iščemo metodo, ki nam stranico razdeli na $n$ delov za splošen lih $n \in \N$. Spomnimo se, da smo en tak postopek že spoznali -- v dokazu izreka~\ref{izr:podpolje} smo za poljuben $a \in \R$ znali konstruirati razdaljo $1/a$, kar bi lahko uporabili za razdelitev neke daljice na $a$ enakih delov -- konstruirano razdaljo $1/a$ bi $a$-krat prenesli naprej. Načinov reševanja tega problema pa se je skozi zadnja desetletja oblikovalo še veliko več; tu si bomo pogledali še \textcolor{red}{koliko?} metode.
 
 \subsubsection*{Metoda križajočih se diagonal}
 
-Metoda nima uradnega prevoda niti uradnega imena, jo pa tako imenuje Robert J.\ Lang v svojem članku~\cite{lang1988}. Njena konstrukcija je prikazana na sliki \textcolor{red}{referenca na sliko, ustvari sliko al pej kopirej hull2020 str.\ 14 al pej hull2018 str.\ 38}. Najprej kvadrat dvakrat prepognimo na pol -- enkrat po diagonali skozi oglišči $A$ in $C$ in drugič po vertikali. Nato prepognemo po diagonali (skozi oglišče $B$) še desni pokončen pravokotnik. Presečišče obeh diagonal označimo s točko $P$ in naredimo skoznjo prepogib, ki je pravokoten na horizontalno stranico kvadrata.
+Metoda nima uradnega prevoda niti uradnega imena, jo pa tako imenuje Robert J.\ Lang v svojem članku~\cite{lang1988}. Njena konstrukcija je prikazana na sliki~\ref{fig:kriz_diag_3}. Najprej kvadrat dvakrat prepognemo na pol -- enkrat po diagonali skozi oglišči $A$ in $C$ in drugič po vertikali. Nato prepognemo po diagonali (skozi oglišče $B$) še desni pokončen pravokotnik. Presečišče obeh diagonal označimo s točko $P$ in naredimo skoznjo prepogib, ki je pravokoten na horizontalno stranico kvadrata.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/tretjinjenje_stranice1.png}
+    \caption[Razdelitev stranice na tri dele]{Konstrukcija po metodi križajoih se diagonal za $n=3$.}
+    \label{fig:kriz_diag_3}
+\end{figure}
 
 \begin{trditev}
     \label{trd:kriz_diag_3}
@@ -278,8 +280,12 @@ Zgornji postopek lahko posplošimo na poljuben $n \in \N$. Kot smo videli v konk
 \subsection{Reševanje nerešljivih starogrških problemov}
 \label{podpogl:starogrskiproblemi}
 
-% - trisekcija kota (Abe, Justin)
-% - podvojitev kocke (Messer, Beloch)
+Z evklidskimi konstrukcijami se je seveda pojavilo konstruktibilnih ugank -- vprašanj, ali je specifično število konstruktibilno (in na kakšnen način) ali ne. Zelo znani so trije t.\ i.\ ``starogrški' problemi, ki so matematike bremenili več kot tisočletje, začenši s časom Evklida (300 pr.\ Kr.), končno pa sta nanje dokončno odgovorila Niels Henrik Abel (1802--1829) in Evariste Galois (1811--1832) v začetku 19.\ stoletja. Gre za sledeče tri probleme:
+\begin{itemize}
+    \item \textbf{Podvojitev kocke} Imejmo že konstruktibilno kocko. Konstruiraj novo kocko, ki ima dvakrat večji volumen od prve.
+    \item \textbf{Trisekcija kota} Dan je poljuben konstruktibilen kot. Konstruiraj kot, ki prvega deli na tri skladne dele.
+    \item \textbf{Kvadratura kroga} Za dan konstruktibilen krog konstruiraj kvadrat, ki ima enako ploščino kot dani krog.
+\end{itemize}
 
 % Naštej vse tri. Onega od $\pi$ se ne da rešiti?
 % reševanje dveh starogrških problemov, ki ju z evklidskimi orodji -- dokazano -- ne znamo rešiti; to sta \emph{podvojitev kocke} (oz. konstrukcija $\sqrt[3]{2}$) in \emph{trisekcija kota}. Izkaže se, da se da vsakega od njiju rešiti celo na več kot en način! (to je omenjeno v 2.3, tko da trisekcija mora imet več načinov, čene popravi)
