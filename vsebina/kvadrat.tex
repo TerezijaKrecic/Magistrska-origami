@@ -12,6 +12,8 @@ Vzemimo v roke kvadraten list papirja in poglejmo, kaj lahko z njegovim prepogib
 
 \subsubsection*{Konstrukcija števila $\sqrt{r}$}
 
+\textcolor{red}{Tu ne rabiš kvadratnega lista!}
+
 Vzemimo $r \in \Q^+$ in si poglejmo naslednjo konstrukcijo (vzeto iz~\cite[str.\ 58]{hull2013}):
 Imejmo točko $A (0, 1) $ in premico $y = -1$. Na ordinatni osi označimo točko $B (0, -r/4)$ in z operacijo~\ref{op:O6} skoznjo naredimo pregib, ki točko $A$ položi na premico $y = -1$. Njena zrcalna slika je $A' (t, 0) $ za nek $t \in \R$ (slika~\ref{fig:konstrukcija_korena}).
 
@@ -282,21 +284,34 @@ Zgornji postopek lahko posplošimo na poljuben $n \in \N$. Kot smo videli v konk
 
 Z evklidskimi konstrukcijami se je seveda pojavilo konstruktibilnih ugank -- vprašanj, ali je specifično število konstruktibilno (in na kakšnen način) ali ne. Zelo znani so trije t.\ i.\ ``starogrški' problemi, ki so matematike bremenili več kot tisočletje, začenši s časom Evklida (300 pr.\ Kr.), končno pa sta nanje dokončno odgovorila Niels Henrik Abel (1802--1829) in Evariste Galois (1811--1832) v začetku 19.\ stoletja. Gre za sledeče tri probleme:
 \begin{itemize}
-    \item \textbf{Podvojitev kocke} Imejmo že konstruktibilno kocko. Konstruiraj novo kocko, ki ima dvakrat večji volumen od prve.
+    \item \textbf{Podvojitev kocke} Imejmo že konstruktibilno kocko. Konstruiraj novo kocko, ki ima dvakrat večji volumen od prve. Problem se poenostavi na iskanje konstrukcije števila $\sqrt[3]{2}$.
     \item \textbf{Trisekcija kota} Dan je poljuben konstruktibilen kot. Konstruiraj kot, ki prvega deli na tri skladne dele.
-    \item \textbf{Kvadratura kroga} Za dan konstruktibilen krog konstruiraj kvadrat, ki ima enako ploščino kot dani krog.
+    \item \textbf{Kvadratura kroga} Za dan konstruktibilen krog konstruiraj kvadrat, ki ima enako ploščino kot dani krog. Problem se poenostavi na konstrukcije števila $\sqrt{\pi}$.
 \end{itemize}
 
-% Naštej vse tri. Onega od $\pi$ se ne da rešiti?
-% reševanje dveh starogrških problemov, ki ju z evklidskimi orodji -- dokazano -- ne znamo rešiti; to sta \emph{podvojitev kocke} (oz. konstrukcija $\sqrt[3]{2}$) in \emph{trisekcija kota}. Izkaže se, da se da vsakega od njiju rešiti celo na več kot en način! (to je omenjeno v 2.3, tko da trisekcija mora imet več načinov, čene popravi)
+Z znanjem, ki sta ga znanosti posredovala Abel in Galois, se da pokazati, da ti trije problemi z evklidskim orodjem niso rešljivi. V nalogi smo do sedaj že večkrat omenili, da pa obstajajo origami konstrukcije (celo več metod za isti problem!), ki nam konstruirajo kubični koren origami števila ter razdelijo kot na tri skladne dele. Žal pa je to še vedno premalo za konstrukcija števila $\sqrt{\pi}$.
+
+\subsubsection{Podvojitev kocke}
+\label{podpogl:podvojitev_kocke}
+
+% Geometric Constructions str. 29 -- legenda od Apolonu, ki je zahteval 2x večji oltar, da prežene kugo
+
+V prostoru imamo kocko. Ali se da samo z ravnilom in šestilom narisati stranico kocke, ki ima dvakrat večjo prostornino kot dana kocka?
+
+Če je stranica kocke dolga 1, je stranica podvojene kocke dolga $\sqrt[3]{2}$. Ker je obseg $\Q(\sqrt[3]{2})$ vektorski prostor razsežnosti $3$ nad obsegom $\Q$ (enačba $ x^3 - 2 = 0 $ nima racionalne rešitve), podvojitev kocke ni mogoča~\cite[str. 78]{jerman1998}.
+
+\textcolor{red}{Grki so to rešili s presečiščem dveh parabol -- glej~\cite[str.\ 5--6]{videla1997}}, kar je zelo podobno oni iz~\cite[str.\ 156]{geometricconstructions} (za poljuben $k$!). Tukej daj samo slikco 10.7 in napiši, da za dokaz gledajo tistega pri konstrukciji preko Belochinega kvadrata (v razdelku~\ref{podpogl:beloch_kvadrat_koren}). No, lahko pa tukaj dokažeš in v poglavju z enačbami referiraš, da je možno s kvadratom konstruirati in je to isto kot tle. Sam da tukaj ne zarišeš kvadrat. Ker ga v resnici ni treba. Če se tko odločiš, pol spremeni tisto podpoglavje v samo omembo.
+
+Messerjeva konstrukcija $\sqrt[3]{2}$ v~\cite[str.\ 46]{land2013}
+
+Še ena konstrukcija $\sqrt[3]{a/b}$ je v~\cite[str.\ 366--367]{geret1995}.
+
 
 
 \subsubsection{Trisekcija kota}
 \label{podpogl:trisekcija}
 
-\textcolor{red}{Motivacija za ta problem?}
-
-Kot $90^\circ$ znamo tretjiniti z neoznačenim ravnilom in šestilom, saj znamo konstruirati kot $30^\circ$. Težava je, da ne obstaja konstrukcija, s katero na tri skladne kote razdelimo \emph{poljuben} kot. V~\cite[str.\ 77--78]{jerman1998} je dokaz o nezmožnosti trisekcije kota $60^\circ$. Avtor se pri tem sklicuje na izrek~\ref{izr:evkl_konstr} in opombo~\ref{op:razseznost_obsega_evkl} in podpoglavja~\ref{podpogl:evkl_konstruktibilnost}.
+Kot $90^\circ$ znamo tretjiniti z neoznačenim ravnilom in šestilom, saj znamo konstruirati kot $30^\circ$. Težava je, da ne obstaja konstrukcija, s katero na tri skladne kote razdelimo \emph{poljuben} kot. V~\cite[str.\ 77--78]{jerman1998} je dokaz o nezmožnosti trisekcije kota $60^\circ$. Avtor se pri tem sklicuje na izrek~\ref{izr:evkl_konstr} in opombo~\ref{op:razseznost_obsega_evkl} iz razdelka~\ref{podpogl:evkl_konstruktibilnost}.
 
 % SPODNJI DOKAZ JE PREPISAN IZ VIRA IN SAMO CITIRAN V POGLAVJU 2.3
 
@@ -315,38 +330,60 @@ Kot $90^\circ$ znamo tretjiniti z neoznačenim ravnilom in šestilom, saj znamo 
 
 \textcolor{red}{Grki so to reševali z uporabo hiperbole -- glej~\cite[str.\ 9]{videla1997}. V tem članku so opisane vse točke, ki se jih da kosntruirati s stožnicami (in gre za ista števila kot z origamijem?) dobimo množico, zaprto za korenjenje in tretji koren \ldots}
 
-Z origamijem pa obstaja celo več načinov, kako poljuben kot razdeliti na tri skladne dele.
+Z origamijem pa obstaja celo več načinov, kako poljuben kot razdeliti na tri skladne dele. \textcolor{red}{če vsi tevi postopki vključujejo Belochin pregib, to napiši tukej in zbriši pri vsakem postopku. Pač bi moral vsak postopek to met vključeno ja, čene ne bi blo logično.}
 
-Neka origami konstrukcija je v~\cite[str.\ 155]{geometricconstructions}
+\subsubsection*{Abejeva metoda}
 
+Sledeča metoda ima ime po japonskemu matematiku Hisashiju Abeju, ki jo je zapisal v svojem članku leta 1980. Postopek vključuje Belochin pregib, torej se ga ne da izvesti z evklidskim orodjem, edina pomankljivost metode pa je, da deluje le za ostre kote. Postopek je sledeč:
 
-Avtor Abe:
-\begin{itemize}
-    \item naloga 10.14~\cite[str.\ 158 spodaj]{geometricconstructions}
-    \item \cite[str.\ 33]{lang2013}
-\end{itemize}
+\begin{enumerate}
+    \item Na kvadratnem listu papirja konstruiramo poljuben kot $\theta$, ki ima vrh v spodnjem desnem vogalu in en krak na spodnji stranici. Nato konstruiramo še dva horizontalna in ekvidistančna pregiba na dnu papirja (slika~\ref{fig:abe_1} levo).
+    \item Točko $p_1$ prepognemo na spodnji horizontalen pregib, označen $L_1$, točko $p_2$ pa na poševen krak kota, označen z $L_2$ (slika~\ref{fig:abe_1} na sredi).
+    \item Preden pregib razgrnemo, podaljšamo pregib $L_1$ do konca in nov pregib označimo z $L_3$ (slika~\ref{fig:abe_1} desno).
+    \item Papir razgrnemo in tokrat v spodnji levi kot podaljšamo pregib $L_3$.
+\end{enumerate}
+
+\opomba{V $3$.\ koraku opravimo pregib še preden smo razgrnili prvega. To je za nas načeloma prepovedana poteza, vendar bi se dalo $L_3$ konstruirati tudi po klasični poti z enkratnimi prepogibi -- označili bi sliko točke, ki leži hkrati na $L_1$ in levi stranici kvadrata, ter točko v pregibu iz $2$.\ koraka, ki leži na $L_1$ in skozinju naredili pregib $L_3$ -- zato zaradi lažje izvedbe brez škode dopustimo tak postopek.}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/starogr_problemi/abe_nastavek1.png}
+    \caption[Abejeva metoda ($1$.\ del)]{Trisekcija kota po Abejevi metodi. Vzeto iz~\cite[str.\ 64]{hull2013}.}
+    \label{fig:abe_1}
+\end{figure}
+
+\begin{trditev}
+    Pregib $L_3$ poteka skozi točko $p_1$. Kot s krakoma $L_2$ in $L_3$ ter vrhom v točki $p_1$ je velik $\theta/3$.
+\end{trditev}
+\begin{posledica}
+    Ko spodnji rob kvadrata prepognemo na pregib $L_3$, razdelimo kot $\theta$ na tri skladne kote.
+\end{posledica}
+
+\begin{dokaz}
+    Posledica logično sledi, zato dokazujemo le trditev. Označimo z $x$ točko, ki leži na presečišču pregiba $L_1$ in pregiba iz $2$.\ koraka Abejeve metode. Z $A, B$, in $C$ označimo še slike točk z leve stranice kvadrata, kot kaže slika~\ref{fig:abe_2}.
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.7\textwidth]{images/starogr_problemi/abe_trisekcija.png}
+        \caption[Abejeva metoda ($2$.\ del)]{Dokazovanje Abejeve metode. Vzeto in predelano iz~\cite[str.\ 65]{hull2013}.}
+        \label{fig:abe_2}
+    \end{figure}
+    Ker je točka $C$ slika točke $p_1$ in $x$ leži na $L_1$, daljica $xC$ leži na $L_1$. Po konstrukciji daljica $xB$ leži na $L_3$, zato sta kota ob $x$, ko papir razgrnemo, skladna. Zaradi sovršnosti kotov daljica $p_1x$ leži na $L_3$, s čimer je prvi del trditve dokazan.
+    
+    Na razgrnjenem papirju zarišemo (ali prepognemo) še nekaj daljic (slika~\ref{fig:abe_2} desno). Ker velja $|AB| = |BC| = |CD|$ in imata pravokotna trikotnika $\triangle p_1AB$ in $\triangle p_1BC$ skupno še drugo kateto, trikotnika $\triangle p_1BC$ in $\triangle p_1CD$ pa skupno hipotenuzo, so vsi trije trikotniki skladni z enakim kotom v točki $p_1$, torej nam pregiba skozi daljici $p_1B$ (kar je ravno $L_3$) in $p_1C$ kot $\theta$ razdelijo na tri skladne kote.
+\end{dokaz}
+
+Ker ta postopek deluje le za ostre kote, si poglejmo naslednjo metodo, ki jo lahko uporabljamo tako za ostre kot tudi tope kote.
+
+\subsubsection*{Justinova metoda}
 
 Avtor Justin:
 \begin{itemize}
     \item \cite[str.\ 34]{lang2013}
 \end{itemize}
 
-Gleason's trisection~\cite{gleason1988}
+\subsubsection*{Še nekaj metod brez znanih avtorjev}
 
-Pappus~\cite[str.\ 154--155]{geometricconstructions}
+Gleason's trisection~\cite{gleason1988}, ma mogoče ne teve
 
-\subsubsection{Podvojitev kocke}
-\label{podpogl:podvojitev_kocke}
-
-% Geometric Constructions str. 29 -- legenda od Apolonu, ki je zahteval 2x večji oltar, da prežene kugo
-
-V prostoru imamo kocko. Ali se da samo z ravnilom in šestilom narisati stranico kocke, ki ima dvakrat večjo prostornino kot dana kocka?
-
-Če je stranica kocke dolga 1, je stranica podvojene kocke dolga $\sqrt[3]{2}$. Ker je obseg $\Q(\sqrt[3]{2})$ vektorski prostor razsežnosti $3$ nad obsegom $\Q$ (enačba $ x^3 - 2 = 0 $ nima racionalne rešitve), podvojitev kocke ni mogoča~\cite[str. 78]{jerman1998}.
-
-\textcolor{red}{Grki so to rešili s presečiščem dveh parabol -- glej~\cite[str.\ 5--6]{videla1997}}, kar je zelo podobno oni iz~\cite[str.\ 156]{geometricconstructions} (za poljuben $k$!). Tukej daj samo slikco 10.7 in napiši, da za dokaz gledajo tistega pri konstrukciji preko Belochinega kvadrata (v razdelku~\ref{podpogl:beloch_kvadrat_koren}). No, lahko pa tukaj dokažeš in v poglavju z enačbami referiraš, da je možno s kvadratom konstruirati in je to isto kot tle. Sam da tukaj ne zarišeš kvadrat. Ker ga v resnici ni treba. Če se tko odločiš, pol spremeni tisto podpoglavje v samo omembo.
-
-Messerjeva konstrukcija $\sqrt[3]{2}$ v~\cite[str.\ 46]{land2013}
-
-Še ena konstrukcija $\sqrt[3]{a/b}$ je v~\cite[str.\ 366--367]{geret1995}.
-
+\cite[str.\ 154--155]{geometricconstructions}
+\cite[str.\ 158 nal. 10.14]{geometricconstructions}
