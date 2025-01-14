@@ -289,7 +289,7 @@ Z evklidskimi konstrukcijami se je seveda pojavilo konstruktibilnih ugank -- vpr
     \item \textbf{Kvadratura kroga} Za dan konstruktibilen krog konstruiraj kvadrat, ki ima enako ploščino kot dani krog (problem se poenostavi na konstrukcije števila $\sqrt{\pi}$).
 \end{itemize}
 
-Z znanjem, ki sta ga znanosti posredovala Abel in Galois, se da pokazati, da ti trije problemi z evklidskim orodjem niso rešljivi. V nalogi smo do sedaj že večkrat omenili, da pa obstajajo origami konstrukcije (celo več metod za isti problem!), ki nam konstruirajo kubični koren origami števila ter razdelijo kot na tri skladne dele. Žal pa je to še vedno premalo za konstrukcija števila $\sqrt{\pi}$.
+Z znanjem, ki sta ga znanosti posredovala Abel in Galois, se da pokazati, da ti trije problemi z evklidskim orodjem niso rešljivi. V nalogi smo do sedaj že večkrat omenili, da pa obstajajo origami konstrukcije (celo več metod za isti problem!), ki nam konstruirajo kubični koren origami števila ter razdelijo kot na tri skladne dele. Vse metode, ki bodo sedaj naštete, zahtevajo uporabo Belochinega pregiba (operacije~\ref{op:O7}), kar je logično, saj so vse ostale origami operacije dovolj za vse evklidske konstrukcije. Žal pa tudi tu ostajamo nemočni glede konstrukcije števila $\sqrt{\pi}$, saj je transcedentno.
 
 \subsubsection{Podvojitev kocke}
 \label{podpogl:podvojitev_kocke}
@@ -298,28 +298,49 @@ Po legendi iz grške mitologije je bog Apolon po oraklju prebivalcem svojega roj
 
 Ne vemo, ali so bili Grki prepričani, da se problema z neoznačenim ravnilom in šestilom ne da rešiti. Vsekako pa jim je manjkalo algebrsko znanje. Če je stranica kocke dolga $1$, je stranica podvojene kocke dolga $\sqrt[3]{2}$ in ker je obseg $\Q(\sqrt[3]{2})$ vektorski prostor razsežnosti $3$ nad obsegom $\Q$ (enačba $ x^3 - 2 = 0 $ nima racionalne rešitve), podvojitev kocke po izreku~\ref{izr:evkl_konstr} z evkliskim orodjem res ni mogoča~\cite[str. 78]{jerman1998}.
 
+\subsubsection*{Starogrška rešitev preko presečišča dveh parabol}
+
 Mogoče Grkom ni uspelo priti do tega premisleka, vendar so problem vseeno uspeli rešiti, čeprav po drugi poti; uporabili so še eno močno matematično orodje -- stožnice. Videla v~\cite{videla1997} dokaže izrek, ki je identičen izreku~\ref{izr:origami_konstr} (ki govori, katera števila so origami števila), le da namesto origamija uporabi stožnice. V bistvu s tem dokaže, da so origami kosntrukcije ekvivalentne konstrukcijam s stožnicami!
 
-Na hitro si poglejmo konstrukcijo s parabolami, ki za dano dolžino $a$ podajo dolžino $c$, za katero velja $c^3 = a$. Njen avtor je Menehmo (prb.\ 350 pr.\ Kr.), tutor Aleksandra Velikega. Vzel je sledeči paraboli (slika~\ref{fig:videla}):
+V istem viru Videla tudi navaja konstrukcijo s parabolami, ki za dano dolžino $a$ podajo dolžino $c$, za katero velja $c^3 = a$. Njen avtor je Menehmo (prb.\ 350 pr.\ Kr.), tutor Aleksandra Velikega. Vzel je sledeči paraboli (slika~\ref{fig:videla}):
 \begin{itemize}
     \item $\mathcal{P}_1: y = x^2$ z goriščem v točki $(0, \frac{1}{4})$ in premico vodnico $y = - \frac{1}{4}$ in
     \item $\mathcal{P}_1: x = \frac{y^2}{a}$ z goriščem v točki $(\frac{a}{4}, 0)$ in premico vodnico $x = - \frac{a}{4}$.
 \end{itemize}
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.68\textwidth]{images/starogr_problemi/cube_parabola.png}
-    \caption[Konstrukcija kubičnega korena preko parabol]{Menehmova konstrukcija števila $\sqrt[3]{2}$ preko parabol. Vzeto iz~\cite[str.\ 6]{videla1997}.}
+    \includegraphics[width=0.7\textwidth]{images/starogr_problemi/cube_parabola.png}
+    \caption[Menehmova konstrukcija kubičnega korena]{Menehmova konstrukcija števila $\sqrt[3]{2}$ preko parabol. Vzeto iz~\cite[str.\ 6]{videla1997}.}
     \label{fig:videla}
 \end{figure}
 Presečišči teh dveh parabol dobimo preko enakosti
 $$y = x^2 = y^4/a^2,$$
+kar nam da enačbo $y(a^2-y^3) = 0$ z rešitvama $y=0$ in $y = \sqrt[3]{a^2}$. Presečišči sta torej koordinatno izhodišče in točka $Q = (\sqrt[3]{a}, \sqrt[3]{a^2}) $. Njena abscisa je naša rešitev.
 \opomba{Čeprav je konstrukcija enostavna in logična, je praktično težje izvedena, saj z roko ne znamo natančno risati parabol. \textcolor{red}{mal lepše to napiši. Pa bodi ziher da se ne da. Pač elipso se da mehanično.}}
 
+\subsubsection*{Martinova konstrukcija}
 
+George E.\ Martin v~\cite[str.\ 156--157]{geometricconstructions} poda preprosto konstrukcijo števila $\sqrt[3]{k}$ za poljubno origami število $k$. Tudi on pri tem uporabi dve paraboli, vendar pri postopku potrebujemo le njuni gorišči in premici vodnici. Ne bomo iskali njunih presečišč, temveč bomo z Belochinim pregibom konstruirali njuno skupno tangento, ki nam bo podala željeni rezultat.
 
-
-
-\textcoolr{red}{kar je zelo podobno oni iz~\cite[str.\ 156]{geometricconstructions} (za poljuben $k$!). Tukej daj samo slikco 10.7 in napiši, da za dokaz gledajo tistega pri konstrukciji preko Belochinega kvadrata (v razdelku~\ref{podpogl:beloch_kvadrat_koren}). No, lahko pa tukaj dokažeš in v poglavju z enačbami referiraš, da je možno s kvadratom konstruirati in je to isto kot tle. Sam da tukaj ne zarišeš kvadrat. Ker ga v resnici ni treba. Če se tko odločiš, pol spremeni tisto podpoglavje v samo omembo.}
+Naj bo $k \in \mathcal{O}$ poljuben. Vzemimo paraboli z goriščema v točkah $P = (-1, 0)$ in $Q = (0, -k)$ ter premici vodnici $p: x = 1$ in $q: y = k$. Paraboli imata skupno gorišče v koordinatnem izhodišču in sta pravokotni druga na drugo, torej imata eno samo skupno tangento. Prepognimo točko $P$ na premico $p$ in točko $Q$ na premico $q$. Pregib seka $y$-os v točki $R$ (slika~\ref{fig:martin}).
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/starogr_problemi/cube_martin.png}
+    \caption[Martinova konstrukcija kubičnega korena]{Martinova konstrukcija števila $\sqrt[3]{k}$.}
+    \label{fig:martin}
+\end{figure}
+\begin{trditev}
+    Točka $R$ iz zgornje konstrukcije ima koordinate $(0, \sqrt[3]{k})$.
+\end{trditev}
+\begin{dokaz}
+    Označimo z $O$ koordinatno izhodišče in s $S$ presečišče pregiba z $x$-osjo. Točki $R$ in $S$ sta zaradi take izbire gorišč in premic vodnic ravno središči daljic z enim krajiščem v točkah $P$ in $Q$ ter drugim krajiščem v njunih slikah. Torej velja $PR \perp RS \perp SQ$. Zato so trikotniki $\triangle POR, \triangle ROS$ in $\triangle SOQ$ podobni. Iz tega ob upoštevanju $|OP| = 1$ in $|OQ| = k$ dobimo razmerje
+    $$ \frac{|OR|}{|OP|} = \frac{|OS|}{|OR|} = \frac{|OQ|}{|OS|} \Longrightarrow |OR| = \frac{|OS|}{|OR|} = \frac{k}{|OS|}, $$
+    iz česar sledi
+    $$ |OR|^3 = |OR| \cdot \frac{|OS|}{|OR|} \cdot \frac{k}{|OS|} = k \Longrightarrow |OR| = \sqrt[3]{k}.$$
+\end{dokaz}
+\begin{opomba}
+    V razdelku~\ref{podpogl:beloch_kvadrat_koren} bomo spoznali konstrukcijo števila $\sqrt[3]{2}$ preko Belochinega kvadrata, ki je v bistvu poseben primer Martinove konstrukcije.
+\end{opomba}
 
 \subsubsection*{Messerjeva konstrukcija}
 
@@ -349,9 +370,9 @@ Peter Messer je v~\cite{messer1986} podal naslednjo preprosto konstrukcijo, ki n
 \subsubsection{Trisekcija kota}
 \label{podpogl:trisekcija}
 
-Kot $90^\circ$ znamo tretjiniti z neoznačenim ravnilom in šestilom, saj znamo konstruirati kot $30^\circ$. Težava je, da ne obstaja konstrukcija, s katero na tri skladne kote razdelimo \emph{poljuben} kot. V~\cite[str.\ 77--78]{jerman1998} je dokaz o nezmožnosti trisekcije kota $60^\circ$. Avtor se pri tem sklicuje na izrek~\ref{izr:evkl_konstr} in opombo~\ref{op:razseznost_obsega_evkl} iz razdelka~\ref{podpogl:evkl_konstruktibilnost}.
+Kot $90^\circ$ znamo tretjiniti z neoznačenim ravnilom in šestilom, saj znamo konstruirati kot $30^\circ$. Težava je, da ne obstaja konstrukcija, s katero na tri skladne kote razdelimo \emph{poljuben} kot. V~\cite[str.\ 77--78]{jerman1998} je dokaz o neobstoju konstrukcije za trisekcijo kota $60^\circ$. Avtor se pri tem sklicuje na izrek~\ref{izr:evkl_konstr} in opombo~\ref{op:razseznost_obsega_evkl} iz razdelka~\ref{podpogl:evkl_konstruktibilnost}. Na kratko -- iz zveze $ 1/2 = \cos 60° = \cos(3 \cdot 20°) = 4 \cos^3 20° - 3 \cos 20°, $ z zamenjavo $x = \cos 20^\circ$ dobimo enačbo $8 x^3 - 6x - 1 = 0$, ki nima racionalne rešitve. Razsežnost prostora $\Q(x)$ nad obsegom $\Q$ je tako enaka $3$ in števila $ \cos 20° $ se ne da narisati le z ravnilom in šestilom. Zato trisekcija z evklidskim orodjem v splošnem ni mogoča.
 
-% SPODNJI DOKAZ JE PREPISAN IZ VIRA IN SAMO CITIRAN V POGLAVJU 2.3
+% SPODNJI DOKAZ JE PREPISAN IZ VIRA IN SAMO CITIRAN V prejšnjem odstavku
 
 % Algebraični dokaz, da z evklidskim orodjem ne moremo tretjiniti poljubnega kota -- dokažimo za kot $60°$. (iz~\cite[str.\ 77--78]{jerman1998})
 
@@ -360,15 +381,22 @@ Kot $90^\circ$ znamo tretjiniti z neoznačenim ravnilom in šestilom, saj znamo 
 % Izračunajmo minimalni polinom števila $\cos 20°$. Ker je
 % $$ \frac{1}{2} = \cos 60° = \cos(3 \cdot 20°) = 4 \cos^3 20° - 3 \cos 20°, $$
 % ima polinom $ p(x) = 8 x^3 - 6x - 1 $ ničlo $ \cos 20°$. Minimalni polinom števila $ \cos 20°$ deli polinom $p$. Če polinom $p$ razpade na produkt dveh polinomov s koeficienti v $\Q$, je eden od polinomov zagotovo linearen. To pa bi pomenilo, da ima polinom $p$ vsaj eno racionalno ničlo. Edini kandidatki za racionalne ničle polinoma $p$ so števila iz množice
-% $$ \{\pm 1, \pm \frac{1}{2}, \pm \frac{1}{4}, \pm \frac{1}{8} \}. $$4Nobeno od teh števil ni ničla polinoma $p$, zato se $p$ ne da razcepiti na produkt dveh polinomov z racionalnimi koeficienti. Minimalni polinom števila $ \cos 20°$ je torej enaka
+% $$ \{\pm 1, \pm \frac{1}{2}, \pm \frac{1}{4}, \pm \frac{1}{8} \}. $$ Nobeno od teh števil ni ničla polinoma $p$, zato se $p$ ne da razcepiti na produkt dveh polinomov z racionalnimi koeficienti. Minimalni polinom števila $ \cos 20°$ je torej enaka
 % $$ m(x) = \frac{1}{8} p(x) = x^3 - \frac{3}{4} x - \frac{1}{8}. $$
 % Tako je razsežnost prostora $\Q(\cos 20°)$  nad obsegom $\Q$ enaka $3$ in števila $ \cos 20° $ se ne da narisati le z ravnilom in šestilom.
 
 % Zato trisekcija kota v splošnem ni mogoča.
 
-\textcolor{red}{Grki so to reševali z uporabo hiperbole -- glej~\cite[str.\ 9]{videla1997}. V tem članku so opisane vse točke, ki se jih da kosntruirati s stožnicami (in gre za ista števila kot z origamijem?) dobimo množico, zaprto za korenjenje in tretji koren \ldots}
+\subsubsection*{Starogrška rešitev preko presečišča krožnice in hiperbole}
 
-Z origamijem pa obstaja celo več načinov, kako poljuben kot razdeliti na tri skladne dele. \textcolor{red}{če vsi tevi postopki vključujejo Belochin pregib, to napiši tukej in zbriši pri vsakem postopku. Pač bi moral vsak postopek to met vključeno ja, čene ne bi blo logično.}
+Grki so tudi ta problem uspeli rešiti s stožnicami. Videla v~\cite[str.\ 6--7]{videla1997} opisuje Pappusovo konstrukcijo iz $3$.\ stoletja po Kr., ki je tu ne bomo dokazali. Gre za sledeč postopek: Na kraku $BA$ poljubnega kota $\angle ABC$ izberemo poljubno točko $F$ in zarišemo krožnico s središčem v točki $B$ in polmerom $BF$. Naj bo $BD$ simetrala kota $\angle ABC$. Naj bo presečišče krožnice in hiperbole z ekscentičnostjo $2$, ki ima gorišče v točki $F$ in premico vodnico $BD$, točka $E$ (slika~\ref{fig:trisection_gr}). Potem poltrak $BE$ tretjini kot $\angle ABC$.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/starogr_problemi/trisection_grska.png}
+    \caption[Pappusova trisekcija kota]{Pappusova trisekcija kota preko stožnic. Vzeto iz~\cite[str.\ 7]{videla1997}.}
+    \label{fig:trisection_gr}
+\end{figure}
 
 \subsubsection*{Abejeva metoda}
 
