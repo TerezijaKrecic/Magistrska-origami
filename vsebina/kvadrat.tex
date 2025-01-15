@@ -434,7 +434,9 @@ Ker ta postopek deluje le za ostre kote, si poglejmo naslednjo metodo, ki jo lah
 
 \subsubsection*{Justinova metoda}
 
-Francoski matematik Jacques Justin za svojo metodo trisekcije ne zahteva kvadratnega lista papirja, ampak je dovolj kakršen koli list. Na sredo narišemo poljuben kot $\angle ABC$ (oster ali top) in njuna kraka podaljšamo skozi vrh $B$. Skozi vrh tudi konstruiramo poltrak, pravokoten na krat $BA$. Točko $C$ prezrcalimo čez vrh v točko $D$ ter nato obe točki prepognemo na nosilko kraka $BA$ in pravokotnico, kot kaže slika~\ref{fig:justin} levo. Nazadnje na Belochin pregib konstruiramo še pravokotnico skozi točko $B$.
+Francoski matematik Jacques Justin za svojo metodo trisekcije ne zahteva kvadratnega lista papirja, ampak je dovolj kakršenkoli list. Lang v~\cite[str.\ 34]{lang2013} takole navaja njegovo kosntrukcijo:
+
+Na sredo narišemo poljuben kot $\angle ABC$ (oster ali top) in njuna kraka podaljšamo skozi vrh $B$. Skozi vrh tudi konstruiramo poltrak, pravokoten na krat $BA$. Točko $C$ prezrcalimo čez vrh v točko $D$ ter nato obe točki prepognemo na nosilko kraka $BA$ in pravokotnico, kot kaže slika~\ref{fig:justin} (levo). Nazadnje na Belochin pregib konstruiramo še pravokotnico skozi točko $B$.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.45\textwidth]{images/starogr_problemi/justin_trisection.png}
@@ -447,14 +449,10 @@ Francoski matematik Jacques Justin za svojo metodo trisekcije ne zahteva kvadrat
     Kot, ki v točki $B$ oklepata zadnja pravokotnica iz zgornje konstrukcije in krak $BA$, je tretjina kota $\angle ABC$.
 \end{trditev}
 \begin{dokaz}
+    Označimo z $\alpha$ kot iz trditve. Naj bosta točki $C'$ in $D'$ sliki točk $C$ in $D$, točka $B'$ pa presečišče daljice $C'D'$ s pravokotnico iz trditve. Po konstrukciji Belochinega pregiba je daljica $C'D'$ slika daljice $CD$, torej je točka $B'$ slika točke $B$. Točka $B'$ je tako središče daljice $C'D'$ in zato je vzporednica k poltraku $BD'$ skozi točko $B'$ simetrala daljice $C'B$. Trikotnik $\triangle C'B'B$ je tako enakokrak in velja $\angle C'BB' = \angle B'C'B = \alpha$.
     
+    Ker sta trikotnika $\triangle C'B'B$ in $\triangle CBB'$ zaradi simetričnosti glede Belochin pregib skladna, velja tudi $\angle B'CB = \angle CB'B = \alpha$. Iz vsote notranjih kotov trikotnike $\triangle CB'B$ sledi $\angle C'BC = 180^\circ - 3\alpha$, torej je $\angle ABC = 180^\circ - \angle C'BC = 3\alpha$. 
 \end{dokaz}
-
-\textcolor{red}{dopolni}
-Avtor Justin:
-\begin{itemize}
-    \item \cite[str.\ 34]{lang2013}
-\end{itemize}
 
 \subsubsection*{Martinovi konstrukciji za trisekcijo ostrega kota}
 
@@ -468,6 +466,8 @@ Pri prvi vzamemo oster kot $\angle PQR$ in s točko $M$ označimo središče dal
     \caption[Martinova trisekcija ostrega kota (metoda $1$)]{Martinov postopek za trisekcijo kota iz~\cite[str.\ 154]{geometricconstructions}.}
     \label{fig:trisection_10.4}
 \end{figure}
+
+\textcolor{red}{Malo pomanjšaj v geogebri pa spet izvozi sliko}
 
 \begin{trditev}
     Daljici $QT$ in $QS$ tretjinita kot $\angle PQR$.
@@ -487,6 +487,8 @@ Druga metoda je prvi zelo podobna. Zopet vzamemo oster kot $\angle PQR$ in s to�
     \caption[Martinova trisekcija ostrega kota (metoda $2$)]{Martinov postopek za trisekcijo kota iz~\cite[str.\ 158--159]{geometricconstructions}.}
     \label{fig:trisection_10.14}
 \end{figure}
+
+\textcolor{red}{Malo pomanjšaj v geogebri pa spet izvozi sliko}
 
 \begin{trditev}
     Daljici $QQ'$ in $QS$ tretjinita kot $\angle PQR$.
