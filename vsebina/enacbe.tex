@@ -250,16 +250,6 @@ Na sliki~\ref{fig:lill_primer_pregibi} so konstrukcije vseh treh možnih pregibo
 
 Seveda se da enačbo $x^3 - 7x - 6 = 0$ hitreje rešiti z računanjem, vendar je ravno zaradi tega lep primer za uporabo Lillove metode z Belochinim pregibom, saj se da rešitve iz konstrukcije (ob natančnih prepogibih) takoj prebrati.
 
-\subsubsection{Reševanje dveh starogrških problemov z Belochinim postopkom}
-
-Problema \emph{podvojitve kocke} in \emph{trisekcije kota} smo rešili že v razdelku~\ref{podpogl:starogrskiproblemi}, zato si tukaj le pogledamo nastavek reševanja še z uporabo ravno spoznane metode. Enostavno povedano -- preblema prevedimo v reševanje kubičnih enačb. Bralec je ob sledečih enačbah povabljen, da sam konstruira želvino pot in opravi Belochin pregib.
-
-Pri podvojitvi kocke je to zelo enostavno, saj rešujemo enačbo $x^3 - 2 = 0$.
-
-Za trisekcijo kota se spomnimo, da velja $\cos 3\theta = 4 \cos^3 \theta - 3 \cos \theta$. Naj bo $k = \cos 3\theta$ dana konstanta (saj imamo dan poljuben kot, za lažje reševanje recimo $3 \theta = 60^\circ$, ki se ga z evklidskim orodjem ne da tretjiniti), iščemo pa $x = \cos \theta$. Torej rešujemo enačbo $4x^3-3x-k=0$.
-
-\textcolor{red}{Lahko kkšna slikca. Pa če enačbe omeniš že v poglavju o starogrških problemih, pol tle to podpoglavje samo spremeni v opombo, npr.\ spomnimo se blablabla in da lahko bralec te enačbe reši z Lillovo metodo.}
-
 \subsubsection{Reševanje kvadratne enačbe z Lillovo metodo}
 \label{podpodl:kvadr_en_lill}
 
@@ -274,14 +264,22 @@ Lillovo lahko uporabimo tudi za reševanje kvadratne enačbe $a x^2 + b x + c = 
 
 \subsubsection{Hatorijeva konstrukcija}
 
-Japonski matematik Koshiro Hatori navaja postopek, ki je zelo podoben Belochinem postopku, vendar ga je avtor iznašel neodvisno od Belochinega dela. Brez škode za splošnost predpostavi $a = 1$ in za reševanje enačbe $x^3 + bx^2 + cx + d = 0$ sledi naslednjim korakom:
+Japonski matematik Koshiro Hatori navaja postopek, ki je zelo podoben Belochinem postopku, vendar ga je avtor iznašel neodvisno od Belochinega dela. Brez škode za splošnost predpostavi $a = 1$ in za reševanje enačbe $x^3 + bx^2 + cx + d = 0$ sledi naslednjim korakom (slika~\ref{fig:hatori}):
 \begin{itemize}
-    \item Vkoordinatnem sistemu označimo točki $A = (b, 1)$ in $B = (d, c)$ ter premici $a: y = -1$ in $b: x = -d$.
-    \item Opravimo pregib, ki točko $A$ položi na premico $a$ ter točko $B$ na premico $b$ (kar je ravno Belochin pregib).
+    \item V koordinatnem sistemu označimo točki $A = (b, 1)$ in $B = (d, c)$ ter premici $a: y = -1$ in $b: x = -d$.
+    \item Opravimo pregib, ki točko $A$ položi na premico $a$ ter točko $B$ na premico $b$ -- to je ravno Belochin pregib, vendar ga je avtor odkril sam (a več kot pol stoletja za Belochovo).
 \end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/kubična enačba/hatori.png}
+    \caption[Hatorijeva konstrukcija]{Hatorijeva konstrukcija za enačbo $x^3 - x^2 + 2x + 3 = 0$.}
+    \label{fig:hatori}
+\end{figure}
+
 Avtor zaključi, da je koeficient opravljenega pregiba rešitev naše enačbe.
 
-Bralec lahko sam premisli, da je to v resnici ravno Belochin postopek, le da se želva na začetku svoje poti ne nahaja v koordinatnem izhodišču in je najprej usmerjena navzdol. Prav tako lahko izrazi koeficient pregiba s kotom ob začetni točki $A$ in res dobi $k = - \tan \theta$. \textcolor{red}{(to si tudi sama preverila in res drži)}. Za geometrijsko razlago preko parabol gl.~\cite{hatori2003}.
+Bralec lahko sam premisli, da je to v resnici ravno Belochin postopek po Lillovi metodi, le da se želva na začetku svoje poti ne nahaja v koordinatnem izhodišču temveč v točki $A$, je najprej usmerjena navzdol in se obrača v smer urinih kazalcev (njena pot je na sliki~\ref{fig:hatori} označena z modro). Prav tako lahko izrazi koeficient pregiba s kotom ob začetni točki $A$ in res dobi $k = - \tan \theta$. \textcolor{red}{(to si tudi sama preverila in res drži)}. Za geometrijsko razlago preko parabol gl.~\cite{hatori2003}.
 
 \opomba{Seveda bi lahko vzeli katerikoli $a \in \Q$ in vzeli premico $a: y = -a$.}
 
@@ -289,7 +287,7 @@ Bralec lahko sam premisli, da je to v resnici ravno Belochin postopek, le da se 
 
 \textcolor{red}{A je naslov ok ali je preveč misteriozen in kontraverzen?}
 
-Kot že omenjeno v uvodu tega poglavja, se Edwards in Shurman v~\cite{edwards2001} ukvarjata z reševanjem enačb tretje in četrte stopnje preko iskanja skupnih tangent na določene stožnice, pri tem pa uporabljata princip Belochinega pregiba. Pri kubični enačbi iz njenih koeficientov določita gorišči in premici vodnici dveh parabol, rešitve enačbe pa so koeficienti skupnih tangent. Postopek za reševanje kvartične enačbe je podoben, le da iz njenih koeficientov določita parabolo in krožnico, rešitve pa so začetne vrednosti skupnih tangent. Videli bomo, da slednji postopek deluje le za nekatere kvartične enačbe.
+Kot že omenjeno v uvodu tega poglavja se Edwards in Shurman v~\cite{edwards2001} ukvarjata z reševanjem enačb tretje in četrte stopnje preko iskanja skupnih tangent na določene stožnice, pri tem pa uporabljata princip Belochinega pregiba. Pri kubični enačbi iz njenih koeficientov določita gorišči in premici vodnici dveh parabol, rešitve enačbe pa so koeficienti skupnih tangent. Postopek za reševanje kvartične enačbe je podoben, le da iz njenih koeficientov določita parabolo in krožnico, rešitve pa so začetne vrednosti skupnih tangent. Videli bomo, da slednji postopek deluje le za nekatere kvartične enačbe.
 
 Preden se podamo na natančnejšo razčlenitev njunega dela, se najprej vprašajmo, kako lahko z origamijem določimo skupno tangento na parabolo in krožnico -- do sedaj to namreč znamo le v primeru dveh parabol (preko Belochinega pregiba). Postopek je v svojem bistvu zelo enostaven. Pri danem gorišču in premici vodnici parabole ter krožnici s središčem v točki $S$ in polmerom $r$ zarišemo krožnico z istim središčem ter dvakratnim polmerom, torej $2r$. Nato po zgledu Belochinega pregiba opravimo pregib, ki gorišče parabole položi na njeno premico vodnico, središče $S$ pa na rob krožnice s polmerom $2r$. Pregib je tako res skupna tangenta na parabolo in krožnico s polmerom $r$ (slika \textcolor{red}{dej kakšen slikovni primeeeeer -- lahko kar sliko 3 iz tega vira}).
 
@@ -515,12 +513,12 @@ Kot vidimo, gorišče in premica vodnica nimata lepih predpisov, vendar je po en
 
 \textcolor{red}{lahko daš še slikovni primer (slika 4 iz istega vira) poleg konkretne enačbe, samo za okus. Sta pa slika 3 in slika 4 povezani med sabo, gre za iste podatke.}
 
-\subsection{Alperinova rešitev}
+\subsection{Alperinova metoda}
 
-Za konec si poglejmo še eno zelo enostavno metodo, ki nam rešuje kubične enačbe. Lahko bi jo opisali že pred razdelkom~\ref{podpogl:kubicna_enacba}, vendar je zaradi rahle povezave s postopkom v prejšnjem razdelku zapišemo tu. Alperin v~\cite[str.\ 129]{alperin2000} sicer namesto splošne kubične enačbe vzame zreducirano obliko $x^3 + cx + d = 0$\footnote{V splošno kubično enačbo $x^3 + bx^2 + cx + d = 0$ vpeljemo novo spremenljivko $z = x - (1/3)b$. Bralec lahko za vajo izračuna, da s tem dobimo splošno kubično enačbo za $z$ brez kvadratnega člena.}, za paraboli pa enačbi kot v prejšnjem razdelku pri reševanju kubične enačbe, vendar s spremenljivkami, pomnoženimi z $-1/2$:
+Za konec si poglejmo še eno zelo enostavno metodo, ki nam rešuje kubične enačbe. Lahko bi jo opisali že pred razdelkom~\ref{podpogl:kubicna_enacba}, vendar je zaradi rahle povezave s postopkom v prejšnjem razdelku zapišemo tu. Alperin v~\cite[str.\ 129]{alperin2000} sicer namesto splošne kubične enačbe vzame zreducirano\footnote{V splošno kubično enačbo $x^3 + bx^2 + cx + d = 0$ vpeljemo novo spremenljivko $z = x - (1/3)b$. Bralec lahko za vajo izračuna, da s tem dobimo splošno kubično enačbo za $z$ brez kvadratnega člena.} obliko $x^3 + cx + d = 0$, za paraboli pa enačbi kot v prejšnjem razdelku pri reševanju kubične enačbe, vendar s spremenljivkami, pomnoženimi z $-1/2$:
 \begin{itemize}
     \item $\mathcal{P}_1: \left(y - \frac{c}{2}\right)^2 = 2dx$ z goriščem v točki $(\frac{d}{2}, \frac{c}{2})$ in premico vodnico $x = -\frac{d}{2}$ in
-    \item $\mathcal{P}_2:  x^2 = 2x$ z goriščem v točki $(0, \frac{1}{2})$ in premico vodnico $y = -\frac{1}{2}$.
+    \item $\mathcal{P}_2:  x^2 = 2y$ z goriščem v točki $(0, \frac{1}{2})$ in premico vodnico $y = -\frac{1}{2}$.
 \end{itemize}
 Avtor nato opravi Belochin pregib, ki gorišče vsake parabole položi na njeno premico vodnico in tako konstruira skupno tangento. Za njegovo enačbo obstaja le en tak pregib. \textcolor{red}{Zakaj, a je samo ena realna rešitev?}
 Sedan pa se ne poslužimo uporabe matrik kot v zgornjem postopku, temveč analitično izrazimo koeficient skupne tangente. Naj bo $k$ iskani koeficient ter $(x_0, y_0)$ točka tangentnosti na prvi in $(x_1, y_1)$ točka tangentnosti na drugi paraboli. Iz enačbe prve parabole z implicitnim odvajanjem dobimo
@@ -531,3 +529,17 @@ Ko koordinate vstavimo še v klasično enačbo za koeficient premice skozi dve t
 $$ k = \frac{y_1 - y_0}{x_1 - x_0} = \frac{\frac{k^2}{2} - \frac{d}{k} - \frac{c}{2}}{k - \frac{d}{2k^2}}.
 $$
 Enačbo poenostavimo in res dobimo $k^3 + ck + d = 0$, torej je koeficient skupne tangente rešitev izvorne zreducirane kubićne enačbe.
+
+\begin{opomba}
+    Na enak način je do rešitve kubične enačbe je pred Alperinom prišel Robert Geretschläger (gl.\ ~\cite[368--369]{geret1995}). V članku pa za razliko od Alperina postopek posploši na reševanje splošne kubične enačbe oblike $x^3 + bx^2 + cx + d = 0$. Pri tem se izbira parabole $\mathcal{P}_2$ ohrani, enačba prve parabole $\mathcal{P}_1$ pa se spremeni v $(y-c/2)^2 = 2d(x+b/2)$, torej dobimo gorišče v točki $((d-b)/2, c/2)$ in premico vodnico $x = -(b+d)/2$.
+\end{opomba}
+
+\subsection{Reševanje starogrških problemov preko reševanja enačb}
+
+V razdelku~\ref{podpogl:starogrskiproblemi} smo si že pogledali več konstrukcij, ki z Belochinim pregibom rešijo problem podvojitve kocke in trisekcije kota. Poglejmo na problema še pod lučjo novega znanja reševanja enačb z origamijem
+
+Pri podvojitvi kocke rešujemo enačbo $x^3 - 2 = 0$. Bralec je povabljen, da jo reši z Belochinim postopkom preko Lillove metode. V resnici smo to že storili v v razdelku, kjer smo spoznali Belochin kvadrat. Konstrukcija kubičnega korena števila $2$, ki smo jo takrat spoznali (gl.\ sliko~\ref{fig:beloch_koren}), je ravno konstrukcija po Belochinem postopku, le da je zrcaljena preko abscisne osi in premaknjena za $1$ v levo.
+
+Enačbo lahko rešimo tudi z Alperinovim postopkom ali katerokoli drugo metodo za reševanje kubičnih enačb, ki je omenjena v tem poglavju. Videli smo že veliko podobnih metod in ni nemogoče, da kakšni postopki izhajajo iz drugih.
+
+Pri problemu trisekcije kota se spomnimo zveze $\cos 3\theta = 4 \cos^3 \theta - 3 \cos \theta$. Naj bo $k = \cos 3\theta$ dana konstanta (saj imamo dan kot; za primer $3 \theta = 60^\circ$, ki se ga z evklidskim orodjem ne da tretjiniti, je recimo $k = 1/2$ enostavno origami število), iščemo pa $x = \cos \theta$. Torej rešujemo enačbo $4x^3-3x-k=0$. Zopet lahko izberemo poljubno metodo (npr.\ v~\cite[str.\ 370]{geret1995} je zapisana konstrukcija gorišč in premic vodnic za Geretschläger oz.\ Aleprinovo metodo).
