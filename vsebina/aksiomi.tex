@@ -36,7 +36,7 @@ Prva knjiga nas še posebej zanima. V njej je Evklid najprej definiral osnovne p
 \end{postulat}
 
 \begin{definicija}
-    \emph{Evklidske konstrukcije} so konstrukcije točk, daljic, premic, krožnic in tistih geometrijskih objektov, ki jih je mogoče konstruirati le z uporabo t.\ i.\ \emph{evklidskih orodij}:
+    \emph{Evklidske konstrukcije} so konstrukcije točk, daljic, poltrakov, premic, krožnih lokov in krožnic, ki jih je mogoče konstruirati le z uporabo t.\ i.\ \emph{evklidskih orodij}:
     \begin{itemize}
         \item neoznačeno in neskončno dolgo ravnilo (angl.\ \emph{straightedge}) in
         \item šestilo, ki ne prenaša razdalj (ko ga dvignemo od podlage, se njegova kraka zložita skupaj).
@@ -44,13 +44,15 @@ Prva knjiga nas še posebej zanima. V njej je Evklid najprej definiral osnovne p
 \end{definicija}
 
 \begin{opomba}
+    Ker lahko z neoznačenim ravnilom in šestilom konstruiramo le daljice, poltrake in premice skozi dani točki (postulata~\ref{post:P1} in~\ref{post:P2}) ter krožnice z danim središčem in polmerom (postulat~\ref{post:P3}), lahko nove točko konstruiramo le kot presečišče dveh premic, dveh krožnic ali premice in krožnice.
+\end{opomba}
+
+\begin{opomba}
     \label{opom:solsko_sestilo}
     Da se pokazati, da lahko za konstrukcije ekvivalentno uporabimo tudi šestilo, ki prenaša razdalje~\cite[str.\ 6--7]{geometricconstructions}. Zato imamo odslej z izrazom \emph{šestilo} v mislih kar moderno šolsko šestilo.
 \end{opomba}
 
-Konstrukcije iz definicije temeljijo na postulatih~\ref{post:P1}--\ref{post:P3}. Vendar je to dovolj, da lahko le z neoznačenim ravnilom in šestilom konstruiramo premice, kote, simetrale kotov in daljic, krožnice, nekatere geometrijske like in še kaj.
-
-Izkaže pa se, da z evklidskim orodjem ne moremo konstruirati česarkoli -- kot zelo znane primere lahko tu naštejemo tri starogrške probleme. Pri  \emph{kvadraturi kroga} nam evklidsko orodje ne zmore konstruirati razdalje $\sqrt{\pi}$, pri \emph{podvojitvi kocke} razdalje $\sqrt{2}$, pri \emph{trisekciji kota} ne zmore poljubnega kota razdeliti na tri enake dele. Drugi in tretji problem sta, verjetno za marsikoga presenetljivo, rešljiva z origamijem. V razdelku~\ref{podpogl:starogrskiproblemi} si bomo pogledali njuni rešitvi, sedaj pa podrobneje spoznajmo še konstrukcije, ki jih dobimo s prepogibanjem papirja.
+Izkaže se, da z evklidskim orodjem ne moremo konstruirati poljubno dolgih daljic -- kot zelo znane protiprimere lahko tu naštejemo tri starogrške probleme. Pri \emph{kvadraturi kroga} nam evklidsko orodje ne zmore konstruirati razdalje $\sqrt{\pi}$, pri \emph{podvojitvi kocke} razdalje $\sqrt{2}$, pri \emph{trisekciji kota} ne zmore poljubnega kota razdeliti na tri enake dele. Drugi in tretji problem sta, verjetno za marsikoga presenetljivo, rešljiva z origamijem. V razdelku~\ref{podpogl:starogrskiproblemi} si bomo pogledali njuni rešitvi, sedaj pa podrobneje spoznajmo še konstrukcije, ki jih dobimo s prepogibanjem papirja.
 
 \subsection{Origami konstrukcije}
 \label{origami_konstrukcije}
@@ -59,12 +61,12 @@ V nalogi se bomo omejili le na prepogibanje v ravnini in se z trodimenzionalni m
 
 Bistvo origamija je, da prepogibamo list papirja, ki nam služi kot model evklidske ravnine, vendar si moramo določiti nekaj pravil:
 \begin{itemize}
-    \item konstruiramo le \emph{ravne} pregibe,
+    \item za modele premic vzamemo \emph{ravne} pregibe, modeli točk pa naj bodo presečišča premic, t.\ j.\ \emph{presečišča pregibov},
     \item pregibe opravljamo \emph{po enega naenkrat}, torej po vsakem pregibu papir nazaj razgrnemo,
     \item ne uporabljamo drugih orodij, kot so škarje, lepilo ipd.,
     \item pomožne točke, za katere vemo, da jih znamo konstruirati, ampak bi nam pomožni pregibi zmanjšali preglednost konstrukcije, lahko označimo s pisalom (npr.\ zrcaljene točke v nadaljevanju). Prav tako lahko že konstruirane točke in premice s pisalom in s pomočjo ravnila močneje poudarimo.
 \end{itemize}
-Ker so pregibi ravni, nam služijo kot modeli premic, modeli točk pa so njihova presečišča. Dogovorimo se še, da ne opravljamo naključnih pregibov, temveč papir prepogibamo tako, da se objekti na njem (točke in premice) prekrijejo. Zato moramo na začetku imeti na listu že nekaj danih objektov (npr.\ dve različni točki ali premico in točko, ki ne leži na njej). Če poskusimo razmisliti, kaj so potem vsi možni dovoljeni prepogibi, pridemo do sledečih petih možnosti (za njihov slikovni prikaz gl.\ \cite[str.\ 25--26]{hull2020}):
+Dogovorimo se še, da ne opravljamo naključnih pregibov, temveč papir prepogibamo tako, da se objekti na njem (točke in premice) prekrijejo. Zato moramo na začetku imeti na listu že nekaj danih objektov (npr.\ dve različni točki ali premico in točko, ki ne leži na njej). Če poskusimo razmisliti, kaj so potem vsi možni dovoljeni prepogibi, pridemo do sledečih petih možnosti (za njihov slikovni prikaz gl.\ \cite[str.\ 25--26]{hull2020}):
 \begin{itemize}
     \item točko prepognemo na drugo točko (en možen pregib),
     \item točko prepognemo samo vase (neskončno možnih pregibov),
@@ -75,7 +77,7 @@ Ker so pregibi ravni, nam služijo kot modeli premic, modeli točk pa so njihova
 
 \begin{definicija}
     \label{def:origami_konstruktibilnost}
-    \emph{Origami konstrukcije} so konstrukcije točk, premic in tistih geometrijskih objektov, ki jih je mogoče konstruirati le z ravnimi in enkratnimi prepogibi iz zgornjega seznama.
+    \emph{Origami konstrukcije} so konstrukcije točk in premic, ki jih je mogoče konstruirati le z ravnimi in enkratnimi prepogibi iz zgornjega seznama.
 \end{definicija}
 
 \subsubsection{Origami operacije}
@@ -320,10 +322,6 @@ Sedaj vemo, da je množica evklidskih konstrukcij \emph{prava} podmnožica origa
 \begin{definicija}
     Na listu papirja, ki nam služi kot model ravnine $\C$, imejmo dano izhodišče $O$ in število $1$ na realni osi. Če lahko z neoznačenim ravnilom in šestilom s končnim številom potez konstruiramo kompleksno število $\alpha$, rečemo, da je $\alpha$ \emph{evklidsko-konstruktibilno} število.
 \end{definicija}
-
-\begin{opomba}
-    Ker lahko z neoznačenim ravnilom in šestilom konstruiramo le daljice, poltrake in premice skozi dani točki (postulata~\ref{post:P1} in~\ref{post:P2}) ter krožnice z danim središčem in polmerom (postulat~\ref{post:P3}), lahko nove točko konstruiramo le kot presečišče dveh premic, dveh krožnic ali premice in krožnice.
-\end{opomba}
 
 Jerman bralca v~\cite{jerman1998} na zelo strukturiran in nazoren način popelje čez dokaz, da lahko z evklidskim orodjem na realni osi konstruiramo natanko vsa racionalna števila, njihove vsote, razlike, zmnožke, količnike, kvadratne korene ter linearne kombinacije vsega naštetega (zelo nazorna je tudi izpeljava v~\cite[str.165--170]{michael2005}). To je množica
 $$
