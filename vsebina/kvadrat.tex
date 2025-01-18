@@ -1,7 +1,7 @@
 \section{Prepogibanje lista različnih geometrijskih oblik}
 \label{pogl:prepog_geom_likov}
 
-V tem poglavju bomo v roke vzeli liste papirja različnih geometrijskih oblik (včasih pa le navaden list papirja) in raziskovali, kaj lahko z njegovim prepogibanjem dobimo. Za uvod si bomo pogledali nekaj najosnovnejših konstrukcij, ki jih lahko učitelj matematike uporabi tudi pri pouku v osnovni šoli, nato pa se bomo vrnili nazaj v malo bolj zanimive konstrukcije, kot so konstrukcija enakostraničnega trikotnika in števila $\sqrt{r}$ za poljuben $r \in \mathcal{O}$. Nato si bomo pogledali vse tri Hagove izreke o razmerjih, na katere specifični pregibi kvadratnega lista papirja razdelijo njegove stranicE, nato pa to posplošili na iskanje metod za razdelitev daljice na poljubno število skladnih delov. Na koncu pa bomo končno preko več različnih konstrukcij rešili dva starogrška problema, zaradi katerih smo se sploh začeli ukvarjati s temo origamija.
+V tem poglavju bomo v roke vzeli liste papirja različnih geometrijskih oblik (včasih pa le navaden list papirja) in raziskovali, kaj lahko z njegovim prepogibanjem dobimo. Za uvod si bomo pogledali nekaj najosnovnejših konstrukcij, ki jih lahko učitelj matematike uporabi tudi pri pouku v osnovni šoli, nato pa se bomo vrnili nazaj v malo bolj zanimive konstrukcije, kot so konstrukcija enakostraničnega trikotnika, šestkotnika in osemkotnika. Nato si bomo pogledali vse tri Hagove izreke o razmerjih, na katere specifični pregibi kvadratnega lista papirja razdelijo njegove stranice, nato pa to posplošili na iskanje metod za razdelitev daljice na poljubno število skladnih delov. Na koncu pa bomo po konstrukciji kvadratnega korena poljubnega origami števila preko več različnih postopkov končno rešili dva starogrška problema, zaradi katerih smo se sploh začeli ukvarjati s temo origamija.
 
 \subsection{Nekaj kratkih in zanimivih konstrukcij za uvod}
 
@@ -188,7 +188,7 @@ $$y_4 = |CJ| = 1 - (y_1 + x) = \frac{(1-x)^2}{2} \; \text{ in } \; y_5 = 1 - y_2
 Na koncu še s ponovno uporabo Pitagorovega izreka izračunamo
 $$ y_6 = \sqrt{|GJ|^2 + |FJ|^2} = \sqrt{1 + x^2}.$$
 
-Splošne vrednosti dolžin $y_i$ mogoče niso najlepše, vendar pri marsikateri izbiri števila $x \in (0,1)$ dobimo lepe številke. Najbolj so zanimiva recipročna števila naravnih števil. Vemo že, da pri izbiri $x = 1/2$ lahko dobimo števila $1/3, 1/6, 1/8$, pri izbiri $x = 1/4$ in $x = 3/4$ dobimo še $2/5$ (in iz tega z razpolovitvijo $1/5$) in $1/7$. Računanje prepuščamo bralcu, se pa na tej točki lahko vprašamo, ali za vsak $n \in \N$ obstaja primeren $x$, da lahko preko neke dolžine $y_i$ ali $1-y_1$ in preko postopkov za konstrukcijo že znanih razmerij konstruiramo dolžino $1/n$. \textcolor{red}{dokaz, da se da??? al pej spusti, če se ti ne da \ldots}
+Splošne vrednosti dolžin $y_i$ mogoče niso najlepše, vendar pri marsikateri izbiri števila $x \in (0,1)$ dobimo lepe številke. Najbolj so zanimiva recipročna števila naravnih števil. Vemo že, da pri izbiri $x = 1/2$ lahko dobimo števila $1/3, 1/6, 1/8$, pri izbiri $x = 1/4$ in $x = 3/4$ dobimo še $2/5$ (in iz tega z razpolovitvijo $1/5$) in $1/7$. Računanje prepuščamo bralcu, se pa na tej točki lahko vprašamo, ali za vsak $n \in \N$ obstaja primeren $x$, da lahko preko neke dolžine $y_i$ ali $1-y_1$ in preko postopkov za konstrukcijo že znanih razmerij konstruiramo dolžino $1/n$. Odgovor je pritrdilen, enostaven razmislek pa sledi v razdelku~\ref{podpogl:razdelitev_hag1_spl}.
 
 \subsubsection{Drugi Hagov izrek}
 
@@ -268,7 +268,7 @@ Kot pri prejšnjih dveh izrekih bi lahko poračunali še preostale dolžine dalj
 
 \subsection{Razdelitev daljice na $n$ enakih delov}
 
-Stranico kvadrata želimo razdeliti na $n$ enakih delov, kjer je $n \in \N$ poljuben. Za $n = 2^t, t \in \N_0$ je to čisto enostavno, saj samo prepolavljamo razdalje med pregibi, dokler ne dosežemo cilja. Če je $n$ sod, vendar ni potenca $2$, torej $n = 2^t(2m + 1)$, kjer sta $t, m \in \N$, stranico najprej razdelimo na $2^t$ delov, nato pa moramo vsakega izmed njih razdeliti na $2m + 1$ (liho število) delov. Izziv tega problema je torej v razdelitvi daljice na liho število delov. Ko bomo zo zmogli, jo bomo znali razdeliti na $n$ delov za vsak $n \in \N$.
+Stranico kvadrata želimo razdeliti na $n$ enakih delov, kjer je $n \in \N$ poljuben. Za $n = 2^t$, kjer je $t \in \N_0$, je to čisto enostavno, saj samo prepolavljamo razdalje med pregibi, dokler ne dosežemo cilja. Če je $n$ sod, vendar ni potenca $2$, torej $n = 2^t(2m + 1)$, kjer sta $t, m \in \N$, stranico najprej razdelimo na $2^t$ delov, nato pa moramo vsakega izmed njih razdeliti na $2m + 1$ (liho število) delov. Izziv tega problema je torej v razdelitvi daljice na liho število delov. Ko bomo zo zmogli, jo bomo znali razdeliti na $n$ delov za vsak $n \in \N$.
 
 V prejšnjem razdelku so nam Hagovi izreki podali razdelitev stranice kvadrata na tri, pet, sedem in devet delov. Vendar iščemo metodo, ki nam stranico razdeli na $n$ delov za splošen lih $n \in \N$. Spomnimo se, da smo en tak postopek že spoznali -- v dokazu izreka~\ref{izr:podpolje} smo za poljuben $a \in \R$ znali konstruirati razdaljo $1/a$, kar bi lahko uporabili za razdelitev neke daljice na $a$ enakih delov -- konstruirano razdaljo $1/a$ bi $a$-krat prenesli naprej. Načinov reševanja tega problema pa se je skozi zadnja desetletja oblikovalo še veliko več; tu si bomo pogledali še \textcolor{red}{koliko?} metode.
 
@@ -279,11 +279,11 @@ Metoda nima uradnega prevoda niti uradnega imena, jo pa tako imenuje Robert J.\ 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\textwidth]{images/tretjinjenje_stranice1.png}
-    \caption[Razdelitev stranice na tri dele]{Konstrukcija po metodi križajoih se diagonal za $n=3$.}
+    \caption[Razdelitev stranice na tri dele]{Konstrukcija po metodi križajoih se diagonal za $n=3$. Vzeto in preurejeno iz~\cite[str. 37]{hull2013}.}
     \label{fig:kriz_diag_3}
 \end{figure}
 
-\begin{trditev}
+\begin{trditev}[Metoda križajočih se diagonal za $n=3$]
     \label{trd:kriz_diag_3}
     Zadnji pregib iz zgornjega opisa konstrukcije razdeli horizontalno stranico kvadrata v razmerju $2:1$.
 \end{trditev}
@@ -291,43 +291,58 @@ Metoda nima uradnega prevoda niti uradnega imena, jo pa tako imenuje Robert J.\ 
 \begin{dokaz}
     Dokazujemo lahko na več načinov:
     \begin{enumerate}
-        \item \textit{Analitičen pristop:} Kvadrat postavimo v evklidsko ravnino tako, da je spodnje levo oglišče kvadrata v koordinatnem izhodišču in spodnje desno v točki $(1, 0)$. Obe diagonali izrazimo z enačbama premic. Glavna diagonala ima enačbo $y = x$, diagonala pravokotnika pa $y = -2x + 2$. Točka $P$ je njuno presečišče in ima tako koordinati $(2/3, 2/3)$.
-        \item \textit{Preko podobnih trikotnikov:} Z opisanimi prepogibi v tem kvadratu konstruiramo več trikotnikov. Njihova oglišča označimo tako, kot kaže slika \textcolor{red}{naredi in referiraj sliko, str. 38 v hull2013; ampak predrugači imena oglišč (glej nadaljevanje tega dokaza)}. Iz podobnosti trikotnikov $\triangle AGP$ in $\triangle ABC$ sledi, da je trikotnik $\triangle AGP$ enakokrak. Naj bo dolžina njegovih krakov $x$. Potem je $|AG| = |GP| = x$ in $|GB| = 1 - x$. Iz podobnosti trikotnikov $\triangle EFB$ in $\triangle PGB$ sledi
+        \item \textit{Analitičen pristop:} Kvadrat postavimo v evklidsko ravnino tako, da leži oglišče $A$ v koordinatnem izhodišču in oglišče $B$ v točki $(1, 0)$. Obe diagonali izrazimo z enačbama premic. Glavna diagonala ima enačbo $y = x$, diagonala pravokotnika pa $y = -2x + 2$. Točka $P$ je njuno presečišče in ima tako koordinati $(2/3, 2/3)$.
+        \item \textit{Preko podobnih trikotnikov:} Z opisanimi prepogibi v tem kvadratu konstruiramo več trikotnikov. Njihova oglišča označimo tako, kot kaže slika~\ref{fig:kriz_diag_3_dokaz}. Iz podobnosti trikotnikov $\triangle AGP$ in $\triangle ABC$ sledi, da je trikotnik $\triangle AGP$ enakokrak. Naj bo dolžina njegovih krakov $x$. Potem je $|AG| = |GP| = x$ in $|GB| = 1 - x$. Iz podobnosti trikotnikov $\triangle EFB$ in $\triangle PGB$ sledi
         \begin{align*}
             \frac{|EF|}{|FB|} &= \frac{|PG|}{|GB|}, \\
             \frac{1}{\frac{1}{2}} &= \frac{x}{1 - x}, \\
             x &= \frac{2}{3}.
         \end{align*}
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.3\textwidth]{images/tretjinjenje_stranice2.png}
+            \caption[Dokaz metode križajočih diagonal]{Dokaz metode križajočih se diagonal za $n=3$. Vzeto in preurejeno iz~\cite[str. 38]{hull2013}.}
+            \label{fig:kriz_diag_3_dokaz}
+        \end{figure}
     \end{enumerate}
 \end{dokaz}
 
-Po konstrukciji pregiba, ki zgornjo stranico kvadrata razdeli v razmerju $2:1$, desni pravokotnik (s stranico $DE$) po vertikali prepognemo še na pol. S tem smo stranico kvadrata razdelili na tri enake dele.
+Po konstrukciji pregiba, ki zgornjo stranico kvadrata razdeli v razmerju $2:1$, levi pravokotnik (s stranico $AG$) po vertikali prepognemo še na pol in tako stranico kvadrata razdelimo na tri enake dele. Preidimo sedaj iz $n = 3$ na višje število delov.
 
-Razdelitev stranice kvadrata na štiri dele je očitna -- kvadrat v vertikalni smeri dvakrat prepognemo na pol.
+Razdelitev stranice kvadrata na štiri dele je že znana -- kvadrat v vertikalni smeri dvakrat prepognemo na pol.
 
-Stranico razdelimo na pet delov na podoben način kot na tri. Naredimo enak pregib po glavni diagonali, nato pa zgornjo stranico razdelimo v razmerju $3:1$ (to znamo storiti). S tem smo na desni strani kvadrata dobili pokončen pravokotnik s horizontalno stranico, dolgo četrt stranice kvadrata. Naslednji pregib je, kot prej, diagonala tega pravokotnika (tista skozi oglišče $B$). Presečišče te in glavne diagonale je točka, ki je od desne stranice oddaljena za $1/5$ (dokaz je analogen tistemu za trditev~\ref{trd:kriz_diag_3}). Naredimo vertikalen pregib skozi točko $P$ in s tem zgornjo stranico kvadrata razdelimo v razmerju $4:1$. Na koncu še levi del te stranice razdelimo na štiri dele. S tem smo celotno stranico razdelili na pet skladnih delov.
+Stranico razdelimo na pet delov na podoben način kot na tri. Naredimo enak pregib po glavni diagonali, nato pa zgornjo stranico razdelimo v razmerju $3:1$ (na primer preko razdelitve na štiri dele). S tem smo na desni strani kvadrata dobili pokončen pravokotnik s horizontalno stranico, dolgo četrt stranice kvadrata. Naslednji pregib je, kot prej, diagonala tega pravokotnika (tista skozi oglišče $B$). Presečišče te in glavne diagonale je točka, ki je od desne stranice oddaljena za $1/5$ (dokaz je analogen tistemu za trditev~\ref{trd:kriz_diag_3}, pri čemer je tu $|FB| = 1/4$ in posledično $x = 4/5$). Naredimo vertikalen pregib skozi točko $P$ in s tem zgornjo stranico kvadrata razdelimo v razmerju $4:1$. Na koncu še levi del te stranice razdelimo na štiri dele. S tem smo celotno stranico razdelili na pet skladnih delov.
 
-Zgornji postopek lahko posplošimo na poljuben $n \in \N$. Kot smo videli v konkretnih primerih za $n = 3, 4$ in $5$, smo si pomagali z vnajprejšnjo razdelitvijo stranice na $n-1$ število enakih delov (kar smo zmogli storiti). Dokaz naslednje trditve bo tako temeljil na indukciji.
+Zgornji postopek lahko posplošimo na poljuben $n \in \N$. Kot smo videli v konkretnih primerih za $n = 3$ in $5$, smo si pomagali z vnajprejšnjo razdelitvijo stranice na $n-1$ število enakih delov, kar že znamo storiti. Dokaz naslednje trditve bo tako temeljil na indukciji.
 
 \begin{trditev}[Metoda križajočih se diagonal za splošen $n$]
-    Naj bo $n \in \N, n > 2$. Kvadrat $ABCD$ s stranico dolžine $1$ prepognemo po diagonali $AC$, potem pa stranico $DC$ s točko $E$ razdelimo v razmerju $(n-2):1$. Naredimo pregib novonastalega pravokotnika skozi točki $B$ in $E$. Presečišče te in glavne diagonale je točka $P$, ki je od desne stranice kvadrata oddaljena za $1/n$.
+    Naj bo $n \in \N, n > 2$. Kvadrat $ABCD$ s stranico dolžine $1$ prepognemo po diagonali $AC$, potem pa stranico $DC$ s točko $E$ razdelimo v razmerju $(n-2):1$. Naredimo pregib novonastalega pravokotnika skozi točki $B$ in $E$ (slika~\ref{fig:razdelitev_stranice_n1}). Presečišče te in glavne diagonale je točka $P$, ki je od desne stranice kvadrata oddaljena za $1/n$.
 \end{trditev}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth]{images/razdelitev_stranice_n1.png}
+    \caption[Metoda križajočih diagonal]{Konstrukcija po metodi križajočih se diagonal za splošen $n$. Vzeto in preurejeno iz~\cite[str. 38]{hull2013}.}
+    \label{fig:razdelitev_stranice_n1}
+\end{figure}
 
 \begin{dokaz}
     Za $n = 1$ in $n = 2$ ni kaj dokazovati -- v prvem primeru pregiba sploh ni, v drugem primeru stranico prepolovimo.
 
-    \textit{Baza indukcije:} Vemo že, da trditev drži za $n = 3, 4, 5$.
+    \textit{Baza indukcije:} Po trditvi~\ref{trd:kriz_diag_3} že vemo, da trditev drži za $n = 3$ (tudi za $5$).
 
-    \textit{Indukcijska predpostavka:} Predpostavimo, da znamo stranico razdeliti na $n$ enakih delov.
+    \textit{Indukcijska predpostavka:} Predpostavimo, da znamo stranico razdeliti na $n-1$ enakih delov.
 
-    \textit{Indukcijski korak:} Dokazujemo, da znamo stranico razdeliti na $n+1$ enakih delov. Po navodilih za konstrukcijo najprej stranico $DC$ s točko $E$ razdelimo v razmerju $(n-1):1$ (kot če bi jo razdelili na $n$ skladnih delov, ampak označimo le zadnji prpogib). To po indukcijski predpostavki znamo storiti. S prepogibom skozi oglišče $B$ in točko $E$ dobimo, kot presečišči obeh diagonal, točko $P$. Potem pa podobno kot pri dokazu trditve~\ref{trd:kriz_diag_3} dokažimo, da leži točka $P$ na želeni razdalji od desne stranice kvadrata:
+    \textit{Indukcijski korak:} Dokazujemo, da znamo stranico razdeliti na $n$ enakih delov. Po navodilih za konstrukcijo iz trditve konstruiramo točko $P$ in pri tem označimo še točke $E, F$ in $G$, kot kaže slika~\ref{fig:razdelitev_stranice_n1}. Potem je dokaz posplošena različica tistega za trditev~\ref{trd:kriz_diag_3}:
     \begin{enumerate}
-        \item \textit{Analitičen pristop:} Naj bo oglišče $A$ koordinatno izhodišče in oglišče $B$ točka $(1, 0)$. Premica, ki je nosilka diagonale $AC$, ima tako enačbo $y = x$, nosilka diagonale $CE$ pa $y = -nx + n$. Točka $P$ je njuno presečišče in ima tako koordinate $(n/(n+1), n/(n+1))$. Torej je od desne stranice kvadrata res oddaljena za $1/(n+1)$.
-        \item \textit{Preko podobnih trikotnikov:} Označimo oglišča trikotnikov, kot kaže slika \textcolor{red}{SLIKA plus REFERENCA}. Trikotnik $\triangle AGP$ je enakokrak in njegova kraka označimo z $x$. Iz razmerij dolžin stranic podobnih trikotnikov $\triangle EFB$ in $\triangle PGB$ sledi
-        $$ \frac{|EF|}{|FB|} = \frac{|PG|}{|GB|} \Rightarrow \frac{1}{\frac{1}{n}} = \frac{x}{1 - x} \Rightarrow n - nx = x \Rightarrow x = \frac{n}{n+1}. $$
-        Točka $P$ je od desne stranice kvadrata res oddaljena za $x - 1 = 1/(n + 1)$.
+        \item \textit{Analitičen pristop:} Naj bo oglišče $A$ koordinatno izhodišče in oglišče $B$ točka $(1, 0)$. Premica, ki je nosilka diagonale $AC$, ima tako enačbo $y = x$, nosilka diagonale $CE$ pa $y = -(n-1)x + (n-1)$. Točka $P$ je njuno presečišče in ima tako koordinate $((n-1)/n, (n-1)/n)$. Torej je od desne stranice kvadrata res oddaljena za $1/n$.
+        \item \textit{Preko podobnih trikotnikov:} Trikotnik $\triangle AGP$ je enakokrak in naj bo $|AG| = |GP| = x$. Iz razmerij dolžin stranic podobnih trikotnikov $\triangle EFB$ in $\triangle PGB$ sledi
+        \begin{align*}
+            \frac{|EF|}{|FB|} &= \frac{|PG|}{|GB|}, \\
+            \frac{1}{\frac{1}{n-1}} &= \frac{x}{1 - x}, \\
+            x &= \frac{n-1}{n}.
+        \end{align*}
+        Točka $P$ je od desne stranice kvadrata res oddaljena za $1-x = 1/(n + 1)$.
     \end{enumerate}
-
 \end{dokaz}
 
 \begin{posledica}
@@ -335,10 +350,29 @@ Zgornji postopek lahko posplošimo na poljuben $n \in \N$. Kot smo videli v konk
 \end{posledica}
 
 \begin{dokaz}
-    Vzemimo neko daljico poljubne dolžine. Ker znamo konstruirati pravokotnice skozi točke in prenašati razdalje, lahko konstruiramo kvadrat, katereda zgornja stranica dana daljica \textcolor{red}{(spet kakšna slikca več korakov)}. Po zgornji trditvi jo znamo razdeliti v razmerju $(n-1) : 1$ za vsak $n \in \N$. Potem moramo njen daljši del razdeliti na $n-1$ skladnih delov. To storimo na enak način kot prej -- konstruiramo manjši kvadrat s to novo stranico in ponovimo postopek. Ustavimo se, ko na nekem koraku stranico kvadrata razdelimo v ramerju $1:1$. Takrat bo zgornja stranica oz. dana daljica razdeljena na $n$ skladnih delov.
+    Vzemimo neko daljico poljubne dolžine. Ker znamo konstruirati pravokotnice skozi točke in prenašati razdalje, lahko konstruiramo kvadrat, katereda zgornja stranica dana daljica. Po zgornji trditvi jo znamo razdeliti v razmerju $(n-1) : 1$ za vsak $n \in \N$. Potem moramo njen daljši del razdeliti na $n-1$ skladnih delov. To storimo na enak način kot prej -- konstruiramo manjši kvadrat s to novo stranico in ponovimo postopek. Ustavimo se, ko na nekem koraku stranico kvadrata razdelimo v razmerju $1:1$ (slika~\ref{fig:razdelitev_daljice_n1}). Takrat bo zgornja stranica oz. dana daljica razdeljena na $n$ skladnih delov.
 \end{dokaz}
 
-\subsubsection*{Metoda2}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth]{images/razdelitev_daljice_n1.png}
+    \caption[Razdelitev daljice na enake dele]{Razdelitev poljubne stranice (označena z rdečo) na poljubno število skladnih delov.}
+    \label{fig:razdelitev_daljice_n1}
+\end{figure}
+
+\subsubsection*{Metoda po posplošenem prvem Hagovem izreku}
+\label{podpogl:razdelitev_hag1_spl}
+
+Spomnimo se prvega Hagovega izreka, kjer nam prepogib oglišča $B$ na središče daljice $CD$ v točki $H$ na daljici $AD$ povzroči njeno razdelitev v razmerju $2:1$. Nato smo izrek posplošili in namesto središča zgornje stranice izbrali poljubno točko, ki je za $x$ odmaknjena od oglišča $C$ (slika~\ref{fig:hagov_izrek1_splosen}). Pri tem smo med drugim izračunali razdaljo $y_2 = |HA| = 2x/(1+x)$.
+
+Razveseli nas, da pri $x = 1/n$ dobimo ravno $y_2 = 2/(n+1)$, kar je dvakratnik števila $1/(n+1)$. Če torej znamo zgornjo stranico razdeliti v razmerju $(n-1):1$, nam središče daljice $|HA|$ levo stranico razdeli v razmerju $n:1$. Na sliki~\ref{fig:razdelitev_daljice_h1} je prikaz za $n = 2, 3, 4$ in splošen $n$ (pri tem se sicer na zgornjo stranico prepogne spodnje levo oglišče, zato je to zrcalna različica slike, kot smo je vajeni). Po indukciji (prvi Hagov izrek je baza indukcije pri $n=2$) je to še ena metoda za razdelitev daljice na poljubno število skladn95ih delov preko prepogibanja kvadratnega lista papirja.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{images/razdelitev_daljice_h1.png}
+    \caption[Razdelitev na enake dele (prvi Hagov izrek)]{Konstrukcije razmerij po posplošenem prvem Hagovem izreku.}
+    \label{fig:razdelitev_daljice_h1}
+\end{figure}
 
 \subsubsection*{Metoda3}
 
