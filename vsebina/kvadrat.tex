@@ -1,34 +1,112 @@
-\section{Prepogibanje geometrijskih likov}
+\section{Prepogibanje lista različnih geometrijskih oblik}
 \label{pogl:prepog_geom_likov}
 
 V tem poglavju bomo v roke vzeli liste papirja različnih geometrijskih oblik (včasih pa le navaden list papirja) in raziskovali, kaj lahko z njegovim prepogibanjem dobimo. Za uvod si bomo pogledali nekaj najosnovnejših konstrukcij, ki jih lahko učitelj matematike uporabi tudi pri pouku v osnovni šoli, nato pa se bomo vrnili nazaj v malo bolj zanimive konstrukcije, kot so konstrukcija enakostraničnega trikotnika in števila $\sqrt{r}$ za poljuben $r \in \mathcal{O}$. Nato si bomo pogledali vse tri Hagove izreke o razmerjih, na katere specifični pregibi kvadratnega lista papirja razdelijo njegove stranicE, nato pa to posplošili na iskanje metod za razdelitev daljice na poljubno število skladnih delov. Na koncu pa bomo končno preko več različnih konstrukcij rešili dva starogrška problema, zaradi katerih smo se sploh začeli ukvarjati s temo origamija.
 
 \subsection{Nekaj kratkih in zanimivih konstrukcij za uvod}
 
-\subsubsection*{Konstrukcija enakostraničnega trikotnika}
+\subsubsection*{Ponazoritev lastnosti geometrijskih likov z origamijem}
 
-- kot 60° (smo že pri algebri)
-- enakostranični trikotnik (smo že pri algebri, ma lahko še enkrat, pa več načinov)
+Johnson v~\cite{johnson1957} opisuje, kako lahko s prepogibanjem lista papirja v obliki trikotnika, štirikotnika in kroga pokažemo določene lastnosti geometrijskih likov. Opisov, ki jih spremljajo nazorne skice konstrukcij, ne dokazuje, ampak rešitev nastavi z vprašanji, na katera mora bralec sam pri sebi odgovoriti. Učitelji so povabljeni, da se pri pouku večkrat poslužujejo teh pripomočkov, saj bo to za učence zanimivo, hkrati pa zelo poučno. Pri tem naj se sami odločijo, na kakšen način bodo uporabili prepogibanje papirja -- ali kot že podana navodila iz knjige, iz katerih morajo učenci sami ugotoviti rezultat ali kot iskanje konstrukcije, ki dokaže želeno lastnost ipd. Sedaj bomo našteli bistvene konstrukcije, ki jih navaja avtor, večinoma pa bo lažji premislek, zakaj delujejo, prepuščen bralcu.
 
-\subsubsection*{Konstrukcija števila $\sqrt{r}$}
-
-Vzemimo $r \in \Q^+$ in si poglejmo naslednjo konstrukcijo (vzeto iz~\cite[str.\ 58]{hull2013}):
-Imejmo točko $A (0, 1) $ in premico $y = -1$. Na ordinatni osi označimo točko $B (0, -r/4)$ in z operacijo~\ref{op:O6} skoznjo naredimo pregib, ki točko $A$ položi na premico $y = -1$. Njena zrcalna slika je $A' (t, 0) $ za nek $t \in \R$ (slika~\ref{fig:konstrukcija_korena}).
+Avtor začne z osnovami -- ki jih že poznamo -- kot so pregibi skozi točko, pravokotnica na premico (skozi dano točko, ki leži na njej ali ne), simetrala daljice, simetrala kota in vzporednica premici. Z zložitvijo trikotnika v pravokotnik na način, kot kaže slika~\ref{fig:trikotnik_vsota_kotov}, pokaže, da je vsota notranjih kotov trikotnika res $180^\circ$. Iz te konstrukcije tudi sledi formula za ploščino trikotnika, saj je le-ta dvakrat večja od ploščine nastalega pravokotnika, ki ima za stranici polovico osnovnice trikotnika in polovico njegove višine. Prav tako lahko tu vidimo, da je srednjica trikotnika (pregib vrha trikotnika na sliki ~\ref{fig:trikotnik_vsota_kotov} levo) simetrala njegove višine in pol krajša od njegove osnovnice.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/kvadratni_koren.png}
-    \caption[Konstrukcija korena]{Konstrukcija števila $\sqrt{r}$ za poljuben $r \in \Q^{+}$.}
-    \label{fig:konstrukcija_korena}
+    \includegraphics[width=0.8\textwidth]{images/osnovnosolski_prikazi/trikotnik_vsota_kotov.png}
+    \caption[Vsota notranjih kotov trikotnika]{Pregib trikotnika, ki njegove notranje kote zloži skupaj v iztegnjeni kot.}
+    \label{fig:trikotnik_vsota_kotov}
 \end{figure}
 
-Pregib po konstrukciji poteka skozi točko $B$ in razpolovišče daljice $AA'$, torej je njegov koeficient $k_B = \frac{r}{2t}$ (izpeljavo prepuščamo bralcu). Ker je pregib simetrala daljice $AA'$, njena nosilka pa ima koeficient $k_A = - \frac{2}{t}$, dobimo
-\begin{align*}
-    k_B &= - \frac{1}{k_A},\\
-    \frac{r}{2t} &= \frac{t}{2},\\
-    r &= t^2 \text{ oz. } t = \sqrt{r}.
-\end{align*}
-Na koncu le še prepognemo pravokotnico na abscisno os skozi točko $A'$ in tako dobimo točko $(\sqrt{r}, 0)$. Torej smo konstruirali število $\sqrt{r}$ za poljuben $r \in \Q^{+}$.
+Nadalje z določitvijo središča hipotenuze pravokotnega trikotnika bralca povabi, da se s prepogibi prepriča, da nastala točka osnovni trikotnik razdeli na dva enakokraka trikotnika (slika~\ref{fig:trikotnik_vec_lastnosti} levo). Prav tako se lahko prepriča, da se višine trikotnika, njegove težiščnice, simetrale stranic ter simetrale kotov sekajo v isti točki (seveda vsaka skupina daljic zase; na sliki~\ref{fig:trikotnik_vec_lastnosti} so prikazani vsi primeri razen za simetralo kotov).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/osnovnosolski_prikazi/vec_lastnosti1.png}
+    \caption[Pregibi kot dokaz lastnosti trikotnika]{Prikaz še nekaj lastnosti trikotnika.}
+    \label{fig:trikotnik_vec_lastnosti}
+\end{figure}
+
+Če odložimo trikotnik in v roke vzamemo paralelogram, preko prepogib njegovih sosednjih stranic druge na drugo vidimo, da njegove diagonale v splošnem ne razpolavljajo notranjih kotov (slika~\ref{fig:par_krog_vec_lastnosti} levo). Slednje velja le za romb, za katerega poleg tega lahko še takoj s pregibom po diagonalah pokažemo, da sta pravokotni druga na drugo.
+
+Nato se avtor posveti krogu. Vsak prepogib, ki prekrije njegove robove, ga očitno razdeli na pol in je njegov premer. Dva taka, a različna prepogiba določata središče kroga. Dobi se ga tudi tako, da prepognemo dve različni tetivi in skozi vsako izmed njiju še njeno simetralo, ki se sekata v središčni točki (slika~\ref{fig:par_krog_vec_lastnosti} na sredi). Prav tako se dva različna premera in simetrala poljubne tetive sekajo v isti točki. Avtor ravnokar naštetega ne opiše tako, temveč poda navodila za konstrukcijo pregibov in bralca sprašuje, kaj nam končna konstrukcija da. Bralec šele po opravljenih prepogibih vidi, da gre za običajne evklidske konstrukcije. Razdelek se konča še s ponazoritvijo Talesovega izreka (slika~\ref{fig:par_krog_vec_lastnosti} desno) in kosntrukcijo tangente na krožnico.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/osnovnosolski_prikazi/vec_lastnosti2.png}
+    \caption[Pregibi kot dokaz lastnosti paralelograma in kroga]{Prikaz nekaj lastnosti paralelograma in kroga.}
+    \label{fig:par_krog_vec_lastnosti}
+\end{figure}
+
+Nadalje lahko s prepogibanjem pravokotnika s stranicama $X$ in $X+Y$, kjer krajšo stranico prepognemo na daljšo, ponazorimo odštevanje (slika~\ref{fig:pravok_racunanje} levo). Če nato prepognemo še drugi vogal, dobimo štiri manjše pravokotnike, iz česar lahko bralec sam dokaže formulo $x^2-y^2 = (x-y)(x+y)$ (slika~\ref{fig:pravok_racunanje} desno).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/osnovnosolski_prikazi/racunanje.png}
+    \caption[Pregibi kot računanje]{Prikaz odštevanja in dokaz formule $x^2-y^2 = (x-y)(x+y)$ z označenim vrstnim redom prepogibov.}
+    \label{fig:pravok_racunanje}
+\end{figure}
+
+Trije nevzporedni pregibi, ki se ne sekajo v isti točki, nam na papirju konstruirajo trikotnik. S štirimi pravokotnimi prepogibi dobimo pravokotnik, če njegovo krajšo stranico prepognemo na daljšo, pa še kvadrat (kar smo že storili pri konstrukciji v prejšnjem odstavku). V slednjem lahko z določenimi prepogibi pokažemo, da se diagonali razpolavljata in sta pravokotni druga na drugo, in če oglišča prepognemo v presečišče diagonal, dobimo nov kvadrat s polovično ploščino originalnega.
+
+Konstrukcije poljubnega trikotnika, pravokotnika in kvadrata so zelo enostavne. Malo več premisleka pa je potrebnega za konstrukcije pravilnih $n$-kotnikov. Johnson se v nadaljevanju knjige posveti še konstrukciji $n$-kotnikov preko večkratnega zvijanja traku, simetriji, konstrukciji tangent na stožnico (kar bomo obravnavali v poglavju~\ref{pogl:stoznice}), tridimenzionalnim konstrukcijam (npr.\ kocke) in še
+
+\subsubsection*{Konstrukcija enakostraničnega trikotnika, šestkotnika in osemkotnika}
+
+\textcolor{red}{dej samo teve in potem za kej več referiraj poglavje o n-kotnikih}
+
+Kvadratni list papirja po višini prepognemo na pol in nanj položimo spodnje desno oglišče $A$ kvadrata, da pregib poteka skozi spodnje levo oglišče $B$ (slika~\ref{fig:trik_enak_basic}). Sliko oglišča $A$ označimo s točko $P$. Ker je po konstrukciji $|AB| = |PB|$ in je vertikalen prepogib simetrala spodnje stranice kvadrata, je trikotnik $\triangle ABP$ enakostraničen.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/n-kotniki/trik_enak_basic.png}
+    \caption[Konstrukcija enakostraničnega trikotnika (način $1$)]{Konstrukcija enakostraničnega trikotnika. Vzeto in predelano iz~\cite[str. 9]{hull2013}.}
+    \label{fig:trik_enak_basic}
+\end{figure}
+
+Sedaj, ko znamo kosntruirati enakostranične trikotnike, lahko kosntruiramo tudi pravilni šestkotnik -- kvadrat s simetralama stranic razdelimo na štiri dele, nato pa v vsakem od štirih manjših kvadratov po zgornjem postopku konstruiramo enakostranični trikotnik (oz. le eno njegovo stranico) z osnovnico na horizontalni simetrali (prve tri figure na sliki~\ref{fig:6kotnik_basic}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/n-kotniki/6kotnik_basic.png}
+    \caption[Konstrukcija pravilnega šestkotnika (način $1$) in $2$]{Konstrukcija pravilnega šestkotnika na dva načina.}
+    \label{fig:6kotnik_basic}
+\end{figure}
+
+Še lažje pravilni šestkotnik konstruiramo preko enakostraničnega trikotnika, ki mu vrhove prepognemo v središče (slika~\ref{fig:6kotnik_basic} desno). Ker središče deli višine v razmerju $2:1$, pregibi stranice razdelijo na tri skladne dele, sam trikotnik pa na tri manjše enakostranične trikotnike in šestkotnik na sredi.
+
+V roke vzemimo nov kvadraten list papirja in konstruirajmo najprej središča njegovih stranic. S pregibi skozi sosednji središči dobimo manjši kvadrat. Sedaj razpolovimo še vsak kot, ki ga tvorita po ena stranica večjega in ena stranica manjšega kvadrata. Presečišča simetral dveh sosednjih kotov nam data še preostale štiri oglišča pravilnega osemkotnika (slika~\ref{fig:8kotnik_basic}). Bralec naj sam dokaže, da je to res.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/n-kotniki/8kotnik_basic.png}
+    \caption[Konstrukcija pravilnega osemkotnika]{Konstrukcija pravilnega osemkotnika.}
+    \label{fig:8kotnik_basic}
+\end{figure}
+
+\textcolor{red}{S razpolavljanjem ali trisekcijo kotov ob središču kvadrata ali trikotnika -- koliko ostalih n-kotnikov lahko konstruiramo? Če je tega preveč, dej tudi to v novo poglavje ... Začneš s tem, potem pa greš na uni izrek, za koliko oglišč lahko konstruiraš z evklidskim orodjem in pol še koliko z origamijem.}
+
+Vrnimo se nazaj na enakostranični trikotnik v danem kvadratnemu listu papirja. Ali znamo konstruirati največji tak trikotnik (in kako)? Recimo, da obstaja tak trikotnik. Najprej premislimo, da mora vsaj eno njegovo oglišče ležati v oglišču kvadrata. Če to ne drži, se trikotnik ne dotika ene stranice kvadrata -- ker ima tri stranice, kvadrat pa štiri -- recimo spodnje. Potem se z ostalimi tremi oglišči dotika preostalih treh stranic kvadrata, sicer to ne bi bil največji trikotnik -- lahko bi ga še povečali. Potisnimo sedaj trikotnik navzdol po kvadratu, dokler se najnižje oglišče na eni od pokončnih stranic kvadrata ne dotakne njegove spodnje stranice -- kar se zgodi ravno v oglišču kvadrata. Zaradi simetrije brez škode privzemimo, da je to spodnje levo oglišče.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.25\textwidth]{images/n-kotniki/trik_enak_max1.png}
+    \caption[Lega največjega enakostraničnega trikotnika znotraj kvadrata]{Lega največjega enakostraničnega trikotnika znotraj kvadrata.}
+    \label{fig:trik_enak_max1}
+\end{figure}
+
+Predpostavimo, da ima kvadrat stranico dolžine $1$ in naj bo $\theta$ kot med spodnjima stranicama kvadrata in trikotnika, kot kaže slika~\ref{fig:trik_enak_max1}. Naj bo $x$ dolžina stranice trikotnika. Iščemo tak kot $\theta$, da bo ploščina trikotnika največja. Ker je notranji kot trikotnika velik $60^\circ$, je kot $\theta$ zaradi simetrije omejen z $0 \leq \theta \leq 15^\circ$. Ob upoštevanju $x = 1/ \cos \theta$ je njegova ploščina
+$$ P = \frac{\sqrt{3}}{4} x^2 = \frac{\sqrt{3}}{4} \cdot \frac{1}{\cos^2 \theta}. $$
+Funckijo bi lahko odvajali in preko iskanja njenega maksimuma izrazili kot, Hull pa v~\cite[str.\ 11]{hull2013} predlaga enostavnejšo rešitev. Ker je $\cos x$ na intervalu $[0^\circ, 15^\circ]$ oz.\ $[0, \pi/12]$ pozitivna in padajoča, je njena obratna vrednost naraščajoča, zato je tudi $1/\cos^2\theta$ naraščajoča funkcija. Ploščina $P(\theta)$ torej narašča in maksimum doseže pri $\theta = 15^\circ$.
+
+Trikotnik je simetričen glede na diagonalo kvadrata. Na sliki~\ref{fig:trik_enak_max2} (levo) je prikazana konstrukcija kota $15^\circ$ -- spodnje belo območje enakostraničen trikotnik in vsak od pregibov je simetrala kota $30^\circ$. Če opravimo taka dva pregiba na sosednjih stranicah, kot kaže slika~\ref{fig:trik_enak_max2} na sredi, tako dobimo iskani največji enakostranični trikotnik v danem kvadratu.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/n-kotniki/trik_enak_max2.png}
+    \caption[Konstrukcija največjega enakostraničnega trikotnika znotraj kvadrata]{Konstrukcija največjega enakostraničnega trikotnika znotraj kvadrata.}
+    \label{fig:trik_enak_max2}
+\end{figure}
 
 \subsection{Hagovi izreki za prepogibanje kvadrata}
 
@@ -286,6 +364,27 @@ Z evklidskimi konstrukcijami se je seveda pojavilo konstruktibilnih ugank -- vpr
 \end{itemize}
 
 Z znanjem, ki sta ga znanosti posredovala Abel in Galois, se da pokazati, da ti trije problemi z evklidskim orodjem niso rešljivi. V nalogi smo do sedaj že večkrat omenili, da pa obstajajo origami konstrukcije (celo več metod za isti problem!), ki nam konstruirajo kubični koren origami števila ter razdelijo kot na tri skladne dele. Vse metode, ki bodo sedaj naštete, zahtevajo uporabo Belochinega pregiba (operacije~\ref{op:O7}), kar je logično, saj so vse ostale origami operacije dovolj za vse evklidske konstrukcije. Žal pa tudi tu ostajamo nemočni glede konstrukcije števila $\sqrt{\pi}$, saj je transcedentno.
+
+\subsubsection*{Konstrukcija števila $\sqrt{r}$}
+
+Preden si pogledamo konstrukcijo kubičnega korena, vzemimo origami število $r \in \mathcal{O}$ in kosntruirajmo njegov kvadratni koren (postopek je vzet iz~\cite[str.\ 58]{hull2013}).
+
+Imejmo točko $A (0, 1) $ in premico $y = -1$. Na ordinatni osi označimo točko $B (0, -r/4)$ in z operacijo~\ref{op:O6} skoznjo naredimo pregib, ki točko $A$ položi na premico $y = -1$. Njena zrcalna slika je $A' (t, 0) $ za nek $t \in \R$ (slika~\ref{fig:konstrukcija_korena}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/kvadratni_koren.png}
+    \caption[Konstrukcija korena]{Konstrukcija števila $\sqrt{r}$ za poljuben $r \in \Q^{+}$.}
+    \label{fig:konstrukcija_korena}
+\end{figure}
+
+Pregib po konstrukciji poteka skozi točko $B$ in razpolovišče daljice $AA'$, torej je njegov koeficient $k_B = \frac{r}{2t}$ (izpeljavo prepuščamo bralcu). Ker je pregib simetrala daljice $AA'$, njena nosilka pa ima koeficient $k_A = - \frac{2}{t}$, dobimo
+\begin{align*}
+    k_B &= - \frac{1}{k_A},\\
+    \frac{r}{2t} &= \frac{t}{2},\\
+    r &= t^2 \text{ oz. } t = \sqrt{r}.
+\end{align*}
+Na koncu le še prepognemo pravokotnico na abscisno os skozi točko $A'$ in tako dobimo točko $(\sqrt{r}, 0)$. Torej smo konstruirali število $\sqrt{r}$ za poljuben $r \in \mathcal{O}$.
 
 \subsubsection{Podvojitev kocke}
 \label{podpogl:podvojitev_kocke}
