@@ -114,10 +114,6 @@ S prepogibanjem kvadratnega lista papirja se je veliko ukvarjal Kazuo Haga, sice
 
 Da si olajšamo računanje, predpostavimo, da ima kvadrat, ki predstavlja naš list papirja, stranico dolžine $1$. Njegova oglišča označimo s črkami $A, B, C$ in $D$, začenši v zgornjem desnem oglišču in sledečimi v pozitivni smeri, torej nasprotni smeri urinega kazalca.
 
-\textcolor{red}{Konstrukcija poljubnega $a/b \in \Q$~\cite[str.\ 20--21]{lang2013}}
-
-\textcolor{red}{Hull2013, activity 11 (str. 103--)}
-
 \subsubsection{Prvi Hagov izrek}
 
 \begin{izrek}[Prvi Hagov izrek]
@@ -188,7 +184,7 @@ $$y_4 = |CJ| = 1 - (y_1 + x) = \frac{(1-x)^2}{2} \; \text{ in } \; y_5 = 1 - y_2
 Na koncu še s ponovno uporabo Pitagorovega izreka izračunamo
 $$ y_6 = \sqrt{|GJ|^2 + |FJ|^2} = \sqrt{1 + x^2}.$$
 
-Splošne vrednosti dolžin $y_i$ mogoče niso najlepše, vendar pri marsikateri izbiri števila $x \in (0,1)$ dobimo lepe številke. Najbolj so zanimiva recipročna števila naravnih števil. Vemo že, da pri izbiri $x = 1/2$ lahko dobimo števila $1/3, 1/6, 1/8$, pri izbiri $x = 1/4$ in $x = 3/4$ dobimo še $2/5$ (in iz tega z razpolovitvijo $1/5$) in $1/7$. Računanje prepuščamo bralcu, se pa na tej točki lahko vprašamo, ali za vsak $n \in \N$ obstaja primeren $x$, da lahko preko neke dolžine $y_i$ ali $1-y_1$ in preko postopkov za konstrukcijo že znanih razmerij konstruiramo dolžino $1/n$. Odgovor je pritrdilen, enostaven razmislek pa sledi v razdelku~\ref{podpogl:razdelitev_hag1_spl}.
+Splošne vrednosti dolžin $y_i$ mogoče niso najlepše, vendar pri marsikateri izbiri števila $x \in (0,1)$ dobimo lepe številke. Najbolj so zanimiva recipročna števila naravnih števil. Vemo že, da pri izbiri $x = 1/2$ lahko dobimo števila $1/3, 1/6, 1/8$, pri izbiri $x = 1/4$ in $x = 3/4$ dobimo še $2/5$ (in iz tega z razpolovitvijo $1/5$) in $1/7$. Računanje prepuščamo bralcu, se pa na tej točki lahko vprašamo, ali za vsak $n \in \N$ obstaja primeren $x$, da lahko preko neke dolžine $y_i$ ali $1-y_i$ in preko postopkov za konstrukcijo že znanih razmerij konstruiramo dolžino $1/n$. Odgovor je pritrdilen, enostaven razmislek pa sledi v razdelku~\ref{podpogl:razdelitev_hag1_spl}.
 
 \subsubsection{Drugi Hagov izrek}
 
@@ -259,18 +255,29 @@ Kot pri prejšnjih dveh izrekih bi lahko poračunali še preostale dolžine dalj
     \label{fig:hagov_izrek3_st}
 \end{figure}
 
+Pri vseh treh Hagovih izrekih gre torej za prepogib, ki ali gre skozi središče zgornje stranice $AD$ ali stranico $CD$ kvadrata $ABCD$ položi nanj. V vsakem primeru nam konstrukcija poda točko na levi stranici $AB$, ki jo deli v razmerju $2:1$, torej sedaj zmoremo (na več načinov) poljubno daljico razdeliti na tri skladne dele. Če popustimo pogoj, da uporabljamo središče stranice $AD$, lahko z izbiro poljubne točke na tej stranici kvadrata izreke posplošimo in dobimo več zanimivih razmerij, kot se izkaže, celo razmerje $n:1$ za poljuben $n \in \N$.
 
-\textcolor{red}{Kakšen zaključek teh treh izrekov? Skupno -- vsi trije uporabljajo središče $E$ zgornje stranice $AD$. Prvi izrek nanj položi oglišče $C$, drugi izrek naredi pregib skoznjo in oglišče $C$, tretji pa nanjo položi desno stranico tako, da $C$ leži na levi stranici. Kej skupnega, bi se dalo še kakšen drug pregib blablabla}
+Avtor Haga je svoje izreke preizkusil tudi na \emph{srebrnih pravokotnikih}\footnote{To so pravokotniki, ki imajo stranice v razmerju $1 : \sqrt{2}$. Lastnost tega razmerja je, da če tak pravokotnik prepoloviš po daljši stranici, dobiš nov, za pol manjši srebrni pravokotnik. Primer takega pravokotnika je kar A4 list papirja -- prepričaš se lahko tako, da krajšo stranico prepogneš na daljšo, da dobiš diagonalo kvadrata, in preveriš, da je ta pregib enako dolg kot daljša stranica. To je enak princip kot pri zlatih pravokotnikih, kjer je razmerje stranic v zlatem rezu.} in tako prišel do novih načinov razdelitev na 9, 14, 16 in še več različnih delov. Tu se s tem ne bomo ukvarjali, zato naj si bralec, ki ga zanima več, to pogleda v~\cite[str.\ 21--32]{haga2008}.
 
-\textcolor{red}{Lahko omeniš še srebrne pravokotnike (npr.\ A4 list papirja, stranici sta v razmerju $1 : \sqrt{2}$ in vsakič, ko daš pravokotnik po kratki stranici na pol, dobiš spet srebrn pravokotnik; pač isti princip kot pri zlatem pravokotniku za zlati rez), pa da se da tudi na njih naredit te Hagove izreke. Katere razdelitve dobiš? Na 9, 14, 16 delov itd., poglej vir. Ampak to nej gledajo v~\cite[str.\ 21--32]{haga2008}.}
-
-
-
-\subsection{Razdelitev daljice na $n$ enakih delov}
+\subsection{Razdelitev daljice na $n$ skladnih delov}
 
 Stranico kvadrata želimo razdeliti na $n$ enakih delov, kjer je $n \in \N$ poljuben. Za $n = 2^t$, kjer je $t \in \N_0$, je to čisto enostavno, saj samo prepolavljamo razdalje med pregibi, dokler ne dosežemo cilja. Če je $n$ sod, vendar ni potenca $2$, torej $n = 2^t(2m + 1)$, kjer sta $t, m \in \N$, stranico najprej razdelimo na $2^t$ delov, nato pa moramo vsakega izmed njih razdeliti na $2m + 1$ (liho število) delov. Izziv tega problema je torej v razdelitvi daljice na liho število delov. Ko bomo zo zmogli, jo bomo znali razdeliti na $n$ delov za vsak $n \in \N$.
 
-V prejšnjem razdelku so nam Hagovi izreki podali razdelitev stranice kvadrata na tri, pet, sedem in devet delov. Vendar iščemo metodo, ki nam stranico razdeli na $n$ delov za splošen lih $n \in \N$. Spomnimo se, da smo en tak postopek že spoznali -- v dokazu izreka~\ref{izr:podpolje} smo za poljuben $a \in \R$ znali konstruirati razdaljo $1/a$, kar bi lahko uporabili za razdelitev neke daljice na $a$ enakih delov -- konstruirano razdaljo $1/a$ bi $a$-krat prenesli naprej. Načinov reševanja tega problema pa se je skozi zadnja desetletja oblikovalo še veliko več; tu si bomo pogledali še \textcolor{red}{koliko?} metode.
+V prejšnjem razdelku so nam Hagovi izreki podali razdelitev stranice kvadrata na tri, pet, sedem in devet delov. Vendar iščemo metodo, ki nam stranico razdeli na $n$ delov za splošen lih $n \in \N$. Spomnimo se, da smo en tak postopek že spoznali -- v dokazu izreka~\ref{izr:podpolje} smo za poljuben $a \in \R$ znali konstruirati razdaljo $1/a$, kar bi lahko uporabili za razdelitev neke daljice na $a$ enakih delov -- konstruirano razdaljo $1/a$ bi $a$-krat prenesli naprej. Načinov reševanja tega problema pa se je skozi zadnja desetletja oblikovalo še veliko več; tu bomo spoznali še dve metodi.
+
+\subsubsection*{Metoda po posplošenem prvem Hagovem izreku}
+\label{podpogl:razdelitev_hag1_spl}
+
+Spomnimo se prvega Hagovega izreka, kjer nam prepogib oglišča $B$ na središče daljice $AD$ v točki $H$ na daljici $AB$ povzroči njeno razdelitev v razmerju $2:1$. Nato smo izrek posplošili in namesto središča zgornje stranice izbrali poljubno točko, ki je za $x$ odmaknjena od oglišča $D$ (slika~\ref{fig:hagov_izrek1_splosen}). Pri tem smo med drugim izračunali razdaljo $y_2 = |HA| = 2x/(1+x)$.
+
+Razveseli nas, da pri $x = 1/n$ dobimo ravno $y_2 = 2/(n+1)$, kar je dvakratnik števila $1/(n+1)$. Če torej znamo zgornjo stranico razdeliti v razmerju $(n-1):1$, nam središče daljice $HA$ levo stranico razdeli v razmerju $n:1$. Na sliki~\ref{fig:razdelitev_daljice_h1} je prikaz za $n = 2, 3, 4$ in splošen $n$ (pri tem se sicer na zgornjo stranico prepogne spodnje levo oglišče, zato je to zrcalna različica slike, kot smo je vajeni). Po indukciji (prvi Hagov izrek je baza indukcije pri $n=2$) je to še ena metoda za razdelitev daljice na poljubno število skladnih delov preko prepogibanja kvadratnega lista papirja.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{images/razdelitev_daljice_h1.png}
+    \caption[Razdelitev na enake dele (prvi Hagov izrek)]{Konstrukcije razmerij po posplošenem prvem Hagovem izreku.}
+    \label{fig:razdelitev_daljice_h1}
+\end{figure}
 
 \subsubsection*{Metoda križajočih se diagonal}
 
@@ -351,40 +358,90 @@ Zgornji postopek lahko posplošimo na poljuben $n \in \N$. Kot smo videli v konk
 
 \begin{dokaz}
     Vzemimo neko daljico poljubne dolžine. Ker znamo konstruirati pravokotnice skozi točke in prenašati razdalje, lahko konstruiramo kvadrat, katereda zgornja stranica dana daljica. Po zgornji trditvi jo znamo razdeliti v razmerju $(n-1) : 1$ za vsak $n \in \N$. Potem moramo njen daljši del razdeliti na $n-1$ skladnih delov. To storimo na enak način kot prej -- konstruiramo manjši kvadrat s to novo stranico in ponovimo postopek. Ustavimo se, ko na nekem koraku stranico kvadrata razdelimo v razmerju $1:1$ (slika~\ref{fig:razdelitev_daljice_n1}). Takrat bo zgornja stranica oz. dana daljica razdeljena na $n$ skladnih delov.
-\end{dokaz}
-
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.3\textwidth]{images/razdelitev_daljice_n1.png}
     \caption[Razdelitev daljice na enake dele]{Razdelitev poljubne stranice (označena z rdečo) na poljubno število skladnih delov.}
     \label{fig:razdelitev_daljice_n1}
 \end{figure}
+\end{dokaz}
 
-\subsubsection*{Metoda po posplošenem prvem Hagovem izreku}
-\label{podpogl:razdelitev_hag1_spl}
-
-Spomnimo se prvega Hagovega izreka, kjer nam prepogib oglišča $B$ na središče daljice $CD$ v točki $H$ na daljici $AD$ povzroči njeno razdelitev v razmerju $2:1$. Nato smo izrek posplošili in namesto središča zgornje stranice izbrali poljubno točko, ki je za $x$ odmaknjena od oglišča $C$ (slika~\ref{fig:hagov_izrek1_splosen}). Pri tem smo med drugim izračunali razdaljo $y_2 = |HA| = 2x/(1+x)$.
-
-Razveseli nas, da pri $x = 1/n$ dobimo ravno $y_2 = 2/(n+1)$, kar je dvakratnik števila $1/(n+1)$. Če torej znamo zgornjo stranico razdeliti v razmerju $(n-1):1$, nam središče daljice $|HA|$ levo stranico razdeli v razmerju $n:1$. Na sliki~\ref{fig:razdelitev_daljice_h1} je prikaz za $n = 2, 3, 4$ in splošen $n$ (pri tem se sicer na zgornjo stranico prepogne spodnje levo oglišče, zato je to zrcalna različica slike, kot smo je vajeni). Po indukciji (prvi Hagov izrek je baza indukcije pri $n=2$) je to še ena metoda za razdelitev daljice na poljubno število skladn95ih delov preko prepogibanja kvadratnega lista papirja.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\textwidth]{images/razdelitev_daljice_h1.png}
-    \caption[Razdelitev na enake dele (prvi Hagov izrek)]{Konstrukcije razmerij po posplošenem prvem Hagovem izreku.}
-    \label{fig:razdelitev_daljice_h1}
-\end{figure}
-
-\subsubsection*{Metoda3}
-
-\subsubsection*{Metoda4}
-
-\textcolor{red}{Več metod (vsaj tri?), Hull2013 (str.\ 36--40).}
-
-\textcolor{red}{Do zdaj smo imeli metode z razdelitvijo preko prepogibanja kvadratnega lista papirja. Za razdelitev preko pravokotnika pa glej~\cite[str.\ 107--134]{haga2008}.}
+Do zdaj smo imeli metode z razdelitvijo preko prepogibanja kvadratnega lista papirja. Za razdelitev preko pravokotnika je prav tako veliko že razvitih konstrukcij, ki nam njegovo stranico razdelijo na poljubno število skadnih delov. V tej nalogi se s tem ne bomo ukvarjali, bralec pa je povabljen, da si več ogleda v~\cite[str.\ 107--134]{haga2008}.
 
 \subsection{$X$-pregibi}
 
-\textcolor{red}{Glej~\cite[str.\ 33--44]{haga2008}}
+\textcolor{red}{dodaj v uvod tega poglavja}
+
+Poglejmo si še eno zanimivo lastnost, ki izhaja iz prepogibanja kvadrata po principu prvega Hagovega izreka. Njen odkritelj je prav taisti avtor Kazuo Haga (glej~\cite[str.\ 33--44]{haga2008}). Potek konstrukcije je sledeč (slika~\ref{fig:x-pregib_konstr}):
+\begin{enumerate}
+    \item Na zgornji stranici kvadrata izberemo poljubno točko.
+    \item Levo spodnje oglišče prepognemo na izbrano točko.
+    \item Papir razgrnemo in opazimo pregib.
+    \item Nato na izbrano točko prepognemo še desno spodnje oglišče.
+    \item Papir razgnemo in opazimo nov pregib.
+\end{enumerate}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{images/x-pregibi/konstrukcija.png}
+    \caption[Konstrukcija $X$-pregibov]{Potek konstrukcije $X$-pregibov. Vzeto in predelano iz~\cite[str.\ 34]{haga2008}.}
+    \label{fig:x-pregib_konstr}
+\end{figure}
+
+Par pregibov, ki smo ju dobili po opravljenem postopku, po videzu spominja na črko $X$, zato ju avtor imenuje kar \emph{$X$-pregiba}.
+
+Bralec je povabljen, da za več razliščnih točk na zgornji stranici kvadrata opravi pripadajoče $X$-pregibe. Nato pa naj kvadrat prepogne še na pol po vertikali. Mogoče ga bo presenetilo, da le-ta vedno poteka skozi presečišče $X$-pregibov!
+
+V resnici to ni težko dokazati. Uvedimo najprej oznake točk, kot kaže slika~\ref{fig:x-pregib_dokaz}. Pri tem je $E$ poljubna izbrana točka, gledamo pa trikotnik $\triangle BCE$.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{images/x-pregibi/dokaz_presecisca.png}
+    \caption[Dokaz presečišča $X$-pregibov]{Dokaz, da se $X$-pregiba in navpična simetrala kvadrata sekajo v isti točki. Vzeto iz~\cite[str.\ 38]{haga2008}.}
+    \label{fig:x-pregib_dokaz}
+\end{figure}
+Po konstrukciji je pregib $FG$ po konstrukciji simetrala njegove stranice $BE$, pregib $HI$ simetrala stranice $CE$ in pregib $KL$ simetrala stranice $BC$ in hkrati navpična simetrala kvadrata $ABCD$. Vemo, da se simetrale stranic trikotnika sekajo v skupni točki, torej smo s tem še matematično potrdili zgornjo opazko iz konstrukcije.
+
+Naj bo $J$ presečišče simetral stranic trikotnika $\triangle BCE$. Potem je to hkrati tudi središče njegove očrtane krožnice, kot je načrtana na sliki~\ref{fig:x-pregib_dokaz}. Posledično so seveda razdalje oglišč $B, C$ in $E$ do točke $J$ polmeri krožnice, torej so med seboj skladne.
+
+Bralec naj sedaj vzame vse svoje kvadratne liste papirja, na katere je konstruiral različne $X$-pregibe, in jih zloži drug na drugega. Opazka, da presečišča pregibov ležijo na isti premici, ni presenetljiva, saj smo ravnokar premislili, da vsako tako presečišče leži n anavpični simetrali kvadrata. Bolj je zanimiva opazka, da nobeno od teh presečišč ne leži v zgornji polovici kvadrata (slika~\ref{fig:x-pregib_primeri_skup}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{images/x-pregibi/primeri_skupaj.png}
+    \caption[Primeri $X$-pregibov]{Štirje primeri $X$-prepogibov in njihova unija. Vzeto in predelano iz~\cite[str.\ 36]{haga2008}.}
+    \label{fig:x-pregib_primeri_skup}
+\end{figure}
+
+Kvadrat lahko postavimo v koordinatni sistem z ogliščem $B$ v izhodišču in ogliščem $A$ v točki $(0,1)$. Če naj bo $E = (a, 1)$ poljubna točka na stranici $AD$. Ohranimo oznake točk s slike~\ref{fig:x-pregib_dokaz}. Premici, ki predstavljata $X$-pregiba $FG$ in $HI$, imata enačbi
+$$ y_{FG} = -ax + \frac{a^2}{2} + \frac{1}{2} \; \text{ in } \; y_{HI} = (1-a)x + \frac{a^2}{2}. $$
+Njuno presečišče je točka $J$, katere abscisa je $1/2$ po konstrukciji. Vstavimo to v eno izmed enačb premic in dobimo še njeno ordinato, ki je odvisna od $a$:
+$$ y_J(a) = \frac{1}{2} \left(a - \frac{1}{2}\right)^2 + \frac{3}{8}. $$
+Ker velja $a \in [0,1]$, je ordinata točke $J$ omejena z $3/8 \leq y_J \leq 1/2$. Na sliki~\ref{fig:x-pregib_visina_pres} je levo je prikazan graf funkcije $y_J(a)$, na desni pa primerjava ordinat presečišča $J$ glede na izbran $a$. Najnižja vrednost je dosežena pri $a = 1/2$, torej če za točko $E$ izberemo središče daljice $AD$, najvišja pa pri $a \in \{0, 1\}$, torej pri izbiri oglišč $A$ oziroma $D$.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/x-pregibi/visina_presecisca.png}
+    \caption[Višina presečišča $X$-pregibov]{Višina presečišča $X$-pregibov glede na absciso izbrane točke $E$.}
+    \label{fig:x-pregib_visina_pres}
+\end{figure}
+
+Tu še ni konec -- poglejmo si trikotnika $\triangle FHJ$ in $\triangle GIJ$ (slika~\ref{fig:x-pregib_dokaz_odsek}). Ker imata enak kot v vrhu $J$ in sta osnovnici vzporedni, sta podobna, ker pa točka $J$ razpolavlja pregiba $FG$ in $HI$, sta celo skladna, torej $|FH| = |GI|$. Ker sta kraka kotov $\angle HFJ$ in $\angle CBE$ paroma pravokotna, sta kota skladna. Na enak način se prepričamo še o skladnosti kotov $\angle GIJ$ in $\angle BCE$. Torej je trikotnik $\triangle BCE$ podoben trikotnikoma $\triangle FHJ$ in $\triangle GIJ$. Ker je v trikotniku $\triangle BCE$ njegova višina enako dolga kot osnovnica, to velja tudi za ostala trikotnika. Njuna višina je (ker točka $J$ leži na navpični simetrali kvadrata $ABCD$) enaka $1/2$, torej velja
+$$ |FH| = |GI| = \frac{1}{2}. $$
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{images/x-pregibi/dokaz_odseki.png}
+    \caption[Dokaz za dolžini odsekov $X$-pregibov]{Dokaz, da $X$-pregiba na vertikalnih stranicah kvadrata odrežeta enaka odseka. Vzeto iz~\cite[str.\ 41]{haga2008}.}
+    \label{fig:x-pregib_dokaz_odsek}
+\end{figure}
+
+Haga lastnosti $X$-pregibov raziskuje tudi na pravokotnikih. Izkaže se, da zanje veljajo enake lastnosti razen zadnje -- z daljšanjem daljše stranice pravokotnika se namreč (sicer še vedno skladni) daljici $FH$ in $GI$ vedno krajšata. Matematični premislek prepuščamo bralcu, skica pa se od kvadratne različice razlikuje le za malo (slika~\ref{fig:x-pregib_dokaz_pravokotnik}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{images/x-pregibi/dokaz_pravokotnik.png}
+    \caption[$X$-pregiboa v pravokotniku]{$X$-pregiba v pravokotniku. Vzeto iz~\cite[str.\ 44]{haga2008}.}
+    \label{fig:x-pregib_dokaz_pravokotnik}
+\end{figure}
 
 
 \subsection{Reševanje nerešljivih starogrških problemov}
