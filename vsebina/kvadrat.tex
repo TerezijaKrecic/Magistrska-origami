@@ -1,7 +1,7 @@
 \section{Prepogibanje lista različnih geometrijskih oblik}
 \label{pogl:prepog_geom_likov}
 
-V tem poglavju bomo v roke vzeli liste papirja različnih geometrijskih oblik (včasih pa le navaden list papirja) in raziskovali, kaj lahko z njegovim prepogibanjem dobimo. Za uvod si bomo pogledali nekaj najosnovnejših konstrukcij, ki jih lahko učitelj matematike uporabi tudi pri pouku v osnovni šoli, nato pa se bomo vrnili nazaj v malo bolj zanimive konstrukcije, kot so konstrukcija enakostraničnega trikotnika, šestkotnika in osemkotnika. Nato si bomo pogledali vse tri Hagove izreke o razmerjih, na katere specifični pregibi kvadratnega lista papirja razdelijo njegove stranice, nato pa to posplošili na iskanje metod za razdelitev daljice na poljubno število skladnih delov. Na koncu pa bomo po konstrukciji kvadratnega korena poljubnega origami števila preko več različnih postopkov končno rešili dva starogrška problema, zaradi katerih smo se sploh začeli ukvarjati s temo origamija.
+V tem poglavju bomo v roke vzeli liste papirja različnih geometrijskih oblik (včasih pa le navaden list papirja) in raziskovali, kaj lahko z njegovim prepogibanjem dobimo. Za uvod si bomo pogledali nekaj najosnovnejših konstrukcij, ki jih lahko učitelj matematike uporabi tudi pri pouku v osnovni šoli, nato pa se bomo vrnili nazaj v malo bolj zanimive konstrukcije, kot so konstrukcija enakostraničnega trikotnika, šestkotnika in osemkotnika. Nato si bomo pogledali vse tri Hagove izreke o razmerjih, na katere specifični pregibi kvadratnega lista papirja razdelijo njegove stranice, nato pa to posplošili na iskanje metod za razdelitev daljice na poljubno število skladnih delov. Na kratko bomo spoznali tudi t.\ i.\ $X$-pregibe. Nazadnje pa bomo po konstrukciji kvadratnega korena poljubnega origami števila preko več različnih postopkov končno rešili dva starogrška problema, zaradi katerih smo se sploh začeli ukvarjati s temo origamija.
 
 \subsection{Nekaj kratkih in zanimivih konstrukcij za uvod}
 
@@ -84,8 +84,6 @@ V roke vzemimo nov kvadraten list papirja in konstruirajmo najprej središča nj
     \label{fig:8kotnik_basic}
 \end{figure}
 
-\textcolor{red}{S razpolavljanjem ali trisekcijo kotov ob središču kvadrata ali trikotnika -- koliko ostalih n-kotnikov lahko konstruiramo? Če je tega preveč, dej tudi to v novo poglavje ... Začneš s tem, potem pa greš na uni izrek, za koliko oglišč lahko konstruiraš z evklidskim orodjem in pol še koliko z origamijem.}
-
 Vrnimo se nazaj na enakostranični trikotnik v danem kvadratnemu listu papirja. Ali znamo konstruirati največji tak trikotnik (in kako)? Recimo, da obstaja tak trikotnik. Najprej premislimo, da mora vsaj eno njegovo oglišče ležati v oglišču kvadrata. Če to ne drži, se trikotnik ne dotika ene stranice kvadrata -- ker ima tri stranice, kvadrat pa štiri -- recimo spodnje. Potem se z ostalimi tremi oglišči dotika preostalih treh stranic kvadrata, sicer to ne bi bil največji trikotnik -- lahko bi ga še povečali. Potisnimo sedaj trikotnik navzdol po kvadratu, dokler se najnižje oglišče na eni od pokončnih stranic kvadrata ne dotakne njegove spodnje stranice -- kar se zgodi ravno v oglišču kvadrata. Zaradi simetrije brez škode privzemimo, da je to spodnje levo oglišče.
 
 \begin{figure}[h]
@@ -107,6 +105,8 @@ Trikotnik je simetričen glede na diagonalo kvadrata. Na sliki~\ref{fig:trik_ena
     \caption[Konstrukcija največjega enakostraničnega trikotnika znotraj kvadrata]{Konstrukcija največjega enakostraničnega trikotnika znotraj kvadrata.}
     \label{fig:trik_enak_max2}
 \end{figure}
+
+\textcolor{red}{S razpolavljanjem ali trisekcijo kotov ob središču kvadrata ali trikotnika -- koliko ostalih n-kotnikov lahko konstruiramo? Če je tega preveč, dej tudi to v novo poglavje ... Začneš s tem, potem pa greš na uni izrek, za koliko oglišč lahko konstruiraš z evklidskim orodjem in pol še koliko z origamijem.}
 
 \subsection{Hagovi izreki za prepogibanje kvadrata}
 
@@ -370,8 +370,6 @@ Do zdaj smo imeli metode z razdelitvijo preko prepogibanja kvadratnega lista pap
 
 \subsection{$X$-pregibi}
 
-\textcolor{red}{dodaj v uvod tega poglavja}
-
 Poglejmo si še eno zanimivo lastnost, ki izhaja iz prepogibanja kvadrata po principu prvega Hagovega izreka. Njen odkritelj je prav taisti avtor Kazuo Haga (glej~\cite[str.\ 33--44]{haga2008}). Potek konstrukcije je sledeč (slika~\ref{fig:x-pregib_konstr}):
 \begin{enumerate}
     \item Na zgornji stranici kvadrata izberemo poljubno točko.
@@ -502,7 +500,7 @@ V istem viru Videla tudi navaja konstrukcijo s parabolami, ki za dano dolžino $
 Presečišči teh dveh parabol dobimo preko enakosti
 $$y = x^2 = y^4/a^2,$$
 kar nam da enačbo $y(a^2-y^3) = 0$ z rešitvama $y=0$ in $y = \sqrt[3]{a^2}$. Presečišči sta torej koordinatno izhodišče in točka $Q = (\sqrt[3]{a}, \sqrt[3]{a^2}) $. Njena abscisa je naša rešitev.
-\opomba{Čeprav je konstrukcija enostavna in logična, je praktično težje izvedena, saj z roko ne znamo natančno risati parabol. \textcolor{red}{mal lepše to napiši. Pa bodi ziher da se ne da. Pač elipso se da mehanično.}}
+\opomba{Čeprav je konstrukcija enostavna in logična, je izvedljiva le v teoriji, saj z roko ne znamo natančno risati parabol.}
 
 \subsubsection*{Martinova konstrukcija}
 

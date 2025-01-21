@@ -36,15 +36,16 @@ Prva knjiga nas še posebej zanima. V njej je Evklid najprej definiral osnovne p
 \end{postulat}
 
 \begin{definicija}
-    \emph{Evklidske konstrukcije} so konstrukcije točk, daljic, poltrakov, premic, krožnih lokov in krožnic, ki jih je mogoče konstruirati le z uporabo t.\ i.\ \emph{evklidskih orodij}:
+    \emph{Evklidske konstrukcije} so konstrukcije točk, daljic, poltrakov, premic, krožnih lokov in krožnic, ki jih je iz danih točk in razdalj mogoče konstruirati le z uporabo t.\ i.\ \emph{evklidskih orodij}:
     \begin{itemize}
         \item neoznačeno in neskončno dolgo ravnilo (angl.\ \emph{straightedge}) in
         \item šestilo, ki ne prenaša razdalj (ko ga dvignemo od podlage, se njegova kraka zložita skupaj).
     \end{itemize}
+    Pri tem nove točke definiramo kot presečišča dveh premic, dveh krožnic ali premice in krožnice.
 \end{definicija}
 
 \begin{opomba}
-    Ker lahko z neoznačenim ravnilom in šestilom konstruiramo le daljice, poltrake in premice skozi dani točki (postulata~\ref{post:P1} in~\ref{post:P2}) ter krožnice z danim središčem in polmerom (postulat~\ref{post:P3}), lahko nove točko konstruiramo le kot presečišče dveh premic, dveh krožnic ali premice in krožnice.
+    Evklidske konstrukcije tako upoštevajo postulata~\ref{post:P1} in~\ref{post:P2} (ker lahko z neoznačenim ravnilom in šestilom konstruiramo le daljice, poltrake in premice skozi dani točki) in~\ref{post:P3} (ker lahko s šestilom konstruiramo le krožnice z danim središčem in polmerom). Nove točke so z njihovimi presečišči dobro definirane.
 \end{opomba}
 
 \begin{opomba}
@@ -57,33 +58,35 @@ Izkaže se, da z evklidskim orodjem ne moremo konstruirati poljubno dolgih dalji
 \subsection{Origami konstrukcije}
 \label{origami_konstrukcije}
 
-V nalogi se bomo omejili le na prepogibanje v ravnini in se z trodimenzionalni modeli ne ukvarjamo. Bralec je ob branju povabljen, da opisane konstrukcije praktično preizkusi tudi sam. Pri izbiri papirja je priporočljiv rahlo prosojen papir, skozi katerega se vidijo morebitne označbe točk in premic s svinčnikom (npr.\ navaden kuhinjski papir za peko).
+V nalogi se bomo omejili le na prepogibanje v ravnini in se z trodimenzionalni modeli ne bomo ukvarjali. Bralec je ob branju povabljen, da opisane konstrukcije v praksi preizkusi tudi sam. Pri izbiri papirja je priporočljiv rahlo prosojen papir, skozi katerega se vidijo morebitne označbe točk in premic s svinčnikom (npr.\ navaden kuhinjski papir za peko).
 
-Bistvo origamija je, da prepogibamo list papirja, ki nam služi kot model evklidske ravnine, vendar si moramo določiti nekaj pravil:
+\subsubsection{Pravila origami konstrukcij}
+\label{podpogl:origami_pravila}
+
+Bistvo origamija je, da prepogibamo list papirja. Zato je tudi naravno, da ga vzamemo za model evklidske ravnine. V njej si za modele premic vzamemo \emph{ravne} pregibe, modeli točk pa naj bodo presečišča premic, t.\ j.\ \emph{presečišča pregibov}. Določimo še nekaj pravil:
 \begin{itemize}
-    \item za modele premic vzamemo \emph{ravne} pregibe, modeli točk pa naj bodo presečišča premic, t.\ j.\ \emph{presečišča pregibov},
     \item pregibe opravljamo \emph{po enega naenkrat}, torej po vsakem pregibu papir nazaj razgrnemo,
-    \item ne uporabljamo drugih orodij, kot so škarje, lepilo ipd.,
-    \item pomožne točke, za katere vemo, da jih znamo konstruirati, ampak bi nam pomožni pregibi zmanjšali preglednost konstrukcije, lahko označimo s pisalom (npr.\ zrcaljene točke v nadaljevanju). Prav tako lahko že konstruirane točke in premice s pisalom in s pomočjo ravnila močneje poudarimo.
-\end{itemize}
-Dogovorimo se še, da ne opravljamo naključnih pregibov, temveč papir prepogibamo tako, da se objekti na njem (točke in premice) prekrijejo. Zato moramo na začetku imeti na listu že nekaj danih objektov (npr.\ dve različni točki ali premico in točko, ki ne leži na njej). Če poskusimo razmisliti, kaj so potem vsi možni dovoljeni prepogibi, pridemo do sledečih petih možnosti (za njihov slikovni prikaz gl.\ \cite[str.\ 25--26]{hull2020}):
-\begin{itemize}
-    \item točko prepognemo na drugo točko (en možen pregib),
-    \item točko prepognemo samo vase (neskončno možnih pregibov),
-    \item točko prepognemo na premico (neskončno možnih pregibov),
-    \item premico prepognemo na drugo premico (en ali dva možna pregiba) in
-    \item premico prepognemo samo vase (neskončno možnih pregibov).
+    \item ne uporabljamo drugih orodij, kot so ravnilo, šestilo, škarje, lepilo ipd.,
+    \item pisalo je dovoljeno le pogojno -- z njim lahko označimo pomožne točke, za katere vemo, da jih znamo konstruirati, ampak bi nam pomožni pregibi zmanjšali preglednost konstrukcije (npr.\ zrcaljene točke, gl. razdelek~\ref{podpogl:zrcaljenje_origami}); prav tako lahko s pomočjo ravnila močneje poudarimo že konstruirane točke in premice,
+    \item ne opravljamo naključnih pregibov, temveč papir prepogibamo tako, da se objekti na njem (točke in premice) prekrijejo. Zato moramo na začetku imeti na listu že nekaj danih objektov (npr.\ dve različni točki ali premico in točko, ki ne leži na njej). Če poskusimo razmisliti, kaj so potem vsi možni dovoljeni prepogibi, pridemo do sledečih petih možnosti (za njihov slikovni prikaz gl.\ \cite[str.\ 25--26]{hull2020}):
+    \begin{itemize}
+        \item točko prepognemo na drugo točko (en možen pregib),
+        \item točko prepognemo samo vase (neskončno možnih pregibov),
+        \item točko prepognemo na premico (neskončno možnih pregibov),
+        \item premico prepognemo na drugo premico (en ali dva možna pregiba) in
+        \item premico prepognemo samo vase (neskončno možnih pregibov).
+    \end{itemize}
 \end{itemize}
 
 \begin{definicija}
     \label{def:origami_konstruktibilnost}
-    \emph{Origami konstrukcije} so konstrukcije točk in premic, ki jih je mogoče konstruirati le z ravnimi in enkratnimi prepogibi iz zgornjega seznama.
+    \emph{Origami konstrukcije} so konstrukcije točk in premic, ki jih je iz danih točk in razdalj mogoče konstruirati le z ravnimi in enkratnimi prepogibi iz zgornjega seznama. Pri tem nove točke definiramo kot presečišča dveh pregibov.
 \end{definicija}
 
 \subsubsection{Origami operacije}
 \label{podpodpogl:operacije}
 
-V zadnjem stoletju se je preko več matematikov (Jacques Justin, Peter Messer, Benedetto Scimemi, Humiaki Huzita, Koshiro Hatori, George E.\ Martin idr.; nekateri so med seboj sodelovali, drugi so delovali neodvisno) skozi čas izoblikoval seznam t.\ i.\ \emph{origami operacij}\footnote{Najbolj znanih pod imenom \emph{Huzita-Hatori aksiomi}, vendar izraz \emph{aksiom} tu ni primeren, saj bomo kmalu pokazali, da se med seboj prepletajo so nekateri izmed njih kombinacija drugih. Prav tako v nalogi opustimo ime avtorjev, ker je seznam delo veliko več matematikov kot le Hatorije in Huzite.}, ki zajamejo vseh pet možnosti prepogibanja. Da so to zadostne operacije za katerokoli origami konstrukcijo, si bomo pogledali v razdelku~\ref{podpogl:zadost_potr_op}.
+V zadnjem stoletju se je preko več matematikov (Jacques Justin, Peter Messer, Benedetto Scimemi, Humiaki Huzita, Koshiro Hatori, George E.\ Martin idr.; nekateri so med seboj sodelovali, drugi so delovali neodvisno) skozi čas izoblikoval seznam t.\ i.\ \emph{origami operacij}\footnote{Najbolj znanih pod imenom \emph{Huzita-Hatori aksiomi}, vendar izraz \emph{aksiom} tu ni primeren, saj bomo kmalu pokazali, da se med seboj prepletajo so nekateri izmed njih kombinacija drugih. Prav tako v nalogi opustimo ime avtorjev, ker je seznam delo veliko več matematikov kot le Hatorija in Huzite.}, ki zajamejo vseh pet možnosti prepogibanja. Da so to zadostne operacije za katerokoli origami konstrukcijo, si bomo pogledali v razdelku~\ref{podpogl:zadost_potr_op}.
 
 Seznam se je med avtorji razlikoval v številu (gl.\ ~\cite[str.\ 29--30]{hull2020}), kot končen seznam pa bomo tu navedli vseh osem naštetih -- na prvi pogled različnih -- operacij. Najprej jih naštejmo, potem pa si ob sledečih slikah poglejmo še prikaz opisanih konstrukcij. Videli bomo, da moramo pri nekaterih operacijah ločiti več primerov~\cite{michael2005, zore2022}.
 
@@ -206,7 +209,7 @@ Zadnja operacija~\ref{op:O8} zahteva nevzporedni premici, saj v nasprotnem prime
 
 \opomba{Natančen bralec lahko opazi, da nam origami operacije ne podajajo konstrukcije slik točk, temveč samo pregibe, ki točke preslikajo na premice. Sliko točke konstruiramo šele po uporabi operacije~\ref{op:O5} -- skozi originalno točko naredimo pregib, pravokoten na prvi pregib (iz~\ref{op:O6}), in slika je potem presečišče pravokotnice in premice, na katero smo prepognili originalno točko.}
 
-\subsubsection{Zadostne in potrebne origami operacije}
+\subsubsection*{Zadostne in potrebne origami operacije}
 \label{podpogl:zadost_potr_op}
 
 Omenili smo že, da je teh osem operacij zadostnih za katerokoli origami konstrukcijo.
@@ -216,7 +219,7 @@ Omenili smo že, da je teh osem operacij zadostnih za katerokoli origami konstru
     Če dovolimo le enkratne in ravne pregibe, so edine možne operacije prepogibanja operacije~\ref{op:O1}--\ref{op:O8}.
 \end{izrek}
 
-Ideja dokaza je, da za vsak možen prepogib, ki prekrije točko ali premico s točko ali premico (gl.\ seznam petih možnosti na začetku razdelka \ref{origami_konstrukcije}) pogledamo vse možnosti. Izkaže se, da res dobimo prepogibe iz operacij~\ref{op:O1}--\ref{op:O8}. Za natančen dokaz s slikovno ponazoritvijo gl.\ \cite[str.\ 24--26 (izrek 1.1)]{hull2020} \textcolor{red}{(Lahko tu dokažeš?)}.
+Ideja dokaza je, da vsak možen prepogib, ki prekrije točko ali premico s točko ali premico (gl.\ seznam petih možnosti v razdelku~\ref{podpogl:origami_pravila}) uvrstimo v eno izmed origami operacij~\ref{op:O1}--\ref{op:O8}. Za natančen dokaz s slikovno ponazoritvijo gl.\ \cite[str.\ 24--26 (izrek 1.1)]{hull2020} \textcolor{red}{(Lahko ga tudi tu dokažem)}.
 
 Vendar ali so vse te operacije tudi potrebne ali lahko kakšno izpustimo? Operacija~\ref{op:O2} je očitno potrebna, saj nam določa nove točke. Če podrobneje opazujemo ostale konstrukcije, pa opazimo, da so vse posebni primeri operacije~\ref{op:O7} (t.\ j.\ konstrukcija pregiba, ki točko $A$ položi na premico $a$ in točko $B$ na premico $b$), ko premici $a$ in $b$ sovpadata ali ko ena ali obe izmed točk $A$ in $B$ ležita na premici:
 \begin{itemize}
@@ -238,7 +241,7 @@ Ker lahko vse konstrukcije po izreku~\ref{izr:op1do8} opišemo z operacijami~\re
 Vseeno bomo ohranili vseh osem aksiom operacij, saj bomo kakšen pregib lažje razložili preko ene od ostalih petih operacij kot pa opisovali, na kakšen način je to operacija~\ref{op:O7}.
 
 \subsubsection{Zrcaljenje točke čez premico}
-\label{zrcaljenje_origami}
+\label{podpogl:zrcaljenje_origami}
 
 Operacija~\ref{op:O3} nam poda simetralo daljice $AB$. Torej je točka $B$ zrcalna slika točke $A$ čez to premico. Kaj pa, če imamo za neko točko $A$ že dano premico $a$ in iščemo njeno zrcalno sliko? Naravna rešitev je, da naredimo pregib po premici in s svinčnikom označimo zrcalno sliko. A definicija~\ref{def:origami_konstruktibilnost} pravi, da lahko točke dobimo le kot presečišča pregibov, poleg tega pa je uporaba pisala dovoljena le za vidnejšo označbo že konstruiranih točk.
 
@@ -249,6 +252,7 @@ Zato moramo najti zaporedje pregibov, kjer na koncu kot presečišče nekih dveh
     \item Z operacijo~\ref{op:O5} prepognemo pravokotnico na simetralo skozi točko $A$. Njeno presečišče s premico $a$ označimo z $B$.
     \item Z operacijo~\ref{op:O5} prepognemo pravokotnico na pregib iz tretjega koraka skozi točko $B$. Presečišče novega pregiba in pravokotnice iz prvega koraka označimo z $A'$.
 \end{enumerate}
+\textcolor{red}{(Na spodnji sliki označi s številkami zaporedje pregibov)}
 
 \begin{figure}[h]
     \centering
@@ -267,11 +271,11 @@ Zato moramo najti zaporedje pregibov, kjer na koncu kot presečišče nekih dveh
 
 Ker lahko čez premico zrcalimo točke, lahko čeznjo zrcalimo tudi daljice oz.\ premice -- to storimo tako, da zrcalimo dve točki z daljice in naredimo pregib čez njuni sliki. Zrcaljenje pa nam omogoča še nekaj več, kar nam pove naslednja trditev.
 
-% moja avtorska trditev in dokaz:)
+\textcolor{red}{(Moja avtorska trditev in dokaz:)}
 
 \begin{trditev}
     \label{trd:prenasanje_razdalj}
-    Z upoštevanjem pravil iz~\ref{origami_konstrukcije} in origami operacij lahko s prepogibanjem papirja prenašamo razdalje.
+    Z upoštevanjem pravil iz razdelka~\ref{podpogl:origami_pravila} in origami operacij lahko s prepogibanjem papirja prenašamo razdalje.
 \end{trditev}
 
 \begin{dokaz}
@@ -430,7 +434,7 @@ Preko sledečih izrekov in trditev bomo še na algebrski način pokazali, da je 
     V razdelku~\ref{pogl:enacbe} bomo pogledali, kako z origamijem rešujemo splošne kvadratne in kubične enačbe, torej bomo znali konstruirati tudi rešitve enačb $x^2 - r = 0$ in $x^3 - r = 0$. Konkretne konstrukcije števil $\sqrt{r}$ in $\sqrt[3]{r}$ opisane tudi v razdelku~\ref{podpogl:starogrskiproblemi}. Z operacijo~\ref{op:O4} znamo razpoloviti kot, postopek tretjinjenja kota pa je, kot že omenjeno, opisan v razdelku~\ref{podpogl:trisekcija}. Ostane nam samo še rotacija točke za kot $60^\circ$ okoli izhodišča. Na sliki~\ref{fig:kot60_rotacija} je prikaz enostavne konstrukcije -- najprej prepognemo simetralo $p_1$ daljice $OA$ in konstruiramo pregib $p_2$ skozi $O$, ki točko $A$ preslika v točko $A'$ na simetrali $p_1$. Trikotnik $\triangle OAA'$ je enakostraničen. 
     \begin{figure}[h]
         \centering
-        \includegraphics[width=0.5\textwidth]{images/algebra/kot60.png}
+        \includegraphics[width=0.4\textwidth]{images/algebra/kot60.png}
         \caption[Rotacija točke okoli izhodišča]{Rotacija točke za kot $60^\circ$ okoli izhodišča.}
         \label{fig:kot60_rotacija}
     \end{figure}
@@ -455,7 +459,7 @@ Tako smo še na algebraičen način dokazali prevlado origamija nad evklidskim o
 
 \textcolor{red}{(a potem so origami števila enaka množici $\{ a + b \sqrt{r} + c \sqrt[3]{q} \}$ za poljubne $a, b, c, r, q \in \Q$? Je kakšna oznaka?)}
 
-\textcolor{red}{A vključimo še ta izrek, da bo podobno kot~\ref{izr:evkl_konstr}? Lahko gledajo Alperin~\cite{alperin2000}}
+\textcolor{red}{A vključimo še ta spodnji izrek, da bo podobno kot~\ref{izr:evkl_konstr}? Lahko gledajo Alperin~\cite{alperin2000}}
 
 \begin{izrek}
     \label{izr:origami_konstr}
