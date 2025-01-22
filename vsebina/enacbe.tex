@@ -1,21 +1,37 @@
 \section{Reševanje enačb}
 \label{pogl:enacbe}
 
-\textcolor{red}{popravi da so captioni slik, ki so v več kot eni vrstici, poravbnani na sredini}
+V tem poglavju s prepogibanjem papirja rešujemo enačbe z racionalnimi koeficienti. Njihove rešitve bomo konstruirali v evklidski ravnini, ki jo predstavlja list papirja. Spomnimo se, da smo origami števila definirali kot vsa števila, ki jih lahko s prepogibanjem konstruiramo preko na začetku danega izhodišča $O$ in števila $1$ na realni osi (definicija~\ref{def:origami_stevilo}), evklidska ravnina pa je v bijekciji s kompleksno ravnino, dano v definiciji. Zaradi večje preglednosti bomo lahko pomožne pregibe in točke (ki bi jih sicer znali konstruirati z origamijem, npr.\ zrcaljene točke) narisali kar z ravnilom in pisalom.
 
-Zapustimo deloma področje geometrije in si poglejmo, kako lahko s prepogibanjem papirja rešujemo enačbe z racionalnimi koeficienti.
+Začnimo z najbolj osnovno, t.\ j.\ linearno enačbo. Enačba $ax + b = 0$, kjer $a, b \in \Q$ in $a \neq 0$ ima rešitev $x = -b/a$, ki je racionalno število, torej origami število in samo po sebi konstruktibilno. Če bi želeli rešitev konstruirati geometrijsko preko pregibov, v ravnini prepognemo premico $y = ax + b$ (napravimo pregib npr.\ skozi točki (0, b) in (1, a+b)) in njeno presečišče z abscisno osjo nam da iskano rešitev (slika~\ref{fig:lin_en}).
 
-Spomnimo se še, da smo origami števila definirali kot vsa števila, ki jih lahko s prepogibanjem konstruiramo preko na začetku danega izhodišča $O$ in števila $1$ na realni osi (definicija~\ref{def:origami_stevilo}). V evklidski ravnini (ki je v bijekciji s kompleksno ravnino, dano v definiciji) bomo konstruirali rešitve naših enačb, da pa bo pregibov čim manj in s tem preglednost večja, za označbo pomožnih točk in premic dopuščamo uporabo pisala (saj bi jih tako ali tako znali konstruirati s pregibi).
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/linearna_enacba.png}
+    \caption[Reševanje linearne enačbe]{Reševanje linearne enačbe $ax+b=0$. Abscisa rdeče točke je iskana rešitev.}
+    \label{fig:lin_en}
+\end{figure}
 
-Začnimo z najbolj osnovno, t.\ j.\ linearno enačbo. Enačba $ax + b = 0$, kjer $a, b \in \Q$ in $a \neq 0$ ima rešitev $x = -b/a$, ki je racionalno število, torej origami število in samo po sebi konstruktibilno. Če bi želeli rešitev konstruirati geometrijsko preko pregibov, v ravnini prepognemo premico $y = ax + b$ (napravimo pregib npr.\ skozi točki (0, b) in (1, a+b)) in njeno presečišče z abscisno osjo nam da iskano rešitev.
+Uporaba origamija je za reševanje linearne enačbe očitno manj praktična kot računanje rešitve. Bolj zanimivo je reševanje kvadratne in kubične enačbe. Ker za njune rešitve obstajata splošni formuli, bi lahko rešitve najprej izračunali in nato preko operacij seštevanja, odštevanja, množenja, deljenja in korenjenja konstruirali s prepogibanjem, vendar je to časovno preveč potratno. Pogledali si bomo, kako se z origamijem lahko temu izognemo in rešitev konstruiramo brez uporabe računskih operacij.
 
-Uporaba origamija je za reševanje linearne enačbe očitno manj praktična kot računanje rešitve. Bolj zanimivo je reševanje kvadratne in kubične enačbe. Ker za njune rešitve obstajata splošni formuli, bi jih lahko najprej izračunali in nato preko operacij seštevanja, odštevanja, množenja, deljenja in korenjenja konstruirali s prepogibanjem, vendar je to časovno preveč potratno. Pogledali si bomo, kako se z origamijem lahko temu izognemo in rešitev konstruiramo brez uporabe računskih operacij.
+Ključno vlogo bosta v nadaljevanju odigrali origami operaciji~\ref{op:O6} in~\ref{op:O7}. Prva nam hkrati s konstrukcijo tangente na parabolo določi tudi točko na paraboli, skozi katero je pregib tangenten na stožnico, to pa je ekvivalentno reševanju kvadratne enačbe. Druga s konstrukcijo skupne tangente na dve paraboli omogoča reševanje kubične enačbe -- to pokaže npr.\ Alperin v~\cite[str.\ 129]{alperin2000}, ko izpelje koeficient skupne tangente na dani paraboli, za katerega se izkaže, da je rešitev kubične enačbe. Število skupnih tangent je torej enako številu rešitev kubične enačbe, kar pomeni, da imata paraboli v evklidski ravnini največ tri skupne tangente.
 
-Ključno vlogo bosta v nadaljevanju odigrali origami operaciji~\ref{op:O6} in~\ref{op:O7}. Prva nam hkrati s konstrukcijo tangente na parabolo določi tudi točko na paraboli, skozi katero je pregib tangenten na stožnico, to pa je ekvivalentno reševanju kvadratne enačbe. Druga s konstrukcijo skupne tangente na dve paraboli omogoča reševanje kubične enačbe. Alperin v~\cite[str.\ 129]{alperin2000} pokaže, kako izpeljati koeficient skupne tangente na dani paraboli in izkaže se, da je iskani koeficient rešitev kubične enačbe. Število skupnih tangent je torej enako številu rešitev kubične enačbe, kar pomeni, da imata paraboli v evklidski ravnini največ tri skupne tangente.
+V teoriji bi nam prepogibanje papirja pomagalo tudi pri reševanju kvartičnih enačb, saj zanje še obstaja splošna formula (vendar zaradi dolžine praktično neuporabna) in tudi vemo, da lahko enačbo četrte stopnje prevedemo na enačbe nižje stopnje (gl.\ \cite{wikiquartic}, \cite{quartics2012}). Geometrično pa je to reševanje potem težje izvedljivo in zato manj motivacijsko, saj bi postopek reševanja sistema dveh enačb zahteval veliko več pregibov kot pri reševanju le ene kubične ali kvadratne enačbe, pa tudi vmesne rezutate bi morali računati. Tako bi se lahko tu z reševanjem enačb preko origamija ustavili, vendar obstajajo alternativne rešitve. V~\cite{edwards2001} je opisan postopek, ki preko \textcolor{red}{projektivne geometrije in dualnih stožnic (malo preuredi izrazoslovje, če ni ok)} ter z Belochinim pregibom reši splošno kubično in nato tudi kvartično enačbo neke določene oblike. Postopek si bomo tudi sami pogledali, saj je zelo zanimiv iz vidika projektivne geometrije.
 
-V teoriji bi nam prepogibanje papirja pomagalo tudi pri reševanju kvartičnih enačb, saj zanje še obstaja splošna formula (vendar zaradi dolžine praktično neuporabna) in tudi vemo, da lahko enačbo četrte stopnje prevedemo na enačbe nižje stopnje (gl.\ \cite{wikiquartic}, \cite{quartics2012}). Geometrično pa je to reševanje potem težje izvedljivo in zato manj motivacijsko, saj bi postopek reševanja zahteval veliko več pregibov kot pri reševanju ene kubične ali kvadratne enačbe, pa tudi vmesne rezutate bi morali računati. Tako bi se lahko tu z reševanjem enačb preko origamija ustavili, vendar obstajajo alternativne rešitve. V~\cite{edwards2001} je opisan postopek, ki preko \textcolor{red}{projektivne geometrije in dualnih stožnic} ter z Belochinim pregibom reši splošno kubično in nato tudi kvartično enačbo neke določene oblike. Postopek si bomo tudi sami pogledali, saj je zelo zanimiv iz vidika projektivne geometrije.
+Za enačbe pete in višjih stopenj pa splošna formula za rešitve ne obstaja več (to vemo po \emph{Abel-Ruffinijev} izreku, gl.\ \cite{mrinal2019}). Kljub temu se da z origamijem še vedno konstruirati rešitve nekaterih enačb višjih stopenj, vendar ne obstaja postopek z enkratnimi prepogibi -- potrebno se je poslužiti dvojnih (\emph{two-fold}) ali večkratnih (\emph{multi-fold}) prepogibov (gl.\ poglavje~\ref{pogl:multifold}) \textcolor{red}{(če ga boš vključila)}.
 
-Za enačbe pete in višjih stopenj pa splošna formula za rešitve ne obstaja več (\emph{Abel-Ruffinijev} izrek, gl.\ \cite{mrinal2019}). Kljub temu se da z origamijem še vedno konstruirati rešitve nekaterih enačb višjih stopenj, vendar ne obstaja postopek z enkratnimi prepogibi -- potrebno se je poslužiti dvojnih (\emph{two fold}) ali večkratnih (\emph{multi-fold}) prepogibov (gl.\ poglavje~\ref{pogl:multifold}).
+\subsubsection*{Reševanje enačb s prevedbo ekvlidskih konstrukcij}
+
+Z evklidskim orodjem lahko rešujemo enačbe druge stopnje, saj znamo konstruirati kvadratni koren poljubnega origami-konstruktibilnega števila. Ker vemo, da lahko s prepogibanjem papirja konstruiramo vse (in še več), kar se da z evklidskim orodjem, je včasih lažje za rešitev nekega problema najti (bolj domačo) evklidsko konstrukcijo, ki jo lahko nato preko origami operacij preobrazimo v origami konstrukcijo.
+
+Kot primer tega Hull v~\cite[str.\ 38]{hull2020} navaja Lillovo konstrukcijo rešitve kvadratne enačbe preko krožnice -- na sliki~\ref{fig:par_primer_hull_lill} levo je prikaz evklidske kosntrukcije, desno pa prevedba na origami konstrukcijo. Lahek dokaz, zakaj deluje, je prepuščen bralcu.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/kvadratna_enacba/primer_hull_lill.png}
+    \caption[Primer reševanja kvadratne enačbe z evklidskim orodjem]{Reševanje enačbe $x^2 + ax + b = 0$. Vzeto iz~\cite[str.\ 38]{hull2020}.}
+    \label{fig:par_primer_hull_lill}
+\end{figure}
 
 \subsection{Reševanje kvadratne enačbe preko tangente na parabolo}
 \label{podpogl:kvadratna_enacba}
@@ -32,7 +48,7 @@ Postopek, ki si ga bomo pogledali v nadaljevanju, predpostavlja $a = 1$. Ker je 
 \end{equation}
 Predpostavimo, da ima enačba dve različni realni rešitvi oz.\ da je diskriminanta enačbe pozitivna, t.\ j.\ $D = b^2 - 4c > 0$. Če realnih ničel ni, o origami konstrukciji rešitev namreč nima smisla razpravljati. Če je rešitev ena, je podana kot $x = -b/2$, kar je origami-konstruktibilno število in se ga lahko takoj konstruira.
 
-Enačba~\ref{eq:spl_kv_en} nam poda pokončno parabolo $y = x^2 + bx + c$ z vodoravno premico vodnico in dvema ničlama, ki sta rešitvi naše enačbe. Iščemo absciso presečišča parabole z abscisno osjo.
+Enačba~\ref{eq:spl_kv_en} nam ob teh predpostavkah torej poda pokončno parabolo $y = x^2 + bx + c$ z vodoravno premico vodnico in dvema ničlama, ki sta rešitvi naše enačbe. Iščemo abscisi presečišč parabole z abscisno osjo.
 
 Zopet se bomo poslužili dosedanjega znanja o operaciji~\ref{op:O6}. Ta nam s pregibom skozi dano točko $B$, ki točko $A$ položi na premico $a$, konstruira tangento na parabolo z goriščem v točki $A$ in premico vodnico $a$.
 
@@ -47,12 +63,12 @@ Naša parabola je z enačbo seveda natančno določena. Ideja iskane konstrukcij
 
 Edina nevarnost, da ta konstrukcija ne bo delovala, je možnost, da točka $B$ kdaj ne bo origami-konstruktibilna točka. Zato sedaj izračunajmo njene koordinate in se prepričajmo, da se to nikoli ne bo zgodilo.
 
-Najprej iz dane enačbe parabole določimo njeno gorišče $A$ in premico vodnico $a$. Spomnimo se, da iz enačbe parabole oblike
+Najprej iz dane enačbe parabole določimo njeno gorišče $A$ in premico vodnico $a$. Spomnimo se, da iz enačbe oblike
 $$ (x - x_0)^2 = 2p(y - y_0) $$
-takoj razberemo koordinati gorišča $(x_0, y_0)$ in enačbo premice vodnice $y = y_0 - p$. V našem primeru enačbo $y = x^2 + bx + c$ preoblikujemo v
+razberemo njeno teme $(x_0, y_0)$, gorišče $(x_0, y_0 + p/2)$ in enačbo premice vodnice $y = y_0 - p/2$. V našem primeru enačbo $y = x^2 + bx + c$ preoblikujemo v
 $$ \left(x-\left(-\frac{b}{2}\right)\right)^2 = 2 \cdot \frac{1}{2} \left(y - \left(c - \frac{b^2}{4}\right)\right). $$
 S tem sta gorišče $A$ in premica vodnica $a$ določena:
-$$ A\left(-\frac{b}{2}, c - \frac{b^2 - 1}{4}\right) \text{ in } a: y = c - \frac{b^2 + 1}{4}. $$
+$$ A\left(-\frac{b}{2}, c - \frac{b^2}{4} + \frac{1}{4}\right) \text{ in } a: y = c - \frac{b^2}{4} - \frac{1}{4}. $$
 
 Naj bo $t$ ena izmed rešitev enačbe~\ref{eq:spl_kv_en}. Na premici $a$ z $A'$ označimo točko z absciso $t$. Poiščimo enačbo pregiba, ki gorišče $A$ položi v točko $A'$. Ta pregib bo tangenten na parabolo ravno v njeni ničli, njegovo presečišče z osjo parabole $ x = -b/2 $ pa nam bo določilo točko $B$.
 
@@ -62,21 +78,26 @@ Pri tem smo upoštevali, da velja $t^2 + bt + c = 0$. Presečišče pregiba in o
 $$ y = (2t + b)\left(-\frac{b}{2}\right) - t^2 + c = - t^2 - tb + c - \frac{b^2}{2} = c + c - \frac{b^2}{2} = 2c - \frac{b^2}{2}.$$
 Obe koordinati sta racionalni, torej je točka $B$ konstruktibilna točka. Ker leži na osi parabole, nam poda obe rešitvi enačbe -- pregiba sta si simetrična glede na os. Povzemimo sedaj postopek konstrukcije rešitve kvadratne enačbe~\ref{eq:spl_kv_en}:
 \begin{enumerate}
-    \item V koordinatnem sistemu označimo gorišče $A\left(-\frac{b}{2}, c - \frac{b^2}{4} + \frac{1}{4}\right)$, premico vodnico $a: y = c - \frac{b^2 + 1}{4}$ in točko $B(-\frac{b}{2}, 2c - \frac{b^2}{2})$.
+    \item V koordinatnem sistemu označimo gorišče $A\left(-\frac{b}{2}, c - \frac{b^2}{4} + \frac{1}{4}\right)$, premico vodnico $a: y = c - \frac{b^2}{4} - \frac{1}{4}$ in točko $B(-\frac{b}{2}, 2c - \frac{b^2}{2})$.
     \item Z operacijo~\ref{op:O6} naredimo pregib skozi točko $B$, ki točko $A$ položi na premico $a$ (če je diskriminanta enačbe pozitivna, sta možna pregiba dva).
     \item Skozi sliko točke $A$ naredimo vertikalen pregib in abscisa njegovega presečišča z abscisno osjo je ničla dane enačbe.
 \end{enumerate}
 
-\textbf{Primer:} Poiščimo rešitve enačbe $x^2 - x - 1 = 0$. Določimo obe točki in premico: $A(\frac{1}{2}, -1)$, $B(\frac{1}{2}, -\frac{5}{2})$ in $a: y = -\frac{3}{2}.$. Opravimo operacijo~\ref{op:O6} in označimo presečišče abscisne osi in pravokotnice nanjo skozi sliko točke $A$. Če smo bili pri pregibanju natančni, dobimo presečišči pri $x_{1,2} = \frac{1 \pm \sqrt{5}}{2}$ (gl.\ sliko v~\cite[str.\ 37]{hull2020}).
+\textbf{Primer:} Poiščimo rešitve enačbe $x^2 - x - 1 = 0$. Določimo obe točki in premico: $A(\frac{1}{2}, -1)$, $B(\frac{1}{2}, -\frac{5}{2})$ in $a: y = -\frac{3}{2}$ (na sliki~\ref{fig:par_primer_hull} so zaporedoma uporabljene oznake $P_1, P_2$ in $L$). Opravimo operacijo~\ref{op:O6} in označimo presečišče abscisne osi in pravokotnice nanjo skozi sliko točke $A$. Če smo bili pri pregibanju natančni, dobimo presečišči pri $x_{1,2} = \frac{1 \pm \sqrt{5}}{2}$.
 
-To še zdaleč ni edini postopek za reševanje kvadratne enačbe. Kot še en lep primer Hull v~\cite[str.\ 38]{hull2020} navaja Lillovo konstrukcijo preko krožnice, lahek dokaz pa je prepuščen bralcu. Hkrati je to primer, kako za rešitev nekega problema najprej najdemo (bolj domačo) evklidsko konstrukcijo, ki jo lahko nato preko origami operacij preobrazimo v origami konstrukcijo -- saj že vemo, da lahko s prepogibanjem papirja konstruiramo vse in še več, kar se da z evklidskim orodjem. Pri obravnavi kubične enačbe bomo spoznali Belochino metodo, ki se jo da aplicirati tudi na kvadratno enačbo, in prilagojen postopek je tako opisan v razdelku~\ref{podpodl:kvadr_en_lill}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{images/kvadratna_enacba/primer_hull.png}
+    \caption[Primer reševanja kvadratne enačbe]{Reševanje enačbe $x^2 - x - 1 = 0$ preko tangente na parabolo. Vzeto iz~\cite[str.\ 37]{hull2020}.}
+    \label{fig:par_primer_hull}
+\end{figure}
 
-\subsection{Lillova metoda in Belochin pregib}
+Metoda je enostavna, vendar v resnici zopet ne najbolj praktično izvedljiva, saj so lahko točki $A$ in $B$ ter premica $a$ težje origami-konstruktibilni. V naslednjem poglavju bomo med drugim spoznali Lillovo metodo, preko katere bomo z operacijo~\ref{op:O6} do rešitve prišli hitreje in enostavneje (gl.\ razdelek~\ref{podpodl:kvadr_en_lill}).
+
+\subsection{Belochin postopek z Lillovo metodo}
 \label{podpogl:kubicna_enacba}
 
-V tem poglavju se bomo spoznali z Lillovo metodo, s katero lahko v teoriji rešimo enačbo poljubne stopnje. V središču naše pozornosti bo origami postopek za reševanje kubične enačbe, ki ga je odkrila že večkrat omenjena Belocheva, vendar se da po Lillovi metodi z uporabo operacije~\ref{op:O6} rešiti tudi kvadratno enačbo, kar si bomo tudi na hitro pogledali proti koncu razdelka. Poleg tega bomo spoznali tudi več sadov Belochinega pregiba.
-
-Sedaj pa vzemimo enačbo oblike
+Vzemimo enačbo oblike
 $$ a x^3 + b x^2 + c x + d = 0, $$
 kjer so $a, b, c, d \in \Q$ in velja $a \neq 0$. Tu je navedena ena oblika zapisa njene splošne rešitve:
 
@@ -88,19 +109,19 @@ kjer so $a, b, c, d \in \Q$ in velja $a \neq 0$. Tu je navedena ena oblika zapis
     x_2 &= - \frac{b}{3a} + \frac{C(1 - i\sqrt{3})}{6a} + \frac{(1 + i\sqrt{3})(b^2 - 3ac)}{6aC}
 \end{align*}
 
-Operacija~\ref{op:O6} nam je preko konstrukcije tangente na parabolo pomagala rešiti kvadratno enačbo. Spomnimo se, da je Belocheva to v tridesetih letih prejšnjega stoletja nadgradila z operacijo~\ref{op:O7}, ki nam konstruira skupno tangento na dve paraboli hkrati. Po njej jo tudi imenujemo \emph{Belochin pregib}. Z njim je kot prva odkrila resnično moč origami konstrukcij, a je žal trajalo več kot pol stoletja, da so matematiki začeli ceniti njeno odkritje.
+Operacija~\ref{op:O6} nam je preko konstrukcije tangente na parabolo pomagala rešiti kvadratno enačbo. Spomnimo se, da je Belocheva to v tridesetih letih prejšnjega stoletja nadgradila z operacijo~\ref{op:O7}, ki nam konstruira skupno tangento na dve paraboli, pregib pa imenujemo \emph{Belochin pregib}. Z njim je kot prva odkrila resnično moč origami konstrukcij, a je žal trajalo več kot pol stoletja, da so matematiki začeli ceniti njeno odkritje. Zgodilo se je celo, da so nekateri neodvisno od nje odkrili ta pregib in iznašli svoje postopke, ne da bi sploh poznali njeno delo.
+
+Seznanili se bomo z Lillovo metodo, s katero lahko v teoriji rešimo enačbo poljubne stopnje. V središču naše pozornosti bo Belochin origami postopek za reševanje kubične enačbe, na koncu pa bomo Lillovo metodo uporabili tudi za reševanje kvadratne enačbe.
 
 \subsubsection{Reševanje kubične enačbe z Belochinim postopkom}
 
-Belocheva je sama odkrila naslednjo metodo reševanja kubične enačbe, kjer nam vsak Belochin pregib poda eno izmed rešitev. Iz začetka poglavja že vemo, da je število rešitev enako številu skupnih tangent, torej številu možnih Belochinih pregibov.
-
-Belocheva v svojem postopku izhaja iz Lillove genialne metode iskanja ničel poljubnih polinomov z realnimi koeficienti, ki si jo bomo v naslednjem razdelku podrobneje pogledali, za njeno aplikacijo pa uporabi avtorsko konstrukcijo -- Belochin kvadrat.
+Belocheva je sama odkrila naslednji postopek reševanja kubične enačbe, kjer nam vsak Belochin pregib poda eno izmed rešitev. Število teh pregibov pa je, kot smo premislili že v uvodu poglavja, enako številu rešitev dane enačbe. Postopek temelji na Lillovi genialni metode iskanja ničel poljubnih polinomov z realnimi koeficienti, ki si jo bomo v naslednjem razdelku podrobneje pogledali, avtorica pa je zaslužna za to, da se jo zelo enostavno konstruira tudi v praksi.
 
 \subsubsection*{Lillova metoda}
 
-Njen avtor je avstrijski inženir Eduard Lill, ki jo je l.\ 1867 opisal v svojem članku~\cite{lill1867}. Gre za inovativen postopek, ki je v svoji osnovi čisto enostaven. Imejmo poljuben polinom $ p(x) = a_n x^n + a_{n-1} x^{n-1} + \ldots + a_2 x^2 + a_1 x + a_0 $ z realnimi koeficienti in iščemo njegove realne ničle, če obstajajo. Lill je iz njegovih koeficientov s sledečim postopkom v ravnini ustvaril enolično pot. Običajno se za njeno konstrukcijo uporablja figuro želve, ki nam kaže, v katero smer se premika pa tudi kam je usmerjena.
+Avstrijski inženir Eduard Lill je l.\ 1867 v svojem članku~\cite{lill1867} opisal inovativen postopek, ki je v svoji osnovi čisto enostaven. Imejmo poljuben polinom $ p(x) = a_n x^n + a_{n-1} x^{n-1} + \ldots + a_2 x^2 + a_1 x + a_0 $ z realnimi koeficienti in iščemo njegove realne ničle, če obstajajo. Lill je iz njegovih koeficientov v ravnini ustvaril enolično pot. 
 
-Na začetku želvo postavimo v koordinatno izhodišče $O$ tako, da gleda v pozitivno smer $x$-osi. Želva najprej v to smer prehodi razdaljo, enako koeficientu $a_n$. Nato se obrne za $90^\circ$ v nasprotno smer urinega kazalca in prehodi naslednjo razdaljo $a_{n-1}$. To ponovi za vsak koeficient polinoma in po prehojeni razdalji $a_0$ se ustavi v neki točki $T$ (slika~\ref{fig:primera_zelve}). Če je kateri od koeficientov negativen, želva hodi ritensko (primer (b) na sliki~\ref{fig:primera_zelve} za koeficiente $a_3, a_2$ in $a_0$), v primeru ničelnega koeficienta pa obstoji na mestu in se samo obrne. S potjo želve dobimo lomljeno črto iz največ $n+1$ daljic, ki jih brez škode označujmo kar z njihovimi ``pripadajočimi'' koeficienti.
+Običajno pri opisovanju poteka konstrukcije uporabljamo figuro želve, katere pot nas zanima. Želva nam v vsakem trenutku kaže, kam je usmerjena in v katero smer se premika. Na začetku jo postavimo v koordinatno izhodišče $O$ tako, da gleda v pozitivno smer $x$-osi. Želva najprej v to smer prehodi razdaljo, enako koeficientu $a_n$. Nato se obrne za $90^\circ$ v pozitivno smer (nasprotno smer urinega kazalca) in prehodi naslednjo razdaljo $a_{n-1}$. To ponovi za vsak koeficient polinoma in po prehojeni razdalji $a_0$ se ustavi v neki točki $T$ (slika~\ref{fig:primera_zelve}). Če je kateri od koeficientov negativen, želva hodi ritensko (primer (b) na sliki~\ref{fig:primera_zelve} za koeficiente $a_3, a_2$ in $a_0$), v primeru ničelnega koeficienta pa obstoji na mestu in se samo obrne. S potjo želve dobimo lomljeno črto iz največ $n+1$ daljic, ki jih brez škode označujmo kar z njihovimi ``pripadajočimi'' koeficienti.
 
 \begin{figure}[h]
     \centering
@@ -109,23 +130,23 @@ Na začetku želvo postavimo v koordinatno izhodišče $O$ tako, da gleda v pozi
     \label{fig:primera_zelve}
 \end{figure}
 
-Sedaj se v izhodišče $O$ postavimo še mi in z laserskim žarkom poskusimo zadeti želvo v točki $T$. Žarek najprej usmerimo daljico $a_{n-1}$, od katere se odbije v daljico $a_{n-2}$, od te v daljico $a_{n-3}$ in tako naprej. (slika~\ref{fig:primera_zelve}). Pri tem upoštevamo troje:
+Sedaj se v izhodišče $O$ postavimo še mi in z laserskim žarkom poskusimo zadeti želvo v točki $T$ tako, da žarek najprej usmerimo daljico $a_{n-1}$, od katere se odbije v daljico $a_{n-2}$, od te v daljico $a_{n-3}$ in tako naprej (slika~\ref{fig:primera_zelve}). Pri tem upoštevamo troje:
 \begin{itemize}
     \item laserski žarek ne upošteva odbojnega zakona in se od daljice vedno odbije pod kotom $90^\circ$, zato so vpadni koti žarka na vse daljice med seboj enaki in prav tako to velja za odbojne kote;
     \item žarek se lahko odbije tudi od nosilke daljice;
     \item vsakič sta možni dve smeri odboja -- na isto ali drugo stran daljice oz.\ njene nosilke -- izberemo pa tisto, ki nam omogoči, da sploh lahko zadenemo naslednjo daljico.
 \end{itemize}
-Recimo, da smo zmogli zadeti želvo. Kot, ki ga v točki $O$ oklepata laserski žarek in abscisna os, označimo z $\theta$.
+Taka pot žarka vedno obstaja in je enolična. Vpadni kot, ki ga v točki $O$ oklepata laserski žarek in abscisna os, označimo z $\theta$.
 
 \begin{trditev}
     Število $x_{\theta} = - \tan \theta$ je ničla polinoma $p(x)$.
 \end{trditev}
 
 \begin{dokaz}
-    Vzemimo primer, ko so vsi koeficienti polinoma $p(x)$ pozitivni. Želvina pot je v tem primeru sestavljena iz $n+1$ daljic, pot laserskega žarka (ki se vedno odbije od daljice in ne njene nosilke) pa iz $n$ daljic. Slednje so ravno hipotenuze pravokotnih trikotnikov. Za vsako od njih je nasprotna kateta kota $\theta$ del daljice $a_i$, priležno kateto pa označimo z $y_i$ ($ n \geq i \geq 1$). dobimo
+    Vzemimo primer, ko so vsi koeficienti polinoma $p(x)$ pozitivni. Želvina pot je v tem primeru sestavljena iz $n+1$ daljic, pot laserskega žarka --ki se vedno odbije od daljice in ne njene nosilke -- pa iz $n$ daljic. Slednje so ravno hipotenuze pravokotnih trikotnikov. Za vsak $i \in \{n, \ldots, 1\}$ označimo z $y_i$ kotu $\theta$ nasprotno kateto. Dobimo
     \begin{align*}
         y_n &= \tan \theta \cdot a_n = - x_{\theta} a_n \\
-        y_{n-1} &= \tan \theta \cdot (a_{n-1} - y_n) = - x_{\theta} (a_{n-1} + x a_n) = - (a_{n-1} x_{\theta} + a_n x_{\theta}^2)\\
+        y_{n-1} &= \tan \theta \cdot (a_{n-1} - y_n) = - x_{\theta} (a_{n-1} + x_{\theta} a_n) = - (a_{n-1} x_{\theta} + a_n x_{\theta}^2)\\
         y_{n-2} &= \tan \theta \cdot (a_{n-2} - y_{n-1}) = - x_{\theta} (a_{n-2} + a_{n-1} x_{\theta} + a_n x_{\theta}^2) = \\
         &= - (a_{n-2} x_{\theta} + a_{n-1} x_{\theta}^2 + a_n x_{\theta}^3) \\
         &\vdots \\
@@ -138,13 +159,11 @@ Recimo, da smo zmogli zadeti želvo. Kot, ki ga v točki $O$ oklepata laserski �
     \textcolor{red}{Primer ničelnih koeficientov: isto kot prej, samo se spusti $y_i$ za tisti $i$, za katerega je $a_i = 0$. (\textcolor{red}{???})}
 \end{dokaz}
 
-Če pod nobenim kotom $\theta$ ne moremo zadeti želve, je polinom $p(x)$ brez realnih ničel.
-
-Pojavi se nam vprašanje, kako določiti kot $\theta$. Za polinom tretje stopnje je Belocheva preko svojega pregiba našla zelo preprosto rešitev, ki si jo bomo sedaj pogledali.
+Če pod nobenim kotom $\theta$ ne moremo zadeti želve, je polinom $p(x)$ brez realnih ničel. Zato je na mestu vprašanje, kako določiti kot $\theta$. Za polinom tretje stopnje je Belocheva preko svojega pregiba našla zelo preprosto rešitev, ki si jo bomo sedaj pogledali.
 
 \subsubsection*{Belochin kvadrat}
 
-Imejmo dani točki $A$ in $B$ ter premici $r$ in $s$. Z origamijem konstruirajmo kvadrat $WXYZ$, kjer oglišče $X$ leži na premici $r$, njegovo sosednje oglišče $Y$ pa na premici $s$. Velja še, da točka $A$ leži na stranici $WX$ (ali njeni nosilki), točka $B$ pa na stranici $ZY$ (ali njeni nosilki, slika~\ref{fig:beloch_kvadrat}).
+Imejmo dani točki $A$ in $B$ ter premici $r$ in $s$. Z origamijem konstruirajmo kvadrat $WXYZ$, kjer oglišče $X$ leži na premici $r$, njegovo sosednje oglišče $Y$ pa na premici $s$. Velja še, da točka $A$ leži na stranici $WX$ (ali njeni nosilki), točka $B$ pa na stranici $ZY$ (ali njeni nosilki). Kvadrat po avtorici njegove kosntrukcije imenujemo Belochin kvadrat (slika~\ref{fig:beloch_kvadrat}).
 
 \begin{figure}[h]
     \centering
@@ -153,13 +172,13 @@ Imejmo dani točki $A$ in $B$ ter premici $r$ in $s$. Z origamijem konstruirajmo
     \label{fig:beloch_kvadrat}
 \end{figure}
 
-Belocheva je iznašla naslednji postopek, ki nam konstruira ta kvadrat:
-\begin{itemize}
-    \item Najprej konstruiramo premico $r'$, ki je vzporedna premici $r$ in od nje enako oddaljena kot točka $A$, tako da premica $r$ leži med točko $A$ in premico $r'$. Na enak način premici $s$ konstruiramo njeno vzporednico $s'$ (slika~\ref{fig:beloch_kvadrat_konstrukcija} levo). To konstrukcijo opravimo s prepogibi iz operacije~\ref{op:O5}, zrcaljenja točke čez premico ter ponovne uporabe operacije~\ref{op:O5}. Zaradi preglednosti seveda dopuščamo, da namesto zrcaljenja preprosto prepognemo po premici in s svinčnikom označimo sliko točke.
-    \item Nato opravimo Belochin pregib, ki točko $A$ slika v točko $A'$ na premici $r'$, točko $B$ pa v točko $B'$ na premici $s'$ (slika~\ref{fig:beloch_kvadrat_konstrukcija} na sredi).
-    \item Naj bo točka $X$ središče daljice $AA'$ in točka $Y$ središče daljice $BB'$. Ker je pregib simetrala teh dveh daljic $AA'$ in $BB'$, sta njuni središči po konstrukciji\footnote{Gledamo lahko dva podobna pravokotna trikotnika s skupnim ogliščem v točki $A$ (oz.\ $B$), enega dvakrat večjega od drugega} ravno presečišči pregiba s premicama $r$ in $s$ (slika~\ref{fig:beloch_kvadrat_konstrukcija} desno).
-    \item Daljica $XY$ -- ena izmed stranic kvadrata -- je po konstrukciji pravokotna na daljici $AX$ in $BY$, zato samo še določimo točki $W$ in $Z$ na daljicah ali njunih nosilkah in tako dobimo Belochin kvadrat.
-\end{itemize}
+\opomba{V resnici nam v Belochinem postopku ne bo koristila konstrukcija samega kvadrata, pač pa bo dovolj le poiskati točki $X$ in $Y$. Skozinju bo namreč potekala želvina pot od točke $A$ do točke $B$, ki je po konstrukciji res sestavljena iz treh med seboj pravokotnih daljic.}
+Belocheva pri postopku za konstrukcijo kvadrata navaja naslednje korake:
+\begin{enumerate}
+    \item Najprej konstruiramo premico $r'$, ki je vzporedna premici $r$ in od nje enako oddaljena kot točka $A$, tako da premica $r$ leži med točko $A$ in premico $r'$. Na enak način premici $s$ konstruiramo njeno vzporednico $s'$ (slika~\ref{fig:beloch_kvadrat_konstrukcija} levo).
+    \item Opravimo Belochin pregib, ki točko $A$ slika v točko $A'$ na premici $r'$, točko $B$ pa v točko $B'$ na premici $s'$ (slika~\ref{fig:beloch_kvadrat_konstrukcija} na sredi).
+    \item Naj bo točka $X$ središče daljice $AA'$ in točka $Y$ središče daljice $BB'$. Po konstrukciji novi točki sovpadata s presečiščem pregiba in premice $r$ oz.\ $s$. (slika~\ref{fig:beloch_kvadrat_konstrukcija} desno). Daljica $XY$ je pravokotna na daljici $AX$ in $BY$, zato samo še določimo točki $W$ in $Z$ na daljicah ali njunih nosilkah in tako dobimo Belochin kvadrat.
+\end{enumerate}
 
 \begin{figure}[h]
     \centering
@@ -185,21 +204,21 @@ $$ |OX|^3 = |OX| \cdot \frac{|OY|}{|OX|} \cdot \frac{2}{|OY|} = 2 \Longrightarro
     \label{fig:beloch_koren}
 \end{figure}
 
-Vidimo lahko, da je to enaka konstrukcija, kot jo je 50 let kasneje neodvisno od Belocheve odkril G.\ Martin (razdelek~\ref{podpogl:podvojitev_kocke}), le da je za točko $B$ vzel točko $(0, -k)$ in s tem konstruiral dolžino $\sqrt[3]{k}$ za poljubno origami število $k$.
+Vidimo lahko, da je to enaka konstrukcija, kot jo je 50 let kasneje neodvisno od Belocheve odkril G.\ Martin (gl.\ razdelek~\ref{podpogl:podvojitev_kocke}), le da je za točko $B$ vzel točko $(0, -k)$ in s tem konstruiral dolžino $\sqrt[3]{k}$ za poljubno origami število $k$.
 
-\subsubsection*{Združitev Lillove metode in Belochinega kvadrata}
+\subsubsection*{Združitev Lillove metode in Belochinega kvadrata v Belochin postopek}
 
-Za poljubno enačbo $a x^3 + b x^2 + c x + d = 0$, kjer $ a \neq 0$, povežimo sedaj Lillovo metodo s konstrukcijo primernega Belochinega kvadrata, ki nam bo natančno določil kot $\theta$. Postopek je sledeč (gl.\ tudi sliko~\ref{fig:beloch_kubicna_resitev}):
+Za poljubno enačbo $a x^3 + b x^2 + c x + d = 0$ povežimo sedaj Lillovo metodo s konstrukcijo primernega Belochinega kvadrata, ki nam bo natančno določil kot $\theta$. Belochin postopek, ki je opisan v nadaljevanju, velja za vsako izbiro koeficientov enačbe (gl.\ tudi sliko~\ref{fig:beloch_kubicna_resitev}):
 
 \begin{enumerate}
-    \item Za točko $A$ vzemimo izhodišče $O$. Začrtamo želvino pot za polinom $p(x) = a x^3 + b x^2 + c x + d$, ki se začne v točki $A$ in konča v točki $B$. V primeru neničelnih koeficientov je pot sestavljena iz štirih stranic, pot laserskega žarka pa iz treh.
+    \item Za točko $A$ vzemimo izhodišče $O$. Začrtamo želvino pot za polinom $p(x) = a x^3 + b x^2 + c x + d$, ki se začne v točki $A$ in konča v točki $B$.
     \item Premica $r$ naj bo nosilka daljice $b$ ($r: x = a$), premica $s$ pa nosilka daljice $c$ ($s: y = b$).
     \item Določimo premici $r': x = 2a$ in $s': y = b + d$ ter opravimo Belochin pregib, ki točko $A$ položi na premico $r'$ in točko $B$ na premico $s'$.
     \item Presečišči pregiba s premicama $r$ in $s$ zaporedoma označimo s točkama $X$ in $Y$.
     \item Zarišemo daljice $AX$, $XY$ in $YB$.
 \end{enumerate}
 
-Ker po konstrukciji velja $ AX \perp XY \perp YB $, je to iskana pot laserskega žarka, ki se odbija pod pravim kotom in zadene želvo. Kot $\theta$ je kot, ki ga oklepata daljici $a_3$ in $AX$. Rešitev je torej $x_{\theta} = - \tan \theta$.
+Ker po konstrukciji velja $ AX \perp XY \perp YB $, je to iskana pot laserskega žarka, ki se odbija pod pravim kotom in zadene želvo. Kot $\theta$ je kot, ki ga oklepata daljici $a$ in $AX$. Rešitev je torej $x_{\theta} = - \tan \theta$.
 
 \begin{figure}[h]
     \centering
@@ -208,21 +227,17 @@ Ker po konstrukciji velja $ AX \perp XY \perp YB $, je to iskana pot laserskega 
     \label{fig:beloch_kubicna_resitev}
 \end{figure}
 
-Če ima enačba še dve realni rešitvi, sta možna tudi še dva Belochina pregiba (enačba namreč ne more imeti točno dveh realnih rešitev, saj kompleksne rešitve nastopajo v konjugiranih parih).
+\opomba{Če ima enačba še dve realni rešitvi, sta možna tudi še dva Belochina pregiba (enačba namreč ne more imeti točno dveh realnih rešitev, saj kompleksne rešitve nastopajo v konjugiranih parih).}
 
-\opomba{V resnici nikoli do sedaj nismo potrebovali konstruirati celega kvadrata; potrebovali smo le stranico $XY$ in dejstvo, da je pregib pravokoten na daljici $AX$ in $BY$.}
+Kot zanimivost Lavričeva v~\cite[str.\ 10--13]{lavric2013} s postopkom, ki je malo preurejen Belochin postopek, še analitično pokaže, da je ob primerno izbranih točkah $A$ in $B$ ter premicah $r$ in $s$ koeficient premice, ki jo predstavlja Belochin pregib, rešitev kubične enačbe. Točki in premici izbere tako, da sta točki $X$ in $Y$ ravno presečišči z ordinatnima osema, iz česar lahko takoj razberemo koeficient premice. V dokazu izpelje enačbi pripadajočih parabol in splošno enačbo njunih tangent ter iz tega dokaže rečeno. To je lahko odlična vaja za dijake, ki si želijo dodatnega izziva.
 
-\opomba{Enačbe premic $r, s, r'$ in $s'$ so univerzalne in zgornja konstrukcija tako deluje tudi v primeru, ko je kakšen od koeficientov $b, c, d$ ničeln.}
-
-Kot zanimivost Lavričeva v~\cite[str.\ 10--13]{lavric2013} s postopkom, ki je malo preurejen Belochin postopek, še analitično pokaže, da je ob primerno izbranih točkah $A$ in $B$ ter premicah $r$ in $s$ koeficient tangentnega pregiba rešitev kubične enačbe. Točki in premici izbere tako, da sta točki $X$ in $Y$ ravno presečišči z ordinatnima osema, iz česar lahko takoj razberemo koeficient tangente. V dokazu izpelje enačbi pripadajočih parabol in splošno enačbo njunih tangent ter iz tega dokaže rečeno. To je lahko odlična vaja za dijake, ki si želijo kakšnega izziva.
-
-\subsubsection*{Primer reševanja kubične enačbe po Lillovi metodi}
+\subsubsection*{Primer reševanja kubične enačbe z Belochinim postopkom}
 
 Več primerov uporabe Belochinega postopka za reševanje kubičnih enačb je opisanih v~\cite[38--44]{zore2022}, tu pa si poglejmo, kako rešimo enačbo, ki ima tako pozitivne kot tudi negativne in ničelne koeficiente. Hull v~\cite[str.\ 90--92]{hull2013} obravnava enačbo
 $$ x^3 - 7x - 6 = 0.$$
-Po Lillovi metodi za točko $A$ vzamemo izhodišče $O$ in začrtamo želvino pot. Najprej gremo za $1$ v desno ($a=1$), se obrnemo za $90^\circ$ v pozitivno smer in obstojim na mestu ($b=0$), se zopet obrnemo  $90^\circ$ v pozitivno smer in se premaknemo za $7$ v nasprotno smer, torej zopet v desno ($c=-7$), na koncu pa se po ponovnem obratu za $90^\circ$ v pozitivno smer premaknemo za 6 navzgor ($d=-6$). Končamo v točki $T = (8, 6)$.
+Po Lillovi metodi za točko $A$ vzamemo izhodišče $O$ in začrtamo želvino pot. Najprej gremo za $1$ v desno ($a=1$), se obrnemo za $90^\circ$ v pozitivno smer in obstojimo na mestu ($b=0$), se zopet obrnemo  $90^\circ$ v pozitivno smer in se premaknemo za $7$ v nasprotno smer, torej zopet v desno ($c=-7$), na koncu pa se po ponovnem obratu za $90^\circ$ v pozitivno smer premaknemo za 6 navzgor ($d=-6$). Končamo v točki $T = (8, 6)$.
 
-Označimo še premice $r: x = a = 1, r'$ (na sliki~\ref{fig:lill_primer1} označena z $L_1$) $: x = 2a = 2, s: y = b = 0$ in $s'$ (na sliki~\ref{fig:lill_primer1} označena z $L_2$) $: y = b + d = -6$.
+Označimo še premice $r: x = a = 1, r': x = 2a = 2$ (na sliki~\ref{fig:lill_primer1} označena z $L_1$), $s: y = b = 0$ in $s': y = b + d = -6$ (na sliki~\ref{fig:lill_primer1} označena z $L_2$).
 
 \begin{figure}[h]
     \centering
@@ -236,7 +251,7 @@ Označimo še premice $r: x = a = 1, r'$ (na sliki~\ref{fig:lill_primer1} označ
 Na sliki~\ref{fig:lill_primer_pregibi} so konstrukcije vseh treh možnih pregibov. Začnimo z leve proti desni in za vsakega od njih pogledamo, kaj dobimo:
 \begin{enumerate}
     \item V prvem primeru se nam točka $O$ preslika v točko $(2,2)$, točka $T$ pa v točko $(-4,-6)$, torej je kot $\theta = 45^\circ$, kar pomeni $x_{45^\circ} = -\tan 45^\circ = -1$. Preverimo, ali $x_{45^\circ}$ res reši našo enačbo. Zares, $(-1)^3 - 7\cdot(-1) - 6 = 0$.
-    \item Točka $T$ se v drugem primeru preslika ravno v presečišče premic $L_1$ in $L_2$, torej v točko $(2,-6)$. Pregib torej premico $s$, ki je v našem primeru kar $x$-os, seka v točki $(5,0)$ (ker je presečišče središče daljice s krajišči v točki $T$ in njeni sliki). Rešitev $x_\theta$ lahko preberemo kar iz zadnjega pravokotnega trikotnika preko definicije konte funkcije tangens -- $x_\theta = -tan \theta = -6/3 = -2$. In res je $(-2)^3 - 7\cdot(-2) - 6 = 0$.
+    \item Točka $T$ se v drugem primeru preslika ravno v presečišče premic $L_1$ in $L_2$, torej v točko $(2,-6)$. Pregib torej premico $s$, ki je v našem primeru kar $x$-os, seka v točki $(5,0)$ (ker je presečišče središče daljice s krajišči v točki $T$ in njeni sliki). Rešitev $x_\theta$ lahko preberemo kar iz zadnjega pravokotnega trikotnika preko definicije kotne funkcije tangens: $x_\theta = -tan \theta = -6/3 = -2$. In res je $(-2)^3 - 7\cdot(-2) - 6 = 0$.
     \item V zadnjem primeru pa se v presečišče premic $L_1$ in $L_2$ preslika izhodišče $O$. Zato pregib premico $r$ seka v točki $(1,-3)$ in za kot $\theta$ gledamo prvi pravokotni trikotnik. Dobimo $x_\theta = -tan \theta = -(-3)/1 = 3$. Preverimo rešitev in dobimo $3^3 - 7\cdot3 - 6 = 0$.
 \end{enumerate}
 
@@ -250,25 +265,14 @@ Na sliki~\ref{fig:lill_primer_pregibi} so konstrukcije vseh treh možnih pregibo
 
 Seveda se da enačbo $x^3 - 7x - 6 = 0$ hitreje rešiti z računanjem, vendar je ravno zaradi tega lep primer za uporabo Lillove metode z Belochinim pregibom, saj se da rešitve iz konstrukcije (ob natančnih prepogibih) takoj prebrati.
 
-\subsubsection{Reševanje kvadratne enačbe z Lillovo metodo}
-\label{podpodl:kvadr_en_lill}
-
-Lillovo lahko uporabimo tudi za reševanje kvadratne enačbe $a x^2 + b x + c = 0, a \neq 0$. Na enak način v koordinatni sistem zarišemo želvino pot, ki se začne v točki $A$ in konča v točki $B$. Za razliko od prej tu ne uporabimo Belochinega pregiba, temveč pregib iz operacije~\ref{op:O6}. Namesto dveh premic $r$ in $s$ imamo le eno -- naj bo $r$ nosilka daljice $b$. Kot prej -- na razdalji $a$ na drugi strani točke $A$ -- označimo še njeno vzporednico $r'$. Konstruiramo pregib, ki gre skozi točko $B$ in točko $A$ položi na premico $r'$. Njegovo presečišče s premico $r$ nam določi točko $X$, kjer se žarek iz točke $A$ pod pravim kotom odbije v točko $B$. Na sliki~\ref{fig:kv_en_lill} je primer kosntrukcije pri negativnem koeficientu $c$. S tem je kot $\theta$ določen. Premislili smo tudi že, da sta možna največ dva pregiba in da je število pregibov enako številu realnih rešitev enačbe.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{images/kvadratna_enacba/kvadratna_enacba_lillova_metoda.png}
-    \caption[Lillova metoda za kvadratno enačbo]{Reševanje kvadratne enačbe po Lillovi metodi z operacijo~\ref{op:O6} ($c < 0$).}
-    \label{fig:kv_en_lill}
-\end{figure}
-
 \subsubsection{Hatorijeva konstrukcija}
 
-Japonski matematik Koshiro Hatori navaja postopek, ki je zelo podoben Belochinem postopku, vendar ga je avtor iznašel neodvisno od Belochinega dela. Brez škode za splošnost predpostavi $a = 1$ in za reševanje enačbe $x^3 + bx^2 + cx + d = 0$ sledi naslednjim korakom (slika~\ref{fig:hatori}):
-\begin{itemize}
-    \item V koordinatnem sistemu označimo točki $A = (b, 1)$ in $B = (d, c)$ ter premici $a: y = -1$ in $b: x = -d$.
-    \item Opravimo pregib, ki točko $A$ položi na premico $a$ ter točko $B$ na premico $b$ -- to je ravno Belochin pregib, vendar ga je avtor odkril sam (a več kot pol stoletja za Belochovo).
-\end{itemize}
+Japonski matematik Koshiro Hatori navaja postopek, ki je zelo podoben Belochinem postopku, vendar ga je avtor iznašel neodvisno od Belochinega dela in to kar pol stoletja za tem. Brez škode za splošnost predpostavi $a = 1$ in za reševanje enačbe $x^3 + bx^2 + cx + d = 0$ sledi naslednjim korakom (slika~\ref{fig:hatori}):
+\begin{enumerate}
+    \item V koordinatnem sistemu označimo točki $A = (b, 1)$ in $B = (d, c)$ ter premici $r': y = -1$ in $s': x = -d$.
+    \item Opravimo pregib, ki točko $A$ položi na premico $r'$ ter točko $B$ na premico $s'$ (to je ravno Belochin pregib).
+    \item Koeficient opravljenega pregiba je rešitev dane enačbe.
+\end{enumerate}
 
 \begin{figure}[h]
     \centering
@@ -277,11 +281,21 @@ Japonski matematik Koshiro Hatori navaja postopek, ki je zelo podoben Belochinem
     \label{fig:hatori}
 \end{figure}
 
-Avtor zaključi, da je koeficient opravljenega pregiba rešitev naše enačbe.
+Takoj vidimo, da je to v resnici ravno Belochin postopek, le da Hatori ne omeni premic $r$ in $s$ ter da se želva na začetku svoje poti ne nahaja v koordinatnem izhodišču temveč v točki $A$, je najprej usmerjena navzdol in se obrača v negativno smer (njena pot je na sliki~\ref{fig:hatori} označena z modro). Če izrazimo koeficient pregiba preko kota $\theta$, ki ga ob začetni točki $A$ omejujeta modra in črna prekinjena daljica, res dobimo $k = - \tan \theta$. Za geometrijsko razlago preko parabol gl.~\cite{hatori2003}.
 
-Bralec lahko sam premisli, da je to v resnici ravno Belochin postopek po Lillovi metodi, le da se želva na začetku svoje poti ne nahaja v koordinatnem izhodišču temveč v točki $A$, je najprej usmerjena navzdol in se obrača v smer urinih kazalcev (njena pot je na sliki~\ref{fig:hatori} označena z modro). Prav tako lahko izrazi koeficient pregiba s kotom ob začetni točki $A$ in res dobi $k = - \tan \theta$. \textcolor{red}{(to si tudi sama preverila in res drži)}. Za geometrijsko razlago preko parabol gl.~\cite{hatori2003}.
+\opomba{Seveda bi lahko vzeli katerikoli $a \in \Q$ in vzeli premico $r': y = -a$.}
 
-\opomba{Seveda bi lahko vzeli katerikoli $a \in \Q$ in vzeli premico $a: y = -a$.}
+\subsubsection{Reševanje kvadratne enačbe z Lillovo metodo}
+\label{podpodl:kvadr_en_lill}
+
+Lillovo metodo lahko uporabimo tudi za reševanje kvadratne enačbe $a x^2 + b x + c = 0$, kjer $a, b, c \in \Q$ in $a \neq 0$. Na enak način v koordinatni sistem zarišemo želvino pot, ki se začne v točki $A$ in konča v točki $B$. Za razliko od Belochinega postopka tu ne uporabimo Belochinega pregiba, temveč pregib iz operacije~\ref{op:O6}. Namesto dveh premic $r$ in $s$ imamo le eno -- naj bo $r$ nosilka daljice $b$. Kot prej -- na razdalji $a$ na drugi strani točke $A$ -- označimo še njeno vzporednico $r'$. Konstruiramo pregib, ki gre skozi točko $B$ in točko $A$ položi na premico $r'$. Njegovo presečišče s premico $r$ nam določi točko $X$, kjer se žarek iz točke $A$ pod pravim kotom odbije v točko $B$ (primer na sliki~\ref{fig:kv_en_lill}). S tem je kot $\theta$ določen. Vemo že, da sta možana največ dva pregiba in da je število pregibov enako številu realnih rešitev enačbe.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/kvadratna_enacba/kvadratna_enacba_lillova_metoda.png}
+    \caption[Lillova metoda za kvadratno enačbo]{Reševanje kvadratne enačbe po Lillovi metodi z operacijo~\ref{op:O6} ($c < 0$).}
+    \label{fig:kv_en_lill}
+\end{figure}
 
 \subsection{Kubična in kvartična enačba v afini ravnini}
 
