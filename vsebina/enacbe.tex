@@ -298,6 +298,7 @@ Lillovo metodo lahko uporabimo tudi za reševanje kvadratne enačbe $a x^2 + b x
 \end{figure}
 
 \subsection{Alperinova in Geretschlägerjeva metoda za reševanje kubičnih enačb}
+\label{podpogl:alperin}
 
 V razdelku~\ref{podpogl:kvadratna_enacba} smo reševali kvadratno enačbo preko konstrukcije tangente na parabolo (operacija~\ref{op:O6}), ki je bila določena s koeficienti iz dane enačbe. Nato smo spoznali Belochin postopek, ki se poslužuje Belochinega pregiba (operacije~\ref{op:O7}), vendar brez povezave s parabolami. To povezavo bomo pogledali sedaj.
 
@@ -317,7 +318,8 @@ $$
 Enačbo poenostavimo in res dobimo $k^3 + ck + d = 0$, torej je koeficient skupne tangente rešitev izvorne zreducirane kubične enačbe.
 
 \begin{opomba}
-    Na enak način je do rešitve kubične enačbe še pred Alperinom prišel Robert Geretschläger (gl.\ ~\cite[368--369]{geret1995}). V članku pa za razliko od Alperina postopek posploši na reševanje splošne kubične enačbe oblike $x^3 + bx^2 + cx + d = 0$. Pri tem se izbiro parabole $\mathcal{P}_2$ ohrani, enačbo prve parabole $\mathcal{P}_1$ pa nastavi na $(y-c/2)^2 = 2d(x-b/2)$, torej dobimo gorišče v točki $(-b/2+d/2, c/2)$ in premico vodnico $x = -b/2-d/2$.
+    \label{opom:geret_metoda}
+    Na enak način je do rešitve kubične enačbe še pred Alperinom prišel Robert Geretschläger (gl.\ ~\cite[368--369]{geret1995}). V članku pa za razliko od Alperina postopek posploši na reševanje splošne kubične enačbe oblike $x^3 + bx^2 + cx + d = 0$. Pri tem se izbiro parabole $\mathcal{P}_2$ ohrani, enačbo prve parabole $\mathcal{P}_1$ pa nastavi na $(y-c/2)^2 = 2d(x+b/2)$, torej dobimo gorišče v točki $(-b/2+d/2, c/2)$ in premico vodnico $x = -b/2-d/2$.
 \end{opomba}
 
 \subsection{Reševanje starogrških problemov preko reševanja enačb}
@@ -330,20 +332,41 @@ Enačbo lahko rešimo tudi z Alperinovim postopkom ali katerokoli drugo metodo z
 
 Pri problemu trisekcije kota se spomnimo zveze $\cos 3\theta = 4 \cos^3 \theta - 3 \cos \theta$. Naj bo za dan kot $3\theta$ označena konstanta $k = \cos 3\theta$ (npr.\ za $3 \theta = 60^\circ$, ki se ga z evklidskim orodjem ne da tretjiniti, je $k = 1/2$), iščemo pa $x = \cos \theta$. Torej rešujemo enačbo $4x^3-3x-k=0$. Zopet lahko izberemo poljubno metodo; v~\cite[str.\ 370]{geret1995} je zapisana konstrukcija gorišč in premic vodnic za uporabo Geretschlägerjeve oz.\ Alperinove metodo.
 
-\subsection{Kubična in kvartična enačba v afini ravnini}
+\subsection{Kubična in kvartična enačba v projektivni ravnini}
 \label{podpogl:afina_proj_enacbe}
 
-\textcolor{red}{A je naslov ok ali je preveč misteriozen in kontraverzen?}
+Matematika Edwards in Shurman se v~\cite{edwards2001} ukvarjata z reševanjem enačb tretje in četrte stopnje preko iskanja skupnih tangent na določene stožnice, pri tem pa uporabljata princip Belochinega pregiba. Tematike se lotevata na celovit način z obravnavo splošnih enačb stožnic v projektivni ravnini.
 
-Kot že omenjeno v uvodu tega poglavja se Edwards in Shurman v~\cite{edwards2001} ukvarjata z reševanjem enačb tretje in četrte stopnje preko iskanja skupnih tangent na določene stožnice, pri tem pa uporabljata princip Belochinega pregiba. Pri kubični enačbi iz njenih koeficientov določita gorišči in premici vodnici dveh parabol, rešitve enačbe pa so koeficienti skupnih tangent. Postopek za reševanje kvartične enačbe je podoben, le da iz njenih koeficientov določita parabolo in krožnico, rešitve pa so začetne vrednosti skupnih tangent. Videli bomo, da slednji postopek deluje le za nekatere kvartične enačbe.
+Pri kubični enačbi iz njenih koeficientov določita gorišči in premici vodnici dveh parabol, rešitve enačbe pa so \emph{koeficienti} skupnih tangent. Tak postopek smo sicer spoznali že v razdelku~\ref{podpogl:alperin}, tu pa ga bomo pogledali pod malo drugačno lučjo.
 
-Preden se podamo na natančnejšo razčlenitev njunega dela, se najprej vprašajmo, kako lahko z origamijem določimo skupno tangento na parabolo in krožnico -- do sedaj to namreč znamo le v primeru dveh parabol (preko Belochinega pregiba). Postopek je v svojem bistvu zelo enostaven. Pri danem gorišču in premici vodnici parabole ter krožnici s središčem v točki $S$ in polmerom $r$ zarišemo krožnico z istim središčem ter dvakratnim polmerom, torej $2r$. Nato po zgledu Belochinega pregiba opravimo pregib, ki gorišče parabole položi na njeno premico vodnico, središče $S$ pa na rob krožnice s polmerom $2r$. Pregib je tako res skupna tangenta na parabolo in krožnico s polmerom $r$ (slika \textcolor{red}{dej kakšen slikovni primeeeeer -- lahko kar sliko 3 iz tega vira}).
+Postopek za reševanje kvartične enačbe je podoben, vendar avtorja z njim rešita le kvartične enačbe v reducirani obliki. Iz njenih koeficientov določita parabolo in krožnico, rešitve pa so \emph{začetne vrednosti} skupnih tangent.
+
+\subsubsection*{Konstrukcija skupne tangente na parabolo in krožnico}
+
+Ker do sedaj poznamo le konstrukcijo skupne tangente na dve paraboli, je na mestu vprašanje, kako postopati v primeru, ko imamo namesto ene parabole krožnico. Postopek je v svojem bistvu zelo enostaven:
+\begin{enumerate}
+    \item Naj bosta dani parabola z znanima goriščem in premico vodnico ter krožnica z znanima središčem polmerom. Teh dveh stožnic ni potrebno risati, ker potrebujemo omenjene podatke.
+    \item Zarišemo krožnico z istim središčem in dvakratnim polmerom.
+    \item Po zgledu Belochinega pregiba gorišče prepognemo na premico in hkrati središče na rob ravnokar narisane krožnice.
+\end{enumerate}
+
+Po operaciji~\ref{op:O6} je pregib tangenten na dano parabolo, ker pa je po konstrukciji simetrala in pravokoten na polmer večje krožnice, je tangenten tudi na krožnico z originalnim polemrom. Na sliki~\ref{fig:tang_kroznica_par} sta desno prikazani dani parabola $\mathcal{P}$ in krožnica $\mathcal{C}$, levo pa konstrukcije iz danih podatkov -- gorišče $F'$, premica vodnica $D'$, središče $O$ ter krožnica $2\mathcal{C}$ z dvakrat večjim polmerom. Na obeh slikah so konsturirani vsi štirje pregibi oz. skupne tangente.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.48\textwidth]{images/tang_krozn_par1.png}
+    \includegraphics[width=0.5\textwidth]{images/tang_krozn_par2.png}
+    \caption[Skupna tangenta na krožnico in parabolo]{Konstrukcija skupnih tangent na krožnico in parabolo. Vzeto iz~\cite[str.\ 24--25]{edwards2001}.}
+    \label{fig:tang_kroznica_par}
+\end{figure}
 
 \begin{opomba}
     V tem razdelku za potrebe reševanja izjemoma potrebujemo šestilo, s katerim iz koeficientov kvartične enačbe konstruiramo krožnico.
 \end{opomba}
 
-Postopek se trenutno lahko dozdeva enostaven, vendar nas do enačb iskanih stožnic čaka še dolga pot. (\textcolor{red}{Nekej od tega de se moramo spomnit splošne enačbe stožnic in afine pa projektivne geometrije blablabla})
+Skupne tangente zato znamo zlahka konstruirati, pravo vprašanje pa je, kateri stožnici določa dana kubična oz.\ kvartična enačba. Kot omenjeno že v uvodu razdelka, si avtorja pri tem pomagata s projektivno ravnino. 
+
+\subsubsection*{Stožnice v projektivni ravnini}
 
 \textcolor{red}{Definicija projektivne geometrije nad vektorskim prostorom V (mi bomo imeli V = $\R^3$.)}
 
@@ -404,6 +427,8 @@ Naj bo $p \in \mathcal{S}$ točka na stožnici $\mathcal{S}$ in naj bo $q = Mp$.
     \item $\mathcal{P}_2: x^2 = -4y$ z goriščem $F_2 (0, -1)$ in premico vodnico $L_2: y = 1$.
  \end{itemize}
 
+ \opomba{Opazimo, da gre za enako izbiro parabol kot pri Geretschlägerjevi metodi (opomba~\ref{opom:geret_metoda}), le da so tu spremenljivke pomnožene za faktor $-2$.}
+
  Iz enačb parabol zapišemo njuni matriki
 $$ M_1 =
     \begin{bmatrix}
@@ -448,8 +473,6 @@ kar pomeni, da nam $A$, koeficient skupne tangente, reši izvorno kubično enač
 \end{opomba}
 
 \textcolor{red}{Dodaj konkreten primer iz članka, origami pregibe si tudi fizično sprobala na enem listi.}
-
-\textcolor{red}{Omeni povezavo z Alperinovo metodo -- spremenljivke v alp.metodi so pomnožene z $-1/2$}
 
 \subsubsection*{Reševanje kvartične enačbe}
 
