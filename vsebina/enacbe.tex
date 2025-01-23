@@ -3,7 +3,7 @@
 
 V tem poglavju s prepogibanjem papirja rešujemo enačbe z racionalnimi koeficienti. Njihove rešitve bomo konstruirali v evklidski ravnini, ki jo predstavlja list papirja. Spomnimo se, da smo origami števila definirali kot vsa števila, ki jih lahko s prepogibanjem konstruiramo preko na začetku danega izhodišča $O$ in števila $1$ na realni osi (definicija~\ref{def:origami_stevilo}), evklidska ravnina pa je v bijekciji s kompleksno ravnino, dano v definiciji. Zaradi večje preglednosti bomo lahko pomožne pregibe in točke (ki bi jih sicer znali konstruirati z origamijem, npr.\ zrcaljene točke) narisali kar z ravnilom in pisalom.
 
-Začnimo z najbolj osnovno, t.\ j.\ linearno enačbo. Enačba $ax + b = 0$, kjer $a, b \in \Q$ in $a \neq 0$ ima rešitev $x = -b/a$, ki je racionalno število, torej origami število in samo po sebi konstruktibilno. Če bi želeli rešitev konstruirati geometrijsko preko pregibov, v ravnini prepognemo premico $y = ax + b$ (napravimo pregib npr.\ skozi točki (0, b) in (1, a+b)) in njeno presečišče z abscisno osjo nam da iskano rešitev (slika~\ref{fig:lin_en}).
+Začnimo z najbolj osnovno, tj.\ linearno enačbo. Enačba $ax + b = 0$, kjer $a, b \in \Q$ in $a \neq 0$ ima rešitev $x = -b/a$, ki je racionalno število, torej origami število in samo po sebi konstruktibilno. Če bi želeli rešitev konstruirati geometrijsko preko pregibov, v ravnini prepognemo premico $y = ax + b$ (napravimo pregib npr.\ skozi točki (0, b) in (1, a+b)) in njeno presečišče z abscisno osjo nam da iskano rešitev (slika~\ref{fig:lin_en}).
 
 \begin{figure}[h]
     \centering
@@ -46,7 +46,7 @@ Postopek, ki si ga bomo pogledali v nadaljevanju, predpostavlja $a = 1$. Ker je 
     \label{eq:spl_kv_en}
     x^2 + bx + c = 0.
 \end{equation}
-Predpostavimo, da ima enačba dve različni realni rešitvi oz.\ da je diskriminanta enačbe pozitivna, t.\ j.\ $D = b^2 - 4c > 0$. Če realnih ničel ni, o origami konstrukciji rešitev namreč nima smisla razpravljati. Če je rešitev ena, je podana kot $x = -b/2$, kar je origami-konstruktibilno število in se ga lahko takoj konstruira.
+Predpostavimo, da ima enačba dve različni realni rešitvi oz.\ da je diskriminanta enačbe pozitivna, tj.\ $D = b^2 - 4c > 0$. Če realnih ničel ni, o origami konstrukciji rešitev namreč nima smisla razpravljati. Če je rešitev ena, je podana kot $x = -b/2$, kar je origami-konstruktibilno število in se ga lahko takoj konstruira.
 
 Enačba~\ref{eq:spl_kv_en} nam ob teh predpostavkah torej poda pokončno parabolo $y = x^2 + bx + c$ z vodoravno premico vodnico in dvema ničlama, ki sta rešitvi naše enačbe. Iščemo abscisi presečišč parabole z abscisno osjo.
 
@@ -368,33 +368,39 @@ Skupne tangente na dve paraboli ali na parabolo in krožnico zdaj znamo zlahka k
 
 \subsubsection*{Stožnice v projektivni ravnini}
 
-Realna projektivna ravnina $P(\R^3)$ sestoji iz množice točk in premic:
-\begin{itemize}
-    \item točke v $P(\R^3)$ ustrezajo premicam skozi izhodišče v evklidskem prostoru $\R^3$,
-    \item premice v $P(\R^3)$ ustrezajo ravninam skozi izhodišče v evklidskem prostoru $\R^3$.
-\end{itemize}
-V projektivni ravnini se sekata tudi vzporedni premici, in sicer v \emph{točki v neskončnosti}. Tako so točke in premice tu v incidenčni relaciji in veljajo aksiomi projektivne ravnine:
+\begin{definicija}
+    Projektivno ravnino nad obsegom $\C$ označimo s $P_2(\C)$. To je množica vseh premic v $\C^3$, ki gredo skozi koordinatno izhodišče, njene premice pa so ravnine v $\C^3$, ki potekajo skozi izhodišče.
+\end{definicija}
+Naj bo $(x_0,y_0,z_0)$ točka v $\C^3$, ki \emph{ni} koordinatno izhodišče. Premico, ki gre skozi to točko in izhodišče, lahko označimo s $[x_0 : y_0 : z_0]$. To je točka projektivne ravnine. Ker za poljuben $\lambda \in \C$ velja, da točka $(\lambda x_0, \lambda y_0, \lambda z_0)$ leži na isti premici, je $[\lambda x_0 : \lambda y_0 : \lambda z_0] = [x_0 : y_0 : z_0]$, tj.\ ti dve točki projektivne ravnine sta enaki, saj določata isto premico. Množica $\{ [x:y:z]; ax+by+cz = 0\}$ za neke $a,b,c \in \C$ je projektivna premica, torej ravnina v $\C^3$ skozi izhodišče.
+
+\opomba{V nalogi bomo namesto obsega $\C$ uporabljali njegov podobseg $\R$, kar ne vpliva na lastnosti projektivne ravnine.}
+
+Ključna lastnost projektivne ravnine je, da se v njej sekata tudi vzporedni premici, in sicer v \emph{točki v neskončnosti}. Tako si lahko projektivno ravnino lahko predstavljamo kot običajno ravnino, ki ima dodano premico v neskončnosti ($z = 0$). Zaradi te lastnosti so točke in premice iz projektivne ravnine v incidenčni relaciji in veljajo aksiomi projektivne ravnine:
 \begin{itemize}
     \item [P1] Vsak par točk leži na natanko eni premici.
     \item [P2] Vsak par premic se seka v natanko eni točki.
     \item [P3] Obstajajo 4 točke, od katerih nobena trojica ni kolinearna.
 \end{itemize}
 
+Spomnimo se, da je stožnica v realni ravnini $\R^2$ dana z enačbo
+$$a_{11}x^2 + 2a_{12}xy + a_{22}y^2 + 2a_{13}x + 2a_{23}y + a_{33} = 0,$$
+kjer so $a_i$ poljubna realna števila. V projektivni ravnini je stožnica definirana podobno, vendar potrebujemo nekaj več ozadja.
 \begin{definicija}
-    Naj bodo $a_{11}, a_{12}, a_{22}, a_{13}, a_{23}, a_{33} \in \R$. Stožnica v realni ravnini $\R^2$ je množica točk $(x, y)$, ki rešijo enačbo
-    $$a_{11}x^2 + 2a_{12}xy + a_{22}y^2 + 2a_{13}x + 2a_{23}y + a_{33} = 0.$$
-    Stožnica v realni projektivni ravnini $P(\R^3)$ je množica točk $(x, y, z)$, ki rešijo enačbo
+    Naj bo $F \in \R[x,y,z]$ dan \emph{homogen} polinom \emph{drugega reda} oblike
     \begin{equation}
         \label{eq:stoznica_splosna}
-        a_{11}x^2 + 2a_{12}xy + a_{22}y^2 + 2a_{13}xz + 2a_{23}yz + a_{33}z^2 = 0,
+        F(x,y,z) = a_{11}x^2 + 2a_{12}xy + a_{22}y^2 + 2a_{13}xz + 2a_{23}yz + a_{33}z^2
     \end{equation}
+    za $a_i \in \R$. Stožnica v realni projektivni ravnini $P_2(\R)$ je množica $\mathcal{S} \subset P_2(\R)$, ki vsebuje natanko ničle tega polinoma, tj.
+    $$ \mathcal{S} = \{[x:y:z] \in P_2(\R); F(x,y,z) = 0\}.$$  
 \end{definicija}
 \begin{opomba}
-    Med enačbama stožnic v obeh ravninah obstaja povezava. Razširitvi enačbe stožnice v $\R^2$ v $P(\R^3)$ rečemo \emph{homogenizacija}, obratnemu procesu (zožitvi stožnice na afini del, ravnino $z = 1$) pa \emph{dehomogenizacija}.
+    Med enačbama stožnic v obeh ravninah obstaja povezava. Razširitvi enačbe stožnice iz $\R^2$ v $P_2(\R)$ rečemo \emph{homogenizacija}, obratnemu procesu (zožitvi stožnice na afini del, ravnino $z = 1$) pa \emph{dehomogenizacija}.
 \end{opomba}
 
-Naj ima sedaj stožnica $\mathcal{S}$ ima v $P(\R^3)$ homogenizirano enačbo~\ref{eq:stoznica_splosna}, kar lahko krajše zapišemo v obliki
-\begin{equation*}
+Naj ima sedaj stožnica $\mathcal{S}$ ima v $P_2(\R)$ homogenizirano enačbo~\ref{eq:stoznica_splosna}, kar lahko krajše zapišemo v obliki
+\begin{equation}
+    \label{eq:stoznica_matricna}
     \mathcal{S}: v^\intercal M v = 0,
     \text{ kjer sta } v =
     \begin{bmatrix}
@@ -408,7 +414,7 @@ Naj ima sedaj stožnica $\mathcal{S}$ ima v $P(\R^3)$ homogenizirano enačbo~\re
         a_{12} & a_{22} & a_{23}\\
         a_{13} & a_{23} & a_{33}
     \end{bmatrix}.
-\end{equation*}
+\end{equation}
 
 Pri tem je simetrična matrika $M$ definirana do neničelnega skalarnega večkratnika natančno. Stožnica $\mathcal{S}$ je \emph{neizrojena} (ni unija dveh premic ali ene, dvojno štete premice), če ima poln rang, torej rang $ M = 3$ oziroma ekvivalentno $\det M \neq 0$. V nadaljevanju bomo delali le z neizrojenimi stožnicami, torej vedno obstaja inverz matrike $M$, ki je prav tako simetričen.
 
@@ -420,21 +426,14 @@ Iz prvega minorja matrike $M$ lahko takoj preberemo, za katero vrsto neizrojene 
 \end{itemize}
 
 \begin{definicija}
-    \emph{Dualna krivulja} za dano krivuljo $\mathcal{C}$ v projektivni ravnini je krivulja v dualni projektivni ravnini, ki jo sestavlja množica tangentnih premic na $\mathcal{C}$.
+    \emph{Dualna stožnica} $\mathcal{\hat{S}}$ za dano stožnico $\mathcal{S}$ v projektivni ravnini $P_2(\C)$ je množica tangentnih premic na $\mathcal{S}$. Če stožnici $\mathcal{S}$ pripadata polinom $F(x,y,z)$ in posledično matrika $M$, je tangenta na točko $v \in \mathcal{S}$ dana z enačbo $x F_x(v) + y F_y(v) + z F_z(v) = 0$. Torej je
+    $$ \mathcal{\hat{S}} = \{[F_x(v) : F_y(v) : F_z(v)]; v \in \mathcal{S} \}.$$
 \end{definicija}
+Naj bo $v \in \mathcal{S}$ in $ q \in \mathcal{\hat{S}}$ tangenta na točko $v$. Bralec se z upoštevanjem homogenosti koordinat točk v projektivni ravnini lahko hitro prepriča, da potem velja $q = M \cdot p$. To med drugim pomeni, da je preslikava $\mathcal{S} \longrightarrow \mathcal{\hat{S}}$ s predpisom $p \mapsto Mp$ je bijekcija med $\mathcal{S}$ in $\mathcal{\hat{S}}$.
 
-Naj bo $\mathcal{S}$ stožnica s pripadajočo matriko $M$. Definirajmo stožnico $\mathcal{\hat{S}}$ s predpisom
-\begin{equation*}
-    \mathcal{\hat{S}}: v^\intercal M^{-1} v = 0.
-\end{equation*}
-Naj bo $p \in \mathcal{S}$ točka na stožnici $\mathcal{S}$ in naj bo $q = Mp$. Potem je
-$$ q^\intercal p = q^\intercal M^{-1} q = (Mp)^\intercal M^{-1} (Mp) = p^\intercal M^\intercal M^{-1} M p = p^\intercal M p = 0,$$
-kar pomeni dvoje:
-\begin{itemize}
-    \item $q \in \mathcal{\hat{S}}$ in preslikava $\mathcal{S} \longrightarrow \mathcal{\hat{S}}$ s predpisom $p \mapsto Mp$ je bijekcija med stožnicama $\mathcal{S}$ in $\mathcal{\hat{S}}$,
-    \item $q$ je tangenta na $\mathcal{S}$ v točki $p$ \textcolor{red}{(Je to ok formulirano?)}.
-\end{itemize}
-S tem smo izpeljali, da je stožnica $\mathcal{\hat{S}}$ s pripadajočo metriko $M^{-1}$ dualna stožnica za $\mathcal{S}$.
+Ker je
+$$ q^\intercal M^{-1} q = (Mp)^\intercal M^{-1} (Mp) = p^\intercal M^\intercal M^{-1} M p = p^\intercal M p = 0,$$
+kar pomeni, da je $\mathcal{\hat{S}}$ res stožnica in je $M^{-1}$ njena pripadajoča matrika.
 
 Poglejmo, kako nam znanje o stožnicah in njihovih dualnih stožnicah pomaga pri reševanju kubičnih in kvartičnih enačb. Naj bosta $\mathcal{S}_1$ in $\mathcal{S}_2$ stožnici s pripadajočima simetričnima obrnljivima matrikama $M_1$ in $M_2$. Potem je njuna skupna tangenta skupna točka njunih dualnih stožnic $\mathcal{\hat{S}}_1$ in $\mathcal{\hat{S}}_2$. Torej iščemo $q \in \mathcal{\hat{S}}_1 \cap \mathcal{\hat{S}}_2$, ki reši sistem enačb
 \begin{equation}
@@ -479,7 +478,7 @@ $$ M^{-1}_1 = \frac{1}{d}
     \end{bmatrix}.
 $$
 
-Naj bo $q = [A\;B\; C]^\intercal \in \mathcal{\hat{P}}_1 \cap \mathcal{\hat{P}}_2$ skupna tangenta na paraboli $\mathcal{P}_1$ in $\mathcal{P}_2$. Iz sistema enačb~\ref{eq:afin_sistem_tangenta_splosen} dobimo nov sistem
+Naj bo $q = [A : B : C]^\intercal \in \mathcal{\hat{P}}_1 \cap \mathcal{\hat{P}}_2$ skupna tangenta na paraboli $\mathcal{P}_1$ in $\mathcal{P}_2$. Iz sistema enačb~\ref{eq:afin_sistem_tangenta_splosen} dobimo nov sistem
 \begin{equation}
     \label{eq:afin_sistem_tangenta_ABC_kub}
     bA^2 - cAB + AC + dB^2 = 0 \; \text{ in } \; -BC = A^2.
@@ -514,12 +513,12 @@ Kot že povedano, sledeči postopek ne rešuje splošne enačbe četrte stopnje,
 \end{equation}
 Smiselno predpostavimo $c \neq 0$, da se enačba z uvedbo nove spremenljivke za $x^2$ ne more prevesti na kvadratno enačbo.
 
-\textcolor{red}{omeni Bezuatov izrek al kaj je že in da dualne stožnice imajo kvadratno enačbo, kar pomeni, da imata dve največ štiri skupne točke (tangente) v kompleksni projektivni ravnini; ker so inverzne matrike realne, nastopajo v konjugiranih parih, torej imata po nič, dve ali štiri skupne tangente (šteto z večkratnostjo). A je tu not tudi tangenta v neskončnosti všteta? Skratka, dve paraboli pa imata skupno tangento v neskončnosti, kar pomeni, da potem ne pustita dovolj afinih tangent, ki bi rešile kvartično enačbo (ker so afine tangente največ tri). Zato ne moremo vzeti dveh parabol.}
+Po Bezoutovem izreku \textcolor{red}{(referiraj na izrek)} imata dve različni in neizrojeni stožnici v kompleksni projektivni ravnini štiri presečišča vključno z večkratnostjo. Ker sta njuni dualni stožnici prav tako v kompleksni projektivni ravnini, to pomeni, da imata stožnici v kompleksni projektivni ravnini štiri skupne tangente, ki nastopajo v konjugiranih parih -- po nič, dve ali štiri tangente (šteto z večkratnostjo). Dve paraboli imata skupno tangento v neskončnosti, torej ostanejo le še tri afine tangente, kar ni dovolj za vse rešitve kvartične enačbe. Zato tu ne moremo vzeti dveh parabol.
 
-Zgornjo metodo bi lahko uporabili tudi tu. Avtorja pri predpostavki $bd - c^2 \neq 0$ vzameta naslednji stožnici:
+Poskusimo najprej z metodo, ki smo jo uporabili pri reševanju kubične enačbe. Avtorja pri predpostavki $bd - c^2 \neq 0$ vzameta naslednji stožnici:
 \begin{itemize}
     \item $\mathcal{S}: dx^2 + 2cxy + by^2 + bd - c^2 = 0$ in
-    \item parabolo od prej, t.\ j.\ $\mathcal{P}: x^2 = -4y$.
+    \item parabolo od prej, tj.\ $\mathcal{P}: x^2 = -4y$.
 \end{itemize}
 Bralec je povabljen, da po enakem postopku kot pri kubični enačbi izpelje, da koeficient skupne tangente $y = Ax + C$ reši enačbo~\ref{eq:reduc_kvart_ev}. Stožnicama $\mathcal{S}$ in $\mathcal{P}$ zaporedoma pripadata matriki
 $$ M_\mathcal{S} =
@@ -539,10 +538,10 @@ Ker za glavni minor matrike $M_\mathcal{S}$ velja $A_{M_\mathcal{S}} = bd - c^2 
 
 Pri danih koeficientih $b, c, d$ enačbe~\ref{eq:reduc_kvart_ev} vpeljimo novi oznaki
 $$ e = \frac{\sqrt{bd - c^2}}{d} \; \text{ in } \; r = |e|\sqrt{-d}, $$
-iz česar sledita relaciji, ki ju bomo kasneje uporabili pri izpeljavi:
+iz česar sledita enakosti, ki ju bomo kasneje uporabili pri izpeljavi:
 \begin{equation}
-    \label{eq:kvarticni_relaciji}
-    b= de^2 + \frac{c^2}{d^2} \; \text{ in } \; -\frac{de^2}{r^2} = 1.
+    \label{eq:kvarticni_enakosti}
+    b= de^2 + \frac{c^2}{d} \; \text{ in } \; -\frac{de^2}{r^2} = 1.
 \end{equation}
 \opomba{Smiselno za koeficiente $b, c, d$ predpostavimo $bd - c^2 > 0$ in $d < 0$. Zato s tem postopkom ne moremo reševati poljubnih enačb četrte stopnje.}
 
@@ -581,14 +580,14 @@ Iz njiju zapišemo predpisa stožnic v afini ravnini ($z = 1$) in dobimo:
 \end{itemize}
 Z določitvijo gorišča in premice vodnice parabole $\mathcal{P}$ se bomo ukvarjali pozneje; najprej algebraično poiščimo skupno tangento na dani stožnici.
 
-Naj bo $q = [A\;B\; C]^\intercal$ presečišče dualnih stožnic $\mathcal{\hat{C}}$ in $\mathcal{\hat{P}}$. Iz sistema enačb~\ref{eq:afin_sistem_tangenta_splosen} dobimo nov sistem
+Naj bo $q = [A : B : C]^\intercal$ presečišče dualnih stožnic $\mathcal{\hat{C}}$ in $\mathcal{\hat{P}}$. Iz sistema enačb~\ref{eq:afin_sistem_tangenta_splosen} dobimo nov sistem
 \begin{equation}
     \label{eq:afin_sistem_tangenta_ABC_kvart}
     A^2 + B^2 = \frac{C^2}{r^2} \; \text{ in } \; deAC - dB^2 + cBC = 0.
 \end{equation}
 Z določitvijo $B = -1$ in $z = 1$ zopet dobimo afino obliko skupne tangente kot $y = Ax + C$. Ko $B$ vstavimo v sistem~\ref{eq:afin_sistem_tangenta_ABC_kvart}, prvo enačbo množimo z $de^2C^2$, drugo kvadriramo, delimo z $d$ in vstavimo v prvo enačbo, dobimo
 $$ - \frac{de^2}{r^2}C^4 - (de^2 + \frac{c^2}{d})C^2 + 2cC + d = 0.$$
-V dobljeno enačbo vstavimo enakosti~\ref{eq:kvarticni_relaciji} in dobimo
+V dobljeno enačbo vstavimo enakosti~\ref{eq:kvarticni_enakosti} in dobimo
 $$C^4 + bC^2 + 2cC + d = 0,$$
 kar pomeni, da nam $C$, začetna vrednost tangente oz.\ njeno presečišče z ordinatno osjo, reši izvorno kvartično enačbo~\ref{eq:reduc_kvart_ev}.
 
@@ -616,4 +615,4 @@ Kot vidimo, gorišče in premica vodnica nimata lepih predpisov, vendar je po en
 
 \textbf{Primer:} Na sliki~\ref{fig:tang_kroznica_par} je zarisana konstrukcija skupnih tangent na krožnico in parabolo, ki ju dobimo iz enačbe
 $$ 64x^4 - 177x^2 + 143x - 30 = 0 \; \text{ oz. } \; \left(x - \frac{3}{8}\right) \left(x - \frac{5}{8}\right) (x-1) (x+2) = 0.$$
-Začetne vrednosti tangent so res v njenih rešitvah, torej v točkah $1, 5/8, 3/8$ in $-2$.
+Začetne vrednosti tangent so res v njenih rešitvah, torej v točkah $1, 5/8, 3/8$ in $-2$. Primer je vzet iz istega vira~\cite[str.\ 25]{edwards2001}, vendar iz danih koeficientov ne dobimo ``lepih'' koordinat gorišča, premera ali enačbe premice, ki bi jih zmogli konstruirati z ročno natančnostjo.
