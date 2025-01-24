@@ -130,11 +130,10 @@ Običajno pri opisovanju poteka konstrukcije uporabljamo figuro želve, katere p
     \label{fig:primera_zelve}
 \end{figure}
 
-Sedaj se v izhodišče $O$ postavimo še mi in z laserskim žarkom poskusimo zadeti želvo v točki $T$ tako, da žarek najprej usmerimo daljico $a_{n-1}$, od katere se odbije v daljico $a_{n-2}$, od te v daljico $a_{n-3}$ in tako naprej (slika~\ref{fig:primera_zelve}). Pri tem upoštevamo troje:
+Sedaj se v izhodišče $O$ postavimo še mi in z laserskim žarkom poskusimo zadeti želvo v točki $T$ tako, da žarek najprej usmerimo daljico $a_{n-1}$, od katere se odbije v daljico $a_{n-2}$, od te v daljico $a_{n-3}$ in tako naprej (slika~\ref{fig:primera_zelve}). Pri tem upoštevamo dvoje:
 \begin{itemize}
     \item laserski žarek ne upošteva odbojnega zakona in se od daljice vedno odbije pod kotom $90^\circ$, zato so vpadni koti žarka na vse daljice med seboj enaki in prav tako to velja za odbojne kote;
-    \item žarek se lahko odbije tudi od nosilke daljice;
-    \item vsakič sta možni dve smeri odboja -- na isto ali drugo stran daljice oz.\ njene nosilke -- izberemo pa tisto, ki nam omogoči, da sploh lahko zadenemo naslednjo daljico.
+    \item žarek se zato lahko odbije za kot $\pm 90^\circ$. Če zadene daljico, se odbije na isto stran, od koder je prišel, če pa zadene nosilko daljice, se odbije na njeno drugo stran. Samo tako lahko žarek zadene naslednjo daljico oz.\ njeno nosilko.
 \end{itemize}
 Taka pot žarka vedno obstaja in je enolična. Vpadni kot, ki ga v točki $O$ oklepata laserski žarek in abscisna os, označimo z $\theta$.
 
@@ -143,7 +142,7 @@ Taka pot žarka vedno obstaja in je enolična. Vpadni kot, ki ga v točki $O$ ok
 \end{trditev}
 
 \begin{dokaz}
-    Vzemimo primer, ko so vsi koeficienti polinoma $p(x)$ pozitivni. Želvina pot je v tem primeru sestavljena iz $n+1$ daljic, pot laserskega žarka --ki se vedno odbije od daljice in ne njene nosilke -- pa iz $n$ daljic. Slednje so ravno hipotenuze pravokotnih trikotnikov. Za vsak $i \in \{n, \ldots, 1\}$ označimo z $y_i$ kotu $\theta$ nasprotno kateto. Dobimo
+    Vzemimo primer, ko so vsi koeficienti polinoma $p(x)$ pozitivni. Želvina pot je v tem primeru sestavljena iz $n+1$ daljic, pot laserskega žarka -- ki se vedno odbije od daljice in ne njene nosilke -- pa iz $n$ daljic. Slednje so ravno hipotenuze pravokotnih trikotnikov, ki so si med seboj vsi podobni. Za vsak $i \in \{n, \ldots, 1\}$ v trikotniku s kateto, ki je del daljice $a_i$, označimo z $y_i$ kotu $\theta$ nasprotno kateto. Dobimo
     \begin{align*}
         y_n &= \tan \theta \cdot a_n = - x_{\theta} a_n \\
         y_{n-1} &= \tan \theta \cdot (a_{n-1} - y_n) = - x_{\theta} (a_{n-1} + x_{\theta} a_n) = - (a_{n-1} x_{\theta} + a_n x_{\theta}^2)\\
@@ -154,9 +153,14 @@ Taka pot žarka vedno obstaja in je enolična. Vpadni kot, ki ga v točki $O$ ok
     \end{align*}
     V zadnji enakosti desno stran premaknimo na levo in upoštevamo $y_1 = a_0$. Dobimo ravno $p(x_{\theta}) = 0$, torej je $x_{\theta} = - \tan \theta$ res ničla tega polinoma.
 
-    \textcolor{red}{Primer negativnih koeficientov:~\cite[str.\ 36]{zore2022}.}
+    Dokaz za primer negativnih ali ničelnih koeficientov sta prepuščena za vajo. Potrebna je le majhna prilagoditev (več v~\cite[str.\ 36]{zore2022}).
 
-    \textcolor{red}{Primer ničelnih koeficientov: isto kot prej, samo se spusti $y_i$ za tisti $i$, za katerega je $a_i = 0$. (\textcolor{red}{???})}
+    % Tudi če imamo v polinomu tudi negativne koeficiente, je postopek dokazovanja podoben. Za vsak $i \in \{n, \ldots 1\}$ naj bodo $y_i$ enakega predznaka kot $a_{i-1}$, dolžine ``pripadajočih'' daljic pa so seveda absolutne vrednosti teh števil (za vizualni primer gl.\ sliko~\ref{fig:primera_zelve} (desno)). Za vsak tak $i$ bo v vsakem trikotniku še vedno veljalo
+    % $$ |y_{i-1}| =  \tan \theta \cdot |a_{i-1} - y_i|.$$
+    % Sedaj obravnavajmo vse možne primere za $i \in \{n, \ldots 1\}$ \textcolor{red}{hmmm, za $i = 1$ je $a_0$}:
+    % \begin{itemize}
+    %     \item Recimo $a_{i-1} > 0$, torej je tudi $y_i$ pozitiven in predpostavimo $y_i < a_{i-1}$. Torej $a_{i-1} - y_i > 0 $ Žarek zadene daljico, torej se odbije v isto smer, kar pomeni
+    % \end{itemize}
 \end{dokaz}
 
 Če pod nobenim kotom $\theta$ ne moremo zadeti želve, je polinom $p(x)$ brez realnih ničel. Zato je na mestu vprašanje, kako določiti kot $\theta$. Za polinom tretje stopnje je Belocheva preko svojega pregiba našla zelo preprosto rešitev, ki si jo bomo sedaj pogledali.
@@ -222,8 +226,8 @@ Ker po konstrukciji velja $ AX \perp XY \perp YB $, je to iskana pot laserskega 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.4\textwidth]{images/kubična enačba/beloch_kubicna_resitev.png}
-    \caption[Lillova metoda z Belochinim kvadratom]{Konstrukcija želvine poti za Lillovo metodo preko Belochinega kvadrata. Vzeto in preurejeno iz~\cite[str.\ 313]{hull2011}.}
+    \includegraphics[width=0.45\textwidth]{images/kubična enačba/beloch_kubicna_resitev.png}
+    \caption[Lillova metoda z Belochinim kvadratom]{Belochin postopek za reševanje enačbe $a x^3 + b x^2 + c x + d = 0$. Vzeto in preurejeno iz~\cite[str.\ 42]{hull2020}.}
     \label{fig:beloch_kubicna_resitev}
 \end{figure}
 
@@ -297,6 +301,8 @@ Lillovo metodo lahko uporabimo tudi za reševanje kvadratne enačbe $a x^2 + b x
     \label{fig:kv_en_lill}
 \end{figure}
 
+\opomba{Zelo lepa je konstrukcija točke $X$ z evklidskim orodjem -- če začrtamo želvino pot od točke $A$ do točke $B$, narišemo premico $r$ kot prej in poiščemo središče $S$ daljice $AB$, je točka $X$ po Talesovem izreku ravno presek krožnice s središčem v točki $S$ in premerom $AB$ ter premice $r$. \textcolor{red}{(lahko na isti sliki rahlo začrtaš z eno barvo)}}
+
 \subsection{Alperinova in Geretschlägerjeva metoda za reševanje kubičnih enačb}
 \label{podpogl:alperin}
 
@@ -330,7 +336,7 @@ Pri podvojitvi kocke rešujemo enačbo $x^3 - 2 = 0$. Bralec je povabljen, da jo
 
 Enačbo lahko rešimo tudi z Alperinovim postopkom ali katerokoli drugo metodo za reševanje kubičnih enačb, ki je omenjena v tem poglavju. Videli smo že veliko podobnih metod in ni nemogoče, da kakšni postopki izhajajo iz drugih.
 
-Pri problemu trisekcije kota se spomnimo zveze $\cos 3\theta = 4 \cos^3 \theta - 3 \cos \theta$. Naj bo za dan kot $3\theta$ označena konstanta $k = \cos 3\theta$ (npr.\ za $3 \theta = 60^\circ$, ki se ga z evklidskim orodjem ne da tretjiniti, je $k = 1/2$), iščemo pa $x = \cos \theta$. Torej rešujemo enačbo $4x^3-3x-k=0$. Zopet lahko izberemo poljubno metodo; v~\cite[str.\ 370]{geret1995} je zapisana konstrukcija gorišč in premic vodnic za uporabo Geretschlägerjeve oz.\ Alperinove metodo.
+Pri problemu trisekcije kota se spomnimo zveze $\cos 3\theta = 4 \cos^3 \theta - 3 \cos \theta$. Za dani kot $3 \theta$ iščemo $x = \cos \theta$, torej rešujemo enačbo $4x^3-3x-\cos 3\theta=0$. Zopet lahko izberemo poljubno metodo; po Geretschlägerjevem oz.\ Alperinovem postopku iščemo koeficient skupne tangente na paraboli z goriščema v $(-(\cos 3 \theta) / 8, -3/8)$ in $(0, 1/2)$ ter premicama vodnicama $x = (\cos 3 \theta) / 8$ in $y = -1/2$~\cite[str.\ 370]{geret1995}.
 
 \subsection{Kubična in kvartična enačba v projektivni ravnini}
 \label{podpogl:afina_proj_enacbe}
@@ -371,7 +377,7 @@ Skupne tangente na dve paraboli ali na parabolo in krožnico zdaj znamo zlahka k
 \begin{definicija}
     Projektivno ravnino nad obsegom $\C$ označimo s $P_2(\C)$. To je množica vseh premic v $\C^3$, ki gredo skozi koordinatno izhodišče, njene premice pa so ravnine v $\C^3$, ki potekajo skozi izhodišče.
 \end{definicija}
-Naj bo $(x_0,y_0,z_0)$ točka v $\C^3$, ki \emph{ni} koordinatno izhodišče. Premico, ki gre skozi to točko in izhodišče, lahko označimo s $[x_0 : y_0 : z_0]$. To je točka projektivne ravnine. Ker za poljuben $\lambda \in \C$ velja, da točka $(\lambda x_0, \lambda y_0, \lambda z_0)$ leži na isti premici, je $[\lambda x_0 : \lambda y_0 : \lambda z_0] = [x_0 : y_0 : z_0]$, tj.\ ti dve točki projektivne ravnine sta enaki, saj določata isto premico. Množica $\{ [x:y:z]; ax+by+cz = 0\}$ za neke $a,b,c \in \C$ je projektivna premica, torej ravnina v $\C^3$ skozi izhodišče.
+Naj bo $(x_0,y_0,z_0)$ točka v $\C^3$, ki \emph{ni} koordinatno izhodišče. Premico, ki gre skozi to točko in izhodišče, lahko označimo s $[x_0 : y_0 : z_0]$. To je točka projektivne ravnine. Ker za poljuben $\lambda \in \C$ velja, da točka $(\lambda x_0, \lambda y_0, \lambda z_0)$ leži na isti premici, je $[\lambda x_0 : \lambda y_0 : \lambda z_0] = [x_0 : y_0 : z_0]$, tj.\ ti dve točki projektivne ravnine sta enaki, saj v $\C^3$ določata isto premico. Množica $\{ [x:y:z]; ax+by+cz = 0\}$ za neke $a,b,c \in \C$ je projektivna premica, torej ravnina v $\C^3$ skozi izhodišče.
 
 \opomba{V nalogi bomo namesto obsega $\C$ uporabljali njegov podobseg $\R$, kar ne vpliva na lastnosti projektivne ravnine.}
 
@@ -386,12 +392,12 @@ Spomnimo se, da je stožnica v realni ravnini $\R^2$ dana z enačbo
 $$a_{11}x^2 + 2a_{12}xy + a_{22}y^2 + 2a_{13}x + 2a_{23}y + a_{33} = 0,$$
 kjer so $a_i$ poljubna realna števila. V projektivni ravnini je stožnica definirana podobno, vendar potrebujemo nekaj več ozadja.
 \begin{definicija}
-    Naj bo $F \in \R[x,y,z]$ dan \emph{homogen} polinom \emph{drugega reda} oblike
+    Naj bo $F \in \R[X,Y,Z]$ dan \emph{homogen} polinom \emph{drugega reda} oblike
     \begin{equation}
         \label{eq:stoznica_splosna}
         F(x,y,z) = a_{11}x^2 + 2a_{12}xy + a_{22}y^2 + 2a_{13}xz + 2a_{23}yz + a_{33}z^2
     \end{equation}
-    za $a_i \in \R$. Stožnica v realni projektivni ravnini $P_2(\R)$ je množica $\mathcal{S} \subset P_2(\R)$, ki vsebuje natanko ničle tega polinoma, tj.
+    z $a_i \in \R$. Stožnica v realni projektivni ravnini $P_2(\R)$ je množica $\mathcal{S} \subset P_2(\R)$, ki vsebuje natanko ničle tega polinoma, tj.
     $$ \mathcal{S} = \{[x:y:z] \in P_2(\R); F(x,y,z) = 0\}.$$  
 \end{definicija}
 \begin{opomba}
@@ -416,7 +422,7 @@ Naj ima sedaj stožnica $\mathcal{S}$ ima v $P_2(\R)$ homogenizirano enačbo~\re
     \end{bmatrix}.
 \end{equation}
 
-Pri tem je simetrična matrika $M$ definirana do neničelnega skalarnega večkratnika natančno. Stožnica $\mathcal{S}$ je \emph{neizrojena} (ni unija dveh premic ali ene, dvojno štete premice), če ima poln rang, torej rang $ M = 3$ oziroma ekvivalentno $\det M \neq 0$. V nadaljevanju bomo delali le z neizrojenimi stožnicami, torej vedno obstaja inverz matrike $M$, ki je prav tako simetričen.
+Pri tem je realna simetrična matrika $M$ definirana do neničelnega skalarnega večkratnika natančno. Stožnica $\mathcal{S}$ je \emph{neizrojena} (ni unija dveh premic ali ene, dvojno štete premice), če ima poln rang, torej rang $ M = 3$ oziroma ekvivalentno $\det M \neq 0$. V nadaljevanju bomo delali le z neizrojenimi stožnicami, torej vedno obstaja inverz matrike $M$, ki je prav tako simetričen.
 
 Iz prvega minorja matrike $M$ lahko takoj preberemo, za katero vrsto neizrojene stožnice gre (za razlago gl.\ \cite{sivic2020}). Naj bo $A_M = a_{11}a_{22} - a_{12}^2$. Potem velja:
 \begin{itemize}
@@ -426,10 +432,13 @@ Iz prvega minorja matrike $M$ lahko takoj preberemo, za katero vrsto neizrojene 
 \end{itemize}
 
 \begin{definicija}
-    \emph{Dualna stožnica} $\mathcal{\hat{S}}$ za dano stožnico $\mathcal{S}$ v projektivni ravnini $P_2(\C)$ je množica tangentnih premic na $\mathcal{S}$. Če stožnici $\mathcal{S}$ pripadata polinom $F(x,y,z)$ in posledično matrika $M$, je tangenta na točko $v \in \mathcal{S}$ dana z enačbo $x F_x(v) + y F_y(v) + z F_z(v) = 0$. Torej je
-    $$ \mathcal{\hat{S}} = \{[F_x(v) : F_y(v) : F_z(v)]; v \in \mathcal{S} \}.$$
+    \emph{Dualna stožnica} $\mathcal{\hat{S}}$ za dano stožnico $\mathcal{S}$ v projektivni ravnini $P_2(\C)$ je množica tangentnih premic na $\mathcal{S}$.
 \end{definicija}
-Naj bo $v \in \mathcal{S}$ in $ q \in \mathcal{\hat{S}}$ tangenta na točko $v$. Bralec se z upoštevanjem homogenosti koordinat točk v projektivni ravnini lahko hitro prepriča, da potem velja $q = M \cdot p$. To med drugim pomeni, da je preslikava $\mathcal{S} \longrightarrow \mathcal{\hat{S}}$ s predpisom $p \mapsto Mp$ je bijekcija med $\mathcal{S}$ in $\mathcal{\hat{S}}$.
+\opomba{Dualna stožnica $\mathcal{\hat{S}}$ je torej ovojnica stožnice $\mathcal{S}$.}
+
+Če stožnici $\mathcal{S}$ pripadata polinom $F(x,y,z)$ in posledično matrika $M$, je tangenta na točko $p \in \mathcal{S}$ dana z enačbo $x F_x(p) + y F_y(p) + z F_z(p) = 0$. Torej je
+$$ \mathcal{\hat{S}} = \{[F_x(p) : F_y(p) : F_z(p)]; p \in \mathcal{S} \}.$$
+Naj bo $p \in \mathcal{S}$ in $ q \in \mathcal{\hat{S}}$ tangenta na točko $p$. Bralec se lahko z upoštevanjem homogenosti koordinat točk v projektivni ravnini hitro prepriča, da potem velja $q = M \cdot p$. Ker je matrika $M$ obrnljiva, to med drugim pomeni, da je preslikava $\mathcal{S} \longrightarrow \mathcal{\hat{S}}$ s predpisom $p \mapsto Mp$ je bijekcija med $\mathcal{S}$ in $\mathcal{\hat{S}}$.
 
 Ker je
 $$ q^\intercal M^{-1} q = (Mp)^\intercal M^{-1} (Mp) = p^\intercal M^\intercal M^{-1} M p = p^\intercal M p = 0,$$
@@ -478,13 +487,13 @@ $$ M^{-1}_1 = \frac{1}{d}
     \end{bmatrix}.
 $$
 
-Naj bo $q = [A : B : C]^\intercal \in \mathcal{\hat{P}}_1 \cap \mathcal{\hat{P}}_2$ skupna tangenta na paraboli $\mathcal{P}_1$ in $\mathcal{P}_2$. Iz sistema enačb~\ref{eq:afin_sistem_tangenta_splosen} dobimo nov sistem
+Naj bo $q = [A : B : C] \in \mathcal{\hat{P}}_1 \cap \mathcal{\hat{P}}_2$ skupna tangenta na paraboli $\mathcal{P}_1$ in $\mathcal{P}_2$. Iz sistema enačb~\ref{eq:afin_sistem_tangenta_splosen} dobimo nov sistem
 \begin{equation}
     \label{eq:afin_sistem_tangenta_ABC_kub}
     bA^2 - cAB + AC + dB^2 = 0 \; \text{ in } \; -BC = A^2.
 \end{equation}
 
-Da dobimo \textcolor{red}{nevertikalno afino skupno} tangento na paraboli $\mathcal{P}_1$ in $\mathcal{P}_2$, ravnokar dobljeni enačbi normaliziramo z $B = -1$ in $z = 1$, s čimer tangento $Ax + By + Cz = 0$ dehomogeniziramo v premico $y = Ax + C$ v afini ravnini. S tem se druga enačba v sistemu~\ref{eq:afin_sistem_tangenta_ABC_kub} preuredi v $C = A^2$, prva pa v
+Da dobimo \textcolor{red}{nevertikalno afino skupno} tangento na paraboli $\mathcal{P}_1$ in $\mathcal{P}_2$, ravnokar dobljeni enačbi normaliziramo z $B = -1$ in $z = 1$, s čimer tangento $Ax + By + Cz = 0$ dehomogeniziramo v premico $y = Ax + C$ v afini ravnini. S tem se druga enačba v sistemu~\ref{eq:afin_sistem_tangenta_ABC_kub} preuredi v $C = A^2$, in prva v
 $$ A^3 + bA^2 + cA + d = 0,$$
 kar pomeni, da nam $A$, koeficient skupne tangente, reši izvorno kubično enačbo.
 
@@ -513,14 +522,14 @@ Kot že povedano, sledeči postopek ne rešuje splošne enačbe četrte stopnje,
 \end{equation}
 Smiselno predpostavimo $c \neq 0$, da se enačba z uvedbo nove spremenljivke za $x^2$ ne more prevesti na kvadratno enačbo.
 
-Po Bezoutovem izreku \textcolor{red}{(referiraj na izrek)} imata dve različni in neizrojeni stožnici v kompleksni projektivni ravnini štiri presečišča vključno z večkratnostjo. Ker sta njuni dualni stožnici prav tako v kompleksni projektivni ravnini, to pomeni, da imata stožnici v kompleksni projektivni ravnini štiri skupne tangente, ki nastopajo v konjugiranih parih -- po nič, dve ali štiri tangente (šteto z večkratnostjo). Dve paraboli imata skupno tangento v neskončnosti, torej ostanejo le še tri afine tangente, kar ni dovolj za vse rešitve kvartične enačbe. Zato tu ne moremo vzeti dveh parabol.
+Po Bezoutovem izreku (gl.\ \cite[izrek 2.4]{terglav2022}) imata dve različni in neizrojeni stožnici v kompleksni projektivni ravnini štiri presečišča vključno z večkratnostjo. Presečišča dualnih stožnic $\mathcal{\hat{S}}_1$ in $\mathcal{\hat{S}}_2$ v kompleksni dualni projektivni ravnini so torej štiri tangente na stožnici $\mathcal{S}_1$ in $\mathcal{S}_2$, ki nastopajo v konjugiranih parih -- po nič, dve ali štiri tangente (šteto z večkratnostjo). Dve paraboli imata skupno tangento v neskončnosti, torej ostanejo le še tri afine tangente, kar ni dovolj za vse rešitve kvartične enačbe. Zato tu ne moremo vzeti dveh parabol.
 
 Poskusimo najprej z metodo, ki smo jo uporabili pri reševanju kubične enačbe. Avtorja pri predpostavki $bd - c^2 \neq 0$ vzameta naslednji stožnici:
 \begin{itemize}
     \item $\mathcal{S}: dx^2 + 2cxy + by^2 + bd - c^2 = 0$ in
     \item parabolo od prej, tj.\ $\mathcal{P}: x^2 = -4y$.
 \end{itemize}
-Bralec je povabljen, da po enakem postopku kot pri kubični enačbi izpelje, da koeficient skupne tangente $y = Ax + C$ reši enačbo~\ref{eq:reduc_kvart_ev}. Stožnicama $\mathcal{S}$ in $\mathcal{P}$ zaporedoma pripadata matriki
+Bralec je povabljen, da po enakem postopku kot prej izpelje, da koeficient skupne tangente $y = Ax + C$ reši enačbo~\ref{eq:reduc_kvart_ev}. Stožnicama $\mathcal{S}$ in $\mathcal{P}$ zaporedoma pripadata matriki
 $$ M_\mathcal{S} =
     \begin{bmatrix}
         d & c & 0\\
@@ -580,7 +589,7 @@ Iz njiju zapišemo predpisa stožnic v afini ravnini ($z = 1$) in dobimo:
 \end{itemize}
 Z določitvijo gorišča in premice vodnice parabole $\mathcal{P}$ se bomo ukvarjali pozneje; najprej algebraično poiščimo skupno tangento na dani stožnici.
 
-Naj bo $q = [A : B : C]^\intercal$ presečišče dualnih stožnic $\mathcal{\hat{C}}$ in $\mathcal{\hat{P}}$. Iz sistema enačb~\ref{eq:afin_sistem_tangenta_splosen} dobimo nov sistem
+Naj bo $q = [A : B : C]$ presečišče dualnih stožnic $\mathcal{\hat{C}}$ in $\mathcal{\hat{P}}$. Iz sistema enačb~\ref{eq:afin_sistem_tangenta_splosen} dobimo nov sistem
 \begin{equation}
     \label{eq:afin_sistem_tangenta_ABC_kvart}
     A^2 + B^2 = \frac{C^2}{r^2} \; \text{ in } \; deAC - dB^2 + cBC = 0.
@@ -616,3 +625,5 @@ Kot vidimo, gorišče in premica vodnica nimata lepih predpisov, vendar je po en
 \textbf{Primer:} Na sliki~\ref{fig:tang_kroznica_par} je zarisana konstrukcija skupnih tangent na krožnico in parabolo, ki ju dobimo iz enačbe
 $$ 64x^4 - 177x^2 + 143x - 30 = 0 \; \text{ oz. } \; \left(x - \frac{3}{8}\right) \left(x - \frac{5}{8}\right) (x-1) (x+2) = 0.$$
 Začetne vrednosti tangent so res v njenih rešitvah, torej v točkah $1, 5/8, 3/8$ in $-2$. Primer je vzet iz istega vira~\cite[str.\ 25]{edwards2001}, vendar iz danih koeficientov ne dobimo ``lepih'' koordinat gorišča, premera ali enačbe premice, ki bi jih zmogli konstruirati z ročno natančnostjo.
+
+\opomba{Faucette v svojem članku opisuje geometrijsko interpretacijo reševanja splošnih kvartičnih enačb, iz katerih določi stožnici in išče njuna presečišča v projektivni ravnini. Za več gl.\ \cite{faucette1996}.}
