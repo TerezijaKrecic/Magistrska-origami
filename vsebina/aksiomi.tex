@@ -327,7 +327,7 @@ Sedaj vemo, da je množica evklidskih konstrukcij \emph{prava} podmnožica origa
     Na listu papirja, ki nam služi kot model ravnine $\C$, imejmo dano izhodišče $O$ in število $1$ na realni osi. Če lahko z neoznačenim ravnilom in šestilom s končnim številom potez konstruiramo kompleksno število $\alpha$, rečemo, da je $\alpha$ \emph{evklidsko-konstruktibilno} število.
 \end{definicija}
 
-Jerman bralca v~\cite{jerman1998} na zelo strukturiran in nazoren način popelje čez dokaz, da lahko z evklidskim orodjem na realni osi konstruiramo natanko vsa racionalna števila, njihove vsote, razlike, zmnožke, količnike, kvadratne korene ter linearne kombinacije vsega naštetega (zelo nazorna je tudi izpeljava v~\cite[str.165--170]{michael2005}). To je množica
+Jerman bralca v~\cite{jerman1998} na zelo strukturiran in nazoren način popelje čez dokaz, da lahko z evklidskim orodjem na realni osi konstruiramo natanko vsa racionalna števila in njihove kvadratne korene; znamo jih tudi seštevati, odštevati, množiti, deliti in koreniti (zelo nazorna je tudi izpeljava v~\cite[str.165--170]{michael2005}). To je množica
 $$
     \Q(r) = \{ a + b \sqrt{r}; a, b, r \in \Q; r > 0 \text{ in } \sqrt{r} \notin \Q \},
 $$
@@ -366,7 +366,7 @@ Poiščimo še množico števil, ki jih lahko konstruiramo z origamijem. Definir
 \end{opomba}
 
 \begin{definicija}
-    Če lahko v evklidski ravnini z origamijem po zgornjih pravili konstruiramo točko $A$, pravimo, da je $A$ \emph{origami-konstruktibilna točka}. Če lahko z origamijem konstruiramo premico $p$, pravimo, da je premica $p$ \emph{origami-konstrukcibilna premica}.
+    Če lahko v kompleksni ravnini z origamijem po zgornjih pravili konstruiramo točko $A$, pravimo, da je $A$ \emph{origami-konstruktibilna točka}. Če lahko z origamijem konstruiramo premico $p$, pravimo, da je premica $p$ \emph{origami-konstrukcibilna premica}.
 \end{definicija}
 
 Preko sledečih izrekov in trditev bomo še na algebrski način pokazali, da je množica števil, ki jih lahko konstruiramo z evklidskim orodjem, prava podmnožica množice origami števil.
@@ -440,7 +440,7 @@ Preko sledečih izrekov in trditev bomo še na algebrski način pokazali, da je 
     \end{figure}
 \end{dokaz}
 
-Množica origami števil $\mathcal{O}$ je tako zaprta za seštevanje, odštevanje, množenje, deljenje ter za kvadratno in kubično korenjenje. Ker so cela števila očitno origami števila (po definiciji imamo dano enoto, ki jo znamo prenašati po realni osi), so zaradi zaprtosti za deljenje origami števila tudi vsa racionalna števila. Zato za vsak $r \in \Q^+, \sqrt{r} \notin \Q$ in vsaka $a, b \in \Q$ velja $a + b\sqrt{r} \in \mathcal{O}$, torej za vsak tak $r$ velja
+Množica origami števil $\mathcal{O}$ je tako zaprta za seštevanje, odštevanje, množenje, deljenje ter za kvadratno in kubično korenjenje. Z origamijem znamo zrcaliti točke, zato je očitno zaprta tudi za konjugiranje. Ker so cela števila očitno origami števila (po definiciji imamo dano enoto, ki jo znamo prenašati po realni osi), so zaradi zaprtosti za deljenje origami števila tudi vsa racionalna števila. Zato za vsak $r \in \Q^+, \sqrt{r} \notin \Q$ in vsaka $a, b \in \Q$ velja $a + b\sqrt{r} \in \mathcal{O}$, torej za vsak tak $r$ velja
 $$ \Q(r) \subseteq \mathcal{O}. $$
 S tem je dokazana naslednja trditev.
 
@@ -455,8 +455,11 @@ Da so evklidsko-konstruktibilna števila \emph{prava} podmnožica origami števi
     $$ \bigcup_{r \in \Q^+, \sqrt{r} \notin \Q} \Q(r) \subset \mathcal{O} $$
 \end{trditev}
 
-Tako smo še na algebraičen način dokazali prevlado origamija nad evklidskim orodjem.
+Tako smo še na algebraičen način dokazali prevlado origamija nad evklidskim orodjem. Poleg tega smo dokazali, kaj natanko je množica origami števil.
 
+\begin{izrek}
+    Množica origami števil $\mathcal{O}$ je najmanjši podobseg polja $\C$, ki vsebuje racionalna števila in je zaprt za kvadratno in kubično korenjenje ter kompleksno konjugiranje.
+\end{izrek}
 
 \textcolor{red}{(a potem so origami števila enaka množici $\{ a + b \sqrt{r} + c \sqrt[3]{q} \}$ za poljubne $a, b, c, r, q \in \Q$? Je kakšna oznaka?)}
 
