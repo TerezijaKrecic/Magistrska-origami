@@ -373,6 +373,7 @@ Po operaciji~\ref{op:O6} je pregib tangenten na dano parabolo, ker pa je po kons
 Skupne tangente na dve paraboli ali na parabolo in krožnico zdaj znamo zlahka konstruirati, pravo vprašanje pa je, kateri stožnici določa dana kubična oz.\ kvartična enačba. Kot omenjeno že v uvodu razdelka, si avtorja pri tem pomagata s projektivno ravnino. 
 
 \subsubsection*{Stožnice v projektivni ravnini}
+\label{podpogl:stoznice_projektivna}
 
 \begin{definicija}
     Projektivno ravnino nad obsegom $\C$ označimo s $P_2(\C)$. To je množica vseh premic v $\C^3$, ki gredo skozi koordinatno izhodišče, njene premice pa so ravnine v $\C^3$, ki potekajo skozi izhodišče.
@@ -443,6 +444,10 @@ Naj bo $p \in \mathcal{S}$ in $ q \in \mathcal{\hat{S}}$ tangenta na točko $p$.
 Ker je
 $$ q^\intercal M^{-1} q = (Mp)^\intercal M^{-1} (Mp) = p^\intercal M^\intercal M^{-1} M p = p^\intercal M p = 0,$$
 kar pomeni, da je $\mathcal{\hat{S}}$ res stožnica in je $M^{-1}$ njena pripadajoča matrika.
+
+\begin{opomba}
+    Iz tega sledi, da je dualna stožnica dualne stožnice kar originalna stožnica.
+\end{opomba}
 
 Poglejmo, kako nam znanje o stožnicah in njihovih dualnih stožnicah pomaga pri reševanju kubičnih in kvartičnih enačb. Naj bosta $\mathcal{S}_1$ in $\mathcal{S}_2$ stožnici s pripadajočima simetričnima obrnljivima matrikama $M_1$ in $M_2$. Potem je njuna skupna tangenta skupna točka njunih dualnih stožnic $\mathcal{\hat{S}}_1$ in $\mathcal{\hat{S}}_2$. Torej iščemo $q \in \mathcal{\hat{S}}_1 \cap \mathcal{\hat{S}}_2$, ki reši sistem enačb
 \begin{equation}
