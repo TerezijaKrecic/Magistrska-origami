@@ -32,7 +32,7 @@ Zgornja konstrukcija pa je grškemu matematiku ponudila še nekaj -- opazil je, 
 
 \subsubsection*{Formulacija Alhazenovega problema}
 
-S tem novim znanjem je Heron postavil temelje, na katerih je več stoletij kasneje matematik, astronom in fizik Ibn al-Haytham oz.\ po naše Alhazen (prb.\ 965--1040 na območju današnjega Iraka) formuliral odbojni zakon, ki pravi, da sta vpadni in odbojni kot žarka svetlobe od površja enaka. Alhazen se je tudi prvi bolj poglobil v Ptolemajev problem in prišel do pomembnih ugotovitev, zato problem ponekod imenujejo tudi Ptolemaj-Alhazenov problem\footnote{\emph{Ptolemy-Alhazen's problem}, op.\ prev.}, tu bomo uporabili imenovanje \emph{Alhazenov problem}\footnote{\emph{Alhazen's problem}, op.\ prev.}. 
+S tem novim znanjem je Heron postavil temelje, na katerih je več stoletij kasneje matematik, astronom in fizik Ibn al-Haytham oz.\ po naše Alhazen (prb.\ 965--1040 na območju današnjega Iraka) formuliral odbojni zakon, ki pravi, da sta vpadni in odbojni kot žarka svetlobe od površja enaka. Alhazen se je tudi prvi bolj poglobil v Ptolemajev problem in prišel do pomembnih ugotovitev, zato problem ponekod imenujejo tudi Ptolemaj-Alhazenov problem, bolj pa je znan pod imenom \emph{Alhazenov problem} ali \emph{biljardni problem}\footnote{Ime izhaja iz iskanja točke na robu biljardne mize, kamor želimo poslati biljardno kroglo, da se odbije v želeno smer. V našem primeru je biljardna miza okrogle oblike namesto pravokotne.}. 
 
 Zopet formulirajmo problem. Namesto premice imamo torej krožnico $\mathcal{K}$ s središčem $O$. Naj točki $A$ in $B$ ležita znotraj krožnice (za točki zunaj krožnice k reševanju problema postopamo na analogen način, je pa Alhazen originalno resda predpostavil ta položaj). Iščemo točko $C$ na krožnici $\mathcal{K}$, da se bo svetlobni žarek iz točke $A$ v točki $C$ odbil v točko $B$. Na enak način kot Hero lahko premislimo, da mora polmer $OC$ razpolavljati kot $ACB$ (slika~\ref{fig:alhazen1}).
 
@@ -43,13 +43,11 @@ Zopet formulirajmo problem. Namesto premice imamo torej krožnico $\mathcal{K}$ 
     \label{fig:alhazen1}
 \end{figure}
 
-Za razliko od Heronove konstrukcije tu ne znamo konstruirati točke $B'$, saj je premica, čez katero bi morali zrcaliti točko $B$ (in tako s presečiščem daljice $AB'$ in premice dobiti točko $C$), ravno tangenta v točki $C$. Premice torej ne moremo dobiti brez točke $C$, točke $C$ pa ne moremo dobiti brez te premice. Tu se pokaže razsežnost problema.
+Za razliko od Heronove konstrukcije tu ne znamo konstruirati točke $B'$, saj je premica, čez katero bi morali zrcaliti točko $B$ (in tako s presečiščem daljice $AB'$ in premice dobiti točko $C$), ravno tangenta v točki $C$. Premice torej ne moremo dobiti brez točke $C$, točke $C$ pa ne moremo dobiti brez te premice. Tu se pokaže razsežnost problema in zazdeva se nam, da tudi origami konstrukcija tu ne bo enostavna.
 
-Že tisoč let nazaj je Alhazen pokazal, da se da problem rešiti geometrijsko preko stožnic. Njegov dokaz je zelo obsežen in za marsikoga zelo zapleten~\cite{wilk2015}. Leta 1672 je Huygens pokazal, da je Alhazenova rešitev ekvivalentna iskanju presečišča dane krožnice s hiperbolo (glej~\cite{nishimura2018}).
+\opomba{Opazimo lahko tudi, da ima zaradi enakega vpadnega in odbojnega kota žarka v točka $C$ lastnost točke, ki leži na \emph{elipsi} z goriščema $A$ in $B$ (na sliki~\ref{fig:alhazen1} označena s prekinjeno črto). Tangenta na krožnico v točki $C$ je hkrati tudi tangenta na elipso v isti točki, torej lahko problem preoblikujemo v iskanje elipse z goriščema v $A$ in $B$, ki so tangentne na krožnico $\mathcal{K}$. Vendar ne poznamo enostavnega postopka, ki bi nam lahko poiskal enačbo te elipse, saj je ta odvisna od točke $C$, ta pa od tangente in obratno. Torej smo zopet na istem. Bralec, ki se želi poglobiti v reševanje Alhazenovega problema z elipsami, si lahko več o tem prebere v~\cite{masayo2019} in~\cite[str.\ 26--46]{gorjup2014}.}
 
-\opomba{Opazimo lahko tudi, da ima zaradi enakega vpadnega in odbojnega kota žarka v točka $C$ lastnost točke, ki leži na \emph{elipsi} z goriščema $A$ in $B$ (na sliki~\ref{fig:alhazen1} označena s prekinjeno črto). Tangenta na krožnico v točki $C$ je hkrati tudi tangenta na elipso v isti točki, torej lahko problem preoblikujemo v iskanje vseh elips z goriščema v $A$ in $B$, ki so tangentne na krožnico $\mathcal{K}$. Vendar ne poznamo postopka, ki bi nam lahko poiskal enačbo te elipse, saj je ta odvisna od točke $C$, ta pa od tangente in obratno. Torej smo zopet na istem.}
-
-Huygens in drugi so za Alhazenom do rešitve poskušali priti preko analitičnih metod v geometriji in kompleksnih števil. Algebraično rešitev je l.\ 1965 našel Jack M.\ Elkin, ko je problem prevedel v reševanje enačbe četrte stopnje (kar je dobra motivacija za raziskovanje, ali lahko problem rešimo z origamijem enkratnih prepogibov). Za Elkinom je problem rešilo še nekaj matematikov. Leta 1997 je Peter M.\ Neumann dokazal, da ne obstaja evklidska konstrukcija rešitve, kar sicer sledi že iz Elkinovega rezultata. Problem se da posplošiti tudi na npr.\ iskanje primerne točke odboja na zrcali parabolične, eliptične in hiperbolične oblike, kar algebraično privede do reševanja enačbe osme stopnje~\cite{alhproblemwiki}.
+Že tisoč let nazaj je Alhazen pokazal, da se da problem rešiti geometrijsko preko stožnic. Njegov dokaz je zelo obsežen in za marsikoga zelo zapleten~\cite{wilk2015}. Leta 1672 je Huygens pokazal, da je Alhazenova rešitev ekvivalentna iskanju presečišča dane krožnice s hiperbolo (glej~\cite{nishimura2018}), in tudi več matematikov za Alhazenom je do rešitve poskušalo priti preko analitičnih metod v geometriji in kompleksnih števil. Algebraično rešitev je l.\ 1965 našel Jack M.\ Elkin, ko je problem prevedel v reševanje enačbe četrte stopnje (kar je dobra motivacija za raziskovanje, kako lahko problem rešimo z origamijem enkratnih prepogibov; to v~\cite{alperin2002} izpostavi tudi Alperin). Leta 1997 je Peter M.\ Neumann dokazal, da ne obstaja evklidska konstrukcija rešitve, kar sicer vemo že iz Elkinovega rezultata. Problem se da posplošiti tudi na npr.\ iskanje primerne točke odboja na zrcali parabolične, eliptične in hiperbolične oblike, kar algebraično privede do reševanja enačbe osme stopnje~\cite{alhproblemwiki}.
 
 \subsubsection*{Prevedba problema na reševanje kvartične enačbe}
 
@@ -138,9 +136,9 @@ Za poseben primer izbire točk $A$ in $B$ pri dani krožnici na naše veselje ve
     \label{fig:scimemi_opomba}
 \end{figure}
 
-\subsubsection*{Huygensova rešitev z dualnimi stožnicami in Nishimurijev origami postopek}
+\subsubsection*{Huygensova rešitev in Nishimurijev origami postopek}
 
-Japonski matematik Nishimura v~\cite{nishimura2018} povzema, kako je Huygens preko kompleksnih števil in dualnih stožnic prišel do rešitve, ki se jo posledično da sproducirati z origamijem. To v~\cite{alperin2002} izpostavi tudi Alperin. Dualne stožnice smo spoznali že v razdelku~\ref{podpogl:stoznice_projektivna}, zato tu ne bomo razlagali vsega od začetka. Po pojasnitvi Huygensovega postopka pa avtor predstavi še origami konstrukcijo, ki konstruira rešitev Alhazenovega problema.
+Japonski matematik Nishimura v~\cite{nishimura2018} povzema, kako je Huygens preko kompleksnih števil Alhazenov problem prevedel na iskanje presečišča krožnice z določeno hiperbolo. Nishimura od tu nadaljuje v smer, ki nam sproducira konstrukcijo rešitve z origamijem -- vemo že, da presečišče dveh stožnic v projektivni ravnini korespondira s skupno tangento njunih dualnih stožnic, ki smo jih spoznali v razdelku~\ref{podpogl:stoznice_projektivna}. Po novi prevedbi problema na iskanje skupne tangente na dve stožnici avtor svoj članek zaključi še z navedbo origami konstrukcije, ki konstruira rešitev Alhazenovega problema.
 
 Brez škode za splošnost naj bo $\mathcal{C}$ enotska krožnica s središčem $O$. Znotraj nje izberemo poljubni točki $A$ in $B$ taki, da so točke $A,B,O$ paroma različne (slika~\ref{fig:huygens1}). Išemo točko $P \in \mathcal{C}$, da bo veljalo
 \begin{equation}
@@ -176,14 +174,14 @@ Z upoštevanjem tega se nam enačba~\ref{eq:huygens_kompleksna_enacba} preobliku
 \begin{equation*}
     px_0^2 -2qx_0y_0 -py_0^2 - sx_0 + ry_0 = 0.
 \end{equation*}
-Ker sta koeficienta ob kvadratnih členih različno predznačena, je to enačba hiperbole. Torej je točka $P$ presečišče dane krožnice in te hiperbole (slika~\ref{fig:huygens2}).
+Ker sta koeficienta ob kvadratnih členih različno predznačena, je to enačba hiperbole. Torej je točka $P$ presečišče dane krožnice in te hiperbole (slika~\ref{fig:huygens2}). Hungerbühler v~\cite{hungerbuhler1992} malo podrobneje določi dobljeno hiperbolo, a to za nas ni v nadaljevanju ni pomembno. 
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{images/alhazen/huygens2.png}
     \caption[Huygensova rešitev]{Rešitev Alhazenovega problema kot presečišče krožnice in hiperbole.}
     \label{fig:huygens2}
-\end{figure}
+\end{figure} 
 
 Z origamijem v splošnem ne moremo konstruirati presečišč dveh stožnic, znamo pa konstruirati skupne tangente za nekatere primere (do sedaj smo si konkretno pogledali konstrukcije v primeru dveh parabol ter parabole in krožnice, če v slednjem dovolimo uporabo šestila).
 
@@ -219,14 +217,45 @@ Kako pa bomo iz skupne tangente določili točko $P$? Iz originalnega iskanja sk
     Ko izraze na obeh straneh poenostavimo in malo preuredimo enačbo, dobimo $r^2x_0^2 + 2rsx_0y_0 + s^2y_0^2 + 4qrx_0 - 4qsy_0 + 4q^2 = 0$, torej je $\mathcal{\overline{Q}}$ res parabola.
 \end{dokaz}
 
-Tako smo prišli do konca teoretičnega postopka. Na hitro ponovimo -- pri dani enotski krožnici $\mathcal{C}$ in točkama $A, B$ znotraj nje (postopek velja tudi za točki zunaj krožnice) nam presečišče $P$ krožnice $\mathcal{C}$ s hiperbolo $\mathcal{Q}$, ki je odvisna od točk $A$ in $B$, reši Alhazenov problem. Presečišče stožnic prevedemo v iskanje skupne tangente $\overline{P}$ na krožnico $\mathcal{C}$ in parabolo $\mathcal{\overline{Q}}$, ki je dualna stožnica hiperbole. Iskana točka $P$ je dotikališče tangente $\overline{P}$ s krožnico $\mathcal{C}$ (slika~\ref{fig:huygens3}).
+Tako smo prišli do konca teoretičnega postopka. Na hitro ponovimo -- pri dani enotski krožnici $\mathcal{C}$ in točkama $A, B$ znotraj nje (postopek velja tudi za točki zunaj krožnice) nam presečišče $P$ krožnice $\mathcal{C}$ s hiperbolo $\mathcal{Q}$, ki je odvisna od točk $A$ in $B$, reši Alhazenov problem. Presečišče stožnic prevedemo v iskanje skupne tangente $\overline{P}$ na krožnico $\mathcal{C}$ in parabolo $\mathcal{\overline{Q}}$, ki je dualna stožnica hiperbole. Iskana točka $P$ je dotikališče tangente $\overline{P}$ s krožnico $\mathcal{C}$ (slika~\ref{fig:nishimura_resitev}).
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/alhazen/huygens3.png}
-    \caption[Huygensova rešitev]{Konstrukcija dotikališča skupne tangente s krožnico.}
-    \label{fig:huygens3}
+    \includegraphics[width=0.5\textwidth]{images/alhazen/nishimura_resitev.png}
+    \caption[Nishimurijeva rešitev]{Konstrukcija dotikališča skupne tangente s krožnico.}
+    \label{fig:nishimura_resitev}
 \end{figure}
 
 Vemo že, da z evklidskim orodjem problema ne moremo rešiti, saj se prevede na reševanje enačbe četrte stopnje. Ta postopek pa nam še na drug način pokaže potrebnost origamija -- konstrukcija skupne tangente na krožnico in parabolo namreč z neoznačenim ravnilom in šestilom prav tako ni mogoča, spomnimo pa se, da jo lahko dobimo s hkratnim prepogibom središča krožnice na rob dvakrat večje krožnice in gorišča parabole na njeno premico vodnico.
 
+Nishimura vse znanje tega razdelka združi v naslednjo origami konstrukcijo, ki konstruira rešitev Alhazenovega problema. Naj bo $\mathcal{C}$ enotska krožnica s središčem $O$ v koordinatnem izhodišču kompleksne ravnine $\C$ in $a = A, b = B$ točki znotraj nje. Za točki zunaj krožnice je postopek enak.
+\begin{enumerate}
+    \item Prepognemo premico $OA$ in presečišče poltraka $OA$ s krožnico $\mathcal{C}$ označimo z $E$.
+    \item Prepognemo premico $AB$.
+    \item Prepognemo simetralo daljice $AB$ in središče daljice $AB$ označimo z $M$. Velja $ |OM| = |(a+b)/2| = \sqrt{s^2+r^2}/2$.
+    \item Prepognemo premico $OM$, ki jo poimenujemo $D$ (to je premica vodnica parabole $\mathcal{\overline{Q}}$ \textcolor{red}{(zakaj?)}). Presečišče poltraka $OM$ s krožnico $\mathcal{C}$ označimo z $E'$.
+    \item Prepognemo premico $EB$.
+    \item Prepognemo pravokotnico na premico $EB$ skozi točko $B$ in jo poimenujemo $l_1$.
+    \item Prepognemo pravokotnico na premico $l_1$ skozi točko $A$ in jo poimenujemo $l_2$. \textcolor{red}{(velja $l_2 \parallel EB$, a je to važno?)}
+    \item Prepognemo premico $OB$ in njeno presečišče s premico $l_2$ označimo z $G$ (slika~\ref{fig:nishimura_origami}). Velja $|OG| = q = Re(ab)$ \textcolor{red}{(zakaj?)}.
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.6\textwidth]{images/alhazen/nishimura_origami.png}
+        \caption[Nishimurijeva konstrukcija $1$]{Nishimurijeva origami konstrukcija do koraka $8$.}
+        \label{fig:nishimura_origami}
+    \end{figure}
+    \item Prepognemo premico $MG$.
+    \item Prepognemo pravokotnico na premico $MG$ skozi točko $M$ in jo označimo z $l_3$.
+    \item Prepognemo pravokotnico na premico $l_3$ skozi točko $E'$ in njeno presečišče s premico $OB$ označimo s $H$. Velja $|OH|= |OG|/|OM|$ \textcolor{red}{(zakaj?)}.
+    \item Prepognemo premico skozi središče $O$, ki točko $H$ preslika na premico $D$ v točko $K$.
+    \item Prepognemo premico skozi središče $O$, ki točko $B$ preslika na premico $OA$ in sliko točke $K$ označimo s $F$ (slika~\ref{fig:nishimura_origami2}).
+    \item Prepognemo tangento $\overline{P}$ na krožnico $\mathcal{C}$, ki točko $F$ položi na premico $D$. Točka $P$ je dotikališče tangente $\overline{P}$ s krožnico $\mathcal{C}$ (slika~\ref{fig:nishimura_resitev}).
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.6\textwidth]{images/alhazen/nishimura_origami2.png}
+        \caption[Nishimurijeva konstrukcija $2$]{Nishimurijeva origami konstrukcija gorišča $F$ (korak $13$).}
+        \label{fig:nishimura_origami2}
+    \end{figure}
+\end{enumerate}
+
+\textcolor{red}{Zakaj konstrukcija deluje, se nisem poglabljala. Mogoče bi se dalo alegabraično izračunati enačbo $D$ in $F$ in bi prišlo, kolikor je pač treba.}
