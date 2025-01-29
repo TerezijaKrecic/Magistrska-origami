@@ -36,6 +36,7 @@ Prva knjiga nas še posebej zanima. V njej je Evklid najprej definiral osnovne p
 \end{postulat}
 
 \begin{definicija}
+    \label{def:evklidske_konstrukcije}
     \emph{Evklidske konstrukcije} so konstrukcije točk, daljic, poltrakov, premic, krožnih lokov in krožnic, ki jih je iz danih točk in razdalj mogoče konstruirati le z uporabo t.\ i.\ \emph{evklidskih orodij} -- neoznačenega in neskončno dolgega ravnila (angl.\ \emph{straightedge}) ter šestila, ki ne prenaša razdalj (ko ga dvignemo od podlage, se njegova kraka zložita skupaj). Vsak korak konstrukcije je eden od naštetih:
     \begin{itemize}
         \item risanje premice skozi dve dani točki,
@@ -119,7 +120,7 @@ Iz teh operacij sledi naravna definicija origami konstrukcij.
 
 \begin{definicija}
     \label{def:origami_konstruktibilnost}
-    \emph{Origami konstrukcije} so konstrukcije točk in premic, ki jih je iz danih točk in razdalj mogoče konstruirati le z ravnimi in enkratnimi prepogibi iz operacij~\ref{op:O1}--\ref{op:O8}. Pri tem premico predstavlja pregib, novo točko pa določimo s presečiščem dveh pregibov.
+    \emph{Origami konstrukcije} so konstrukcije točk in premic, ki jih je iz danih točk in razdalj mogoče konstruirati le z ravnimi in enkratnimi prepogibi iz operacij~\ref{op:O1}--\ref{op:O8}. Pri tem premico predstavlja pregib skozi dve dani točki, vsako presečišče dveh pregibov pa določa novo točko.
 \end{definicija}
 
 Sedaj za vsako operacijo posebej poglejmo njeno konstrukcijo. Takoj opazimo, da je operacija~\ref{op:O1} ekvivalentna postulatu~\ref{post:P1}, kar nam lahko vzbudi zanimanje za povezavo med evklidskimi in origami konstrukcijami. Operacija~\ref{op:O2} je izvedljiva v vsakem primeru nevzporednih pregibov in nam omogoča določitev novih točk v našem modelu ravnine. Operacija~\ref{op:O3} pa nam poda konstrukcijo simetrale daljice $AB$ (slika~\ref{fig:O1-O3}) -- ko opravimo pregib in pustimo papir še zapognjen, je očitno, da so točke na pregibu enako oddaljene od točk $A$ in $B$.
@@ -307,7 +308,7 @@ Tako lahko s prepogibanjem papirja zrcalimo točke (in premice), prenašamo razd
 
 Prišli smo do ključnega dela poglavja -- reševanje vprašanja, zakaj se nam z origami konstrukcijami sploh splača ukvarjati.
 
-Tako z evklidskim orodjem kot s prepogibanjem papirja lahko konstruiramo premice in točke ter prenašamo razdalje. Le evklidskim orodjem lahko konstruiramo tudi krožne loke, ker pa znamo rotirati točke okoli druge točke, lahko tudi s prepogibanjem papirja konstruiramo katerokoli točko na krožnici z danim središčem in polmerom. Tako lahko vse evklidske konstrukcije opravimo tudi z origamijem (za natančnejši dokaz gl.\ \cite[str.\ 362--365]{robert1995}).
+Tako z evklidskim orodjem kot s prepogibanjem papirja lahko konstruiramo premice in točke ter prenašamo razdalje. Le evklidskim orodjem lahko konstruiramo tudi krožne loke, ker pa znamo rotirati točke okoli druge točke, lahko tudi s prepogibanjem papirja konstruiramo katerokoli točko na krožnici z danim središčem in polmerom. Tako lahko vse evklidske konstrukcije opravimo tudi z origamijem (za natančnejši dokaz gl.\ \cite[str.\ 362--365]{geret1995}).
 
 Bralec je ob zgornjih opisih posamezne operacije povabljen, da premisli, kako je mogoče operacije~\ref{op:O1}, \ref{op:O3}, \ref{op:O4}, \ref{op:O5}, \ref{op:O6} in \ref{op:O8} opraviti tudi z evklidskim orodjem (operacija~\ref{op:O2} le določa nove točke, zato tu o konstrukciji ne moremo govoriti). Do tu nam torej origami konstrukcije niso dale ničesar novega.
 
@@ -319,14 +320,71 @@ Sedaj vemo, da je množica evklidskih konstrukcij \emph{prava} podmnožica origa
 \label{podpogl:evkl_konstruktibilnost}
 
 \begin{definicija}
+    \label{def:evkl_konstr}
     Na listu papirja, ki nam služi kot model ravnine $\C$, imejmo dano izhodišče $O$ in število $1$ na realni osi. Če lahko z neoznačenim ravnilom in šestilom s končnim številom potez konstruiramo kompleksno število $\alpha$, rečemo, da je $\alpha$ \emph{evklidsko-konstruktibilno} število.
 \end{definicija}
 
-Jerman bralca v~\cite{jerman1998} na zelo strukturiran in nazoren način popelje čez dokaz, da lahko z evklidskim orodjem na realni osi konstruiramo natanko vsa racionalna števila in njihove kvadratne korene; znamo jih tudi seštevati, odštevati, množiti, deliti in koreniti (zelo nazorna je tudi izpeljava v~\cite[str.165--170]{michael2005}). To je množica
-$$
-    \Q(r) = \{ a + b \sqrt{r}; a, b, r \in \Q; r > 0 \text{ in } \sqrt{r} \notin \Q \},
-$$
-ki je komutativen obseg oz.\ polje in hkrati tudi dvorazsežni vektorski prostor nad obsegom $\Q$ z bazo $ \{1, \sqrt{r} \} $.
+Kompleksna ravnina $\C$ je v bijekciji z ravnino $\R^2$. Če lahko z evklidskim orodjem konstruiramo število $\alpha = a + bi$, lahko torej konstruiramo točko $(a, b)$ in obratno. Tako je dovolj obravnavati evklidske konstrukcije v realni ravnini.
+
+Iz definicije~\ref{def:evklidske_konstrukcije} evklidskih konstrukcij se spomnimo, da lahko premico konstruiramo le skozi poljubni dve dani točki, krožnico s središčem v poljubni dani točki in poljubno dano točko na njej, točke z evklidskim orodjem pa dobimo le kot presečišče dveh premic, dveh krožnic ali premice in krožnice.
+
+\begin{definicija}
+    Točki, ki jo lahko v ravnini $\R^2$ konstruiramo z evklidskim orodjem, pravimo \emph{evklidsko-konstruktibilna točka}. Enako definiramo \emph{evklidsko-konstruktibilno premico} in \emph{evklidsko-konstruktibilno krožnico}.
+\end{definicija}
+
+Radi bi določili množico vseh evklidsko-konstruktibilnih števil. Torej iščemo, katere vse možne točke v ravnini $\R^2$ lahko konstruiramo z evklidskim orodjem. Naslednja lema nam iskanje še poenostavi.
+
+\begin{lema}
+    \label{trd:bijekcija_CR}
+    Naj bo $\alpha = a+bi \in \C$, kjer $a, b \in \R$. Potem je $\alpha \in \E$, če in samo če $a, b \in \E$.
+\end{lema}
+\begin{dokaz}
+    Ker sta $a$ in $b$ pravokotni projekciji števila $\alpha$ na realno in imaginarno os, ki ju lahko konstruiramo z evklidskim orodjem, je trditev očitna.
+\end{dokaz}
+
+Iščemo, katere realne koordinate so evklidsko-konstruktibilne, torej v resnici iščemo množico \emph{realnih} evklidsko-konstruktibilnih števil. Označimo jo z $\E$. Po definiciji~\ref{def:evkl_konstr} velja $0, 1 \in \E$.
+
+\begin{trditev}
+    Naj bodo $a, b, c \in \E, c \neq 0$. Potem so tudi števila $a+b, \; a-b, \; ab, \; a/c$ in $\sqrt{a}$ elementi množice $\E$.
+\end{trditev}
+
+Dokaz tu opustimo. Bralec si ga lahko ogleda v~\cite{jerman1998} ali~\cite[str.\ 165--170]{michael2005}. Iz trditve sledi, da je množica $\E$, ki je podmnožica polja realnih števil, tudi sama polje.
+
+\begin{posledica}
+    Množica $\E$ je podpolje polja $\R$.
+\end{posledica}
+
+Velja še več -- dejstvo, da iz $a \in \E$ sledi $\sqrt{a} \in \E$, je lastnost \emph{evklidskih polj}. Primer evklidskega polja je množica realnih števil $\R$, medtem ko npr.\ množica racionalnih števil $\Q$ te lastnosti nima -- za $2 \in \Q$ velja $\sqrt{2} \notin \Q$.
+
+Še vedno pa moramo določiti realna števila, ki sestavljajo množico $\E$. Očitno je, da iz danih števil $0$ in $1$ s seštevanjem in odštevanjem dobimo vsa cela števila, z deljenjem vsa racionalna števila, s korenjenjem pa še njihove kvadratne korene. Naslednja lema je zato očitna.
+
+\begin{lema}
+    Naj bo $a \in \Q$. Potem velja $a, \sqrt{a} \in \E$.
+\end{lema}
+
+\begin{posledica}
+    Velja $\Q \subset \E \subset \R$.
+\end{posledica}
+\begin{dokaz}
+    Očitno je množica racionalnih števil prava podmnožica množice $\E$. Ovreči moramo samo možnost $\E = \R$. Vsako število iz množice $\E$ je rezultat seštevanja, odštevanja, množenja, deljenja in korenjenja elementov iz te množice (z začetnima številoma $0$ in $1$), zato je algebraično nad $\Q$ -- je rešitev neke enačbe z racionalnimi koeficienti. Torej v množici $\E$ ne morejo biti transcedentna število, kot je na primer število $\pi$. Zato je $\E$ res prava podmnožica množice $\R$.
+\end{dokaz}
+
+Ker je polje $\Q$ podpolje polja $\E$, je $\E$ \emph{razširitev} polja racionalnih števil. Ideja je, da poiščemo najmanjšo razširitev polja $\Q$, ki je zaprta za operacijo kvadratnega korenjenja. To bo naša mmnožica $\E$.
+
+\begin{trditev}
+    Naj bo $r \in \Q^+, \sqrt{r} \notin \Q$. Potem je množica $ \Q(r) = \{ a + b \sqrt{r}; a, b \in \Q \}$ razširitev polja $\Q$.
+\end{trditev}
+\begin{dokaz}
+    Naj bo $r$ poljubno racionalno število po predpostavki trditve. Očitno velja $\Q \subset \Q(r)$, saj so v $\Q(r)$ med drugim tudi vsa števila oblike $a + 0 \cdot \sqrt{r} = a$, kjer je $a \in \Q$ poljubno. Dokazati moramo, da je $\Q(r)$ polje.
+
+    Očitno je $0, 1 \in \Q(r)$, če vzamemo $a \in \{0, 1\}$ in $b = 0$. Bralcu prepustimo lahek računski preostanek dokaza, kjer mora pokazati, da so vsota, razlika, produkt in količnih števil $a_1 + b_1\sqrt{r}$ in $a_2 + b_2\sqrt{r}$ oblike $a_3 + b_3\sqrt{r}$.
+\end{dokaz}
+
+
+
+\textcolor{red}{tu si ostala.}
+
+Vsako evklidsko-konstruktibilno število lahko zapišemo kot element množice $ \Q(r) = \{ a + b \sqrt{r}; a, b \in \Q \} $ za nek $r \in \Q^+, \sqrt{r} \notin \Q$. Množica $\Q(r)$ je komutativen obseg oz.\ polje in hkrati tudi dvorazsežni vektorski prostor nad obsegom $\Q$ z bazo $ \{1, \sqrt{r} \} $.
 
 Da pokažemo, da so to vsa možna realna evklidsko-konstruktibilna števila, je potrebna obravnava vseh možnih enačb, ki jih dobimo pri iskanju presečišč dveh krožnic, dveh premic ter krožnice in premice, potem pa je potrebno še dokazati, da nam vse nadaljne rabe konstruiranih presečišč res podajo najmanjšo razširitev polja racionalnih števil, ki je zaprta za operacijo kvadratnega korenjenja. Jerman s tem dokaže naslednji izrek.
 
@@ -342,9 +400,7 @@ Da pokažemo, da so to vsa možna realna evklidsko-konstruktibilna števila, je 
 
 Izreku takoj sledita dokaza, da trisekcija kota v splošnem ter konstrukcija števila $ \sqrt[3]{2} $ z evklidskim orodjem nista mogoči~\cite[str.\ 77--78]{jerman1998}.
 
-Iz izreka sledi tudi, da lahko vsa realna evklidsko-konstruktibilna števila analitično zapišemo kot rešitve kvadratne enačbe z racionalnimi koeficienti. O reševanju enačb se bomo natančneje ukvarjali v poglavju~\ref{pogl:enacbe}.
-
-Ker med kompleksno in evklidsko ravnino obstaja bijekcija, lahko tako konstruiramo poljubno število $\alpha = x + y i$, kjer sta $x \in \Q(r)$ in $y \in \Q(s)$ za neka $r, s \in \Q^+; \sqrt{r}, \sqrt{s} \notin \Q$. S tem lahko zapišemo tudi kompleksne rešitve kvadratne enačbe. Torej lahko z evklidskim orodjem konstruiramo rešitve poljubne kvadratne enačbe.
+Iz izreka sledi tudi, da lahko vsa realna evklidsko-konstruktibilna števila analitično zapišemo kot rešitve kvadratne enačbe z racionalnimi koeficienti. Ker med kompleksno in evklidsko ravnino obstaja bijekcija, lahko z evklidskim orodjem konstruiramo rešitve poljubne kvadratne enačbe.
 
 \subsubsection{Origami števila}
 \label{origami_konstruktibilnost}
@@ -353,7 +409,7 @@ Poiščimo še množico števil, ki jih lahko konstruiramo z origamijem. Definir
 
 \begin{definicija}
     \label{def:origami_stevilo}
-    Na listu papirja, ki nam služi kot model ravnine $\C$, imejmo dano izhodišče $O$ in število $1$ na realni osi. Premice predstavljajo pregibi papirja, nove točke pa njihova presečišča. Če lahko s končnim številom enkratnih ravnih prepogibov in upoštevanjem operacij~\ref{op:O1}--~\ref{op:O8} konstruiramo kompleksno število $\alpha$, rečemo, da je $\alpha$ \emph{origami število}. Množico origami števil označimo z $\mathcal{O}$.
+    Na listu papirja, ki nam služi kot model ravnine $\C$, imejmo dano izhodišče $O$ in število $1$ na realni osi. Premice predstavljajo pregibi papirja, nove točke pa njihova presečišča. Če lahko s končnim številom enkratnih ravnih prepogibov in upoštevanjem operacij~\ref{op:O1}--~\ref{op:O8} konstruiramo kompleksno število $\alpha$, rečemo, da je $\alpha$ \emph{origami število}. Množico origami števil označimo z $\OR$.
 \end{definicija}
 
 \begin{opomba}
@@ -361,28 +417,26 @@ Poiščimo še množico števil, ki jih lahko konstruiramo z origamijem. Definir
 \end{opomba}
 
 \begin{definicija}
-    Če lahko v kompleksni ravnini z origamijem po zgornjih pravili konstruiramo točko $A$, pravimo, da je $A$ \emph{origami-konstruktibilna točka}. Če lahko z origamijem konstruiramo premico $p$, pravimo, da je premica $p$ \emph{origami-konstrukcibilna premica}.
+    Točki, ki jo lahko v kompleksni ravnini konstruiramo z origamijem, pravimo \emph{origami-konstruktibilna točka}. Enako definiramo \emph{origami-konstruktibilno premico}.
 \end{definicija}
 
-Preko sledečih izrekov in trditev bomo še na algebrski način pokazali, da je množica števil, ki jih lahko konstruiramo z evklidskim orodjem, prava podmnožica množice origami števil.
+Preko sledečih izrekov in trditev bomo še na algebrski način pokazali, da je množica števil, ki jih lahko konstruiramo z evklidskim orodjem, prava podmnožica množice origami števil. Najprej navedimo lema, ki je analogna lemi~\ref{trd:bijekcija_CR} iz razdelka o evklidsko-konstruktibilnih številih.
 
-\begin{trditev}
+\begin{lema}
     \label{trd:zaprt_koord}
-    Naj bo $\alpha = a + bi \in \C$, kjer $a, b \in \R$. Potem je $\alpha \in \mathcal{O}$, če in samo če $a, b \in \mathcal{O}$.
-\end{trditev}
-\begin{dokaz}
-    Ker sta $a$ in $b$ pravokotni projekciji števila $\alpha$ na realno in imaginarno os (operacija~\ref{op:O5}), je trditev očitna.
-\end{dokaz}
+    Naj bo $\alpha = a + bi \in \C$, kjer $a, b \in \R$. Potem je $\alpha \in \OR$, če in samo če $a, b \in \OR$.
+\end{lema}
+Dokaz je enak, le da tu za konstrukcijo pravokotnih projekcij uporabimo operacijo~\ref{op:O5}, ki je tudi bolj enostavna od evklidske.
 
 \begin{izrek}
     \label{izr:podpolje}
-    Množica $\mathcal{O}$ je podpolje polja $\C$.
+    Množica $\OR$ je podpolje polja $\C$.
 \end{izrek}
 
 \begin{dokaz}
-    Za dokaz izreka moramo pokazati, da je $1 \in \mathcal{O}$ (kar velja že po definiciji), da za poljubna $\alpha, \beta \in \mathcal{O}$ velja $\alpha - \beta, \alpha\beta \in \mathcal{O}$ in da je $1/\alpha \in \mathcal{O}$ za vsak $\alpha \in \mathcal{O} \backslash \{0\}$. Spomnimo se, da lahko kompleksna števila ponazorimo z vektorji in zato lahko računske operacije grafično izvajamo kar preko njih.
+    Za dokaz izreka moramo pokazati, da je $1 \in \OR$ (kar velja že po definiciji), da za poljubna $\alpha, \beta \in \OR$ velja $\alpha - \beta, \alpha\beta \in \OR$ in da je $1/\alpha \in \OR$ za vsak $\alpha \in \OR \backslash \{0\}$. Spomnimo se, da lahko kompleksna števila ponazorimo z vektorji in zato lahko računske operacije grafično izvajamo kar preko njih.
 
-    Vzemimo poljubna $\alpha, \beta \in \mathcal{O}$. Ker število $-\beta$ dobimo po zaporednem zrcaljenju čez obe osi, velja $-\beta \in \mathcal{O}$. Ker je odštevanje v resnici seštevanje nasprotnega elementa, je za dokaz $\alpha - \beta \in \mathcal{O}$ dovolj pokazati, da je množica $\mathcal{O}$ zaprta za seštevanje.
+    Vzemimo poljubna $\alpha, \beta \in \OR$. Ker število $-\beta$ dobimo po zaporednem zrcaljenju čez obe osi, velja $-\beta \in \OR$. Ker je odštevanje v resnici seštevanje nasprotnega elementa, je za dokaz $\alpha - \beta \in \OR$ dovolj pokazati, da je množica $\OR$ zaprta za seštevanje.
 
     Če $\alpha, \beta$ in $O$ ležijo na isti premici, ni veliko za dokazovati, temveč samo prenesemo razdaljo na primerno mesto na premici. Predpostavimo sedaj, da $\alpha, \beta$ in $O$ ne ležijo na isti premici in s paralelogramskim pravilom konstrirajmo število $\alpha + \beta$ (slika~\ref{fig:sestevanje}). Štirikrat uporabimo operacijo~\ref{op:O5}: preko pravokotnice $(1)$ na vektor $\overrightarrow{O\beta}$ skozi $\alpha$ konstruiramo vzporednico $(2)$ k taistemu vektorju skozi $\alpha$ in na enak način preko pravokotnice $(3)$ konstruiramo vzporednico $(4)$ k vektorju $\overrightarrow{O\alpha}$ skozi $\beta$. V presečišču vzporednic dobimo $\alpha + \beta$.
 
@@ -393,27 +447,27 @@ Preko sledečih izrekov in trditev bomo še na algebrski način pokazali, da je 
         \label{fig:sestevanje}
     \end{figure}
 
-    Za dokaz preostalih dveh zahtev najprej dokažimo, da za neničelna $a, b \in \mathcal{O} \cap \R$ velja $ab, 1/a \in \mathcal{O}$, potem pa s pomočjo trditve~\ref{trd:zaprt_koord} to dokažemo še za poljubna $\alpha, \beta \in \mathcal{O}$.
+    Za dokaz preostalih dveh zahtev najprej dokažimo, da za neničelna $a, b \in \OR \cap \R$ velja $ab, 1/a \in \OR$, potem pa s pomočjo trditve~\ref{trd:zaprt_koord} to dokažemo še za poljubna $\alpha, \beta \in \OR$.
 
-    Naj bosta $a, b \in \mathcal{O} \cap \R$ poljubna in neničelna (če je katerikoli od njiju enak $0$, je produkt ničeln in že po definiciji origami število). Ker sta $a$ in $b$ origami števili, ju lahko konstruiramo. Naj $b$ leži na realni osi, $ai$ pa na imaginarni (slika~\ref{fig:mnozenje_deljenje} levo). Z dvakratno uporabo operacije~\ref{op:O5} konstruiramo origami število $1 + ai$ (točka $B$). Konstruiramo pregib skozi $O$ in $B$ (premica z naklonom $a$) ter v presečišču s pravokotnico skozi $b$ dobimo število $b + abi$ (točka $C$). Pravokotnica skozi $C$ na imaginarno os na njej konstruira origami število $ab$.
+    Naj bosta $a, b \in \OR \cap \R$ poljubna in neničelna (če je katerikoli od njiju enak $0$, je produkt ničeln in že po definiciji origami število). Ker sta $a$ in $b$ origami števili, ju lahko konstruiramo. Naj $b$ leži na realni osi, $ai$ pa na imaginarni (slika~\ref{fig:mnozenje_deljenje} levo). Z dvakratno uporabo operacije~\ref{op:O5} konstruiramo origami število $1 + ai$ (točka $B$). Konstruiramo pregib skozi $O$ in $B$ (premica z naklonom $a$) ter v presečišču s pravokotnico skozi $b$ dobimo število $b + abi$ (točka $C$). Pravokotnica skozi $C$ na imaginarno os na njej konstruira origami število $ab$.
 
     \begin{figure}[h]
         \centering
         \includegraphics[width=0.7\textwidth]{images/algebra/mnozenje_deljenje.png}
-        \caption[Množenje in obratna vrednost realnih origami števil]{Konstrukcija $ab$ in $1/a$ za neničelna $a, b \in \mathcal{O} \cap \R$.}
+        \caption[Množenje in obratna vrednost realnih origami števil]{Konstrukcija $ab$ in $1/a$ za neničelna $a, b \in \OR \cap \R$.}
         \label{fig:mnozenje_deljenje}
     \end{figure}
 
     Podobno konstruiramo še število $1/a$. Na realni osi konstruiramo število $a$ (slika~\ref{fig:mnozenje_deljenje} desno), s pomočjo~\ref{op:O5} pa še število $a + i$ (točka $B$). Pregib skozi $O$ in $B$ ima naklon ravno $1/a$. V presečišču tega pregiba s pravokotnico na realno os v točki $!$ dobimo število $1 + (1/a) i$ (točka $C$). Tako nam pravokotnica na imaginarno os skozi točko $C$ konstruira origami število $1/a$.
 
-    Vzemimo sedaj poljubna $\alpha, \beta \in \mathcal{O}$. Če je $\alpha = a + bi, \beta = c + di$, potem po trditvi~\ref{trd:zaprt_koord} velja $a, b, c, d \in \mathcal{O}$. Število $\alpha \beta = (ac - bd) + (ad + bc)i$ ima v svojem realnem in imaginarnem delu njihove vsote, razlike in produkti, za katere že vemo, da so v $\mathcal{O}$. Torej je $\alpha, \beta \in \mathcal{O}$.
+    Vzemimo sedaj poljubna $\alpha, \beta \in \OR$. Če je $\alpha = a + bi, \beta = c + di$, potem po trditvi~\ref{trd:zaprt_koord} velja $a, b, c, d \in \OR$. Število $\alpha \beta = (ac - bd) + (ad + bc)i$ ima v svojem realnem in imaginarnem delu njihove vsote, razlike in produkti, za katere že vemo, da so v $\OR$. Torej je $\alpha, \beta \in \OR$.
 
-    Za neničeln $\alpha = a + bi \in \mathcal{O}$ je $1/\alpha = a/(a^2+b^2) + (-b)/(a^2+b^2)i$. Ker sta po trditvi~\ref{trd:zaprt_koord} $a, b \in \mathcal{O}$, sta zopet realni in imaginarni del tega števila origami števili, torej $1/\alpha \in \mathcal{O}$.
+    Za neničeln $\alpha = a + bi \in \OR$ je $1/\alpha = a/(a^2+b^2) + (-b)/(a^2+b^2)i$. Ker sta po trditvi~\ref{trd:zaprt_koord} $a, b \in \OR$, sta zopet realni in imaginarni del tega števila origami števili, torej $1/\alpha \in \OR$.
 \end{dokaz}
 
 \begin{trditev}
     \label{trd:zaprtost_koren}
-    Naj bo $\alpha \in \mathcal{O}$. Potem $\sqrt{\alpha}, \sqrt[3]{\alpha} \in \mathcal{O}$.
+    Naj bo $\alpha \in \OR$. Potem $\sqrt{\alpha}, \sqrt[3]{\alpha} \in \OR$.
 \end{trditev}
 
 \begin{dokaz}
@@ -422,9 +476,9 @@ Preko sledečih izrekov in trditev bomo še na algebrski način pokazali, da je 
         \item $\sqrt{\alpha} = \pm \sqrt{r}e^{i \frac{\theta}{2}}$ in
         \item $\sqrt[3]{\alpha}_1 = \sqrt[3]{r}e^{i \frac{\theta}{3}}, \sqrt[3]{\alpha}_2 = \sqrt[3]{r}e^{i \left(\frac{\theta}{3} + \frac{2\pi}{3}\right)}, \sqrt[3]{\alpha}_3 = \sqrt[3]{r}e^{i \left(\frac{\theta}{3} + \frac{4\pi}{3}\right)}$.
     \end{itemize}
-    Torej moramo dokazati, da $\sqrt{r}, \sqrt[3]{r} \in \mathcal{O}$, da znamo razpolavljati in tretjiniti kote ter rotirati origami število za kot $60^\circ$ okoli izhodišča $O$. Potem bomo po izreku~\ref{izr:podpolje} lahko konstruirali zgornjih pet števil in tako dokazali to trditev.
+    Torej moramo dokazati, da $\sqrt{r}, \sqrt[3]{r} \in \OR$, da znamo razpolavljati in tretjiniti kote ter rotirati origami število za kot $60^\circ$ okoli izhodišča $O$. Potem bomo po izreku~\ref{izr:podpolje} lahko konstruirali zgornjih pet števil in tako dokazali to trditev.
 
-    Najprej se še prepričajmo, da $r \in \mathcal{O}$. Ker je to ravno razdalja števila $\alpha$ do izhodišča, jo lahko prenesemo na realno os in tako konstruiramo realno število $r$, torej je res $r \in \mathcal{O}$.
+    Najprej se še prepričajmo, da $r \in \OR$. Ker je to ravno razdalja števila $\alpha$ do izhodišča, jo lahko prenesemo na realno os in tako konstruiramo realno število $r$, torej je res $r \in \OR$.
     
     V razdelku~\ref{pogl:enacbe} bomo pogledali, kako z origamijem rešujemo splošne kvadratne in kubične enačbe, torej bomo znali konstruirati tudi rešitve enačb $x^2 - r = 0$ in $x^3 - r = 0$. Konkretne konstrukcije števil $\sqrt{r}$ in $\sqrt[3]{r}$ opisane tudi v razdelku~\ref{podpogl:starogrskiproblemi}. Z operacijo~\ref{op:O4} znamo razpoloviti kot, postopek tretjinjenja kota pa je, kot že omenjeno, opisan v razdelku~\ref{podpogl:trisekcija}. Ostane nam samo še rotacija točke za kot $60^\circ$ okoli izhodišča. Na sliki~\ref{fig:kot60_rotacija} je prikaz enostavne konstrukcije -- najprej prepognemo simetralo $p_1$ daljice $OA$ in konstruiramo pregib $p_2$ skozi $O$, ki točko $A$ preslika v točko $A'$ na simetrali $p_1$. Trikotnik $\triangle OAA'$ je enakostraničen. 
     \begin{figure}[h]
@@ -435,26 +489,28 @@ Preko sledečih izrekov in trditev bomo še na algebrski način pokazali, da je 
     \end{figure}
 \end{dokaz}
 
-Množica origami števil $\mathcal{O}$ je tako zaprta za seštevanje, odštevanje, množenje, deljenje ter za kvadratno in kubično korenjenje. Z origamijem znamo zrcaliti točke, zato je očitno zaprta tudi za konjugiranje. Ker so cela števila očitno origami števila (po definiciji imamo dano enoto, ki jo znamo prenašati po realni osi), so zaradi zaprtosti za deljenje origami števila tudi vsa racionalna števila. Zato za vsak $r \in \Q^+, \sqrt{r} \notin \Q$ in vsaka $a, b \in \Q$ velja $a + b\sqrt{r} \in \mathcal{O}$, torej za vsak tak $r$ velja
-$$ \Q(r) \subseteq \mathcal{O}. $$
+Množica origami števil $\OR$ je tako zaprta za seštevanje, odštevanje, množenje, deljenje ter za kvadratno in kubično korenjenje. Z origamijem znamo zrcaliti točke, zato je očitno zaprta tudi za konjugiranje. Ker so cela števila očitno origami števila (po definiciji imamo dano enoto, ki jo znamo prenašati po realni osi), so zaradi zaprtosti za deljenje origami števila tudi vsa racionalna števila. Zato za vsak $r \in \Q^+, \sqrt{r} \notin \Q$ in vsaka $a, b \in \Q$ velja $a + b\sqrt{r} \in \OR$, torej za vsak tak $r$ velja
+$$ \Q(r) \subseteq \OR. $$
 S tem je dokazana naslednja trditev.
 
 \begin{trditev}
     Vsa evklidsko-konstruktibilna števila so origami števila.
 \end{trditev}
 
-Da so evklidsko-konstruktibilna števila \emph{prava} podmnožica origami števil, je potrebno najti samo en $r \in \mathcal{O} \cap \Q^+, \sqrt{r} \notin \Q$, za katerega velja $\sqrt[3]{r} \notin \Q(r)$. Bralec je povabljen k enostavnemu dokazu, da že za $r = 2$ ne obstajata $a, b \in \Q$, da bi veljalo $\sqrt[3]{2} = a + b\sqrt{2}$ -- če začnemo reševati to enačbo za $a$ in $b$, se hitro izkaže, da nima niti realnih rešitev.
+Da so evklidsko-konstruktibilna števila \emph{prava} podmnožica origami števil, je potrebno najti samo en $r \in \OR \cap \Q^+, \sqrt{r} \notin \Q$, za katerega velja $\sqrt[3]{r} \notin \Q(r)$. Bralec je povabljen k enostavnemu dokazu, da že za $r = 2$ ne obstajata $a, b \in \Q$, da bi veljalo $\sqrt[3]{2} = a + b\sqrt{2}$ -- če začnemo reševati to enačbo za $a$ in $b$, se hitro izkaže, da nima niti realnih rešitev.
 
 \begin{trditev}
     Množica evklidsko-konstruktibilnih števil je prava podmnožica množice origami števil, t.\ j.
-    $$ \bigcup_{r \in \Q^+, \sqrt{r} \notin \Q} \Q(r) \subset \mathcal{O} $$
+    $$ \bigcup_{r \in \Q^+, \sqrt{r} \notin \Q} \Q(r) \subset \OR $$
 \end{trditev}
 
 Tako smo še na algebraičen način dokazali prevlado origamija nad evklidskim orodjem. Poleg tega smo dokazali, kaj natanko je množica origami števil.
 
 \begin{izrek}
-    Množica origami števil $\mathcal{O}$ je najmanjši podobseg polja $\C$, ki vsebuje racionalna števila in je zaprt za kvadratno in kubično korenjenje ter kompleksno konjugiranje.
+    Množica origami števil $\OR$ je najmanjši podobseg polja $\C$, ki vsebuje racionalna števila in je zaprt za kvadratno in kubično korenjenje ter kompleksno konjugiranje.
 \end{izrek}
+
+Z origamijem tako lahko rešujemo poljubne kvadratne in kubične enačbe, a s tem se bomo natančneje ukvarjali v poglavju~\ref{pogl:enacbe}.
 
 \textcolor{red}{(a potem so origami števila enaka množici $\{ a + b \sqrt{r} + c \sqrt[3]{q} \}$ za poljubne $a, b, c, r, q \in \Q$? Je kakšna oznaka?)}
 
