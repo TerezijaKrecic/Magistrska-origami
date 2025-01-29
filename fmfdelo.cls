@@ -262,7 +262,6 @@
 
 
 \RequirePackage[style=\@citationstyle,
-                sorting=nty, % DODANO (literatura po abecedi)
                 hyperref=auto,
                 isbn=false,
                 doi=true,
@@ -272,6 +271,10 @@
                 maxnames=3,
                 useprefix=true,
                 backend=\@bibbackend]{biblatex}
+
+\DeclareNameAlias{author}{last-first} % DODANO (``priimek, ime'')
+\DeclareNameAlias{editor}{last-first} % DODANO (``priimek, ime'')
+\DeclareNameAlias{translator}{last-first} % DODANO (``priimek, ime'')
 
 \AtEndPreamble{%
 \ifdefined\@literatura
