@@ -339,7 +339,7 @@ Radi bi določili množico vseh evklidsko-konstruktibilnih števil. Torej išče
     Naj bo $\alpha = a+bi \in \C$, kjer $a, b \in \R$. Potem je $\alpha \in \E$, če in samo če $a, b \in \E$.
 \end{lema}
 \begin{dokaz}
-    Ker sta $a$ in $b$ pravokotni projekciji števila $\alpha$ na realno in imaginarno os, ki ju lahko konstruiramo z evklidskim orodjem, je trditev očitna.
+    Ker sta $a$ in $b$ pravokotni projekciji števila $\alpha$ na realno in imaginarno os -- bralec naj premisli, kako ju lahko konstruiramo z evklidskim orodjem --, je trditev očitna.
 \end{dokaz}
 
 Iščemo, katere realne koordinate so evklidsko-konstruktibilne, torej v resnici iščemo množico \emph{realnih} evklidsko-konstruktibilnih števil. Označimo jo z $\E$. Po definiciji~\ref{def:evkl_konstr} velja $0, 1 \in \E$.
@@ -354,7 +354,7 @@ Dokaz tu opustimo. Bralec si ga lahko ogleda v~\cite{jerman1998} ali~\cite[str.\
     Množica $\E$ je podpolje polja $\R$.
 \end{posledica}
 
-Velja še več -- dejstvo, da iz $a \in \E$ sledi $\sqrt{a} \in \E$, je lastnost \emph{evklidskih polj}. Primer evklidskega polja je množica realnih števil $\R$, medtem ko npr.\ množica racionalnih števil $\Q$ te lastnosti nima -- za $2 \in \Q$ velja $\sqrt{2} \notin \Q$.
+Velja še več -- to, da iz $a \in \E$ sledi $\sqrt{a} \in \E$, je lastnost \emph{evklidskih polj}. Primer evklidskega polja je množica realnih števil, medtem ko npr.\ množica racionalnih števil te lastnosti nima -- za $2 \in \Q$ velja $\sqrt{2} \notin \Q$.
 
 Še vedno pa moramo določiti realna števila, ki sestavljajo množico $\E$. Očitno je, da iz danih števil $0$ in $1$ s seštevanjem in odštevanjem dobimo vsa cela števila, z deljenjem vsa racionalna števila, s korenjenjem pa še njihove kvadratne korene. Naslednja lema je zato očitna.
 
@@ -369,38 +369,76 @@ Velja še več -- dejstvo, da iz $a \in \E$ sledi $\sqrt{a} \in \E$, je lastnost
     Očitno je množica racionalnih števil prava podmnožica množice $\E$. Ovreči moramo samo možnost $\E = \R$. Vsako število iz množice $\E$ je rezultat seštevanja, odštevanja, množenja, deljenja in korenjenja elementov iz te množice (z začetnima številoma $0$ in $1$), zato je algebraično nad $\Q$ -- je rešitev neke enačbe z racionalnimi koeficienti. Torej v množici $\E$ ne morejo biti transcedentna število, kot je na primer število $\pi$. Zato je $\E$ res prava podmnožica množice $\R$.
 \end{dokaz}
 
-Ker je polje $\Q$ podpolje polja $\E$, je $\E$ \emph{razširitev} polja racionalnih števil. Ideja je, da poiščemo najmanjšo razširitev polja $\Q$, ki je zaprta za operacijo kvadratnega korenjenja. To bo naša mmnožica $\E$.
+Ker je polje $\Q$ podpolje polja $\E$, je $\E$ \emph{razširitev} polja $\Q$. Ideja je, da poiščemo najmanjšo razširitev polja racionalnih števil, ki je zaprta za operacijo kvadratnega korenjenja. To bo naša množica $\E$. V pomoč nam je naslednja trditev.
 
 \begin{trditev}
-    Naj bo $r \in \Q^+, \sqrt{r} \notin \Q$. Potem je množica $ \Q(r) = \{ a + b \sqrt{r}; a, b \in \Q \}$ razširitev polja $\Q$.
+    \label{trd:kv_razs_prva}
+    Naj bo $r \in \Q^+, \sqrt{r} \notin \Q$. Potem je množica $ \Q(\sqrt{r}) = \{ a + b \sqrt{r}; a, b \in \Q \}$ razširitev polja $\Q$.
 \end{trditev}
 \begin{dokaz}
-    Naj bo $r$ poljubno racionalno število po predpostavki trditve. Očitno velja $\Q \subset \Q(r)$, saj so v $\Q(r)$ med drugim tudi vsa števila oblike $a + 0 \cdot \sqrt{r} = a$, kjer je $a \in \Q$ poljubno. Dokazati moramo, da je $\Q(r)$ polje.
+    Naj bo $r$ poljubno racionalno število po predpostavki trditve. Očitno velja $\Q \subset \Q(\sqrt{r})$, saj so v $\Q(\sqrt{r})$ med drugim tudi vsa števila oblike $a + 0 \cdot \sqrt{r} = a$, kjer je $a \in \Q$ poljubno. Dokazati moramo, da je $\Q(\sqrt{r})$ polje.
 
-    Očitno je $0, 1 \in \Q(r)$, če vzamemo $a \in \{0, 1\}$ in $b = 0$. Bralcu prepustimo lahek računski preostanek dokaza, kjer mora pokazati, da so vsota, razlika, produkt in količnih števil $a_1 + b_1\sqrt{r}$ in $a_2 + b_2\sqrt{r}$ oblike $a_3 + b_3\sqrt{r}$.
+    Očitno je $0, 1 \in \Q(\sqrt{r})$, če vzamemo $a \in \{0, 1\}$ in $b = 0$. Bralcu prepustimo lahek računski preostanek dokaza, kjer mora pokazati, da so vsota, razlika, produkt in količnih števil $a_1 + b_1\sqrt{r}$ in $a_2 + b_2\sqrt{r}$ oblike $a_3 + b_3\sqrt{r}$.
 \end{dokaz}
 
+Za ustrezen $r$ lahko na enak način poiščemo razširitev polja $\Q(\sqrt{r})$. Vzamemo $q \in \Q(\sqrt{r})^+, \sqrt{q} \notin \Q(\sqrt{r})$. Potem so elementi nove razširitve pola $\Q(\sqrt{r})$ oblike $(a_1 + b_1\sqrt{r}) + (a_2 + b_2\sqrt{r})\sqrt{q}$. Pri tem velja $a_1 + b_1\sqrt{r}, \; a_2 + b_2\sqrt{r} \in \Q(\sqrt{r})$ in $a_1, b_1, a_2, b_2 \in \Q$.
 
+Primer (vzeto iz~\cite[str.\ 36]{geometricconstructions}): Naj bo $F = \Q(\sqrt{5})$, torej so njegovi elemeni oblike $a + b\sqrt{5}$, kjer sta $a, b \in \Q$. Za število $q = (35-15\sqrt{5})/2 \in F^+$ je njegov koren enak številu $\sqrt{q} = (5-3\sqrt{5})/2 \in F$, zato $F(\sqrt{q}) = F$ ni razširitev polja $F$. Za število $2 \in F^+$ pa ne obstajata $a, b \in \Q$, da bi veljalo $\sqrt{2} = a+b\sqrt{5}$, torej $\sqrt{2} \notin F$ in je $F(\sqrt{2})$ razširitev polja $F$. Pišemo $F(\sqrt{2}) = \Q(\sqrt{5}, \sqrt{2})$. 
 
-\textcolor{red}{tu si ostala.}
+\begin{definicija}
+    \label{def:kvad_razs}
+    Naj bo $F_0$ polje in $r \in F_0^+, \sqrt{r} \notin F_0$. Potem polje
+    $$ F_0(\sqrt{r}) = \{a+b\sqrt{r}; a,b \in F_0\} $$
+    imenujemo \emph{kvadratna razširitev} polja $F_0$. Če je
+    $$ F_1 = F_0(\sqrt{r_1}), F_2 = F_1(\sqrt{r_2}), \ldots, F_n = F_{n-1}(\sqrt{r_n}), $$
+    potem pišemo $F_n = F_0(\sqrt{r_1}, \sqrt{r_2}, \ldots, \sqrt{r_n})$ in vsako od polj $F_0, F_1, F_2, \ldots, F_n$ imenujemo \emph{iterativna kvadratna razširitev} polja $F_0$.
+\end{definicija}
 
-Vsako evklidsko-konstruktibilno število lahko zapišemo kot element množice $ \Q(r) = \{ a + b \sqrt{r}; a, b \in \Q \} $ za nek $r \in \Q^+, \sqrt{r} \notin \Q$. Množica $\Q(r)$ je komutativen obseg oz.\ polje in hkrati tudi dvorazsežni vektorski prostor nad obsegom $\Q$ z bazo $ \{1, \sqrt{r} \} $.
+% Evklidska polja (npr.\ realna števila) nimajo kvadratnih razširitev, saj so zaprta za korenjenje.
 
-Da pokažemo, da so to vsa možna realna evklidsko-konstruktibilna števila, je potrebna obravnava vseh možnih enačb, ki jih dobimo pri iskanju presečišč dveh krožnic, dveh premic ter krožnice in premice, potem pa je potrebno še dokazati, da nam vse nadaljne rabe konstruiranih presečišč res podajo najmanjšo razširitev polja racionalnih števil, ki je zaprta za operacijo kvadratnega korenjenja. Jerman s tem dokaže naslednji izrek.
+Velja $F_0 \subset F_1 \subset F_2 \subset \ldots \subset F_n$. Za vsak $i \in \{1, \ldots n\}$ je stopnja razširitve polja $F_i$ nad poljem $F_{i-1}$ je enaka $[F_i : F_{i-1}] = [F_{i-1}(\sqrt{r_{i}}) : F_{i-1}] = 2$, saj je $x^2 - r_{i}$ minimalni polinom števila $\sqrt{r_{i}}$ nad $F_{i-1}$. Iz algebre se spomnimo naslednjega izreka.
 
 \begin{izrek}
-    \label{izr:evkl_konstr}
-    Število $r \in \R$ se da konstruirati le s pomočjo ravnila in šestila natanko tedaj, ko je $r$ algebraičen nad $\Q$ in je razsežnost obsega $\Q(r)$, kot vektorskega prostora nad obsegom $\Q$, enaka $2^n$ za nek $n \in \N_0$.
+    \label{izr:stopnje_razsiritve}
+    Naj bo polje $L$ končna razširitev polja $F$ in naj bo polje $E$ končna razširitev polja $L$. Potem je $E$ končna razširitev $F$ in velja
+    $$ [E : F] = [E : L] \cdot[L : F].$$
+\end{izrek}
+\begin{posledica}
+    Naj bodo $F_0 \subset F_1 \subset F_2 \subset \ldots \subset F_n$ kvadratne razširitve obsega $F_0$. Potem je $[F_n : F_0] = 2^n$.
+\end{posledica}
+\begin{dokaz}
+    Po izreku~\ref{izr:stopnje_razsiritve} preko indukcije dobimo
+    \begin{align*}
+        [F_n : F_0] &= [F_n : F_{n-1}] \cdot [F_{n-1} : F_0] \\
+        &= 2 \cdot [F_{n-1} : F_0] \\
+        &= 2^2 \cdot [F_{n-2} : F_0] \\
+        & \; \; \vdots \\
+        &= 2^n.
+    \end{align*}
+\end{dokaz}
+
+Naj bo $F_0 = \Q$. Iz trditve~\ref{trd:kv_razs_prva} takoj vidimo, da velja $\Q(\sqrt{r}) \subset \E$. Bralec je povabljen k induktivnemu razmisleku, da za vsako razširitev $ F_n = \Q(\sqrt{r_1}, \sqrt{r_2}, \ldots, \sqrt{r_n})$, kjer $r_i$ ustrezajo predpostavkam iz definicije~\ref{def:kvad_razs}, velja $F_n \subseteq \E$.
+
+\begin{izrek}
+    Velja $\E = F_n = \Q(\sqrt{r_1}, \sqrt{r_2}, \ldots, \sqrt{r_n})$, kjer je $F_n$ neka iterativna kvadratna razširitev polja $\Q$.
 \end{izrek}
 
-\begin{opomba}
-    \label{op:razseznost_obsega_evkl}
-    Razsežnosti obsega $\Q(r)$ pravimo tudi \emph{stopnja razširitve obsega $\Q$}. Izkaže se, da je enaka stopnji minimalnega polinoma števila $r$ nad $\Q$~\cite[str.\ 77]{jerman1998}.
-\end{opomba}
+Navedimo le idejo dokaza. Da je vsako število iz množice $F_n$ evklidsko konstruktibilno, smo lahko razmislili tik pred navedbo tega izreka. Da velja tudi $\E \subset F_n$, pa je potrebna obravnava vseh možnih enačb, ki jih dobimo pri iskanju presečišč dveh krožnic, dveh premic ter krožnice in premice. Bralec si lahko natančen dokaz ogleda v~\cite[str.\ 38--39]{geometricconstructions} ali v~\cite{jerman1998}.
 
-Izreku takoj sledita dokaza, da trisekcija kota v splošnem ter konstrukcija števila $ \sqrt[3]{2} $ z evklidskim orodjem nista mogoči~\cite[str.\ 77--78]{jerman1998}.
+\begin{posledica}
+    \label{izr:evkl_konstr}
+    Število $a \in \R$ se da konstruirati le s pomočjo ravnila in šestila natanko tedaj, ko obstaja iterativna kvadratna razširitev $F$ polja $\Q$, da je $a \in F$ in razsežnost polja $F$ enaka $2^n$ za nek $n \in \N_0$.
+\end{posledica}
 
-Iz izreka sledi tudi, da lahko vsa realna evklidsko-konstruktibilna števila analitično zapišemo kot rešitve kvadratne enačbe z racionalnimi koeficienti. Ker med kompleksno in evklidsko ravnino obstaja bijekcija, lahko z evklidskim orodjem konstruiramo rešitve poljubne kvadratne enačbe.
+\textcolor{red}{daj kakšen primer, kako lahko zgleda število iz $\E$, npr.\ iz~\cite[str.\ 37]{geometricconstructions}. Pač vse, kar lahko v kalkulatorju narediš z unimi simboli, ki spodi pišejo.}
+
+Jerman v~\cite[str.\ 77--78]{jerman1998} tako z lahkoto dokaže, da trisekcija kota v splošnem ter konstrukcija števila $ \sqrt[3]{2} $ z evklidskim orodjem nista mogoči, saj obakrat dobimo, da je stopnja razširitve polja $\Q$ enaka $3$.
+
+\begin{posledica}
+    Kompleksno število $\alpha = a + bi$ se da konstruirati z evklidskim orodjem natanko tedaj, ko velja $(a, b) \in \E \times \E$.
+\end{posledica}
+
+Iz izreka med drugim sledi tudi, da lahko vsa realna evklidsko-konstruktibilna števila analitično zapišemo kot rešitve kvadratne enačbe z racionalnimi koeficienti. Ker med kompleksno in evklidsko ravnino obstaja bijekcija, lahko z evklidskim orodjem konstruiramo rešitve poljubne kvadratne enačbe.
 
 \subsubsection{Origami števila}
 \label{origami_konstruktibilnost}
