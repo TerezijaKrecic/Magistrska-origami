@@ -50,7 +50,7 @@ Prva knjiga nas še posebej zanima. V njej je Evklid najprej definiral osnovne p
     Da se pokazati, da lahko za konstrukcije ekvivalentno uporabimo tudi šestilo, ki prenaša razdalje~\cite[str.\ 6--7]{geometricconstructions}. Zato imamo odslej z izrazom \emph{šestilo} v mislih kar moderno šolsko šestilo.
 \end{opomba}
 
-Izkaže se, da z evklidskim orodjem ne moremo konstruirati poljubno dolgih daljic -- kot zelo znane protiprimere lahko tu naštejemo tri starogrške probleme. Pri \emph{kvadraturi kroga} nam evklidsko orodje ne zmore konstruirati razdalje $\sqrt{\pi}$, pri \emph{podvojitvi kocke} razdalje $\sqrt{2}$, pri \emph{trisekciji kota} ne zmore poljubnega kota razdeliti na tri enake dele. Drugi in tretji problem sta, verjetno za marsikoga presenetljivo, rešljiva z origamijem. V razdelku~\ref{podpogl:starogrskiproblemi} si bomo pogledali njuni rešitvi, sedaj pa podrobneje spoznajmo še konstrukcije, ki jih dobimo s prepogibanjem papirja.
+Izkaže se, da z evklidskim orodjem ne moremo konstruirati poljubno dolgih daljic -- kot zelo znane protiprimere lahko tu naštejemo tri starogrške probleme. Pri \emph{kvadraturi kroga} nam evklidsko orodje ne zmore konstruirati razdalje $\sqrt{\pi}$, pri \emph{podvojitvi kocke} razdalje $\sqrt{2}$, pri \emph{trisekciji kota} ne zmore poljubnega kota razdeliti na tri enake dele. Drugi in tretji problem sta, verjetno za marsikoga presenetljivo, rešljiva z origamijem. V poglavju~\ref{pogl:starogrskiproblemi} si bomo pogledali njuni rešitvi, sedaj pa podrobneje spoznajmo še konstrukcije, ki jih dobimo s prepogibanjem papirja.
 
 \subsection{Origami konstrukcije}
 \label{origami_konstrukcije}
@@ -528,7 +528,7 @@ Dokaz je enak, le da tu za konstrukcijo pravokotnih projekcij uporabimo operacij
 
     Najprej se še prepričajmo, da $r \in \OR$. Ker je to ravno razdalja števila $\alpha$ do izhodišča, jo lahko prenesemo na realno os in tako konstruiramo realno število $r$, torej je res $r \in \OR$.
     
-    V razdelku~\ref{pogl:enacbe} bomo pogledali, kako z origamijem rešujemo splošne kvadratne in kubične enačbe, torej bomo znali konstruirati tudi rešitve enačb $x^2 - r = 0$ in $x^3 - r = 0$. Konkretne konstrukcije števil $\sqrt{r}$ in $\sqrt[3]{r}$ opisane tudi v razdelku~\ref{podpogl:starogrskiproblemi}. Z operacijo~\ref{op:O4} znamo razpoloviti kot, postopek tretjinjenja kota pa je, kot že omenjeno, opisan v razdelku~\ref{podpogl:trisekcija}. Ostane nam samo še rotacija točke za kot $60^\circ$ okoli izhodišča. Na sliki~\ref{fig:kot60_rotacija} je prikaz enostavne konstrukcije -- najprej prepognemo simetralo $p_1$ daljice $OA$ in konstruiramo pregib $p_2$ skozi $O$, ki točko $A$ preslika v točko $A'$ na simetrali $p_1$. Trikotnik $\triangle OAA'$ je enakostraničen. 
+    V razdelku~\ref{pogl:enacbe} bomo pogledali, kako z origamijem rešujemo splošne kvadratne in kubične enačbe, torej bomo znali konstruirati tudi rešitve enačb $x^2 - r = 0$ in $x^3 - r = 0$. Konkretne konstrukcije števil $\sqrt{r}$ in $\sqrt[3]{r}$ opisane tudi v poglavju~\ref{pogl:starogrskiproblemi}. Z operacijo~\ref{op:O4} znamo razpoloviti kot, postopek tretjinjenja kota pa je, kot že omenjeno, opisan v razdelku~\ref{podpogl:trisekcija}. Ostane nam samo še rotacija točke za kot $60^\circ$ okoli izhodišča. Na sliki~\ref{fig:kot60_rotacija} je prikaz enostavne konstrukcije -- najprej prepognemo simetralo $p_1$ daljice $OA$ in konstruiramo pregib $p_2$ skozi $O$, ki točko $A$ preslika v točko $A'$ na simetrali $p_1$. Trikotnik $\triangle OAA'$ je enakostraničen. 
     \begin{figure}[h]
         \centering
         \includegraphics[width=0.4\textwidth]{images/algebra/kot60.png}
@@ -537,7 +537,7 @@ Dokaz je enak, le da tu za konstrukcijo pravokotnih projekcij uporabimo operacij
     \end{figure}
 \end{dokaz}
 
-Množica origami števil $\OR$ je tako zaprta za seštevanje, odštevanje, množenje, deljenje ter za kvadratno in kubično korenjenje. Z origamijem znamo zrcaliti točke, zato je očitno zaprta tudi za konjugiranje.
+Množica origami števil $\OR$ je tako zaprta za seštevanje, odštevanje, množenje, deljenje ter za kvadratno in kubično korenjenje. Z origamijem znamo zrcaliti točke, zato je očitno zaprta tudi za konjugiranje. Z njim tako lahko poleg kvadratnih rešujemo tudi poljubne kubične enačbe (izračun rešitev po Cardanovi formuli ne potrebuje več kot ravno naštete operacije), a s tem se bomo natančneje ukvarjali v poglavju~\ref{pogl:enacbe}.
 
 \begin{posledica}
     Množica origami števil $\OR$ je najmanjši podobseg polja $\C$, ki vsebuje racionalna števila in je zaprt za kvadratno in kubično korenjenje ter kompleksno konjugiranje.
@@ -549,7 +549,7 @@ Na množici $\OR$ torej lahko uporabimo vse tiste operacije, ki jih lahko izvaja
     Množica evklidsko-konstruktibilnih števil je prava podmnožica množice origami števil.
 \end{posledica}
 
-Kaj je naša množica origami števil? Po zgledu posledice~\ref{posl:podmnozice} očitno velja $\Q \subset \OR \subset \C$. Kot pri evklidsko-konstruktibilnih številih bomo tudi tu iskali razširitve polja racionalnih števil, ki so zaprte za operacijo kvadratnega korena, sedaj pa dodamo še zaprtost za operacijo kubičnega korena.
+Kaj je naša množica origami števil? Po zgledu posledice~\ref{posl:podmnozice} očitno velja $\Q \subset \OR \subset \C$. Kot pri evklidsko-konstruktibilnih številih bomo tudi tu iskali razširitve polja racionalnih števil, ki so zaprte za operacijo kvadratnega korena, za razliko od prej pa tu dodamo še zaprtost za operacijo kubičnega korena.
 
 Znamo konstruirati kompleksno število $i$. Naj bo $\Q(i)$ razširitev polja $\Q$, tj.\ $\Q \subset \Q(i)$ in velja $[\Q(i) : \Q] = 2$, saj je $x^2 + 1$ minimalni polinom števila $i$ nad $\Q$. Polje nadalje razširimo z origami številom $\sqrt[3]{2}$. Dobimo zaporedje $\Q \subset \Q(i) \subset \Q(i, \sqrt[3]{2})$ in velja $[\Q(i, \sqrt[3]{2}) : \Q(i) = 3]$, saj je $x^3 - 2$ minimalni polinom števila $\sqrt[3]{2}$ nad $\Q(i)$.
 
@@ -559,13 +559,13 @@ Znamo konstruirati kompleksno število $i$. Naj bo $\Q(i)$ razširitev polja $\Q
 
 \begin{izrek}
     \label{izr:orig_konstr}
-    Število $\alpha \in \OR$ se da konstruirati le s prepogibanjem papirja natanko tedaj, ko obstaja zaporedje $2,3$-razširitev polja $\Q$ oblike
+    Število $\alpha \in \C$ se da konstruirati le s prepogibanjem papirja natanko tedaj, ko obstaja zaporedje $2,3$-razširitev polja $\Q$ oblike
     $$ \Q = F_0 \subset F_1 \subset F_2 \ldots \subset F_{n-1} \subset F_n \subset \C $$
     za nek $n \in \N_0$, da je $\alpha \in F_n$.
 \end{izrek}
 
 \begin{dokaz}
-    V zaporedju razširitev mora torej veljati $[F_i: F_{i-1}] \in \{2,3\}$ za vsak $ 1 \leq i \leq n$.
+    V zaporedju razširitev torej za vsak $ 1 \leq i \leq n$ velja $[F_i: F_{i-1}] \in \{2,3\}$.
 
     Naj bo $ \Q = F_0 \subset F_1 \subset F_2 \ldots \subset F_{n-1} \subset F_n \subset \C $ zaporedje $2,3$-razširitev polja $\Q$ in naj bo $\alpha \in F_n$. Z indukcijo dokažimo $F_n \subset \OR$. Za $n = 0$ je to očitno ($\Q \subset \OR$). Recimo, da velja $F_{n-1} \subset \OR$. Naj bo $f$ minimalni polinom števila $\alpha$ nad poljem $  F_{n-1}$, ki je stopnje največ $3$, saj velja $[F_n : F_{n-1}] \in \{2,3\}$. Število $\alpha$, ki je ničla tega polinoma, lahko potem z navadnimi računskimi operacijami izrazimo iz enačbe -- pomagamo si lahko s kvadratno formulo ali Cardanovimi formulami za kubično enačbo. Iz tega sledi $\alpha \in \OR$.
 
@@ -580,12 +580,72 @@ Znamo konstruirati kompleksno število $i$. Naj bo $\Q(i)$ razširitev polja $\Q
 
 Iz tega izreka sledi končna klasifikacija origami števil.
 
-\begin{izrek}
-    Naj bo $\alpha \in \C$ algebraično nad $\Q$. Potem se da število $\alpha$ konstruirati le s prepogibanjem papirja natanko tedaj, ko obstaja končno zaporedje $2,3$-razširitev polja $\Q$ oblike 
-    $$ \Q = F_0 \subset F_1 \subset F_2 \ldots \subset F_n$$
-    za nek $n \in \N_0$, da je $\alpha \in F_n$ in stopnja razširitve polja $F_n$ nad $\Q$ enaka $2^m3^n$ za neka $m, n \in \N_0$.
-\end{izrek}
+\begin{definicija}
+    Naj bo $E$ razširitev polja $F$. Pravimo, da polinom $f(X) \in F[X]$ \emph{razpade} v $E$, če je $f(X)$ enak produktu linearnih polinomov iz $E[X]$. Če $f(X)$ razpade v $E$ in v nobenem drugem podpolju polja $E$, ki vsebuje $F$, potem polju $E$ pravimo \emph{razpadno polje} polinoma $f(X)$ nad poljem $F$.
+\end{definicija}
 
-Origami števila so torej vsa števila, ki jih lahko iz danih kompleksnih števil $0$ in $1$ dobimo s končnim številom uporabe uperacij seštevanja, odštevanja, množenja, deljenja, konjugiranja, kvadratnega ter kubičnega korenjenja. Z origamijem tako lahko poleg kvadratnih rešujemo tudi poljubne kubične enačbe, a s tem se bomo natančneje ukvarjali v poglavju~\ref{pogl:enacbe}.
+\begin{izrek}
+    \label{izr:orig_razp_polje}
+    Naj bo $\alpha in \C$ algebraično nad poljem $\Q$ in naj bo $L$ razpadno polje minimalnega polinoma števila $\alpha$ nad $\Q$. Potem je $\alpha$ origami število natanko takrat, ko velja $[L:Q]=2^m3^n$ za neka $m, n \in \N_0$.
+\end{izrek}
+\begin{dokaz}
+    Naj bo $\alpha \in OR$. Polje origami števil $\OR$ je zaprto za kvadratne in kubične korene, torej vsebuje rešitve vseh polinomov iz $\Q[X]$ stopnje $3$ ali manj, tj.\ vsak polinom nad $\Q$ stopnje največ $3$ razpade v polju $\OR$. Množica origami števil je normalna razširitev polja $\Q$, torej $L \subseteq \OR$. Če vzamemo primitivni element razširitve $L$, nam zaporedje $2,3$-razširitev iz izreka~\ref{izr:orig_konstr} da $[L:Q]=2^m3^n$ za neka $m, n \in \N_0$.
+
+    Za dokaz obrata je potrebno nekaj znanja Galoisove teorije. Za Gloisovo grupo Gal$(L/ \Q)$ velja $|$Gal$(L/ \Q)| = [L:\Q] = 2^m3^n$, kar pomeni, da je taka grupa rešljiva (glej~\cite{burnside1904}). Iz tega se lahko zgradi zaporedje $2,3$-razširitev polja $\Q$ za število $\alpha$, ki je po izreku~\ref{izr:orig_konstr} zato origami število.
+\end{dokaz}
+
+Origami števila so torej vsa števila, ki jih lahko iz danih kompleksnih števil $0$ in $1$ dobimo s končnim številom uporabe uperacij seštevanja, odštevanja, množenja, deljenja, konjugiranja, kvadratnega ter kubičnega korenjenja. Z njimi lahko posledično rešujemo kvadratne in kubične enačbe. Kako pa je s konstrukcijo kakšnih posebnih geometrijskih oblik, kot so pravilni večkotniki?
 
 \subsubsection{Origami-konstruktibilnost pravilnih $n$-kotnikov}
+
+Iz evklidske geometrije vemo, za katere $n$ lahko z evklidskim orodjem konstruiramo pravilni $n$-kotnik. Spodnjega izreka tako ne bomo dokazali, ga pa bomo razširili na origami konstrukcije.
+
+\begin{definicija}
+    Praštevilo $p$ se imenuje \emph{Fermatovo praštevilo}, če je oblike $p = 2^{2^m} + 1$ kjer je $m \in \N_0$.
+\end{definicija}
+Prvih nekaj Fermatovih praštevil\footnote{Fermat je domneval, da je vsako število oblike $2^{2^s} + 1$ praštevilo. To pa ni res. Že Euler je ugotovil, da je število $2^{2^5} + 1$ sestavljeno. Deljivo je s številom 641.} je (zaporedje $A000215$ v OEIS -- \emph{On-Line Encyclopedia of Integer Sequences}):
+$$3,\; 5,\; 17,\; 257,\; 65537,\; 4294967297,\; 18446744073709551617, \ldots $$
+
+\begin{izrek}[Gauss-Wantzelov izrek]
+    Pravilni $n$-kotnik se lahko konstruira z neoznačenim ravnilom in šestilom natanko takrat, ko je $n = 2^a p_1 \cdots p_k$ za neka $a,k \in \N_0$, kjer so $p_1, \ldots, p_k$ različna Fermatova praštevila.
+\end{izrek}
+
+Za $n \leq 20$ pravilni $n$-kotnik \emph{ni} evklidsko-konstruktibilenv primeru
+$$n \in \{ 7,\;9,\;11,\;13,\;14,\;18,\;19 \}.$$
+
+Za origami-konstruktibilnost pravilnega večkotnika se namesto Fermatovih praštevil poslužimo pomnožice praštevil, ki sta jo definirala Cox in Shurman v~\cite{cox2005}.
+
+\begin{definicija}
+    Praštevilo $p$ se imenuje \emph{Pierpontovo praštevilo}, če je $p > 3$ in $p = 2^m3^n + 1$ za neka $m,n \in \N_0$.
+\end{definicija}
+
+\begin{izrek}
+    Pravilni $n$-kotnik se lahko konstruira z origamijem natanko takrat, ko je $n = 2^a 3^b p_1 \cdots p_k$ za neke $a,b,k \in \N_0$, kjer so $p_1, \ldots, p_k$ različna Pierpontova praštevila.
+\end{izrek}
+\begin{dokaz}
+    Naj bo $\zeta_n = e^{2 \pi i / n}$ $n$-ti koren enote. Pravilni $n$-kotnik lahko konstruiramo, če in samo če lahko konstruiramo kot $2 \pi / n$, kar je ekvivalentno obstoju konstrukcije števila $\zeta_n$. To število je ničla polinoma $z^n - 1 \in \Q[z]$, katerega razpadno polje je $\Q(\zeta)$. Po izreku~\ref{izr:orig_razp_polje} je $\zeta_n \in \OR$ natanko takrat, ko je $[\Q(\zeta_n) : \Q] = 2^a3^b$ za neka $a, b \in \N_0$.
+
+    Minimalni polinoma števila $\zeta_n$ nad $\Q$ je oblike
+    $$ \Phi_n(z) = \prod_{\substack{0 \leq i < n, \\ \gcd(i,n)=1}} (z - \zeta_n^i). $$
+    To je dokazano v več matematičnih besedilih, ki govorijo o Galoisovi teoriji, npr.\ v~\cite[poglavje $9.1$]{cox2005}.
+    Sledi $[\Q(\zeta_n) : \Q] = \deg(\Phi_n(z)) = \phi(n)$, kjer je $\phi(n)$ Eulerjeva funkcija, ki pove, koliko naravnih števil, manjših od $n$, je tujih temu številu. Ena od številnih formul za izračun Eulerjeve funkcije je $\phi(n) = n \prod_{p|n} (1 - 1/p)$ za $n \in \N$.
+
+    Naj bo sedaj $n = 2^a 3^b p_1 \cdots p_k$ za neke $m,n,k \in \N_0$, kjer so $p_1, \ldots, p_k$ različna Pierpontova praštevila. Potem je
+    \begin{align*}
+        [\Q(\zeta_n) : \Q] &= \phi(n) \\
+        &= n \prod_{p|n} (1 - \frac{1}{p}) =
+        \begin{cases}
+            2^a3^{b-1}(p_1 -1) \cdots (p_k -1), &a,b>0,\\
+            2^{a-1}(p_1 -1) \cdots (p_k -1), &a>0, b=0,\\
+            2 \cdot 3^{b-1}(p_1 -1) \cdots (p_k -1), &a=0,b>0,\\
+            (p_1 -1) \cdots (p_k -1), &a=b=0.
+            \end{cases}
+    \end{align*}
+    Torej je $[\Q(\zeta_n) : \Q] = 2^s3^t$ za neka $s,t \in \N_0$, torej je $\zeta_n \in \OR$.
+
+    Za dokaz obrata predpostavimo $\zeta_n \in \OR$, torej je $[\Q(\zeta_n) : \Q] = \phi(n) = 2^s3^t$ za neka $s,t \in \N_0$. Faktorizirajmo število $n$ v produkt potenc praštevil kot $n = q_1^{a_1} \cdots q_r^{a_r}$. Potem je
+    $$ \phi(n) = n \prod_{p|n} (1 - \frac{1}{p}) = q_1^{a_1-1} (q_1 -1) \cdots q_r^{a_r-1} (q_r -1).$$
+    Če je kak $q_i$ sod, je lahko le $q_i = 2$. Če je kateri izmed $q_i$ lih, pa je lahko le $q_i = 3$ ali $a_i = 1$. Poleg tega mora biti vsak faktor $(q_i - 1)$ produkt potence števila $2$ s potenco števila $3$, torej je vsak $q_i$ Piermontovo praštevilo. Tako je vsak prafaktor števila $n$ lahko število $2, 3$ ali Piermontovo praštevilo, s čimer je dokaz zaključen.
+\end{dokaz}
+
+Z origamijem sedaj lahko konsturiramo še $7$-, $9$-, $13$-, $14$-, $18$- in $19$-kotnik. Edini $n$-kotnik za $n \leq 20$, ki ni konstruktibilen tako z evklidskim orodjem kot z origamijem, je $11$-kotnik.
