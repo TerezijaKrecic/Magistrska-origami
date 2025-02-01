@@ -1,4 +1,4 @@
-\subsection{Reševanje nerešljivih starogrških problemov}
+\section{Reševanje nerešljivih starogrških problemov}
 \label{pogl:starogrskiproblemi}
 
 Z evklidskimi konstrukcijami se je seveda pojavilo konstruktibilnih ugank -- vprašanj, ali sta specifična razdalja ali kot konstruktibilna (in na kakšnen način) ali ne. Stremeli so k iskanju konstrukcij z evklidskim orodjem in če so kakšen problem uspeli rešiti le z neoznačenim ravnilom in šestilom, so te konstrukcije obravnavali kot ``boljše rešitve''~\cite[str. 36]{royster2002}. Grki pa seveda niso delali le s tem orodjem, ampak so se na primer poslužili tudi označenega ravnila\footnote{Martin v trditvi $10.4$ in preko poglavja $9$ v~\cite{geometricconstructions} dokaže, da so origami števila natanko tista množica števil, ki se jih da konstruirati z ravnilom, ki ima na robu dve oznaki.}, s katerim so lahko rešili probleme, ki jih sicer niso mogli. Zelo znani so trije t.\ i.\ ``starogrški' problemi, ki so matematike bremenili več kot tisočletje, začenši s časom Evklida (300 pr.\ Kr.), končno pa sta nanje dokončno odgovorila Niels Henrik Abel (1802--1829) in Evariste Galois (1811--1832) v začetku 19.\ stoletja. Gre za sledeče tri probleme:
@@ -12,7 +12,7 @@ Z znanjem, ki sta ga znanosti posredovala Abel in Galois, se da pokazati, da ti 
 
 V nalogi smo do sedaj že večkrat omenili, da pa obstajajo origami konstrukcije (celo več metod za isti problem!), ki nam konstruirajo kubični koren origami števila ter razdelijo kot na tri skladne dele. Vse metode, ki bodo sedaj naštete, zahtevajo uporabo Belochinega pregiba (operacije~\ref{op:O7}), kar je logično, saj so vse ostale origami operacije dovolj za vse evklidske konstrukcije. Žal pa tudi tu ostajamo nemočni glede konstrukcije števila $\sqrt{\pi}$, saj je transcedentno.
 
-\subsubsection*{Konstrukcija števila $\sqrt{r}$}
+\subsection*{Konstrukcija števila $\sqrt{r}$}
 
 Preden si pogledamo konstrukcijo kubičnega korena, vzemimo origami število $r \in $ in kosntruirajmo njegov kvadratni koren (postopek je vzet iz~\cite[str.\ 58]{hull2013}).
 
@@ -33,12 +33,12 @@ Pregib po konstrukciji poteka skozi točko $B$ in razpolovišče daljice $AA'$, 
 \end{align*}
 Na koncu le še prepognemo pravokotnico na abscisno os skozi točko $A'$ in tako dobimo točko $(\sqrt{r}, 0)$. Torej smo konstruirali število $\sqrt{r}$ za poljuben $r \in $.
 
-\subsubsection{Podvojitev kocke}
+\subsection{Podvojitev kocke}
 \label{podpogl:podvojitev_kocke}
 
 Po legendi iz grške mitologije je bog Apolon po oraklju prebivalcem svojega rojstnega otoka Delosa sporočil, da mu morajo, če se želijo znebiti smrtonosne kuge, zgraditi nov oltar v obliki kocke, ki je enak prejšnjemu, le da mora biti dvakrat večji po prostornini. Torej je bilo potrebno konstruirati kocko s stranico, ki je za faktor $\sqrt[3][2]$ večja od stranice originalne kocke. Po drugi legendi pa naj bi Platon izjavil, da je ta problem, ki so ga prejeli na njegovi Akademiji v Atenah, poslan od bogov samih z namenom osramotiti Grke zaradi njihovega zanemarjanja in prezira do matematike (ker z evklidskim orodjem niso znali konstruirati poljubnih dolžin)~\cite[str.\ 29]{geometricconstructions}.
 
-Ne vemo, ali so bili Grki prepričani, da se problema z neoznačenim ravnilom in šestilom ne da rešiti. Vsekako pa jim je manjkalo algebrsko znanje. Če je stranica kocke dolga $1$, je stranica podvojene kocke dolga $\sqrt[3]{2}$ in ker je obseg $\Q(\sqrt[3]{2})$ vektorski prostor razsežnosti $3$ nad obsegom $\Q$ (enačba $ x^3 - 2 = 0 $ nima racionalne rešitve), podvojitev kocke po izreku~\ref{izr:evkl_konstr} z evkliskim orodjem res ni mogoča~\cite[str. 78]{jerman1998}.
+Ne vemo, ali so bili Grki prepričani, da se problema z neoznačenim ravnilom in šestilom ne da rešiti. Vsekako pa jim je manjkalo algebrsko znanje iz razdelka~\ref{podpogl:evkl_konstruktibilnost}.
 
 \subsubsection*{Starogrška rešitev preko presečišča dveh parabol}
 
@@ -106,10 +106,10 @@ Peter Messer v~\cite{messer1986} navaja avtorski postopek, ki sicer ne konstruir
 \end{dokaz}
 \opomba{Lahko bi rekli, da poleg razmerja v primeru $Y=1$ Messer konstruira razdaljo $\sqrt[3]{2}$, vendar je razdalja $Y$ odvisna od stranice kvadrata. V tem primeru bi morali vzeti kvadraten list papira s stranico $1 + \sqrt[3]{2}$, za kar bi pač potrebovali že konstrukcijo kubičnega korena števila $2$. Da bi pri splošnem kvadratnem listu papirja dobili to dolžino, moramo razdalji $X$ in $Y$ z origamijem še deliti, to pa že znamo.}
 
-\subsubsection{Trisekcija kota}
+\subsection{Trisekcija kota}
 \label{podpogl:trisekcija}
 
-Kot $90^\circ$ znamo tretjiniti z neoznačenim ravnilom in šestilom, saj znamo konstruirati kot $30^\circ$. Težava je, da ne obstaja konstrukcija, s katero na tri skladne kote razdelimo \emph{poljuben} kot. V~\cite[str.\ 77--78]{jerman1998} je dokaz o neobstoju konstrukcije za trisekcijo kota $60^\circ$. Avtor se pri tem sklicuje na izrek~\ref{izr:evkl_konstr} in opombo~\ref{op:razseznost_obsega_evkl} iz razdelka~\ref{podpogl:evkl_konstruktibilnost}. Na kratko -- iz zveze $ 1/2 = \cos 60^\circ = \cos(3 \cdot 20^\circ) = 4 \cos^3 20^\circ - 3 \cos 20^\circ, $ z zamenjavo $x = \cos 20^\circ$ dobimo enačbo $8 x^3 - 6x - 1 = 0$, ki nima racionalne rešitve. Razsežnost prostora $\Q(x)$ nad obsegom $\Q$ je tako enaka $3$ in števila $ \cos 20^\circ $ se ne da narisati le z ravnilom in šestilom. Zato trisekcija z evklidskim orodjem v splošnem ni mogoča.
+Kot $90^\circ$ znamo tretjiniti z neoznačenim ravnilom in šestilom, saj znamo konstruirati kot $30^\circ$. Vem pa že, da ne obstaja konstrukcija, s katero na tri skladne kote razdelimo \emph{poljuben} kot.
 
 % SPODNJI DOKAZ JE PREPISAN IZ VIRA IN SAMO CITIRAN V prejšnjem odstavku
 
