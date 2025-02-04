@@ -1,7 +1,7 @@
 \section{Reševanje nerešljivih starogrških problemov}
 \label{pogl:starogrskiproblemi}
 
-Z evklidskimi konstrukcijami se je seveda pojavilo konstruktibilnih ugank -- vprašanj, ali sta specifična razdalja oz.\ kot konstruktibilna (in na kakšnen način) ali ne. Stremeli so k iskanju konstrukcij z evklidskim orodjem in če so kakšen problem uspeli rešiti le z neoznačenim ravnilom in šestilom, so te konstrukcije obravnavali kot ``boljše rešitve''~\cite[str. 36]{royster2002}. Grki pa seveda niso delali le s tem orodjem, ampak so se na primer poslužili tudi označenega ravnila\footnote{Martin v trditvi $10.4$ in preko poglavja $9$ v~\cite{geometricconstructions} dokaže, da so origami števila natanko tista množica števil, ki se jih da konstruirati z ravnilom, ki ima na robu dve oznaki.}, s katerim so lahko rešili probleme, ki jih sicer niso mogli. Zelo znani so trije t.\ i.\ ``starogrški' problemi, ki so matematike bremenili več kot tisočletje, začenši s časom Evklida (300 pr.\ Kr.), končno pa sta nanje dokončno odgovorila Niels Henrik Abel (1802--1829) in Evariste Galois (1811--1832) v začetku 19.\ stoletja. Gre za sledeče tri probleme:
+Z evklidskimi konstrukcijami se je seveda pojavilo konstruktibilnih ugank -- vprašanj, ali sta specifična razdalja oz.\ kot konstruktibilna (in na kakšnen način) ali ne. Stremeli so k iskanju konstrukcij z evklidskim orodjem in če so kakšen problem uspeli rešiti le z neoznačenim ravnilom in šestilom, so te konstrukcije obravnavali kot ``boljše rešitve''~\cite[str. 36]{royster2002}. Grki pa seveda niso delali le s tem orodjem, ampak so se na primer poslužili tudi označenega ravnila\footnote{Martin v trditvi $10.4$ in preko poglavja $9$ v~\cite{geometricconstructions} dokaže, da so origami števila natanko tista množica števil, ki se jih da konstruirati z ravnilom, ki ima na robu dve oznaki.}, s katerim so lahko rešili probleme, ki jih sicer niso mogli. Zelo znani so trije t.~i.\ ``starogrški' problemi, ki so matematike bremenili več kot tisočletje, začenši s časom Evklida (300 pr.\ Kr.), nanje pa sta dokončno odgovorila šele Niels Henrik Abel (1802--1829) in Evariste Galois (1811--1832) v začetku 19.\ stoletja. Gre za sledeče tri probleme:
 \begin{itemize}
     \item \textbf{Podvojitev kocke} Imejmo že konstruktibilno kocko. Konstruiraj novo kocko, ki ima dvakrat večji volumen od prve (problem se poenostavi na iskanje konstrukcije števila $\sqrt[3]{2}$).
     \item \textbf{Trisekcija kota} Dan je poljuben konstruktibilen kot. Konstruiraj kot, ki prvega deli na tri skladne dele.
@@ -10,11 +10,11 @@ Z evklidskimi konstrukcijami se je seveda pojavilo konstruktibilnih ugank -- vpr
 
 Z znanjem, ki sta ga znanosti posredovala Abel in Galois, se da pokazati, da ti trije problemi z evklidskim orodjem niso rešljivi. V knjigi o starogrški matematiki od Talesa do Evklida~\cite[str.\ 218--270]{heath1921} je zbrano veliko zamisli in konstrukcij grških matematikov, ki so se ukvarjali s temi tremi problemi in evklidsko orodje ne zadostuje za nobeno od najdenih rešitev.
 
-V nalogi smo do sedaj že večkrat omenili, da pa obstajajo origami konstrukcije (celo več metod za isti problem!), ki nam konstruirajo kubični koren origami števila ter razdelijo kot na tri skladne dele. Vse metode, ki bodo sedaj naštete, zahtevajo uporabo Belochinega pregiba (operacije~\ref{op:O7}), kar je logično, saj so vse ostale origami operacije dovolj za vse evklidske konstrukcije. Žal pa tudi tu ostajamo nemočni glede konstrukcije števila $\sqrt{\pi}$, saj je transcedentno.
+V nalogi smo do sedaj že večkrat omenili, da pa obstajajo origami konstrukcije (celo več metod za isti problem!), ki nam konstruirajo kubični koren origami števila ter razdelijo kot na tri skladne dele. Vse metode, ki bodo sedaj naštete, zahtevajo uporabo Belochinega pregiba (operacije~\ref{op:O7}), kar je logično, saj so vse ostale origami operacije dovolj za vse evklidske konstrukcije. Žal pa tudi tu ostajamo nemočni glede konstrukcije števila $\sqrt{\pi}$, saj je transcedentno in ga ne moremo konstruirati z nobeno od osnovnih operacij vključno s kvadratnim in kubičnim korenjenjem.
 
 \subsection*{Konstrukcija števila $\sqrt{r}$}
 
-Preden si pogledamo konstrukcijo kubičnega korena, vzemimo origami število $r \in $ in kosntruirajmo njegov kvadratni koren (postopek je vzet iz~\cite[str.\ 58]{hull2013}).
+Preden si pogledamo konstrukcijo kubičnega korena, vzemimo origami število $r \in \OR$ in konstruirajmo njegov kvadratni koren (postopek je vzet iz~\cite[str.\ 58]{hull2013}).
 
 Imejmo točko $A (0, 1) $ in premico $y = -1$. Na ordinatni osi označimo točko $B (0, -r/4)$ in z operacijo~\ref{op:O6} skoznjo naredimo pregib, ki točko $A$ položi na premico $y = -1$. Njena zrcalna slika je $A' (t, 0) $ za nek $t \in \R$ (slika~\ref{fig:konstrukcija_korena}).
 
@@ -36,15 +36,15 @@ Na koncu le še prepognemo pravokotnico na abscisno os skozi točko $A'$ in tako
 \subsection{Podvojitev kocke}
 \label{podpogl:podvojitev_kocke}
 
-Po legendi iz grške mitologije je bog Apolon po oraklju prebivalcem svojega rojstnega otoka Delosa sporočil, da mu morajo, če se želijo znebiti smrtonosne kuge, zgraditi nov oltar v obliki kocke, ki je enak prejšnjemu, le da mora biti dvakrat večji po prostornini. Torej je bilo potrebno konstruirati kocko s stranico, ki je za faktor $\sqrt[3][2]$ večja od stranice originalne kocke. Po drugi legendi pa naj bi Platon izjavil, da je ta problem, ki so ga prejeli na njegovi Akademiji v Atenah, poslan od bogov samih z namenom osramotiti Grke zaradi njihovega zanemarjanja in prezira do matematike (ker z evklidskim orodjem niso znali konstruirati poljubnih dolžin)~\cite[str.\ 29]{geometricconstructions}.
+Po legendi iz grške mitologije je bog Apolon po oraklju prebivalcem svojega rojstnega otoka Delosa sporočil, da mu morajo, če se želijo znebiti smrtonosne kuge, zgraditi nov oltar v obliki kocke, ki je enak prejšnjemu, le da mora biti dvakrat večji po prostornini. Torej je bilo potrebno konstruirati kocko s stranico, ki je za faktor $\sqrt[3]{2}$ večja od stranice originalne kocke. Po drugi legendi pa naj bi Platon izjavil, da je ta problem, ki so ga prejeli na njegovi Akademiji v Atenah, poslan od bogov samih z namenom osramotiti Grke zaradi njihovega zanemarjanja in prezira do matematike (ker z evklidskim orodjem niso znali konstruirati poljubnih dolžin)~\cite[str.\ 29]{geometricconstructions}.
 
 Ne vemo, ali so bili Grki prepričani, da se problema z neoznačenim ravnilom in šestilom ne da rešiti. Vsekako pa jim je manjkalo algebrsko znanje iz razdelka~\ref{podpogl:evkl_konstruktibilnost}.
 
 \subsubsection*{Starogrška rešitev preko presečišča dveh parabol}
 
-Mogoče Grkom ni uspelo priti do tega premisleka, vendar so problem vseeno uspeli rešiti, čeprav po drugi poti; uporabili so še eno močno matematično orodje -- stožnice. Videla v~\cite{videla1997} dokaže izrek, ki je identičen izreku~\ref{izr:orig_razp_polje} (ki govori, katera števila so origami števila), le da namesto origamija uporabi stožnice. V bistvu s tem dokaže, da so origami kosntrukcije ekvivalentne konstrukcijam s stožnicami!
+Grki so problem vseeno uspeli rešiti, čeprav po drugi poti; uporabili so še eno močno matematično orodje -- stožnice. Videla v~\cite{videla1997} dokaže izrek, ki je identičen izreku~\ref{izr:orig_razp_polje} (ki govori, katera števila so origami števila), le da namesto origamija uporabi stožnice. V bistvu s tem dokaže, da so origami konstrukcije ekvivalentne konstrukcijam s stožnicami!
 
-V istem viru Videla tudi navaja konstrukcijo s parabolami, ki za dano dolžino $a$ podajo dolžino $c$, za katero velja $c^3 = a$. Njen avtor je Menehmo (prb.\ 350 pr.\ Kr.), tutor Aleksandra Velikega. Vzel je sledeči paraboli (slika~\ref{fig:videla}):
+V istem viru Videla tudi navaja konstrukcijo s parabolami, ki za dano dolžino $a$ podajo dolžino $c$, za katero velja $c^3 = a$. Njen avtor je Menehmo (prb.\ 350 pr.\ Kr.), ki je bil tutor samemu Aleksandru Velikemu. Vzel je sledeči paraboli (slika~\ref{fig:videla}):
 \begin{itemize}
     \item $\mathcal{P}_1: y = x^2$ z goriščem v točki $(0, \frac{1}{4})$ in premico vodnico $y = - \frac{1}{4}$ in
     \item $\mathcal{P}_1: x = \frac{y^2}{a}$ z goriščem v točki $(\frac{a}{4}, 0)$ in premico vodnico $x = - \frac{a}{4}$.
@@ -109,7 +109,7 @@ Peter Messer v~\cite{messer1986} navaja avtorski postopek, ki sicer ne konstruir
 \subsection{Trisekcija kota}
 \label{podpogl:trisekcija}
 
-Kot $90^\circ$ znamo tretjiniti z neoznačenim ravnilom in šestilom, saj znamo konstruirati kot $30^\circ$. Vem pa že, da ne obstaja konstrukcija, s katero na tri skladne kote razdelimo \emph{poljuben} kot.
+Kot $90^\circ$ znamo tretjiniti z neoznačenim ravnilom in šestilom, saj znamo konstruirati kot $30^\circ$. Vem pa že, da ne obstaja konstrukcija, s katero na tri skladne kote razdelimo \emph{poljuben} kot -- v razdelku~\ref{podpogl:evkl_konstruktibilnost} smo dokazali neobstoj origami konstrukcije za trisekcijo kota $60^\circ$.
 
 % SPODNJI DOKAZ JE PREPISAN IZ VIRA IN SAMO CITIRAN V prejšnjem odstavku
 
@@ -128,7 +128,7 @@ Kot $90^\circ$ znamo tretjiniti z neoznačenim ravnilom in šestilom, saj znamo 
 
 \subsubsection*{Starogrška rešitev preko presečišča krožnice in hiperbole}
 
-Grki so tudi ta problem uspeli rešiti s stožnicami. Videla v~\cite[str.\ 6--7]{videla1997} opisuje Pappusovo konstrukcijo iz $3$.\ stoletja po Kr., ki je tu ne bomo dokazali. Gre za sledeč postopek: Na kraku $BA$ poljubnega kota $\angle ABC$ izberemo poljubno točko $F$ in zarišemo krožnico s središčem v točki $B$ in polmerom $BF$. Naj bo $BD$ simetrala kota $\angle ABC$. Naj bo presečišče krožnice in hiperbole z ekscentičnostjo $2$, ki ima gorišče v točki $F$ in premico vodnico $BD$, točka $E$ (slika~\ref{fig:trisection_gr}). Potem poltrak $BE$ tretjini kot $\angle ABC$.
+Grki so tudi ta problem uspeli rešiti s stožnicami. Videla v~\cite[str.\ 6--7]{videla1997} opisuje Pappusovo konstrukcijo iz $3$.\ stoletja po Kr., ki je tu ne bomo dokazali. Gre za sledeč postopek: Na kraku $BA$ poljubnega kota $\angle ABC$ izberemo poljubno točko $F$ in zarišemo krožnico s središčem v točki $B$ in polmerom $BF$. Naj bo $BD$ simetrala kota $\angle ABC$. Naj bo točka $E$ presečišče krožnice in hiperbole z ekscentičnostjo $2$, ki ima gorišče v točki $F$ in premico vodnico $BD$ (slika~\ref{fig:trisection_gr}). Potem poltrak $BE$ tretjini kot $\angle ABC$.
 
 \begin{figure}[h]
     \centering
