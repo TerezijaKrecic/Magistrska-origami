@@ -3,7 +3,7 @@
 
 Iz didaktičnega vidika zelo zanimivo poglavje nam predstavlja konstrukcije tangent na stožnice s prepogibanjem papirja. Vsebina je tu predstavljena tako, da je bralec najprej povabljen, da vzame list papirja in ga prepogiba po navedenih korakih. Po opažanju, kaj se na papirju pri tem prikaže, preidemo na matematični del, kjer dokažemo, da so prepogibi res tangente na določeno stožnico.
 
-Učitelji matematike so povabljeni, da si pri obravnavi stožnic vzamejo čas in izvedejo spodnje aktivnosti. Dijaki bodo z veliko verjetnostjo presenečeni nad rezultati zgibanja, kar jih lahko bolj motivira za obravnavo geometričnih lastnosti stožnic. Priporočljiva je tudi izvedba ure v računalniški učilnici, kjer lahko vsak dijak z ustreznim programskim orodjem (npr.\ Geogebra) sam poskusi zgraditi opisano konstrukcijo. S tem lahko znanje o stožnicah le še bolj utrdi.
+Učitelji matematike so povabljeni, da si pri obravnavi stožnic vzamejo čas in pri pouku izvedejo spodnje aktivnosti. Dijaki bodo z veliko verjetnostjo presenečeni nad rezultati zgibanja, kar jih lahko bolj motivira za obravnavo geometričnih lastnosti stožnic. Priporočljiva je tudi izvedba ure v računalniški učilnici, kjer lahko vsak dijak z ustreznim programskim orodjem (npr.\ Geogebra) sam poskusi zgraditi opisano konstrukcijo. S tem lahko znanje o stožnicah le še bolj utrdi.
 
 Z origamijem ne moremo konstruirati gladkih krožnih lokov. Kljub temu pa lahko z upoštevanjem določenih korakov konstruiramo premice, ki so tangentne na neko krivuljo. Več takih tangent nam poda nekakšno lomljenko, če pa bi konstrukcije pregibov ponavljali v nedogled, bi teoretično v limiti res dobili gladko krivuljo.
 
@@ -13,9 +13,9 @@ Z origamijem ne moremo konstruirati gladkih krožnih lokov. Kljub temu pa lahko 
 \end{definicija}
 
 \begin{opomba}
-    Vsaka krivulja iz družine mora biti diferenciabilna in med krivuljami mora biti gladek prehod (\textcolor{red}{kako to bolj strokovno napisat?}). Vendar to ni zadosten pogoj, da ovojnica te družine družine obstaja -- protiprimer je družina krožnic s skupnim središčem in polmerom, ki se zvezno povečuje~\cite{wikienvelope}. Ovojnica je dana kot rešitev enačb
+    Vsaka krivulja iz družine mora biti diferenciabilna (in zato zvezna), vendar to ni zadosten pogoj, da ovojnica te družine družine obstaja -- protiprimer je družina krožnic s skupnim središčem in polmerom, ki se zvezno povečuje~\cite{wikienvelope}. Ovojnica je dana kot rešitev enačb
     $$ F(t, x, y) = 0 \; \text{ in } \; \frac{\partial}{\partial t} F(t, x, y) = 0, $$
-    kjer je $\partial F / \partial t$ parcialni odvod funkcije $F$ po parametru $t$ \textcolor{red}{(A to lahko pustim kot dejstvo ali moram raziskati, s kje to pride?)}.
+    kjer je $\partial F / \partial t$ parcialni odvod funkcije $F$ po parametru $t$.
 \end{opomba}
 
 \begin{opomba}
@@ -65,7 +65,7 @@ Za različno izbiro premic skozi točko $S$ dobimo različne tangente. S ponavlj
 % Najstareši opis zgornje konstrukcije, ker sem jih našla, je v svojo knjigo \emph{Geometric Exercises in Paper Folding} vključil indijski matematik T.\ Sundara Row~\cite{row1917}.
 % Hull je našel Row-a (prvič izdana 1893) kot najstarejši zapis te konstrukcije
 
-Omenjen pregib je origami operacija~\ref{op:O3}, lahko pa nanjo gledamo tudi kot na operacijo~\ref{op:O6}. Za le-to smo v poglavju~\ref{pogl:aksiomi} že premislili, da nam pregib, ki poteka skozi dano točko $B$ in točko $A$ položi na premica $a$, poda tangento na parabolo z goriščem $A$ in premico vodnico $a$ (gl.\ sliko~\ref{fig:O6_parabola} in premislek nad njo). Tukaj pa take točke $B$ ni, kar pomeni le to, da smo s pregibom konstruirali neko tangento -- pregib je namreč simetrala daljice, ki ima za krajišči obe izbrani točki iz navodila aktivnosti, torej obstaja točka (točka $P$ na sliki~\ref{fig:O6_parabola}), ki je enako oddaljena od spodnje stranice lista in prve izbrane točke. Nadaljni premislek, da je to edino presečišče pregiba in parabole, je enak kot prej. Spodnja trditev je tako že dokazana.
+Omenjen pregib je origami operacija~\ref{op:O3}, lahko pa nanjo gledamo tudi kot na operacijo~\ref{op:O6}. Za le-to smo v poglavju~\ref{pogl:aksiomi} že premislili, da nam pregib, ki poteka skozi dano točko $B$ in točko $A$ položi na premica $a$, poda tangento na parabolo z goriščem $A$ in premico vodnico $a$ (gl.\ sliko~\ref{fig:O6_parabola} in premislek nad njo). Tukaj pa take točke $B$ ni, kar pomeni le to, da smo s pregibom konstruirali neko tangento -- pregib je namreč simetrala daljice, ki ima za krajišči obe izbrani točki iz navodila aktivnosti, torej obstaja enolična točka (točka $P$ na sliki~\ref{fig:O6_parabola}), ki je enako oddaljena od spodnje stranice lista in prve izbrane točke. Spodnja trditev je tako že dokazana.
 
 \begin{trditev}
     Konstrukcija iz zgornje aktivnosti nam poda pregib, ki je tangenten na parabolo z goriščem v izbrani točk in premico vodnico, ki jo predstavlja spodnja stranica lista.
@@ -77,12 +77,12 @@ To je bil intuitiven premislek. Poglejmo si, kako lahko to dokažemo na bolj mat
 
 \subsubsection*{Parametrizacija pregibov}
 
-Začnimo kar s parametrizacijo družine konstruiranih pregibov. V ta namen v model poljubne točke in spodnje stranice lista vpeljimo nekaj oznak. Naj bo $c \in \OR$. Vzemimo točko $A(0, c)$ in premico $a: y = -c$, ki sta origami-konstruktibilni, in naredimo pregib, ki točko $A$ preslika na premico $a$ v točko $A'(t, -c)$ za nek $t \in \R$ (slika~\ref{fig:enacba_tangente_par1} v primeru $c = 1$).
+Začnimo kar s parametrizacijo družine konstruiranih pregibov. V ta namen v model poljubne točke in spodnje stranice lista vpeljimo nekaj oznak. Naj bo $c \in \OR$. Vzemimo točko $A(0, c)$ in premico $a: y = -c$, ki sta origami-konstruktibilni, in naredimo pregib, ki točko $A$ preslika na premico $a$ v točko $A'(t, -c)$ za nek $t \in \R$ (slika~\ref{fig:enacba_tangente_par1}).
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{images/stožnice/enacba_parabole1.png}
-    \caption[Enačba tangente na parabolo]{Pregib točke $A(0, 1)$ na premico $a: y = -1$ (primer za $c = 1$).}
+    \caption[Enačba tangente na parabolo]{Pregib točke $A(0, c)$ na premico $a: y = -c$.}
     \label{fig:enacba_tangente_par1}
 \end{figure}
 
@@ -98,11 +98,11 @@ Za vsak $t \in \R$ torej dobimo drugo tangento na parabolo z goriščem v točki
     \label{eq:parabola_splosna}
     y = \frac{x^2}{4c},
 \end{equation}
-torej je ovojnica res parabola. Preden gremo na naslednji način dokaza, si poglejmo še vpliv parametra $c$ na parabolo. Razdalja med njenim goriščem in premico vodnico je $2c$ in iz enačbe~\ref{eq:parabola_splosna} je razvidno, da bo z manjšanjem $c$ parabola vedno ožja.
+torej je ovojnica res parabola. % Preden gremo na naslednji način dokaza, si poglejmo še vpliv parametra $c$ na parabolo. Razdalja med njenim goriščem in premico vodnico je $2c$ in iz enačbe~\ref{eq:parabola_splosna} je razvidno, da bo z manjšanjem $c$ parabola vedno ožja.
 
 \subsubsection*{Drugi dokazi}
 
-Njeno enačbo lahko dobimo tudi brez definicije ovojnice. Ker so vse točke na pregibu enako oddaljene od točk $A$ in $A'$, na pregibu obstaja le ena točka $T$, za katero velja $d(T, A) = d(T, a)$. Njena abscisa je $x = t$ (točka $T$ leži na pregibu točno nad točko $A'$, gl.\ sliko~\ref{fig:enacba_tangente_par1}) in iz enačbe~\ref{eq:tang_par}, dobimo še ordinato $y = t^2/(4c)$. Ker točka $T$ za vsak $t \in \R$ leži na paraboli, pri menjavi $x = t$ dobimo ravno enačbo~\ref{eq:parabola_splosna}.
+Njeno enačbo lahko dobimo tudi brez definicije ovojnice. Ker so vse točke na pregibu enako oddaljene od točk $A$ in $A'$, na pregibu obstaja le ena točka $T$, za katero velja $d(T, A) = d(T, a)$. Njena abscisa je $x = t$ (točka $T$ leži na pregibu točno nad točko $A'$, gl.\ sliko~\ref{fig:enacba_tangente_par1}) in iz enačbe~\ref{eq:tang_par}, dobimo še ordinato $y = t^2/4c$. Ker točka $T$ za vsak $t \in \R$ leži na paraboli, pri menjavi $x = t$ dobimo ravno enačbo~\ref{eq:parabola_splosna}.
 
 Hull v~\cite[str.\ 55--56]{hull2013} poda prefinjen dokaz preko kvadratne formule. Vemo, da pregib~\ref{op:O6} ne obstaja vedno (slika~\ref{fig:O6} desno). Poglejmo, ali obstajajo v ravnini našega modela kakšne točke, skozi katere ne moremo konstruirati pregiba oz.\ tangente. Vzemimo našo parametrizacijo družine tangent (enačba~\ref{eq:tang_par}) in jo rešimo za $t$. Dobljena formula nam pove, za katere vrednosti $t$ pregib poteka skozi točko $(x, y)$:
 $$ \frac{1}{4c}t^2 - \frac{x}{2c}t + y = 0 \Rightarrow t_{1,2} = \frac{\frac{x}{2c} \pm \sqrt{\frac{x^2}{4c^2} - \frac{y}{c}}}{\frac{1}{2c}}.$$
@@ -125,7 +125,7 @@ Aktivnosti za naslednji dve podpoglavji sta enaki kot v tem, le da namesto spodn
 
 \opomba{Za izris poljubne krožnice tu lahko uporabimo šestilo. Prej smo videli, da znamo lomljeno krožnico prepogniti tudi z origamijem, vendar imamo potem na listu papirja veliko pregibov, ki nam ovirajo pogled na ciljno sliko. Zato je uporaba šestila v ta namen dovoljena predvsem iz praktičnega vidika.}
 
-Izgleda, kot da se nam izriše elipsa, ki ima za gorišči središče krožnice in izbrano točko znotraj nje. Spomnimo se, da na elipsi ležijo vse točke, katerih vsota razdalj do obeh gorišč je konstantna in enaka dolžini velike osi (t.\ j.\ dvakratnik velike polosi). V našem primeru je elipsa natančno določena, kar nam pove naslednja trditev~\cite[str.\ 60--61]{hull2013}.
+Izgleda, kot da se nam izriše elipsa, ki ima za gorišči središče krožnice in izbrano točko znotraj nje. Spomnimo se, da na elipsi ležijo vse točke, katerih vsota razdalj do obeh gorišč je konstantna in enaka dolžini velike osi (t.~j.\ dvakratnik velike polosi). V našem primeru je elipsa natančno določena, kar nam pove naslednja trditev~\cite[str.\ 60--61]{hull2013}.
 
 \begin{trditev}
     Konstrukcija iz zgornje aktivnosti nam poda pregib, ki je tangenten na elipso z goriščema v obeh izbranih točkah in veliko osjo, enako polmeru izbrane krožnice.
@@ -146,6 +146,7 @@ Izgleda, kot da se nam izriše elipsa, ki ima za gorišči središče krožnice 
         \caption[Tangentnost na elipso]{Dokaz tangentnosti pregibov na elipso.}
         \label{fig:dokaz_elipsa}
     \end{figure}
+    
     Torej je pregib tangenten na dano elipso v točki $T$.
 \end{dokaz}
 
@@ -169,7 +170,7 @@ Iskana parametrizacija družine pregibov ima zato enačbo
     \label{eq:param_elipsa}
     F(t,x,y) = \frac{2e-t}{\sqrt{r^2-t^2}} x - y - \frac{(4e^2-t^2)}{2\sqrt{r^2-t^2}} + \frac{\sqrt{r^2-t^2}}{2} = 0.
 \end{equation}
-Iz enačbe $(\partial / \partial t) F(t, x, y) = 0$ dobimo\footnote{Za računanje in poenostavitev izrazov priporočamo uporabo kalkulatorja npr.\ Wolfram Mathematica.} $t = 2r^2x/(r^2+4ex-4e^2)$. \textcolor{red}{(To sem dala v Wolfram, a je potrebno priflikat kakšen screenshot za dokaz, da mi bojo verjeli?)} Vstavimo $t$ še v enačbo $F(t,x,y)=0$ in po nekaj dela res dobimo
+Iz enačbe $(\partial / \partial t) F(t, x, y) = 0$ dobimo\footnote{Za računanje in poenostavitev izrazov priporočamo uporabo kalkulatorja npr.\ Wolfram Mathematica.} $t = 2r^2x/(r^2+4ex-4e^2)$. \textcolor{red}{(To sem dala v Wolfram, a je potrebno priflikat kakšen screenshot za dokaz, da mi bojo verjeli?)} To vstavimo v enačbo $F(t,x,y)=0$ in po nekaj dela res dobimo
 \begin{equation*}
     \frac{(x-e)^2}{\frac{r^2}{4}} + \frac{y^2}{\frac{r^2-4e^2}{4}} = 1,
 \end{equation*}
@@ -203,8 +204,6 @@ Podobno kot prej lahko sklepamo, da se nam izriše obris hiperbole. Spomnimo se,
     $$\left||TF_1| - |TF_2|\right| = \left||TF_1| - |TA|\right| = |F_1A| = r$$
     za vsako izbiro točke $A$. Ker je $r$ velika os hiperbole, točka $T$ leži na njej.
 
-    Pokažimo, da je to res tangenta. Ker je pregib simetrala daljice $F_2A$,  prepolavlja kot $\angle ATF_2$, ki je enak kotu $\angle F_1TF_2$. Torej pregib skozi točko T na hiperboli prepolavlja kot, ki ga ta točka oklepa z goriščema, to pa je ravno značilnost tangent na hiperbolo (\textcolor{red}{zase: pokazi de je to rejs}).
-
     \begin{figure}[h]
         \centering
         \includegraphics[width=0.3\textwidth]{images/stožnice/hiperbola_dokaz1.png}
@@ -212,7 +211,8 @@ Podobno kot prej lahko sklepamo, da se nam izriše obris hiperbole. Spomnimo se,
         \caption[Tangentnost na hiperbolo]{Dokaz tangentnosti pregibov na hiperbolo.}
         \label{fig:dokaz_hiperbola}
     \end{figure}
-    Torej je pregib tangenten na dano hiperbolo v točki $T$.
+
+    Pokažimo, da je to res tangenta. Ker je pregib simetrala daljice $F_2A$,  prepolavlja kot $\angle ATF_2$, ki je enak kotu $\angle F_1TF_2$. Torej pregib skozi točko T na hiperboli prepolavlja kot, ki ga ta točka oklepa z goriščema, to pa je ravno značilnost tangent na hiperbolo (\textcolor{red}{opomba zase: pokazi, da je to res}). Torej je pregib tangenten na dano hiperbolo v točki $T$.
 \end{dokaz}
 
 
@@ -233,4 +233,4 @@ Ker velja $r^2-4e^2 < 0$, v končni enačbi namesto tega zapišemo $-(-(r^2-4e^2
 
 \subsubsection*{Dokazi v drugih virih}
 
-Dokaz, kjer se izračuna splošno enačbo elipse in hiperbole glede na izbrano krožnico in točko znotraj oz.\ zunaj nje najdemo tudi v~\cite[str.\ 204--206]{smith2003}. Tudi Lotka v~\cite{lotka1907} iz opisane konstrukcije izpelje splošno enačbo elipse in nastavi popravek, ki nam da splošno enačbo hiperbole. S tem oba dokažeta, da je ogrinjača teh pregibov res elipsa oz.\ hiperbola.
+Dokaz z malo drugačnim pritopom, kjer se izračuna splošno enačbo elipse in hiperbole glede na izbrano krožnico in točko znotraj oz.\ zunaj nje najdemo tudi v~\cite[str.\ 204--206]{smith2003}. Poleg tega tudi Lotka v~\cite{lotka1907} iz opisane konstrukcije na svoj način izpelje splošno enačbo elipse in nastavi popravek, ki nam da splošno enačbo hiperbole. S tem oba vira dokažeta, da je ogrinjača teh pregibov res elipsa oz.\ hiperbola.
