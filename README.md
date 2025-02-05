@@ -6,7 +6,7 @@ Okvirna vsebina po sklopih:
 - Hagovi izreki v kvadratu in razdelitev stranice na *n* enakih delov (trije načini), rešitev dveh starogrških problemov
     - trisekcija kota (Abe, Justin)
     - podvojitev kocke (Messer, Beloch)
-- konstrukcija pravilnih *n*-kotnikov (enakostranični trikotnik, 7-kotnik ...)
+- konstrukcija pravilnih *n*-kotnikov
 - reševanje enačb
     - kvadratne enačbe (te se še da samo z ravnilom in šestilom, povezava s parabolo)
     - kubične enačbe
@@ -15,5 +15,4 @@ Okvirna vsebina po sklopih:
         - Alperinova rešitev (gl. Hull 2020)
         - metoda, ki je obisana pri enačbah 4. stopnje
     - enačbe 4. stopnje (metoda za reševanje nekaterih enačb)
-- 2-fold origami (do zdaj smo prepognili in takoj nazaj razgrnili papir): enačbe 5. stopnje (TEŽJE, glej članek od mentorja), še kej
-- Alzhazen's problem (bomo še videli)
+- Alzhazen's problem
