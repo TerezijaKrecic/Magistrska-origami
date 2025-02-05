@@ -227,15 +227,15 @@ Tako smo prišli do konca teoretičnega postopka. Na hitro ponovimo -- pri dani 
 
 Vemo že, da z evklidskim orodjem problema ne moremo rešiti, saj se prevede na reševanje enačbe četrte stopnje. Ta postopek pa nam še na drug način pokaže potrebnost origamija -- konstrukcija skupne tangente na krožnico in parabolo namreč z neoznačenim ravnilom in šestilom prav tako ni mogoča, spomnimo pa se, da jo lahko dobimo s hkratnim prepogibom središča krožnice na rob dvakrat večje krožnice in gorišča parabole na njeno premico vodnico.
 
-Nishimura vse znanje tega razdelka združi v naslednjo origami konstrukcijo, ki konstruira rešitev Alhazenovega problema. Naj bo $\mathcal{C}$ enotska krožnica s središčem $O$ v koordinatnem izhodišču kompleksne ravnine $\C$ in $a = A, b = B$ točki znotraj nje. Za točki zunaj krožnice je postopek enak.
+Nishimura vse znanje tega razdelka združi v naslednjo origami konstrukcijo, ki konstruira rešitev Alhazenovega problema (dodala sem sprotno razlago, ki pripomore k razumevanju delovanja konstrukcije). Naj bo $\mathcal{C}$ enotska krožnica s središčem $O$ v koordinatnem izhodišču kompleksne ravnine $\C$ in $a = A, b = B$ točki znotraj nje. Za točki zunaj krožnice je postopek enak.
 \begin{enumerate}
-    \item Prepognemo poltrak $OA$ in njegovo presečišče s krožnico $\mathcal{C}$ označimo z $E$.
+    \item Prepognemo premico $OA$ in z $E$ označimo presečišče poltraka $OA$ s krožnico~$\mathcal{C}$.
     \item Prepognemo premico $AB$.
     \item Prepognemo simetralo daljice $AB$ in središče daljice $AB$ označimo z $M$. Velja $ |OM| = |(a+b)/2| = \sqrt{s^2+r^2}/2$.
-    \item Prepognemo premico $OM$, ki jo poimenujemo $D$ (ker je $ M = (a+b)/2$, je to ravno premica vodnica parabole $\mathcal{\overline{Q}}$). Presečišče poltraka $OM$ s krožnico $\mathcal{C}$ označimo z $E'$.
+    \item Skozi točki $O$ in $M$ prepognemo premico $D$ (ker je $ M = (a+b)/2$, je to ravno premica vodnica parabole $\mathcal{\overline{Q}}$). Presečišče poltraka $OM$ s krožnico $\mathcal{C}$ označimo z $E'$.
     \item Prepognemo premico $EB$.
-    \item Prepognemo pravokotnico na premico $EB$ skozi točko $B$ in jo poimenujemo $l_1$.
-    \item Prepognemo pravokotnico na premico $l_1$ skozi točko $A$ in jo poimenujemo $l_2$. Velja $l_2 \parallel EB$.
+    \item Prepognemo pravokotnico $l_1$ na premico $EB$ skozi točko $B$.
+    \item Prepognemo pravokotnico $l_2$ na premico $l_1$ skozi točko $A$. Velja $l_2 \parallel EB$.
     \item Prepognemo premico $OB$ in njeno presečišče s premico $l_2$ označimo z $G$. Iz razmerja podobnih trikotnikov $\triangle AOG$ in $\triangle EOB$ sledi $|OG| = q = Re(ab)$ (slika~\ref{fig:nishimura_origami}).
     \begin{figure}[h]
         \centering
@@ -244,7 +244,7 @@ Nishimura vse znanje tega razdelka združi v naslednjo origami konstrukcijo, ki 
         \label{fig:nishimura_origami}
     \end{figure}
     \item Prepognemo premico $MG$.
-    \item Prepognemo pravokotnico na premico $MG$ skozi točko $M$ in jo označimo z $l_3$.
+    \item Prepognemo pravokotnico $l_3$ na premico $MG$ skozi točko $M$.
     \item Prepognemo pravokotnico na premico $l_3$ skozi točko $E'$ in njeno presečišče s premico $OB$ označimo s $H$. Velja $MG \parallel E'H$. Iz razmerja podobnih trikotnikov $\triangle OMG$ in $\triangle OE'H$ sledi $|OH|= |OG|/|OM| = 2q/ \sqrt{s^2+r^2}$.
     \item Prepognemo premico skozi središče $O$, ki točko $H$ preslika na premico $D$ v točko $K$. Velja $|OK| = |OH|$.
     \item Prepognemo premico skozi središče $O$, ki točko $B$ preslika na premico $OA$. To je ravno simetrala kota $\angle AOB$, za katero smo prevzeli, da je to ravno abscisna os v našem koordinatnem sistemu. Sliko točke $K$ čeznjo označimo s $F$ (slika~\ref{fig:nishimura_origami2}).
@@ -261,3 +261,7 @@ Nishimura vse znanje tega razdelka združi v naslednjo origami konstrukcijo, ki 
         \label{fig:nishimura_origami2}
     \end{figure}
 \end{enumerate}
+
+\begin{opomba}
+    Vemo že, da so možne največ štiri realne rešitve, a tu smo konstruirali le eno od rešitev. Ključna je izbira poltrakov z vrhom v središču $O$, ki so del premic $OA$ in $D$ (koraka $1$ in $4$). Iz obeh izbir dobimo dve možnosti za točko $E$ in dve možnosti za točko $E'$ (presečišči poltrakov s krožnico), ki nam skupaj data štiri možne rešitve. Če niso vse rešitve realne, bomo to videli, ko v naslednjih korakih po izbiri poltrakov konstrukcija na neki točki propade.
+\end{opomba}
