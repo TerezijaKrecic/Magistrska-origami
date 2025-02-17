@@ -419,7 +419,6 @@ Velja $F_0 \subset F_1 \subset F_2 \subset \ldots \subset F_n$. Za vsak $i \in \
     $$ [E : F] = [E : L] \cdot[L : F].$$
 \end{izrek}
 \begin{posledica}
-    \label{posl:kvadr_razs}
     Naj bodo $F_0 \subset F_1 \subset F_2 \subset \ldots \subset F_n$ kvadratne razširitve obsega $F_0$. Potem je $[F_n : F_0] = 2^n$.
 \end{posledica}
 \begin{dokaz}
@@ -478,7 +477,7 @@ Poiščimo še množico števil, ki jih lahko konstruiramo z origamijem. Definir
 
 \begin{definicija}
     \label{def:origami_stevilo}
-    Na listu papirja, ki nam služi kot model ravnine $\C$, imejmo dano izhodišče $O$ in število $1$ na realni osi. Če lahko s končnim številom enkratnih ravnih prepogibov in upoštevanjem operacij~\ref{op:O1}--\ref{op:O8} konstruiramo kompleksno število $\alpha$, rečemo, da je $\alpha$ \emph{origami število}. Množico origami števil označimo z $\OR$.
+    Na listu papirja, ki nam služi kot model ravnine $\C$, imejmo dano izhodišče $O$ in število $1$ na realni osi. Če lahko s končnim številom enkratnih ravnih prepogibov in upoštevanjem operacij~\ref{op:O1}--~\ref{op:O8} konstruiramo kompleksno število $\alpha$, rečemo, da je $\alpha$ \emph{origami število}. Množico origami števil označimo z $\OR$.
 \end{definicija}
 
 Spomnimo se, da premice v ravnini predstavljajo pregibi papirja, nove točke pa njihova presečišča. Po izreku~\ref{izr:op1do8} operacije~\ref{op:O1}--~\ref{op:O8} zajamejo vse možne pregibe, zato so origami števila dobro definirana.
@@ -487,7 +486,7 @@ Spomnimo se, da premice v ravnini predstavljajo pregibi papirja, nove točke pa 
     Točki, ki jo lahko v kompleksni ravnini konstruiramo z origamijem, pravimo \emph{origami-konstruktibilna točka}. Enako definiramo \emph{origami-konstruktibilno premico}.
 \end{definicija}
 
-Preko sledečih izrekov in trditev bomo še na algebrski način pokazali, da je množica števil, ki jih lahko konstruiramo z evklidskim orodjem, prava podmnožica množice origami števil. Najprej navedimo lemo, ki je analogna lemi~\ref{trd:bijekcija_CR} iz razdelka o evklidsko-konstruktibilnih številih.
+Preko sledečih izrekov in trditev bomo še na algebrski način pokazali, da je množica števil, ki jih lahko konstruiramo z evklidskim orodjem, prava podmnožica množice origami števil. Najprej navedimo lema, ki je analogna lemi~\ref{trd:bijekcija_CR} iz razdelka o evklidsko-konstruktibilnih številih.
 
 \begin{lema}
     \label{trd:zaprt_koord}
@@ -505,12 +504,12 @@ Dokaz je enak, le da tu za konstrukcijo pravokotnih projekcij uporabimo operacij
 
     Vzemimo poljubna $\alpha, \beta \in \OR$. Ker število $-\beta$ dobimo po zaporednem zrcaljenju čez obe osi, velja $-\beta \in \OR$. Ker je odštevanje v resnici seštevanje nasprotnega elementa, moramo za dokaz $\alpha - \beta \in \OR$ pokazati še zaprtost množice $\OR$ za seštevanje.
 
-    Če števila $\alpha, \beta$ in izhodišče $O$ ležijo na isti premici, samo prenesemo razdaljo na primerno mesto na premici (glej trditev~\ref{trd:prenasanje_razdalj}). Predpostavimo sedaj, da $\alpha, \beta$ in $O$ ne ležijo na isti premici in s paralelogramskim pravilom konstrirajmo število $\alpha + \beta$ (slika~\ref{fig:sestevanje}). Štirikrat uporabimo operacijo~\ref{op:O5}: preko pravokotnice $(1)$ na vektor $\overrightarrow{O\beta}$ skozi $\alpha$ konstruiramo vzporednico $(2)$ k taistemu vektorju skozi $\alpha$ in na enak način preko pravokotnice $(3)$ konstruiramo vzporednico $(4)$ k vektorju $\overrightarrow{O\alpha}$ skozi $\beta$. V presečišču vzporednic dobimo $\alpha + \beta$.
+    Če števila $\alpha, \beta$ in izhodišče $O$ ležijo na isti premici, samo prenesemo razdaljo na primerno mesto na premici. Predpostavimo sedaj, da $\alpha, \beta$ in $O$ ne ležijo na isti premici in s paralelogramskim pravilom konstrirajmo število $\alpha + \beta$ (slika~\ref{fig:sestevanje}). Štirikrat uporabimo operacijo~\ref{op:O5}: preko pravokotnice $(1)$ na vektor $\overrightarrow{O\beta}$ skozi $\alpha$ konstruiramo vzporednico $(2)$ k taistemu vektorju skozi $\alpha$ in na enak način preko pravokotnice $(3)$ konstruiramo vzporednico $(4)$ k vektorju $\overrightarrow{O\alpha}$ skozi $\beta$. V presečišču vzporednic dobimo $\alpha + \beta$.
 
     \begin{figure}[h]
         \centering
         \includegraphics[width=0.7\textwidth]{images/algebra/sestevanje.png}
-        \caption[Seštevanje origami števil]{Konstrukcija števila $\alpha + \beta$.}
+        \caption[Seštevanje origami števil]{Konstrukcija $\alpha + \beta$.}
         \label{fig:sestevanje}
     \end{figure}
 
@@ -521,24 +520,24 @@ Dokaz je enak, le da tu za konstrukcijo pravokotnih projekcij uporabimo operacij
     \begin{figure}[h]
         \centering
         \includegraphics[width=0.7\textwidth]{images/algebra/mnozenje_deljenje.png}
-        \caption[Množenje in obratna vrednost realnih origami števil]{Konstrukcija števil $ab$ in $1/a$ za neničelna $a, b \in \OR \cap \R$.}
+        \caption[Množenje in obratna vrednost realnih origami števil]{Konstrukcija $ab$ in $1/a$ za neničelna $a, b \in \OR \cap \R$.}
         \label{fig:mnozenje_deljenje}
     \end{figure}
 
-    Podobno konstruiramo še število $1/a$. Na realni osi konstruiramo število $a$ (slika~\ref{fig:mnozenje_deljenje} desno), s pomočjo~\ref{op:O5} pa še število $a + i$ (točka $B$). Pregib skozi $O$ in $B$ ima naklon ravno $1/a$. V presečišču tega pregiba s pravokotnico na realno os v točki $1$ dobimo število $1 + (1/a) i$ (točka $C$). Tako nam pravokotnica na imaginarno os skozi točko $C$ konstruira origami število $1/a$.
+    Podobno konstruiramo še število $1/a$. Na realni osi konstruiramo število $a$ (slika~\ref{fig:mnozenje_deljenje} desno), s pomočjo~\ref{op:O5} pa še število $a + i$ (točka $B$). Pregib skozi $O$ in $B$ ima naklon ravno $1/a$. V presečišču tega pregiba s pravokotnico na realno os v točki $!$ dobimo število $1 + (1/a) i$ (točka $C$). Tako nam pravokotnica na imaginarno os skozi točko $C$ konstruira origami število $1/a$.
 
     Vzemimo sedaj poljubna $\alpha, \beta \in \OR$. Če je $\alpha = a + bi, \beta = c + di$, potem po lemi~\ref{trd:zaprt_koord} velja $a, b, c, d \in \OR$. Število $\alpha \beta = (ac - bd) + (ad + bc)i$ ima v svojem realnem in imaginarnem delu vsote, razlike in produkte origami števil, ki so prav tako origami števila. Torej je $\alpha \beta \in \OR$.
 
-    Za neničeln $\alpha = a + bi \in \OR$ je $1/\alpha = a/(a^2+b^2) + (-b)/(a^2+b^2)i$. Ker sta po lemi~\ref{trd:zaprt_koord} števili $a, b \in \OR$, sta zopet realni in imaginarni del tega števila origami števili, torej $1/\alpha \in \OR$.
+    Za neničeln $\alpha = a + bi \in \OR$ je $1/\alpha = a/(a^2+b^2) + (-b)/(a^2+b^2)i$. Ker sta po lemi~\ref{trd:zaprt_koord} $a, b \in \OR$, sta zopet realni in imaginarni del tega števila origami števili, torej $1/\alpha \in \OR$.
 \end{dokaz}
 
 \begin{trditev}
     \label{trd:zaprtost_koren}
-    Naj bo $\alpha \in \OR$. Potem velja $\sqrt{\alpha}, \sqrt[3]{\alpha} \in \OR$.
+    Naj bo $\alpha \in \OR$. Potem $\sqrt{\alpha}, \sqrt[3]{\alpha} \in \OR$.
 \end{trditev}
 
 \begin{dokaz}
-    Naj bo $\alpha = r e^{i \theta}$ za neka $r \in (0, \infty)$ (v ničelnem primeru ni kaj dokazovati) in $\theta$ poljuben kot. Torej imamo za kvadratni in kubični koren števila $\alpha$ skupno pet rešitev:
+    Naj bo $\alpha = r e^{i \theta}$ za neka $r \in \R \backslash \{0\}$ (v ničelnem primeru ni kaj dokazovati) in $\theta$ poljuben kot. Torej imamo za kvadratni in kubični koren števila $\alpha$ skupno pet rešitev:
     \begin{itemize}
         \item $\sqrt{\alpha} = \pm \sqrt{r}e^{i \frac{\theta}{2}}$ in
         \item $\sqrt[3]{\alpha}_1 = \sqrt[3]{r}e^{i \frac{\theta}{3}}, \sqrt[3]{\alpha}_2 = \sqrt[3]{r}e^{i \left(\frac{\theta}{3} + \frac{2\pi}{3}\right)}, \sqrt[3]{\alpha}_3 = \sqrt[3]{r}e^{i \left(\frac{\theta}{3} + \frac{4\pi}{3}\right)}$.
@@ -546,24 +545,8 @@ Dokaz je enak, le da tu za konstrukcijo pravokotnih projekcij uporabimo operacij
     Torej moramo dokazati, da $\sqrt{r}, \sqrt[3]{r} \in \OR$, da znamo razpolavljati in tretjiniti kote ter rotirati origami število za kot $60^\circ$ okoli izhodišča $O$. Potem bomo po izreku~\ref{izr:podpolje} lahko konstruirali zgornjih pet števil in tako dokazali to trditev.
 
     Najprej se še prepričajmo, da $r \in \OR$. Ker je to ravno razdalja števila $\alpha$ do izhodišča, jo lahko prenesemo na realno os in tako konstruiramo realno število $r$, torej je res $r \in \OR$.
-
-    Za konstrukcijo števila $\sqrt{r}$ vzemimo točko $A = (0, 1) $ in premico $y = -1$. Na ordinatni osi označimo točko $B = (0, -r/4)$ in z operacijo~\ref{op:O6} skoznjo naredimo pregib, ki točko $A$ položi na premico $y = -1$. Njena zrcalna slika je $A'=(t, -1) $ za nek $t \in \R$. Na koncu prepognemo še pravokotnico na abscisno os skozi točko $A'$ in tako dobimo točko $(t, 0)$ (slika~\ref{fig:konstrukcija_korena}).
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.5\textwidth]{images/kvadratni_koren.png}
-        \caption[Konstrukcija korena]{Konstrukcija števila $\sqrt{r}$ za poljuben $r \in \Q^{+}$.}
-        \label{fig:konstrukcija_korena}
-    \end{figure}
-
-    Pokažimo, da je $t = \sqrt{r}$. Pregib po konstrukciji poteka skozi točko $B$ in razpolovišče daljice $AA'$, torej je njegov koeficient $k_B = \frac{r}{2t}$ (izpeljavo prepuščamo bralcu). Ker je pregib simetrala daljice $AA'$, njena nosilka pa ima koeficient $k_A = - \frac{2}{t}$, dobimo
-    \begin{align*}
-        k_B &= - \frac{1}{k_A},\\
-        \frac{r}{2t} &= \frac{t}{2},\\
-        r &= t^2 \text{ oz. } t = \sqrt{r}.
-    \end{align*}    
-    V poglavju~\ref{pogl:enacbe} si bomo pogledali, kako z origamijem na več načinov rešujemo poljubne kubične enačbe z racionalnimi koeficienti (npr.\ v razdelku~\ref{podpogl:lill_beloch_postopek} je opisan Belochin postopek preko Lillove metode), torej bomo znali konstruirati tudi rešitve enačbe $x^3 - r = 0$. Konkretne konstrukcije števila $\sqrt[3]{r}$ so opisane tudi v poglavju~\ref{pogl:starogrskiproblemi} (glej trditev~\ref{trd:koren_3_k}).
     
-    Z operacijo~\ref{op:O4} znamo razpoloviti kot, postopek tretjinjenja kota pa je, kot že omenjeno, opisan v razdelku~\ref{podpogl:trisekcija}. Ostane nam samo še rotacija točke za kot $60^\circ$ okoli izhodišča. Na sliki~\ref{fig:kot60_rotacija} je prikaz enostavne konstrukcije -- najprej prepognemo simetralo $p_1$ daljice $OA$ in konstruiramo pregib $p_2$ skozi $O$, ki točko $A$ preslika v točko $A'$ na simetrali $p_1$. Trikotnik $\triangle OAA'$ je enakostraničen. 
+    V razdelku~\ref{pogl:enacbe} bomo pogledali, kako z origamijem rešujemo splošne kvadratne in kubične enačbe, torej bomo znali konstruirati tudi rešitve enačb $x^2 - r = 0$ in $x^3 - r = 0$. Konkretne konstrukcije števil $\sqrt{r}$ in $\sqrt[3]{r}$ opisane tudi v poglavju~\ref{pogl:starogrskiproblemi}. Z operacijo~\ref{op:O4} znamo razpoloviti kot, postopek tretjinjenja kota pa je, kot že omenjeno, opisan v razdelku~\ref{podpogl:trisekcija}. Ostane nam samo še rotacija točke za kot $60^\circ$ okoli izhodišča. Na sliki~\ref{fig:kot60_rotacija} je prikaz enostavne konstrukcije -- najprej prepognemo simetralo $p_1$ daljice $OA$ in konstruiramo pregib $p_2$ skozi $O$, ki točko $A$ preslika v točko $A'$ na simetrali $p_1$. Trikotnik $\triangle OAA'$ je enakostraničen. 
     \begin{figure}[h]
         \centering
         \includegraphics[width=0.4\textwidth]{images/algebra/kot60.png}
@@ -572,12 +555,13 @@ Dokaz je enak, le da tu za konstrukcijo pravokotnih projekcij uporabimo operacij
     \end{figure}
 \end{dokaz}
 
-Množica origami števil $\OR$ je tako podobseg kompleksnih števil, ki vsebuje racionalna števila in je zaprt za seštevanje, odštevanje, množenje, deljenje ter za kvadratno in kubično korenjenje. Z origamijem znamo zrcaliti točke, zato je očitno zaprta tudi za konjugiranje. Z njim tako lahko poleg kvadratnih rešujemo tudi poljubne kubične enačbe (izračun rešitev po Cardanovi formuli ne potrebuje več kot ravno naštete operacije), a s tem se bomo natančneje ukvarjali v poglavju~\ref{pogl:enacbe}.
-% \begin{posledica}
-%     Množica origami števil $\OR$ je %najmanjši
-%     podobseg polja $\C$, ki vsebuje racionalna števila in je zaprt za kvadratno in kubično korenjenje ter kompleksno konjugiranje.
-% \end{posledica}
-Na množici $\OR$ torej lahko uporabimo vse tiste operacije, ki jih lahko izvajamo na množici evklidsko-konstruktibilnih števil; ker pa lahko origami števila tudi kubično korenimo, je origami števil še več (vemo že na primer, da število $\sqrt[3]{2}$ ni evklidsko-konstruktibilno, je pa origami število).
+Množica origami števil $\OR$ je tako zaprta za seštevanje, odštevanje, množenje, deljenje ter za kvadratno in kubično korenjenje. Z origamijem znamo zrcaliti točke, zato je očitno zaprta tudi za konjugiranje. Z njim tako lahko poleg kvadratnih rešujemo tudi poljubne kubične enačbe (izračun rešitev po Cardanovi formuli ne potrebuje več kot ravno naštete operacije), a s tem se bomo natančneje ukvarjali v poglavju~\ref{pogl:enacbe}.
+
+\begin{posledica}
+    Množica origami števil $\OR$ je najmanjši podobseg polja $\C$, ki vsebuje racionalna števila in je zaprt za kvadratno in kubično korenjenje ter kompleksno konjugiranje.
+\end{posledica}
+
+Na množici $\OR$ torej lahko uporabimo vse tiste operacije, ki jih lahko izvajamo na množici evklidsko-konstruktibilnih števil; ker pa lahko origami števila tudi kubično korenimo, je origami števil še več (vemo že na primer, da $\sqrt[3]{2} \notin \E$, je pa origami število).
 
 \begin{posledica}
     Množica evklidsko-konstruktibilnih števil je prava podmnožica množice origami števil.
@@ -585,35 +569,11 @@ Na množici $\OR$ torej lahko uporabimo vse tiste operacije, ki jih lahko izvaja
 
 Kaj je naša množica origami števil? Po zgledu posledice~\ref{posl:podmnozice} očitno velja $\Q \subset \OR \subset \C$. Kot pri evklidsko-konstruktibilnih številih bomo tudi tu iskali razširitve polja racionalnih števil, ki so zaprte za operacijo kvadratnega korena, za razliko od prej pa tu dodamo še zaprtost za operacijo kubičnega korena.
 
-Znamo konstruirati kompleksno število $i$. Naj bo $\Q(i)$ razširitev polja $\Q$, tj.\ $\Q \subset \Q(i)$ in velja $[\Q(i) : \Q] = 2$, saj je $x^2 + 1$ minimalni polinom števila $i$ nad $\Q$. Polje nadalje razširimo z origami številom $\sqrt[3]{2}$. Dobimo zaporedje $\Q \subset \Q(i) \subset \Q(i, \sqrt[3]{2})$ in velja $[\Q(i, \sqrt[3]{2}) : \Q(i)] = 3$, saj je $x^3 - 2$ minimalni polinom števila $\sqrt[3]{2}$ nad $\Q(i)$.
+Znamo konstruirati kompleksno število $i$. Naj bo $\Q(i)$ razširitev polja $\Q$, tj.\ $\Q \subset \Q(i)$ in velja $[\Q(i) : \Q] = 2$, saj je $x^2 + 1$ minimalni polinom števila $i$ nad $\Q$. Polje nadalje razširimo z origami številom $\sqrt[3]{2}$. Dobimo zaporedje $\Q \subset \Q(i) \subset \Q(i, \sqrt[3]{2})$ in velja $[\Q(i, \sqrt[3]{2}) : \Q(i) = 3]$, saj je $x^3 - 2$ minimalni polinom števila $\sqrt[3]{2}$ nad $\Q(i)$.
 
 \begin{definicija}
-    Naj bosta $E \subset F$ polji. Če velja $[F:E] \in \{2,3\}$, polju $F$ pravimo \emph{$2,3$-razširitev} polja $E$.
+    Naj bosta $E \subset F$ polji. Če velja $[F:E] = 2$ ali $3$, polju $F$ pravimo \emph{$2,3$-razširitev} polja $E$.
 \end{definicija}
-
-Pred naslednjim izrekom poglejmo še lemo, pri čemer za kratek čas zapustimo množico kompleksnih števil in se vrnimo v realno ravnino.
-
-\begin{lema}
-    \label{lema:O7_razširitev}
-    Naj bosta $A$ in $B$ točki s koordinatama iz polja $E$ ter premici $a$ in $b$, kjer so koeficienti iz njunih implicitnih enačb prav tako elementi polja $E$. Opravimo Belochin pregib, ki točko $A$ preslika na premico $a$ ter točko $B$ na premico $b$. Premica, ki pripada pregibu, ima potem koeficiente iz razširitve polja $E$, ki je stopnje največ $3$.
-\end{lema}
-\begin{dokaz}
-    Najprej obravnavajmo primer, ko točki ne ležita na nobeni izmed premic. Brez škode za splošnost vzemimo $A = (0,1)$ in $a : y = -1$. Naj bo $B = (x_0, y_0)$ in $b : a_1 x + b_1 y = c_1$, kjer so $x_0, y_0, a_1, b_1, c_1 \in E$.
-
-    Analogno kot pri konstrukciji števila $\sqrt{r}$ (glej dokaz trditve~\ref{trd:zaprtost_koren}) nam tu Belochin pregib točko $A$ preslika v točko $A' = (t, -1)$ za nek $t$. Enačba pregiba je tako
-    \begin{equation}
-        \label{eq:en_pregiba}
-        y = \frac{t}{2}x - \frac{t^2}{4}.
-    \end{equation}
-    Naš cilj je dokazati obstoj razširitve $F$ polja $E$, da je $t \in F$ in velja $[F:E] \leq 3$. Naj bo $B' = (x_1, y_1)$ zrcalna slika točke $B$ preko Belochinega pregiba. Daljici $AA'$ in $BB'$ sta vzporedni, zato nam enačenje koeficientov njunih nosilk da zvezo
-    \begin{equation}
-        \label{eq:enaka_koef}
-        -\frac{2}{t} = \frac{y_1 - y_0}{x_1 - x_0}.
-    \end{equation}
-    Upoštevamo, da središče daljice $BB'$ s koordinatama $((x_0 + x_1)/2, (y_0 + y_1)/2)$ leži na premici z enačbo~\ref{eq:en_pregiba} in nato iz zveze~\ref{eq:enaka_koef} izrazimo koordinati $x_1$ in $y_1$ (računsko izpeljavo prepuščamo bralcu). Dobimo parametrizacijo krivulje, ki jo opiše točka $B'$ preko različnih pregibov, ki točko $A$ položijo na premico $a$. Ko upoštevamo še, da točka $B'$ leži na premici $b$, dobimo \emph{kubično} enačbo za parameter $t$, ki ima vse koeficiente izražene s števili $x_0, y_0, a_1, b_1$ in $c_1$. Zato je dovolj, da je stopnja razširitve polja $E$, ki vsebuje število $t$, največ $3$.
-
-    Obravnavajmo še primer, ko ena ali obe izmed točk $A$ in $B$ ležita na premicah $a$ in $b$. Iz izreka~\ref{izr:dve_operaciji} vemo, da je izveden Belochin pregib v resnici ena izmed operacij~\ref{op:01}, \ref{op:O3}--\ref{op:O6} in~\ref{op:O8}. Bralcu prepuščamo daljši računski premislek po zgledu iz prvega dela dokaza, da za vsako izmed teh operacij in pri vsaki izbiri dveh točk in premic rešujemo enačbo največ druge stopnje.
-\end{dokaz}
 
 \begin{izrek}
     \label{izr:orig_konstr}
@@ -623,33 +583,31 @@ Pred naslednjim izrekom poglejmo še lemo, pri čemer za kratek čas zapustimo m
 \end{izrek}
 
 \begin{dokaz}
-    Naj bo $ \Q = F_0 \subset F_1 \subset F_2 \ldots \subset F_{n-1} \subset F_n \subset \C $ zaporedje $2,3$-razširitev polja $\Q$. Z indukcijo dokažimo $F_n \subset \OR$. Za $n = 0$ je to očitno ($\Q \subset \OR$). Recimo, da velja $F_{n-1} \subset \OR$. Naj bo $f$ minimalni polinom števila $\alpha \in F_n$ nad poljem $F_{n-1}$, ki je stopnje največ $3$, saj velja $[F_n : F_{n-1}] \in \{2,3\}$. Število $\alpha$ je ničla tega polinoma, zato ga dobimo preko reševanja enačbe druge ali tretje stopnje, kar pa z origamijem znamo (glej poglavje~\ref{pogl:enacbe}). Zato je $\alpha \in \OR$.
+    V zaporedju razširitev torej za vsak $ 1 \leq i \leq n$ velja $[F_i: F_{i-1}] \in \{2,3\}$.
 
-    Naj bo sedaj $\alpha = a+bi \in \OR$. Želimo konstruirati zaporedje $2,3$-razširitev $\Q = F_0 \subset \ldots \subset F_n$, da bo veljalo $a, b \in F_n$. Iz tega bo sledilo $\alpha \in F_n(i)$, ki je stopnje razširitve $2$ in nam dopolni iskano zaporedje razširitev polja $\Q$.
+    Naj bo $ \Q = F_0 \subset F_1 \subset F_2 \ldots \subset F_{n-1} \subset F_n \subset \C $ zaporedje $2,3$-razširitev polja $\Q$ in naj bo $\alpha \in F_n$. Z indukcijo dokažimo $F_n \subset \OR$. Za $n = 0$ je to očitno ($\Q \subset \OR$). Recimo, da velja $F_{n-1} \subset \OR$. Naj bo $f$ minimalni polinom števila $\alpha$ nad poljem $  F_{n-1}$, ki je stopnje največ $3$, saj velja $[F_n : F_{n-1}] \in \{2,3\}$. Število $\alpha$, ki je ničla tega polinoma, lahko potem z navadnimi računskimi operacijami izrazimo iz enačbe -- pomagamo si lahko s kvadratno formulo ali Cardanovimi formulami za kubično enačbo. Iz tega sledi $\alpha \in \OR$.
+
+    Naj bo sedaj $\alpha = a+bi \in OR$. Želimo konstruirati zaporedje $2,3$-razširitev $\Q = F_0 \subset \ldots \subset F_n$, da bo veljalo $a, b \in F_n$. Iz tega bo sledilo $\alpha \in F_n(i)$, ki je stopnje razširitve $2$ in nam dopolni iskano zaporedje razširitev.
 
     Po izreku~\ref{izr:dve_operaciji} vemo, da lahko kakršnokoli origami konstrukcijo opravimo z operacijama~\ref{op:O2} in~\ref{op:O7}. Z indukcijo na številu $N$ uporabe operacije~\ref{op:O2} na konstrukciji števila $\alpha$ poiščimo zaporedje $2,3$-razširitev.
 
-    Operacija~\ref{op:O2} nam določi novo origami konstruktibilno točko oz.\ origami število kot presečišče dveh premic. Za $N = 0$ nismo konstruirali nove točke, torej je $\alpha$ že dano število in je $\Q = F_0 \subset \C$ naša $2,3$-razširitev. Recimo sedaj, da za vsako konstrukcijo origami števila preko končnega števila uporabe operacij~\ref{op:O2} ali~\ref{op:O7}, od česar se operacije~\ref{op:O2} poslužimo $(N-1)$-krat, obstaja končno zaporedje $2,3$-razširitev obsega $\Q$.
+    Operacija~\ref{op:O2} nam določi novo origami konstruktibilno točko oz. origami število kot presečišče dveh premic. Za $N = 0$ nismo konstruirali nove točke, torej je $\alpha$ že dano število in je $\Q = F_0 \subset \C$ naša $2,3$-razširitev. Recimo sedaj, da za vsako konstrukcijo origami števila preko končnega števila uporabe operacij~\ref{op:O2} ali~\ref{op:O7}, od tega $(N-1)$-tne uporabe operacije~\ref{op:O2}, obstaja končno zaporedje $2,3$-razširitev obsega $\Q$.
     
-    Naj bo $M$ število uporabe operacij~\ref{op:O2} ali~\ref{op:O7} za konstrukcijo števila $\alpha$, pri čemer smo operacijo~\ref{op:O2} uporabili $N$-krat. V konstrukciji števila $\alpha$ je to očitno zadnja izvedena operacija, saj je število $\alpha$ določeno kot točka v ravnini. Naj bo $\alpha$ presečišče origami-konstruktibilnih premic $p_1$ in $p_2$. Obe premici sta bili lahko konstruirani le z operacijo~\ref{op:O7}, torej za vsako od njiju obstajata točki $\alpha_i$ in $\beta_i$, kjer je $i \in \{1,2\}$, ter še po dve premici, da je $p_i$ njihov ustrezen Belochin pregib. Števila $\alpha_1, \beta_1, \alpha_2, \beta_2$ so bila konstruirana iz največ $(N-1)$-kratne uporabe uperacije~\ref{op:O2}, torej obstaja zaporedje $2,3$-razširitev polja $\Q$ oblike $\Q = F_0 \subset \ldots \subset F_n$, da so realni in imaginarni deli teh štirih števil vsebovani v $F_n$.
-    
-    Polje $F_n$ razširimo s poljem $F_{n+1}$, ki vsebuje koeficiente premic $p_1$ in $p_2$. Po lemi~\ref{lema:O7_razširitev} je potem $[F_{n+1}:F_n] \leq 3$. Presečišče Belochinih pregibov $p_1$ in $p_2$, ki je naše število $\alpha$, se izračuna iz linearne enačbe s koeficienti iz $F_n$, torej bo veljalo $\alpha \in F_{n+1}$.
+    Naj bo $M$ število uporabe operacij~\ref{op:O2} ali~\ref{op:O7} za konstrukcijo števila $\alpha$, pri čemer smo prvo operacijo uporabili $N$-krat. V konstrukciji števila $\alpha$ je to očitno zadnja izvedena operacija. Naj bo $\alpha$ presečišče origami-konstruktibilnih premic $p_1$ in $p_2$. Obe premici sta bili lahko konstruirani le z operacijo~\ref{op:O7}, torej za vsako od njiju obstajata točki $\alpha_i, \beta_i, i \in \{1,2\}$ (in še dve premici), da je $p_i$ njihov ustrezen Belochin pregib. Števila $\alpha_1, \beta_1, \alpha_2, \beta_2$ so bila konstruirana iz največ $(N-1)$-kratne uporabe uperacije~\ref{op:O2}, torej obstaja zaporedje $2,3$-razširitev polja $\Q$ oblike $\Q = F_0 \subset \ldots \subset F_n$, da so realni in imaginarni deli teh štirih števil vsebovani v $F_n$. Polje $F_n$ razširimo s poljem $F_{n+1}$, ki vsebuje koeficiente premic $p_1$ in $p_2$. Hull v~\cite[str.\ 51--52]{hull2020} dokaže, da ima Belochin pregib koeficiente iz razširitve polja, iz katerega izhajajo koeficienti osnovnih dveh premic, s stopnjo razširitve največ $3$. Presečišče Belochinih pregibov $p_1$ in $p_2$, ki je naše število $\alpha$, se izračuna iz linearne enačbe, torej bo veljalo $\alpha \in F_{n+1}$.
 \end{dokaz}
 
 Iz tega izreka sledi končna klasifikacija origami števil.
 
 \begin{definicija}
-    Naj bo $F$ razširitev polja $E$. Pravimo, da polinom $f(X) \in E[X]$ \emph{razpade} v $F$, če je $f(X)$ enak produktu linearnih polinomov iz $F[X]$. Če $f(X)$ razpade v $F$ in v nobenem drugem podpolju polja $F$, ki vsebuje $E$, potem polju $F$ pravimo \emph{razpadno polje} polinoma $f(X)$ nad poljem $E$.
+    Naj bo $E$ razširitev polja $F$. Pravimo, da polinom $f(X) \in F[X]$ \emph{razpade} v $E$, če je $f(X)$ enak produktu linearnih polinomov iz $E[X]$. Če $f(X)$ razpade v $E$ in v nobenem drugem podpolju polja $E$, ki vsebuje $F$, potem polju $E$ pravimo \emph{razpadno polje} polinoma $f(X)$ nad poljem $F$.
 \end{definicija}
 
 \begin{izrek}
     \label{izr:orig_razp_polje}
-    Naj bo število $\alpha \in \C$ algebraično nad poljem $\Q$ in naj bo $L$ razpadno polje minimalnega polinoma števila $\alpha$ nad $\Q$. Potem je $\alpha$ origami število natanko takrat, ko velja $[L:Q]=2^a3^b$ za neka $a, b \in \N_0$.
+    Naj bo $\alpha in \C$ algebraično nad poljem $\Q$ in naj bo $L$ razpadno polje minimalnega polinoma števila $\alpha$ nad $\Q$. Potem je $\alpha$ origami število natanko takrat, ko velja $[L:Q]=2^m3^n$ za neka $m, n \in \N_0$.
 \end{izrek}
 \begin{dokaz}
-    Naj bo $\alpha \in \OR$ poljubno origami število. Polje origami števil $\OR$ je zaprto za kvadratne in kubične korene (gl.\ trditev~\ref{trd:zaprtost_koren}), origami operacije~\ref{op:O1}--\ref{op:O8} pa generirajo števila, ki so rešitve polinomov iz $\Q[X]$ stopnje $3$ ali manj (gl.\ dokaz leme~\ref{lema:O7_razširitev}). Zaradi obstoja formul za rešitve kvadratnih in kubičnih enačb polje $\OR$ vsebuje vse rešitve polinomov iz $\Q[X]$ stopnje največ 3. Vsak polinom nad $\Q$ stopnje največ $3$ torej razpade v polju $\OR$, zato je mnnožica origami števil razpadno polje minimalnega polinoma števila $\alpha$ nad poljem $\Q$.
-    
-    Iz tega sledi $L \subseteq \OR$. Po izreku~\ref{izr:orig_konstr} obstaja zaporedje $2,3$-razširitev oblike $ \Q = F_0 \subset F_1 \subset F_2 \ldots \subset F_{n-1} \subset F_n = L \subset \C $. Kot v dokazu posledice~\ref{posl:kvadr_razs} lahko tudi tu dokažemo, da potem velja $[L:\Q]=2^a3^b$ za neka $a, b \in \N_0$.
+    Naj bo $\alpha \in OR$. Polje origami števil $\OR$ je zaprto za kvadratne in kubične korene, torej vsebuje rešitve vseh polinomov iz $\Q[X]$ stopnje $3$ ali manj, tj.\ vsak polinom nad $\Q$ stopnje največ $3$ razpade v polju $\OR$. Množica origami števil je normalna razširitev polja $\Q$, torej $L \subseteq \OR$. Če vzamemo primitivni element razširitve $L$, nam zaporedje $2,3$-razširitev iz izreka~\ref{izr:orig_konstr} da $[L:Q]=2^m3^n$ za neka $m, n \in \N_0$.
 
     Za dokaz obrata je potrebno nekaj znanja Galoisove teorije. Za Gloisovo grupo Gal$(L/ \Q)$ velja $|$Gal$(L/ \Q)| = [L:\Q] = 2^m3^n$, kar pomeni, da je taka grupa rešljiva (glej~\cite{burnside1904}). Iz tega se lahko zgradi zaporedje $2,3$-razširitev polja $\Q$ za število $\alpha$, ki je po izreku~\ref{izr:orig_konstr} zato origami število.
 \end{dokaz}
@@ -671,15 +629,13 @@ $$3,\; 5,\; 17,\; 257,\; 65537,\; 4294967297,\; 18446744073709551617, \ldots $$
     Pravilni $n$-kotnik se lahko konstruira z neoznačenim ravnilom in šestilom natanko takrat, ko je $n = 2^a p_1 \cdots p_k$ za neka $a,k \in \N_0$, kjer so $p_1, \ldots, p_k$ različna Fermatova praštevila.
 \end{izrek}
 
-Za $n \leq 20$ pravilni $n$-kotnik \emph{ni} evklidsko-konstruktibilen v primeru
+Za $n \leq 20$ pravilni $n$-kotnik \emph{ni} evklidsko-konstruktibilenv primeru
 $$n \in \{ 7,\;9,\;11,\;13,\;14,\;18,\;19 \}.$$
 
 Za origami-konstruktibilnost pravilnega večkotnika se namesto Fermatovih praštevil poslužimo pomnožice praštevil, ki sta jo definirala Cox in Shurman v~\cite{cox2005}.
 
 \begin{definicija}
-    Praštevilo $p$ se imenuje \emph{Pierpontovo\footnote{Ameriški matematik James Pierpont (1866--1938) je ta praštevila uvedel l.\ 1895, ko je opisoval, katere pravilne večkotnike lahko konstruiramo preko stožnic.
-    %Izkaže se, da so origami konstrukcije natanko konstrukcije preko stožnic in obratno.
-    } praštevilo}, če je $p > 3$ in $p = 2^m3^n + 1$ za neka $m,n \in \N_0$.
+    Praštevilo $p$ se imenuje \emph{Pierpontovo praštevilo}, če je $p > 3$ in $p = 2^m3^n + 1$ za neka $m,n \in \N_0$.
 \end{definicija}
 
 \begin{izrek}
@@ -691,7 +647,7 @@ Za origami-konstruktibilnost pravilnega večkotnika se namesto Fermatovih prašt
     Minimalni polinoma števila $\zeta_n$ nad $\Q$ je oblike
     $$ \Phi_n(z) = \prod_{\substack{0 \leq i < n, \\ \gcd(i,n)=1}} (z - \zeta_n^i). $$
     To je dokazano v več matematičnih besedilih, ki govorijo o Galoisovi teoriji, npr.\ v~\cite[poglavje $9.1$]{cox2005}.
-    Sledi $[\Q(\zeta_n) : \Q] = \deg(\Phi_n(z)) = \phi(n)$, kjer je $\phi$ Eulerjeva funkcija, ki pove, koliko naravnih števil, manjših od $n$, je tujih številu $n$. Ena od številnih formul za izračun Eulerjeve funkcije je $\phi(n) = n \prod_{p|n} (1 - 1/p)$ za $n \in \N$.
+    Sledi $[\Q(\zeta_n) : \Q] = \deg(\Phi_n(z)) = \phi(n)$, kjer je $\phi(n)$ Eulerjeva funkcija, ki pove, koliko naravnih števil, manjših od $n$, je tujih temu številu. Ena od številnih formul za izračun Eulerjeve funkcije je $\phi(n) = n \prod_{p|n} (1 - 1/p)$ za $n \in \N$.
 
     Naj bo sedaj $n = 2^a 3^b p_1 \cdots p_k$ za neke $m,n,k \in \N_0$, kjer so $p_1, \ldots, p_k$ različna Pierpontova praštevila. Potem je
     \begin{align*}
@@ -708,9 +664,7 @@ Za origami-konstruktibilnost pravilnega večkotnika se namesto Fermatovih prašt
 
     Za dokaz obrata predpostavimo $\zeta_n \in \OR$, torej je $[\Q(\zeta_n) : \Q] = \phi(n) = 2^s3^t$ za neka $s,t \in \N_0$. Faktorizirajmo število $n$ v produkt potenc praštevil kot $n = q_1^{a_1} \cdots q_r^{a_r}$. Potem je
     $$ \phi(n) = n \prod_{p|n} (1 - \frac{1}{p}) = q_1^{a_1-1} (q_1 -1) \cdots q_r^{a_r-1} (q_r -1).$$
-    Če je kak $q_i$ sod, je lahko le $q_i = 2$. Če je kateri izmed $q_i$ lih, pa je lahko le $q_i = 3$ ali $a_i = 1$. Poleg tega mora biti vsak faktor $(q_i - 1)$ produkt potence števila $2$ s potenco števila $3$, torej je vsak $q_i$, večji od $3$, Piermontovo praštevilo. Tako je vsak prafaktor števila $n$ lahko število $2, 3$ ali Piermontovo praštevilo, s čimer je dokaz zaključen.
+    Če je kak $q_i$ sod, je lahko le $q_i = 2$. Če je kateri izmed $q_i$ lih, pa je lahko le $q_i = 3$ ali $a_i = 1$. Poleg tega mora biti vsak faktor $(q_i - 1)$ produkt potence števila $2$ s potenco števila $3$, torej je vsak $q_i$ Piermontovo praštevilo. Tako je vsak prafaktor števila $n$ lahko število $2, 3$ ali Piermontovo praštevilo, s čimer je dokaz zaključen.
 \end{dokaz}
 
 Z origamijem sedaj lahko konsturiramo še $7$-, $9$-, $13$-, $14$-, $18$- in $19$-kotnik. Edini $n$-kotnik za $n \leq 20$, ki ni konstruktibilen tako z evklidskim orodjem kot z origamijem, je $11$-kotnik.
-
-\textcolor{red}{Vključi konstrukcijo sedemkotnika?}
