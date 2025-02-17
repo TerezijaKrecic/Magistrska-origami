@@ -12,27 +12,6 @@ Z znanjem, ki sta ga znanosti posredovala Abel in Galois, se da pokazati, da ti 
 
 V nalogi smo do sedaj že večkrat omenili, da pa obstajajo origami konstrukcije (celo več metod za isti problem!), ki nam konstruirajo kubični koren origami števila ter razdelijo kot na tri skladne dele. Vse metode, ki bodo sedaj naštete, zahtevajo uporabo Belochinega pregiba (operacije~\ref{op:O7}), kar je logično, saj so vse ostale origami operacije dovolj za vse evklidske konstrukcije. Žal pa tudi tu ostajamo nemočni glede konstrukcije števila $\sqrt{\pi}$, saj je transcedentno in ga ne moremo konstruirati z nobeno od osnovnih operacij vključno s kvadratnim in kubičnim korenjenjem.
 
-\subsection*{Konstrukcija števila $\sqrt{r}$}
-
-Preden si pogledamo konstrukcijo kubičnega korena, vzemimo origami število $r \in \OR$ in konstruirajmo njegov kvadratni koren (postopek je vzet iz~\cite[str.\ 58]{hull2013}).
-
-Imejmo točko $A (0, 1) $ in premico $y = -1$. Na ordinatni osi označimo točko $B (0, -r/4)$ in z operacijo~\ref{op:O6} skoznjo naredimo pregib, ki točko $A$ položi na premico $y = -1$. Njena zrcalna slika je $A' (t, 0) $ za nek $t \in \R$ (slika~\ref{fig:konstrukcija_korena}).
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{images/kvadratni_koren.png}
-    \caption[Konstrukcija korena]{Konstrukcija števila $\sqrt{r}$ za poljuben $r \in \Q^{+}$.}
-    \label{fig:konstrukcija_korena}
-\end{figure}
-
-Pregib po konstrukciji poteka skozi točko $B$ in razpolovišče daljice $AA'$, torej je njegov koeficient $k_B = \frac{r}{2t}$ (izpeljavo prepuščamo bralcu). Ker je pregib simetrala daljice $AA'$, njena nosilka pa ima koeficient $k_A = - \frac{2}{t}$, dobimo
-\begin{align*}
-    k_B &= - \frac{1}{k_A},\\
-    \frac{r}{2t} &= \frac{t}{2},\\
-    r &= t^2 \text{ oz. } t = \sqrt{r}.
-\end{align*}
-Na koncu le še prepognemo pravokotnico na abscisno os skozi točko $A'$ in tako dobimo točko $(\sqrt{r}, 0)$. Torej smo konstruirali število $\sqrt{r}$ za poljuben $r \in $.
-
 \subsection{Podvojitev kocke}
 \label{podpogl:podvojitev_kocke}
 
@@ -72,6 +51,7 @@ Naj bo $k \in $ poljuben. Vzemimo paraboli z goriščema v točkah $P = (-1, 0)$
     \label{fig:martin}
 \end{figure}
 \begin{trditev}
+    \label{trd:koren_3_k}
     Točka $R$ iz zgornje konstrukcije ima koordinate $(0, \sqrt[3]{k})$.
 \end{trditev}
 \begin{dokaz}
