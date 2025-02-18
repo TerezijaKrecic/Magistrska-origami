@@ -713,4 +713,105 @@ Za origami-konstruktibilnost pravilnega večkotnika se namesto Fermatovih prašt
 
 Z origamijem sedaj lahko konsturiramo še $7$-, $9$-, $13$-, $14$-, $18$- in $19$-kotnik. Edini $n$-kotnik za $n \leq 20$, ki ni konstruktibilen tako z evklidskim orodjem kot z origamijem, je $11$-kotnik.
 
-\textcolor{red}{Vključi konstrukcijo sedemkotnika?}
+\subsubsection*{Konstrukcija pravilnega sedemkotnika}
+
+Najmanjši pravilni večkotnik, ki ga ne moremo konstruirati z evklidskim orodjem, lahko pa ga z origamijem, je torej sedemkotnik. Italijanski matematik Benedetto Scimemi je preko analize sedemkotnika v kompleksni ravnini našel metodo za njegovo konstrukcijo, avstrijski matematik  Robert Geretschläger pa tudi konkretno konstrukcijo. Njune ugotovitve v~\cite{hull2009} lepo povzame Thomas Hull, ki velja za strokovnjaka na področju origamike, in si jih bomo pogledali v nadaljevanju.
+
+Scimemijeva ideja je bila, da si oglišča pravilnega sedemkotnika predstavljamo kot točke na enotski krožnici v kompleksni ravnini, ki ustrezajo sedmemu korenu enote (slika~\ref{fig:7kotnik_kompleksna}), tj.\ tista kompleksna števila $z$, ki rešijo enačbo
+\begin{equation}
+    \label{eq:7kotnik_basic}
+    z^7 - 1 = 0.
+\end{equation}
+Ena od rešitev je $z=1$, torej eno oglišče leži na realni osi. Preostale rešitve so še
+$$ A = e^{\frac{2\pi i}{7}}, \; A^2 = e^{2\frac{2\pi i}{7}}, \; A^3 = e^{3\frac{2\pi i}{7}}, \; A^4 = e^{4\frac{2\pi i}{7}}, \; A^5 = e^{5\frac{2\pi i}{7}} \; \text{ in } \; A^6 = e^{6\frac{2\pi i}{7}}.$$
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/n-kotniki/7kotnik_enotska_kroznica.png}
+    \caption[Pravilni sedemkotnik v kompleksni ravnini]{Pravilni sedemkotnik v kompleksni ravnini. Vzeto iz~\cite[str.\ 182]{hull2009}.}
+    \label{fig:7kotnik_kompleksna}
+\end{figure}
+
+Naš cilj je poiskati metodo, s katero lahko preko prepogibanja papirja konstruiramo kot $2 \pi / 7$, saj znamo rotirati točke za poljuben origami-konstruktibilen kot (točko zrcalimo čez simetralo tega kota).
+
+Sledeča izpeljava je sestavljena iz več korakov. Najprej iz enačbe~\ref{eq:7kotnik_basic} faktoriziramo rešitev $z = 1$ in dobimo enačbo
+\begin{equation}
+    \label{eq:7kotnik_daljsa_en}
+    \frac{z^7-1}{z-1}= z^6+z^5+z^4+z^3+z^2+z+1=0.
+\end{equation}
+Zaradi simetričnosti sedemkotnika čez realno os lahko to enačbo šeste stopnje preuredimo v enostavnejšo. Ker je $A = e^{2 \pi i / 7} = \cos(2 \pi / 7) + i \sin(2 \pi / 7)$, velja
+$$ \frac{1}{A} = \frac{\overline{A}}{A \overline{A}} = \frac{\overline{A}}{\cos^2(2 \pi / 7) + \sin^2(2 \pi / 7)} = \overline{A} = A^6.$$
+Ker je $A + 1/A = A + \overline{A} = 2 \cos(2 \pi / 7)$, je središče daljice $A A^6$ ravno točka $(A + 1/A)/2 = \cos(2\pi /7)$ (glej sliko~\ref{fig:7kotnik_kompleksna}).
+
+Iz zveze $1/A = A^6$ sledi še $1/A^2 = A^{12} = A^5$ in $1/A^3 = A^{18} = A^4$. Naj bo $z = A$ in vstavimo ravno izpeljano v enačbo~\ref{eq:7kotnik_daljsa_en}. Dobimo
+\begin{equation}
+    \label{eq:7kotnik_Aji}
+    \frac{1}{A} + \frac{1}{A^2} + \frac{1}{A^3} +A^3+A^2+A+1= 0.
+\end{equation}
+Razširimo izraza $(A + 1/A)^2$ in $(A + 1/A)^3$ v
+$$ A^2 + \frac{1}{A^2} = (A + \frac{1}{A})^2 - 2 \; \text{ in } \; A^3 + \frac{1}{A^3} = (A + \frac{1}{A})^3 - 3(A + \frac{1}{A}),$$
+vstavimo to v enačbo~\ref{eq:7kotnik_Aji} in dobimo
+\begin{equation*}
+    (A + \frac{1}{A})^3 + (A + \frac{1}{A})^2 - 2(A + \frac{1}{A}) - 1 = 0.
+\end{equation*}
+Torej je $A + 1/A = 2 \cos(2 \pi / 7)$ rešitev enačbe
+\begin{equation}
+    \label{eq:7kotnik_kubicna}
+    z^3 + z^2 - 2z - 1 = 0.
+\end{equation}
+Podobno bi lahko izpeljali še preostali dve rešitvi te enačbe -- to sta $A^2 + 1/A^2 = 2\cos (4 \pi / 7)$ in $A^3 + 1/A^3 = 2\cos (6 \pi / 7)$, ki sta negativni.
+
+Sedaj iščemo postopek, ki nam konstruira število $2 \cos(2 \pi / 7)$ na realni osi. Iz tega bomo konstruirali pravokotni trikotnik, katerega kot ob izhodišču bo ravno $2 \pi /7$. Nato bomo le še sedemkrat rotirali izbrano točko na realni osi za ta kot okoli izhodišča in s tem konstruirali pravilni sedemkotnik.
+
+Za konstrukcijo števila $2 \cos(2 \pi / 7)$ se bomo poslužili Belochinega pregiba. Vzemimo realno ravnino, na njej pa točki $P_1 = (0,1)$ in $P_2 = (-1, -1/2)$ ter premici $L_1 : y=0$ in $L_2: x=0$. S pregibom položimo točko $P_1$ na abscisno os in hkrati točko $P_2$ na ordinatno os. Njuni sliki zaporedoma označimo s točkama $P'_1 = (t,0)$ in $P'_2 = (0,s)$ za neka $s, t \in \R$, kjer je $t$ očitno pozitiven (slika~\ref{fig:7kotnik_pregib}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.45\textwidth]{images/n-kotniki/7kotnik_pregib.png}
+    \caption[Pregib za konstrukcijo sedemkotnika]{Pregib za konstrukcijo števila $t = 2 \cos(2 \pi / 7)$. Vzeto iz~\cite[str.\ 184]{hull2009}.}
+    \label{fig:7kotnik_pregib}
+\end{figure}
+
+Izrazimo enačbo pregiba s spremenljivkama $s$ in $t$. Pregib je pravokoten na daljici $P_1 P'_1$ in $P_2 P'_2$, iz česar dobimo koeficient premice, na koncu pa njeni enačbi (lahka izpeljava je prepuščena bralcu):
+\begin{equation*}
+    y = tx - \frac{t^2}{2} + \frac{1}{2} \; \text{ in } \; y = -\frac{2}{2s+1}x - \frac{1}{2s+1} + \frac{2s-1}{4}.
+\end{equation*}
+Ker gre za dve enačbi za isto premico, z enačenjem njunih koeficientov in začetnih vrednosti dobimo sistem dveh enačb za $s$ in $t$:
+\begin{equation*}
+    t = - \frac{2}{2s+1} \; \text{ in } \; - \frac{t^2}{2} + \frac{1}{2} = - \frac{1}{2s+1} + \frac{2s-1}{4}.
+\end{equation*}
+Iz prve enačbe izrazimo spremenljivko $s$, jo vstavimo v drugo enačbo in dobimo
+\begin{equation*}
+    - \frac{t^2}{2} + \frac{1}{2} = \frac{t}{2} + \frac{-\frac{2}{t}-2}{4} \Rightarrow t^3 + t^2 - 2t - 1 = 0.
+\end{equation*}
+Dobimo ravno enačbo~\ref{eq:7kotnik_kubicna}. Vrednost $t$ je torej njena edina pozitivna rešitev, tj.\ $t = 2 \cos(2 \pi / 7)$. Iz tega samo še konstruiramo pravokotni trikotnik, ki ima oglišči ene katete v $P'_1$ in koordinatnem izhodišču, druga kateta je pravokotna na $x$-os v točki $P'_1$ in hipotenuza ima dolžino $2$. S tem bo kot ob koordinatnem izhodišču ravno $2 \pi /7$ (slika~\ref{fig:7kotnik_kot}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.25\textwidth]{images/n-kotniki/7kotnik_kot.png}
+    \caption[Konstrukcija kota $2 \pi / 7$.]{Konstrukcija kota $2 \pi /7$ preko pravokotnega trikotnika.}
+    \label{fig:7kotnik_kot}
+\end{figure}
+
+Preostane nam le še navedba konkretne konstrukcije pravilnega sedemkotnika. V ta namen vzemimo v roke kvadraten list papirja, ki predstavlja realno ravnino, in opravimo sledeče korake (gl.\ sliki~\ref{fig:7kotnik_knstr1} in~\ref{fig:7kotnik_knstr2}):
+\begin{enumerate}
+    \item Predpostavimo, da je stranica kvadrata dolga $4$ enote in je koordinatno izhodišče $O$ v središču kvadrata. Papir dvakrat prepognemo na pol po dolžini, da dobimo obe koordinatni osi, konstruiramo pa še točki $P_1 = (0,1)$ in $P_2 = (-1, -1/2)$.
+    \item Opravimo Belochin pregib, ki točko $P_1$ položi na $x$-os in hkrati točko $P_2$ na $y$-os. Sliko točke $P_1$ označimo s $P'_1$.
+    \item Konstruiramo pravokotnico na $x$-os skozi točko $P'_1$. Označimo prvo oglišče našega sedemkotnika s točko $B = (2,0)$.
+    \item Opravimo prepogib skozi koordinatno izhodišče, ki točko $B$ položi na pravokotnico iz prejšnjega koraka. Sliko točke $B$ označimo z $A$ in predstavlja drugo oglišče sedemkotnika (ker je $|OP'_1| = 2 \cos (2 \pi / 7)$ in $|OA| = 2$).
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{images/n-kotniki/7kotnik_konstr1.png}
+    \caption[Konstrukcija pravilnega sedemkotnika $1$.]{Konstrukcija oglišča $A$ pravilnega sedemkotnika (koraki $1$--$4$).}
+    \label{fig:7kotnik_knstr1}
+\end{figure}
+    \item Korak $4$ opravimo še na spodnjo stran $x$-osi in dobimo točko $A^6$.
+    \item Naredimo pregib skozi izhodišče $O$ in točko $A$. Točki $B$ in $A^6$ se čezenj prezrcalita v točki $A^2$ in $A^3$.
+    \item Korak ponovimo še za pregib skozi izhodišče $O$ in točko $A^3$. Sliki točk $A^2$ in $A$ označimo s $A^4$ in $A^5$.
+    \item Po konstrukciji točke $B, \; A, \; A^2, \; A^3, \; A^4, \; A^5$ in $A^6$ tvorijo oglišča pravilnega sedemkotnika.
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=\textwidth]{images/n-kotniki/7kotnik_konstr2.png}
+        \caption[Konstrukcija pravilnega sedemkotnika $2$.]{Konstrukcija preostalih oglišč pravilnega sedemkotnika (koraki $5$--$8$).}
+        \label{fig:7kotnik_knstr2}
+    \end{figure}
+\end{enumerate}
