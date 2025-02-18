@@ -121,7 +121,7 @@ Da si olajšamo računanje, predpostavimo, da ima kvadrat, ki predstavlja naš l
     \begin{itemize}
         \item točka $F$ deli desno stranico v razmeru $3:5$,
         \item točka $H$ deli levo stranico v razmerju $2:1$,
-        \item točka $H$ deli spodnjo stranico v razmerju $1:5$,
+        \item če točko $H$ zrcalimo čez pregib na spodnjo stranico, jo deli v razmerju $1:5$,
         \item točke $G$ deli levo stranico v razmerju $7:1$.
     \end{itemize}
 \end{izrek}
@@ -261,7 +261,7 @@ Avtor Haga je svoje izreke preizkusil tudi na \emph{srebrnih pravokotnikih}\foot
 
 \subsection{Razdelitev daljice na $n$ skladnih delov}
 
-Stranico kvadrata želimo razdeliti na $n$ enakih delov, kjer je $n \in \N$ poljuben. Za $n = 2^t$, kjer je $t \in \N_0$, je to čisto enostavno, saj samo prepolavljamo razdalje med pregibi, dokler ne dosežemo cilja. Če je $n$ sod, vendar ni potenca $2$, torej $n = 2^t(2m + 1)$, kjer sta $t, m \in \N$, stranico najprej razdelimo na $2^t$ delov, nato pa moramo vsakega izmed njih razdeliti na $2m + 1$ (liho število) delov. Izziv tega problema je torej v razdelitvi daljice na liho število delov. Ko bomo to zmogli, jo bomo znali razdeliti na $n$ delov za vsak $n \in \N$.
+Stranico kvadrata želimo razdeliti na $n$ enakih delov, kjer je $n \in \N$ poljuben. Za $n = 2^t$, kjer je $t \in \N_0$, je to čisto enostavno, saj samo prepolavljamo razdalje med pregibi, dokler ne dosežemo cilja. Če je $n$ sod, vendar ni potenca števila $2$, torej $n = 2^t(2m + 1)$, kjer sta $t, m \in \N$, stranico najprej razdelimo na $2^t$ delov, nato pa moramo vsakega izmed njih razdeliti na $2m + 1$ (liho število) delov. Izziv tega problema je torej v razdelitvi daljice na liho število delov. Ko bomo to zmogli, jo bomo znali razdeliti na $n$ delov za vsak $n \in \N$.
 
 V prejšnjem razdelku so nam Hagovi izreki podali razdelitev stranice kvadrata na tri, pet, sedem in devet delov. Vendar iščemo metodo, ki nam stranico razdeli na $n$ delov za splošen lih $n \in \N$. Spomnimo se, da smo en tak postopek že spoznali -- v dokazu izreka~\ref{izr:podpolje} smo za poljuben $a \in \R$ znali konstruirati razdaljo $1/a$, kar bi lahko uporabili za razdelitev neke daljice na $a$ enakih delov -- konstruirano razdaljo $1/a$ bi $a$-krat prenesli naprej. Načinov reševanja tega problema pa se je skozi zadnja desetletja oblikovalo še veliko več; tu bomo spoznali še dve metodi.
 
@@ -305,14 +305,14 @@ Metoda nima uradnega prevoda niti uradnega imena, jo pa tako imenuje Robert J.\ 
             \frac{1}{\frac{1}{2}} &= \frac{x}{1 - x}, \\
             x &= \frac{2}{3}.
         \end{align*}
-        \begin{figure}[h]
-            \centering
-            \includegraphics[width=0.3\textwidth]{images/tretjinjenje_stranice2.png}
-            \caption[Dokaz metode križajočih diagonal]{Dokaz metode križajočih se diagonal za $n=3$. Preurejeno iz~\cite[str. 38]{hull2013}.}
-            \label{fig:kriz_diag_3_dokaz}
-        \end{figure}
     \end{enumerate}
 \end{dokaz}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth]{images/tretjinjenje_stranice2.png}
+    \caption[Dokaz metode križajočih diagonal]{Dokaz metode križajočih se diagonal za $n=3$. Preurejeno iz~\cite[str. 38]{hull2013}.}
+    \label{fig:kriz_diag_3_dokaz}
+\end{figure}
 
 Po konstrukciji pregiba, ki zgornjo stranico kvadrata razdeli v razmerju $2:1$, levi pravokotnik (s stranico $AG$) po vertikali prepognemo še na pol in tako stranico kvadrata razdelimo na tri enake dele. Preidimo sedaj iz $n = 3$ na višje število delov.
 
@@ -401,7 +401,7 @@ Po konstrukciji je pregib $FG$ po konstrukciji simetrala njegove stranice $BE$, 
 
 Naj bo $J$ presečišče simetral stranic trikotnika $\triangle BCE$. Potem je to hkrati tudi središče njegove očrtane krožnice, kot je načrtana na sliki~\ref{fig:x-pregib_dokaz}. Posledično so seveda razdalje oglišč $B, C$ in $E$ do točke $J$ polmeri krožnice, torej so med seboj skladne.
 
-Bralec naj sedaj vzame vse svoje kvadratne liste papirja, na katere je konstruiral različne $X$-pregibe, in jih zloži drug na drugega. Opazka, da presečišča pregibov ležijo na isti premici, ni presenetljiva, saj smo ravnokar premislili, da vsako tako presečišče leži n anavpični simetrali kvadrata. Bolj je zanimiva opazka, da nobeno od teh presečišč ne leži v zgornji polovici kvadrata (slika~\ref{fig:x-pregib_primeri_skup}).
+Bralec naj sedaj vzame vse svoje kvadratne liste papirja, na katere je konstruiral različne $X$-pregibe, in jih zloži drug na drugega. Opazka, da presečišča pregibov ležijo na isti premici, ni presenetljiva, saj smo ravnokar premislili, da vsako tako presečišče leži na navpični simetrali kvadrata. Bolj je zanimiva opazka, da nobeno od teh presečišč ne leži v zgornji polovici kvadrata (slika~\ref{fig:x-pregib_primeri_skup}).
 
 \begin{figure}[h]
     \centering
