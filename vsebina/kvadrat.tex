@@ -51,14 +51,16 @@ Nadalje lahko s prepogibanjem pravokotnika s stranicama $X$ in $X+Y$, kjer kraj�
 
 Trije nevzporedni pregibi, ki se ne sekajo v isti točki, nam na papirju konstruirajo trikotnik. S štirimi pravokotnimi prepogibi dobimo pravokotnik, če njegovo krajšo stranico prepognemo na daljšo, pa še kvadrat (kar smo že storili pri konstrukciji v prejšnjem odstavku). Če njegova oglišča prepognemo v presečišče diagonal, dobimo nov kvadrat s polovično ploščino originalnega.
 
-Konstrukcije poljubnega trikotnika, pravokotnika in kvadrata so zelo enostavne. Malo več premisleka pa je potrebnega za konstrukcije pravilnih $n$-kotnikov. Iz razdelka~\ref{podpogl:n_kotniki} vemo, da je edini pravilni $n$-kotnik, kjer je $n \leq 20$ in se ga ne da konstruirati z origamijem, $11$-kotnik. Postopkov za kosntrukcije ostalih večkotnikov je več. Johnson se na primer v nadaljevanju iste knjige posveti konstrukciji preko večkratnega zvijanja traku, kar pa krši pravilo o enkratnih prepogibih papirja.
+Konstrukcije poljubnega trikotnika, pravokotnika in kvadrata so zelo enostavne. Malo več premisleka pa je potrebnega za konstrukcije pravilnih $n$-kotnikov. Iz razdelka~\ref{podpogl:n_kotniki} vemo, da je edini pravilni $n$-kotnik, kjer je $n \leq 20$ in se ga ne da konstruirati z origamijem, $11$-kotnik. Postopkov za konstrukcije ostalih večkotnikov je več. Johnson se na primer v nadaljevanju iste knjige posveti konstrukciji preko večkratnega zvijanja traku, kar pa krši pravilo o enkratnih prepogibih papirja.
+
+Pogledali si bomo še origami konstrukcije enakostraničnega trikotnika, šestkotnika in osemkotnika, ki jih navajata Johnson v istem viru~\cite[str.\ 14--15]{johnson1957} in Hull v~\cite[str.\ 1--12]{hull2013}. Iz razdelka~\ref{podpogl:n_kotniki} že vemo, da se jih da konstruirati z evklidskim orodjem, zato bomo v bistvu konstrukcije z ravnilom in šestilom prevedli v konstrukcije s prepogibanjem papirja in ne bomo odkrili ničesar novega.
 
 Vzemimo kvadratni list papirja, ga po višini prepognimo na pol in na pregib položimo spodnje desno oglišče $A$ kvadrata, da nov pregib poteka skozi spodnje levo oglišče $B$ (slika~\ref{fig:trik_enak_basic}). Sliko oglišča $A$ označimo s točko $P$. Ker je po konstrukciji $|AB| = |PB|$ in je vertikalen prepogib simetrala spodnje stranice kvadrata, je trikotnik $\triangle ABP$ enakostraničen.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\textwidth]{images/n-kotniki/trik_enak_basic.png}
-    \caption[Konstrukcija enakostraničnega trikotnika (način $1$)]{Konstrukcija enakostraničnega trikotnika. Vzeto in predelano iz~\cite[str. 9]{hull2013}.}
+    \caption[Konstrukcija enakostraničnega trikotnika (način $1$)]{Konstrukcija enakostraničnega trikotnika. Predelano iz~\cite[str. 9]{hull2013}.}
     \label{fig:trik_enak_basic}
 \end{figure}
 
@@ -73,14 +75,16 @@ Sedaj, ko znamo konstruirati enakostranične trikotnike, lahko konstruiramo tudi
 
 Še lažje pravilni šestkotnik konstruiramo preko enakostraničnega trikotnika, ki mu vrhove prepognemo v središče (slika~\ref{fig:6kotnik_basic} desno). Ker središče deli višine v razmerju $2:1$, pregibi stranice razdelijo na tri skladne dele, sam trikotnik pa na tri manjše enakostranične trikotnike in šestkotnik na sredi.
 
-V roke vzemimo nov kvadraten list papirja in konstruirajmo najprej središča njegovih stranic. S pregibi skozi sosednji središči dobimo manjši kvadrat. Sedaj razpolovimo še vsak kot, ki ga tvorita po ena stranica večjega in ena stranica manjšega kvadrata ter ima vrh v središču stranice večjega kvadrata. Presečišča simetral dveh sosednjih kotov nam data še preostale štiri oglišča pravilnega osemkotnika (slika~\ref{fig:8kotnik_basic}). Bralec naj sam dokaže, da je to res.
+V roke vzemimo nov kvadraten list papirja in konstruirajmo najprej središča njegovih stranic. S pregibi skozi sosednji središči dobimo manjši kvadrat (slika~\ref{fig:8kotnik_basic} levo). Sedaj razpolovimo še vsak kot, ki ima vrh v središču stranice večjega kvadrata in za kraka po eno stranico vsakega kvadrata. Presečišča simetral dveh sosednjih kotov nam dajo še preostala štiri oglišča pravilnega osemkotnika (slika~\ref{fig:8kotnik_basic} desno).
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/n-kotniki/8kotnik_basic.png}
+    \includegraphics[width=0.6\textwidth]{images/n-kotniki/8kotnik_basic.png}
     \caption[Konstrukcija pravilnega osemkotnika]{Konstrukcija pravilnega osemkotnika.}
     \label{fig:8kotnik_basic}
 \end{figure}
+
+Ob oznakah na sliki~\ref{fig:8kotnik_basic} (desno) premislimo, da je to res pravilni osemkotnik: zaradi simetrije so vse stranice skladne, zato moramo dokazati le še skladnost vseh notranjih kotov. Zaradi simetrije je dovolj izračunati notranja kota osemkotnika pri ogliščih $B$ in $C$, ki morata po formuli za notranji kot pravilnega $n$-kotnika oba biti velika $(8-2)/8 \cdot 180^\circ = 135^\circ$. Na sliki je kot $\alpha = 45^\circ /2 = 22{,}5^\circ$, zato je kot ob oglišču $B$ velik $90^\circ + 2\alpha = 135^\circ$, kot ob oglišču $C$ pa izračunamo iz notranjih kotov trikotnika $\triangle ABC$: $\gamma = 180^\circ - 2\alpha = 135^\circ$. Kota sta skladna in ustrezata notranjemu kotu za pravilni osemkotnik.
 
 Vrnimo se nazaj na enakostranični trikotnik v danem kvadratnemu listu papirja. Ali znamo konstruirati največji tak trikotnik -- in če da, kako? Recimo, da obstaja tak trikotnik. Najprej premislimo, da mora vsaj eno njegovo oglišče ležati v oglišču kvadrata. Če to ne drži, se trikotnik ne dotika ene stranice kvadrata -- ker ima tri stranice, kvadrat pa štiri -- recimo spodnje. Potem se z ostalimi tremi oglišči dotika preostalih treh stranic kvadrata, sicer to ne bi bil največji trikotnik -- lahko bi ga še povečali. Potisnimo sedaj trikotnik navzdol po kvadratu, dokler se najnižje oglišče na eni od pokončnih stranic kvadrata ne dotakne njegove spodnje stranice -- kar se zgodi ravno v oglišču kvadrata. Zaradi simetrije brez škode privzemimo, da je to spodnje levo oglišče.
 
@@ -103,8 +107,6 @@ Trikotnik je simetričen glede na diagonalo kvadrata. Na sliki~\ref{fig:trik_ena
     \caption[Konstrukcija največjega enakostraničnega trikotnika znotraj kvadrata]{Konstrukcija največjega enakostraničnega trikotnika znotraj kvadrata.}
     \label{fig:trik_enak_max2}
 \end{figure}
-
-Najmanjši pravilni večkotnik, ki ga ne moremo konstruirati z evklidskim orodjem, lahko pa ga z origamijem, je sedemkotnik. Hull v~\cite[str.\ 19--22]{hull2020} navaja potek njegove konstrukcije in tudi dokaže, da je rezultat res pravilni sedemkotnik. Ker pa postopek vključuje večkratne pregibe, ki so v tej nalogi prepovedani (večkratni pregibi odprejo veliko dodatnega prostora za raziskovanje matematike z origamijem, vendar je tema preobširna za vključitev v to nalogo), se s tem tu ne bomo ukvarjali.
 
 \subsection{Hagovi izreki za prepogibanje kvadrata}
 
@@ -380,7 +382,7 @@ Poglejmo si še eno zanimivo lastnost, ki jo je odkril Haga in ki izhaja iz prep
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{images/x-pregibi/konstrukcija.png}
-    \caption[Konstrukcija $X$-pregibov]{Potek konstrukcije $X$-pregibov. Vzeto in predelano iz~\cite[str.\ 34]{haga2008}.}
+    \caption[Konstrukcija $X$-pregibov]{Potek konstrukcije $X$-pregibov. Predelano iz~\cite[str.\ 34]{haga2008}.}
     \label{fig:x-pregib_konstr}
 \end{figure}
 
@@ -404,7 +406,7 @@ Bralec naj sedaj vzame vse svoje kvadratne liste papirja, na katere je konstruir
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\textwidth]{images/x-pregibi/primeri_skupaj.png}
-    \caption[Primeri $X$-pregibov]{Primeri $X$-prepogibov in njihova unija. Vzeto in predelano iz~\cite[str.\ 36]{haga2008}.}
+    \caption[Primeri $X$-pregibov]{Primeri $X$-prepogibov in njihova unija. Predelano iz~\cite[str.\ 36]{haga2008}.}
     \label{fig:x-pregib_primeri_skup}
 \end{figure}
 
