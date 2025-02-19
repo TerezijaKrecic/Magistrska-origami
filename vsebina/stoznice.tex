@@ -32,9 +32,9 @@ Pa si poglejmo, kako s prepogibi dobimo tangente na vse štiri stožnice.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.3\textwidth]{images/stožnice/folding_kroznica_1.png}
-    \includegraphics[width=0.3\textwidth]{images/stožnice/folding_kroznica_2.png}
-    \includegraphics[width=0.3\textwidth]{images/stožnice/folding_kroznica_3.png}
+    \includegraphics[width=0.25\textwidth]{images/stožnice/folding_kroznica_1.png}
+    \includegraphics[width=0.25\textwidth]{images/stožnice/folding_kroznica_2.png}
+    \includegraphics[width=0.25\textwidth]{images/stožnice/folding_kroznica_3.png}
     \caption[Prepogibanje krožnice]{Sukanje izbrane točke okoli središča.}
     \label{fig:koraki_kroznica}
 \end{figure}
@@ -77,11 +77,11 @@ To je bil intuitiven premislek. Poglejmo si, kako lahko to dokažemo na bolj mat
 
 \subsubsection*{Parametrizacija pregibov}
 
-Začnimo kar s parametrizacijo družine konstruiranih pregibov. V ta namen v model poljubne točke in spodnje stranice lista vpeljimo nekaj oznak. Naj bo $c \in \OR$. Vzemimo točko $A(0, c)$ in premico $a: y = -c$, ki sta origami-konstruktibilni, in naredimo pregib, ki točko $A$ preslika na premico $a$ v točko $A'(t, -c)$ za nek $t \in \R$ (slika~\ref{fig:enacba_tangente_par1}).
+Začnimo kar s parametrizacijo družine konstruiranih pregibov. V ta namen v model poljubne točke in spodnje stranice lista vpeljimo nekaj oznak. Naj bo $c > 0$. Vzemimo točko $A(0, c)$ in premico $a$ s predpisom $y = -c$. Opravimo pregib, ki točko $A$ preslika na premico $a$ v točko $A'(t, -c)$ za nek $t \in \R$ (slika~\ref{fig:enacba_tangente_par1}).
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/stožnice/enacba_parabole1.png}
+    \includegraphics[width=0.55\textwidth]{images/stožnice/enacba_parabole1.png}
     \caption[Enačba tangente na parabolo]{Pregib točke $A(0, c)$ na premico $a: y = -c$.}
     \label{fig:enacba_tangente_par1}
 \end{figure}
@@ -93,18 +93,18 @@ Ker je pregib oz.\ konstruirana premica simetrala daljice $AA'$, lahko hitro dol
 \end{equation}
 Dobili smo iskano parametrizacijo družine pregibov z enačbo
 $$F(t, x, y) = \frac{t}{2c} x - y - \frac{t^2}{4c} = 0. $$
-Za vsak $t \in \R$ torej dobimo drugo tangento na parabolo z goriščem v točki $A$ in premico vodnico $a$ z zgornjo enačbo~\ref{eq:tang_par}. Izrazimo sedaj enačbo ovojnice preko sistema enačb iz opombe pod definicijo~\ref{def:ovojnica}. Iz enačbe $(\partial / \partial t) F(t, x, y) = 0$ dobimo $x/2c - 0 - 2t/4c = 0$ oz.\ $t = x$. Ko $t$ vstavimo v enačbo $F(t, x, y) = 0$, dobimo
+Za vsak $t \in \R$ torej dobimo drugo tangento na parabolo z goriščem v točki $A$ in premico vodnico $a$ z zgornjo enačbo~\eqref{eq:tang_par}. Izrazimo sedaj enačbo ovojnice preko sistema enačb iz opombe pod definicijo~\ref{def:ovojnica}. Iz enačbe $(\partial / \partial t) F(t, x, y) = 0$ dobimo $x/2c - 0 - 2t/4c = 0$ oz.\ $t = x$. Ko $t$ vstavimo v enačbo $F(t, x, y) = 0$, dobimo
 \begin{equation}
     \label{eq:parabola_splosna}
     y = \frac{x^2}{4c},
 \end{equation}
-torej je ovojnica res parabola. % Preden gremo na naslednji način dokaza, si poglejmo še vpliv parametra $c$ na parabolo. Razdalja med njenim goriščem in premico vodnico je $2c$ in iz enačbe~\ref{eq:parabola_splosna} je razvidno, da bo z manjšanjem $c$ parabola vedno ožja.
+torej je ovojnica res parabola. % Preden gremo na naslednji način dokaza, si poglejmo še vpliv parametra $c$ na parabolo. Razdalja med njenim goriščem in premico vodnico je $2c$ in iz enačbe~\eqref{eq:parabola_splosna} je razvidno, da bo z manjšanjem $c$ parabola vedno ožja.
 
 \subsubsection*{Drugi dokazi}
 
-Njeno enačbo lahko dobimo tudi brez definicije ovojnice. Ker so vse točke na pregibu enako oddaljene od točk $A$ in $A'$, na pregibu obstaja le ena točka $T$, za katero velja $d(T, A) = d(T, a)$. Njena abscisa je $x = t$ (točka $T$ leži na pregibu točno nad točko $A'$, gl.\ sliko~\ref{fig:enacba_tangente_par1}) in iz enačbe~\ref{eq:tang_par}, dobimo še ordinato $y = t^2/4c$. Ker točka $T$ za vsak $t \in \R$ leži na paraboli, pri menjavi $x = t$ dobimo ravno enačbo~\ref{eq:parabola_splosna}.
+Njeno enačbo lahko dobimo tudi brez definicije ovojnice. Ker so vse točke na pregibu enako oddaljene od točk $A$ in $A'$, na pregibu obstaja le ena točka $T$, za katero velja $d(T, A) = d(T, a)$. Njena abscisa je $x = t$ (točka $T$ leži na pregibu točno nad točko $A'$, gl.\ sliko~\ref{fig:enacba_tangente_par1}) in iz enačbe~\eqref{eq:tang_par}, dobimo še ordinato $y = t^2/4c$. Ker točka $T$ za vsak $t \in \R$ leži na paraboli, pri menjavi $x = t$ dobimo ravno enačbo~\eqref{eq:parabola_splosna}.
 
-Hull v~\cite[str.\ 55--56]{hull2013} poda prefinjen dokaz preko kvadratne formule. Vemo, da pregib~\ref{op:O6} ne obstaja vedno (slika~\ref{fig:O6} desno). Poglejmo, ali obstajajo v ravnini našega modela kakšne točke, skozi katere ne moremo konstruirati pregiba oz.\ tangente. Vzemimo našo parametrizacijo družine tangent (enačba~\ref{eq:tang_par}) in jo rešimo za $t$. Dobljena formula nam pove, za katere vrednosti $t$ pregib poteka skozi točko $(x, y)$:
+Hull v~\cite[str.\ 55--56]{hull2013} poda prefinjen dokaz preko kvadratne formule. Vemo, da pregib~\ref{op:O6} ne obstaja vedno (slika~\ref{fig:O6} desno). Poglejmo, ali obstajajo v ravnini našega modela kakšne točke, skozi katere ne moremo konstruirati pregiba oz.\ tangente. Vzemimo našo parametrizacijo družine tangent (enačba~\eqref{eq:tang_par}) in jo rešimo za $t$. Dobljena formula nam pove, za katere vrednosti $t$ pregib poteka skozi točko $(x, y)$:
 $$ \frac{1}{4c}t^2 - \frac{x}{2c}t + y = 0 \Rightarrow t_{1,2} = \frac{\frac{x}{2c} \pm \sqrt{\frac{x^2}{4c^2} - \frac{y}{c}}}{\frac{1}{2c}}.$$
 Enačba ima dve realni rešitvi pri pogoju $x^2 / 4c^2 - y/c > 0$ oziroma $y < x^2 / 4c$, kar pomeni, da vsako točko $(x, y)$, za katero ta pogoj velja, sekata dva pregiba. To so ravno točke pod parabolo $y = x^2 / 4c$. Za točke \emph{na} paraboli velja $y = x^2 / 4c$, iz česar dobimo eno rešitev $t = x$, torej to točko seka natanko en pregib. Nazadnje nam ostane še območje, za katerega velja $y > x^2 / 4c$, t.\ j.\ območje nad parabolo $y = x^2 / 4c$, kar nam ne poda realnih rešitev za $t$, torej ga ne seka noben izmed konstruiranih pregibov. Tako je obris, ki ga dobimo v nalogi, res parabola $y = x^2 / 4c$.
 
@@ -218,7 +218,7 @@ Podobno kot prej lahko sklepamo, da se nam izriše obris hiperbole. Spomnimo se,
 
 \subsubsection*{Parametrizacija pregibov}
 
-Določimo še parametrizacijo družine pregibov. Postopek je identičen kot pri parametrizaciji tangent na elipso, edina sprememba je le, da tu velja $0<r<2e$. Ko v ravnino uvedemo točke, daljice in premice kot zgoraj (slika~\ref{fig:enacba_hiperbole}), dobimo enako parametrizacijo družine pregibov (enačba~\ref{eq:param_elipsa}).
+Določimo še parametrizacijo družine pregibov. Postopek je identičen kot pri parametrizaciji tangent na elipso, edina sprememba je le, da tu velja $0<r<2e$. Ko v ravnino uvedemo točke, daljice in premice kot zgoraj (slika~\ref{fig:enacba_hiperbole}), dobimo enako parametrizacijo družine pregibov (enačba~(\eqref{eq:param_elipsa})).
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{images/stožnice/hiperbola_ovojnica.png}

@@ -611,7 +611,7 @@ Pred naslednjim izrekom poglejmo še lemo, pri čemer za kratek čas zapustimo m
         \label{eq:enaka_koef}
         -\frac{2}{t} = \frac{y_1 - y_0}{x_1 - x_0}.
     \end{equation}
-    Upoštevamo, da središče daljice $BB'$ s koordinatama $((x_0 + x_1)/2, (y_0 + y_1)/2)$ leži na premici z enačbo~\ref{eq:en_pregiba} in nato iz zveze~\ref{eq:enaka_koef} izrazimo koordinati $x_1$ in $y_1$ (računsko izpeljavo prepuščamo bralcu). Dobimo parametrizacijo krivulje, ki jo opiše točka $B'$ preko različnih pregibov, ki točko $A$ položijo na premico $a$. Ko upoštevamo še, da točka $B'$ leži na premici $b$, dobimo \emph{kubično} enačbo za parameter $t$, ki ima vse koeficiente izražene s števili $x_0, y_0, a_1, b_1$ in $c_1$. Zato je dovolj, da je stopnja razširitve polja $E$, ki vsebuje število $t$, največ $3$.
+    Upoštevamo, da središče daljice $BB'$ s koordinatama $((x_0 + x_1)/2, (y_0 + y_1)/2)$ leži na premici z enačbo~\eqref{eq:en_pregiba} in nato iz zveze~\eqref{eq:enaka_koef} izrazimo koordinati $x_1$ in $y_1$ (računsko izpeljavo prepuščamo bralcu). Dobimo parametrizacijo krivulje, ki jo opiše točka $B'$ preko različnih pregibov, ki točko $A$ položijo na premico $a$. Ko upoštevamo še, da točka $B'$ leži na premici $b$, dobimo \emph{kubično} enačbo za parameter $t$, ki ima vse koeficiente izražene s števili $x_0, y_0, a_1, b_1$ in $c_1$. Zato je dovolj, da je stopnja razširitve polja $E$, ki vsebuje število $t$, največ $3$.
 
     Obravnavajmo še primer, ko ena ali obe izmed točk $A$ in $B$ ležita na premicah $a$ in $b$. Iz izreka~\ref{izr:dve_operaciji} vemo, da je izveden Belochin pregib v resnici ena izmed operacij~\ref{op:01}, \ref{op:O3}--\ref{op:O6} in~\ref{op:O8}. Bralcu prepuščamo daljši računski premislek po zgledu iz prvega dela dokaza, da za vsako izmed teh operacij in pri vsaki izbiri dveh točk in premic rešujemo enačbo največ druge stopnje.
 \end{dokaz}
@@ -734,7 +734,7 @@ $$ A = e^{\frac{2\pi i}{7}}, \; A^2 = e^{2\frac{2\pi i}{7}}, \; A^3 = e^{3\frac{
 
 Naš cilj je poiskati metodo, s katero lahko preko prepogibanja papirja konstruiramo kot $2 \pi / 7$, saj znamo rotirati točke za poljuben origami-konstruktibilen kot (točko zrcalimo čez simetralo tega kota).
 
-Sledeča izpeljava je sestavljena iz več korakov. Najprej iz enačbe~\ref{eq:7kotnik_basic} faktoriziramo rešitev $z = 1$ in dobimo enačbo
+Sledeča izpeljava je sestavljena iz več korakov. Najprej iz enačbe~\eqref{eq:7kotnik_basic} faktoriziramo rešitev $z = 1$ in dobimo enačbo
 \begin{equation}
     \label{eq:7kotnik_daljsa_en}
     \frac{z^7-1}{z-1}= z^6+z^5+z^4+z^3+z^2+z+1=0.
@@ -743,14 +743,14 @@ Zaradi simetričnosti sedemkotnika čez realno os lahko to enačbo šeste stopnj
 $$ \frac{1}{A} = \frac{\overline{A}}{A \overline{A}} = \frac{\overline{A}}{\cos^2(2 \pi / 7) + \sin^2(2 \pi / 7)} = \overline{A} = A^6.$$
 Ker je $A + 1/A = A + \overline{A} = 2 \cos(2 \pi / 7)$, je središče daljice $A A^6$ ravno točka $(A + 1/A)/2 = \cos(2\pi /7)$ (glej sliko~\ref{fig:7kotnik_kompleksna}).
 
-Iz zveze $1/A = A^6$ sledi še $1/A^2 = A^{12} = A^5$ in $1/A^3 = A^{18} = A^4$. Naj bo $z = A$ in vstavimo ravno izpeljano v enačbo~\ref{eq:7kotnik_daljsa_en}. Dobimo
+Iz zveze $1/A = A^6$ sledi še $1/A^2 = A^{12} = A^5$ in $1/A^3 = A^{18} = A^4$. Naj bo $z = A$ in vstavimo ravno izpeljano v enačbo~\eqref{eq:7kotnik_daljsa_en}. Dobimo
 \begin{equation}
     \label{eq:7kotnik_Aji}
     \frac{1}{A} + \frac{1}{A^2} + \frac{1}{A^3} +A^3+A^2+A+1= 0.
 \end{equation}
 Razširimo izraza $(A + 1/A)^2$ in $(A + 1/A)^3$ v
 $$ A^2 + \frac{1}{A^2} = (A + \frac{1}{A})^2 - 2 \; \text{ in } \; A^3 + \frac{1}{A^3} = (A + \frac{1}{A})^3 - 3(A + \frac{1}{A}),$$
-vstavimo to v enačbo~\ref{eq:7kotnik_Aji} in dobimo
+vstavimo to v enačbo~\eqref{eq:7kotnik_Aji} in dobimo
 \begin{equation*}
     (A + \frac{1}{A})^3 + (A + \frac{1}{A})^2 - 2(A + \frac{1}{A}) - 1 = 0.
 \end{equation*}
@@ -784,7 +784,7 @@ Iz prve enačbe izrazimo spremenljivko $s$, jo vstavimo v drugo enačbo in dobim
 \begin{equation*}
     - \frac{t^2}{2} + \frac{1}{2} = \frac{t}{2} + \frac{-\frac{2}{t}-2}{4} \Rightarrow t^3 + t^2 - 2t - 1 = 0.
 \end{equation*}
-Dobimo ravno enačbo~\ref{eq:7kotnik_kubicna}. Vrednost $t$ je torej njena edina pozitivna rešitev, tj.\ $t = 2 \cos(2 \pi / 7)$. Iz tega samo še konstruiramo pravokotni trikotnik, ki ima oglišči ene katete v $P'_1$ in koordinatnem izhodišču, druga kateta je pravokotna na $x$-os v točki $P'_1$ in hipotenuza ima dolžino $2$. S tem bo kot ob koordinatnem izhodišču ravno $2 \pi /7$ (slika~\ref{fig:7kotnik_kot}).
+Dobimo ravno enačbo~\eqref{eq:7kotnik_kubicna}. Vrednost $t$ je torej njena edina pozitivna rešitev, tj.\ $t = 2 \cos(2 \pi / 7)$. Iz tega samo še konstruiramo pravokotni trikotnik, ki ima oglišči ene katete v $P'_1$ in koordinatnem izhodišču, druga kateta je pravokotna na $x$-os v točki $P'_1$ in hipotenuza ima dolžino $2$. S tem bo kot ob koordinatnem izhodišču ravno $2 \pi /7$ (slika~\ref{fig:7kotnik_kot}).
 
 \begin{figure}[h]
     \centering
