@@ -1,11 +1,11 @@
 \section{Reševanje nerešljivih starogrških problemov}
 \label{pogl:starogrskiproblemi}
 
-Z evklidskimi konstrukcijami se je seveda pojavilo konstruktibilnih ugank -- vprašanj, ali sta specifična razdalja oz.\ kot konstruktibilna (in na kakšnen način) ali ne. Stremeli so k iskanju konstrukcij z evklidskim orodjem in če so kakšen problem uspeli rešiti le z neoznačenim ravnilom in šestilom, so te konstrukcije obravnavali kot ``boljše rešitve''~\cite[str. 36]{royster2002}. Grki pa seveda niso delali le s tem orodjem, ampak so se na primer poslužili tudi označenega ravnila\footnote{Martin v trditvi $10.4$ in preko poglavja $9$ v~\cite{geometricconstructions} dokaže, da so origami števila natanko tista množica števil, ki se jih da konstruirati z ravnilom, ki ima na robu dve oznaki.}, s katerim so lahko rešili probleme, ki jih sicer niso mogli. Zelo znani so trije t.~i.\ ``starogrški' problemi, ki so matematike bremenili več kot tisočletje, začenši s časom Evklida (300 pr.\ Kr.), nanje pa sta dokončno odgovorila šele Niels Henrik Abel (1802--1829) in Evariste Galois (1811--1832) v začetku 19.\ stoletja. Gre za sledeče tri probleme:
+Z definicijo evklidskih konstrukcij so se v Stari Grčiji pojavile tudi konstruktibilne uganke v obliki vprašanj, ali je določena geometrijska oblika (npr.\ daljica določene dolžine ali kot določene velikosti) konstruktibilna z evklidskim orodjem ali ne; v pozitivnem primeru pa se išče tudi konkretno konstrukcijo. Stari Grki so stremeli k iskanju konstrukcij z evklidskim orodjem in če so kakšen problem uspeli rešiti le z neoznačenim ravnilom in šestilom, so te konstrukcije obravnavali kot ``boljše rešitve''~\cite[str. 36]{royster2002}. Seveda pa niso delali le s tem orodjem, ampak so se na primer poslužili tudi označenega ravnila\footnote{Martin v trditvi $10.4$ in preko poglavja $9$ v~\cite{geometricconstructions} dokaže, da so origami števila natanko tista množica števil, ki se jih da konstruirati z ravnilom, ki ima na robu dve oznaki.}, s katerim so lahko rešili probleme, ki jih sicer niso mogli. Zelo znani so trije t.~i.\ ``starogrški' problemi, ki so matematike bremenili več kot tisočletje, začenši s časom Evklida (300 pr.\ Kr.), nanje pa sta dokončno odgovorila šele Niels Henrik Abel (1802--1829) in Evariste Galois (1811--1832) v začetku 19.\ stoletja. Gre za tri sledeče probleme:
 \begin{itemize}
-    \item \textbf{Podvojitev kocke} Imejmo že konstruktibilno kocko. Konstruiraj novo kocko, ki ima dvakrat večji volumen od prve (problem se poenostavi na iskanje konstrukcije števila $\sqrt[3]{2}$).
-    \item \textbf{Trisekcija kota} Dan je poljuben konstruktibilen kot. Konstruiraj kot, ki prvega deli na tri skladne dele.
-    \item \textbf{Kvadratura kroga} Za dan konstruktibilen krog konstruiraj kvadrat, ki ima enako ploščino kot dani krog (problem se poenostavi na konstrukcije števila $\sqrt{\pi}$).
+    \item \textbf{Podvojitev kocke:} Za dano kocko konstruiraj novo kocko, ki ima dvakrat večji volumen od prve (problem se poenostavi na iskanje konstrukcije števila $\sqrt[3]{2}$).
+    \item \textbf{Trisekcija kota:} Za dan kot $\alpha$ konsturiraj kot $\alpha/3$.
+    \item \textbf{Kvadratura kroga:} Za dan krog konstruiraj kvadrat, ki ima enako ploščino kot dani krog (problem se poenostavi na iskanje konstrukcije števila $\sqrt{\pi}$).
 \end{itemize}
 
 Z znanjem, ki sta ga znanosti posredovala Abel in Galois, se da pokazati, da ti trije problemi z evklidskim orodjem niso rešljivi. V knjigi o starogrški matematiki od Talesa do Evklida~\cite[str.\ 218--270]{heath1921} je zbrano veliko zamisli in konstrukcij grških matematikov, ki so se ukvarjali s temi tremi problemi in evklidsko orodje ne zadostuje za nobeno od najdenih rešitev.
@@ -31,7 +31,7 @@ V istem viru Videla tudi navaja konstrukcijo s parabolami, ki za dano dolžino $
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{images/starogr_problemi/cube_parabola.png}
-    \caption[Menehmova konstrukcija kubičnega korena]{Menehmova konstrukcija števila $\sqrt[3]{2}$ preko parabol. Vzeto iz~\cite[str.\ 6]{videla1997}.}
+    \caption[Menehmova konstrukcija kubičnega korena]{Menehmova konstrukcija števila $\sqrt[3]{a}$ preko parabol.}
     \label{fig:videla}
 \end{figure}
 Presečišči teh dveh parabol dobimo preko enakosti
@@ -43,7 +43,7 @@ kar nam da enačbo $y(a^2-y^3) = 0$ z rešitvama $y=0$ in $y = \sqrt[3]{a^2}$. P
 
 George E.\ Martin v~\cite[str.\ 156--157]{geometricconstructions} poda preprosto konstrukcijo števila $\sqrt[3]{k}$ za poljubno origami število $k$. Tudi on pri tem uporabi dve paraboli, vendar pri postopku potrebujemo le njuni gorišči in premici vodnici. Ne bomo iskali njunih presečišč, temveč bomo z Belochinim pregibom konstruirali njuno skupno tangento, ki nam bo podala željeni rezultat.
 
-Naj bo $k \in $ poljuben. Vzemimo paraboli z goriščema v točkah $P = (-1, 0)$ in $Q = (0, -k)$ ter premici vodnici $p: x = 1$ in $q: y = k$. Paraboli imata skupno gorišče v koordinatnem izhodišču in sta pravokotni druga na drugo, torej imata eno samo skupno tangento. Prepognimo točko $P$ na premico $p$ in točko $Q$ na premico $q$. Pregib seka $y$-os v točki $R$ (slika~\ref{fig:martin}).
+Naj bo $k \in \OR$ poljuben. Vzemimo paraboli z goriščema v točkah $P = (-1, 0)$ in $Q = (0, -k)$ ter premici vodnici $p: x = 1$ in $q: y = k$. Paraboli imata skupno gorišče v koordinatnem izhodišču in sta pravokotni druga na drugo, torej imata eno samo skupno tangento. Prepognimo točko $P$ na premico $p$ in točko $Q$ na premico $q$. Pregib seka $y$-os v točki $R$ (slika~\ref{fig:martin}).
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{images/starogr_problemi/cube_martin.png}
@@ -80,7 +80,7 @@ Peter Messer v~\cite{messer1986} navaja avtorski postopek, ki sicer ne konstruir
 \begin{dokaz}
     Vpeljimo oznake $X, Y, A, B, C, D, E$ ter $d = |BC|$, kot kaže slika~\ref{fig:messer}. Dokazati moramo $X/Y = \sqrt[3]{2}$, za lažje računanje pa brez škode privzemimo $Y=1$. Stranica kvadrata je tako dolga $X+1$, zato je $|AC| = X+1-d$ in $|AE| = (X+1)/3$.
 
-    Opazimo podobna pravokotnika $\triangle ABC$ in $\triangle ADE$. Iz trikotnika $\triangle ABC$ s pomočjo Pitagorovega izreka izrazimo $d = (X^2+2X)/(2X+2)$, preko leve stranice pa še $|AD| = X - (X+1)/3 = (2X-1)/3$. Iz podobnosti omenjenih trikotnikov izrazimo razmerje katete in hipotenuze z enačbo $|BC|/|AC| = |AD|/|AE|$. Ko vstavimo noter vse vrednosti, odvisne od $X$, dobimo enačbo
+    Opazimo, da sta pravokotna trikotnika $\triangle ABC$ in $\triangle ADE$ podobna. Iz trikotnika $\triangle ABC$ s pomočjo Pitagorovega izreka izrazimo $d = (X^2+2X)/(2X+2)$, preko leve stranice pa še $|AD| = X - (X+1)/3 = (2X-1)/3$. Iz podobnosti omenjenih trikotnikov izrazimo razmerje katete in hipotenuze z enačbo $|BC|/|AC| = |AD|/|AE|$. Ko vstavimo noter vse vrednosti, odvisne od $X$, dobimo enačbo
     $$ \frac{X^2 + 2X}{X^2 + 2X + 2} = \frac{2X - 1}{X + 1},$$
     ki se nam poenostavi prav v $X^3 = 2$. Torej je $X = \sqrt[3]{2}$.
 \end{dokaz}
@@ -89,7 +89,7 @@ Peter Messer v~\cite{messer1986} navaja avtorski postopek, ki sicer ne konstruir
 \subsection{Trisekcija kota}
 \label{podpogl:trisekcija}
 
-Kot $90^\circ$ znamo tretjiniti z neoznačenim ravnilom in šestilom, saj znamo konstruirati kot $30^\circ$. Vem pa že, da ne obstaja konstrukcija, s katero na tri skladne kote razdelimo \emph{poljuben} kot -- v razdelku~\ref{podpogl:evkl_konstruktibilnost} smo dokazali neobstoj origami konstrukcije za trisekcijo kota $60^\circ$.
+Kot $90^\circ$ znamo tretjiniti z neoznačenim ravnilom in šestilom, saj znamo konstruirati kot $30^\circ$. Vemo pa že, da ne obstaja konstrukcija, s katero na tri skladne kote razdelimo \emph{poljuben} kot -- v razdelku~\ref{podpogl:evkl_konstruktibilnost} smo na strani~\pageref{dokaz_trisekcija} dokazali neobstoj origami konstrukcije za trisekcijo kota $60^\circ$.
 
 % SPODNJI DOKAZ JE PREPISAN IZ VIRA IN SAMO CITIRAN V prejšnjem odstavku
 
@@ -119,10 +119,10 @@ Grki so tudi ta problem uspeli rešiti s stožnicami. Videla v~\cite[str.\ 6--7]
 
 \subsubsection*{Abejeva metoda}
 
-Sledeča metoda ima ime po japonskemu matematiku Hisashiju Abeju, ki jo je odkril v $80$-ih letih prejšnjega stoletja. Postopek vključuje Belochin pregib, torej se ga ne da izvesti z evklidskim orodjem, edina pomankljivost metode pa je, da deluje le za ostre kote. Postopek je sledeč:
+Sledeča metoda ima ime po japonskemu matematiku Hisashiju Abeju, ki jo je odkril v $80$-ih letih prejšnjega stoletja. Postopek vključuje Belochin pregib, torej se ga ne da izvesti z evklidskim orodjem. Postopek je sledeč:
 
 \begin{enumerate}
-    \item Na kvadratnem listu papirja konstruiramo poljuben kot $\theta$, ki ima vrh v spodnjem desnem vogalu in en krak na spodnji stranici. Nato konstruiramo še dva horizontalna in ekvidistančna pregiba na dnu papirja (slika~\ref{fig:abe_1} levo).
+    \item Na kvadratnem listu papirja konstruiramo poljuben kot $\theta$, ki ima vrh v spodnjem levem vogalu in en krak na spodnji stranici. Nato konstruiramo še dva horizontalna in ekvidistančna pregiba na dnu papirja (slika~\ref{fig:abe_1} levo).
     \item Točko $p_1$ prepognemo na spodnji horizontalen pregib, označen $L_1$, točko $p_2$ pa na poševen krak kota, označen z $L_2$ (slika~\ref{fig:abe_1} na sredi).
     \item Preden pregib razgrnemo, podaljšamo pregib $L_1$ do konca in nov pregib označimo z $L_3$ (slika~\ref{fig:abe_1} desno).
     \item Papir razgrnemo in tokrat v spodnji levi kot podaljšamo pregib $L_3$.
@@ -151,12 +151,19 @@ Sledeča metoda ima ime po japonskemu matematiku Hisashiju Abeju, ki jo je odkri
         \caption[Abejeva metoda ($2$.\ del)]{Dokazovanje Abejeve metode. Vzeto in predelano iz~\cite[str.\ 65]{hull2013}.}
         \label{fig:abe_2}
     \end{figure}
+    
     Ker je točka $C$ slika točke $p_1$ in $x$ leži na $L_1$, daljica $xC$ leži na $L_1$. Po konstrukciji daljica $xB$ leži na $L_3$, zato sta kota ob $x$, ko papir razgrnemo, skladna. Zaradi sovršnosti kotov daljica $p_1x$ leži na $L_3$, s čimer je prvi del trditve dokazan.
     
     Na razgrnjenem papirju zarišemo (ali prepognemo) še nekaj daljic (slika~\ref{fig:abe_2} desno). Ker velja $|AB| = |BC| = |CD|$ in imata pravokotna trikotnika $\triangle p_1AB$ in $\triangle p_1BC$ skupno še drugo kateto, trikotnika $\triangle p_1BC$ in $\triangle p_1CD$ pa skupno hipotenuzo, so vsi trije trikotniki skladni z enakim kotom v točki $p_1$, torej nam pregiba skozi daljici $p_1B$ (kar je ravno $L_3$) in $p_1C$ kot $\theta$ razdelijo na tri skladne kote.
 \end{dokaz}
 
-Ker ta postopek deluje le za ostre kote, si poglejmo naslednjo metodo, ki jo lahko uporabljamo tako za ostre kot tudi tope kote.
+S tem postopkom lahko tretjinimo ostre in prave kote. Za trisekcijo topega kota upoštevamo le majhno prilagoditev: Naj bo $\alpha < 90^\circ$ poljuben kot, torej je kot $\alpha + 90^\circ$ topi. Vzamemo pravokotni list papirja s stranicami v razmerju $2 : 1$, na središče spodnje stranice postavimo vrh kota, en krak pa na taisto stranico. S pregibom skozi vrh kota, ki je pravokoten na horizontalen krak, kot razdelimo na ostri kot $\alpha$ in pravi kot (gl.\ sliko~\ref{fig:abe_top}). Nato vsak kot posebej tretjinimo -- kot $\alpha$ z Abejevo metodo, pravi kot pa s poljubnim že znanim postopkom (npr.\ z Abejevo metodo ali preko evklidske konstrukcije kota $30^\circ$). Na sredi dobimo kot $\alpha/3 + 30^\circ = (\alpha + 90^\circ)/3$ (njegova kraka sta na sliki~\ref{fig:abe_top} označena z rdečo), ki je velik za tretjino originalnega kota.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{images/starogr_problemi/abe_topi_kot.png}
+    \caption[Abejeva metoda za topi kot]{Trisekcija topega kota $\alpha + 90^\circ$ po Abejevi metodi ($\alpha < 90^\circ$).}
+    \label{fig:abe_top}
+\end{figure}
 
 \subsubsection*{Justinova metoda}
 
@@ -200,7 +207,8 @@ Pri prvi vzamemo oster kot $\angle PQR$ in s točko $M$ označimo središče dal
     Ker velja $|QM| = |MP|$, $\angle PMP' = \angle TMQ$ in $QT \parallel PP'$, sta trikotnika $\triangle QMT$ in $\triangle PMP'$ skladna in je $|TM| = |MP'|$. Potem sta skladna tudi pravokotna trikotnika $\triangle TMQ'$ in $\triangle P'MQ'$, zato je $\angle MQ'P' = \angle TQ'M = \angle RQQ'$ (zaradi izmeničnih kotov ob vzporednicah $QR$ in $q$) $= \angle Q'QS$ (ker je trikotnik $\triangle QSQ'$ enakokrak).
     
     Bralec se lahko hitro prepriča, da daljica $Q'P'$ seka pregib ravno v njegovem presečišču z daljico $MP$ (vsi koti ob tem presečišču so zaradi konstrukcija pregiba in sovršnosti skladni). Zato velja še $\angle PQQ' = \angle P'Q'Q$, iz česar sledi
-    $$ \angle MQS = \angle SQT = \angle TQR.$$
+    $$ \angle MQS = \angle SQT = \angle TQR,$$
+    torej so vsi trije koti ob točki $Q$ skladni.
 \end{dokaz}
 
 Druga metoda je prvi zelo podobna. Zopet vzamemo oster kot $\angle PQR$ in s točko $M$ označimo središče daljice $PQ$. Naj bo $l$ pravokotnica na $QR$ skozi točko $Q$, točka $N$ nožišče pravokotnice na premico $l$ skozi točko $P$, s $q$ označimo pa še pravokotnico na premico $l$ skozi točko $M$. Opravimo tisti Belochin pregib, ki točko $Q$ položi na premico $q$ (v točko $Q'$) in točko $N$ na poltrak $QR$. Naj bo točka $S$ presečišče pregiba s premico $q$ (slika~\ref{fig:trisection_10.14}).
@@ -219,5 +227,6 @@ Druga metoda je prvi zelo podobna. Zopet vzamemo oster kot $\angle PQR$ in s to�
     Zopet premislimo, da se pregib, poltrak $QP$ in daljica $NQ'$ sekajo v isti točki. Zato je $\angle QQ'N = \angle PQQ'$. Zaradi vzporednosti kraka $QR$ in premice $q$ sta skladna tudi izmenična kota $\angle RQQ'$ in $\angle QQ'S$, z njima pa je zaradi enakokrakosti trikotnika $\triangle QSQ'$ skladen tudi kot $\angle SQQ'$.
 
     Ker velja $|QM| = |MP|$ in $q \parallel NP$, je premica $q$ simetrala daljice $QN$, torej tudi simetrala kota $\angle QQ'N$. Iz tega sledi
-    $$ \angle MQS = \angle SQQ' = \angle Q'QR.$$
+    $$ \angle MQS = \angle SQQ' = \angle Q'QR,$$
+    torej so vsi trije koti ob točki $Q$ skladni.
 \end{dokaz}
