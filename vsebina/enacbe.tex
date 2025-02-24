@@ -440,13 +440,27 @@ Naj sedaj stožnici $\mathcal{S}$ v $P(\R^3)$ pripada homogenizirana enačba~\eq
 
 Pri tem je realna simetrična matrika $M$ definirana do neničelnega skalarnega večkratnika natančno. Stožnica $\mathcal{S}$ je \emph{neizrojena} (ni unija dveh premic ali ene, dvojno štete premice), če ima poln rang, torej rang $ M = 3$ oziroma ekvivalentno $\det M \neq 0$. V nadaljevanju bomo delali le z neizrojenimi stožnicami, torej vedno obstaja inverz matrike $M$, ki je prav tako simetričen.
 
-Iz prvega minorja matrike $M$ lahko takoj preberemo, za katero vrsto neizrojene stožnice gre (za razlago gl.\ \cite{sivic2020}). Naj bo $A_M = a_{11}a_{22} - a_{12}^2$. Potem velja:
+Vse neizrojene stožnice v projektivni ravnini $P(\R^3)$ so med seboj ekvivalentne in imajo obliko stožca v $\R^3$. Naj bo stožnica $\mathcal{S}$ s pripradajočo matriko $M$ neizrojena. Če jo zožimo na afini del $\Pi: z=1$, lahko iz prvega minorja matrike $M$ takoj preberemo, za katero vrsto neizrojene stožnice gre (za algebraično razlago gl.\ \cite{sivic2020}). Naj bo $A_M = a_{11}a_{22} - a_{12}^2$. Potem velja:
 \begin{itemize}
-    \item $\mathcal{S}$ je hiperbola, če in samo če $A_M < 0$,
-    \item $\mathcal{S}$ je parabola, če in samo če $A_M = 0$ in
-    \item $\mathcal{S}$ je elipsa, če in samo če $A_M > 0$. Če poleg tega velja še $a_{11} = a_{22}$ in $a_{12} = 0$, je $\mathcal{S}$ krožnica.
+    \item $\mathcal{S} \cap \Pi$ je hiperbola, če in samo če $A_M < 0$,
+    \item $\mathcal{S} \cap \Pi$ je parabola, če in samo če $A_M = 0$ in
+    \item $\mathcal{S} \cap \Pi$ je elipsa, če in samo če $A_M > 0$. Če poleg tega velja še $a_{11} = a_{22}$ in $a_{12} = 0$, je $\mathcal{S} \cap \Pi$ krožnica.
+\end{itemize}
+Ekvivalentno bi lahko zožitev stožnice na afini del določili z njenim presekom s premico v neskončnosti $p_\infty$, ki je v $\R^3$ ravnina $z = 0$:
+\begin{itemize}
+    \item če $\mathcal{S} \cap p_\infty = \emptyset$, je zožitev elipsa,
+    \item če $\mathcal{S} \cap p_\infty = \{T\}$, je zožitev parabola in
+    \item če $\mathcal{S} \cap p_\infty = \{T_1, T_2\}$, je zožitev hiperbola.
 \end{itemize}
 
+\begin{definicija}
+    \emph{Tangenta} na stožnico $\mathcal{S}$ v točki $A \in \mathcal{S}$ je premica, ki $\mathcal{S}$ seka le v točki $A$.
+\end{definicija}
+\begin{opomba}
+    V projektivni ravnini je to ravno \emph{polara } projektivne točke $A$ glede na $\mathcal{S}$, tj.\ projektivna premica
+    $$p_A =\{ [x : y : z] \in P(\R^3) \; | \; [x, y, z] \cdot M \cdot a = 0 \}, \; a \in A.$$
+    V $\R^3$ je to ravnina skozi koordinatno izhodišče z normalo $\vec{n} = M \cdot \vec{a}$.
+\end{opomba}
 \begin{definicija}
     Naj bo $\mathcal{S} \subset P(\R^3)$ stožnica v realni projektivni ravnini. Njen dual imenujemo \emph{dualna stožnica} in je množica $\mathcal{S}^* \subset P^*(\R^3)$ v dualni projektivni ravnini, katere elementi so tangente premice na stožnico $\mathcal{S}$, tj.\
     $$ \mathcal{S}^* = \{ q \in P^*(\R^3) \; | \; q \text{ je tangentna na } \mathcal{S} \text{ v neki točki } p \in \mathcal{S} \}.$$
@@ -455,18 +469,18 @@ Iz prvega minorja matrike $M$ lahko takoj preberemo, za katero vrsto neizrojene 
     Stožnica $\mathcal{S}$ je torej ovojnica dualne stožnice $\mathcal{S}^*$.
 \end{opomba}
 
-Če stožnici $\mathcal{S}$ pripadata polinom $F(x,y,z)$ in posledično matrika $M$, je tangenta na točko $p \in \mathcal{S}$ dana z enačbo $x F_x(p) + y F_y(p) + z F_z(p) = 0$. Torej je
+Če stožnici $\mathcal{S}$ pripadata polinom $F$ in posledično matrika $M$, je tangenta na točko $p \in \mathcal{S}$ projektivna premica $\{[x : y : z] \; | \; [x \; y \; z] M p = 0 \}$. Bralec se lahko s kratkim izračunom prepriča, da velja $[F_x(p), \; F_y(p), \; F_z(p)]^\intercal = 2 M \cdot p$, torej velja kar
 $$ \mathcal{S}^* = \bigcup_{p \in \mathcal{S}} \{[x:y:z] \; | \; x F_x(p) + y F_y(p) + z F_z(p) = 0 \}.$$
 
 Od prej vemo, da so premice v $P^*(\R^3)$ definirane enako kot točke v $P(\R^3)$ in obratno, zato lahko pišemo
 $$ \mathcal{S}^* = \{ [F_x(p) : F_y(p) : F_z(p)] \; | \; p \in \mathcal{S} \}. $$
 
-Hitro se lahko prepričamo, da velja $[F_x(p) \; F_y(p) \; F_z(p)]^\intercal = 2 M \cdot p$. Če je $p \in \mathcal{S}$ in $ q \in \mathcal{S}^*$ tangenta na točko $p$, potem (z upoštevanjem homogenosti koordinat točk v projektivni ravnini) velja $q = M \cdot p$. Ker je matrika $M$ obrnljiva, to med drugim pomeni, da je preslikava $\mathcal{S} \longrightarrow \mathcal{S}^*$ s predpisom $p \mapsto Mp$ je bijekcija med $\mathcal{S}$ in $\mathcal{S}^*$. Ker velja
+Če je $p \in \mathcal{S}$ in $ q \in \mathcal{S}^*$ tangenta na točko $p$, potem (z upoštevanjem homogenosti koordinat točk v projektivni ravnini) velja $q = M \cdot p$. Ker je matrika $M$ obrnljiva, to med drugim pomeni, da je preslikava $\mathcal{S} \longrightarrow \mathcal{S}^*$ s predpisom $p \mapsto Mp$ je bijekcija med $\mathcal{S}$ in $\mathcal{S}^*$. Ker velja
 $$ q^\intercal M^{-1} q = (Mp)^\intercal M^{-1} (Mp) = p^\intercal M^\intercal M^{-1} M p = p^\intercal M p = 0,$$
 je $\mathcal{S}^*$ res stožnica, ki ji pripada matrika $M^{-1}$.
 
 \begin{opomba}
-    Vidimo, da je dualna stožnica dualne stožnice res originalna stožnica, kar ustreza principu dualnosti.
+    Ker velja $\left(M^{-1}\right)^{-1} = M$, je dualna stožnica dualne stožnice res originalna stožnica, kar ustreza principu dualnosti.
 \end{opomba}
 
 Poglejmo, kako nam znanje o stožnicah in njihovih dualnih stožnicah pomaga pri reševanju kubičnih in kvartičnih enačb. Naj bosta $\mathcal{S}_1$ in $\mathcal{S}_2$ stožnici s pripadajočima simetričnima obrnljivima matrikama $M_1$ in $M_2$. Potem je njuna skupna tangenta skupna točka njunih dualnih stožnic $\mathcal{S}^*_1$ in $\mathcal{S}^*_2$. Torej iščemo $q \in \mathcal{S}^*_1 \cap \mathcal{S}^*_2$, ki reši sistem enačb
@@ -477,13 +491,13 @@ Poglejmo, kako nam znanje o stožnicah in njihovih dualnih stožnicah pomaga pri
 
 \subsubsection*{Reševanje kubične enačbe}
 
-Vzemimo kubično enačbo oblike $ x^3 + bx^2 + cx + d = 0, d \neq 0$. Za stožnici vzamemo naslednji paraboli:
+Vzemimo kubično enačbo oblike $ x^3 + bx^2 + cx + d = 0, d \neq 0$. Vzamemo naslednji stožnici, ki sta v zožitvi na afini del paraboli:
 \begin{itemize}
     \item $\mathcal{P}_1: (y+c)^2 = -4d(x-b)$ z goriščem $F_1 (b - d, -c)$ in premico vodnico $L_1: x = b + d$,
     \item $\mathcal{P}_2: x^2 = -4y$ z goriščem $F_2 (0, -1)$ in premico vodnico $L_2: y = 1$.
 \end{itemize}
 
-Iz enačb parabol zapišemo njuni matriki
+Enačbi parabol razširimo v projektivno ravnino in iz njiju zapišemo njuni matriki
 $$ M_1 =
     \begin{bmatrix}
         0 & 0 & 2d\\
@@ -512,7 +526,7 @@ $$ M^{-1}_1 = \frac{1}{d}
     \end{bmatrix}.
 $$
 
-Naj bo $q = [A : B : C] \in \mathcal{P^*}_1 \cap \mathcal{P^*}_2$ skupna tangenta na paraboli $\mathcal{P}_1$ in $\mathcal{P}_2$. Iz sistema enačb~\eqref{eq:afin_sistem_tangenta_splosen} dobimo nov sistem
+Naj bo $q = [A : B : C] \in \mathcal{P^*}_1 \cap \mathcal{P^*}_2$ skupna tangenta na stožnici $\mathcal{P}_1$ in $\mathcal{P}_2$. Iz sistema enačb~\eqref{eq:afin_sistem_tangenta_splosen} dobimo nov sistem
 \begin{equation}
     \label{eq:afin_sistem_tangenta_ABC_kub}
     bA^2 - cAB + AC + dB^2 = 0 \; \text{ in } \; -BC = A^2.
@@ -547,7 +561,7 @@ Kot že povedano, sledeči postopek ne rešuje splošne enačbe četrte stopnje,
 \end{equation}
 Smiselno predpostavimo $c \neq 0$, da se enačba z uvedbo nove spremenljivke za $x^2$ ne more prevesti na kvadratno enačbo.
 
-Po Bezoutovem izreku (gl.\ \cite[izrek 2.4]{terglav2022}) imata dve različni in neizrojeni stožnici v kompleksni projektivni ravnini štiri presečišča vključno z večkratnostjo. Presečišča dualnih stožnic $\mathcal{S}^*_1$ in $\mathcal{S}^*_2$ v kompleksni dualni projektivni ravnini so torej štiri tangente na stožnici $\mathcal{S}_1$ in $\mathcal{S}_2$, ki nastopajo v konjugiranih parih -- po nič, dve ali štiri tangente (šteto z večkratnostjo). Dve paraboli imata skupno tangento v neskončnosti, torej ostanejo le še tri afine tangente, kar ni dovolj za vse rešitve kvartične enačbe. Zato tu ne moremo vzeti dveh parabol.
+Po Bezoutovem izreku (gl.\ \cite[izrek 2.4]{terglav2022}) imata dve različni in neizrojeni stožnici v kompleksni projektivni ravnini štiri presečišča vključno z večkratnostjo. Presečišča dualnih stožnic $\mathcal{S}^*_1$ in $\mathcal{S}^*_2$ v kompleksni dualni projektivni ravnini so torej štiri tangente na stožnici $\mathcal{S}_1$ in $\mathcal{S}_2$, ki nastopajo v konjugiranih parih -- po nič, dve ali štiri tangente (šteto z večkratnostjo). Dve paraboli imata v afini ravnini za eno od skupnih tangent premico v neskončnosti, torej ostanejo le še tri afine tangente, to pa ni dovolj za vse rešitve kvartične enačbe. Zato tu ne moremo vzeti dveh parabol.
 
 Poskusimo najprej z metodo, ki smo jo uporabili pri reševanju kubične enačbe. Avtorja pri predpostavki $bd - c^2 \neq 0$ vzameta naslednji stožnici:
 \begin{itemize}
