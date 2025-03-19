@@ -384,7 +384,7 @@ Poglejmo si model realne projektivne ravnine, ki ga označimo s $P(\R^3)$. Točk
 
 Naj bosta v $\R^3$ dani točka $P = (x_0, y_0, z_0)$, ki ni koordinatno izhodišče, in premica $p$, ki poteka skozi koordinatno izhodišče in vsebuje točko $P$. Premica $p$ predstavlja projektivno točko v $P(\R^3)$, ki jo označimo s t.~i.\ \emph{projektivnimi} koordinatami $[x_0 : y_0 : z_0]$. Ker za poljuben neničeln $\lambda \in \R$ točka s koordinatami $(\lambda x_0, \lambda y_0, \lambda z_0)$ določa isto premico $p$ kot točka $P$ (in s tem isto projektivno točko), lahko pišemo $[\lambda x_0 : \lambda y_0 : \lambda z_0] = [x_0 : y_0 : z_0]$. Tej lastnosti pravimo \emph{homogenost} projektivnih koordinat.
 
-Poljubna ravnina v $\R^3$ skozi koordinatno izhodišče ima enačbo $ax+by+cz=0$, kjer so $a, b, c \in \R$, ne vsi enaki $0$. Projektivna premica, ki jo ta ravnina določa, je tako množica projektivnih točk $\{ [x:y:z]; ax+by+cz = 0\}$.
+Poljubna ravnina v $\R^3$ skozi koordinatno izhodišče ima enačbo $ax+by+cz=0$, kjer so $a, b, c \in \R$, ne vsi enaki $0$. Projektivna premica, ki jo ta ravnina predstavlja, je tako množica projektivnih točk $\{ [x:y:z]; ax+by+cz = 0\}$.
 
 % Predstavljajmo si, da realno ravnino $\R^2$ postavimo na nivo $z = 1$.
 
@@ -406,6 +406,8 @@ Realno ravnino $\R^2$ lahko vložimo v projektivno ravnino $P(\R^3)$. Ponavadi t
 Evklidske premice skozi koordinatno izhodišče, ki ne sekajo ravnine $z = 1$ (torej ležijo na ravnini $z=0$), predstavljajo točke, ki jih imenujemo \emph{točke v neskončnosti}. Te projektivne točke imajo tretjo koordinato ničelno. Sama ravnina $z = 0$ predstavlja t.~i.\ \emph{premico v neskončnosti}.
 
 Ključna lastnost projektivne ravnine je, da se v njej sekata \emph{vsaki dve} poljubni projektivni premici (v ekvlidski ravnini to ne velja, saj obstajajo vzporedne premice). To hitro vidimo -- vsaki dve ravnini v $\R^3$, ki vsebujeta koordinatno izhodišče (torej vsaki dve projektivni premici), sekata v neki evklidski premici, ki vsebuje izhodišče (torej v projektivni točki, ki je predstavljena s premico v presečišču teh dveh ravnin). Ko je ena izmed projektivnih premic premica v neskončnosti, v preseku dobimo \emph{točko v neskončnosti}. Tako si lahko projektivno ravnino lahko predstavljamo kot običajno ravnino, ki ima dodano premico v neskončnosti ($z = 0$).
+
+\textcolor{red}{Opcija: v tem razdelku ne omenim dualnosti (potem tudi izbriši ``in dualnost'' in podnaslova). V tem primeru moraš definirati, kaj je dualna projektivna ravnina, pri definiciji dualne stožnice \ldots}
 
 Tako veljajo naslednji aksiomi projektivne ravnine:
 \begin{itemize}
@@ -437,7 +439,7 @@ kjer so $a_{ij}$ poljubna realna števila. V projektivni ravnini je stožnica de
     $$ \mathcal{S} = \{[x:y:z] \in P(\R^3); F(x,y,z) = 0\}.$$  
 \end{definicija}
 \begin{opomba}
-    Med enačbama stožnic v obeh ravninah obstaja povezava. Razširitvi enačbe stožnice iz $\R^2$ v $P(\R^3)$ rečemo \emph{homogenizacija}, obratnemu procesu (zožitvi stožnice na afini del, ravnino $z = 1$) pa \emph{dehomogenizacija}.
+    Med enačbama stožnic v obeh ravninah obstaja povezava. Razširitvi enačbe stožnice iz $\R^2$ v $P(\R^3)$ rečemo \emph{homogenizacija} (vsak člen v enačbi pomnožimo s tako potenco spremenljivke $z$, da je skupna stopnja vsakega člena enaka $2$), obratnemu procesu (zožitvi stožnice na afini del, ravnino $z = 1$) pa \emph{dehomogenizacija}.
 \end{opomba}
 
 Naj sedaj stožnici $\mathcal{S}$ v $P(\R^3)$ pripada homogenizirana enačba~\eqref{eq:stoznica_splosna}, kar lahko krajše zapišemo v obliki
@@ -458,9 +460,11 @@ Naj sedaj stožnici $\mathcal{S}$ v $P(\R^3)$ pripada homogenizirana enačba~\eq
     \end{bmatrix}.
 \end{equation}
 
-Pri tem je realna simetrična matrika $M$ definirana do neničelnega skalarnega večkratnika natančno. Stožnica $\mathcal{S}$ je \emph{neizrojena} (ni unija dveh premic ali ene, dvojno štete premice), če ima poln rang, torej rang $ M = 3$ oziroma ekvivalentno $\det M \neq 0$. V nadaljevanju bomo delali le z neizrojenimi stožnicami, torej vedno obstaja inverz matrike $M$, ki je prav tako simetričen.
+Pri tem je realna simetrična matrika $M$ definirana do neničelnega skalarnega večkratnika natančno. Stožnica $\mathcal{S}$ je \emph{neizrojena} (ni unija dveh premic ali ene, dvojno štete premice), če ima poln rang, torej rang $ M = 3$, kar je ekvivalentno $\det M \neq 0$. V nadaljevanju bomo delali le z neizrojenimi stožnicami, torej vedno obstaja inverz matrike $M$, ki je prav tako simetričen.
 
-Vse neizrojene stožnice v projektivni ravnini $P(\R^3)$ so med seboj ekvivalentne in imajo obliko stožca v $\R^3$. Naj bo stožnica $\mathcal{S}$ s pripradajočo matriko $M$ neizrojena. Če jo zožimo na afini del $\Pi: z=1$, lahko iz prvega minorja matrike $M$ takoj preberemo, za katero vrsto neizrojene stožnice gre (za algebraično razlago gl.\ \cite{sivic2020}). Naj bo $A_M = a_{11}a_{22} - a_{12}^2$. Potem velja:
+Vse neizrojene stožnice v projektivni ravnini $P(\R^3)$
+%so med seboj ekvivalentne in
+imajo v $\R^3$ obliko stožca. Naj bo stožnica $\mathcal{S}$ s pripradajočo matriko $M$ neizrojena. Če jo zožimo na afini del $\Pi: z=1$, lahko iz prvega minorja matrike $M$ takoj preberemo, za katero vrsto neizrojene stožnice gre (za algebraično razlago gl.\ \cite{sivic2020}). Naj bo $A_M = a_{11}a_{22} - a_{12}^2$. Potem velja:
 \begin{itemize}
     \item $\mathcal{S} \cap \Pi$ je hiperbola, če in samo če $A_M < 0$,
     \item $\mathcal{S} \cap \Pi$ je parabola, če in samo če $A_M = 0$ in
@@ -474,10 +478,10 @@ Ekvivalentno bi lahko zožitev stožnice na afini del določili z njenim preseko
 \end{itemize}
 
 \begin{definicija}
-    \emph{Tangenta} na stožnico $\mathcal{S}$ v točki $A \in \mathcal{S}$ je premica, ki $\mathcal{S}$ seka le v točki $A$.
+    \emph{Tangenta} na stožnico $\mathcal{S} \subseteq P(\R^3)$ v točki $A \in \mathcal{S}$ je premica, ki $\mathcal{S}$ seka le v točki $A$.
 \end{definicija}
 \begin{opomba}
-    V projektivni ravnini je to ravno \emph{polara } projektivne točke $A$ glede na $\mathcal{S}$, tj.\ projektivna premica
+    V projektivni ravnini je to ravno \emph{polara} projektivne točke $A \in \mathcal{S}$, tj.\ projektivna premica
     $$p_A =\{ [x : y : z] \in P(\R^3) \; | \; [x, y, z] \cdot M \cdot a = 0 \}, \; a \in A.$$
     V $\R^3$ je to ravnina skozi koordinatno izhodišče z normalo $\vec{n} = M \cdot \vec{a}$.
 \end{opomba}
@@ -489,7 +493,7 @@ Ekvivalentno bi lahko zožitev stožnice na afini del določili z njenim preseko
     Stožnica $\mathcal{S}$ je torej ovojnica dualne stožnice $\mathcal{S}^*$.
 \end{opomba}
 
-Če stožnici $\mathcal{S}$ pripadata polinom $F$ in posledično matrika $M$, je tangenta na točko $p \in \mathcal{S}$ projektivna premica $\{[x : y : z] \; | \; [x \; y \; z] M p = 0 \}$. Bralec se lahko s kratkim izračunom prepriča, da velja $[F_x(p), \; F_y(p), \; F_z(p)]^\intercal = 2 M \cdot p$, torej velja kar
+Pokažimo, da je $\mathcal{S}^*$ res stožnica. Če stožnici $\mathcal{S}$ pripadata polinom $F$ in posledično matrika $M$, je tangenta na točko $p \in \mathcal{S}$ projektivna premica $\{[x : y : z] \; | \; [x \; y \; z] M p = 0 \}$. Bralec se lahko s kratkim izračunom prepriča, da velja $[F_x(p), \; F_y(p), \; F_z(p)]^\intercal = 2 M \cdot p$, torej velja kar
 $$ \mathcal{S}^* = \bigcup_{p \in \mathcal{S}} \{[x:y:z] \; | \; x F_x(p) + y F_y(p) + z F_z(p) = 0 \}.$$
 
 Od prej vemo, da so premice v $P^*(\R^3)$ definirane enako kot točke v $P(\R^3)$ in obratno, zato lahko pišemo
