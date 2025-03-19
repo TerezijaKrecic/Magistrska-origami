@@ -380,18 +380,38 @@ Skupne tangente na dve paraboli ali na parabolo in krožnico zdaj znamo konstrui
 
 \subsubsection*{Projektivna ravnina in dualnost}
 
-Poglejmo si model realne projektivne ravnine, ki ga označimo s $P(\R^3)$. Točke našega modela so predstavljene z evklidskimi premicami skozi koordinatno izhodišče, premice pa z evklidskimi ravninami, ki vsebujejo izhodišče. Predstavljajmo si, da realno ravnino $\R^2$ postavimo na nivo $z = 1$.
-\begin{itemize}
-    \item Vsaka točka $P = (x_0, y_0, 1)$ na ravnini $z = 1$ je predstavljena z evklidsko premico, ki gre skozi koordinatno izhodišče in točko $P$. Ta premica je točka projektivne ravnine $P(\R^3)$ in jo označimo z $[x_0 : y_0 : 1]$. Ker za poljuben $\lambda \in \C$ velja, da točka $(\lambda x_0, \lambda y_0, \lambda)$ leži na isti premici, je $[\lambda x_0 : \lambda y_0 : \lambda] = [x_0 : y_0 : 1]$, tj.\ ti dve točki projektivne ravnine sta enaki, saj v $\R^3$ določata isto premico.
-    \item Premica $l: ax + by + c = 0$ na ravnini $z = 1$ je predstavljena z evklidsko ravnino, ki vsebuje $l$ in koordinatno izhodišče. Ta ravnina je premica projektivne ravnine $P(\R^3)$ in je množica določenih projektivnih točk $\{ [x:y:z]; ax+by+cz = 0\}$.
-\end{itemize}
-Vsaki dve evklidski ravnini v $\R^3$, ki vsebujeta koordinatno izhodišče, se sekata v eni evklidski premici, torej se vsaki dve premici (predstavljeni z ravninama) v tem modelu res sekata v eni točki (predstavljeni s premico v presečišču teh dveh ravnin). Evklidske premice skozi koordinatno izhodišče, ki ne sekajo ravnine $z = 1$, predstavljajo točke, ki jih imenujemo \emph{točke v neskončnosti}. To so natanko evklidske premice v ravnini $xy$, ki gredo skozi koordinatno izhodišče. Sama ravnina $xy$ predstavlja t.~i.\ \emph{premico v neskončnosti}.
+Poglejmo si model realne projektivne ravnine, ki ga označimo s $P(\R^3)$. Točke našega modela so predstavljene z evklidskimi premicami v $\R^3$ skozi koordinatno izhodišče (imenujmo jih \emph{projektivne točke}), premice pa z evklidskimi ravninami v $\R^3$, ki vsebujejo izhodišče (imenujmo jih \emph{projektivne premice}).
 
-Ključna lastnost projektivne ravnine je, da se v njej sekajo prav vse projektivne premice. Presek poljubne projektivne premice s premico v neskončnosti je namreč prav tako točka, in sicer ravno \emph{točka v neskončnosti}. Tako si lahko projektivno ravnino lahko predstavljamo kot običajno ravnino, ki ima dodano premico v neskončnosti ($z = 0$). Tako veljajo naslednji aksiomi projektivne ravnine:
+Naj bosta v $\R^3$ dani točka $P = (x_0, y_0, z_0)$, ki ni koordinatno izhodišče, in premica $p$, ki poteka skozi koordinatno izhodišče in vsebuje točko $P$. Premica $p$ predstavlja projektivno točko v $P(\R^3)$, ki jo označimo s t.~i.\ \emph{projektivnimi} koordinatami $[x_0 : y_0 : z_0]$. Ker za poljuben neničeln $\lambda \in \R$ točka s koordinatami $(\lambda x_0, \lambda y_0, \lambda z_0)$ določa isto premico $p$ kot točka $P$ (in s tem isto projektivno točko), lahko pišemo $[\lambda x_0 : \lambda y_0 : \lambda z_0] = [x_0 : y_0 : z_0]$. Tej lastnosti pravimo \emph{homogenost} projektivnih koordinat.
+
+Poljubna ravnina v $\R^3$ skozi koordinatno izhodišče ima enačbo $ax+by+cz=0$, kjer so $a, b, c \in \R$, ne vsi enaki $0$. Projektivna premica, ki jo ta ravnina določa, je tako množica projektivnih točk $\{ [x:y:z]; ax+by+cz = 0\}$.
+
+% Predstavljajmo si, da realno ravnino $\R^2$ postavimo na nivo $z = 1$.
+
+% Če za projektivno točko $[x_0 : y_0 : z_0]$ velja $z_0 \neq 0$, lahko njene koordinate zaradi homogenosti delimo z $z_0$ in dobimo isto projektivno točko $[x'_0 : y'_0 : 1]$, kjer velja $x'_0 = x_0/z_0$ in $y'_0 = y_0/z_0$. Torej ta projektivna točka določa točko $(x'_0, y'_0, 1)$ v $\R^3$, ki leži na ravnini $z=1$. 
+
+Realno ravnino $\R^2$ lahko vložimo v projektivno ravnino $P(\R^3)$. Ponavadi to storimo tako, da jo postavimo na nivo $z=1$ (slika~\ref{fig:vlozitev_proj_ravnina}):
 \begin{itemize}
-    \item [P1] Vsak par točk leži na natanko eni premici.
-    \item [P2] Vsak par premic se seka v natanko eni točki.
-    \item [P3] Obstajajo 4 točke, od katerih nobena trojica ni kolinearna.
+    \item Točka $(x_0, y_0)$ v $\R^2$ določa točko $P = (x_0, y_0, 1)$ na tej ravnini, ki v $\R^3$ določa enolično premico $p$ skozi $P$ in izhodišče, kar je v $P(\R^3)$ projektivna točka $[x_0 : y_0 : 1]$.
+    \item Premica $ax + by + c = 0$ v $\R^2$ določa premico v $\R^3$ z enako enačbo, ki leži na ravnini $z = 1$, to pa v $\R^3$ določa enolično ravnino, ki vsebuje to premico in koordinatno izhodišče, kar je v $P(\R^3)$ projektivna premica $\{ [x:y:z]; ax+by+cz = 0\}$.
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/projektivna_ravnina.jpg}
+    \caption[Vložitev realne ravnine v projektivno]{Vložitev realne ravnine $\R^2$ v projektivno ravnino $P(\R^3$).}
+    \label{fig:vlozitev_proj_ravnina}
+\end{figure}
+
+Evklidske premice skozi koordinatno izhodišče, ki ne sekajo ravnine $z = 1$ (torej ležijo na ravnini $z=0$), predstavljajo točke, ki jih imenujemo \emph{točke v neskončnosti}. Te projektivne točke imajo tretjo koordinato ničelno. Sama ravnina $z = 0$ predstavlja t.~i.\ \emph{premico v neskončnosti}.
+
+Ključna lastnost projektivne ravnine je, da se v njej sekata \emph{vsaki dve} poljubni projektivni premici (v ekvlidski ravnini to ne velja, saj obstajajo vzporedne premice). To hitro vidimo -- vsaki dve ravnini v $\R^3$, ki vsebujeta koordinatno izhodišče (torej vsaki dve projektivni premici), sekata v neki evklidski premici, ki vsebuje izhodišče (torej v projektivni točki, ki je predstavljena s premico v presečišču teh dveh ravnin). Ko je ena izmed projektivnih premic premica v neskončnosti, v preseku dobimo \emph{točko v neskončnosti}. Tako si lahko projektivno ravnino lahko predstavljamo kot običajno ravnino, ki ima dodano premico v neskončnosti ($z = 0$).
+
+Tako veljajo naslednji aksiomi projektivne ravnine:
+\begin{itemize}
+    \item [P1:] Vsak par različnih točk leži na natanko eni premici.
+    \item [P2:] Vsak par različnih premic se seka v natanko eni točki.
+    \item [P3:] Obstajajo 4 točke, od katerih nobena trojica ni kolinearna.
 \end{itemize}
 
 V projektivni ravnini velja \emph{načelo dualnosti} -- vsaka značilnost, ki velja za premice, velja tudi za točke in obratno. Na splošno lahko v vsakem izreku ravninske projektivne geometrije zamenjamo besedi ``točke'' in ``premice'' med sabo, pa bo izrek še vedno veljal. Če malo preoblikujemo aksioma P1 in P2, vidimo, da sta drug drugemu dualna izjava:
