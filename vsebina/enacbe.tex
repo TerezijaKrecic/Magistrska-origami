@@ -382,13 +382,9 @@ Skupne tangente na dve paraboli ali na parabolo in krožnico zdaj znamo konstrui
 
 Poglejmo si model realne projektivne ravnine, ki ga označimo s $P(\R^3)$. Točke našega modela so predstavljene z evklidskimi premicami v $\R^3$ skozi koordinatno izhodišče (imenujmo jih \emph{projektivne točke}), premice pa z evklidskimi ravninami v $\R^3$, ki vsebujejo izhodišče (imenujmo jih \emph{projektivne premice}).
 
-Naj bosta v $\R^3$ dani točka $P = (x_0, y_0, z_0)$, ki ni koordinatno izhodišče, in premica $p$, ki poteka skozi koordinatno izhodišče in vsebuje točko $P$. Premica $p$ predstavlja projektivno točko v $P(\R^3)$, ki jo označimo s t.~i.\ \emph{projektivnimi} koordinatami $[x_0 : y_0 : z_0]$. Ker za poljuben neničeln $\lambda \in \R$ točka s koordinatami $(\lambda x_0, \lambda y_0, \lambda z_0)$ določa isto premico $p$ kot točka $P$ (in s tem isto projektivno točko), lahko pišemo $[\lambda x_0 : \lambda y_0 : \lambda z_0] = [x_0 : y_0 : z_0]$. Tej lastnosti pravimo \emph{homogenost} projektivnih koordinat.
+Naj bosta v $\R^3$ dani točka $P = (x_0, y_0, z_0)$, ki ni koordinatno izhodišče, in premica $p$, ki poteka skozi koordinatno izhodišče in vsebuje točko $P$. Premica $p$ predstavlja projektivno točko v $P(\R^3)$, ki jo označimo s t.~i.\ \emph{homogenimi} koordinatami $[x_0 : y_0 : z_0]$. Ker za poljuben neničeln $\lambda \in \R$ točka s koordinatami $(\lambda x_0, \lambda y_0, \lambda z_0)$ določa isto premico $p$ kot točka $P$ in s tem isto projektivno točko, lahko pišemo $[\lambda x_0 : \lambda y_0 : \lambda z_0] = [x_0 : y_0 : z_0]$.
 
 Poljubna ravnina v $\R^3$ skozi koordinatno izhodišče ima enačbo $ax+by+cz=0$, kjer so $a, b, c \in \R$, ne vsi enaki $0$. Projektivna premica, ki jo ta ravnina predstavlja, je tako množica projektivnih točk $\{ [x:y:z] \; | \; ax+by+cz = 0\}$.
-
-% Predstavljajmo si, da realno ravnino $\R^2$ postavimo na nivo $z = 1$.
-
-% Če za projektivno točko $[x_0 : y_0 : z_0]$ velja $z_0 \neq 0$, lahko njene koordinate zaradi homogenosti delimo z $z_0$ in dobimo isto projektivno točko $[x'_0 : y'_0 : 1]$, kjer velja $x'_0 = x_0/z_0$ in $y'_0 = y_0/z_0$. Torej ta projektivna točka določa točko $(x'_0, y'_0, 1)$ v $\R^3$, ki leži na ravnini $z=1$. 
 
 Realno ravnino $\R^2$ lahko vložimo v projektivno ravnino $P(\R^3)$. Ponavadi to storimo tako, da jo postavimo na nivo $z=1$ (slika~\ref{fig:vlozitev_proj_ravnina}):
 \begin{itemize}
@@ -403,25 +399,58 @@ Realno ravnino $\R^2$ lahko vložimo v projektivno ravnino $P(\R^3)$. Ponavadi t
     \label{fig:vlozitev_proj_ravnina}
 \end{figure}
 
-Evklidske premice skozi koordinatno izhodišče, ki ne sekajo ravnine $z = 1$ (torej ležijo na ravnini $z=0$), predstavljajo točke, ki jih imenujemo \emph{točke v neskončnosti}. Te projektivne točke imajo tretjo koordinato ničelno. Sama ravnina $z = 0$ predstavlja t.~i.\ \emph{premico v neskončnosti}.
+Evklidske premice skozi koordinatno izhodišče, ki ne sekajo ravnine $z = 1$ (torej ležijo na ravnini $z=0$), predstavljajo projektivne točke, ki jih imenujemo \emph{točke v neskončnosti}. Te točke imajo tretjo koordinato ničelno. Sama ravnina $z = 0$ predstavlja t.~i.\ \emph{premico v neskončnosti}, ki jo označimo s $p_\infty$.
 
-Ključna lastnost projektivne ravnine je, da se v njej sekata \emph{vsaki dve} poljubni projektivni premici (v ekvlidski ravnini to ne velja, saj obstajajo vzporedne premice). To hitro vidimo -- vsaki dve ravnini v $\R^3$, ki vsebujeta koordinatno izhodišče (torej vsaki dve projektivni premici), sekata v neki evklidski premici, ki vsebuje izhodišče (torej v projektivni točki, ki je predstavljena s premico v presečišču teh dveh ravnin). Ko je ena izmed projektivnih premic premica v neskončnosti, v preseku dobimo \emph{točko v neskončnosti}. Tako si lahko projektivno ravnino lahko predstavljamo kot običajno ravnino, ki ima dodano premico v neskončnosti ($z = 0$).
+% Ključna lastnost projektivne ravnine je, da se v njej sekata \emph{vsaki dve} poljubni projektivni premici (v ekvlidski ravnini to ne velja, saj obstajajo vzporedne premice). To hitro vidimo -- vsaki dve ravnini v $\R^3$, ki vsebujeta koordinatno izhodišče (torej vsaki dve projektivni premici), sekata v neki evklidski premici, ki vsebuje izhodišče (torej v projektivni točki, ki je predstavljena s premico v presečišču teh dveh ravnin). Ko je ena izmed projektivnih premic premica v neskončnosti, v preseku dobimo \emph{točko v neskončnosti}. Tako si lahko projektivno ravnino lahko predstavljamo kot običajno ravnino, ki ima dodano premico v neskončnosti ($z = 0$).
 
-\textcolor{red}{Opcija: v tem razdelku ne omenim dualnosti (potem tudi izbriši ``in dualnost'' in podnaslova). V tem primeru moraš definirati, kaj je dualna projektivna ravnina, pri definiciji dualne stožnice \ldots}
+% Tako veljajo naslednji aksiomi projektivne ravnine:
+% \begin{itemize}
+%     \item [P1:] Vsak par različnih točk leži na natanko eni premici.
+%     \item [P2:] Vsak par različnih premic se seka v natanko eni točki.
+%     \item [P3:] Obstajajo 4 točke, od katerih nobena trojica ni kolinearna.
+% \end{itemize}
 
-Tako veljajo naslednji aksiomi projektivne ravnine:
-\begin{itemize}
-    \item [P1:] Vsak par različnih točk leži na natanko eni premici.
-    \item [P2:] Vsak par različnih premic se seka v natanko eni točki.
-    \item [P3:] Obstajajo 4 točke, od katerih nobena trojica ni kolinearna.
-\end{itemize}
+% V projektivni ravnini velja \emph{načelo dualnosti} -- vsaka značilnost, ki velja za premice, velja tudi za točke in obratno. Na splošno lahko v vsakem izreku ravninske projektivne geometrije zamenjamo besedi ``točke'' in ``premice'' med sabo, pa bo izrek še vedno veljal. Če malo preoblikujemo aksioma P1 in P2, vidimo, da sta drug drugemu dualna izjava:
+% \begin{itemize}
+%     \item Dve točki enolično določata premico (tj.\ tisto, ki poteka skozi obe točki).
+%     \item Dve premici enolično določata točko (tj.\ presečišče).
+% \end{itemize}
+% Dualna projektivne ravnine $P(\R^3)$ je projektivna ravnina $P^*(\R^3)$. Dual duala projektivne ravnine je originalna projektivna ravnina.
 
-V projektivni ravnini velja \emph{načelo dualnosti} -- vsaka značilnost, ki velja za premice, velja tudi za točke in obratno. Na splošno lahko v vsakem izreku ravninske projektivne geometrije zamenjamo besedi ``točke'' in ``premice'' med sabo, pa bo izrek še vedno veljal. Če malo preoblikujemo aksioma P1 in P2, vidimo, da sta drug drugemu dualna izjava:
-\begin{itemize}
-    \item Dve točki enolično določata premico (tj.\ tisto, ki poteka skozi obe točki).
-    \item Dve premici enolično določata točko (tj.\ presečišče).
-\end{itemize}
-Dualna projektivne ravnine $P(\R^3)$ je projektivna ravnina $P^*(\R^3)$. Dual duala projektivne ravnine je originalna projektivna ravnina.
+Med projektivnimi točkami in premicami obstaja bijekcija. To je \emph{dualna preslikava}, ki objektu v projektivni ravnini priredi njegov ortogonalni komplement. Iz tega takoj sledi, da je dualna preslikava sama sebi inverz.
+
+Kot primer dualna preslikava projektivni točki, tj.\ evklidski premici z nekim smernim vektorjem, priredi projektivno premico, tj.\ evklidsko ravnino, ki ima ta smerni vektor za normalo. Natančneje je to prikazano v tabeli~\ref{tab:dualna_preslikava}, kjer je dodana tudi povezava med realno in projektivno ravnino. Puščice lahko obrnemo tudi v nasprotno smer in iz premice v realni ravnini pripadajočo projektivno premico slikamo v projektivno točko, le-to pa v točko v realni ravnini.
+
+\begin{table}[h!]
+    \begin{center}
+    \begin{tabular}{r|cccc}
+    & $\R^2$ & & $P(\R^3)$ \\
+    \hline \\
+    točka & $(a,b)$ & $\xrightarrow{\text{vložitev v } P(\R^3)}$ & $[a : b : 1] $ \\
+    & & & \\
+    & &  & \textcolor{red}{$\downarrow$} \\
+    & & & \\
+    premica & $ ax + by + 1 = 0$ & $\xleftarrow{\text{zožitev na } z = 1} $ & $\{ [x:y:z] \; | \; ax+by+z = 0 \} $
+    \end{tabular}
+    \end{center}
+    \caption{Dualna preslikava projektivne točke v projektivno premico.}
+    \label{tab:dualna_preslikava}
+\end{table}
+
+Sliki objekta, ki ga preslikamo z dualno preslikavo, rečemo \emph{dual}. V nadaljevanju bomo obravnavali duale stožnic. 
+
+\textbf{Primer:} Vzemimo parabolo z enačbo $y = x^2$ v realni ravnini. Naj bo $A = (a, a^2)$ točka na tej paraboli, ki v projektivni ravnini določa projektivno točko $[a: a^2: 1]$. Z dualno preslikavo se le-ta preslika v projektivno premico $\{ [x:y:z] \; | \; ax+a^2y+z = 0 \} $, kar je v afini ravnini evklidska premica $ax + a^2y + 1 = 0$ (slika~\ref{fig:dual3D}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/dualna_preslikava_3D2.png}
+    \caption[Vizualizacija dualne preslikave]{Točka $[a:a^2:1]$ se preslika v premico -- evklidsko ravnino $ax+a^2y+z=0$.}
+    \label{fig:dual3D}
+\end{figure}
+
+Zožitve projektivne premice, ki jo dobimo z dualno preslikavo projektivnih točk s homogenimi koordinatami $[a:a^2:1]$, na ravnino $z=1$ sestavljajo družino premic s parametrizacijo $F(a,x,y) = ax+a^2y+1=0$, kjer je $a \in \R$ parameter. Iz začetka poglavja~\ref{pogl:stoznice} že vemo, da so te premice tangente na ovojnico te družine, katere enačbo že znamo izračunati. Iz formule $\frac{\partial}{\partial a} F(a, x, y) = 0$ dobimo $a = -x/2y$, ko to vstavimo v formulo $F(a, x, y) = 0$, pa $4y = x^2$.
+
+V naslednjem razdelku si bomo pogledali, kako stožnice in njihove duale predstavimo v projektivni ravnini. Videli bomo, da smo s tem primerom v resnici preslikali parabolo z enačbo $yz = x^2$ v njeno dualno parabolo z enačbo $4yz = x^2$, pri čemer so nam zožitve slik projektivnih točk s prve parabole podale afine tangente na zožitev dualne parabole na afino ravnino. Naš primer je bil lažje izračunljiv, saj je bila dana parabola v afini ravnini funkcija, v splošnem pa stožnice niso funkcije in spremenljivke $b$ ne moremo enostavno izraziti z $a$.
 
 \subsubsection*{Stožnice v projektivni ravnini}
 \label{podpogl:stoznice_projektivna}
@@ -439,14 +468,14 @@ kjer so $a_{ij}$ poljubna realna števila. V projektivni ravnini je stožnica de
     $$ \mathcal{S} = \{[x:y:z] \in P(\R^3) \; | \; F(x,y,z) = 0\}.$$  
 \end{definicija}
 \begin{opomba}
-    Med enačbama stožnic v obeh ravninah obstaja povezava. Razširitvi enačbe stožnice iz $\R^2$ v $P(\R^3)$ rečemo \emph{homogenizacija} (vsak člen v enačbi pomnožimo s tako potenco spremenljivke $z$, da je skupna stopnja vsakega člena enaka $2$), obratnemu procesu (zožitvi stožnice na afini del, ravnino $z = 1$) pa \emph{dehomogenizacija}.
+    Med enačbama stožnic v obeh ravninah obstaja povezava. Razširitvi enačbe stožnice iz $\R^2$ v $P(\R^3)$ rečemo \emph{homogenizacija} (vsak člen v enačbi pomnožimo s tako potenco spremenljivke $z$, da je skupna stopnja vsakega člena enaka $2$), obratnemu procesu (zožitvi stožnice na afini del, tj.\ upoštevanjem $z = 1$ v enačbi) pa \emph{dehomogenizacija}.
 \end{opomba}
 
 Naj sedaj stožnici $\mathcal{S}$ v $P(\R^3)$ pripada homogenizirana enačba~\eqref{eq:stoznica_splosna}, kar lahko krajše zapišemo v obliki
 \begin{equation}
     \label{eq:stoznica_matricna}
-    \mathcal{S}: a^\intercal M a = 0,
-    \text{ kjer sta } a =
+    \mathcal{S}: v^\intercal M v = 0,
+    \text{ kjer sta } v =
     \begin{bmatrix}
         x\\
         y\\
@@ -462,9 +491,7 @@ Naj sedaj stožnici $\mathcal{S}$ v $P(\R^3)$ pripada homogenizirana enačba~\eq
 
 Pri tem je realna simetrična matrika $M$ definirana do neničelnega skalarnega večkratnika natančno. Stožnica $\mathcal{S}$ je \emph{neizrojena} (ni unija dveh premic ali ene, dvojno štete premice), če ima poln rang, torej rang $ M = 3$, kar je ekvivalentno $\det M \neq 0$. V nadaljevanju bomo delali le z neizrojenimi stožnicami, torej vedno obstaja inverz matrike $M$, ki je prav tako simetričen.
 
-Vse neizrojene stožnice v projektivni ravnini $P(\R^3)$
-%so med seboj ekvivalentne in
-imajo v $\R^3$ obliko stožca. Naj bo stožnica $\mathcal{S}$ s pripradajočo matriko $M$ neizrojena. Če jo zožimo na afini del $\Pi: z=1$, lahko iz prvega minorja matrike $M$ takoj preberemo, za katero vrsto neizrojene stožnice gre (za algebraično izpeljavo gl.\ \cite{sivic2020}). Naj bo $A_M = a_{11}a_{22} - a_{12}^2$ prvi minor matrike $M$. Potem velja:
+Naj bo stožnica $\mathcal{S}$ s pripradajočo matriko $M$ neizrojena. Če jo zožimo na afini del $\Pi: z=1$, lahko iz prvega minorja matrike $M$ takoj preberemo, za katero vrsto neizrojene stožnice gre (za algebraično izpeljavo gl.\ \cite{sivic2020}). Naj bo $A_M = a_{11}a_{22} - a_{12}^2$ prvi minor matrike $M$. Potem velja:
 \begin{itemize}
     \item $\mathcal{S} \cap \Pi$ je hiperbola, če in samo če $A_M < 0$,
     \item $\mathcal{S} \cap \Pi$ je parabola, če in samo če $A_M = 0$ in
