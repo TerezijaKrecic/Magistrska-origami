@@ -376,7 +376,7 @@ Po operaciji~\ref{op:O6} je pregib tangenten na dano parabolo, ker pa je po kons
     V tem razdelku moramo za potrebe reševanja izjemoma dopustiti uporabo šestila, s katerim iz koeficientov kvartične enačbe konstruiramo krožnico.
 \end{opomba}
 
-Skupne tangente na dve paraboli ali na parabolo in krožnico zdaj znamo konstruirati, pravo vprašanje pa je, kateri stožnici določa dana kubična oz.\ kvartična enačba. Kot omenjeno že v uvodu razdelka, si avtorja pri tem pomagata s projektivno ravnino. 
+Skupne tangente na dve paraboli ali na parabolo in krožnico zdaj znamo konstruirati, pravo vprašanje pa je, kateri stožnici določa dana kubična oz.\ kvartična enačba. Kot omenjeno že v uvodu razdelka si avtorja pri tem pomagata s projektivno ravnino. 
 
 \subsubsection*{Projektivna ravnina in dualnost}
 
@@ -384,7 +384,7 @@ Poglejmo si model realne projektivne ravnine, ki ga označimo s $P(\R^3)$. Točk
 
 Naj bosta v $\R^3$ dani točka $P = (x_0, y_0, z_0)$, ki ni koordinatno izhodišče, in premica $p$, ki poteka skozi koordinatno izhodišče in vsebuje točko $P$. Premica $p$ predstavlja projektivno točko v $P(\R^3)$, ki jo označimo s t.~i.\ \emph{projektivnimi} koordinatami $[x_0 : y_0 : z_0]$. Ker za poljuben neničeln $\lambda \in \R$ točka s koordinatami $(\lambda x_0, \lambda y_0, \lambda z_0)$ določa isto premico $p$ kot točka $P$ (in s tem isto projektivno točko), lahko pišemo $[\lambda x_0 : \lambda y_0 : \lambda z_0] = [x_0 : y_0 : z_0]$. Tej lastnosti pravimo \emph{homogenost} projektivnih koordinat.
 
-Poljubna ravnina v $\R^3$ skozi koordinatno izhodišče ima enačbo $ax+by+cz=0$, kjer so $a, b, c \in \R$, ne vsi enaki $0$. Projektivna premica, ki jo ta ravnina predstavlja, je tako množica projektivnih točk $\{ [x:y:z]; ax+by+cz = 0\}$.
+Poljubna ravnina v $\R^3$ skozi koordinatno izhodišče ima enačbo $ax+by+cz=0$, kjer so $a, b, c \in \R$, ne vsi enaki $0$. Projektivna premica, ki jo ta ravnina predstavlja, je tako množica projektivnih točk $\{ [x:y:z] \; | \; ax+by+cz = 0\}$.
 
 % Predstavljajmo si, da realno ravnino $\R^2$ postavimo na nivo $z = 1$.
 
@@ -393,7 +393,7 @@ Poljubna ravnina v $\R^3$ skozi koordinatno izhodišče ima enačbo $ax+by+cz=0$
 Realno ravnino $\R^2$ lahko vložimo v projektivno ravnino $P(\R^3)$. Ponavadi to storimo tako, da jo postavimo na nivo $z=1$ (slika~\ref{fig:vlozitev_proj_ravnina}):
 \begin{itemize}
     \item Točka $(x_0, y_0)$ v $\R^2$ določa točko $P = (x_0, y_0, 1)$ na tej ravnini, ki v $\R^3$ določa enolično premico $p$ skozi $P$ in izhodišče, kar je v $P(\R^3)$ projektivna točka $[x_0 : y_0 : 1]$.
-    \item Premica $ax + by + c = 0$ v $\R^2$ določa premico v $\R^3$ z enako enačbo, ki leži na ravnini $z = 1$, to pa v $\R^3$ določa enolično ravnino, ki vsebuje to premico in koordinatno izhodišče, kar je v $P(\R^3)$ projektivna premica $\{ [x:y:z]; ax+by+cz = 0\}$.
+    \item Premica $ax + by + c = 0$ v $\R^2$ določa premico v $\R^3$ z enako enačbo, ki leži na ravnini $z = 1$, to pa v $\R^3$ določa enolično ravnino, ki vsebuje to premico in koordinatno izhodišče, kar je v $P(\R^3)$ projektivna premica $\{ [x:y:z] \; | \; ax+by+cz = 0\}$.
 \end{itemize}
 
 \begin{figure}[h]
@@ -436,7 +436,7 @@ kjer so $a_{ij}$ poljubna realna števila. V projektivni ravnini je stožnica de
         F(x,y,z) = a_{11}x^2 + 2a_{12}xy + a_{22}y^2 + 2a_{13}xz + 2a_{23}yz + a_{33}z^2
     \end{equation}
     z $a_{ij} \in \R$. Stožnica v realni projektivni ravnini $P(\R^3)$ je množica $\mathcal{S} \subset P(\R^3)$, ki vsebuje natanko ničle tega polinoma, tj.
-    $$ \mathcal{S} = \{[x:y:z] \in P(\R^3); F(x,y,z) = 0\}.$$  
+    $$ \mathcal{S} = \{[x:y:z] \in P(\R^3) \; | \; F(x,y,z) = 0\}.$$  
 \end{definicija}
 \begin{opomba}
     Med enačbama stožnic v obeh ravninah obstaja povezava. Razširitvi enačbe stožnice iz $\R^2$ v $P(\R^3)$ rečemo \emph{homogenizacija} (vsak člen v enačbi pomnožimo s tako potenco spremenljivke $z$, da je skupna stopnja vsakega člena enaka $2$), obratnemu procesu (zožitvi stožnice na afini del, ravnino $z = 1$) pa \emph{dehomogenizacija}.
@@ -445,8 +445,8 @@ kjer so $a_{ij}$ poljubna realna števila. V projektivni ravnini je stožnica de
 Naj sedaj stožnici $\mathcal{S}$ v $P(\R^3)$ pripada homogenizirana enačba~\eqref{eq:stoznica_splosna}, kar lahko krajše zapišemo v obliki
 \begin{equation}
     \label{eq:stoznica_matricna}
-    \mathcal{S}: v^\intercal M v = 0,
-    \text{ kjer sta } v =
+    \mathcal{S}: a^\intercal M a = 0,
+    \text{ kjer sta } a =
     \begin{bmatrix}
         x\\
         y\\
@@ -464,7 +464,7 @@ Pri tem je realna simetrična matrika $M$ definirana do neničelnega skalarnega 
 
 Vse neizrojene stožnice v projektivni ravnini $P(\R^3)$
 %so med seboj ekvivalentne in
-imajo v $\R^3$ obliko stožca. Naj bo stožnica $\mathcal{S}$ s pripradajočo matriko $M$ neizrojena. Če jo zožimo na afini del $\Pi: z=1$, lahko iz prvega minorja matrike $M$ takoj preberemo, za katero vrsto neizrojene stožnice gre (za algebraično razlago gl.\ \cite{sivic2020}). Naj bo $A_M = a_{11}a_{22} - a_{12}^2$. Potem velja:
+imajo v $\R^3$ obliko stožca. Naj bo stožnica $\mathcal{S}$ s pripradajočo matriko $M$ neizrojena. Če jo zožimo na afini del $\Pi: z=1$, lahko iz prvega minorja matrike $M$ takoj preberemo, za katero vrsto neizrojene stožnice gre (za algebraično izpeljavo gl.\ \cite{sivic2020}). Naj bo $A_M = a_{11}a_{22} - a_{12}^2$ prvi minor matrike $M$. Potem velja:
 \begin{itemize}
     \item $\mathcal{S} \cap \Pi$ je hiperbola, če in samo če $A_M < 0$,
     \item $\mathcal{S} \cap \Pi$ je parabola, če in samo če $A_M = 0$ in
@@ -482,18 +482,18 @@ Ekvivalentno bi lahko zožitev stožnice na afini del določili z njenim preseko
 \end{definicija}
 \begin{opomba}
     V projektivni ravnini je to ravno \emph{polara} projektivne točke $A \in \mathcal{S}$, tj.\ projektivna premica
-    $$p_A =\{ [x : y : z] \in P(\R^3) \; | \; [x, y, z] \cdot M \cdot a = 0 \}, \; a \in A.$$
+    $$p_A =\{ [x : y : z] \in P(\R^3) \; | \; (x, y, z) M a = 0; a \in A \}.$$
     V $\R^3$ je to ravnina skozi koordinatno izhodišče z normalo $\vec{n} = M \cdot \vec{a}$.
 \end{opomba}
 \begin{definicija}
-    Naj bo $\mathcal{S} \subset P(\R^3)$ stožnica v realni projektivni ravnini. Njen dual imenujemo \emph{dualna stožnica} in je množica $\mathcal{S}^* \subset P^*(\R^3)$ v dualni projektivni ravnini, katere elementi so tangente premice na stožnico $\mathcal{S}$, tj.\
+    Naj bo $\mathcal{S} \subset P(\R^3)$ stožnica v realni projektivni ravnini. Njen dual imenujemo \emph{dualna stožnica} in je množica $\mathcal{S}^* \subset P^*(\R^3)$ v dualni projektivni ravnini, katere elementi so tangentne premice na stožnico $\mathcal{S}$, tj.\
     $$ \mathcal{S}^* = \{ q \in P^*(\R^3) \; | \; q \text{ je tangentna na } \mathcal{S} \text{ v neki točki } p \in \mathcal{S} \}.$$
 \end{definicija}
 \begin{opomba}
     Stožnica $\mathcal{S}$ je torej ovojnica dualne stožnice $\mathcal{S}^*$.
 \end{opomba}
 
-Pokažimo, da je $\mathcal{S}^*$ res stožnica. Če stožnici $\mathcal{S}$ pripadata polinom $F$ in posledično matrika $M$, je tangenta na točko $p \in \mathcal{S}$ projektivna premica $\{[x : y : z] \; | \; [x \; y \; z] M p = 0 \}$. Bralec se lahko s kratkim izračunom prepriča, da velja $[F_x(p), \; F_y(p), \; F_z(p)]^\intercal = 2 M \cdot p$, torej velja kar
+Pokažimo, da je $\mathcal{S}^*$ res stožnica. Če stožnici $\mathcal{S}$ pripadata polinom $F$ in posledično matrika $M$, je tangenta na točko $p \in \mathcal{S}$ projektivna premica $\{[x : y : z] \; | \; [x, y, z] M p = 0 \}$. Bralec se lahko s kratkim izračunom prepriča, da velja $[F_x(p), \; F_y(p), \; F_z(p)]^\intercal = 2 M \cdot p$, torej velja kar
 $$ \mathcal{S}^* = \bigcup_{p \in \mathcal{S}} \{[x:y:z] \; | \; x F_x(p) + y F_y(p) + z F_z(p) = 0 \}.$$
 
 Od prej vemo, da so premice v $P^*(\R^3)$ definirane enako kot točke v $P(\R^3)$ in obratno, zato lahko pišemo
@@ -515,13 +515,13 @@ Poglejmo, kako nam znanje o stožnicah in njihovih dualnih stožnicah pomaga pri
 
 \subsubsection*{Reševanje kubične enačbe}
 
-Vzemimo kubično enačbo oblike $ x^3 + bx^2 + cx + d = 0, d \neq 0$. Vzamemo naslednji stožnici, ki sta v zožitvi na afini del paraboli:
+Vzemimo kubično enačbo oblike $ x^3 + bx^2 + cx + d = 0, d \neq 0$. Vzamemo naslednji paraboli:
 \begin{itemize}
     \item $\mathcal{P}_1: (y+c)^2 = -4d(x-b)$ z goriščem $F_1 (b - d, -c)$ in premico vodnico $L_1: x = b + d$,
     \item $\mathcal{P}_2: x^2 = -4y$ z goriščem $F_2 (0, -1)$ in premico vodnico $L_2: y = 1$.
 \end{itemize}
 
-Enačbi parabol razširimo v projektivno ravnino in iz njiju zapišemo njuni matriki
+Enačbi parabol homogeniziramo in iz njiju zapišemo njuni matriki
 $$ M_1 =
     \begin{bmatrix}
         0 & 0 & 2d\\
@@ -556,7 +556,7 @@ Naj bo $q = [A : B : C] \in \mathcal{P^*}_1 \cap \mathcal{P^*}_2$ skupna tangent
     bA^2 - cAB + AC + dB^2 = 0 \; \text{ in } \; -BC = A^2.
 \end{equation}
 
-Da dobimo tangento na paraboli $\mathcal{P}_1$ in $\mathcal{P}_2$ v afini ravnini $z = 1$, ravnokar dobljeni enačbi normaliziramo -- upoštevamo $z = 1$ in brez škode za splošnost (ker so koordinate projektivnih točk homogene) predpostavimo $B = -1$. S tem tangento $Ax + By + Cz = 0$ dehomogeniziramo v premico $y = Ax + C$ v afini ravnini. Druga enačba v sistemu~\eqref{eq:afin_sistem_tangenta_ABC_kub} se tako preuredi v $C = A^2$ in ko to vstavimo v prvo, dobimo enačbo
+Da dobimo tangento na paraboli $\mathcal{P}_1$ in $\mathcal{P}_2$ v afini ravnini $z = 1$, brez škode za splošnost (ker so koordinate projektivnih točk homogene) predpostavimo $B = -1$ in upoštevamo $z = 1$. S tem tangento $q: Ax + By + Cz = 0$ dehomogeniziramo v premico $y = Ax + C$ v afini ravnini. Druga enačba v sistemu~\eqref{eq:afin_sistem_tangenta_ABC_kub} se tako preuredi v $C = A^2$ in ko to vstavimo v prvo, dobimo enačbo
 $$ A^3 + bA^2 + cA + d = 0,$$
 kar pomeni, da nam $A$, koeficient skupne tangente, reši izvorno kubično enačbo.
 
@@ -675,9 +675,9 @@ $$ \begin{bmatrix} x\\y\\1\end{bmatrix} = P \cdot \begin{bmatrix} z\\w\\1\end{bm
     0 & 0 & 1
 \end{bmatrix}.
 $$
-Ko to vstavimo v matrično enačbo parabole
-$$\mathcal{P} : [x\;y\;1] \cdot P \cdot [x\;y\;1]^\intercal = [z\;w\;1] \cdot P \cdot [z\;w\;1]^\intercal = 0$$
-v afini ravnini, po računanju in poenostavljanju\footnote{Za izračun je potrebna programska oprema, kot je npr.\ Wolfram Mathematica. \textcolor{red}{imaš zračunano, lahko vstavim tle screenshot za dokaz, da sem zračunala?}} na koncu dobimo
+Ko to vstavimo v matrično enačbo parabole v afini ravnini
+$$\mathcal{P} : [x\;y\;1] \cdot P \cdot [x\;y\;1]^\intercal = [z\;w\;1] \cdot P \cdot [z\;w\;1]^\intercal = 0,$$
+po računanju in poenostavljanju na koncu dobimo
 $$ \mathcal{P}: z^2 = 4d^3e^2w. $$
 
 V $(z, w)$ sistemu ima parabola gorišče v $F_{zw}(0, d^3e^2)$ in premico vodnico $L_{zw}: w = - d^3e^2$ oziroma $L_{zw}: (z, w) = (0, -d^3e^2) + t(1, 0), t \in \R $. Izhodišče v $(x, y)$-sistemu je tako v točki $O_{xy} (c^2e/b^2, -(bc + cde^2)/b^2)$. Iz tega lahko izračunamo še gorišče in premico vodnico v $(x, y)$-sistemu:
