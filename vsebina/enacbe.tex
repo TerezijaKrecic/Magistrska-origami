@@ -437,7 +437,7 @@ Kot primer dualna preslikava projektivni točki, tj.\ evklidski premici z nekim 
     \label{tab:dualna_preslikava}
 \end{table}
 
-Sliki objekta, ki ga preslikamo z dualno preslikavo, rečemo \emph{dual}. V nadaljevanju bomo obravnavali duale stožnic, zato si poglejmo sledeči primer.. 
+Sliki objekta, ki ga preslikamo z dualno preslikavo, rečemo \emph{dual}. V nadaljevanju bomo obravnavali duale stožnic, zato si poglejmo sledeči primer.
 
 \textbf{Primer:} Vzemimo parabolo z enačbo $y = x^2$ v realni ravnini. Naj bo $A = (a, a^2)$ točka na tej paraboli, ki v projektivni ravnini določa projektivno točko $[a: a^2: 1]$. Z dualno preslikavo se le-ta preslika v projektivno premico $\{ [x:y:z] \; | \; ax+a^2y+z = 0 \} $, kar je v afini ravnini evklidska premica $ax + a^2y + 1 = 0$ (slika~\ref{fig:dual3D}).
 
@@ -468,10 +468,13 @@ kjer so $a_{ij}$ poljubna realna števila. V projektivni ravnini je stožnica de
     $$ \mathcal{S} = \{[x:y:z] \in P(\R^3) \; | \; F(x,y,z) = 0\}.$$  
 \end{definicija}
 \begin{opomba}
+    Stožnica $\mathcal{S}$ ima v $\R^3$ obliko dvojnega stožca z vrhom v izhodišču.
+\end{opomba}
+\begin{opomba}
     Med enačbama stožnic v obeh ravninah obstaja povezava. Razširitvi enačbe stožnice iz $\R^2$ v $P(\R^3)$ rečemo \emph{homogenizacija} (vsak člen v enačbi pomnožimo s tako potenco spremenljivke $z$, da je skupna stopnja vsakega člena enaka $2$), obratnemu procesu (zožitvi stožnice na afini del, tj.\ upoštevanjem $z = 1$ v enačbi) pa \emph{dehomogenizacija}.
 \end{opomba}
 
-Naj sedaj stožnici $\mathcal{S}$ v $P(\R^3)$ pripada homogenizirana enačba~\eqref{eq:stoznica_splosna}, kar lahko krajše zapišemo v obliki
+Naj sedaj stožnici $\mathcal{S}$ v $P(\R^3)$ pripada polinom $F$ z enačbo~\eqref{eq:stoznica_splosna}, kar lahko krajše zapišemo v obliki
 \begin{equation}
     \label{eq:stoznica_matricna}
     \mathcal{S}: v^\intercal M v = 0,
@@ -489,9 +492,9 @@ Naj sedaj stožnici $\mathcal{S}$ v $P(\R^3)$ pripada homogenizirana enačba~\eq
     \end{bmatrix}.
 \end{equation}
 
-Pri tem je realna simetrična matrika $M$ definirana do neničelnega skalarnega večkratnika natančno. Stožnica $\mathcal{S}$ je \emph{neizrojena} (ni unija dveh premic ali ene, dvojno štete premice), če ima poln rang, torej rang $ M = 3$, kar je ekvivalentno $\det M \neq 0$. V nadaljevanju bomo delali le z neizrojenimi stožnicami, torej vedno obstaja inverz matrike $M$, ki je prav tako simetričen.
+Pri tem je realna simetrična matrika $M$ definirana do neničelnega skalarnega večkratnika natančno. Stožnica $\mathcal{S}$ je \emph{neizrojena} (ni unija dveh premic ali ene, dvojno štete premice), če ima poln rang, kar je ekvivalentno $\det M \neq 0$. V nadaljevanju bomo delali le z neizrojenimi stožnicami, torej vedno obstaja inverz matrike $M$, ki je prav tako simetričen.
 
-Naj bo stožnica $\mathcal{S}$ s pripradajočo matriko $M$ neizrojena. Če jo zožimo na afini del $\Pi: z=1$, lahko iz prvega minorja matrike $M$ takoj preberemo, za katero vrsto neizrojene stožnice gre (za algebraično izpeljavo gl.\ \cite{sivic2020}). Naj bo $A_M = a_{11}a_{22} - a_{12}^2$ prvi minor matrike $M$. Potem velja:
+Če stožnico $\mathcal{S}$ s pripadajočo matriko $M$ zožimo na afini del $\Pi: z=1$, lahko iz prvega minorja matrike $M$ takoj preberemo, za katero vrsto stožnice gre (za algebraično izpeljavo gl.\ \cite{sivic2020}). Naj bo $A_M = a_{11}a_{22} - a_{12}^2$ prvi minor matrike $M$. Potem velja:
 \begin{itemize}
     \item $\mathcal{S} \cap \Pi$ je hiperbola, če in samo če $A_M < 0$,
     \item $\mathcal{S} \cap \Pi$ je parabola, če in samo če $A_M = 0$ in
@@ -505,36 +508,44 @@ Ekvivalentno bi lahko zožitev stožnice na afini del določili z njenim preseko
 \end{itemize}
 
 \begin{definicija}
-    \emph{Tangenta} na stožnico $\mathcal{S} \subseteq P(\R^3)$ v točki $A \in \mathcal{S}$ je premica, ki $\mathcal{S}$ seka le v točki $A$.
+    \emph{Tangenta} na stožnico $\mathcal{S} \subseteq P(\R^3)$ v točki $A \in \mathcal{S}$ je projektivna premica, ki $\mathcal{S}$ seka le v projektivni točki $A$.
 \end{definicija}
-\begin{opomba}
-    V projektivni ravnini je to ravno \emph{polara} projektivne točke $A \in \mathcal{S}$, tj.\ projektivna premica
-    $$p_A =\{ [x : y : z] \in P(\R^3) \; | \; (x, y, z) M a = 0; a \in A \}.$$
-    V $\R^3$ je to ravnina skozi koordinatno izhodišče z normalo $\vec{n} = M \cdot \vec{a}$.
-\end{opomba}
+Naj bo $V = [x_0 : y_0 : z_0] \in \mathcal{S}$ in $v = (x_0, y_0, z_0)^\intercal$. Potem velja $v^\intercal M v = 0$. Torej če za smerni vektor evklidske premice, ki jo predstavlja projektivna točka $V$, vzamemo $v$, je $Mv$ normala ravnine skozi koordinatno izhodišče, ki vsebuje to premico. Različni projektivni točki na stožnici $\mathcal{S}$ zaradi homogenosti koordinat določata normali z različnima smerema, zato ta ravnina vsebuje le točko $V$, torej je res tangenta. V $P(\R^3)$ je predstavljena s predpisom 
+$$p_V =\{ [x : y : z] \in P(\R^3) \; | \; (x, y, z) M v = 0; v \in V \}.$$
 \begin{definicija}
-    Naj bo $\mathcal{S} \subset P(\R^3)$ stožnica v realni projektivni ravnini. Njen dual imenujemo \emph{dualna stožnica} in je množica $\mathcal{S}^* \subset P^*(\R^3)$ v dualni projektivni ravnini, katere elementi so tangentne premice na stožnico $\mathcal{S}$, tj.\
-    $$ \mathcal{S}^* = \{ q \in P^*(\R^3) \; | \; q \text{ je tangentna na } \mathcal{S} \text{ v neki točki } p \in \mathcal{S} \}.$$
+    Naj bo $\mathcal{S} \subset P(\R^3)$ stožnica v realni projektivni ravnini. Množico dualov tangent na stožnico $\mathcal{S}$ označimo s $\mathcal{S}^*$ in jo imenujemo \emph{dualna stožnica}.
 \end{definicija}
+\begin{trditev}
+    Množica $\mathcal{S}^*$ je stožnica s pripadajočo matriko $M^{-1}$.
+\end{trditev}
+\begin{dokaz}
+    Iz prejšnjega razdelka se spomnimo dualne preslikave. Vemo, da projektivni točki priredi tisto projektivno premico, ki ima kot evklidska ravnina za normalo smerni vektor premice, ki jo predstavlja projektivna točka, in da je to bijekcija. Tako je normala ravnine, ki predstavlja tangento $p_V$ na stožnico $\mathcal{S}$ v točki $V$, smerni vektor ortogonalnega komplementa od $p_V$ (slika~\ref{fig:proj_tangenta}).
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.3\textwidth]{images/proj_tangenta.png}
+        \caption[Projektivna tangenta]{Točka $V \in \mathcal{S}$ porodi tangento $p_V$ z dualom $q = Mv$.}
+        \label{fig:proj_tangenta}
+    \end{figure}
+
+    Ker vsaka projektivna točka določa svojo tangento in se različne tangente slikajo v različne ortogonalni komplemente (ki so projektivne točke), je preslikava med $\mathcal{S}$ in $\mathcal{S}^*$ s predpisom $V \mapsto Mv$, kjer je $v \in V$, bijekcija. Naj bo $q = Mv$ neka točka na $\mathcal{S}^*$. Ker velja
+    $$ q^\intercal M^{-1} q = (Mv)^\intercal M^{-1} (Mv) = v^\intercal M^\intercal M^{-1} M v = v^\intercal M v = 0,$$
+    je $\mathcal{S}^*$ res stožnica, ki ji pripada matrika $M^{-1}$.
+\end{dokaz}
+
+% Pokažimo, da je $\mathcal{S}^*$ res stožnica. Če stožnici $\mathcal{S}$ pripadata polinom $F$ in posledično matrika $M$, je tangenta na točko $p \in \mathcal{S}$ projektivna premica $\{[x : y : z] \; | \; [x, y, z] M p = 0 \}$. Bralec se lahko s kratkim izračunom prepriča, da velja $[F_x(p), \; F_y(p), \; F_z(p)]^\intercal = 2 M \cdot p$, torej velja kar
+% $$ \mathcal{S}^* = \bigcup_{p \in \mathcal{S}} \{[x:y:z] \; | \; x F_x(p) + y F_y(p) + z F_z(p) = 0 \}.$$
+
+% Od prej vemo, da so premice v $P^*(\R^3)$ definirane enako kot točke v $P(\R^3)$ in obratno, zato lahko pišemo
+% $$ \mathcal{S}^* = \{ [F_x(p) : F_y(p) : F_z(p)] \; | \; p \in \mathcal{S} \}. $$
+
+% Če je $p \in \mathcal{S}$ in $ q \in \mathcal{S}^*$ tangenta na točko $p$, potem (z upoštevanjem homogenosti koordinat točk v projektivni ravnini) velja $q = M \cdot p$. Ker je matrika $M$ obrnljiva, to med drugim pomeni, da je preslikava $\mathcal{S} \longrightarrow \mathcal{S}^*$ s predpisom $p \mapsto Mp$ je bijekcija med $\mathcal{S}$ in $\mathcal{S}^*$. 
+
 \begin{opomba}
-    Stožnica $\mathcal{S}$ je torej ovojnica dualne stožnice $\mathcal{S}^*$.
+    Ker velja $\left(M^{-1}\right)^{-1} = M$, je dualna stožnica dualne stožnice originalna stožnica.
 \end{opomba}
 
-Pokažimo, da je $\mathcal{S}^*$ res stožnica. Če stožnici $\mathcal{S}$ pripadata polinom $F$ in posledično matrika $M$, je tangenta na točko $p \in \mathcal{S}$ projektivna premica $\{[x : y : z] \; | \; [x, y, z] M p = 0 \}$. Bralec se lahko s kratkim izračunom prepriča, da velja $[F_x(p), \; F_y(p), \; F_z(p)]^\intercal = 2 M \cdot p$, torej velja kar
-$$ \mathcal{S}^* = \bigcup_{p \in \mathcal{S}} \{[x:y:z] \; | \; x F_x(p) + y F_y(p) + z F_z(p) = 0 \}.$$
-
-Od prej vemo, da so premice v $P^*(\R^3)$ definirane enako kot točke v $P(\R^3)$ in obratno, zato lahko pišemo
-$$ \mathcal{S}^* = \{ [F_x(p) : F_y(p) : F_z(p)] \; | \; p \in \mathcal{S} \}. $$
-
-Če je $p \in \mathcal{S}$ in $ q \in \mathcal{S}^*$ tangenta na točko $p$, potem (z upoštevanjem homogenosti koordinat točk v projektivni ravnini) velja $q = M \cdot p$. Ker je matrika $M$ obrnljiva, to med drugim pomeni, da je preslikava $\mathcal{S} \longrightarrow \mathcal{S}^*$ s predpisom $p \mapsto Mp$ je bijekcija med $\mathcal{S}$ in $\mathcal{S}^*$. Ker velja
-$$ q^\intercal M^{-1} q = (Mp)^\intercal M^{-1} (Mp) = p^\intercal M^\intercal M^{-1} M p = p^\intercal M p = 0,$$
-je $\mathcal{S}^*$ res stožnica, ki ji pripada matrika $M^{-1}$.
-
-\begin{opomba}
-    Ker velja $\left(M^{-1}\right)^{-1} = M$, je dualna stožnica dualne stožnice res originalna stožnica, kar ustreza principu dualnosti.
-\end{opomba}
-
-Poglejmo, kako nam znanje o stožnicah in njihovih dualnih stožnicah pomaga pri reševanju kubičnih in kvartičnih enačb. Naj bosta $\mathcal{S}_1$ in $\mathcal{S}_2$ stožnici s pripadajočima simetričnima obrnljivima matrikama $M_1$ in $M_2$. Potem je njuna skupna tangenta skupna točka njunih dualnih stožnic $\mathcal{S}^*_1$ in $\mathcal{S}^*_2$. Torej iščemo $q \in \mathcal{S}^*_1 \cap \mathcal{S}^*_2$, ki reši sistem enačb
+Poglejmo, kako nam znanje o stožnicah in njihovih dualnih stožnicah pomaga pri reševanju kubičnih in kvartičnih enačb. Naj bosta $\mathcal{S}_1$ in $\mathcal{S}_2$ stožnici s pripadajočima simetričnima obrnljivima matrikama $M_1$ in $M_2$. Potem je njuna skupna tangenta skupna točka njunih dualnih stožnic $\mathcal{S}^*_1$ in $\mathcal{S}^*_2$ (ker dualna preslikava slika točke v premice in obratno, med pojmoma \emph{premica} in \emph{točka} tu ne ločimo). Torej iščemo $q \in \mathcal{S}^*_1 \cap \mathcal{S}^*_2$, ki reši sistem enačb
 \begin{equation}
     \label{eq:afin_sistem_tangenta_splosen}
     q^\intercal M^{-1}_1 q = 0 \; \text{ in } \; q^\intercal M^{-1}_2 q = 0.
