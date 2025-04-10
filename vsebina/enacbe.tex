@@ -468,10 +468,7 @@ kjer so $a_{ij}$ poljubna realna števila. V projektivni ravnini je stožnica de
     $$ \mathcal{S} = \{[x:y:z] \in P(\R^3) \; | \; F(x,y,z) = 0\}.$$  
 \end{definicija}
 \begin{opomba}
-    Stožnica $\mathcal{S}$ ima v $\R^3$ obliko dvojnega stožca z vrhom v izhodišču.
-\end{opomba}
-\begin{opomba}
-    Med enačbama stožnic v obeh ravninah obstaja povezava. Razširitvi enačbe stožnice iz $\R^2$ v $P(\R^3)$ rečemo \emph{homogenizacija} (vsak člen v enačbi pomnožimo s tako potenco spremenljivke $z$, da je skupna stopnja vsakega člena enaka $2$), obratnemu procesu (zožitvi stožnice na afini del, tj.\ upoštevanjem $z = 1$ v enačbi) pa \emph{dehomogenizacija}.
+    Med enačbama stožnic v obeh ravninah obstaja povezava. Razširitvi enačbe stožnice iz $\R^2$ v $P(\R^3)$ rečemo \emph{homogenizacija} -- v polinomu $f$, s katerim je podana stožnica v $\R^2$, vsak člen pomnožimo s tako potenco spremenljivke $z$, da je skupna stopnja vsakega člena enaka $2$, ter tako dobimo polinom $F$, s katerim je definirana stožnica v $P(\R^3)$. Obratnemu procesu, ko v polinomu $F$, ki definira stožnico v $P(\R^3)$, upoštevamo $z=1$ in tako dobimo polinom, ki poda stožnico v $\R^3$, pa rečemo \emph{dehomogenizacija}.
 \end{opomba}
 
 Naj sedaj stožnici $\mathcal{S}$ v $P(\R^3)$ pripada polinom $F$ z enačbo~\eqref{eq:stoznica_splosna}, kar lahko krajše zapišemo v obliki
@@ -492,7 +489,7 @@ Naj sedaj stožnici $\mathcal{S}$ v $P(\R^3)$ pripada polinom $F$ z enačbo~\eqr
     \end{bmatrix}.
 \end{equation}
 
-Pri tem je realna simetrična matrika $M$ definirana do neničelnega skalarnega večkratnika natančno. Stožnica $\mathcal{S}$ je \emph{neizrojena} (ni unija dveh premic ali ene, dvojno štete premice), če ima poln rang, kar je ekvivalentno $\det M \neq 0$. V nadaljevanju bomo delali le z neizrojenimi stožnicami, torej vedno obstaja inverz matrike $M$, ki je prav tako simetričen.
+Pri tem je realna simetrična matrika $M$ definirana do neničelnega skalarnega večkratnika natančno. Stožnica $\mathcal{S}$ je \emph{neizrojena} (ni unija dveh premic ali ene, dvojno štete premice), če ima poln rang, kar je ekvivalentno $\det M \neq 0$. V nadaljevanju bomo delali le z neizrojenimi stožnicami, torej vedno obstaja inverz matrike $M$, ki je prav tako simetrična matrika.
 
 Če stožnico $\mathcal{S}$ s pripadajočo matriko $M$ zožimo na afini del $\Pi: z=1$, lahko iz prvega minorja matrike $M$ takoj preberemo, za katero vrsto stožnice gre (za algebraično izpeljavo gl.\ \cite{sivic2020}). Naj bo $A_M = a_{11}a_{22} - a_{12}^2$ prvi minor matrike $M$. Potem velja:
 \begin{itemize}
@@ -508,7 +505,7 @@ Ekvivalentno bi lahko zožitev stožnice na afini del določili z njenim preseko
 \end{itemize}
 
 \begin{definicija}
-    \emph{Tangenta} na stožnico $\mathcal{S} \subseteq P(\R^3)$ v točki $A \in \mathcal{S}$ je projektivna premica, ki $\mathcal{S}$ seka le v projektivni točki $A$.
+    \emph{Tangenta} na stožnico $\mathcal{S} \subseteq P(\R^3)$ v točki $V \in \mathcal{S}$ je projektivna premica $p_V$, ki $\mathcal{S}$ seka le v projektivni točki $V$.
 \end{definicija}
 Naj bo $V = [x_0 : y_0 : z_0] \in \mathcal{S}$ in $v = (x_0, y_0, z_0)^\intercal$. Potem velja $v^\intercal M v = 0$. Torej če za smerni vektor evklidske premice, ki jo predstavlja projektivna točka $V$, vzamemo $v$, je $Mv$ normala ravnine skozi koordinatno izhodišče, ki vsebuje to premico. Različni projektivni točki na stožnici $\mathcal{S}$ zaradi homogenosti koordinat določata normali z različnima smerema, zato ta ravnina vsebuje le točko $V$, torej je res tangenta. V $P(\R^3)$ je predstavljena s predpisom 
 $$p_V =\{ [x : y : z] \in P(\R^3) \; | \; (x, y, z) M v = 0; v \in V \}.$$
@@ -553,7 +550,7 @@ Poglejmo, kako nam znanje o stožnicah in njihovih dualnih stožnicah pomaga pri
 
 \subsubsection*{Reševanje kubične enačbe}
 
-Vzemimo kubično enačbo oblike $ x^3 + bx^2 + cx + d = 0, d \neq 0$. Vzamemo naslednji paraboli:
+Naj bo kubična enačba oblike $ x^3 + bx^2 + cx + d = 0, d \neq 0$, in naj bosta paraboli $\mathcal{P}_1$ in $\mathcal{P}_2$ definirani takole:
 \begin{itemize}
     \item $\mathcal{P}_1: (y+c)^2 = -4d(x-b)$ z goriščem $F_1 (b - d, -c)$ in premico vodnico $L_1: x = b + d$,
     \item $\mathcal{P}_2: x^2 = -4y$ z goriščem $F_2 (0, -1)$ in premico vodnico $L_2: y = 1$.
@@ -588,7 +585,7 @@ $$ M^{-1}_1 = \frac{1}{d}
     \end{bmatrix}.
 $$
 
-Naj bo $q = [A : B : C] \in \mathcal{P^*}_1 \cap \mathcal{P^*}_2$ skupna tangenta na stožnici $\mathcal{P}_1$ in $\mathcal{P}_2$. Iz sistema enačb~\eqref{eq:afin_sistem_tangenta_splosen} dobimo nov sistem
+Naj bo $q = [A : B : C] \in \mathcal{P^*}_1 \cap \mathcal{P^*}_2$ dual skupne tangente na stožnici $\mathcal{P}_1$ in $\mathcal{P}_2$. Iz sistema enačb~\eqref{eq:afin_sistem_tangenta_splosen} dobimo nov sistem
 \begin{equation}
     \label{eq:afin_sistem_tangenta_ABC_kub}
     bA^2 - cAB + AC + dB^2 = 0 \; \text{ in } \; -BC = A^2.
@@ -623,7 +620,7 @@ Kot že povedano, sledeči postopek ne rešuje splošne enačbe četrte stopnje,
 \end{equation}
 Smiselno predpostavimo $c \neq 0$, da se enačba z uvedbo nove spremenljivke za $x^2$ ne more prevesti na kvadratno enačbo.
 
-Po Bezoutovem izreku (gl.\ \cite[izrek 2.4]{terglav2022}) imata dve različni in neizrojeni stožnici v kompleksni projektivni ravnini štiri presečišča vključno z večkratnostjo. Presečišča dualnih stožnic $\mathcal{S}^*_1$ in $\mathcal{S}^*_2$ v kompleksni dualni projektivni ravnini so torej štiri tangente na stožnici $\mathcal{S}_1$ in $\mathcal{S}_2$, ki nastopajo v konjugiranih parih -- po nič, dve ali štiri tangente (šteto z večkratnostjo). Dve paraboli imata v afini ravnini za eno od skupnih tangent premico v neskončnosti, torej ostanejo le še tri afine tangente, to pa ni dovolj za vse rešitve kvartične enačbe. Zato tu ne moremo vzeti dveh parabol.
+Po Bezoutovem izreku (gl.\ \cite[izrek 2.4]{terglav2022}) imata dve različni in neizrojeni stožnici v kompleksni projektivni ravnini štiri presečišča vključno z večkratnostjo. Presečišča dualnih stožnic $\mathcal{S}^*_1$ in $\mathcal{S}^*_2$ v kompleksni dualni projektivni ravnini so torej štiri tangente na stožnici $\mathcal{S}_1$ in $\mathcal{S}_2$, ki nastopajo v konjugiranih parih -- po nič, dve ali štiri tangente (šteto z večkratnostjo). Dve paraboli imata v afini ravnini za eno od skupnih tangent premico v neskončnosti, torej ostanejo le še tri afine tangente, to pa ni dovolj za vse rešitve kvartične enačbe. Zato v tem primeru ne moremo vzeti dveh parabol.
 
 Poskusimo najprej z metodo, ki smo jo uporabili pri reševanju kubične enačbe. Avtorja pri predpostavki $bd - c^2 \neq 0$ vzameta naslednji stožnici:
 \begin{itemize}
