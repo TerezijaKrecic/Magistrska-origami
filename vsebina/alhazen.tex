@@ -74,13 +74,13 @@ Naj bodo premice $AC$, $OC$ in $BC$ nosilke istoimenskih daljic in naj bo za vsa
 $$ k_{AC} = \frac{y-a}{x}, \; k_{OC} = \frac{y}{x} \; \text{ in } \; k_{BC} = \frac{y-c}{x-b}.$$
 Označimo $\alpha = \angle ACO = \angle OCB$. Ker sta kota enaka, velja
 \begin{align*}
-    \tan \alpha &= tan \alpha, \\
+    \tan \alpha &= \tan \alpha, \\
     \frac{k_{AC} - k_{OC}}{1 + k_{AC} k_{OC}} &= \frac{k_{OC} - k_{BC}}{1 + k_{OC} k_{BC}}, \\
     \frac{\frac{y-a}{x} - \frac{y}{x}}{1 + \frac{y-a}{x} \cdot \frac{y}{x}} &= \frac{\frac{y}{x} - \frac{y-c}{x-b}}{1 + \frac{y}{x} \cdot \frac{y-c}{x-b}}.
 \end{align*}
 Slednjo enačbo poenostavimo in z upoštevanjem pogoja~\eqref{eq:pogoj_alh1} dobimo
 $$ y(b + 2acx) = ab + (a+c)x - 2abx^2.$$
-Enačbo kvadriramo, spet upoštevamo pogoj~\eqref{eq:pogoj_alh1} in dobimo enačbo četrte stopnje (\textcolor{red}{si poračunala, tudi z wolframom, je na enem listu}):
+Enačbo kvadriramo, spet upoštevamo pogoj~\eqref{eq:pogoj_alh1} in dobimo enačbo četrte stopnje:
 $$ 4a^2(b^2 + c^2)x^4 - 4a^2bx^3 + (a^2 - 4a^2b^2 + b^2 + c^2 - 4a^2c^2 + 2ac)x^2 + 2ab(a-c)x + b^2(a^2-1) = 0.$$
 
 Enačbe četrte stopnje v teoriji znamo rešiti tako računsko kot z origamijem, vendar je to praktično precej zapleteno in delo raje prepustimo računalniku.
@@ -154,7 +154,7 @@ V nadaljevanju privzamemo avtorjeve oznake objektov, ki pa se od dosedanjih ne r
 
 Iz pogoja~\eqref{eq:huygens_pogoj} za točko $P$ bomo izrazili enačbo stožnice, ki v točki $P$ seka krožnico $\mathcal{C}$. Poslužimo se kompleksnih števil in z njimi izrazimo oba skladna kota. Naj bodo $a, b, z$ kompleksna števila, ki jih zaporedoma ponazarjajo točka $A, B, P$. Potem je kot $\angle APO$ enak kotu med številoma $a-z$ in $-z$, kot $\angle OPB$ pa kotu med številoma $b-z$ in $-z$. Kot med dvema kompleksnima številoma je argument njunega količnika (to sledi iz polarnega zapisa kompleksnih števil), zato pogoj~\eqref{eq:huygens_pogoj} preoblikujemo v
 $$ \arg \left(\frac{a-z}{-z}\right) = \arg \left(\frac{-z}{b-z}\right). $$
-Če delimo kompleksni števili z enakima argumentoma, se njuna kota odštejeta v $0$, torej dobimo realno število. Njegovo konjugirano število mu je torej enako. Zato velja enačba
+Če delimo kompleksni števili z enakima argumentoma, se njuna kota odštejeta v $0$, torej dobimo pozitivno realno število. Njegovo konjugirano število mu je torej enako. Zato velja enačba
 \begin{equation*}
     \left(\frac{a-z}{-z}\right) \left(\frac{-z}{b-z}\right)^{-1} = \overline{\left(\frac{a-z}{-z}\right) \left(\frac{-z}{b-z}\right)^{-1}}.
 \end{equation*}
@@ -173,7 +173,8 @@ Z upoštevanjem tega se nam enačba~\eqref{eq:huygens_kompleksna_enacba} preobli
 \begin{equation*}
     px_0^2 -2qx_0y_0 -py_0^2 - sx_0 + ry_0 = 0.
 \end{equation*}
-Ker sta koeficienta ob kvadratnih členih različno predznačena, je to enačba hiperbole. Torej je točka $P$ presečišče krožnice~$\mathcal{C}$ in te hiperbole (slika~\ref{fig:huygens2}). Hungerbühler v~\cite{hungerbuhler1992} dobljeno hiperbolo bolj podrobno določi, vendar to za nas ni ključno. 
+Ker sta koeficienta ob kvadratnih členih različno predznačena, je to enačba hiperbole. Torej je točka $P$ presečišče krožnice~$\mathcal{C}$ in te hiperbole (slika~\ref{fig:huygens2}).
+%Hungerbühler v~\cite{hungerbuhler1992} dobljeno hiperbolo bolj podrobno določi, vendar to za nas ni ključno. 
 
 \begin{figure}[h]
     \centering
@@ -184,7 +185,7 @@ Ker sta koeficienta ob kvadratnih členih različno predznačena, je to enačba 
 
 Z origamijem v splošnem ne znamo konstruirati presečišč dveh stožnic, zmoremo pa konstruirati skupne tangente za nekatere primere (do sedaj smo si konkretno pogledali konstrukcije v primeru dveh parabol ter parabole in krožnice, če pri slednjem dovolimo uporabo šestila).
 
-Za lažje nadaljnje reševanje bomo najprej malo poenostavili enačbo dobljene hiperbole. Zavrtimo krožnico $\mathcal{C}$ (in s tem tudi točki $A$ in $B$ znotraj nje) okoli središča $O$ tako, da abscisna os razpolavlja kot $\angle AOB$. S tem na splošnosti nismo izgubili. V tem primeru velja $b = k \cdot \overline{a}$ za nek $k > 0$. Potem je $ab = k \cdot a \overline{a} \in \R$, torej je $p = Im(ab) = 0$.
+Za lažje nadaljnje reševanje bomo najprej malo poenostavili enačbo dobljene hiperbole. Zavrtimo krožnico $\mathcal{C}$ (in s tem tudi točki $A$ in $B$ znotraj nje) okoli središča $O$ tako, da abscisna os razpolavlja kot $\angle AOB$. S tem na splošnosti nismo izgubili. V tem primeru velja $b = k \cdot \overline{a}$ za nek $k > 0$. Potem je $ab = k \cdot a \overline{a} \in \R$, torej je $p = \mathrm{Im}(ab) = 0$.
 
 Torej iščemo presečišče krožnice $\mathcal{C}$ in hiperbole $\mathcal{Q}$ z naslednjima enačbama:
 $$ \mathcal{C}: x^2 + y^2 - 1 = 0 \; \text{ in } \; \mathcal{Q}: 2qxy + sx - ry = 0. $$
@@ -200,7 +201,7 @@ $$ \mathcal{C^*}: x^2 + y^2 - 1 = 0 \; \text{ in } \; \mathcal{Q^*}: r^2x^2 + 2r
 
 Dualna krožnica enotske krožnice je torej prav tako enotska krožnica, stožnica $\mathcal{Q^*}$ pa je parabola (ker je $r^2 \cdot s^2 - \frac{(2rs)^2}{4} = 0$, tj.\ glavni minor pripadajoče matrike je ničeln). Problem je sedaj preveden na iskanje skupne tangente na krožnico $\mathcal{C}$ in parabolo $\mathcal{Q^*}$. To nas razveseli, saj to z origamijem zmoremo storiti.
 
-Kako pa bomo iz skupne tangente določili točko $P$? Iz originalnega iskanja skupne točke $P \in \mathcal{C} \cap \mathcal{Q}$ preidemo na iskanje skupne tangente $p \in \mathcal{C^*} \cap \mathcal{Q^*}$. Ker je $\mathcal{C} = \mathcal{C^*}$, je $p \in \mathcal{C^*}$ ravno tangenta na to krožnico v točki $P$. Iskana točka $P$ je torej dotikališče skupne tangente s krožnico $\mathcal{C}$. Zdaj moramo samo še določiti gorišče in premico vodnico parabole $\mathcal{Q^*}$.
+Kako pa bomo iz skupne tangente določili točko $P$? Iz originalnega iskanja skupne točke $P \in \mathcal{C} \cap \mathcal{Q}$ preidemo na iskanje skupne tangente $p$ na dualni stožnici $\mathcal{C^*}$ in $\mathcal{Q^*}$. Ker je $\mathcal{C} = \mathcal{C^*}$, je $p$ ravno tangenta na to krožnico v točki $P$. Iskana točka $P$ je torej dotikališče skupne tangente s krožnico $\mathcal{C}$. Zdaj moramo samo še določiti gorišče in premico vodnico parabole $\mathcal{Q^*}$.
 
 \begin{trditev}
     \label{trd:alh_parab_enacba}
@@ -212,11 +213,11 @@ Kako pa bomo iz skupne tangente določili točko $P$? Iz originalnega iskanja sk
     Spomnimo se splošnih formul za razdaljo med točkama ter razdaljo med točko in premico -- pri danih točkah $T_0 = (x_0, y_0), T_1(x_1, y_1)$ in premici $p: ax + by + c = 0$ velja
     $$ d(T_0, T_1) = \sqrt{(x_1-x_0)^2 + (y_1-y_0)^2}, \; d(T_0, p) = \frac{|ax_0+by_0+c|}{\sqrt{r^2+s^2}}.$$
     Tako iz $d(X, F) = d(X, D)$ dobimo enačbo
-    $$ \left( x_0 + \frac{2qr}{r^2+s^2} \right)^2 + \left( y_0 - \frac{2qs}{r^2+s^2} \right)^2 = \frac{(sx_0 - ry_0)^2}{r^2+s^2} $$
+    $$ \left( x_0 + \frac{2qr}{r^2+s^2} \right)^2 + \left( y_0 - \frac{2qs}{r^2+s^2} \right)^2 = \frac{(sx_0 - ry_0)^2}{r^2+s^2}. $$
     Ko izraze na obeh straneh poenostavimo in malo preuredimo enačbo, dobimo $r^2x_0^2 + 2rsx_0y_0 + s^2y_0^2 + 4qrx_0 - 4qsy_0 + 4q^2 = 0$, torej je $\mathcal{Q^*}$ res parabola.
 \end{dokaz}
 
-Tako smo prišli do konca teoretičnega postopka. Na hitro ponovimo -- pri dani enotski krožnici $\mathcal{C}$ in točkama $A, B$ znotraj nje (postopek velja tudi za točki zunaj krožnice) nam presečišče $P$ krožnice $\mathcal{C}$ s hiperbolo $\mathcal{Q}$, ki je odvisna od točk $A$ in $B$, reši Alhazenov problem. Presečišče stožnic prevedemo v iskanje skupne tangente $P^*$ na krožnico $\mathcal{C}$ in parabolo $\mathcal{Q^*}$, ki je dualna stožnica hiperbole. Iskana točka $P$ je dotikališče tangente $p$ s krožnico $\mathcal{C}$ (slika~\ref{fig:nishimura_resitev}).
+Tako smo prišli do konca teoretičnega postopka. Na hitro ponovimo -- pri dani enotski krožnici $\mathcal{C}$ in točkama $A, B$ znotraj nje (postopek velja tudi za točki zunaj krožnice) nam presečišče $P$ krožnice $\mathcal{C}$ s hiperbolo $\mathcal{Q}$, ki je odvisna od točk $A$ in $B$, reši Alhazenov problem. Presečišče stožnic prevedemo v iskanje skupne tangente $p$ na krožnico $\mathcal{C}$ in parabolo $\mathcal{Q^*}$, ki je dualna stožnica hiperbole. Iskana točka $P$ je dotikališče tangente $p$ s krožnico $\mathcal{C}$ (slika~\ref{fig:nishimura_resitev}).
 
 \begin{figure}[h]
     \centering
@@ -236,7 +237,7 @@ Nishimura vse znanje tega razdelka združi v naslednjo origami konstrukcijo, ki 
     \item Prepognemo premico $EB$.
     \item Prepognemo pravokotnico $l_1$ na premico $EB$ skozi točko $B$.
     \item Prepognemo pravokotnico $l_2$ na premico $l_1$ skozi točko $A$. Velja $l_2 \parallel EB$.
-    \item Prepognemo premico $OB$ in njeno presečišče s premico $l_2$ označimo z $G$. Iz razmerja podobnih trikotnikov $\triangle AOG$ in $\triangle EOB$ sledi $|OG| = q = Re(ab)$ (slika~\ref{fig:nishimura_origami}).
+    \item Prepognemo premico $OB$ in njeno presečišče s premico $l_2$ označimo z $G$. Iz razmerja podobnih trikotnikov $\triangle AOG$ in $\triangle EOB$ sledi $|OG| = q = \mathrm{Re}(ab)$ (slika~\ref{fig:nishimura_origami}).
     \begin{figure}[h]
         \centering
         \includegraphics[width=0.6\textwidth]{images/alhazen/nishimura_origami.png}
@@ -249,7 +250,7 @@ Nishimura vse znanje tega razdelka združi v naslednjo origami konstrukcijo, ki 
     \item Prepognemo premico skozi središče $O$, ki točko $H$ preslika na premico $D$ v točko $K$. Velja $|OK| = |OH|$.
     \item Prepognemo premico skozi središče $O$, ki točko $B$ preslika na premico $OA$. To je ravno simetrala kota $\angle AOB$, za katero smo prevzeli, da je to ravno abscisna os v našem koordinatnem sistemu. Sliko točke $K$ čeznjo označimo s $F$ (slika~\ref{fig:nishimura_origami2}).
     
-    Ker je premica $OF$ zrcalna slika premice $D$ čez abscisno os, je njena enačba $OF: $. Zaradi simetrije velja $|OF| = |OK| = |OH| = 2q/ \sqrt{s^2+r^2}$. Za točko $F = (x,y)$ tako dobimo sistem enačb
+    Ker je premica $OF$ zrcalna slika premice $D$ čez abscisno os, je njena enačba $OF: sx + ry = 0$. Zaradi simetrije velja $|OF| = |OK| = |OH| = 2q/ \sqrt{s^2+r^2}$. Za točko $F = (x,y)$ tako dobimo sistem enačb
     $$ sx+ry=0 \; \text{ in } \; \sqrt{x^2+y^2} = \frac{2q}{\sqrt{s^2+r^2}},$$
     katerega rešitev so ravno koordinate gorišča iskane parabole iz trditve~\ref{trd:alh_parab_enacba} (lahek izračun je prepuščen bralcu), torej je točka $F$ gorišče parabole $\mathcal{Q^*}$ s premico vodnico $D$.
     
