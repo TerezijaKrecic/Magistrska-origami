@@ -1,0 +1,2761 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{hull2020}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=cb96be1b34880876fcde8bcb7bd25315}{%
+           family={Hull},
+           familyi={H\bibinitperiod},
+           given={Thomas\bibnamedelima C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{fullhash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{fullhashraw}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{bibnamehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authorbibnamehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authornamehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authorfullhash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authorfullhashraw}{cb96be1b34880876fcde8bcb7bd25315}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781108478724}
+      \field{title}{Origametry: Mathematical Methods in Paper Folding}
+      \field{year}{2020}
+    \endentry
+    \entry{geometricconstructions}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=f4989d4ac29318504491866fea7fa2c0}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={George\bibnamedelima E.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer New York}%
+      }
+      \strng{namehash}{f4989d4ac29318504491866fea7fa2c0}
+      \strng{fullhash}{f4989d4ac29318504491866fea7fa2c0}
+      \strng{fullhashraw}{f4989d4ac29318504491866fea7fa2c0}
+      \strng{bibnamehash}{f4989d4ac29318504491866fea7fa2c0}
+      \strng{authorbibnamehash}{f4989d4ac29318504491866fea7fa2c0}
+      \strng{authornamehash}{f4989d4ac29318504491866fea7fa2c0}
+      \strng{authorfullhash}{f4989d4ac29318504491866fea7fa2c0}
+      \strng{authorfullhashraw}{f4989d4ac29318504491866fea7fa2c0}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Geometric Constructions}
+      \field{year}{1997}
+    \endentry
+    \entry{geret1995}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=31280f84fefc43945352d30e622b2836}{%
+           family={Geretschläger},
+           familyi={G\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {[Mathematical Association of America, Taylor & Francis, Ltd.]}%
+      }
+      \strng{namehash}{31280f84fefc43945352d30e622b2836}
+      \strng{fullhash}{31280f84fefc43945352d30e622b2836}
+      \strng{fullhashraw}{31280f84fefc43945352d30e622b2836}
+      \strng{bibnamehash}{31280f84fefc43945352d30e622b2836}
+      \strng{authorbibnamehash}{31280f84fefc43945352d30e622b2836}
+      \strng{authornamehash}{31280f84fefc43945352d30e622b2836}
+      \strng{authorfullhash}{31280f84fefc43945352d30e622b2836}
+      \strng{authorfullhashraw}{31280f84fefc43945352d30e622b2836}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.jstor.org/stable/2690924}}
+      \field{journaltitle}{Mathematics Magazine}
+      \field{number}{5}
+      \field{title}{Euclidean Constructions and the Geometry of Origami}
+      \field{volume}{68}
+      \field{year}{1995}
+      \field{pages}{357\bibrangedash 371}
+      \range{pages}{15}
+    \endentry
+    \entry{haga2008}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=d536a70c55dcbb064e2d3f3654439a72}{%
+           family={Haga},
+           familyi={H\bibinitperiod},
+           given={Kazuo},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {World Scientific Publishing Co. Pte. Ltd.}%
+      }
+      \strng{namehash}{d536a70c55dcbb064e2d3f3654439a72}
+      \strng{fullhash}{d536a70c55dcbb064e2d3f3654439a72}
+      \strng{fullhashraw}{d536a70c55dcbb064e2d3f3654439a72}
+      \strng{bibnamehash}{d536a70c55dcbb064e2d3f3654439a72}
+      \strng{authorbibnamehash}{d536a70c55dcbb064e2d3f3654439a72}
+      \strng{authornamehash}{d536a70c55dcbb064e2d3f3654439a72}
+      \strng{authorfullhash}{d536a70c55dcbb064e2d3f3654439a72}
+      \strng{authorfullhashraw}{d536a70c55dcbb064e2d3f3654439a72}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ORIGAMICS: Mathematical Explorations Through Paper Folding}
+      \field{year}{2008}
+    \endentry
+    \entry{nishimura2018}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=d8a5e7be2a154b55b28993c909f0c45f}{%
+           family={Nishimura},
+           familyi={N\bibinitperiod},
+           given={Yasuzo},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{d8a5e7be2a154b55b28993c909f0c45f}
+      \strng{fullhash}{d8a5e7be2a154b55b28993c909f0c45f}
+      \strng{fullhashraw}{d8a5e7be2a154b55b28993c909f0c45f}
+      \strng{bibnamehash}{d8a5e7be2a154b55b28993c909f0c45f}
+      \strng{authorbibnamehash}{d8a5e7be2a154b55b28993c909f0c45f}
+      \strng{authornamehash}{d8a5e7be2a154b55b28993c909f0c45f}
+      \strng{authorfullhash}{d8a5e7be2a154b55b28993c909f0c45f}
+      \strng{authorfullhashraw}{d8a5e7be2a154b55b28993c909f0c45f}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Geometry}
+      \field{number}{2}
+      \field{title}{Solving Alhazen's problem by Origami}
+      \field{volume}{7}
+      \field{year}{2018}
+      \field{pages}{37\bibrangedash 42}
+      \range{pages}{6}
+    \endentry
+    \entry{robinson2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=ad09b84b6d6c37557f97548575c22fdd}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Encyclopædia Britannica, inc.}%
+      }
+      \strng{namehash}{ad09b84b6d6c37557f97548575c22fdd}
+      \strng{fullhash}{ad09b84b6d6c37557f97548575c22fdd}
+      \strng{fullhashraw}{ad09b84b6d6c37557f97548575c22fdd}
+      \strng{bibnamehash}{ad09b84b6d6c37557f97548575c22fdd}
+      \strng{authorbibnamehash}{ad09b84b6d6c37557f97548575c22fdd}
+      \strng{authornamehash}{ad09b84b6d6c37557f97548575c22fdd}
+      \strng{authorfullhash}{ad09b84b6d6c37557f97548575c22fdd}
+      \strng{authorfullhashraw}{ad09b84b6d6c37557f97548575c22fdd}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.britannica.com/art/origami/History-of-origami}}
+      \field{journaltitle}{Encyclopædia Britannica}
+      \field{month}{10}
+      \field{title}{History of origami}
+      \field{year}{2024}
+    \endentry
+    \entry{row1917}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=f190a9053bdae7bc212d67b7062391e4}{%
+           family={Row},
+           familyi={R\bibinitperiod},
+           given={T.\bibnamedelimi Sundara},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=7e79612659ac9d1f31d4771798ea272b}{%
+           family={Beman},
+           familyi={B\bibinitperiod},
+           given={Wooster\bibnamedelima Woodruff},
+           giveni={W\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=bb1c0f1583ea9b1e4b4998f99f9f9380}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={David\bibnamedelima Eugene},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Open Court Publishing Company}%
+      }
+      \strng{namehash}{f190a9053bdae7bc212d67b7062391e4}
+      \strng{fullhash}{f190a9053bdae7bc212d67b7062391e4}
+      \strng{fullhashraw}{f190a9053bdae7bc212d67b7062391e4}
+      \strng{bibnamehash}{f190a9053bdae7bc212d67b7062391e4}
+      \strng{authorbibnamehash}{f190a9053bdae7bc212d67b7062391e4}
+      \strng{authornamehash}{f190a9053bdae7bc212d67b7062391e4}
+      \strng{authorfullhash}{f190a9053bdae7bc212d67b7062391e4}
+      \strng{authorfullhashraw}{f190a9053bdae7bc212d67b7062391e4}
+      \strng{editorbibnamehash}{c2d677ff72c47b359ab5f7098b803ce8}
+      \strng{editornamehash}{c2d677ff72c47b359ab5f7098b803ce8}
+      \strng{editorfullhash}{c2d677ff72c47b359ab5f7098b803ce8}
+      \strng{editorfullhashraw}{c2d677ff72c47b359ab5f7098b803ce8}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://ia800907.us.archive.org/7/items/tsundararowsgeo00rowrich/tsundararowsgeo00rowrich.pdf}}
+      \field{title}{Geometric Exercises in Paper Folding}
+      \field{year}{1917}
+    \endentry
+    \entry{zore2022}{masterthesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=f1deb09c4597475f360578281c4720b2}{%
+           family={Zore},
+           familyi={Z\bibinitperiod},
+           given={Tjaša},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Pedagoška fakulteta, Univerza v Ljubljani}%
+      }
+      \strng{namehash}{f1deb09c4597475f360578281c4720b2}
+      \strng{fullhash}{f1deb09c4597475f360578281c4720b2}
+      \strng{fullhashraw}{f1deb09c4597475f360578281c4720b2}
+      \strng{bibnamehash}{f1deb09c4597475f360578281c4720b2}
+      \strng{authorbibnamehash}{f1deb09c4597475f360578281c4720b2}
+      \strng{authornamehash}{f1deb09c4597475f360578281c4720b2}
+      \strng{authorfullhash}{f1deb09c4597475f360578281c4720b2}
+      \strng{authorfullhashraw}{f1deb09c4597475f360578281c4720b2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://pefprints.pef.uni-lj.si/7209/1/Origami_geometrija_-_Tja%C5%A1a_Zore.pdf}}
+      \field{title}{Origami geometrija}
+      \field{type}{mathesis}
+      \field{year}{2022}
+    \endentry
+    \entry{sgv2016}{unpublished}{}{}
+      \name{author}{4}{}{%
+        {{hash=e3901f0562b3e1b4bde67f2b1441fcbe}{%
+           family={Grahor},
+           familyi={G\bibinitperiod},
+           given={Alojz},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f8d3997394f2e6c2228e3c1d0caa2a6d}{%
+           family={Maraž},
+           familyi={M\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fd279bedb4a8c2178ba1f479981a8f9d}{%
+           family={Božič},
+           familyi={B\bibinitperiod},
+           given={Tjaš},
+           giveni={T\bibinitperiod}}}%
+        {{hash=412ab593c3025e321936d431b349787e}{%
+           family={Torkar},
+           familyi={T\bibinitperiod},
+           given={Miha},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1a409340498a09b63ba11c783cecbd0}
+      \strng{fullhash}{95626ac4d93a83a8d91964284efd25b7}
+      \strng{fullhashraw}{95626ac4d93a83a8d91964284efd25b7}
+      \strng{bibnamehash}{f1a409340498a09b63ba11c783cecbd0}
+      \strng{authorbibnamehash}{f1a409340498a09b63ba11c783cecbd0}
+      \strng{authornamehash}{f1a409340498a09b63ba11c783cecbd0}
+      \strng{authorfullhash}{95626ac4d93a83a8d91964284efd25b7}
+      \strng{authorfullhashraw}{95626ac4d93a83a8d91964284efd25b7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{raziskovalna naloga}
+      \field{title}{ORIGAMIKA: Matematično raziskovanje enakostraničnega trikotnika s prepogibanjem papirja}
+      \field{year}{2016}
+    \endentry
+    \entry{struik1986}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=59e5c00614cdef66835628d19399c3da}{%
+           family={Struik},
+           familyi={S\bibinitperiod},
+           given={Dirk\bibnamedelima Jan},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=56e6153c81121b93952b3d674ea0ed89}{%
+           family={Velkovrh},
+           familyi={V\bibinitperiod},
+           given={Ciril},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=62e5c9f8d8c5617f19f469aa57a8eee6}{%
+           family={Bohte},
+           familyi={B\bibinitperiod},
+           given={Tamara},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Ljubljana}%
+      }
+      \list{publisher}{1}{%
+        {Društvo matematikov, fizikov in astronomov SR Slovenije}%
+      }
+      \strng{namehash}{59e5c00614cdef66835628d19399c3da}
+      \strng{fullhash}{59e5c00614cdef66835628d19399c3da}
+      \strng{fullhashraw}{59e5c00614cdef66835628d19399c3da}
+      \strng{bibnamehash}{59e5c00614cdef66835628d19399c3da}
+      \strng{authorbibnamehash}{59e5c00614cdef66835628d19399c3da}
+      \strng{authornamehash}{59e5c00614cdef66835628d19399c3da}
+      \strng{authorfullhash}{59e5c00614cdef66835628d19399c3da}
+      \strng{authorfullhashraw}{59e5c00614cdef66835628d19399c3da}
+      \strng{editorbibnamehash}{56e6153c81121b93952b3d674ea0ed89}
+      \strng{editornamehash}{56e6153c81121b93952b3d674ea0ed89}
+      \strng{editorfullhash}{56e6153c81121b93952b3d674ea0ed89}
+      \strng{editorfullhashraw}{56e6153c81121b93952b3d674ea0ed89}
+      \strng{translatorbibnamehash}{62e5c9f8d8c5617f19f469aa57a8eee6}
+      \strng{translatornamehash}{62e5c9f8d8c5617f19f469aa57a8eee6}
+      \strng{translatorfullhash}{62e5c9f8d8c5617f19f469aa57a8eee6}
+      \strng{translatorfullhashraw}{62e5c9f8d8c5617f19f469aa57a8eee6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Kratka zgodovina matematike}
+      \field{year}{1986}
+    \endentry
+    \entry{euclidI}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=88c8aee7d33841ced57833a47679296b}{%
+           family={Heath},
+           familyi={H\bibinitperiod},
+           given={Thomas\bibnamedelima L.},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Dover Publications, Inc.}%
+      }
+      \strng{namehash}{88c8aee7d33841ced57833a47679296b}
+      \strng{fullhash}{88c8aee7d33841ced57833a47679296b}
+      \strng{fullhashraw}{88c8aee7d33841ced57833a47679296b}
+      \strng{bibnamehash}{88c8aee7d33841ced57833a47679296b}
+      \strng{authorbibnamehash}{88c8aee7d33841ced57833a47679296b}
+      \strng{authornamehash}{88c8aee7d33841ced57833a47679296b}
+      \strng{authorfullhash}{88c8aee7d33841ced57833a47679296b}
+      \strng{authorfullhashraw}{88c8aee7d33841ced57833a47679296b}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{Vol. 1 (Books I and II)}
+      \field{title}{The Thirteen Books of Euclid's Elements}
+      \field{year}{1956}
+    \endentry
+    \entry{michael2005}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=ac8dc1f3cc65554b9506ed02fbf1cb78}{%
+           family={Hvidsten},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The McGraw-Hill Companies, Inc}%
+      }
+      \strng{namehash}{ac8dc1f3cc65554b9506ed02fbf1cb78}
+      \strng{fullhash}{ac8dc1f3cc65554b9506ed02fbf1cb78}
+      \strng{fullhashraw}{ac8dc1f3cc65554b9506ed02fbf1cb78}
+      \strng{bibnamehash}{ac8dc1f3cc65554b9506ed02fbf1cb78}
+      \strng{authorbibnamehash}{ac8dc1f3cc65554b9506ed02fbf1cb78}
+      \strng{authornamehash}{ac8dc1f3cc65554b9506ed02fbf1cb78}
+      \strng{authorfullhash}{ac8dc1f3cc65554b9506ed02fbf1cb78}
+      \strng{authorfullhashraw}{ac8dc1f3cc65554b9506ed02fbf1cb78}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Geometry with Geometry Explorer}
+      \field{year}{2005}
+    \endentry
+    \entry{jerman1998}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=9f6be65fab34eb87e6a882e860327537}{%
+           family={Jerman},
+           familyi={J\bibinitperiod},
+           given={Marjan},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f6be65fab34eb87e6a882e860327537}
+      \strng{fullhash}{9f6be65fab34eb87e6a882e860327537}
+      \strng{fullhashraw}{9f6be65fab34eb87e6a882e860327537}
+      \strng{bibnamehash}{9f6be65fab34eb87e6a882e860327537}
+      \strng{authorbibnamehash}{9f6be65fab34eb87e6a882e860327537}
+      \strng{authornamehash}{9f6be65fab34eb87e6a882e860327537}
+      \strng{authorfullhash}{9f6be65fab34eb87e6a882e860327537}
+      \strng{authorfullhashraw}{9f6be65fab34eb87e6a882e860327537}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Obzornik za matematiko in fiziko}
+      \field{number}{45}
+      \field{title}{O konstrukcijah z ravnilom in šestilom}
+      \field{volume}{3}
+      \field{year}{1998}
+      \field{pages}{73\bibrangedash 78}
+      \range{pages}{6}
+    \endentry
+    \entry{burnside1904}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=095a2955bec60d24051ad4669803e1df}{%
+           family={Burnside},
+           familyi={B\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{095a2955bec60d24051ad4669803e1df}
+      \strng{fullhash}{095a2955bec60d24051ad4669803e1df}
+      \strng{fullhashraw}{095a2955bec60d24051ad4669803e1df}
+      \strng{bibnamehash}{095a2955bec60d24051ad4669803e1df}
+      \strng{authorbibnamehash}{095a2955bec60d24051ad4669803e1df}
+      \strng{authornamehash}{095a2955bec60d24051ad4669803e1df}
+      \strng{authorfullhash}{095a2955bec60d24051ad4669803e1df}
+      \strng{authorfullhashraw}{095a2955bec60d24051ad4669803e1df}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://doi.org/10.1112/plms/s2-1.1.388}}
+      \field{journaltitle}{Proceedings of the London Mathematical Society}
+      \field{number}{1}
+      \field{title}{On Groups of Order $p^\alpha q^\beta$}
+      \field{volume}{s2-1}
+      \field{year}{1904}
+      \field{pages}{388\bibrangedash 392}
+      \range{pages}{5}
+    \endentry
+    \entry{cox2005}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=f491ad1431e56daa11842f8c7ad8aa73}{%
+           family={Cox},
+           familyi={C\bibinitperiod},
+           given={David\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=289d9103f1389647fdafdc5e7a17a59f}{%
+           family={Shurman},
+           familyi={S\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{0f242c5e4dae6ed5d01030102f9f6fdc}
+      \strng{fullhash}{0f242c5e4dae6ed5d01030102f9f6fdc}
+      \strng{fullhashraw}{0f242c5e4dae6ed5d01030102f9f6fdc}
+      \strng{bibnamehash}{0f242c5e4dae6ed5d01030102f9f6fdc}
+      \strng{authorbibnamehash}{0f242c5e4dae6ed5d01030102f9f6fdc}
+      \strng{authornamehash}{0f242c5e4dae6ed5d01030102f9f6fdc}
+      \strng{authorfullhash}{0f242c5e4dae6ed5d01030102f9f6fdc}
+      \strng{authorfullhashraw}{0f242c5e4dae6ed5d01030102f9f6fdc}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://doi.org/10.1080/00029890.2005.11920241}}
+      \field{journaltitle}{The American Mathematical Monthly}
+      \field{number}{8}
+      \field{title}{Geometry and Number Theory on Clovers}
+      \field{volume}{112}
+      \field{year}{2005}
+      \field{pages}{682\bibrangedash 704}
+      \range{pages}{23}
+    \endentry
+    \entry{hull2009}{inbook}{}{}
+      \name{author}{1}{}{%
+        {{hash=c9868edb550f540d27d4227bc66dd086}{%
+           family={Hull},
+           familyi={H\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{fullhash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{fullhashraw}{c9868edb550f540d27d4227bc66dd086}
+      \strng{bibnamehash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{authorbibnamehash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{authornamehash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{authorfullhash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{authorfullhashraw}{c9868edb550f540d27d4227bc66dd086}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-56881-315-8}
+      \field{title}{Folding Regular Heptagons}
+      \field{year}{2009}
+      \field{pages}{181\bibrangedash 191}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1201/b10580-22
+      \endverb
+    \endentry
+    \entry{johnson1957}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=70e8d5f8028779d68fbb261252c9a62d}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={D.A.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Council of Teachers of Mathematics}%
+      }
+      \strng{namehash}{70e8d5f8028779d68fbb261252c9a62d}
+      \strng{fullhash}{70e8d5f8028779d68fbb261252c9a62d}
+      \strng{fullhashraw}{70e8d5f8028779d68fbb261252c9a62d}
+      \strng{bibnamehash}{70e8d5f8028779d68fbb261252c9a62d}
+      \strng{authorbibnamehash}{70e8d5f8028779d68fbb261252c9a62d}
+      \strng{authornamehash}{70e8d5f8028779d68fbb261252c9a62d}
+      \strng{authorfullhash}{70e8d5f8028779d68fbb261252c9a62d}
+      \strng{authorfullhashraw}{70e8d5f8028779d68fbb261252c9a62d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Paper Folding for the Mathematics Class}
+      \field{year}{1957}
+    \endentry
+    \entry{hull2013}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=cb96be1b34880876fcde8bcb7bd25315}{%
+           family={Hull},
+           familyi={H\bibinitperiod},
+           given={Thomas\bibnamedelima C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis Group}%
+      }
+      \strng{namehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{fullhash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{fullhashraw}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{bibnamehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authorbibnamehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authornamehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authorfullhash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authorfullhashraw}{cb96be1b34880876fcde8bcb7bd25315}
+      \field{extraname}{3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Project Origami: Activities for Exploring Matmehatics -- Second Edition}
+      \field{year}{2013}
+    \endentry
+    \entry{lang1988}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=2544333c5df1c60e49b910314d12b567}{%
+           family={Lang},
+           familyi={L\bibinitperiod},
+           given={Robert\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{fullhash}{2544333c5df1c60e49b910314d12b567}
+      \strng{fullhashraw}{2544333c5df1c60e49b910314d12b567}
+      \strng{bibnamehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authorbibnamehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authornamehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authorfullhash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authorfullhashraw}{2544333c5df1c60e49b910314d12b567}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Four Problems}
+      \field{number}{3}
+      \field{title}{British Origami}
+      \field{volume}{132}
+      \field{year}{1988}
+      \field{pages}{7\bibrangedash 11}
+      \range{pages}{5}
+    \endentry
+    \entry{royster2002}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{hash=52ecb3fea7c135461fdb006fdd948dc5}{%
+           family={Royster},
+           familyi={R\bibinitperiod},
+           given={David\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{52ecb3fea7c135461fdb006fdd948dc5}
+      \strng{fullhash}{52ecb3fea7c135461fdb006fdd948dc5}
+      \strng{fullhashraw}{52ecb3fea7c135461fdb006fdd948dc5}
+      \strng{bibnamehash}{52ecb3fea7c135461fdb006fdd948dc5}
+      \strng{authorbibnamehash}{52ecb3fea7c135461fdb006fdd948dc5}
+      \strng{authornamehash}{52ecb3fea7c135461fdb006fdd948dc5}
+      \strng{authorfullhash}{52ecb3fea7c135461fdb006fdd948dc5}
+      \strng{authorfullhashraw}{52ecb3fea7c135461fdb006fdd948dc5}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.ms.uky.edu/~droyster/courses/spring02/classnotes/chapter03.pdf}}
+      \field{note}{Zapiski predavanj}
+      \field{title}{Chapter 3: Euclidean Constructions}
+      \field{year}{2002}
+    \endentry
+    \entry{heath1921}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=2dd0de380b3896934b923747dd1fc24d}{%
+           family={Heath},
+           familyi={H\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{2dd0de380b3896934b923747dd1fc24d}
+      \strng{fullhash}{2dd0de380b3896934b923747dd1fc24d}
+      \strng{fullhashraw}{2dd0de380b3896934b923747dd1fc24d}
+      \strng{bibnamehash}{2dd0de380b3896934b923747dd1fc24d}
+      \strng{authorbibnamehash}{2dd0de380b3896934b923747dd1fc24d}
+      \strng{authornamehash}{2dd0de380b3896934b923747dd1fc24d}
+      \strng{authorfullhash}{2dd0de380b3896934b923747dd1fc24d}
+      \strng{authorfullhashraw}{2dd0de380b3896934b923747dd1fc24d}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.wilbourhall.org/pdfs/heath/heathvoli.pdf}}
+      \field{title}{A History of Greek Mathematics (Volume 1)}
+      \field{year}{1921}
+    \endentry
+    \entry{videla1997}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=5d166c2c8aa5ba03992265d7ecc93d23}{%
+           family={Videla},
+           familyi={V\bibinitperiod},
+           given={Carlos\bibnamedelima R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d166c2c8aa5ba03992265d7ecc93d23}
+      \strng{fullhash}{5d166c2c8aa5ba03992265d7ecc93d23}
+      \strng{fullhashraw}{5d166c2c8aa5ba03992265d7ecc93d23}
+      \strng{bibnamehash}{5d166c2c8aa5ba03992265d7ecc93d23}
+      \strng{authorbibnamehash}{5d166c2c8aa5ba03992265d7ecc93d23}
+      \strng{authornamehash}{5d166c2c8aa5ba03992265d7ecc93d23}
+      \strng{authorfullhash}{5d166c2c8aa5ba03992265d7ecc93d23}
+      \strng{authorfullhashraw}{5d166c2c8aa5ba03992265d7ecc93d23}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Mathematical Intelligencer}
+      \field{number}{2}
+      \field{title}{On points constructible from conics}
+      \field{volume}{19}
+      \field{year}{1997}
+    \endentry
+    \entry{messer1986}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=7935106fb29e834482fdd3609a4a3897}{%
+           family={Messer},
+           familyi={M\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{7935106fb29e834482fdd3609a4a3897}
+      \strng{fullhash}{7935106fb29e834482fdd3609a4a3897}
+      \strng{fullhashraw}{7935106fb29e834482fdd3609a4a3897}
+      \strng{bibnamehash}{7935106fb29e834482fdd3609a4a3897}
+      \strng{authorbibnamehash}{7935106fb29e834482fdd3609a4a3897}
+      \strng{authornamehash}{7935106fb29e834482fdd3609a4a3897}
+      \strng{authorfullhash}{7935106fb29e834482fdd3609a4a3897}
+      \strng{authorfullhashraw}{7935106fb29e834482fdd3609a4a3897}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://cms.math.ca/wp-content/uploads/crux-pdfs/Crux_v12n10_Dec.pdf}}
+      \field{journaltitle}{Crux Mathematicorum}
+      \field{number}{10}
+      \field{title}{Problem 1054}
+      \field{volume}{12}
+      \field{year}{1986}
+      \field{pages}{284\bibrangedash 285}
+      \range{pages}{2}
+    \endentry
+    \entry{lang2013}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=2544333c5df1c60e49b910314d12b567}{%
+           family={Lang},
+           familyi={L\bibinitperiod},
+           given={Robert\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{fullhash}{2544333c5df1c60e49b910314d12b567}
+      \strng{fullhashraw}{2544333c5df1c60e49b910314d12b567}
+      \strng{bibnamehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authorbibnamehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authornamehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authorfullhash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authorfullhashraw}{2544333c5df1c60e49b910314d12b567}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://langorigami.com/wp-content/uploads/2015/09/origami_constructions.pdf}}
+      \field{title}{Origami and Geometric Constructions}
+      \field{year}{2013}
+    \endentry
+    \entry{wikienvelope}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://en.wikipedia.org/w/index.php?title=Envelope_(mathematics)&oldid=1223619712}}
+      \field{title}{Envelope (mathematics) -- Wikipedia, The Free Encyclopedia}
+      \field{year}{2024}
+    \endentry
+    \entry{smith2003}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=3217e5b634d7129591777247de8e9022}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Scott\bibnamedelima G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{3217e5b634d7129591777247de8e9022}
+      \strng{fullhash}{3217e5b634d7129591777247de8e9022}
+      \strng{fullhashraw}{3217e5b634d7129591777247de8e9022}
+      \strng{bibnamehash}{3217e5b634d7129591777247de8e9022}
+      \strng{authorbibnamehash}{3217e5b634d7129591777247de8e9022}
+      \strng{authornamehash}{3217e5b634d7129591777247de8e9022}
+      \strng{authorfullhash}{3217e5b634d7129591777247de8e9022}
+      \strng{authorfullhashraw}{3217e5b634d7129591777247de8e9022}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Mathematics Teachers}
+      \field{number}{3}
+      \field{title}{Paper Folding and Conic Sections}
+      \field{volume}{96}
+      \field{year}{2003}
+      \field{pages}{202\bibrangedash 207}
+      \range{pages}{6}
+    \endentry
+    \entry{lotka1907}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a212885ae516f9ed2b16be89e1acb827}{%
+           family={Lotka},
+           familyi={L\bibinitperiod},
+           given={Alfred\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{fullhash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{fullhashraw}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{bibnamehash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{authorbibnamehash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{authornamehash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{authorfullhash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{authorfullhashraw}{a212885ae516f9ed2b16be89e1acb827}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{School Science and Mathematics}
+      \field{number}{7}
+      \field{title}{Construction of conic sections by paper-folding}
+      \field{volume}{7}
+      \field{year}{1907}
+      \field{pages}{595\bibrangedash 597}
+      \range{pages}{3}
+    \endentry
+    \entry{alperin2000}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=788358c29881dbbaf814d339a38cdaa2}{%
+           family={Alperin},
+           familyi={A\bibinitperiod},
+           given={Roger\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{fullhash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{fullhashraw}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{bibnamehash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{authorbibnamehash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{authornamehash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{authorfullhash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{authorfullhashraw}{788358c29881dbbaf814d339a38cdaa2}
+      \field{extraname}{1}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://nyjm.albany.edu/j/2000/6-8.pdf}}
+      \field{journaltitle}{New York Journal of Mathematics}
+      \field{title}{A Mathematical Theory of Origami Constructions and Numbers}
+      \field{volume}{6}
+      \field{year}{2000}
+      \field{pages}{119\bibrangedash 133}
+      \range{pages}{15}
+    \endentry
+    \entry{quartics2012}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=40a923c13fe1ee3b2ddcb3b8dedc4f21}{%
+           family={Fathi},
+           familyi={F\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5823865e9f1620e6cbcdce1e72caf3a4}{%
+           family={Mobadersany},
+           familyi={M\bibinitperiod},
+           given={Pooya},
+           giveni={P\bibinitperiod}}}%
+        {{hash=220d4dcc76d0081290b72e679a8b0bb4}{%
+           family={Fathi},
+           familyi={F\bibinitperiod},
+           given={Rahim},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{34035c55126cd9726bdb050b4dd9f609}
+      \strng{fullhash}{34035c55126cd9726bdb050b4dd9f609}
+      \strng{fullhashraw}{34035c55126cd9726bdb050b4dd9f609}
+      \strng{bibnamehash}{34035c55126cd9726bdb050b4dd9f609}
+      \strng{authorbibnamehash}{34035c55126cd9726bdb050b4dd9f609}
+      \strng{authornamehash}{34035c55126cd9726bdb050b4dd9f609}
+      \strng{authorfullhash}{34035c55126cd9726bdb050b4dd9f609}
+      \strng{authorfullhashraw}{34035c55126cd9726bdb050b4dd9f609}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Australian Journal of Basic and Applied Sciences}
+      \field{number}{6}
+      \field{title}{A Simple Method to Solve Quartic Equations}
+      \field{volume}{6}
+      \field{year}{2012}
+      \field{pages}{331\bibrangedash 336}
+      \range{pages}{6}
+    \endentry
+    \entry{wikiquartic}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://en.wikipedia.org/w/index.php?title=Quartic_equation&oldid=1262196167}}
+      \field{title}{Quartic equation -- Wikipedia, The Free Encyclopedia}
+      \field{year}{2024}
+    \endentry
+    \entry{edwards2001}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=69a9c84223fb85efb993a548bbb306cb}{%
+           family={Edwards},
+           familyi={E\bibinitperiod},
+           given={B.\bibnamedelimi Carter},
+           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=289d9103f1389647fdafdc5e7a17a59f}{%
+           family={Shurman},
+           familyi={S\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{fa7e1e03079e48eea18c9a51aa7b3435}
+      \strng{fullhash}{fa7e1e03079e48eea18c9a51aa7b3435}
+      \strng{fullhashraw}{fa7e1e03079e48eea18c9a51aa7b3435}
+      \strng{bibnamehash}{fa7e1e03079e48eea18c9a51aa7b3435}
+      \strng{authorbibnamehash}{fa7e1e03079e48eea18c9a51aa7b3435}
+      \strng{authornamehash}{fa7e1e03079e48eea18c9a51aa7b3435}
+      \strng{authorfullhash}{fa7e1e03079e48eea18c9a51aa7b3435}
+      \strng{authorfullhashraw}{fa7e1e03079e48eea18c9a51aa7b3435}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematics Magazine}
+      \field{number}{1}
+      \field{title}{Folding Quartic Roots}
+      \field{volume}{74}
+      \field{year}{2001}
+      \field{pages}{19\bibrangedash 25}
+      \range{pages}{7}
+    \endentry
+    \entry{mrinal2019}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=5c063c3e9fb7656f4101e846209dedfd}{%
+           family={Mrinal},
+           familyi={M\bibinitperiod},
+           given={Mishal},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5c063c3e9fb7656f4101e846209dedfd}
+      \strng{fullhash}{5c063c3e9fb7656f4101e846209dedfd}
+      \strng{fullhashraw}{5c063c3e9fb7656f4101e846209dedfd}
+      \strng{bibnamehash}{5c063c3e9fb7656f4101e846209dedfd}
+      \strng{authorbibnamehash}{5c063c3e9fb7656f4101e846209dedfd}
+      \strng{authornamehash}{5c063c3e9fb7656f4101e846209dedfd}
+      \strng{authorfullhash}{5c063c3e9fb7656f4101e846209dedfd}
+      \strng{authorfullhashraw}{5c063c3e9fb7656f4101e846209dedfd}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://math.uchicago.edu/~may/REU2019/REUPapers/Mrinal.pdf}}
+      \field{title}{Galois Theory and The Abel-Ruffini Theorem}
+      \field{year}{2019}
+    \endentry
+    \entry{langalperin2009}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=fd3ec79b7077dfba07c15cd033d17ace}{%
+           family={Alperin},
+           familyi={A\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1c43f38153a3ca1a4734edfa9a5bc2c9}{%
+           family={Lang},
+           familyi={L\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{cd07c925f0d7d0c2de38e60d6bea6b0e}
+      \strng{fullhash}{cd07c925f0d7d0c2de38e60d6bea6b0e}
+      \strng{fullhashraw}{cd07c925f0d7d0c2de38e60d6bea6b0e}
+      \strng{bibnamehash}{cd07c925f0d7d0c2de38e60d6bea6b0e}
+      \strng{authorbibnamehash}{cd07c925f0d7d0c2de38e60d6bea6b0e}
+      \strng{authornamehash}{cd07c925f0d7d0c2de38e60d6bea6b0e}
+      \strng{authorfullhash}{cd07c925f0d7d0c2de38e60d6bea6b0e}
+      \strng{authorfullhashraw}{cd07c925f0d7d0c2de38e60d6bea6b0e}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Origami4: 4th International Meeting of Origami Science, Mathematics and Education, 4OSME 2006}
+      \field{month}{01}
+      \field{title}{One, Two, and Multi-Fold Origami Axioms}
+      \field{year}{2009}
+    \endentry
+    \entry{lill1867}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=4d6bc37457c82e4da43e0c47a3870895}{%
+           family={Lill},
+           familyi={L\bibinitperiod},
+           given={Eduard},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{4d6bc37457c82e4da43e0c47a3870895}
+      \strng{fullhash}{4d6bc37457c82e4da43e0c47a3870895}
+      \strng{fullhashraw}{4d6bc37457c82e4da43e0c47a3870895}
+      \strng{bibnamehash}{4d6bc37457c82e4da43e0c47a3870895}
+      \strng{authorbibnamehash}{4d6bc37457c82e4da43e0c47a3870895}
+      \strng{authornamehash}{4d6bc37457c82e4da43e0c47a3870895}
+      \strng{authorfullhash}{4d6bc37457c82e4da43e0c47a3870895}
+      \strng{authorfullhashraw}{4d6bc37457c82e4da43e0c47a3870895}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nouvelles Annales de Mathématiques}
+      \field{number}{2}
+      \field{title}{Résolution graphique des equations numériques d'un degré quelconque à une inconnue}
+      \field{volume}{6}
+      \field{year}{1867}
+      \field{pages}{359\bibrangedash 362}
+      \range{pages}{4}
+    \endentry
+    \entry{hull2011}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=cb96be1b34880876fcde8bcb7bd25315}{%
+           family={Hull},
+           familyi={H\bibinitperiod},
+           given={Thomas\bibnamedelima C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{fullhash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{fullhashraw}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{bibnamehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authorbibnamehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authornamehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authorfullhash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authorfullhashraw}{cb96be1b34880876fcde8bcb7bd25315}
+      \field{extraname}{4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Mathematical Monthly}
+      \field{number}{4}
+      \field{title}{Solving Cubics With Creases: The Work of Beloch and Lill}
+      \field{volume}{118}
+      \field{year}{2011}
+      \field{pages}{307\bibrangedash 315}
+      \range{pages}{9}
+    \endentry
+    \entry{lavric2013}{masterthesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=d1e262f8f21620c3d01dd74e7d099e42}{%
+           family={Lavrič},
+           familyi={L\bibinitperiod},
+           given={Petra},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Pedagoška fakulteta, Univerza v Ljubljani}%
+      }
+      \strng{namehash}{d1e262f8f21620c3d01dd74e7d099e42}
+      \strng{fullhash}{d1e262f8f21620c3d01dd74e7d099e42}
+      \strng{fullhashraw}{d1e262f8f21620c3d01dd74e7d099e42}
+      \strng{bibnamehash}{d1e262f8f21620c3d01dd74e7d099e42}
+      \strng{authorbibnamehash}{d1e262f8f21620c3d01dd74e7d099e42}
+      \strng{authornamehash}{d1e262f8f21620c3d01dd74e7d099e42}
+      \strng{authorfullhash}{d1e262f8f21620c3d01dd74e7d099e42}
+      \strng{authorfullhashraw}{d1e262f8f21620c3d01dd74e7d099e42}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://pefprints.pef.uni-lj.si/1534/1/Hagovi_izreki_za_srebrne_pravokotnike_PetraLavric.pdf}}
+      \field{title}{Hagovi izreki za srebrne pravokotnike}
+      \field{type}{bathesis}
+      \field{year}{2013}
+    \endentry
+    \entry{hatori2003}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=6e54cb3db0c9b44e3c5baa910e75d72f}{%
+           family={Hatori},
+           familyi={H\bibinitperiod},
+           given={Koshiro},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{6e54cb3db0c9b44e3c5baa910e75d72f}
+      \strng{fullhash}{6e54cb3db0c9b44e3c5baa910e75d72f}
+      \strng{fullhashraw}{6e54cb3db0c9b44e3c5baa910e75d72f}
+      \strng{bibnamehash}{6e54cb3db0c9b44e3c5baa910e75d72f}
+      \strng{authorbibnamehash}{6e54cb3db0c9b44e3c5baa910e75d72f}
+      \strng{authornamehash}{6e54cb3db0c9b44e3c5baa910e75d72f}
+      \strng{authorfullhash}{6e54cb3db0c9b44e3c5baa910e75d72f}
+      \strng{authorfullhashraw}{6e54cb3db0c9b44e3c5baa910e75d72f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://origami.ousaan.com/library/conste.html}}
+      \field{title}{Origami Construcions}
+      \field{year}{2003}
+    \endentry
+    \entry{sivic2020}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{hash=5b7c87c4c6d8faf605743c8863e704f2}{%
+           family={Šivic},
+           familyi={Š\bibinitperiod},
+           given={Klemen},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{5b7c87c4c6d8faf605743c8863e704f2}
+      \strng{fullhash}{5b7c87c4c6d8faf605743c8863e704f2}
+      \strng{fullhashraw}{5b7c87c4c6d8faf605743c8863e704f2}
+      \strng{bibnamehash}{5b7c87c4c6d8faf605743c8863e704f2}
+      \strng{authorbibnamehash}{5b7c87c4c6d8faf605743c8863e704f2}
+      \strng{authornamehash}{5b7c87c4c6d8faf605743c8863e704f2}
+      \strng{authorfullhash}{5b7c87c4c6d8faf605743c8863e704f2}
+      \strng{authorfullhashraw}{5b7c87c4c6d8faf605743c8863e704f2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Dostopno na spletni učilnici FMF na \url{https://ucilnica1920.fmf.uni-lj.si/pluginfile.php/72996/mod_resource/content/1/kvadratne_forme.pdf}}
+      \field{note}{Zapiski predavanj pri predmetu Algebra 1}
+      \field{title}{Kvadratni funkcionali}
+      \field{year}{2020}
+      \field{pages}{6\bibrangedash 7}
+      \range{pages}{2}
+    \endentry
+    \entry{terglav2022}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{hash=004568c1adce02ef42d98d0aedbcba93}{%
+           family={Terglav},
+           familyi={T\bibinitperiod},
+           given={Gašper},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{004568c1adce02ef42d98d0aedbcba93}
+      \strng{fullhash}{004568c1adce02ef42d98d0aedbcba93}
+      \strng{fullhashraw}{004568c1adce02ef42d98d0aedbcba93}
+      \strng{bibnamehash}{004568c1adce02ef42d98d0aedbcba93}
+      \strng{authorbibnamehash}{004568c1adce02ef42d98d0aedbcba93}
+      \strng{authornamehash}{004568c1adce02ef42d98d0aedbcba93}
+      \strng{authorfullhash}{004568c1adce02ef42d98d0aedbcba93}
+      \strng{authorfullhashraw}{004568c1adce02ef42d98d0aedbcba93}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://repozitorij.uni-lj.si/Dokument.php?id=159263&lang=slv}}
+      \field{note}{delo diplomskega seminarja}
+      \field{title}{Konfiguracija 95 točk in 95 premic, ki izhaja iz Pascalovega izreka in posplošitve na višje rede}
+      \field{year}{2022}
+    \endentry
+    \entry{faucette1996}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=911c0ea20dcf36040d95f8b68df43689}{%
+           family={Faucette},
+           familyi={F\bibinitperiod},
+           given={William\bibnamedelima M.},
+           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Mathematical Association of America}%
+      }
+      \strng{namehash}{911c0ea20dcf36040d95f8b68df43689}
+      \strng{fullhash}{911c0ea20dcf36040d95f8b68df43689}
+      \strng{fullhashraw}{911c0ea20dcf36040d95f8b68df43689}
+      \strng{bibnamehash}{911c0ea20dcf36040d95f8b68df43689}
+      \strng{authorbibnamehash}{911c0ea20dcf36040d95f8b68df43689}
+      \strng{authornamehash}{911c0ea20dcf36040d95f8b68df43689}
+      \strng{authorfullhash}{911c0ea20dcf36040d95f8b68df43689}
+      \strng{authorfullhashraw}{911c0ea20dcf36040d95f8b68df43689}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.jstor.org/stable/2975214}}
+      \field{journaltitle}{The American Mathematical Monthly}
+      \field{number}{1}
+      \field{title}{A Geometric Interpretation of the Solution of the General Quartic Polynomial}
+      \field{volume}{103}
+      \field{year}{1996}
+      \field{pages}{51\bibrangedash 57}
+      \range{pages}{7}
+    \endentry
+    \entry{masayo2019}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=ec3710a827c1bd1f4466dfd6918f3755}{%
+           family={Fujimura},
+           familyi={F\bibinitperiod},
+           given={Masayo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9f5cf236ccd6da649d38a6d77854c796}{%
+           family={Hariri},
+           familyi={H\bibinitperiod},
+           given={Parisa},
+           giveni={P\bibinitperiod}}}%
+        {{hash=8ed067d8434abde83e0e2095e769dada}{%
+           family={Mocanu},
+           familyi={M\bibinitperiod},
+           given={Marcelina},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2212fe5d0319b0c764adfd00887ca765}{%
+           family={Vourinen},
+           familyi={V\bibinitperiod},
+           given={Matti},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a213490d1b8ad6d0ca83fcb6efc6e1b9}
+      \strng{fullhash}{a741f63727f24bc29572e05225d84d01}
+      \strng{fullhashraw}{a741f63727f24bc29572e05225d84d01}
+      \strng{bibnamehash}{a213490d1b8ad6d0ca83fcb6efc6e1b9}
+      \strng{authorbibnamehash}{a213490d1b8ad6d0ca83fcb6efc6e1b9}
+      \strng{authornamehash}{a213490d1b8ad6d0ca83fcb6efc6e1b9}
+      \strng{authorfullhash}{a741f63727f24bc29572e05225d84d01}
+      \strng{authorfullhashraw}{a741f63727f24bc29572e05225d84d01}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://link.springer.com/article/10.1007/s40315-018-0257-z#citeas}}
+      \field{journaltitle}{Computational Methods and Function Theory}
+      \field{title}{The Ptolemy-Alhazen Problem and Spherical Mirror Reflection}
+      \field{volume}{19}
+      \field{year}{2019}
+      \field{pages}{135\bibrangedash 155}
+      \range{pages}{21}
+    \endentry
+    \entry{gorjup2014}{masterthesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=e8d99e79bb54b7856248380338baa2f6}{%
+           family={Gorjup},
+           familyi={G\bibinitperiod},
+           given={Rok},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Pedagoška fakulteta, Univerza v Ljubljani}%
+      }
+      \strng{namehash}{e8d99e79bb54b7856248380338baa2f6}
+      \strng{fullhash}{e8d99e79bb54b7856248380338baa2f6}
+      \strng{fullhashraw}{e8d99e79bb54b7856248380338baa2f6}
+      \strng{bibnamehash}{e8d99e79bb54b7856248380338baa2f6}
+      \strng{authorbibnamehash}{e8d99e79bb54b7856248380338baa2f6}
+      \strng{authornamehash}{e8d99e79bb54b7856248380338baa2f6}
+      \strng{authorfullhash}{e8d99e79bb54b7856248380338baa2f6}
+      \strng{authorfullhashraw}{e8d99e79bb54b7856248380338baa2f6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://pefprints.pef.uni-lj.si/2018/1/Diplomsko_delo_Rok_Gorjup.pdf}}
+      \field{title}{Alhazen}
+      \field{type}{bathesis}
+      \field{year}{2014}
+    \endentry
+    \entry{wilk2015}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=1f764ec63d79cb1c11396f21665f5823}{%
+           family={Wilk},
+           familyi={W\bibinitperiod},
+           given={Stephen\bibnamedelima R.},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {OUPblog}%
+      }
+      \strng{namehash}{1f764ec63d79cb1c11396f21665f5823}
+      \strng{fullhash}{1f764ec63d79cb1c11396f21665f5823}
+      \strng{fullhashraw}{1f764ec63d79cb1c11396f21665f5823}
+      \strng{bibnamehash}{1f764ec63d79cb1c11396f21665f5823}
+      \strng{authorbibnamehash}{1f764ec63d79cb1c11396f21665f5823}
+      \strng{authornamehash}{1f764ec63d79cb1c11396f21665f5823}
+      \strng{authorfullhash}{1f764ec63d79cb1c11396f21665f5823}
+      \strng{authorfullhashraw}{1f764ec63d79cb1c11396f21665f5823}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://blog.oup.com/2015/03/alhazens-problem-optics-light/}}
+      \field{title}{Alhazen's problem}
+      \field{year}{2015}
+    \endentry
+    \entry{alperin2002}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=788358c29881dbbaf814d339a38cdaa2}{%
+           family={Alperin},
+           familyi={A\bibinitperiod},
+           given={Roger\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=c9868edb550f540d27d4227bc66dd086}{%
+           family={Hull},
+           familyi={H\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{fullhash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{fullhashraw}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{bibnamehash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{authorbibnamehash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{authornamehash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{authorfullhash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{authorfullhashraw}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{editorbibnamehash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{editornamehash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{editorfullhash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{editorfullhashraw}{c9868edb550f540d27d4227bc66dd086}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://anyflip.com/zpwaj/ujus/basic}}
+      \field{journaltitle}{Origami$^3$: Third International Meeting of Origami Science, Mathematics and Education}
+      \field{title}{Mathematical origami: another view of Alhazen s optical problem}
+      \field{year}{2002}
+      \field{pages}{83\bibrangedash 93}
+      \range{pages}{11}
+    \endentry
+    \entry{alhproblemwiki}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://en.wikipedia.org/w/index.php?title=Alhazen%27s_problem&oldid=1267024991}}
+      \field{title}{Alhazen's problem -- Wikipedia, The Free Encyclopedia}
+      \field{year}{2025}
+    \endentry
+    \entry{scimemi2002}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=3ca5fd2f9fdc5c9acfa94eb18ce86266}{%
+           family={Scimemi},
+           familyi={S\bibinitperiod},
+           given={Benedetto},
+           giveni={B\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=c9868edb550f540d27d4227bc66dd086}{%
+           family={Hull},
+           familyi={H\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{3ca5fd2f9fdc5c9acfa94eb18ce86266}
+      \strng{fullhash}{3ca5fd2f9fdc5c9acfa94eb18ce86266}
+      \strng{fullhashraw}{3ca5fd2f9fdc5c9acfa94eb18ce86266}
+      \strng{bibnamehash}{3ca5fd2f9fdc5c9acfa94eb18ce86266}
+      \strng{authorbibnamehash}{3ca5fd2f9fdc5c9acfa94eb18ce86266}
+      \strng{authornamehash}{3ca5fd2f9fdc5c9acfa94eb18ce86266}
+      \strng{authorfullhash}{3ca5fd2f9fdc5c9acfa94eb18ce86266}
+      \strng{authorfullhashraw}{3ca5fd2f9fdc5c9acfa94eb18ce86266}
+      \strng{editorbibnamehash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{editornamehash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{editorfullhash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{editorfullhashraw}{c9868edb550f540d27d4227bc66dd086}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://anyflip.com/zpwaj/ujus/basic}}
+      \field{journaltitle}{Origami$^3$: Third International Meeting of Origami Science, Mathematics and Education}
+      \field{title}{Paper-Folding Constructions in Euclidean Geometry: An Exercise in Thrift}
+      \field{year}{2002}
+      \field{pages}{107\bibrangedash 117}
+      \range{pages}{11}
+    \endentry
+  \enddatalist
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{langalperin2009}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=fd3ec79b7077dfba07c15cd033d17ace}{%
+           family={Alperin},
+           familyi={A\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1c43f38153a3ca1a4734edfa9a5bc2c9}{%
+           family={Lang},
+           familyi={L\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{cd07c925f0d7d0c2de38e60d6bea6b0e}
+      \strng{fullhash}{cd07c925f0d7d0c2de38e60d6bea6b0e}
+      \strng{fullhashraw}{cd07c925f0d7d0c2de38e60d6bea6b0e}
+      \strng{bibnamehash}{cd07c925f0d7d0c2de38e60d6bea6b0e}
+      \strng{authorbibnamehash}{cd07c925f0d7d0c2de38e60d6bea6b0e}
+      \strng{authornamehash}{cd07c925f0d7d0c2de38e60d6bea6b0e}
+      \strng{authorfullhash}{cd07c925f0d7d0c2de38e60d6bea6b0e}
+      \strng{authorfullhashraw}{cd07c925f0d7d0c2de38e60d6bea6b0e}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Origami4: 4th International Meeting of Origami Science, Mathematics and Education, 4OSME 2006}
+      \field{month}{01}
+      \field{title}{One, Two, and Multi-Fold Origami Axioms}
+      \field{year}{2009}
+    \endentry
+    \entry{alperin2000}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=788358c29881dbbaf814d339a38cdaa2}{%
+           family={Alperin},
+           familyi={A\bibinitperiod},
+           given={Roger\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{fullhash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{fullhashraw}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{bibnamehash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{authorbibnamehash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{authornamehash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{authorfullhash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{authorfullhashraw}{788358c29881dbbaf814d339a38cdaa2}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://nyjm.albany.edu/j/2000/6-8.pdf}}
+      \field{journaltitle}{New York Journal of Mathematics}
+      \field{title}{A Mathematical Theory of Origami Constructions and Numbers}
+      \field{volume}{6}
+      \field{year}{2000}
+      \field{pages}{119\bibrangedash 133}
+      \range{pages}{15}
+    \endentry
+    \entry{row1917}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=f190a9053bdae7bc212d67b7062391e4}{%
+           family={Row},
+           familyi={R\bibinitperiod},
+           given={T.\bibnamedelimi Sundara},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=7e79612659ac9d1f31d4771798ea272b}{%
+           family={Beman},
+           familyi={B\bibinitperiod},
+           given={Wooster\bibnamedelima Woodruff},
+           giveni={W\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=bb1c0f1583ea9b1e4b4998f99f9f9380}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={David\bibnamedelima Eugene},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Open Court Publishing Company}%
+      }
+      \strng{namehash}{f190a9053bdae7bc212d67b7062391e4}
+      \strng{fullhash}{f190a9053bdae7bc212d67b7062391e4}
+      \strng{fullhashraw}{f190a9053bdae7bc212d67b7062391e4}
+      \strng{bibnamehash}{f190a9053bdae7bc212d67b7062391e4}
+      \strng{authorbibnamehash}{f190a9053bdae7bc212d67b7062391e4}
+      \strng{authornamehash}{f190a9053bdae7bc212d67b7062391e4}
+      \strng{authorfullhash}{f190a9053bdae7bc212d67b7062391e4}
+      \strng{authorfullhashraw}{f190a9053bdae7bc212d67b7062391e4}
+      \strng{editorbibnamehash}{c2d677ff72c47b359ab5f7098b803ce8}
+      \strng{editornamehash}{c2d677ff72c47b359ab5f7098b803ce8}
+      \strng{editorfullhash}{c2d677ff72c47b359ab5f7098b803ce8}
+      \strng{editorfullhashraw}{c2d677ff72c47b359ab5f7098b803ce8}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://ia800907.us.archive.org/7/items/tsundararowsgeo00rowrich/tsundararowsgeo00rowrich.pdf}}
+      \field{title}{Geometric Exercises in Paper Folding}
+      \field{year}{1917}
+    \endentry
+    \entry{struik1986}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=59e5c00614cdef66835628d19399c3da}{%
+           family={Struik},
+           familyi={S\bibinitperiod},
+           given={Dirk\bibnamedelima Jan},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=56e6153c81121b93952b3d674ea0ed89}{%
+           family={Velkovrh},
+           familyi={V\bibinitperiod},
+           given={Ciril},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=62e5c9f8d8c5617f19f469aa57a8eee6}{%
+           family={Bohte},
+           familyi={B\bibinitperiod},
+           given={Tamara},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Ljubljana}%
+      }
+      \list{publisher}{1}{%
+        {Društvo matematikov, fizikov in astronomov SR Slovenije}%
+      }
+      \strng{namehash}{59e5c00614cdef66835628d19399c3da}
+      \strng{fullhash}{59e5c00614cdef66835628d19399c3da}
+      \strng{fullhashraw}{59e5c00614cdef66835628d19399c3da}
+      \strng{bibnamehash}{59e5c00614cdef66835628d19399c3da}
+      \strng{authorbibnamehash}{59e5c00614cdef66835628d19399c3da}
+      \strng{authornamehash}{59e5c00614cdef66835628d19399c3da}
+      \strng{authorfullhash}{59e5c00614cdef66835628d19399c3da}
+      \strng{authorfullhashraw}{59e5c00614cdef66835628d19399c3da}
+      \strng{editorbibnamehash}{56e6153c81121b93952b3d674ea0ed89}
+      \strng{editornamehash}{56e6153c81121b93952b3d674ea0ed89}
+      \strng{editorfullhash}{56e6153c81121b93952b3d674ea0ed89}
+      \strng{editorfullhashraw}{56e6153c81121b93952b3d674ea0ed89}
+      \strng{translatorbibnamehash}{62e5c9f8d8c5617f19f469aa57a8eee6}
+      \strng{translatornamehash}{62e5c9f8d8c5617f19f469aa57a8eee6}
+      \strng{translatorfullhash}{62e5c9f8d8c5617f19f469aa57a8eee6}
+      \strng{translatorfullhashraw}{62e5c9f8d8c5617f19f469aa57a8eee6}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Kratka zgodovina matematike}
+      \field{year}{1986}
+    \endentry
+    \entry{burnside1904}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=095a2955bec60d24051ad4669803e1df}{%
+           family={Burnside},
+           familyi={B\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{095a2955bec60d24051ad4669803e1df}
+      \strng{fullhash}{095a2955bec60d24051ad4669803e1df}
+      \strng{fullhashraw}{095a2955bec60d24051ad4669803e1df}
+      \strng{bibnamehash}{095a2955bec60d24051ad4669803e1df}
+      \strng{authorbibnamehash}{095a2955bec60d24051ad4669803e1df}
+      \strng{authornamehash}{095a2955bec60d24051ad4669803e1df}
+      \strng{authorfullhash}{095a2955bec60d24051ad4669803e1df}
+      \strng{authorfullhashraw}{095a2955bec60d24051ad4669803e1df}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://doi.org/10.1112/plms/s2-1.1.388}}
+      \field{journaltitle}{Proceedings of the London Mathematical Society}
+      \field{number}{1}
+      \field{title}{On Groups of Order $p^\alpha q^\beta$}
+      \field{volume}{s2-1}
+      \field{year}{1904}
+      \field{pages}{388\bibrangedash 392}
+      \range{pages}{5}
+    \endentry
+    \entry{cox2005}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=f491ad1431e56daa11842f8c7ad8aa73}{%
+           family={Cox},
+           familyi={C\bibinitperiod},
+           given={David\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=289d9103f1389647fdafdc5e7a17a59f}{%
+           family={Shurman},
+           familyi={S\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{0f242c5e4dae6ed5d01030102f9f6fdc}
+      \strng{fullhash}{0f242c5e4dae6ed5d01030102f9f6fdc}
+      \strng{fullhashraw}{0f242c5e4dae6ed5d01030102f9f6fdc}
+      \strng{bibnamehash}{0f242c5e4dae6ed5d01030102f9f6fdc}
+      \strng{authorbibnamehash}{0f242c5e4dae6ed5d01030102f9f6fdc}
+      \strng{authornamehash}{0f242c5e4dae6ed5d01030102f9f6fdc}
+      \strng{authorfullhash}{0f242c5e4dae6ed5d01030102f9f6fdc}
+      \strng{authorfullhashraw}{0f242c5e4dae6ed5d01030102f9f6fdc}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://doi.org/10.1080/00029890.2005.11920241}}
+      \field{journaltitle}{The American Mathematical Monthly}
+      \field{number}{8}
+      \field{title}{Geometry and Number Theory on Clovers}
+      \field{volume}{112}
+      \field{year}{2005}
+      \field{pages}{682\bibrangedash 704}
+      \range{pages}{23}
+    \endentry
+    \entry{edwards2001}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=69a9c84223fb85efb993a548bbb306cb}{%
+           family={Edwards},
+           familyi={E\bibinitperiod},
+           given={B.\bibnamedelimi Carter},
+           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=289d9103f1389647fdafdc5e7a17a59f}{%
+           family={Shurman},
+           familyi={S\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{fa7e1e03079e48eea18c9a51aa7b3435}
+      \strng{fullhash}{fa7e1e03079e48eea18c9a51aa7b3435}
+      \strng{fullhashraw}{fa7e1e03079e48eea18c9a51aa7b3435}
+      \strng{bibnamehash}{fa7e1e03079e48eea18c9a51aa7b3435}
+      \strng{authorbibnamehash}{fa7e1e03079e48eea18c9a51aa7b3435}
+      \strng{authornamehash}{fa7e1e03079e48eea18c9a51aa7b3435}
+      \strng{authorfullhash}{fa7e1e03079e48eea18c9a51aa7b3435}
+      \strng{authorfullhashraw}{fa7e1e03079e48eea18c9a51aa7b3435}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematics Magazine}
+      \field{number}{1}
+      \field{title}{Folding Quartic Roots}
+      \field{volume}{74}
+      \field{year}{2001}
+      \field{pages}{19\bibrangedash 25}
+      \range{pages}{7}
+    \endentry
+    \entry{quartics2012}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=40a923c13fe1ee3b2ddcb3b8dedc4f21}{%
+           family={Fathi},
+           familyi={F\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5823865e9f1620e6cbcdce1e72caf3a4}{%
+           family={Mobadersany},
+           familyi={M\bibinitperiod},
+           given={Pooya},
+           giveni={P\bibinitperiod}}}%
+        {{hash=220d4dcc76d0081290b72e679a8b0bb4}{%
+           family={Fathi},
+           familyi={F\bibinitperiod},
+           given={Rahim},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{34035c55126cd9726bdb050b4dd9f609}
+      \strng{fullhash}{34035c55126cd9726bdb050b4dd9f609}
+      \strng{fullhashraw}{34035c55126cd9726bdb050b4dd9f609}
+      \strng{bibnamehash}{34035c55126cd9726bdb050b4dd9f609}
+      \strng{authorbibnamehash}{34035c55126cd9726bdb050b4dd9f609}
+      \strng{authornamehash}{34035c55126cd9726bdb050b4dd9f609}
+      \strng{authorfullhash}{34035c55126cd9726bdb050b4dd9f609}
+      \strng{authorfullhashraw}{34035c55126cd9726bdb050b4dd9f609}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Australian Journal of Basic and Applied Sciences}
+      \field{number}{6}
+      \field{title}{A Simple Method to Solve Quartic Equations}
+      \field{volume}{6}
+      \field{year}{2012}
+      \field{pages}{331\bibrangedash 336}
+      \range{pages}{6}
+    \endentry
+    \entry{faucette1996}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=911c0ea20dcf36040d95f8b68df43689}{%
+           family={Faucette},
+           familyi={F\bibinitperiod},
+           given={William\bibnamedelima M.},
+           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Mathematical Association of America}%
+      }
+      \strng{namehash}{911c0ea20dcf36040d95f8b68df43689}
+      \strng{fullhash}{911c0ea20dcf36040d95f8b68df43689}
+      \strng{fullhashraw}{911c0ea20dcf36040d95f8b68df43689}
+      \strng{bibnamehash}{911c0ea20dcf36040d95f8b68df43689}
+      \strng{authorbibnamehash}{911c0ea20dcf36040d95f8b68df43689}
+      \strng{authornamehash}{911c0ea20dcf36040d95f8b68df43689}
+      \strng{authorfullhash}{911c0ea20dcf36040d95f8b68df43689}
+      \strng{authorfullhashraw}{911c0ea20dcf36040d95f8b68df43689}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.jstor.org/stable/2975214}}
+      \field{journaltitle}{The American Mathematical Monthly}
+      \field{number}{1}
+      \field{title}{A Geometric Interpretation of the Solution of the General Quartic Polynomial}
+      \field{volume}{103}
+      \field{year}{1996}
+      \field{pages}{51\bibrangedash 57}
+      \range{pages}{7}
+    \endentry
+    \entry{masayo2019}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=ec3710a827c1bd1f4466dfd6918f3755}{%
+           family={Fujimura},
+           familyi={F\bibinitperiod},
+           given={Masayo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9f5cf236ccd6da649d38a6d77854c796}{%
+           family={Hariri},
+           familyi={H\bibinitperiod},
+           given={Parisa},
+           giveni={P\bibinitperiod}}}%
+        {{hash=8ed067d8434abde83e0e2095e769dada}{%
+           family={Mocanu},
+           familyi={M\bibinitperiod},
+           given={Marcelina},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2212fe5d0319b0c764adfd00887ca765}{%
+           family={Vourinen},
+           familyi={V\bibinitperiod},
+           given={Matti},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a213490d1b8ad6d0ca83fcb6efc6e1b9}
+      \strng{fullhash}{a741f63727f24bc29572e05225d84d01}
+      \strng{fullhashraw}{a741f63727f24bc29572e05225d84d01}
+      \strng{bibnamehash}{a213490d1b8ad6d0ca83fcb6efc6e1b9}
+      \strng{authorbibnamehash}{a213490d1b8ad6d0ca83fcb6efc6e1b9}
+      \strng{authornamehash}{a213490d1b8ad6d0ca83fcb6efc6e1b9}
+      \strng{authorfullhash}{a741f63727f24bc29572e05225d84d01}
+      \strng{authorfullhashraw}{a741f63727f24bc29572e05225d84d01}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://link.springer.com/article/10.1007/s40315-018-0257-z#citeas}}
+      \field{journaltitle}{Computational Methods and Function Theory}
+      \field{title}{The Ptolemy-Alhazen Problem and Spherical Mirror Reflection}
+      \field{volume}{19}
+      \field{year}{2019}
+      \field{pages}{135\bibrangedash 155}
+      \range{pages}{21}
+    \endentry
+    \entry{geret1995}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=31280f84fefc43945352d30e622b2836}{%
+           family={Geretschläger},
+           familyi={G\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {[Mathematical Association of America, Taylor & Francis, Ltd.]}%
+      }
+      \strng{namehash}{31280f84fefc43945352d30e622b2836}
+      \strng{fullhash}{31280f84fefc43945352d30e622b2836}
+      \strng{fullhashraw}{31280f84fefc43945352d30e622b2836}
+      \strng{bibnamehash}{31280f84fefc43945352d30e622b2836}
+      \strng{authorbibnamehash}{31280f84fefc43945352d30e622b2836}
+      \strng{authornamehash}{31280f84fefc43945352d30e622b2836}
+      \strng{authorfullhash}{31280f84fefc43945352d30e622b2836}
+      \strng{authorfullhashraw}{31280f84fefc43945352d30e622b2836}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.jstor.org/stable/2690924}}
+      \field{journaltitle}{Mathematics Magazine}
+      \field{number}{5}
+      \field{title}{Euclidean Constructions and the Geometry of Origami}
+      \field{volume}{68}
+      \field{year}{1995}
+      \field{pages}{357\bibrangedash 371}
+      \range{pages}{15}
+    \endentry
+    \entry{gorjup2014}{masterthesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=e8d99e79bb54b7856248380338baa2f6}{%
+           family={Gorjup},
+           familyi={G\bibinitperiod},
+           given={Rok},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Pedagoška fakulteta, Univerza v Ljubljani}%
+      }
+      \strng{namehash}{e8d99e79bb54b7856248380338baa2f6}
+      \strng{fullhash}{e8d99e79bb54b7856248380338baa2f6}
+      \strng{fullhashraw}{e8d99e79bb54b7856248380338baa2f6}
+      \strng{bibnamehash}{e8d99e79bb54b7856248380338baa2f6}
+      \strng{authorbibnamehash}{e8d99e79bb54b7856248380338baa2f6}
+      \strng{authornamehash}{e8d99e79bb54b7856248380338baa2f6}
+      \strng{authorfullhash}{e8d99e79bb54b7856248380338baa2f6}
+      \strng{authorfullhashraw}{e8d99e79bb54b7856248380338baa2f6}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://pefprints.pef.uni-lj.si/2018/1/Diplomsko_delo_Rok_Gorjup.pdf}}
+      \field{title}{Alhazen}
+      \field{type}{bathesis}
+      \field{year}{2014}
+    \endentry
+    \entry{sgv2016}{unpublished}{}{}
+      \name{author}{4}{}{%
+        {{hash=e3901f0562b3e1b4bde67f2b1441fcbe}{%
+           family={Grahor},
+           familyi={G\bibinitperiod},
+           given={Alojz},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f8d3997394f2e6c2228e3c1d0caa2a6d}{%
+           family={Maraž},
+           familyi={M\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fd279bedb4a8c2178ba1f479981a8f9d}{%
+           family={Božič},
+           familyi={B\bibinitperiod},
+           given={Tjaš},
+           giveni={T\bibinitperiod}}}%
+        {{hash=412ab593c3025e321936d431b349787e}{%
+           family={Torkar},
+           familyi={T\bibinitperiod},
+           given={Miha},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1a409340498a09b63ba11c783cecbd0}
+      \strng{fullhash}{95626ac4d93a83a8d91964284efd25b7}
+      \strng{fullhashraw}{95626ac4d93a83a8d91964284efd25b7}
+      \strng{bibnamehash}{f1a409340498a09b63ba11c783cecbd0}
+      \strng{authorbibnamehash}{f1a409340498a09b63ba11c783cecbd0}
+      \strng{authornamehash}{f1a409340498a09b63ba11c783cecbd0}
+      \strng{authorfullhash}{95626ac4d93a83a8d91964284efd25b7}
+      \strng{authorfullhashraw}{95626ac4d93a83a8d91964284efd25b7}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{raziskovalna naloga}
+      \field{title}{ORIGAMIKA: Matematično raziskovanje enakostraničnega trikotnika s prepogibanjem papirja}
+      \field{year}{2016}
+    \endentry
+    \entry{haga2008}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=d536a70c55dcbb064e2d3f3654439a72}{%
+           family={Haga},
+           familyi={H\bibinitperiod},
+           given={Kazuo},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {World Scientific Publishing Co. Pte. Ltd.}%
+      }
+      \strng{namehash}{d536a70c55dcbb064e2d3f3654439a72}
+      \strng{fullhash}{d536a70c55dcbb064e2d3f3654439a72}
+      \strng{fullhashraw}{d536a70c55dcbb064e2d3f3654439a72}
+      \strng{bibnamehash}{d536a70c55dcbb064e2d3f3654439a72}
+      \strng{authorbibnamehash}{d536a70c55dcbb064e2d3f3654439a72}
+      \strng{authornamehash}{d536a70c55dcbb064e2d3f3654439a72}
+      \strng{authorfullhash}{d536a70c55dcbb064e2d3f3654439a72}
+      \strng{authorfullhashraw}{d536a70c55dcbb064e2d3f3654439a72}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ORIGAMICS: Mathematical Explorations Through Paper Folding}
+      \field{year}{2008}
+    \endentry
+    \entry{hatori2003}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=6e54cb3db0c9b44e3c5baa910e75d72f}{%
+           family={Hatori},
+           familyi={H\bibinitperiod},
+           given={Koshiro},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{6e54cb3db0c9b44e3c5baa910e75d72f}
+      \strng{fullhash}{6e54cb3db0c9b44e3c5baa910e75d72f}
+      \strng{fullhashraw}{6e54cb3db0c9b44e3c5baa910e75d72f}
+      \strng{bibnamehash}{6e54cb3db0c9b44e3c5baa910e75d72f}
+      \strng{authorbibnamehash}{6e54cb3db0c9b44e3c5baa910e75d72f}
+      \strng{authornamehash}{6e54cb3db0c9b44e3c5baa910e75d72f}
+      \strng{authorfullhash}{6e54cb3db0c9b44e3c5baa910e75d72f}
+      \strng{authorfullhashraw}{6e54cb3db0c9b44e3c5baa910e75d72f}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://origami.ousaan.com/library/conste.html}}
+      \field{title}{Origami Construcions}
+      \field{year}{2003}
+    \endentry
+    \entry{heath1921}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=2dd0de380b3896934b923747dd1fc24d}{%
+           family={Heath},
+           familyi={H\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{2dd0de380b3896934b923747dd1fc24d}
+      \strng{fullhash}{2dd0de380b3896934b923747dd1fc24d}
+      \strng{fullhashraw}{2dd0de380b3896934b923747dd1fc24d}
+      \strng{bibnamehash}{2dd0de380b3896934b923747dd1fc24d}
+      \strng{authorbibnamehash}{2dd0de380b3896934b923747dd1fc24d}
+      \strng{authornamehash}{2dd0de380b3896934b923747dd1fc24d}
+      \strng{authorfullhash}{2dd0de380b3896934b923747dd1fc24d}
+      \strng{authorfullhashraw}{2dd0de380b3896934b923747dd1fc24d}
+      \field{extraname}{1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.wilbourhall.org/pdfs/heath/heathvoli.pdf}}
+      \field{title}{A History of Greek Mathematics (Volume 1)}
+      \field{year}{1921}
+    \endentry
+    \entry{euclidI}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=88c8aee7d33841ced57833a47679296b}{%
+           family={Heath},
+           familyi={H\bibinitperiod},
+           given={Thomas\bibnamedelima L.},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Dover Publications, Inc.}%
+      }
+      \strng{namehash}{88c8aee7d33841ced57833a47679296b}
+      \strng{fullhash}{88c8aee7d33841ced57833a47679296b}
+      \strng{fullhashraw}{88c8aee7d33841ced57833a47679296b}
+      \strng{bibnamehash}{88c8aee7d33841ced57833a47679296b}
+      \strng{authorbibnamehash}{88c8aee7d33841ced57833a47679296b}
+      \strng{authornamehash}{88c8aee7d33841ced57833a47679296b}
+      \strng{authorfullhash}{88c8aee7d33841ced57833a47679296b}
+      \strng{authorfullhashraw}{88c8aee7d33841ced57833a47679296b}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{Vol. 1 (Books I and II)}
+      \field{title}{The Thirteen Books of Euclid's Elements}
+      \field{year}{1956}
+    \endentry
+    \entry{hull2009}{inbook}{}{}
+      \name{author}{1}{}{%
+        {{hash=c9868edb550f540d27d4227bc66dd086}{%
+           family={Hull},
+           familyi={H\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{fullhash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{fullhashraw}{c9868edb550f540d27d4227bc66dd086}
+      \strng{bibnamehash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{authorbibnamehash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{authornamehash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{authorfullhash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{authorfullhashraw}{c9868edb550f540d27d4227bc66dd086}
+      \field{extraname}{1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-56881-315-8}
+      \field{title}{Folding Regular Heptagons}
+      \field{year}{2009}
+      \field{pages}{181\bibrangedash 191}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1201/b10580-22
+      \endverb
+    \endentry
+    \entry{alperin2002}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=788358c29881dbbaf814d339a38cdaa2}{%
+           family={Alperin},
+           familyi={A\bibinitperiod},
+           given={Roger\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=c9868edb550f540d27d4227bc66dd086}{%
+           family={Hull},
+           familyi={H\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{fullhash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{fullhashraw}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{bibnamehash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{authorbibnamehash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{authornamehash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{authorfullhash}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{authorfullhashraw}{788358c29881dbbaf814d339a38cdaa2}
+      \strng{editorbibnamehash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{editornamehash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{editorfullhash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{editorfullhashraw}{c9868edb550f540d27d4227bc66dd086}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://anyflip.com/zpwaj/ujus/basic}}
+      \field{journaltitle}{Origami$^3$: Third International Meeting of Origami Science, Mathematics and Education}
+      \field{title}{Mathematical origami: another view of Alhazen s optical problem}
+      \field{year}{2002}
+      \field{pages}{83\bibrangedash 93}
+      \range{pages}{11}
+    \endentry
+    \entry{scimemi2002}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=3ca5fd2f9fdc5c9acfa94eb18ce86266}{%
+           family={Scimemi},
+           familyi={S\bibinitperiod},
+           given={Benedetto},
+           giveni={B\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=c9868edb550f540d27d4227bc66dd086}{%
+           family={Hull},
+           familyi={H\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{3ca5fd2f9fdc5c9acfa94eb18ce86266}
+      \strng{fullhash}{3ca5fd2f9fdc5c9acfa94eb18ce86266}
+      \strng{fullhashraw}{3ca5fd2f9fdc5c9acfa94eb18ce86266}
+      \strng{bibnamehash}{3ca5fd2f9fdc5c9acfa94eb18ce86266}
+      \strng{authorbibnamehash}{3ca5fd2f9fdc5c9acfa94eb18ce86266}
+      \strng{authornamehash}{3ca5fd2f9fdc5c9acfa94eb18ce86266}
+      \strng{authorfullhash}{3ca5fd2f9fdc5c9acfa94eb18ce86266}
+      \strng{authorfullhashraw}{3ca5fd2f9fdc5c9acfa94eb18ce86266}
+      \strng{editorbibnamehash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{editornamehash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{editorfullhash}{c9868edb550f540d27d4227bc66dd086}
+      \strng{editorfullhashraw}{c9868edb550f540d27d4227bc66dd086}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://anyflip.com/zpwaj/ujus/basic}}
+      \field{journaltitle}{Origami$^3$: Third International Meeting of Origami Science, Mathematics and Education}
+      \field{title}{Paper-Folding Constructions in Euclidean Geometry: An Exercise in Thrift}
+      \field{year}{2002}
+      \field{pages}{107\bibrangedash 117}
+      \range{pages}{11}
+    \endentry
+    \entry{hull2020}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=cb96be1b34880876fcde8bcb7bd25315}{%
+           family={Hull},
+           familyi={H\bibinitperiod},
+           given={Thomas\bibnamedelima C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{fullhash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{fullhashraw}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{bibnamehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authorbibnamehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authornamehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authorfullhash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authorfullhashraw}{cb96be1b34880876fcde8bcb7bd25315}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781108478724}
+      \field{title}{Origametry: Mathematical Methods in Paper Folding}
+      \field{year}{2020}
+    \endentry
+    \entry{hull2013}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=cb96be1b34880876fcde8bcb7bd25315}{%
+           family={Hull},
+           familyi={H\bibinitperiod},
+           given={Thomas\bibnamedelima C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis Group}%
+      }
+      \strng{namehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{fullhash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{fullhashraw}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{bibnamehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authorbibnamehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authornamehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authorfullhash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authorfullhashraw}{cb96be1b34880876fcde8bcb7bd25315}
+      \field{extraname}{3}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Project Origami: Activities for Exploring Matmehatics -- Second Edition}
+      \field{year}{2013}
+    \endentry
+    \entry{hull2011}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=cb96be1b34880876fcde8bcb7bd25315}{%
+           family={Hull},
+           familyi={H\bibinitperiod},
+           given={Thomas\bibnamedelima C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{fullhash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{fullhashraw}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{bibnamehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authorbibnamehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authornamehash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authorfullhash}{cb96be1b34880876fcde8bcb7bd25315}
+      \strng{authorfullhashraw}{cb96be1b34880876fcde8bcb7bd25315}
+      \field{extraname}{4}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Mathematical Monthly}
+      \field{number}{4}
+      \field{title}{Solving Cubics With Creases: The Work of Beloch and Lill}
+      \field{volume}{118}
+      \field{year}{2011}
+      \field{pages}{307\bibrangedash 315}
+      \range{pages}{9}
+    \endentry
+    \entry{michael2005}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=ac8dc1f3cc65554b9506ed02fbf1cb78}{%
+           family={Hvidsten},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The McGraw-Hill Companies, Inc}%
+      }
+      \strng{namehash}{ac8dc1f3cc65554b9506ed02fbf1cb78}
+      \strng{fullhash}{ac8dc1f3cc65554b9506ed02fbf1cb78}
+      \strng{fullhashraw}{ac8dc1f3cc65554b9506ed02fbf1cb78}
+      \strng{bibnamehash}{ac8dc1f3cc65554b9506ed02fbf1cb78}
+      \strng{authorbibnamehash}{ac8dc1f3cc65554b9506ed02fbf1cb78}
+      \strng{authornamehash}{ac8dc1f3cc65554b9506ed02fbf1cb78}
+      \strng{authorfullhash}{ac8dc1f3cc65554b9506ed02fbf1cb78}
+      \strng{authorfullhashraw}{ac8dc1f3cc65554b9506ed02fbf1cb78}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Geometry with Geometry Explorer}
+      \field{year}{2005}
+    \endentry
+    \entry{jerman1998}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=9f6be65fab34eb87e6a882e860327537}{%
+           family={Jerman},
+           familyi={J\bibinitperiod},
+           given={Marjan},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f6be65fab34eb87e6a882e860327537}
+      \strng{fullhash}{9f6be65fab34eb87e6a882e860327537}
+      \strng{fullhashraw}{9f6be65fab34eb87e6a882e860327537}
+      \strng{bibnamehash}{9f6be65fab34eb87e6a882e860327537}
+      \strng{authorbibnamehash}{9f6be65fab34eb87e6a882e860327537}
+      \strng{authornamehash}{9f6be65fab34eb87e6a882e860327537}
+      \strng{authorfullhash}{9f6be65fab34eb87e6a882e860327537}
+      \strng{authorfullhashraw}{9f6be65fab34eb87e6a882e860327537}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Obzornik za matematiko in fiziko}
+      \field{number}{45}
+      \field{title}{O konstrukcijah z ravnilom in šestilom}
+      \field{volume}{3}
+      \field{year}{1998}
+      \field{pages}{73\bibrangedash 78}
+      \range{pages}{6}
+    \endentry
+    \entry{johnson1957}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=70e8d5f8028779d68fbb261252c9a62d}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={D.A.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Council of Teachers of Mathematics}%
+      }
+      \strng{namehash}{70e8d5f8028779d68fbb261252c9a62d}
+      \strng{fullhash}{70e8d5f8028779d68fbb261252c9a62d}
+      \strng{fullhashraw}{70e8d5f8028779d68fbb261252c9a62d}
+      \strng{bibnamehash}{70e8d5f8028779d68fbb261252c9a62d}
+      \strng{authorbibnamehash}{70e8d5f8028779d68fbb261252c9a62d}
+      \strng{authornamehash}{70e8d5f8028779d68fbb261252c9a62d}
+      \strng{authorfullhash}{70e8d5f8028779d68fbb261252c9a62d}
+      \strng{authorfullhashraw}{70e8d5f8028779d68fbb261252c9a62d}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Paper Folding for the Mathematics Class}
+      \field{year}{1957}
+    \endentry
+    \entry{lang1988}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=2544333c5df1c60e49b910314d12b567}{%
+           family={Lang},
+           familyi={L\bibinitperiod},
+           given={Robert\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{fullhash}{2544333c5df1c60e49b910314d12b567}
+      \strng{fullhashraw}{2544333c5df1c60e49b910314d12b567}
+      \strng{bibnamehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authorbibnamehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authornamehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authorfullhash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authorfullhashraw}{2544333c5df1c60e49b910314d12b567}
+      \field{extraname}{1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Four Problems}
+      \field{number}{3}
+      \field{title}{British Origami}
+      \field{volume}{132}
+      \field{year}{1988}
+      \field{pages}{7\bibrangedash 11}
+      \range{pages}{5}
+    \endentry
+    \entry{lang2013}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=2544333c5df1c60e49b910314d12b567}{%
+           family={Lang},
+           familyi={L\bibinitperiod},
+           given={Robert\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{fullhash}{2544333c5df1c60e49b910314d12b567}
+      \strng{fullhashraw}{2544333c5df1c60e49b910314d12b567}
+      \strng{bibnamehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authorbibnamehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authornamehash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authorfullhash}{2544333c5df1c60e49b910314d12b567}
+      \strng{authorfullhashraw}{2544333c5df1c60e49b910314d12b567}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://langorigami.com/wp-content/uploads/2015/09/origami_constructions.pdf}}
+      \field{title}{Origami and Geometric Constructions}
+      \field{year}{2013}
+    \endentry
+    \entry{lavric2013}{masterthesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=d1e262f8f21620c3d01dd74e7d099e42}{%
+           family={Lavrič},
+           familyi={L\bibinitperiod},
+           given={Petra},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Pedagoška fakulteta, Univerza v Ljubljani}%
+      }
+      \strng{namehash}{d1e262f8f21620c3d01dd74e7d099e42}
+      \strng{fullhash}{d1e262f8f21620c3d01dd74e7d099e42}
+      \strng{fullhashraw}{d1e262f8f21620c3d01dd74e7d099e42}
+      \strng{bibnamehash}{d1e262f8f21620c3d01dd74e7d099e42}
+      \strng{authorbibnamehash}{d1e262f8f21620c3d01dd74e7d099e42}
+      \strng{authornamehash}{d1e262f8f21620c3d01dd74e7d099e42}
+      \strng{authorfullhash}{d1e262f8f21620c3d01dd74e7d099e42}
+      \strng{authorfullhashraw}{d1e262f8f21620c3d01dd74e7d099e42}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://pefprints.pef.uni-lj.si/1534/1/Hagovi_izreki_za_srebrne_pravokotnike_PetraLavric.pdf}}
+      \field{title}{Hagovi izreki za srebrne pravokotnike}
+      \field{type}{bathesis}
+      \field{year}{2013}
+    \endentry
+    \entry{lill1867}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=4d6bc37457c82e4da43e0c47a3870895}{%
+           family={Lill},
+           familyi={L\bibinitperiod},
+           given={Eduard},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{4d6bc37457c82e4da43e0c47a3870895}
+      \strng{fullhash}{4d6bc37457c82e4da43e0c47a3870895}
+      \strng{fullhashraw}{4d6bc37457c82e4da43e0c47a3870895}
+      \strng{bibnamehash}{4d6bc37457c82e4da43e0c47a3870895}
+      \strng{authorbibnamehash}{4d6bc37457c82e4da43e0c47a3870895}
+      \strng{authornamehash}{4d6bc37457c82e4da43e0c47a3870895}
+      \strng{authorfullhash}{4d6bc37457c82e4da43e0c47a3870895}
+      \strng{authorfullhashraw}{4d6bc37457c82e4da43e0c47a3870895}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nouvelles Annales de Mathématiques}
+      \field{number}{2}
+      \field{title}{Résolution graphique des equations numériques d'un degré quelconque à une inconnue}
+      \field{volume}{6}
+      \field{year}{1867}
+      \field{pages}{359\bibrangedash 362}
+      \range{pages}{4}
+    \endentry
+    \entry{lotka1907}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a212885ae516f9ed2b16be89e1acb827}{%
+           family={Lotka},
+           familyi={L\bibinitperiod},
+           given={Alfred\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{fullhash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{fullhashraw}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{bibnamehash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{authorbibnamehash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{authornamehash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{authorfullhash}{a212885ae516f9ed2b16be89e1acb827}
+      \strng{authorfullhashraw}{a212885ae516f9ed2b16be89e1acb827}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{School Science and Mathematics}
+      \field{number}{7}
+      \field{title}{Construction of conic sections by paper-folding}
+      \field{volume}{7}
+      \field{year}{1907}
+      \field{pages}{595\bibrangedash 597}
+      \range{pages}{3}
+    \endentry
+    \entry{geometricconstructions}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=f4989d4ac29318504491866fea7fa2c0}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={George\bibnamedelima E.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer New York}%
+      }
+      \strng{namehash}{f4989d4ac29318504491866fea7fa2c0}
+      \strng{fullhash}{f4989d4ac29318504491866fea7fa2c0}
+      \strng{fullhashraw}{f4989d4ac29318504491866fea7fa2c0}
+      \strng{bibnamehash}{f4989d4ac29318504491866fea7fa2c0}
+      \strng{authorbibnamehash}{f4989d4ac29318504491866fea7fa2c0}
+      \strng{authornamehash}{f4989d4ac29318504491866fea7fa2c0}
+      \strng{authorfullhash}{f4989d4ac29318504491866fea7fa2c0}
+      \strng{authorfullhashraw}{f4989d4ac29318504491866fea7fa2c0}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Geometric Constructions}
+      \field{year}{1997}
+    \endentry
+    \entry{messer1986}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=7935106fb29e834482fdd3609a4a3897}{%
+           family={Messer},
+           familyi={M\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{7935106fb29e834482fdd3609a4a3897}
+      \strng{fullhash}{7935106fb29e834482fdd3609a4a3897}
+      \strng{fullhashraw}{7935106fb29e834482fdd3609a4a3897}
+      \strng{bibnamehash}{7935106fb29e834482fdd3609a4a3897}
+      \strng{authorbibnamehash}{7935106fb29e834482fdd3609a4a3897}
+      \strng{authornamehash}{7935106fb29e834482fdd3609a4a3897}
+      \strng{authorfullhash}{7935106fb29e834482fdd3609a4a3897}
+      \strng{authorfullhashraw}{7935106fb29e834482fdd3609a4a3897}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://cms.math.ca/wp-content/uploads/crux-pdfs/Crux_v12n10_Dec.pdf}}
+      \field{journaltitle}{Crux Mathematicorum}
+      \field{number}{10}
+      \field{title}{Problem 1054}
+      \field{volume}{12}
+      \field{year}{1986}
+      \field{pages}{284\bibrangedash 285}
+      \range{pages}{2}
+    \endentry
+    \entry{mrinal2019}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=5c063c3e9fb7656f4101e846209dedfd}{%
+           family={Mrinal},
+           familyi={M\bibinitperiod},
+           given={Mishal},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5c063c3e9fb7656f4101e846209dedfd}
+      \strng{fullhash}{5c063c3e9fb7656f4101e846209dedfd}
+      \strng{fullhashraw}{5c063c3e9fb7656f4101e846209dedfd}
+      \strng{bibnamehash}{5c063c3e9fb7656f4101e846209dedfd}
+      \strng{authorbibnamehash}{5c063c3e9fb7656f4101e846209dedfd}
+      \strng{authornamehash}{5c063c3e9fb7656f4101e846209dedfd}
+      \strng{authorfullhash}{5c063c3e9fb7656f4101e846209dedfd}
+      \strng{authorfullhashraw}{5c063c3e9fb7656f4101e846209dedfd}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://math.uchicago.edu/~may/REU2019/REUPapers/Mrinal.pdf}}
+      \field{title}{Galois Theory and The Abel-Ruffini Theorem}
+      \field{year}{2019}
+    \endentry
+    \entry{nishimura2018}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=d8a5e7be2a154b55b28993c909f0c45f}{%
+           family={Nishimura},
+           familyi={N\bibinitperiod},
+           given={Yasuzo},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{d8a5e7be2a154b55b28993c909f0c45f}
+      \strng{fullhash}{d8a5e7be2a154b55b28993c909f0c45f}
+      \strng{fullhashraw}{d8a5e7be2a154b55b28993c909f0c45f}
+      \strng{bibnamehash}{d8a5e7be2a154b55b28993c909f0c45f}
+      \strng{authorbibnamehash}{d8a5e7be2a154b55b28993c909f0c45f}
+      \strng{authornamehash}{d8a5e7be2a154b55b28993c909f0c45f}
+      \strng{authorfullhash}{d8a5e7be2a154b55b28993c909f0c45f}
+      \strng{authorfullhashraw}{d8a5e7be2a154b55b28993c909f0c45f}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Geometry}
+      \field{number}{2}
+      \field{title}{Solving Alhazen's problem by Origami}
+      \field{volume}{7}
+      \field{year}{2018}
+      \field{pages}{37\bibrangedash 42}
+      \range{pages}{6}
+    \endentry
+    \entry{robinson2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=ad09b84b6d6c37557f97548575c22fdd}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Encyclopædia Britannica, inc.}%
+      }
+      \strng{namehash}{ad09b84b6d6c37557f97548575c22fdd}
+      \strng{fullhash}{ad09b84b6d6c37557f97548575c22fdd}
+      \strng{fullhashraw}{ad09b84b6d6c37557f97548575c22fdd}
+      \strng{bibnamehash}{ad09b84b6d6c37557f97548575c22fdd}
+      \strng{authorbibnamehash}{ad09b84b6d6c37557f97548575c22fdd}
+      \strng{authornamehash}{ad09b84b6d6c37557f97548575c22fdd}
+      \strng{authorfullhash}{ad09b84b6d6c37557f97548575c22fdd}
+      \strng{authorfullhashraw}{ad09b84b6d6c37557f97548575c22fdd}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.britannica.com/art/origami/History-of-origami}}
+      \field{journaltitle}{Encyclopædia Britannica}
+      \field{month}{10}
+      \field{title}{History of origami}
+      \field{year}{2024}
+    \endentry
+    \entry{royster2002}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{hash=52ecb3fea7c135461fdb006fdd948dc5}{%
+           family={Royster},
+           familyi={R\bibinitperiod},
+           given={David\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{52ecb3fea7c135461fdb006fdd948dc5}
+      \strng{fullhash}{52ecb3fea7c135461fdb006fdd948dc5}
+      \strng{fullhashraw}{52ecb3fea7c135461fdb006fdd948dc5}
+      \strng{bibnamehash}{52ecb3fea7c135461fdb006fdd948dc5}
+      \strng{authorbibnamehash}{52ecb3fea7c135461fdb006fdd948dc5}
+      \strng{authornamehash}{52ecb3fea7c135461fdb006fdd948dc5}
+      \strng{authorfullhash}{52ecb3fea7c135461fdb006fdd948dc5}
+      \strng{authorfullhashraw}{52ecb3fea7c135461fdb006fdd948dc5}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.ms.uky.edu/~droyster/courses/spring02/classnotes/chapter03.pdf}}
+      \field{note}{Zapiski predavanj}
+      \field{title}{Chapter 3: Euclidean Constructions}
+      \field{year}{2002}
+    \endentry
+    \entry{smith2003}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=3217e5b634d7129591777247de8e9022}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Scott\bibnamedelima G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{3217e5b634d7129591777247de8e9022}
+      \strng{fullhash}{3217e5b634d7129591777247de8e9022}
+      \strng{fullhashraw}{3217e5b634d7129591777247de8e9022}
+      \strng{bibnamehash}{3217e5b634d7129591777247de8e9022}
+      \strng{authorbibnamehash}{3217e5b634d7129591777247de8e9022}
+      \strng{authornamehash}{3217e5b634d7129591777247de8e9022}
+      \strng{authorfullhash}{3217e5b634d7129591777247de8e9022}
+      \strng{authorfullhashraw}{3217e5b634d7129591777247de8e9022}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Mathematics Teachers}
+      \field{number}{3}
+      \field{title}{Paper Folding and Conic Sections}
+      \field{volume}{96}
+      \field{year}{2003}
+      \field{pages}{202\bibrangedash 207}
+      \range{pages}{6}
+    \endentry
+    \entry{sivic2020}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{hash=5b7c87c4c6d8faf605743c8863e704f2}{%
+           family={Šivic},
+           familyi={Š\bibinitperiod},
+           given={Klemen},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{5b7c87c4c6d8faf605743c8863e704f2}
+      \strng{fullhash}{5b7c87c4c6d8faf605743c8863e704f2}
+      \strng{fullhashraw}{5b7c87c4c6d8faf605743c8863e704f2}
+      \strng{bibnamehash}{5b7c87c4c6d8faf605743c8863e704f2}
+      \strng{authorbibnamehash}{5b7c87c4c6d8faf605743c8863e704f2}
+      \strng{authornamehash}{5b7c87c4c6d8faf605743c8863e704f2}
+      \strng{authorfullhash}{5b7c87c4c6d8faf605743c8863e704f2}
+      \strng{authorfullhashraw}{5b7c87c4c6d8faf605743c8863e704f2}
+      \field{sortinit}{Š}
+      \field{sortinithash}{fe7d139ff25af1da92945fcf3e00cef5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Dostopno na spletni učilnici FMF na \url{https://ucilnica1920.fmf.uni-lj.si/pluginfile.php/72996/mod_resource/content/1/kvadratne_forme.pdf}}
+      \field{note}{Zapiski predavanj pri predmetu Algebra 1}
+      \field{title}{Kvadratni funkcionali}
+      \field{year}{2020}
+      \field{pages}{6\bibrangedash 7}
+      \range{pages}{2}
+    \endentry
+    \entry{terglav2022}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{hash=004568c1adce02ef42d98d0aedbcba93}{%
+           family={Terglav},
+           familyi={T\bibinitperiod},
+           given={Gašper},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{004568c1adce02ef42d98d0aedbcba93}
+      \strng{fullhash}{004568c1adce02ef42d98d0aedbcba93}
+      \strng{fullhashraw}{004568c1adce02ef42d98d0aedbcba93}
+      \strng{bibnamehash}{004568c1adce02ef42d98d0aedbcba93}
+      \strng{authorbibnamehash}{004568c1adce02ef42d98d0aedbcba93}
+      \strng{authornamehash}{004568c1adce02ef42d98d0aedbcba93}
+      \strng{authorfullhash}{004568c1adce02ef42d98d0aedbcba93}
+      \strng{authorfullhashraw}{004568c1adce02ef42d98d0aedbcba93}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://repozitorij.uni-lj.si/Dokument.php?id=159263&lang=slv}}
+      \field{note}{delo diplomskega seminarja}
+      \field{title}{Konfiguracija 95 točk in 95 premic, ki izhaja iz Pascalovega izreka in posplošitve na višje rede}
+      \field{year}{2022}
+    \endentry
+    \entry{videla1997}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=5d166c2c8aa5ba03992265d7ecc93d23}{%
+           family={Videla},
+           familyi={V\bibinitperiod},
+           given={Carlos\bibnamedelima R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d166c2c8aa5ba03992265d7ecc93d23}
+      \strng{fullhash}{5d166c2c8aa5ba03992265d7ecc93d23}
+      \strng{fullhashraw}{5d166c2c8aa5ba03992265d7ecc93d23}
+      \strng{bibnamehash}{5d166c2c8aa5ba03992265d7ecc93d23}
+      \strng{authorbibnamehash}{5d166c2c8aa5ba03992265d7ecc93d23}
+      \strng{authornamehash}{5d166c2c8aa5ba03992265d7ecc93d23}
+      \strng{authorfullhash}{5d166c2c8aa5ba03992265d7ecc93d23}
+      \strng{authorfullhashraw}{5d166c2c8aa5ba03992265d7ecc93d23}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Mathematical Intelligencer}
+      \field{number}{2}
+      \field{title}{On points constructible from conics}
+      \field{volume}{19}
+      \field{year}{1997}
+    \endentry
+    \entry{alhproblemwiki}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://en.wikipedia.org/w/index.php?title=Alhazen%27s_problem&oldid=1267024991}}
+      \field{title}{Alhazen's problem -- Wikipedia, The Free Encyclopedia}
+      \field{year}{2025}
+    \endentry
+    \entry{wikienvelope}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://en.wikipedia.org/w/index.php?title=Envelope_(mathematics)&oldid=1223619712}}
+      \field{title}{Envelope (mathematics) -- Wikipedia, The Free Encyclopedia}
+      \field{year}{2024}
+    \endentry
+    \entry{wikiquartic}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{3}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://en.wikipedia.org/w/index.php?title=Quartic_equation&oldid=1262196167}}
+      \field{title}{Quartic equation -- Wikipedia, The Free Encyclopedia}
+      \field{year}{2024}
+    \endentry
+    \entry{wilk2015}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=1f764ec63d79cb1c11396f21665f5823}{%
+           family={Wilk},
+           familyi={W\bibinitperiod},
+           given={Stephen\bibnamedelima R.},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {OUPblog}%
+      }
+      \strng{namehash}{1f764ec63d79cb1c11396f21665f5823}
+      \strng{fullhash}{1f764ec63d79cb1c11396f21665f5823}
+      \strng{fullhashraw}{1f764ec63d79cb1c11396f21665f5823}
+      \strng{bibnamehash}{1f764ec63d79cb1c11396f21665f5823}
+      \strng{authorbibnamehash}{1f764ec63d79cb1c11396f21665f5823}
+      \strng{authornamehash}{1f764ec63d79cb1c11396f21665f5823}
+      \strng{authorfullhash}{1f764ec63d79cb1c11396f21665f5823}
+      \strng{authorfullhashraw}{1f764ec63d79cb1c11396f21665f5823}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://blog.oup.com/2015/03/alhazens-problem-optics-light/}}
+      \field{title}{Alhazen's problem}
+      \field{year}{2015}
+    \endentry
+    \entry{zore2022}{masterthesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=f1deb09c4597475f360578281c4720b2}{%
+           family={Zore},
+           familyi={Z\bibinitperiod},
+           given={Tjaša},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Pedagoška fakulteta, Univerza v Ljubljani}%
+      }
+      \strng{namehash}{f1deb09c4597475f360578281c4720b2}
+      \strng{fullhash}{f1deb09c4597475f360578281c4720b2}
+      \strng{fullhashraw}{f1deb09c4597475f360578281c4720b2}
+      \strng{bibnamehash}{f1deb09c4597475f360578281c4720b2}
+      \strng{authorbibnamehash}{f1deb09c4597475f360578281c4720b2}
+      \strng{authornamehash}{f1deb09c4597475f360578281c4720b2}
+      \strng{authorfullhash}{f1deb09c4597475f360578281c4720b2}
+      \strng{authorfullhashraw}{f1deb09c4597475f360578281c4720b2}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://pefprints.pef.uni-lj.si/7209/1/Origami_geometrija_-_Tja%C5%A1a_Zore.pdf}}
+      \field{title}{Origami geometrija}
+      \field{type}{mathesis}
+      \field{year}{2022}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
