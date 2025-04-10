@@ -622,7 +622,7 @@ Smiselno predpostavimo $c \neq 0$, da se enačba z uvedbo nove spremenljivke za 
 
 Po Bezoutovem izreku (gl.\ \cite[izrek 2.4]{terglav2022}) imata dve različni in neizrojeni stožnici v kompleksni projektivni ravnini štiri presečišča vključno z večkratnostjo. Presečišča dualnih stožnic $\mathcal{S}^*_1$ in $\mathcal{S}^*_2$ v kompleksni dualni projektivni ravnini so torej štiri tangente na stožnici $\mathcal{S}_1$ in $\mathcal{S}_2$, ki nastopajo v konjugiranih parih -- po nič, dve ali štiri tangente (šteto z večkratnostjo). Dve paraboli imata v afini ravnini za eno od skupnih tangent premico v neskončnosti, torej ostanejo le še tri afine tangente, to pa ni dovolj za vse rešitve kvartične enačbe. Zato v tem primeru ne moremo vzeti dveh parabol.
 
-Poskusimo najprej z metodo, ki smo jo uporabili pri reševanju kubične enačbe. Avtorja pri predpostavki $bd - c^2 \neq 0$ vzameta naslednji stožnici:
+Poskusimo najprej z metodo, ki smo jo uporabili pri reševanju kubične enačbe. Avtorja v~\cite[str.\ 22]{edwards2001} pri predpostavki $bd - c^2 \neq 0$ vzameta naslednji stožnici:
 \begin{itemize}
     \item $\mathcal{S}: dx^2 + 2cxy + by^2 + bd - c^2 = 0$ in
     \item parabolo od prej, tj.\ $\mathcal{P}: x^2 = -4y$.
@@ -702,7 +702,7 @@ kar pomeni, da nam $C$, začetna vrednost skupne tangente oz.\ njeno presečiš�
 
 Sedaj poiščimo še gorišče in premico vodnico parabole $\mathcal{P}$. Potem bo postopek konstrukcije skupne tangente, kot smo ga opisali že v začetku tega razdelka -- najprej narišemo krožnico s središčem $S$ in polmerom $2r$ ter gorišče in premico vodnico parabole. Nato opravimo pregib, ki hkrati položi gorišče na premico vodnico in središče krožnice na njen rob. Presečišče pregiba z ordinatno osjo je rešitev naše enačbe (seveda poiščemo vse možne pregibe, ki so največ štirje).
 
-Iz enačbe parabole $\mathcal{P}: c^2x^2 - 2cdexy + d^2e^2y^2 - 4d^2ex = 0$ ne moremo enostavno prebrati gorišča in premice vodnice, zato $(x, y)$-sistem prevedimo v $(z, w)$-sistem s sledečo preslikavo \textcolor{red}{(od kje avtorja potegneta ta $P$?)}:
+Iz enačbe parabole $\mathcal{P}: c^2x^2 - 2cdexy + d^2e^2y^2 - 4d^2ex = 0$ ne moremo enostavno prebrati gorišča in premice vodnice, zato $(x, y)$-sistem prevedimo v $(z, w)$-sistem s sledečo preslikavo:
 $$ \begin{bmatrix} x\\y\\1\end{bmatrix} = P \cdot \begin{bmatrix} z\\w\\1\end{bmatrix}, \text{ kjer je } P =
 \begin{bmatrix}
     c/bd & de & c^2e/b^2\\
@@ -716,8 +716,8 @@ po računanju in poenostavljanju na koncu dobimo
 $$ \mathcal{P}: z^2 = 4d^3e^2w. $$
 
 V $(z, w)$ sistemu ima parabola gorišče v $F_{zw}(0, d^3e^2)$ in premico vodnico $L_{zw}: w = - d^3e^2$ oziroma $L_{zw}: (z, w) = (0, -d^3e^2) + t(1, 0), t \in \R $. Izhodišče v $(x, y)$-sistemu je tako v točki $O_{xy} (c^2e/b^2, -(bc + cde^2)/b^2)$. Iz tega lahko izračunamo še gorišče in premico vodnico v $(x, y)$-sistemu:
-$$ F_{xy} = P \cdot \begin{bmatrix} 0\\d^3e^2\\1\end{bmatrix} \longrightarrow F_{xy} = O_{xy} + d^3e^2(de, c) = (\frac{c^2e}{b^2} + d^4e^3, -\frac{bc + cde^2}{b^2} + cd^3e^2),$$
-$$ L_{xy} = P \cdot \left( \begin{bmatrix} 0\\-d^3e^2\\1\end{bmatrix} + t \cdot \begin{bmatrix} 1\\0\\1\end{bmatrix} \right) \longrightarrow L_{xy}: (x, y) = O_{xy} - d^3e^2(de, c) + t(c, -de), t \in R.$$
+$$ F_{xy} = P \cdot \begin{bmatrix} 0\\d^3e^2\\1\end{bmatrix} \longmapsto F_{xy} = O_{xy} + d^3e^2(de, c) = \left(\frac{c^2e}{b^2} + d^4e^3, -\frac{bc + cde^2}{b^2} + cd^3e^2\right),$$
+$$ L_{xy} = P \cdot \left( \begin{bmatrix} 0\\-d^3e^2\\1\end{bmatrix} + t \cdot \begin{bmatrix} 1\\0\\1\end{bmatrix} \right) \longmapsto L_{xy}: (x, y) = O_{xy} - d^3e^2(de, c) + t(c, -de), t \in R.$$
 
 V eksplicitni obliki je enačba za premico vodnico
 $$ L_{xy}: y = -\frac{de}{c} \cdot x - \frac{1}{bc} (c^2 + bc^2d^3e^2 + bd^5e^4). $$
