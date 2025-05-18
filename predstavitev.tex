@@ -1,0 +1,272 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\usetheme{Boadilla}
+\usecolortheme{default}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{hyperref}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+% The title
+\title{Origami konstrukcije in reševanje problemov s prepogibanjem papirja}
+
+\author{Terezija Krečič}
+\institute[FMF] % Your institution may be shorthand to save space
+{
+    % Your institution for the title page
+    Mentor: prof.~dr.~Aleš Vavpetič
+    \vskip 3pt
+    Fakulteta za matematiko in fiziko \\
+    Pedagoška matematika
+    \vskip 3pt
+}
+\date{{22.\ maj 2025}} % Date, can be changed to a custom date
+
+
+
+% ROČNO nastavljeni footerji (avtor + podnaslovi)
+\setbeamertemplate{footline}
+{%
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{title in head/foot}\insertauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.75\paperwidth,ht=2.25ex,dp=1ex,leftskip=2ex,rightskip=2ex,sep=0pt]{date in head/foot}%
+    \insertsectionhead%
+    \hfill%
+    \usebeamercolor[fg]{page number in head/foot}%
+    \usebeamerfont{page number in head/foot}%
+    \usebeamertemplate{page number in head/foot}%
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{frame}
+    % Print the title page as the first slide
+    \titlepage
+\end{frame}
+
+\begin{frame}{Pregled}
+    % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+    \tableofcontents
+\end{frame}
+
+%------------------------------------------------
+\section{Osnovna literatura}
+%------------------------------------------------
+
+\begin{frame}{Osnovna literatura}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=\textwidth]{images/osnovna_literatura.png}
+    \end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+
+%------------------------------------------------
+\section{Origami konstrukcije}
+%------------------------------------------------
+
+\begin{frame}{Origami operacije}
+    Pravila prepogibanja:
+    \begin{itemize}
+        \item enkratni in ravni pregibi
+        \item dodatna orodja
+    \end{itemize}
+    Vsi možni pregibi:
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.9\textwidth]{images/hull_vsi pregibi.png}
+    \end{figure}
+    Origami operacije O1--O8.
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{}
+    \begin{alertblock}{Izrek $2.7$}
+        Če dovolimo le enkratne in ravne pregibe, so edine možne operacije prepogibanja operacije O1--O8.
+    \end{alertblock}
+    \begin{alertblock}{Trditvi $2.10$ in $2.11$}
+        Z ravnimi in enkratnimi prepogibi ter upoštevanjem origami operacij lahko s prepogibanjem papirja zrcalimo točke in prenašamo razdalje.
+    \end{alertblock}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.4\textwidth]{images/zrcaljenje_tocke_cez_premico.png}
+        \includegraphics[width=0.4\textwidth]{images/zrcaljenje_konec.png}
+    \end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Origami števila}
+    Oznaka: $\mathbb{O}$
+    \begin{alertblock}{Izrek $2.29$ in trditev $2.30$}
+        Množica $\mathbb{O}$ je podpolje polja $\mathbb{C}$. Za $\alpha \in \mathbb{O}$ velja $\sqrt{\alpha}, \sqrt[3]{\alpha} \in \mathbb{O}$.
+    \end{alertblock}
+    \begin{alertblock}{Posledica $2.31$}
+        Množica evklidsko-konstruktibilnih števil je prava podmnožica množice origami števil.
+    \end{alertblock}
+    Origami števila so tista števila, ki jih lahko zapišemo z znaki
+    $$ (\;)\;0\;1\;2\;3\;4\;5\;6\;7\;8\;9\;i\;+\;-\;\times\;\div\;\sqrt{\;}\;\sqrt[3]{\;}.$$
+\end{frame}
+
+%------------------------------------------------
+
+
+%------------------------------------------------
+\section{Primeri uporabe prepogibanja papirja}
+%------------------------------------------------
+
+\begin{frame}{naslov}
+    \begin{itemize}
+        \item konstrukcija 7-kotnika
+        \item OŠ konstrukcije za dokazovanje
+        \item Hagovi izreki
+        \item X-pregibi
+        \item starogrška problema
+        \item tangente na stožnico
+    \end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Konstrukcija pravilnih $n$-kotnikov}
+    \begin{alertblock}{Gauss-Wantzlov izrek (izrek $2.38$)}
+        Pravilni $n$-kotnik je evklidsko-konstruktibilen natanko takrat, ko je $n = 2^a p_1 \cdots p_k$ za neka $a,k \in \mathbb{N}_0$, kjer so $p_1, \ldots, p_k$ različna Fermatova praštevila, tj.\ $p_i = 2^{2^{m_i}} + 1$ kjer je $m_i \in \mathbb{N}_0$.
+    \end{alertblock}
+    $$ 3, 4, 5, 6, 8, 10, 12, 15, 16, 17, 20 $$
+    \begin{alertblock}{Izrek $2.40$}
+        Pravilni $n$-kotnik se lahko konstruira z origamijem natanko takrat, ko je $n = 2^a 3^b p_1 \cdots p_k$ za neke $a,b,k \in \mathbb{N}_0$, kjer so $p_1, \ldots, p_k$ različna Pierpontova praštevila, tj.\ $p_i > 3$ in $p_i = 2^{m_i}3^{n_i} + 1$ za neka $m_i,n_i \in \mathbb{N}_0$.
+    \end{alertblock}
+    $$ 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20 $$
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{}
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{}
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{}
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{}
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{}
+    
+\end{frame}
+
+%------------------------------------------------
+
+
+%------------------------------------------------
+\section{Reševanje enačb}
+%------------------------------------------------
+
+\begin{frame}{naslov}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{}
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{}
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{}
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{}
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{}
+    
+\end{frame}
+
+%------------------------------------------------
+
+
+%------------------------------------------------
+\section{Alhazenov problem}
+%------------------------------------------------
+
+\begin{frame}{naslov}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{}
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{}
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{}
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{}
+    
+\end{frame}
+
+%------------------------------------------------
+
+\end{document}
