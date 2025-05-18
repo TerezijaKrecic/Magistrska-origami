@@ -86,7 +86,7 @@ Vidimo lahko, da je pri nekaterih primerih pregibov neskončno možno in tega si
 \subsubsection{Origami operacije in origami konstrukcije}
 \label{podpodpogl:operacije}
 
-V zadnjem stoletju se je preko več matematikov (Jacques Justin, Peter Messer, Benedetto Scimemi, Humiaki Huzita, Koshiro Hatori, George E.\ Martin idr.; nekateri so med seboj sodelovali, drugi so delovali neodvisno) skozi čas izoblikoval seznam t.~i.\ \emph{origami operacij}. Gre za nekakšne ``aksiome''\footnote{Seznam je bolj znan pod imenom \emph{Huzita-Hatori aksiomi}, vendar izraz ``aksiom'' tu ni primeren, saj bomo kmalu pokazali, da se med seboj prepletajo in so nekateri izmed njih kombinacija drugih. Prav tako v tej nalogi v ime seznama ne vključimo imen avtorjev, ker se svoj del k seznamu prispevalo več drugih avtorjev.} o obstoju specifičnih prepogibov, ki zajamejo vseh pet možnosti prepogibanja iz zgornjega Hullovega seznama. Da so to zadostne operacije za katerokoli origami konstrukcijo, si bomo pogledali v razdelku~\ref{podpogl:zadost_potr_op}.
+V zadnjem stoletju se je preko več matematikov (Jacques Justin, Peter Messer, Benedetto Scimemi, Humiaki Huzita, Koshiro Hatori, George E.\ Martin idr.; nekateri so med seboj sodelovali, drugi so delovali neodvisno) skozi čas izoblikoval seznam t.~i.\ \emph{origami operacij}. Gre za nekakšne ``aksiome''\footnote{Seznam je bolj znan pod imenom \emph{Huzita-Hatori aksiomi}, vendar izraz ``aksiom'' tu ni primeren, saj bomo kmalu pokazali, da se med seboj prepletajo in so nekateri izmed njih kombinacija drugih. Prav tako v tej nalogi v ime seznama ne vključimo imen avtorjev, ker je svoj del k seznamu prispevalo več drugih avtorjev.} o obstoju specifičnih prepogibov, ki zajamejo vseh pet možnosti prepogibanja iz zgornjega Hullovega seznama. Da so to zadostne operacije za katerokoli origami konstrukcijo, si bomo pogledali v razdelku~\ref{podpogl:zadost_potr_op}.
 
 Seznam se je med avtorji razlikoval v številu (gl.\ \cite[str.\ 29--30]{hull2020}), kot končen seznam pa bomo tu navedli vseh osem naštetih -- na prvi pogled različnih -- operacij. Najprej jih naštejmo, potem pa si ob sledečih slikah še natančneje poglejmo konstrukcijo in pomen posamezne operacije. Videli bomo, da moramo pri nekaterih operacijah ločiti več primerov~\cite{michael2005, zore2022}. Pregibi so na slikovnih prikazih označeni z rdečo prekinjeno črto.
 
@@ -322,7 +322,7 @@ Tako lahko s prepogibanjem papirja zrcalimo točke (in premice), prenašamo razd
 
 Prišli smo do ključnega dela poglavja -- reševanje vprašanja, zakaj se nam z origami konstrukcijami sploh splača ukvarjati.
 
-Tako z evklidskim orodjem kot s prepogibanjem papirja lahko konstruiramo premice in točke ter prenašamo razdalje. Le evklidskim orodjem lahko konstruiramo tudi krožne loke, ker pa znamo rotirati točke okoli druge točke, lahko tudi s prepogibanjem papirja konstruiramo katerokoli točko na krožnici z danim središčem in polmerom. Tako lahko vse evklidske konstrukcije opravimo tudi z origamijem (za natančnejši dokaz glej~\cite[str.\ 362--365]{geret1995}).
+Tako z evklidskim orodjem kot s prepogibanjem papirja lahko konstruiramo premice in točke ter prenašamo razdalje. Le z evklidskim orodjem lahko konstruiramo tudi krožne loke, ker pa znamo rotirati točke okoli druge točke, lahko tudi s prepogibanjem papirja konstruiramo katerokoli točko na krožnici z danim središčem in polmerom. Tako lahko vse evklidske konstrukcije opravimo tudi z origamijem (za natančnejši dokaz glej~\cite[str.\ 362--365]{geret1995}).
 
 Ob posameznih opisih operacij~\ref{op:O1}, \ref{op:O3}, \ref{op:O4}, \ref{op:O5}, \ref{op:O6} in \ref{op:O8} smo že premislili, kako  jih je mogoče opraviti tudi z evklidskim orodjem. Tudi operacija~\ref{op:O2} je od evklidskih konstrukcij že znana. Do tu nam torej origami konstrukcije niso dale ničesar novega.
 
@@ -350,10 +350,10 @@ Radi bi določili množico vseh evklidsko-konstruktibilnih števil. Torej išče
 
 \begin{lema}
     \label{trd:bijekcija_CR}
-    Naj bo $\alpha = a+bi \in \C$, kjer $a, b \in \R$. Potem je $\alpha$ evklidsko-konstruktibilno število, če in samo če sta $a, b$ evklidsko-konstruktibilni števili.
+    Naj bo $\alpha = a+bi \in \C$, kjer $a, b \in \R$. Potem je $\alpha$ evklidsko-konstruktibilno število, če in samo če sta $a$ in $b$ evklidsko-konstruktibilni števili.
 \end{lema}
 \begin{dokaz}
-    Ker sta $a$ in $b$ pravokotni projekciji števila $\alpha$ na realno in imaginarno os -- bralec naj premisli, kako ju lahko konstruiramo z evklidskim orodjem --, je trditev očitna.
+    Ker sta $a$ in $b$ pravokotni projekciji števila $\alpha$ na realno in imaginarno os -- bralec naj premisli, kako ju lahko konstruiramo z evklidskim orodjem -- je trditev očitna.
 \end{dokaz}
 
 Iščemo, katere realne koordinate so evklidsko-konstruktibilne, torej v resnici iščemo množico \emph{realnih} evklidsko-konstruktibilnih števil. Označimo jo z $\E$. Po definiciji~\ref{def:evkl_konstr} velja $0, 1 \in \E$, po lemi~\ref{trd:bijekcija_CR} pa $\alpha = a + bi$ je evklidsko-konstruktibilno število natanko takrat, ko velja $a, b \in \E$.
@@ -393,10 +393,10 @@ Ker je polje $\Q$ podpolje polja $\E$, je $\E$ \emph{razširitev} polja $\Q$. Id
 \begin{dokaz}
     Naj bo $r$ poljubno racionalno število po predpostavki trditve. Očitno velja $\Q \subset \Q(\sqrt{r})$, saj so v $\Q(\sqrt{r})$ med drugim tudi vsa števila oblike $a + 0 \cdot \sqrt{r} = a$, kjer je $a \in \Q$ poljubno. Dokazati moramo, da je $\Q(\sqrt{r})$ polje.
 
-    Očitno je $0, 1 \in \Q(\sqrt{r})$, če vzamemo $a \in \{0, 1\}$ in $b = 0$. Bralcu prepustimo lahek računski preostanek dokaza, kjer mora pokazati, da so vsota, razlika, produkt in količnih števil $a_1 + b_1\sqrt{r}$ in $a_2 + b_2\sqrt{r}$ oblike $a_3 + b_3\sqrt{r}$.
+    Očitno je $0, 1 \in \Q(\sqrt{r})$, če vzamemo $a \in \{0, 1\}$ in $b = 0$. Bralcu prepustimo lahek računski preostanek dokaza, kjer mora pokazati, da so vsota, razlika, produkt in količnik števil $a_1 + b_1\sqrt{r}$ in $a_2 + b_2\sqrt{r}$ oblike $a_3 + b_3\sqrt{r}$.
 \end{dokaz}
 
-Za ustrezen $r$ lahko na enak način poiščemo razširitev polja $\Q(\sqrt{r})$. Vzamemo $q \in \Q(\sqrt{r})^+, \sqrt{q} \notin \Q(\sqrt{r})$. Potem so elementi nove razširitve pola $\Q(\sqrt{r})$ oblike $(a_1 + b_1\sqrt{r}) + (a_2 + b_2\sqrt{r})\sqrt{q}$. Pri tem velja $a_1 + b_1\sqrt{r}, \; a_2 + b_2\sqrt{r} \in \Q(\sqrt{r})$ in $a_1, b_1, a_2, b_2 \in \Q$.
+Za ustrezen $r$ lahko na enak način poiščemo razširitev polja $\Q(\sqrt{r})$. Vzamemo $q \in \Q(\sqrt{r})^+, \sqrt{q} \notin \Q(\sqrt{r})$. Potem so elementi nove razširitve polja $\Q(\sqrt{r})$ oblike $(a_1 + b_1\sqrt{r}) + (a_2 + b_2\sqrt{r})\sqrt{q}$. Pri tem velja $a_1 + b_1\sqrt{r}, \; a_2 + b_2\sqrt{r} \in \Q(\sqrt{r})$ in $a_1, b_1, a_2, b_2 \in \Q$.
 
 Primer (vzeto iz~\cite[str.\ 36]{geometricconstructions}): Naj bo $F = \Q(\sqrt{5})$, torej so njegovi elemeni oblike $a + b\sqrt{5}$, kjer sta $a, b \in \Q$. Za število $q = (35-15\sqrt{5})/2 \in F^+$ je njegov koren enak številu $\sqrt{q} = (5-3\sqrt{5})/2 \in F$, zato $F(\sqrt{q}) = F$ ni razširitev polja $F$. Za število $2 \in F^+$ pa ne obstajata $a, b \in \Q$, da bi veljalo $\sqrt{2} = a+b\sqrt{5}$, torej $\sqrt{2} \notin F$ in je $F(\sqrt{2})$ razširitev polja $F$. Pišemo $F(\sqrt{2}) = \Q(\sqrt{5}, \sqrt{2})$. 
 
@@ -411,7 +411,7 @@ Primer (vzeto iz~\cite[str.\ 36]{geometricconstructions}): Naj bo $F = \Q(\sqrt{
 
 % Evklidska polja (npr.\ realna števila) nimajo kvadratnih razširitev, saj so zaprta za korenjenje.
 
-Velja $F_0 \subset F_1 \subset F_2 \subset \ldots \subset F_n$. Za vsak $i \in \{1, \ldots n\}$ je stopnja razširitve polja $F_i$ nad poljem $F_{i-1}$ je enaka $[F_i : F_{i-1}] = [F_{i-1}(\sqrt{r_{i}}) : F_{i-1}] = 2$, saj je $x^2 - r_{i}$ minimalni polinom števila $\sqrt{r_{i}}$ nad $F_{i-1}$. Iz algebre se spomnimo naslednjega izreka.
+Velja $F_0 \subset F_1 \subset F_2 \subset \ldots \subset F_n$. Za vsak $i \in \{1, \ldots n\}$ je stopnja razširitve polja $F_i$ nad poljem $F_{i-1}$ enaka $[F_i : F_{i-1}] = [F_{i-1}(\sqrt{r_{i}}) : F_{i-1}] = 2$, saj je $x^2 - r_{i}$ minimalni polinom števila $\sqrt{r_{i}}$ nad $F_{i-1}$. Iz algebre se spomnimo naslednjega izreka.
 
 \begin{izrek}
     \label{izr:stopnje_razsiritve}
@@ -455,8 +455,8 @@ $$
 \begin{izrek}
     \label{izr:evkl_konstr}
     Naj bo $a \in \R$ algebraično nad $\Q$. Potem se da število $a$ konstruirati le s pomočjo ravnila in šestila natanko tedaj, ko obstaja iterativna kvadratna razširitev $F$ polja $\Q$, kjer je
-    $$ \Q = F_0 \subset F_1 \subset F_2 \ldots \subset F_n = F$$
-    za nek $n \in \N_0$, da je $a \in F$ in stopnja razširitve polja $F$ nad $\Q$ enaka $2^n$ za nek $n \in \N_0$.
+    $$ \Q = F_0 \subset F_1 \subset F_2 \ldots \subset F_n = F,$$
+    da je $a \in F$ in stopnja razširitve polja $F$ nad $\Q$ enaka $2^n$ za nek $n \in \N_0$.
 \end{izrek}
 
 Jerman v~\cite[str.\ 77--78]{jerman1998} tako z lahkoto dokaže, da trisekcija kota v splošnem ter konstrukcija števila $ \sqrt[3]{2} $ z evklidskim orodjem nista mogoči, saj obakrat dobimo, da je stopnja razširitve polja $\Q$ enaka $3$:
