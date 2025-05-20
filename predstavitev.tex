@@ -6,6 +6,7 @@
 
 \usetheme{Boadilla}
 \usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -118,13 +119,17 @@
 
 %------------------------------------------------
 
-\begin{frame}{Origami števila}
-    Oznaka: $\mathbb{O}$
+\begin{frame}{$\mathbb{O}$: množica origami števil}
     \begin{alertblock}{Izrek $2.29$ in trditev $2.30$}
         Množica $\mathbb{O}$ je podpolje polja $\mathbb{C}$. Za $\alpha \in \mathbb{O}$ velja $\sqrt{\alpha}, \sqrt[3]{\alpha} \in \mathbb{O}$.
     \end{alertblock}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.4\textwidth]{images/kvadratni_koren.png}
+        \includegraphics[width=0.5\textwidth]{images/starogr_problemi/cube_martin.png}
+    \end{figure}
     \begin{alertblock}{Posledica $2.31$}
-        Množica evklidsko-konstruktibilnih števil je prava podmnožica množice origami števil.
+        Množica evklidsko-konstruktibilnih števil je prava podmnožica množice $\mathbb{O}$.
     \end{alertblock}
     Origami števila so tista števila, ki jih lahko zapišemo z znaki
     $$ (\;)\;0\;1\;2\;3\;4\;5\;6\;7\;8\;9\;i\;+\;-\;\times\;\div\;\sqrt{\;}\;\sqrt[3]{\;}.$$
@@ -136,17 +141,6 @@
 %------------------------------------------------
 \section{Primeri uporabe prepogibanja papirja}
 %------------------------------------------------
-
-\begin{frame}{naslov}
-    \begin{itemize}
-        \item konstrukcija 7-kotnika
-        \item OŠ konstrukcije za dokazovanje
-        \item Hagovi izreki
-        \item X-pregibi
-        \item starogrška problema
-        \item tangente na stožnico
-    \end{itemize}
-\end{frame}
 
 %------------------------------------------------
 
@@ -163,36 +157,102 @@
 
 %------------------------------------------------
 
-\begin{frame}{}
+\begin{frame}{Konstrukcija pravilnega 7-kotnika}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=\textwidth]{images/n-kotniki/7kotnik_konstr1.png}
+    \end{figure}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=\textwidth]{images/n-kotniki/7kotnik_konstr2.png}
+    \end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Uporaba v osnovni šoli}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.7\textwidth]{images/osnovnosolski_prikazi/trikotnik_vsota_kotov.png}
+        \includegraphics[width=0.9\textwidth]{images/osnovnosolski_prikazi/vec_lastnosti1.png}
+        \includegraphics[width=0.8\textwidth]{images/osnovnosolski_prikazi/vec_lastnosti2.png}
+    \end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Konstrukcije nekaterih pravilnih likov}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{images/n-kotniki/8kotnik_basic.png}
+        \includegraphics[width=0.8\textwidth]{images/n-kotniki/trik_enak_basic.png}
+    \end{figure}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.2\textwidth]{images/n-kotniki/trik_enak_max1.png}
+        \includegraphics[width=0.7\textwidth]{images/n-kotniki/trik_enak_max2.png}
+    \end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Hagovi izreki}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.32\textwidth]{images/hagovi_izreki/hagov_izrek1_stevilke.png}
+        \includegraphics[width=0.35\textwidth]{images/hagovi_izreki/hagov_izrek2_stevilke.png}
+        \includegraphics[width=0.3\textwidth]{images/hagovi_izreki/hagov_izrek3_stevilke.png}
+    \end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Razdelicev daljice na $n$ delov}
     
 \end{frame}
 
 %------------------------------------------------
 
-\begin{frame}{}
+\begin{frame}{X-pregibi}
     
 \end{frame}
 
 %------------------------------------------------
 
-\begin{frame}{}
-    
+\begin{frame}{Starogrški problemi}
+    \begin{itemize}
+        \item \textbf{Podvojitev kocke:} Za dano kocko konstruiraj novo kocko, ki ima dvakrat večji volumen od prve (konstrukcija razdalje $\sqrt[3]{2}$).
+        \item \textbf{Trisekcija kota:} Za dan kot $\alpha$ konsturiraj kot $\alpha/3$.
+        \item \textbf{Kvadratura kroga:} Za dan krog konstruiraj kvadrat, ki ima enako ploščino kot dani krog (konstrukcija razdalje $\sqrt{\pi}$).
+    \end{itemize}
 \end{frame}
 
 %------------------------------------------------
 
-\begin{frame}{}
-    
+\begin{frame}{Podvojitev kocke -- Martinova in Messerjeva konstrukcija}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{images/starogr_problemi/cube_martin.png}
+    \end{figure}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.68\textwidth]{images/starogr_problemi/messer1.png}
+        \includegraphics[width=0.3\textwidth]{images/starogr_problemi/messer2.png}  
+    \end{figure} 
 \end{frame}
 
 %------------------------------------------------
 
-\begin{frame}{}
+\begin{frame}{Trisekcija kota}
+    
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}{Tangente na stožnice}
     
 \end{frame}
 
 %------------------------------------------------
-
 
 %------------------------------------------------
 \section{Reševanje enačb}
