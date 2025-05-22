@@ -15,7 +15,7 @@ V osnovi gre za problem s področja optike, ki naj bi ga zastavil grški matemat
 
 Rešitev se da preformulirati v iskanje točke na krožnici, v kateri polmer krožnice razpolavlja kot, ki ga opravi svetlobni žarek. To velja zaradi \emph{odbojnega zakona}, vendar tega v takratni Grčiji še niso poznali. Pojdimo na začetek in opazujmo, kako se je oblika Ptolemajevega problema spreminjala skozi čas.
 
-Grški matematik Heron iz Aleksandrije, med drugim znan po Heronovi formuli za izračun ploščine trikotnika z danimi dolžinami stranic, je okoli leta 100 po Kr.\ zastavil in rešil naslednje vprašanje, ki je različica Ptolemajevega problema: \emph{Na isti strani premice ležita točki $A$ in $B$. Poišči točko $C$ na premici, da bo pot od točke $A$ do $B$ preko točke $C$ najkrajša} (predpostavimo evklidsko metriko).
+Grški matematik Heron iz Aleksandrije je okoli leta 100 po Kr.\ zastavil in rešil naslednje vprašanje, ki je različica Ptolemajevega problema: \emph{Na isti strani premice ležita točki $A$ in $B$. Poišči točko $C$ na premici, da bo pot od točke $A$ do $B$ preko točke $C$ najkrajša} (predpostavimo evklidsko metriko).
 
 Sam točko $C$ konstruira zelo enostavno -- najprej točko $B$ zrcali čez premico v točko $B'$, nato pa s točko $C$ označi presečišče premice in daljice $AB'$ (slika~\ref{fig:heron}). Ker velja $|CB| = |CB'|$, je $|AC| + |CB| = |AC| + |CB'| = |AB'|$. Dolžina $|AB'|$ najkrajša možna razdalja med točkama $A$ in $B'$, zato je točka $C$ rešitev vprašanja.
 
@@ -137,9 +137,9 @@ Za poseben primer izbire točk $A$ in $B$ pri dani krožnici na naše veselje ve
 
 \subsubsection*{Huygensova rešitev in Nishimurijev origami postopek}
 
-Nishimura v~\cite{nishimura2018} povzema, kako je Huygens preko kompleksnih števil Alhazenov problem prevedel na iskanje presečišča krožnice z določeno hiperbolo, nekaj več razlage pri izpeljavi pa opiše tudi Alperin v~\cite{alperin2002}. Nishimura od tu nadaljuje v smer, ki nam sproducira konstrukcijo rešitve z origamijem -- vemo že, da presečišče dveh stožnic v projektivni ravnini korespondira s skupno tangento njunih dualnih stožnic, ki smo jih spoznali v razdelku~\ref{podpogl:stoznice_projektivna}. Po novi prevedbi problema na iskanje skupne tangente na dve stožnici avtor svoj članek zaključi še z navedbo origami konstrukcije, ki konstruira rešitev Alhazenovega problema.
+Nishimura v~\cite{nishimura2018} povzema, kako je Huygens preko kompleksnih števil Alhazenov problem prevedel na iskanje presečišča krožnice z določeno hiperbolo, nekaj več razlage pri izpeljavi pa opiše tudi Alperin v~\cite{alperin2002}. Nishimura od tu nadaljuje v smer, ki nam sproducira konstrukcijo rešitve z origamijem, in po prevedbi problema na iskanje skupne tangente na dve stožnici avtor svoj članek zaključi še z navedbo konkretne origami konstrukcije, ki konstruira rešitev Alhazenovega problema.
 
-V nadaljevanju privzamemo avtorjeve oznake objektov, ki pa se od dosedanjih ne razlikujejo veliko. Brez škode za splošnost naj bo $\mathcal{C}$ enotska krožnica s središčem $O$. Znotraj nje izberemo poljubni točki $A$ in $B$ taki, da so točke $A,B,O$ paroma različne (slika~\ref{fig:huygens1}). Išemo točko $P \in \mathcal{C}$, da bo veljalo
+V nadaljevanju privzamemo avtorjeve oznake objektov. Brez škode za splošnost naj bo $\mathcal{C}$ enotska krožnica s središčem $O$. Znotraj nje izberemo poljubni točki $A$ in $B$ taki, da so točke $A,B,O$ paroma različne (slika~\ref{fig:huygens1}). Išemo točko $P \in \mathcal{C}$, da bo veljalo
 \begin{equation}
     \label{eq:huygens_pogoj}
     \angle APO = \angle OPB.
@@ -217,7 +217,7 @@ Kako pa bomo iz skupne tangente določili točko $P$? Iz originalnega iskanja sk
     Ko izraze na obeh straneh poenostavimo in malo preuredimo enačbo, dobimo $r^2x_0^2 + 2rsx_0y_0 + s^2y_0^2 + 4qrx_0 - 4qsy_0 + 4q^2 = 0$, torej je $\mathcal{Q^*}$ res parabola.
 \end{dokaz}
 
-Tako smo prišli do konca teoretičnega postopka. Na hitro ponovimo -- pri dani enotski krožnici $\mathcal{C}$ in točkama $A, B$ znotraj nje (postopek velja tudi za točki zunaj krožnice) nam presečišče $P$ krožnice $\mathcal{C}$ s hiperbolo $\mathcal{Q}$, ki je odvisna od točk $A$ in $B$, reši Alhazenov problem. Presečišče stožnic prevedemo v iskanje skupne tangente $p$ na krožnico $\mathcal{C}$ in parabolo $\mathcal{Q^*}$, ki je dualna stožnica hiperbole. Iskana točka $P$ je dotikališče tangente $p$ s krožnico $\mathcal{C}$ (slika~\ref{fig:nishimura_resitev}).
+Tako smo prišli do konca teoretičnega postopka. Na hitro ponovimo -- pri dani enotski krožnici $\mathcal{C}$ in točkama $A, B$ znotraj nje (postopek velja tudi za točki zunaj krožnice) nam presečišče $P$ krožnice $\mathcal{C}$ s hiperbolo $\mathcal{Q}$, ki je odvisna od točk $A$ in $B$, reši Alhazenov problem. Presečišče stožnic prevedemo v iskanje skupne tangente $p$ na krožnico $\mathcal{C}$ in parabolo $\mathcal{Q^*}$, ki je dualna stožnica hiperbole (spomnimo pa se, da tangento dobimo s hkratnim prepogibom središča krožnice na rob dvakrat večje krožnice in gorišča parabole na njeno premico vodnico). Iskana točka $P$ je dotikališče tangente $p$ s krožnico $\mathcal{C}$ (slika~\ref{fig:nishimura_resitev}).
 
 \begin{figure}[h]
     \centering
@@ -225,8 +225,6 @@ Tako smo prišli do konca teoretičnega postopka. Na hitro ponovimo -- pri dani 
     \caption[Nishimurijeva rešitev]{Konstrukcija dotikališča skupne tangente s krožnico. Vzeto iz~\cite[str.\ 40]{nishimura2018}.}
     \label{fig:nishimura_resitev}
 \end{figure}
-
-Vemo že, da z evklidskim orodjem problema ne moremo rešiti, saj se prevede na reševanje enačbe četrte stopnje. Ta postopek pa nam še na drug način pokaže potrebnost origamija -- konstrukcija skupne tangente na krožnico in parabolo namreč z neoznačenim ravnilom in šestilom prav tako ni mogoča, spomnimo pa se, da jo lahko dobimo s hkratnim prepogibom središča krožnice na rob dvakrat večje krožnice in gorišča parabole na njeno premico vodnico.
 
 Nishimura vse znanje tega razdelka združi v naslednjo origami konstrukcijo, ki konstruira rešitev Alhazenovega problema (dodala sem sprotno razlago, ki pripomore k razumevanju delovanja konstrukcije). Naj bo $\mathcal{C}$ enotska krožnica s središčem $O$ v koordinatnem izhodišču kompleksne ravnine $\C$ in $a = A, b = B$ točki znotraj nje. Za točki zunaj krožnice je postopek enak.
 \begin{enumerate}
@@ -250,17 +248,18 @@ Nishimura vse znanje tega razdelka združi v naslednjo origami konstrukcijo, ki 
     \item Prepognemo premico skozi središče $O$, ki točko $H$ preslika na premico $D$ v točko $K$. Velja $|OK| = |OH|$.
     \item Prepognemo premico skozi središče $O$, ki točko $B$ preslika na premico $OA$. To je ravno simetrala kota $\angle AOB$, za katero smo prevzeli, da je to ravno abscisna os v našem koordinatnem sistemu. Sliko točke $K$ čeznjo označimo s $F$ (slika~\ref{fig:nishimura_origami2}).
     
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.6\textwidth]{images/alhazen/nishimura_origami2.png}
+        \caption[Nishimurijeva konstrukcija $2$]{Nishimurijeva konstrukcija gorišča $F$ (korak $13$). Vzeto iz~\cite[str.\ 42]{nishimura2018}.}
+        \label{fig:nishimura_origami2}
+    \end{figure}
+    
     Ker je premica $OF$ zrcalna slika premice $D$ čez abscisno os, je njena enačba $OF: sx + ry = 0$. Zaradi simetrije velja $|OF| = |OK| = |OH| = 2q/ \sqrt{s^2+r^2}$. Za točko $F = (x,y)$ tako dobimo sistem enačb
     $$ sx+ry=0 \; \text{ in } \; \sqrt{x^2+y^2} = \frac{2q}{\sqrt{s^2+r^2}},$$
     katerega rešitev so ravno koordinate gorišča iskane parabole iz trditve~\ref{trd:alh_parab_enacba} (lahek izračun je prepuščen bralcu), torej je točka $F$ gorišče parabole $\mathcal{Q^*}$ s premico vodnico $D$.
     
     \item Za določitev iskane točke $P$ samo še prepognemo tangento $p$ na krožnico $\mathcal{C}$, ki točko $F$ položi na premico $D$. Točka $P$ je dotikališče tangente $p$ s krožnico $\mathcal{C}$ (slika~\ref{fig:nishimura_resitev}).
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.6\textwidth]{images/alhazen/nishimura_origami2.png}
-        \caption[Nishimurijeva konstrukcija $2$]{Nishimurijeva origami konstrukcija gorišča $F$ (korak $13$). Vzeto iz~\cite[str.\ 42]{nishimura2018}.}
-        \label{fig:nishimura_origami2}
-    \end{figure}
 \end{enumerate}
 
 \begin{opomba}

@@ -81,12 +81,12 @@ Papir prepogibamo tako, da se objekti na njem (točke in premice) prekrijejo. Za
     \label{fig:vsi_pregibi}
 \end{figure}
 
-Vidimo lahko, da je pri nekaterih primerih pregibov neskončno možno in tega si ne želimo. Tako kot pri evklidskih konstrukcijah na primer ne dovolimo konstrukcij premic, ki potekajo skozi eno samo točko (šop premic), bomo tudi tu možne pregibe omejili na končno število možnosti. V ta namen sedaj definirajmo vse možne pregibe.
+Vidimo lahko, da je pri nekaterih primerih pregibov neskončno možno in tega si ne želimo. Tako kot pri evklidskih konstrukcijah na primer razen pravokotnice na premico skozi neko točko ne dovolimo konstrukcij premic, ki potekajo skozi eno samo točko (šop premic), bomo tudi tu možne pregibe omejili na končno število možnosti. V ta namen sedaj definirajmo vse možne pregibe.
 
 \subsubsection{Origami operacije in origami konstrukcije}
 \label{podpodpogl:operacije}
 
-V zadnjem stoletju se je preko več matematikov (Jacques Justin, Peter Messer, Benedetto Scimemi, Humiaki Huzita, Koshiro Hatori, George E.\ Martin idr.; nekateri so med seboj sodelovali, drugi so delovali neodvisno) skozi čas izoblikoval seznam t.~i.\ \emph{origami operacij}. Gre za nekakšne ``aksiome''\footnote{Seznam je bolj znan pod imenom \emph{Huzita-Hatori aksiomi}, vendar izraz ``aksiom'' tu ni primeren, saj bomo kmalu pokazali, da se med seboj prepletajo in so nekateri izmed njih kombinacija drugih. Prav tako v tej nalogi v ime seznama ne vključimo imen avtorjev, ker je seznam delo veliko več matematikov kot le Hatorija in Huzite.} o obstoju specifičnih prepogibov, ki zajamejo vseh pet možnosti prepogibanja iz zgornjega Hullovega seznama. Da so to zadostne operacije za katerokoli origami konstrukcijo, si bomo pogledali v razdelku~\ref{podpogl:zadost_potr_op}.
+V zadnjem stoletju se je preko več matematikov (Jacques Justin, Peter Messer, Benedetto Scimemi, Humiaki Huzita, Koshiro Hatori, George E.\ Martin idr.; nekateri so med seboj sodelovali, drugi so delovali neodvisno) skozi čas izoblikoval seznam t.~i.\ \emph{origami operacij}. Gre za nekakšne ``aksiome''\footnote{Seznam je bolj znan pod imenom \emph{Huzita-Hatori aksiomi}, vendar izraz ``aksiom'' tu ni primeren, saj bomo kmalu pokazali, da se med seboj prepletajo in so nekateri izmed njih kombinacija drugih. Zaradi več avtorjev sem ime seznama opustila.} o obstoju specifičnih prepogibov, ki zajamejo vseh pet možnosti prepogibanja iz zgornjega Hullovega seznama. Da so to zadostne operacije za katerokoli origami konstrukcijo, si bomo pogledali v razdelku~\ref{podpogl:zadost_potr_op}.
 
 Seznam se je med avtorji razlikoval v številu (gl.\ \cite[str.\ 29--30]{hull2020}), kot končen seznam pa bomo tu navedli vseh osem naštetih -- na prvi pogled različnih -- operacij. Najprej jih naštejmo, potem pa si ob sledečih slikah še natančneje poglejmo konstrukcijo in pomen posamezne operacije. Videli bomo, da moramo pri nekaterih operacijah ločiti več primerov~\cite{michael2005, zore2022}. Pregibi so na slikovnih prikazih označeni z rdečo prekinjeno črto.
 
@@ -132,7 +132,7 @@ Vse operacije nam konstruirajo raven pregib (premico), le operacija~\ref{op:O2} 
     \emph{Origami konstrukcije} so konstrukcije točk in premic, ki jih je iz danih točk in razdalj mogoče konstruirati preko operacij~\ref{op:O1}--\ref{op:O8}. Pri tem premico predstavlja raven in enkraten pregib iz posamezne operacije, nove točke pa so določene s presečišči teh pregibov.
 \end{definicija}
 
-Prve tri operacije so prikazane na sliki~\ref{fig:O1-O3}. Operacijo~\ref{op:O1} izvedemo tako, da naredimo pregib skozi točki $A$ in $B$. Takoj opazimo, da je ta operacija analogna postulatu~\ref{post:P1}, kar nam vzbudi zanimanje za povezavo med evklidskimi in origami konstrukcijami. Pri operaciji~\ref{op:O2} ne prepogibamo papirja, temveč določamo presečišča pregibov. Operacija je očitno izvedljiva le v primeru nevzporednih pregibov. Pri operaciji~\ref{op:O3} papir uvijemo, da se točki pokrijeta, nato pa z dlanjo sploščimo papir in ustvarimo pregib. Le-ta je ravno simetrala daljice $AB$ -- ko prepognemo točko $A$ na točko $B$ in pustimo papir še zapognjen, je očitno, da so vse točke na pregibu enako oddaljene od točk $A$ in $B$.
+Prve tri operacije so prikazane na sliki~\ref{fig:O1-O3}. Operacijo~\ref{op:O1} izvedemo tako, da naredimo pregib skozi točki $A$ in $B$. Pri operaciji~\ref{op:O2} ne prepogibamo papirja, temveč določamo presečišča pregibov. Operacija je očitno izvedljiva le v primeru nevzporednih pregibov. Pri operaciji~\ref{op:O3} papir uvijemo, da se točki pokrijeta, nato pa z dlanjo sploščimo papir in ustvarimo pregib. Le-ta je ravno simetrala daljice $AB$ -- ko prepognemo točko $A$ na točko $B$ in pustimo papir še zapognjen, je očitno, da so vse točke na pregibu enako oddaljene od točk $A$ in $B$.
 
 \begin{figure}[h]
     \centering
@@ -543,14 +543,14 @@ Dokaz je enak, le da tu za konstrukcijo pravokotnih projekcij uporabimo operacij
         \item $\sqrt{\alpha} = \pm \sqrt{r}e^{i \frac{\theta}{2}}$ in
         \item $\sqrt[3]{\alpha}_1 = \sqrt[3]{r}e^{i \frac{\theta}{3}}, \sqrt[3]{\alpha}_2 = \sqrt[3]{r}e^{i \left(\frac{\theta}{3} + \frac{2\pi}{3}\right)}, \sqrt[3]{\alpha}_3 = \sqrt[3]{r}e^{i \left(\frac{\theta}{3} + \frac{4\pi}{3}\right)}$.
     \end{itemize}
-    Torej moramo dokazati, da $\sqrt{r}, \sqrt[3]{r} \in \OR$, da znamo razpolavljati in tretjiniti kote ter rotirati origami število za kot $60^\circ$ okoli izhodišča $O$. Potem bomo po izreku~\ref{izr:podpolje} lahko konstruirali zgornjih pet števil in tako dokazali to trditev.
+    Torej moramo dokazati, da $\sqrt{r}, \sqrt[3]{r} \in \OR$, da znamo razpolavljati in tretjinjiti kote ter rotirati origami število za kot $60^\circ$ okoli izhodišča $O$. Potem bomo po izreku~\ref{izr:podpolje} lahko konstruirali zgornjih pet števil in tako dokazali to trditev.
 
     Najprej se še prepričajmo, da $r \in \OR$. Ker je to ravno razdalja števila $\alpha$ do izhodišča, jo lahko prenesemo na realno os in tako konstruiramo realno število $r$, torej je res $r \in \OR$.
 
     Za konstrukcijo števila $\sqrt{r}$ vzemimo točko $A = (0, 1) $ in premico $y = -1$. Na ordinatni osi označimo točko $B = (0, -r/4)$ in z operacijo~\ref{op:O6} skoznjo naredimo pregib, ki točko $A$ položi na premico $y = -1$. Njena zrcalna slika je $A'=(t, -1) $ za nek $t \in \R$. Na koncu prepognemo še pravokotnico na abscisno os skozi točko $A'$ in tako dobimo točko $(t, 0)$ (slika~\ref{fig:konstrukcija_korena}).
     \begin{figure}[h]
         \centering
-        \includegraphics[width=0.5\textwidth]{images/kvadratni_koren.png}
+        \includegraphics[width=0.45\textwidth]{images/kvadratni_koren.png}
         \caption[Konstrukcija korena]{Konstrukcija števila $\sqrt{r}$ za poljuben $r \in \Q^{+}$.}
         \label{fig:konstrukcija_korena}
     \end{figure}
@@ -561,12 +561,12 @@ Dokaz je enak, le da tu za konstrukcijo pravokotnih projekcij uporabimo operacij
         \frac{r}{2t} &= \frac{t}{2},\\
         r &= t^2 \text{ oz. } t = \sqrt{r}.
     \end{align*}    
-    V poglavju~\ref{pogl:enacbe} si bomo pogledali, kako z origamijem na več načinov rešujemo poljubne kubične enačbe z racionalnimi koeficienti (npr.\ v razdelku~\ref{podpogl:lill_beloch_postopek} je opisan Belochin postopek preko Lillove metode), torej bomo znali konstruirati tudi rešitve enačbe $x^3 - r = 0$. Konkretne konstrukcije števila $\sqrt[3]{r}$ so opisane tudi v poglavju~\ref{pogl:starogrskiproblemi} (glej trditev~\ref{trd:koren_3_k}).
+    V poglavju~\ref{pogl:starogrskiproblemi} si bomo pogledali, kako lahko z origamijem konstruiramo število $\sqrt[3]{r}$, zato dokaz le-tega zaenkrat odložimo (glej trditev~\ref{trd:koren_3_k}).
     
-    Z operacijo~\ref{op:O4} znamo razpoloviti kot, postopek tretjinjenja kota pa je, kot že omenjeno, opisan v razdelku~\ref{podpogl:trisekcija}. Ostane nam samo še rotacija točke za kot $60^\circ$ okoli izhodišča. Na sliki~\ref{fig:kot60_rotacija} je prikaz enostavne konstrukcije -- najprej prepognemo simetralo $p_1$ daljice $OA$ in konstruiramo pregib $p_2$ skozi $O$, ki točko $A$ preslika v točko $A'$ na simetrali $p_1$. Trikotnik $\triangle OAA'$ je enakostraničen. 
+    Z operacijo~\ref{op:O4} znamo razpoloviti kot, postopek tretjinjenja kota pa je opisan v razdelku~\ref{podpogl:trisekcija}. Ostane nam samo še rotacija točke za kot $60^\circ$ okoli izhodišča. Na sliki~\ref{fig:kot60_rotacija} je prikaz enostavne konstrukcije -- najprej prepognemo simetralo $p_1$ daljice $OA$ in konstruiramo pregib $p_2$ skozi $O$, ki točko $A$ preslika v točko $A'$ na simetrali $p_1$. Trikotnik $\triangle OAA'$ je enakostraničen. 
     \begin{figure}[h]
         \centering
-        \includegraphics[width=0.4\textwidth]{images/algebra/kot60.png}
+        \includegraphics[width=0.38\textwidth]{images/algebra/kot60.png}
         \caption[Rotacija točke okoli izhodišča]{Rotacija točke za kot $60^\circ$ okoli izhodišča.}
         \label{fig:kot60_rotacija}
     \end{figure}
@@ -629,7 +629,7 @@ Pred naslednjim izrekom poglejmo še lemo, pri čemer za kratek čas zapustimo m
 
     Po izreku~\ref{izr:dve_operaciji} vemo, da lahko kakršnokoli origami konstrukcijo opravimo z operacijama~\ref{op:O2} in~\ref{op:O7}. Z indukcijo na številu $N$ uporabe operacije~\ref{op:O2} na konstrukciji števila $\alpha$ poiščimo zaporedje $2,3$-razširitev.
 
-    Operacija~\ref{op:O2} nam določi novo origami konstruktibilno točko oz.\ origami število kot presečišče dveh premic. Za $N = 0$ nismo konstruirali nove točke, torej je $\alpha$ že dano število in je $\Q = F_0 \subset \C$ naša $2,3$-razširitev. Recimo sedaj, da za vsako konstrukcijo origami števila preko končnega števila uporabe operacij~\ref{op:O2} ali~\ref{op:O7}, od česar se operacije~\ref{op:O2} poslužimo $(N-1)$-krat, obstaja končno zaporedje $2,3$-razširitev obsega $\Q$.
+    Operacija~\ref{op:O2} nam določi novo origami konstruktibilno točko oz.\ origami število kot presečišče dveh premic. Za $N = 0$ nismo konstruirali nove točke, torej je $\alpha$ že dano število in je $\Q = F_0 \subset \C$ zaporedje naše $2,3$-razširitve. Recimo sedaj, da za vsako konstrukcijo origami števila preko končnega števila uporabe operacij~\ref{op:O2} ali~\ref{op:O7}, od česar se operacije~\ref{op:O2} poslužimo $(N-1)$-krat, obstaja končno zaporedje $2,3$-razširitev obsega $\Q$.
     
     Naj bo $M$ število uporabe operacij~\ref{op:O2} ali~\ref{op:O7} za konstrukcijo števila $\alpha$, pri čemer smo operacijo~\ref{op:O2} uporabili $N$-krat. V konstrukciji števila $\alpha$ je to očitno zadnja izvedena operacija, saj je število $\alpha$ določeno kot točka v ravnini. Naj bo $\alpha$ presečišče origami-konstruktibilnih premic $p_1$ in $p_2$. Obe premici sta bili lahko konstruirani le z operacijo~\ref{op:O7}, torej za vsako od njiju obstajata točki $\alpha_i$ in $\beta_i$, kjer je $i \in \{1,2\}$, ter še po dve premici, da je $p_i$ njihov ustrezen Belochin pregib. Števila $\alpha_1, \beta_1, \alpha_2, \beta_2$ so bila konstruirana iz največ $(N-1)$-kratne uporabe uperacije~\ref{op:O2}, torej obstaja zaporedje $2,3$-razširitev polja $\Q$ oblike $\Q = F_0 \subset \ldots \subset F_n$, da so realni in imaginarni deli teh štirih števil vsebovani v $F_n$.
     
@@ -647,9 +647,7 @@ Iz tega izreka sledi končna klasifikacija origami števil.
     Naj bo število $\alpha \in \C$ algebraično nad poljem $\Q$ in naj bo $L$ razpadno polje minimalnega polinoma števila $\alpha$ nad $\Q$. Potem je $\alpha$ origami število natanko takrat, ko velja $[L:Q]=2^a3^b$ za neka $a, b \in \N_0$.
 \end{izrek}
 \begin{dokaz}
-    Naj bo $\alpha \in \OR$ poljubno origami število. Polje origami števil $\OR$ je zaprto za kvadratne in kubične korene (gl.\ trditev~\ref{trd:zaprtost_koren}), origami operacije~\ref{op:O1}--\ref{op:O8} pa generirajo števila, ki so rešitve polinomov iz $\Q[X]$ stopnje $3$ ali manj (gl.\ dokaz leme~\ref{lema:O7_razširitev}). Zaradi obstoja formul za rešitve kvadratnih in kubičnih enačb polje $\OR$ vsebuje vse rešitve polinomov iz $\Q[X]$ stopnje največ 3. Vsak polinom nad $\Q$ stopnje največ $3$ torej razpade v polju $\OR$, zato je mnnožica origami števil razpadno polje minimalnega polinoma števila $\alpha$ nad poljem $\Q$.
-    
-    Iz tega sledi $L \subseteq \OR$. Po izreku~\ref{izr:orig_konstr} obstaja zaporedje $2,3$-razširitev oblike $ \Q = F_0 \subset F_1 \subset F_2 \ldots \subset F_{n-1} \subset F_n = L \subset \C $. Kot v dokazu posledice~\ref{posl:kvadr_razs} lahko tudi tu dokažemo, da potem velja $[L:\Q]=2^a3^b$ za neka $a, b \in \N_0$.
+    Naj bo $\alpha \in \OR$ poljubno origami število. Polje origami števil $\OR$ je zaprto za kvadratne in kubične korene (gl.\ trditev~\ref{trd:zaprtost_koren}), origami operacije~\ref{op:O1}--\ref{op:O8} pa generirajo števila, ki so rešitve polinomov iz $\Q[X]$ stopnje $3$ ali manj (gl.\ dokaz leme~\ref{lema:O7_razširitev}). Zaradi obstoja formul za rešitve kvadratnih in kubičnih enačb polje $\OR$ vsebuje vse rešitve polinomov iz $\Q[X]$ stopnje največ 3. Vsak polinom nad $\Q$ stopnje največ $3$ torej razpade v polju $\OR$, zato je $L$ podpolje polja $Q$. Po izreku~\ref{izr:orig_konstr} obstaja zaporedje $2,3$-razširitev oblike $ \Q = F_0 \subset F_1 \subset F_2 \ldots \subset F_{n-1} \subset F_n = L \subset \C $. Kot v dokazu posledice~\ref{posl:kvadr_razs} lahko tudi tu dokažemo, da potem velja $[L:\Q]=2^a3^b$ za neka $a, b \in \N_0$.
 
     Za dokaz obrata je potrebno nekaj znanja Galoisove teorije. Za Gloisovo grupo Gal$(L/ \Q)$ velja $|$Gal$(L/ \Q)| = [L:\Q] = 2^m3^n$, kar pomeni, da je taka grupa rešljiva (glej~\cite{burnside1904}). Iz tega se lahko zgradi zaporedje $2,3$-razširitev polja $\Q$ za število $\alpha$, ki je po izreku~\ref{izr:orig_konstr} zato origami število.
 \end{dokaz}
@@ -686,7 +684,7 @@ Za origami-konstruktibilnost pravilnega večkotnika se namesto Fermatovih prašt
     Pravilni $n$-kotnik se lahko konstruira z origamijem natanko takrat, ko je $n = 2^a 3^b p_1 \cdots p_k$ za neke $a,b,k \in \N_0$, kjer so $p_1, \ldots, p_k$ različna Pierpontova praštevila.
 \end{izrek}
 \begin{dokaz}
-    Naj bo $\zeta_n = e^{2 \pi i / n}$ $n$-ti koren enote. Pravilni $n$-kotnik lahko konstruiramo, če in samo če lahko konstruiramo kot $2 \pi / n$, kar je ekvivalentno obstoju konstrukcije števila $\zeta_n$. To število je ničla polinoma $z^n - 1 \in \Q[z]$, katerega razpadno polje je $\Q(\zeta)$. Po izreku~\ref{izr:orig_razp_polje} je $\zeta_n \in \OR$ natanko takrat, ko je $[\Q(\zeta_n) : \Q] = 2^a3^b$ za neka $a, b \in \N_0$.
+    Naj bo $\zeta_n = e^{2 \pi i / n}$ $n$-ti koren enote. Pravilni $n$-kotnik lahko konstruiramo, če in samo če lahko konstruiramo kot $2 \pi / n$, kar je ekvivalentno obstoju konstrukcije števila $\zeta_n$. To število je ničla polinoma $z^n - 1 \in \Q[z]$, katerega razpadno polje je $\Q(\zeta_n)$. Po izreku~\ref{izr:orig_razp_polje} je $\zeta_n \in \OR$ natanko takrat, ko je $[\Q(\zeta_n) : \Q] = 2^a3^b$ za neka $a, b \in \N_0$.
 
     Minimalni polinoma števila $\zeta_n$ nad $\Q$ je oblike
     $$ \Phi_n(z) = \prod_{\substack{0 \leq i < n, \\ \gcd(i,n)=1}} (z - \zeta_n^i). $$

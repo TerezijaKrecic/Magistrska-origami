@@ -12,7 +12,7 @@ Začnimo z najbolj osnovno, tj.\ linearno enačbo. Enačba $ax + b = 0$, kjer $a
     \label{fig:lin_en}
 \end{figure}
 
-Uporaba origamija je za reševanje linearne enačbe očitno manj praktična kot računanje rešitve. Bolj zanimivo je reševanje kvadratne in kubične enačbe. Ker za njune rešitve obstajata splošni formuli, bi lahko rešitve najprej izračunali in jih nato preko operacij seštevanja, odštevanja, množenja, deljenja in korenjenja konstruirali s prepogibanjem, vendar je to časovno preveč potratno. Pogledali si bomo, kako se z origamijem lahko temu izognemo in rešitev konstruiramo brez uporabe računskih operacij.
+Uporaba origamija je za reševanje linearne enačbe očitno manj praktična kot računanje rešitve. Bolj zanimivo je reševanje kvadratne in kubične enačbe. Ker za njune rešitve obstajata splošni formuli, bi lahko rešitve najprej izračunali in jih nato preko operacij seštevanja, odštevanja, množenja, deljenja in korenjenja konstruirali s prepogibanjem, vendar je to časovno preveč potratno. Pogledali si bomo, kako se lahko z origamijem temu izognemo in rešitev konstruiramo brez uporabe računskih operacij.
 
 Ključno vlogo bosta v nadaljevanju odigrali origami operaciji~\ref{op:O6} in~\ref{op:O7}. Prva nam hkrati s konstrukcijo tangente na parabolo določi tudi točko na paraboli, skozi katero je pregib tangenten na stožnico, to pa je ekvivalentno reševanju kvadratne enačbe. Druga s konstrukcijo skupne tangente na dve paraboli omogoča reševanje kubične enačbe -- to pokaže npr.\ Alperin v~\cite[str.\ 129]{alperin2000}, ko izpelje koeficient skupne tangente na dani paraboli, za katerega se izkaže, da je rešitev kubične enačbe (gl.\ razdelek~\ref{podpogl:alperin}). Število skupnih tangent je torej enako številu rešitev kubične enačbe, kar pomeni, da imata paraboli v evklidski ravnini največ tri skupne tangente.
 
@@ -24,7 +24,7 @@ Za enačbe pete in višjih stopenj pa splošna formula za rešitve ne obstaja ve
 
 Z evklidskim orodjem lahko rešujemo enačbe druge stopnje, saj znamo konstruirati kvadratni koren poljubnega origami-konstruktibilnega števila. Ker vemo, da lahko s prepogibanjem papirja konstruiramo vse (in še več), kar se da z evklidskim orodjem, je včasih lažje za rešitev nekega problema najti (bolj domačo) evklidsko konstrukcijo, ki jo lahko nato preko origami operacij preobrazimo v origami konstrukcijo.
 
-Kot primer tega Hull v~\cite[str.\ 38]{hull2020} navaja Lillovo konstrukcijo rešitve kvadratne enačbe $x^2 + bx + c = 0$ preko krožnice -- pri točkah $A = (0,1), \; H = (-b, 0)$ in $B = (-b, c)$ narišemo krožnico s premerom $AB$, katere središče $C$ je središče daljice $AB$ (slika~\ref{fig:par_primer_hull_lill} (a)). Presečišči krožnice z abscisno osjo (če obstajata) označimo s točkama $M$ in $N$. Njuni abscisi sta nato rešitvi enačbe (lahek dokaz, zakaj konstrukcija deluje, je prepuščen bralcu). Konstrukcijo brez težav prevedemo v origami konstrukcijo -- točki $M$ in $N$ sta sliki točke $A$ preko pregiba, ki poteka skozi središče daljice $AB$ (slika~\ref{fig:par_primer_hull_lill} (b)).
+Kot primer tega Hull v~\cite[str.\ 38]{hull2020} navaja Lillovo konstrukcijo rešitve kvadratne enačbe $x^2 + bx + c = 0$ preko krožnice. Skozi točke $A = (0,1), \; H = (-b, 0)$ in $B = (-b, c)$ narišemo krožnico s premerom $AB$ in njeno središče označimo s $C$ (slika~\ref{fig:par_primer_hull_lill} (a)). Presečišči krožnice z abscisno osjo (če obstajata) označimo s točkama $M$ in $N$. Njuni abscisi sta nato rešitvi enačbe (lahek dokaz, zakaj konstrukcija deluje, je prepuščen bralcu). Konstrukcijo brez težav prevedemo v origami konstrukcijo -- točki $M$ in $N$ sta sliki točke $A$ preko pregiba, ki poteka skozi središče daljice $AB$ (slika~\ref{fig:par_primer_hull_lill} (b)).
 
 \begin{figure}[h]
     \centering
@@ -115,7 +115,7 @@ Seznanili se bomo z Lillovo metodo, s katero lahko v teoriji rešimo enačbo pol
 
 \subsubsection{Reševanje kubične enačbe z Belochinim postopkom}
 
-Belocheva je sama odkrila naslednji postopek reševanja kubične enačbe, kjer nam vsak Belochin pregib poda eno izmed rešitev. Število teh pregibov pa je, kot smo premislili že v uvodu poglavja, enako številu rešitev dane enačbe. Postopek temelji na Lillovi genialni metode iskanja ničel poljubnih polinomov z realnimi koeficienti, ki si jo bomo v naslednjem razdelku podrobneje pogledali, avtorica pa je zaslužna za to, da se jo zelo enostavno konstruira tudi v praksi.
+Belocheva je sama odkrila naslednji postopek reševanja kubične enačbe, kjer nam vsak Belochin pregib poda eno izmed rešitev. Število teh pregibov pa je, kot smo premislili že v uvodu poglavja, enako številu rešitev dane enačbe. Postopek temelji na Lillovi genialni metodi iskanja ničel poljubnih polinomov z realnimi koeficienti, ki si jo bomo v naslednjem razdelku podrobneje pogledali, avtorica pa je zaslužna za to, da se jo zelo enostavno konstruira tudi v praksi.
 
 \subsubsection*{Lillova metoda}
 
@@ -166,7 +166,7 @@ Taka pot žarka vedno obstaja in je enolična. Vpadni kot, ki ga v točki $O$ ok
 
 \subsubsection*{Belochin kvadrat}
 
-Imejmo dani točki $A$ in $B$ ter premici $r$ in $s$. Z origamijem konstruirajmo kvadrat $WXYZ$, kjer oglišče $X$ leži na premici $r$, njegovo sosednje oglišče $Y$ pa na premici $s$. Velja še, da točka $A$ leži na stranici $WX$ (ali njeni nosilki), točka $B$ pa na stranici $ZY$ (ali njeni nosilki). Kvadrat po avtorici njegove kosntrukcije imenujemo \emph{Belochin kvadrat} (slika~\ref{fig:beloch_kvadrat}).
+Imejmo dani točki $A$ in $B$ ter premici $r$ in $s$. Z origamijem konstruirajmo kvadrat $WXYZ$, kjer oglišče $X$ leži na premici $r$, njegovo sosednje oglišče $Y$ pa na premici $s$. Velja še, da točka $A$ leži na stranici $WX$ (ali njeni nosilki), točka $B$ pa na stranici $ZY$ (ali njeni nosilki). Kvadrat po avtorici njegove konstrukcije imenujemo \emph{Belochin kvadrat} (slika~\ref{fig:beloch_kvadrat}).
 
 \begin{figure}[h]
     \centering
@@ -357,7 +357,7 @@ Postopek za reševanje kvartične enačbe je podoben, vendar avtorja z njim reš
 
 Ker do sedaj poznamo le konstrukcijo skupne tangente na dve paraboli, je na mestu vprašanje, kako postopati v primeru, ko imamo namesto ene parabole krožnico. Konstrukcija je v svojem bistvu zelo enostavna:
 \begin{enumerate}
-    \item Naj bosta dani parabola z znanima goriščem in premico vodnico ter krožnica z znanima središčem polmerom. Teh dveh stožnic ni potrebno risati, ker potrebujemo omenjene podatke.
+    \item Naj bosta dani parabola z znanima goriščem in premico vodnico ter krožnica z znanima središčem in polmerom. Teh dveh stožnic ni potrebno risati, ker potrebujemo le omenjene podatke.
     \item Zarišemo krožnico z istim središčem in dvakratnim polmerom.
     \item Po zgledu Belochinega pregiba gorišče prepognemo na premico in hkrati središče na rob ravnokar narisane krožnice.
 \end{enumerate}
@@ -507,7 +507,7 @@ Ekvivalentno bi lahko zožitev stožnice na afini del določili z njenim preseko
 \begin{definicija}
     \emph{Tangenta} na stožnico $\mathcal{S} \subseteq P(\R^3)$ v točki $V \in \mathcal{S}$ je projektivna premica $p_V$, ki $\mathcal{S}$ seka le v projektivni točki $V$.
 \end{definicija}
-Naj bo $V = [x_0 : y_0 : z_0] \in \mathcal{S}$ in $v = (x_0, y_0, z_0)^\intercal$. Potem velja $v^\intercal M v = 0$. Torej če za smerni vektor evklidske premice, ki jo predstavlja projektivna točka $V$, vzamemo $v$, je $Mv$ normala ravnine skozi koordinatno izhodišče, ki vsebuje to premico. Različni projektivni točki na stožnici $\mathcal{S}$ zaradi homogenosti koordinat določata normali z različnima smerema, zato ta ravnina vsebuje le točko $V$, torej je res tangenta. V $P(\R^3)$ je predstavljena s predpisom 
+Naj bo $V = [x_0 : y_0 : z_0] \in \mathcal{S}$ in $v = (x_0, y_0, z_0)$. Potem velja $v^\intercal M v = 0$. Torej če za smerni vektor evklidske premice, ki jo predstavlja projektivna točka $V$, vzamemo $v$, je $Mv$ normala ravnine skozi koordinatno izhodišče, ki vsebuje to premico. Različni projektivni točki na stožnici $\mathcal{S}$ zaradi homogenosti koordinat določata normali z različnima smerema, zato ta ravnina vsebuje le točko $V$, torej je res tangenta. V $P(\R^3)$ je predstavljena s predpisom 
 $$p_V =\{ [x : y : z] \in P(\R^3) \; | \; (x, y, z) M v = 0; v \in V \}.$$
 \begin{definicija}
     Naj bo $\mathcal{S} \subset P(\R^3)$ stožnica v realni projektivni ravnini. Množico dualov tangent na stožnico $\mathcal{S}$ označimo s $\mathcal{S}^*$ in jo imenujemo \emph{dualna stožnica}.
@@ -542,7 +542,7 @@ $$p_V =\{ [x : y : z] \in P(\R^3) \; | \; (x, y, z) M v = 0; v \in V \}.$$
     Ker velja $\left(M^{-1}\right)^{-1} = M$, je dualna stožnica dualne stožnice originalna stožnica.
 \end{opomba}
 
-Poglejmo, kako nam znanje o stožnicah in njihovih dualnih stožnicah pomaga pri reševanju kubičnih in kvartičnih enačb. Naj bosta $\mathcal{S}_1$ in $\mathcal{S}_2$ stožnici s pripadajočima simetričnima obrnljivima matrikama $M_1$ in $M_2$. Potem je njuna skupna tangenta skupna točka njunih dualnih stožnic $\mathcal{S}^*_1$ in $\mathcal{S}^*_2$ (ker dualna preslikava slika točke v premice in obratno, med pojmoma \emph{premica} in \emph{točka} tu ne ločimo). Torej iščemo $q \in \mathcal{S}^*_1 \cap \mathcal{S}^*_2$, ki reši sistem enačb
+Poglejmo, kako nam znanje o stožnicah in njihovih dualnih stožnicah pomaga pri reševanju kubičnih in kvartičnih enačb. Naj bosta $\mathcal{S}_1$ in $\mathcal{S}_2$ stožnici s pripadajočima simetričnima obrnljivima matrikama $M_1$ in $M_2$. Potem je dual skupne tangente skupna točka njunih dualnih stožnic $\mathcal{S}^*_1$ in $\mathcal{S}^*_2$. Torej iščemo $q \in \mathcal{S}^*_1 \cap \mathcal{S}^*_2$, ki reši sistem enačb
 \begin{equation}
     \label{eq:afin_sistem_tangenta_splosen}
     q^\intercal M^{-1}_1 q = 0 \; \text{ in } \; q^\intercal M^{-1}_2 q = 0.
@@ -599,10 +599,10 @@ kar pomeni, da nam $A$, koeficient skupne tangente, reši izvorno kubično enač
 
 \textbf{Primer:} Rešimo kubično enačbo $x^3 - 2x^2 - x + 2 = 0$ po zgornjem postopku. Vzamemo paraboli
 \begin{itemize}
-    \item $\mathcal{P}_1: (y-1)^2 = -8(x+2)$ z goriščem $F_1 (-4, 1)$ in premico vodnico $L_1: x = 0$ ter
-    \item $\mathcal{P}_2: x^2 = -4y$ z goriščem $F_2 (0, -1)$ in premico vodnico $L_2: y = 1$
+    \item $\mathcal{P}_1: (y-1)^2 = -8(x+2)$ z goriščem $F_1 (-4, 1)$ in premico vodnico $L_1: x = 0$,
+    \item $\mathcal{P}_2: x^2 = -4y$ z goriščem $F_2 (0, -1)$ in premico vodnico $L_2: y = 1$.
 \end{itemize}
-in v koordinatni sistem zarišemo njuni gorišči in premici vodnici. Z Belochinim prepogibom konstruiramo tri skupne tangente (slika~\ref{fig:kubicna_tang_primer}) in razberemo njihove koeficiente. Če smo pri prepogibanju natančni, smo res dobili rešitve enačbe $2, 1$ in $-1$.
+V koordinatni sistem zarišemo njuni gorišči in premici vodnici. Z Belochinim prepogibom konstruiramo tri skupne tangente (slika~\ref{fig:kubicna_tang_primer}) in razberemo njihove koeficiente. Če smo pri prepogibanju natančni, smo res dobili rešitve enačbe $2, 1$ in $-1$.
 
 \begin{figure}[h]
     \centering
@@ -641,7 +641,7 @@ $$ M_\mathcal{S} =
         0 & 2 & 0
     \end{bmatrix}.
 $$
-Ker za glavni minor matrike $M_\mathcal{S}$ velja $A_{M_\mathcal{S}} = bd - c^2 \neq 0$, stožnica $\mathcal{S}$ ni parabola in ker velja $c \neq 0$, ne more biti niti krožnica. Torej je lahko le elipsa ali hiperbola. Tu pa nastane težava, saj avtorja nista uspela najti splošne geometrijske metode za konstrukcijo skupne tangente na parabolo in elipso oz.\ hiperbolo. Ker pa znamo konstruirati skupno tangento na parabolo in krožnico, predlagata malo prilagojen postopek, s katerim določita parabolo in krožnico, katere skupno tangento iščemo. Postopek je sicer algebraično manj eleganten, vendar je geometrijsko toliko lažje izveden.
+Ker za glavni minor matrike $M_\mathcal{S}$ velja $A_{M_\mathcal{S}} = bd - c^2 \neq 0$, stožnica $\mathcal{S}$ ni parabola in ker velja $c \neq 0$, ne more biti niti krožnica. Torej je lahko le elipsa ali hiperbola. Tu pa nastane težava, saj avtorja nista uspela najti splošne geometrijske metode za konstrukcijo skupne tangente na parabolo in elipso oz.\ hiperbolo. Ker pa znamo konstruirati skupno tangento na parabolo in krožnico, predlagata malo prilagojen postopek, s katerim določita parabolo in krožnico, katere skupno tangento iščemo. Postopek je sicer algebraično precej manj eleganten, vendar je geometrijsko toliko lažje izveden.
 
 Pri danih koeficientih $b, c, d$ enačbe~\eqref{eq:reduc_kvart_ev} vpeljimo novi oznaki
 $$ e = \frac{\sqrt{bd - c^2}}{d} \; \text{ in } \; r = |e|\sqrt{-d}, $$
