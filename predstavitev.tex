@@ -196,7 +196,7 @@
 
 %------------------------------------------------
 
-\begin{frame}{Hagovi izreki}
+\begin{frame}{Prvi, drugi in tretji Hagov izrek}
     \begin{figure}[h]
         \centering
         \includegraphics[width=0.32\textwidth]{images/hagovi_izreki/hagov_izrek1_stevilke.png}
@@ -208,12 +208,23 @@
 %------------------------------------------------
 
 \begin{frame}{Razdelicev daljice na $n$ delov}
-    
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.3\textwidth]{images/razdelitev_stranice_n1.png}
+        \includegraphics[width=0.3\textwidth]{images/tretjinjenje_stranice2.png}
+        \includegraphics[width=0.3\textwidth]{images/razdelitev_daljice_n1.png}
+    \end{figure}
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}{X-pregibi}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.85\textwidth]{images/x-pregibi/konstrukcija.png}
+        \includegraphics[width=0.9\textwidth]{images/x-pregibi/primeri_skupaj.png}
+        \includegraphics[width=0.35\textwidth]{images/x-pregibi/dokaz_odseki.png}
+    \end{figure}
     
 \end{frame}
 
@@ -243,13 +254,29 @@
 
 %------------------------------------------------
 
-\begin{frame}{Trisekcija kota}
-    
+\begin{frame}{Trisekcija kota -- Abejeva in Justinova metoda}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.8\textwidth]{images/starogr_problemi/abe_nastavek1.png}
+        \includegraphics[width=0.4\textwidth]{images/starogr_problemi/justin_trisection.png}
+        \includegraphics[width=0.4\textwidth]{images/starogr_problemi/justin_trisection_dokaz.png}    
+    \end{figure}
 \end{frame}
 %------------------------------------------------
 
 \begin{frame}{Tangente na stožnice}
-    
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.2\textwidth]{images/stožnice/folding_parabola_1.png}
+        \includegraphics[width=0.2\textwidth]{images/stožnice/folding_parabola_2.png}
+        \includegraphics[width=0.2\textwidth]{images/stožnice/folding_parabola_3.png}
+    \end{figure}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.3\textwidth]{images/stožnice/folding_elipsa_1.png}
+        \includegraphics[width=0.3\textwidth]{images/stožnice/folding_elipsa_2.png}
+        \includegraphics[width=0.3\textwidth]{images/stožnice/folding_elipsa_3.png}
+    \end{figure}    
 \end{frame}
 
 %------------------------------------------------
@@ -258,75 +285,175 @@
 \section{Reševanje enačb}
 %------------------------------------------------
 
-\begin{frame}{naslov}
-
+\begin{frame}{Lillova metoda}
+    Iščemo realne ničle polinoma
+    $$ p(x) = a_n x^n + a_{n-1} x^{n-1} + \ldots + a_2 x^2 + a_1 x + a_0. $$
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.9\textwidth]{images/kubična enačba/primera_zelvine_poti.png}
+    \end{figure}
+    \begin{alertblock}{Trditev 6.1}
+        Število $x_{\theta} = - \tan \theta$ je ničla polinoma $p$.
+    \end{alertblock}
 \end{frame}
 
 %------------------------------------------------
 
-\begin{frame}{}
-    
+\begin{frame}{Belochin postopek za reševanje kubične enačbe}
+    \begin{columns}
+        \begin{column}{0.6\textwidth}
+            $$ax^3 + bx^2 + cx + d = 0$$
+            \begin{enumerate}
+                \item Po koeficientih narišemo želvino pot iz točke $A(0,0)$ v točko $B$.
+                \item Zarišemo premice $r: x=a, s: y=b, r': x=2a$ in $s':y=b+d$.
+                \item Z Belochinim pregibom točko $A$ položimo na premico $r'$ in točko $B$ na premico $s'$.
+                \item Izmerimo kot z vrhom v točki $A$.
+            \end{enumerate}
+            Primer: $x^3 - 6x^2 + 11x - 6 = 0$
+         \end{column}
+         \begin{column}{0.4\textwidth}
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=\textwidth]{images/kubična enačba/beloch_kubicna_resitev.png}
+            \end{figure}
+        \end{column}
+    \end{columns}
 \end{frame}
 
 %------------------------------------------------
 
-\begin{frame}{}
-    
+\begin{frame}{Skupne tangente na stožnice}
+    Stožnica $\mathcal{S}$ v $P(\mathbb{R}^3)$:
+    \begin{equation*}
+        \label{eq:stoznica_matricna}
+        \mathcal{S}: v^\intercal M v = 0,
+        \text{ kjer sta } v =
+        \begin{bmatrix}
+            x\\
+            y\\
+            z
+        \end{bmatrix}
+        \text{ in } M =
+        \begin{bmatrix}
+            a_{11} & a_{12} & a_{13}\\
+            a_{12} & a_{22} & a_{23}\\
+            a_{13} & a_{23} & a_{33}
+        \end{bmatrix}.
+    \end{equation*}
+    Tangenta na stožnico $\mathcal{S}$ v točki $V \in \mathcal{S}: p_V$
+
+    Dualna preslikava: $V \mapsto Mv$, kjer je $v \in V$.
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.4\textwidth]{images/proj_tangenta.png}
+    \end{figure}
+    Dualna stožnica $\mathcal{S}^*$: množica dualov tangent na $\mathcal{S}$. Njena matrika je $M^{-1}$.
 \end{frame}
 
 %------------------------------------------------
 
-\begin{frame}{}
-    
+\begin{frame}{Skupne tangente na stožnice}
+    \begin{alertblock}{}
+        Naj bosta $\mathcal{S}_1$ in $\mathcal{S}_2$ stožnici s pripadajočima simetričnima obrnljivima matrikama $M_1$ in $M_2$. Potem je dual skupne tangente skupna točka njunih dualnih stožnic $\mathcal{S}^*_1$ in $\mathcal{S}^*_2$. Torej iščemo $q \in \mathcal{S}^*_1 \cap \mathcal{S}^*_2$, ki reši sistem enačb
+        $$ q^\intercal M^{-1}_1 q = 0 \; \text{ in } \; q^\intercal M^{-1}_2 q = 0.$$
+    \end{alertblock}
+    V praksi: Stožnice v $\mathbb{R^2}$ homogeniziramo v stožnice v $P(\mathbb{R}^3)$, poiščemo skupne tangente in jih dehomoniziramo (afina ravnina: $z=1$).
 \end{frame}
 
 %------------------------------------------------
 
-\begin{frame}{}
-    
+\begin{frame}{Reševanje kubične enačbe}
+    $$ x^3 + bx^2 + cx + d = 0, d \neq 0$$
+
+    \begin{itemize}
+        \item $\mathcal{P}_1: (y+c)^2 = -4d(x-b)$ z goriščem $F_1 (b - d, -c)$ in premico vodnico $L_1: x = b + d$,
+        \item $\mathcal{P}_2: x^2 = -4y$ z goriščem $F_2 (0, -1)$ in premico vodnico $L_2: y = 1$.
+    \end{itemize}
+    Skupna tangenta: $Ax + By + Cz = 0$.
+
+    Izračunamo $M_1^{-1}$ in $M_2^{-2}$ in za $q = [A:B:C] \in \mathcal{P^*}_1 \cap \mathcal{P^*}_2$ rešujemo sistem $q^\intercal M^{-1}_1 q = 0 \; \text{ in } \; q^\intercal M^{-1}_2 q = 0$. Dobimo
+    $$ bA^2 - cAB + AC + dB^2 = 0 \; \text{ in } \; -BC = A^2.$$
+    Upoštevamo $z=1$ in nastavimo $B=-1$. Tangenta ima sedaj enačbo $y = Ax + C$. Dobimo $A^3 + bA^2 + cA + d = 0$.
+
+    Primer: $x^3 - 2x^2 - x + 2 = 0$
 \end{frame}
 
 %------------------------------------------------
 
-\begin{frame}{}
-    
+\begin{frame}{Reševanje kvartične enačbe}
+    $$ x^4 + bx^2 + 2cx + d = 0, d \neq 0 $$
+
+    \begin{itemize}
+        \item krožnica $\mathcal{C}: x^2 + y^2 = r^2$ s središčem v $S(0,0)$ in polmerom $r$ ter
+        \item parabola $\mathcal{P}: c^2x^2 - 2cdexy + d^2e^2y^2 - 4d^2ex = 0$.
+    \end{itemize}
+    Skupna tangenta: $Ax + By + Cz = 0$.
+
+    Izračunamo $M_1^{-1}$ in $M_2^{-2}$ in za $q = [A:B:C] \in \mathcal{P^*}_1 \cap \mathcal{P^*}_2$ rešujemo sistem $q^\intercal M^{-1}_1 q = 0 \; \text{ in } \; q^\intercal M^{-1}_2 q = 0$. Dobimo
+    $$ A^2 + B^2 = \frac{C^2}{r^2} \; \text{ in } \; deAC - dB^2 + cBC = 0.$$
+    Upoštevamo $z=1$ in nastavimo $B=-1$. Tangenta ima sedaj enačbo $y = Ax + C$. Dobimo $$C^4 + bC^2 + 2cC + d = 0.$$
 \end{frame}
 
 %------------------------------------------------
 
+\begin{frame}{Primer}
+    $$ 64x^4 - 177x^2 + 143x - 30 = 0 \; \text{ oz. } \; \left(x - \frac{3}{8}\right) \left(x - \frac{5}{8}\right) (x-1) (x+2) = 0.$$
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.35\textwidth]{images/tang_krozn_par1.png}
+        \includegraphics[width=0.4\textwidth]{images/tang_krozn_par2.png}
+    \end{figure}
+\end{frame}
 
 %------------------------------------------------
 \section{Alhazenov problem}
 %------------------------------------------------
 
-\begin{frame}{naslov}
-
+\begin{frame}{Problem}
+    \begin{exampleblock}{}
+        Pri dani krožnici $\mathcal{C}$ z znanim središčem in točkama $A$ in $B$ znotraj nje poišči točko $P$ na krožnici, v kateri se svetlobni žarek iz točke $A$ odbije v točko $B$.
+    \end{exampleblock}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.4\textwidth]{images/alhazen/huygens1.png}
+    \end{figure}
+    Huygens in Nishimura: $A = a, B = b, P = z$. Potem velja
+    $$ (ab) \overline{z}^2 - (\overline{ab}) z^2 = (a+b) \overline{z} - (\overline{a+b}) z. $$
 \end{frame}
 
 %------------------------------------------------
 
-\begin{frame}{}
-    
+\begin{frame}{Reševanje}
+    Naj bodo $q, p, r, s, x, y \in \mathbb{R}$ taka števila, da velja
+    \begin{align*}
+        ab &= q + i p, \\
+        a + b &= r + i s, \\
+        z &= x_0 + i y_0.
+    \end{align*}
+    Točka $P$ je presečišče krožnice $\mathcal{C}$ in hiperbole $\mathcal{Q}$ z enačbo $px_0^2 -2qx_0y_0 -py_0^2 - sx_0 + ry_0 = 0$.
+    Če krožnico zavrtimo, da $x$-os razpolavlja kot $\angle AOB$, se nam enačba hiperbole poenostavi v $2qxy + sx - ry = 0$
+    Iščemo skupne tangente njunih dualov
+    $$ \mathcal{C^*}: x^2 + y^2 - 1 = 0 \; \text{ in } \; \mathcal{Q^*}: r^2x^2 + 2rsxy + s^2y^2 + 4qrx - 4qsy + 4q^2 = 0. $$
 \end{frame}
 
 %------------------------------------------------
 
-\begin{frame}{}
-    
+\begin{frame}{Nishimurijev origami postopek}
+    \begin{enumerate}
+        \item Prepognemo premico $OA$ in z $E$ označimo njeno presečišče s krožnico~$\mathcal{C}$.
+        \item Prepognemo premico $AB$ in središče njene simetrale označimo z $M$.
+        \item Skozi točki $O$ in $M$ prepognemo premico $D$. Presečišče poltraka $OM$ s krožnico $\mathcal{C}$ označimo z $E'$.
+        \item Prepognemo premico $EB$.
+        \item Prepognemo pravokotnico $l_1$ na premico $EB$ skozi točko $B$.
+        \item Prepognemo pravokotnico $l_2$ na premico $l_1$ skozi točko $A$.
+        \item Prepognemo premico $OB$ in presečišče s premico $l_2$ označimo z $G$.
+        \item Prepognemo premico $MG$.
+        \item Prepognemo pravokotnico $l_3$ na premico $MG$ skozi točko $M$.
+        \item Prepognemo pravokotnico na premico $l_3$ skozi točko $E'$ in njeno presečišče s premico $OB$ označimo s $H$.
+        \item Prepognemo premico skozi središče $O$, ki točko $H$ preslika na premico $D$ v točko $K$.
+        \item Prepognemo premico skozi središče $O$, ki točko $B$ preslika na premico $OA$. Sliko točke $K$ čeznjo označimo s $F$.        
+        \item Prepognemo tangento $p$ na krožnico $\mathcal{C}$, ki točko $F$ položi na premico $D$. Točka $P$ je dotikališče tangente $p$ s krožnico $\mathcal{C}$.
+    \end{enumerate}
 \end{frame}
-
-%------------------------------------------------
-
-\begin{frame}{}
-    
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}{}
-    
-\end{frame}
-
-%------------------------------------------------
 
 \end{document}
